@@ -1,24 +1,33 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"go-colly-lib/src/crawler"
+	"os"
 
 	"github.com/gocolly/colly"
 )
 
 func main() {
-
-	// getCollyData()
-	result := crawler.GetEpicGameData()
-
-	for _, item := range result {
-		fmt.Printf("Name: %s, StartDate: %s\n", item.Name, item.StartDate)
-	}
+	saveData()
 }
 
 func saveData() {
+	result := crawler.GetEpicGameData()
 
+	jsonData, err := json.Marshal(result)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
+
+	// Write JSON data to file
+	err = os.WriteFile("tmp/epicGame.json", jsonData, 0644)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
 }
 
 func getCollyData() {
