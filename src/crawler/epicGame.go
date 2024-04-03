@@ -64,27 +64,6 @@ type Mapping struct {
 	PageType string `json:"pageType"`
 }
 
-/*
-type DiscountSetting struct {
-	DiscountType       string  `json:"discountType"`
-	DiscountPercentage float64 `json:"discountPercentage"`
-}
-
-type PromotionalOffer struct {
-	StartDate       time.Time       `json:"startDate"`
-	EndDate         time.Time       `json:"endDate"`
-	DiscountSetting DiscountSetting `json:"discountSetting"`
-}
-
-type PromotionalOffers struct {
-	PromotionalOffers []PromotionalOffer `json:"promotionalOffers"`
-}
-
-type Promotions struct {
-	PromotionalOffers PromotionalOffers `json:"promotionalOffers"`
-}
-*/
-
 type TotalPrice struct {
 	DiscountPrice   float64 `json:"discountPrice"`
 	OriginalPrice   float64 `json:"originalPrice"`
@@ -111,6 +90,7 @@ type FreeGameType struct {
 	EndDate   string
 	Path      string
 	Desc      string
+	ImagePath string
 }
 
 func GetEpicGameData() []FreeGameType {
@@ -144,6 +124,8 @@ func GetEpicGameData() []FreeGameType {
 		// t, err := time.Parse(layout, item.EffectiveDate)
 		tempStartDate := ""
 		tempExpiryDate := ""
+		tempLink := "https://store.epicgames.com/zh-Hant/p/"
+		tempImage := ""
 
 		if item.ExpiryDate != nil {
 			tempExpiryDate = item.ExpiryDate.Format("2006-01-02")
@@ -151,9 +133,17 @@ func GetEpicGameData() []FreeGameType {
 		if item.EffectiveDate != nil {
 			tempStartDate = item.EffectiveDate.Format("2006-01-02")
 		}
+		if len(item.OfferMappings) > 0 {
+			tempLink += item.OfferMappings[0].PageSlug
+		}
+		if len(item.KeyImages) > 0 {
+			tempImage = item.KeyImages[0].URL
+		}
 
-		temp := FreeGameType{Name: item.Title, StartDate: tempStartDate, EndDate: tempExpiryDate, Path: "", Desc: ""}
-		itemList = append(itemList, temp)
+		if (tempImage != "") && (len(item.OfferMappings) > 0) {
+			temp := FreeGameType{Name: item.Title, StartDate: tempStartDate, EndDate: tempExpiryDate, Path: tempLink, Desc: item.Description, ImagePath: tempImage}
+			itemList = append(itemList, temp)
+		}
 	}
 
 	return itemList
