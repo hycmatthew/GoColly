@@ -14,3 +14,15 @@ func extractNumberFromString(str string) int {
 
 	return i
 }
+
+func extractFloatStringFromString(str string) string {
+	re := regexp.MustCompile(`[\d.]+`)
+	matches := re.FindAllString(str, -1)
+	result := ""
+
+	if len(matches) > 0 {
+		result = matches[0]
+	}
+
+	return result
+}

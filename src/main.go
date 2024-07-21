@@ -72,7 +72,7 @@ func udpateCPULogic() {
 
 			pcData.GetCPUData(recordList[count].LinkSpec, recordList[count].LinkUS, recordList[count].LinkCN, recordList[count].LinkHK)
 			count++
-			if count == 2 {
+			if count == 1 {
 				ticker.Stop()
 				runtime.Goexit()
 			}

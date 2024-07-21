@@ -33,11 +33,31 @@ type CPUType struct {
 }
 
 func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) []CPUType {
-	var cpuList []CPUType
 
-	cpuData := getSpecData(specLink)
-	cpuData.PriceUS = getUSPrice(enLink)
-	cpuData.PriceCN = getCNPrice(cnLink)
+	collector := colly.NewCollector(
+		colly.UserAgent(req.DefaultClient().ImpersonateChrome().Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			// "https://nanoreview.net",
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+			// "https://cu.manmanbuy.com",
+			"cu.manmanbuy.com",
+			"www.price.com.hk",
+			"price.com.hk",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	usCollector := collector.Clone()
+	cnCollector := collector.Clone()
+	hkCollector := collector.Clone()
+
+	var cpuList []CPUType
+	cpuData := getSpecData(specLink, collector)
+	cpuData.PriceUS = getUSPrice(enLink, usCollector)
+	cpuData.PriceCN = getCNPrice(cnLink, cnCollector)
+	cpuData.PriceHK = getHKPrice(hkLink, hkCollector)
 
 	fmt.Println(cpuData)
 
@@ -46,7 +66,7 @@ func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) []
 	return cpuList
 }
 
-func getSpecData(link string) CPUType {
+func getSpecData(link string, collector *colly.Collector) CPUType {
 	brand := ""
 	socket := ""
 	cores := 0
@@ -56,12 +76,7 @@ func getSpecData(link string) CPUType {
 	singleCoreScore := 0
 	muitiCoreScore := 0
 
-	collector := colly.NewCollector(
-		colly.UserAgent(req.DefaultClient().ImpersonateChrome().Headers.Get("user-agent")),
-		colly.AllowedDomains("https://nanoreview.net", "nanoreview.net"),
-		colly.AllowURLRevisit(),
-	)
-	collectorErrorHandle(collector)
+	collectorErrorHandle(collector, link)
 
 	collector.OnHTML("#the-app", func(element *colly.HTMLElement) {
 
@@ -122,20 +137,14 @@ func getSpecData(link string) CPUType {
 	}
 }
 
-func getUSPrice(link string) float64 {
+func getUSPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
-	collector := colly.NewCollector(
-		colly.UserAgent(req.DefaultClient().ImpersonateChrome().Headers.Get("user-agent")),
-		colly.AllowedDomains("https://www.newegg.com", "www.newegg.com"),
-		colly.AllowURLRevisit(),
-	)
-	collectorErrorHandle(collector)
+	collectorErrorHandle(collector, link)
+	fmt.Println(collector.AllowedDomains)
 
-	collector.OnHTML(".product-offers-side", func(element *colly.HTMLElement) {
-		fmt.Println(element)
-
-		if s, err := strconv.ParseFloat(element.ChildText("strong"), 32); err == nil {
+	collector.OnHTML(".row-side .product-buy-box", func(element *colly.HTMLElement) {
+		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("li.price-current")), 64); err == nil {
 			price = s
 			fmt.Println(price)
 		}
@@ -145,25 +154,41 @@ func getUSPrice(link string) float64 {
 	return price
 }
 
-func getHKPrice(link string) float64 {
-	return 0
-}
-
-func getCNPrice(link string) float64 {
+func getHKPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
-	collector := colly.NewCollector(
-		colly.UserAgent(req.DefaultClient().ImpersonateChrome().Headers.Get("user-agent")),
-		colly.AllowedDomains("https://cu.manmanbuy.com", "cu.manmanbuy.com"),
-		colly.AllowURLRevisit(),
-	)
-	collectorErrorHandle(collector)
+	collectorErrorHandle(collector, link)
 
-	collector.OnHTML(".articlehead", func(element *colly.HTMLElement) {
-		fmt.Println(element)
-		if s, err := strconv.ParseFloat(element.ChildText("h1 span"), 32); err == nil {
+	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
+
+		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
+			fmt.Println(extractFloatStringFromString(element.ChildText("span")))
+			if price == 0.0 {
+				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
+					price = s
+					fmt.Println(price)
+				} else {
+					fmt.Println(err)
+				}
+			}
+		})
+	})
+
+	collector.Visit(link)
+	return price
+}
+
+func getCNPrice(link string, collector *colly.Collector) float64 {
+	price := 0.0
+
+	collectorErrorHandle(collector, link)
+
+	collector.OnHTML(".articlehead .t", func(element *colly.HTMLElement) {
+		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
 			price = s
 			fmt.Println(price)
+		} else {
+			fmt.Println(err)
 		}
 	})
 
@@ -171,13 +196,15 @@ func getCNPrice(link string) float64 {
 	return price
 }
 
-func collectorErrorHandle(collector *colly.Collector) {
+func collectorErrorHandle(collector *colly.Collector, link string) {
 	collector.OnRequest(func(r *colly.Request) {
-		r.Headers.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+		// USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+
+		r.Headers.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36")
 	})
 
 	collector.OnError(func(response *colly.Response, err error) {
-		fmt.Println("请求期间发生错误,则调用:", err)
+		fmt.Println("请求期间发生错误,则调用:", err, " - link: ", link)
 	})
 
 	collector.OnResponse(func(response *colly.Response) {
