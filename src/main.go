@@ -4,14 +4,11 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"go-colly-lib/src/crawler"
 	"go-colly-lib/src/pcData"
 	"log"
 	"os"
 	"runtime"
 	"time"
-
-	"github.com/gocolly/colly/v2"
 )
 
 func main() {
@@ -35,10 +32,8 @@ func readCsvFile(filePath string) [][]string {
 	return records
 }
 
-func saveData() {
-	result := crawler.GetEpicGameData()
-	fmt.Println(result)
-
+func saveData(result any) {
+	fmt.Println("saveData started")
 	jsonData, err := json.Marshal(result)
 	if err != nil {
 		fmt.Println("Error:", err)
@@ -46,7 +41,7 @@ func saveData() {
 	}
 
 	// Write JSON data to file
-	err = os.WriteFile("tmp/epicGame.json", jsonData, 0644)
+	err = os.WriteFile("tmp/cpuData.json", jsonData, 0644)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
@@ -56,6 +51,7 @@ func saveData() {
 func udpateCPULogic() {
 	dataList := readCsvFile("res/cpudata.csv")
 	var recordList []pcData.CPURecord
+	var cpuList []pcData.CPUType
 
 	for i := 1; i < len(dataList); i++ {
 		data := dataList[i]
@@ -70,41 +66,17 @@ func udpateCPULogic() {
 		for {
 			<-ticker.C
 
-			pcData.GetCPUData(recordList[count].LinkSpec, recordList[count].LinkUS, recordList[count].LinkCN, recordList[count].LinkHK)
+			cpuRecord := pcData.GetCPUData(recordList[count].LinkSpec, recordList[count].LinkUS, recordList[count].LinkCN, recordList[count].LinkHK)
+			cpuList = append(cpuList, cpuRecord)
 			count++
-			if count == 1 {
+			if count == len(recordList) {
+				saveData(cpuList)
 				ticker.Stop()
 				runtime.Goexit()
 			}
 		}
 	}()
 
-	listLen := time.Duration(len(recordList) * 2)
+	listLen := time.Duration((len(recordList) * 2) + 3)
 	time.Sleep(time.Second * listLen)
-}
-
-func getCollyData() {
-	// Create a new Colly collector
-	c := colly.NewCollector(
-		colly.AllowedDomains("store.epicgames.com", "epicgames.com", "www.cpu-monkey.com"),
-	)
-
-	// On every a element which has href attribute call callback
-	c.OnHTML("a", func(e *colly.HTMLElement) {
-		link := e.Text
-		// Print link
-		fmt.Printf("123123")
-		fmt.Printf("Link found: %q -> %s\n", e.Text, link)
-		// Visit link found on page
-		// Only those links are visited which are in AllowedDomains
-		// c.Visit(e.Request.AbsoluteURL(link))
-	})
-
-	// Before making a request print "Visiting ..."
-	c.OnRequest(func(r *colly.Request) {
-		fmt.Println("Visiting", r.URL.String())
-	})
-
-	// Start scraping
-	c.Visit("https://store-site-backend-static-ipv4.ak.epicgames.com/freeGamesPromotions?locale=zh-Hant&country=HK&allowCountries=HK")
 }

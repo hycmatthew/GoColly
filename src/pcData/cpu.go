@@ -32,7 +32,7 @@ type CPUType struct {
 	Img             string
 }
 
-func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) []CPUType {
+func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) CPUType {
 
 	collector := colly.NewCollector(
 		colly.UserAgent(req.DefaultClient().ImpersonateChrome().Headers.Get("user-agent")),
@@ -45,28 +45,28 @@ func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) []
 			"cu.manmanbuy.com",
 			"www.price.com.hk",
 			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
 		),
 		colly.AllowURLRevisit(),
 	)
 
 	usCollector := collector.Clone()
 	cnCollector := collector.Clone()
-	hkCollector := collector.Clone()
+	// hkCollector := collector.Clone()
 
-	var cpuList []CPUType
 	cpuData := getSpecData(specLink, collector)
-	cpuData.PriceUS = getUSPrice(enLink, usCollector)
+	cpuData.PriceUS, cpuData.Img = getUSPrice(enLink, usCollector)
 	cpuData.PriceCN = getCNPrice(cnLink, cnCollector)
-	cpuData.PriceHK = getHKPrice(hkLink, hkCollector)
+	// cpuData.PriceHK = getHKPrice(hkLink, hkCollector)
 
-	fmt.Println(cpuData)
-
-	cpuList = append(cpuList, cpuData)
-
-	return cpuList
+	return cpuData
 }
 
 func getSpecData(link string, collector *colly.Collector) CPUType {
+	name := ""
 	brand := ""
 	socket := ""
 	cores := 0
@@ -110,6 +110,8 @@ func getSpecData(link string, collector *colly.Collector) CPUType {
 				}
 			}
 		})
+
+		name = element.ChildText(".card-head .title-h1")
 		/*
 			fmt.Println("record logic!!")
 			fmt.Println(brand)
@@ -126,6 +128,7 @@ func getSpecData(link string, collector *colly.Collector) CPUType {
 	collector.Visit(link)
 
 	return CPUType{
+		Name:            name,
 		Brand:           brand,
 		Cores:           cores,
 		Threads:         thread,
@@ -137,21 +140,24 @@ func getSpecData(link string, collector *colly.Collector) CPUType {
 	}
 }
 
-func getUSPrice(link string, collector *colly.Collector) float64 {
+func getUSPrice(link string, collector *colly.Collector) (float64, string) {
+	imgLink := ""
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
 	fmt.Println(collector.AllowedDomains)
 
-	collector.OnHTML(".row-side .product-buy-box", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("li.price-current")), 64); err == nil {
+	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
+		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
+
+		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
 			price = s
-			fmt.Println(price)
+			//fmt.Println(price)
 		}
 	})
 
 	collector.Visit(link)
-	return price
+	return price, imgLink
 }
 
 func getHKPrice(link string, collector *colly.Collector) float64 {
@@ -166,7 +172,7 @@ func getHKPrice(link string, collector *colly.Collector) float64 {
 			if price == 0.0 {
 				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
 					price = s
-					fmt.Println(price)
+					//fmt.Println(price)
 				} else {
 					fmt.Println(err)
 				}
@@ -183,16 +189,16 @@ func getCNPrice(link string, collector *colly.Collector) float64 {
 
 	collectorErrorHandle(collector, link)
 
-	collector.OnHTML(".articlehead .t", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
+	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
+		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("em.price")), 64); err == nil {
 			price = s
-			fmt.Println(price)
+			// fmt.Println(price)
 		} else {
 			fmt.Println(err)
 		}
 	})
 
-	collector.Visit("https://cu.manmanbuy.com/discuxiao_8908724.aspx")
+	collector.Visit(link)
 	return price
 }
 
@@ -210,8 +216,4 @@ func collectorErrorHandle(collector *colly.Collector, link string) {
 	collector.OnResponse(func(response *colly.Response) {
 		fmt.Println("收到响应后调用:", response.Request.URL)
 	})
-}
-
-func linkSetupLogic(link string) string {
-	return ("https://" + link)
 }
