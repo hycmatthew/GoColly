@@ -2,6 +2,7 @@ package pcData
 
 import (
 	"fmt"
+	"net/http"
 	"strconv"
 
 	"github.com/gocolly/colly/v2"
@@ -34,8 +35,10 @@ type CPUType struct {
 
 func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) CPUType {
 
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
 	collector := colly.NewCollector(
-		colly.UserAgent(req.DefaultClient().ImpersonateChrome().Headers.Get("user-agent")),
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
 			// "https://nanoreview.net",
 			"nanoreview.net",
@@ -53,19 +56,23 @@ func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) CP
 		colly.AllowURLRevisit(),
 	)
 
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+
 	usCollector := collector.Clone()
 	cnCollector := collector.Clone()
 	// hkCollector := collector.Clone()
 
-	cpuData := getSpecData(specLink, collector)
-	cpuData.PriceUS, cpuData.Img = getUSPrice(enLink, usCollector)
-	cpuData.PriceCN = getCNPrice(cnLink, cnCollector)
-	// cpuData.PriceHK = getHKPrice(hkLink, hkCollector)
+	cpuData := getCPUSpecData(specLink, collector)
+	cpuData.PriceUS, cpuData.Img = getCPUUSPrice(enLink, usCollector)
+	cpuData.PriceCN = getCPUCNPrice(cnLink, cnCollector)
+	// cpuData.PriceHK = getCPUHKPrice(hkLink, hkCollector)
 
 	return cpuData
 }
 
-func getSpecData(link string, collector *colly.Collector) CPUType {
+func getCPUSpecData(link string, collector *colly.Collector) CPUType {
 	name := ""
 	brand := ""
 	socket := ""
@@ -140,7 +147,7 @@ func getSpecData(link string, collector *colly.Collector) CPUType {
 	}
 }
 
-func getUSPrice(link string, collector *colly.Collector) (float64, string) {
+func getCPUUSPrice(link string, collector *colly.Collector) (float64, string) {
 	imgLink := ""
 	price := 0.0
 
@@ -160,7 +167,7 @@ func getUSPrice(link string, collector *colly.Collector) (float64, string) {
 	return price, imgLink
 }
 
-func getHKPrice(link string, collector *colly.Collector) float64 {
+func getCPUHKPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
@@ -184,7 +191,7 @@ func getHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getCNPrice(link string, collector *colly.Collector) float64 {
+func getCPUCNPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
@@ -203,10 +210,12 @@ func getCNPrice(link string, collector *colly.Collector) float64 {
 }
 
 func collectorErrorHandle(collector *colly.Collector, link string) {
+
 	collector.OnRequest(func(r *colly.Request) {
 		// USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
 
-		r.Headers.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36")
+		r.Headers.Set("Connection", "keep-alive")
+		r.Headers.Set("Accept", "*/*")
 	})
 
 	collector.OnError(func(response *colly.Response, err error) {

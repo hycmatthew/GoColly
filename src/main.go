@@ -13,7 +13,8 @@ import (
 
 func main() {
 	// saveData()
-	udpateCPULogic()
+	// udpateCPULogic()
+	udpateGPULogic()
 }
 
 func readCsvFile(filePath string) [][]string {
@@ -71,6 +72,39 @@ func udpateCPULogic() {
 			count++
 			if count == len(recordList) {
 				saveData(cpuList)
+				ticker.Stop()
+				runtime.Goexit()
+			}
+		}
+	}()
+
+	listLen := time.Duration((len(recordList) * 2) + 3)
+	time.Sleep(time.Second * listLen)
+}
+
+func udpateGPULogic() {
+	dataList := readCsvFile("res/gpudata.csv")
+	var recordList []pcData.GPURecord
+	var gpuList []pcData.GPUType
+
+	for i := 1; i < len(dataList); i++ {
+		data := dataList[i]
+		record := pcData.GPURecord{Name: data[0], LinkSpec: data[1], LinkCN: data[2], LinkUS: data[3], LinkHK: data[4]}
+		recordList = append(recordList, record)
+	}
+
+	ticker := time.NewTicker(1500 * time.Millisecond)
+	count := 0
+
+	go func() {
+		for {
+			<-ticker.C
+
+			gpuRecord := pcData.GetGPUData(recordList[count].LinkSpec, recordList[count].LinkUS, recordList[count].LinkCN, recordList[count].LinkHK)
+			gpuList = append(gpuList, gpuRecord)
+			count++
+			if count == 1 {
+				saveData(gpuList)
 				ticker.Stop()
 				runtime.Goexit()
 			}
