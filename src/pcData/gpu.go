@@ -9,11 +9,10 @@ import (
 )
 
 type GPURecord struct {
-	Name     string
-	LinkSpec string
-	LinkCN   string
-	LinkHK   string
-	LinkUS   string
+	Name   string
+	LinkCN string
+	LinkHK string
+	LinkUS string
 }
 
 type GPUType struct {
@@ -33,7 +32,44 @@ type GPUType struct {
 	Img        string
 }
 
-func GetGPUData(specLink string, enLink string, cnLink string, hkLink string) GPUType {
+func GetGPUSpec(name string, link string) GPUSpecTempStruct {
+	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
+
+	fmt.Println(fakeChrome.Headers.Get("user-agent"))
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			// "https://nanoreview.net",
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+			// "https://cu.manmanbuy.com",
+			"cu.manmanbuy.com",
+			"www.price.com.hk",
+			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
+			"www.gpu-monkey.com",
+			"gpu-monkey.com",
+			"search.jd.com",
+			"jd.com",
+			"www.techpowerup.com",
+			"techpowerup.com",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	// hkCollector := collector.Clone()
+
+	GPUData := getGPUSpecData(link, collector)
+	GPUData.Name = name
+	return GPUData
+}
+
+func GetGPUData(specSpec GPUSpecTempStruct, enLink string, cnLink string, hkLink string) GPUType {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
 
 	fmt.Println(fakeChrome.Headers.Get("user-agent"))
@@ -67,7 +103,22 @@ func GetGPUData(specLink string, enLink string, cnLink string, hkLink string) GP
 	cnCollector := collector.Clone()
 	// hkCollector := collector.Clone()
 
-	GPUData := getGPUSpecData(specLink, collector)
+	GPUData := GPUType{
+		Name:       specSpec.Name,
+		Brand:      specSpec.Brand,
+		MemorySize: specSpec.MemorySize,
+		MemoryType: specSpec.MemoryType,
+		MemoryBus:  specSpec.MemoryBus,
+		Clock:      specSpec.Clock,
+		Power:      specSpec.Power,
+		Length:     specSpec.Length,
+		Slot:       specSpec.Slot,
+		Width:      specSpec.Width,
+		PriceUS:    0,
+		PriceHK:    0,
+		PriceCN:    0,
+		Img:        specSpec.Name,
+	}
 	// GPUData.PriceUS, GPUData.Img = getGPUUSPrice(enLink, usCollector)
 	GPUData.PriceCN = getGPUCNPrice(cnLink, cnCollector)
 	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
@@ -75,7 +126,7 @@ func GetGPUData(specLink string, enLink string, cnLink string, hkLink string) GP
 	return GPUData
 }
 
-func getGPUSpecData(link string, collector *colly.Collector) GPUType {
+func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 	name := ""
 	brand := ""
 	memorySize := ""
@@ -146,7 +197,7 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUType {
 		Width:      width,
 	})
 
-	return GPUType{
+	return GPUSpecTempStruct{
 		Name:       name,
 		Brand:      brand,
 		MemorySize: memorySize,
