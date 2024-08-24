@@ -2,7 +2,7 @@ package pcData
 
 type GPUSpecTempStruct struct {
 	Name        string
-	Brand       string
+	Generation  string
 	MemorySize  string
 	MemoryType  string
 	MemoryBus   string
@@ -18,6 +18,7 @@ type GPUSpecSubData struct {
 	ProductName string
 	BoostClock  string
 	Length      string
+	Slots       string
 	TDP         string
 }
 
@@ -40,7 +41,6 @@ func GetGPUSpecDataList() []GPUSpec {
 		{Name: "RTX 4080 Ti", Link: "https://www.techpowerup.com/gpu-specs/geforce-rtx-4080-ti.c3887"},
 		{Name: "RTX 4090", Link: "https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889"},
 		{Name: "RTX 4090 D", Link: "https://www.techpowerup.com/gpu-specs/geforce-rtx-4090-d.c4189"},
-		{Name: "RTX 4090 Ti", Link: "https://www.techpowerup.com/gpu-specs/geforce-rtx-4090-ti.c3917"},
 	}
 
 	return list

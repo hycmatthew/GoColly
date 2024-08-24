@@ -3,6 +3,7 @@ package pcData
 import (
 	"fmt"
 	"strconv"
+	"strings"
 
 	"github.com/gocolly/colly/v2"
 	"github.com/imroc/req/v3"
@@ -10,6 +11,7 @@ import (
 
 type GPURecord struct {
 	Name   string
+	Brand  string
 	LinkCN string
 	LinkHK string
 	LinkUS string
@@ -18,6 +20,7 @@ type GPURecord struct {
 type GPUType struct {
 	Name       string
 	Brand      string
+	Generation string
 	MemorySize string
 	MemoryType string
 	MemoryBus  string
@@ -69,7 +72,7 @@ func GetGPUSpec(name string, link string) GPUSpecTempStruct {
 	return GPUData
 }
 
-func GetGPUData(specSpec GPUSpecTempStruct, enLink string, cnLink string, hkLink string) GPUType {
+func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLink string, hkLink string) GPUType {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
 
 	fmt.Println(fakeChrome.Headers.Get("user-agent"))
@@ -103,32 +106,34 @@ func GetGPUData(specSpec GPUSpecTempStruct, enLink string, cnLink string, hkLink
 	cnCollector := collector.Clone()
 	// hkCollector := collector.Clone()
 
+	// GPUData.PriceUS, GPUData.Img = getGPUUSPrice(enLink, usCollector)
+	priceCn, gpuName := getGPUCNPrice(cnLink, cnCollector)
+	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
+	specData := findGPUSpecLogic(specList, gpuName)
+
 	GPUData := GPUType{
-		Name:       specSpec.Name,
-		Brand:      specSpec.Brand,
-		MemorySize: specSpec.MemorySize,
-		MemoryType: specSpec.MemoryType,
-		MemoryBus:  specSpec.MemoryBus,
-		Clock:      specSpec.Clock,
-		Power:      specSpec.Power,
-		Length:     specSpec.Length,
-		Slot:       specSpec.Slot,
-		Width:      specSpec.Width,
+		Name:       specData.Name,
+		Brand:      brand,
+		MemorySize: specData.MemorySize,
+		MemoryType: specData.MemoryType,
+		MemoryBus:  specData.MemoryBus,
+		Clock:      specData.Clock,
+		Power:      specData.Power,
+		Length:     specData.Length,
+		Slot:       specData.Slot,
+		Width:      specData.Width,
 		PriceUS:    0,
 		PriceHK:    0,
-		PriceCN:    0,
-		Img:        specSpec.Name,
+		PriceCN:    priceCn,
+		Img:        specData.Name,
 	}
-	// GPUData.PriceUS, GPUData.Img = getGPUUSPrice(enLink, usCollector)
-	GPUData.PriceCN = getGPUCNPrice(cnLink, cnCollector)
-	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
 
 	return GPUData
 }
 
 func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 	name := ""
-	brand := ""
+	generation := ""
 	memorySize := ""
 	memoryType := ""
 	memoryBus := ""
@@ -137,18 +142,16 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 	length := 0
 	slot := ""
 	width := 0
-	// singleCoreScore := 0
-	// muitiCoreScore := 0
+	var subDataList []GPUSpecSubData
 
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML(".contnt", func(element *colly.HTMLElement) {
 
 		element.ForEach(".sectioncontainer .details .clearfix", func(i int, item *colly.HTMLElement) {
-			fmt.Println(item.ChildText("dt"))
 			switch item.ChildText("dt") {
-			case "Based on:":
-				brand = item.ChildText("dd")
+			case "Generation":
+				generation = item.ChildText("dd")
 			case "Memory Size":
 				memorySize = item.ChildText("dd")
 			case "Memory Type":
@@ -167,47 +170,54 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 				width = extractNumberFromString(item.ChildText("dd"))
 			}
 		})
-
 		name = element.ChildText(".card-head .title-h1")
-		/*
-			fmt.Println("record logic!!")
-			fmt.Println(brand)
-			fmt.Println(cores)
-			fmt.Println(thread)
-			fmt.Println(socket)
-			fmt.Println(singleCoreScore)
-			fmt.Println(muitiCoreScore)
-			fmt.Println(gpu)
-			fmt.Println(tdp)
-		*/
+
+		element.ForEach(".details.customboards tbody tr", func(i int, item *colly.HTMLElement) {
+			splitData := strings.Split(item.ChildText("td:nth-child(5)"), ",")
+			tempLength := ""
+			tempTdp := ""
+			tempSlots := ""
+
+			for i := range splitData {
+				if strings.Contains(splitData[i], "mm") {
+					tempLength = strings.Split(splitData[i], "mm")[0]
+				}
+				if strings.Contains(splitData[i], "W") {
+					tempTdp = strings.Split(splitData[i], "W")[0]
+				}
+				if strings.Contains(splitData[i], "slot") {
+					tempSlots = splitData[i]
+				}
+			}
+
+			subData := GPUSpecSubData{
+				ProductName: item.ChildText("td:nth-child(1)"),
+				BoostClock:  item.ChildText("td:nth-child(3)"),
+				Length:      tempLength,
+				Slots:       tempSlots,
+				TDP:         tempTdp,
+			}
+
+			fmt.Println(subData)
+
+			subDataList = append(subDataList, subData)
+		})
 	})
 
-	collector.Visit("https://www.techpowerup.com/gpu-specs/geforce-rtx-3060-12-gb.c3682")
-
-	fmt.Println(GPUType{
-		Name:       name,
-		Brand:      brand,
-		MemorySize: memorySize,
-		MemoryType: memoryType,
-		MemoryBus:  memoryBus,
-		Clock:      clock,
-		Power:      tdp,
-		Length:     length,
-		Slot:       slot,
-		Width:      width,
-	})
+	collector.Visit(link)
 
 	return GPUSpecTempStruct{
-		Name:       name,
-		Brand:      brand,
-		MemorySize: memorySize,
-		MemoryType: memoryType,
-		MemoryBus:  memoryBus,
-		Clock:      clock,
-		Power:      tdp,
-		Length:     length,
-		Slot:       slot,
-		Width:      width,
+		Name:        name,
+		Generation:  generation,
+		MemorySize:  memorySize,
+		MemoryType:  memoryType,
+		MemoryBus:   memoryBus,
+		Clock:       clock,
+		Power:       tdp,
+		Length:      length,
+		Slot:        slot,
+		Width:       width,
+		ProductSpec: subDataList,
 	}
 }
 
@@ -255,20 +265,32 @@ func getGPUHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getGPUCNPrice(link string, collector *colly.Collector) float64 {
+func getGPUCNPrice(link string, collector *colly.Collector) (float64, string) {
 	price := 0.0
+	gpuName := ""
 
 	collectorErrorHandle(collector, link)
 
-	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("em.price")), 64); err == nil {
+	collector.OnHTML(".product-detail-main", func(element *colly.HTMLElement) {
+		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".product-mallSales em.price")), 64); err == nil {
 			price = s
 			fmt.Println(price)
 		} else {
 			fmt.Println(err)
 		}
+		gpuName = extractGPUStringFromString(element.ChildText(".baseParam i.u-longTxt:first-child"))
+		fmt.Println(gpuName)
 	})
 
 	collector.Visit(link)
-	return price
+	return price, gpuName
+}
+
+func findGPUSpecLogic(specList []GPUSpecTempStruct, matchName string) GPUSpecTempStruct {
+	for i := range specList {
+		if specList[i].Name == matchName {
+			return specList[i]
+		}
+	}
+	return GPUSpecTempStruct{}
 }

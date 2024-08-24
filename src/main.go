@@ -12,9 +12,17 @@ import (
 )
 
 func main() {
-	// saveData()
-	// udpateCPULogic()
-	udpateGPULogic()
+	getGPUSpecLogic()
+	/*
+		getDataNum := "spec"
+		if getDataNum == "cpu" {
+			udpateCPULogic()
+		} else if getDataNum == "spec" {
+			getGPUSpecLogic()
+		} else if getDataNum == "gpu" {
+			udpateGPULogic()
+		}
+	*/
 }
 
 func readCsvFile(filePath string) [][]string {
@@ -33,7 +41,7 @@ func readCsvFile(filePath string) [][]string {
 	return records
 }
 
-func saveData(result any) {
+func saveData(result any, name string) {
 	fmt.Println("saveData started")
 	jsonData, err := json.Marshal(result)
 	if err != nil {
@@ -42,7 +50,7 @@ func saveData(result any) {
 	}
 
 	// Write JSON data to file
-	err = os.WriteFile("tmp/cpuData.json", jsonData, 0644)
+	err = os.WriteFile("tmp/"+name+".json", jsonData, 0644)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
@@ -71,7 +79,7 @@ func udpateCPULogic() {
 			cpuList = append(cpuList, cpuRecord)
 			count++
 			if count == len(recordList) {
-				saveData(cpuList)
+				saveData(cpuList, "cpuData")
 				ticker.Stop()
 				runtime.Goexit()
 			}
@@ -80,6 +88,36 @@ func udpateCPULogic() {
 
 	listLen := time.Duration((len(recordList) * 2) + 3)
 	time.Sleep(time.Second * listLen)
+}
+
+func getGPUSpecLogic() {
+	timeSet := 4000
+	timeDuration := time.Duration(timeSet) * time.Millisecond
+	ticker := time.NewTicker(timeDuration)
+
+	specdataList := pcData.GetGPUSpecDataList()
+	var specList []pcData.GPUSpecTempStruct
+
+	count := 0
+
+	go func() {
+		for {
+			<-ticker.C
+
+			spec := pcData.GetGPUSpec(specdataList[count].Name, specdataList[count].Link)
+			specList = append(specList, spec)
+			count++
+
+			if count == len(specdataList) {
+				saveData(specList, "gpuSpec")
+				ticker.Stop()
+				runtime.Goexit()
+			}
+		}
+	}()
+
+	listLen := time.Duration(timeSet * (len(specdataList) + 2))
+	time.Sleep(listLen * time.Millisecond)
 }
 
 func udpateGPULogic() {
@@ -91,11 +129,11 @@ func udpateGPULogic() {
 
 	for i := 1; i < len(dataList); i++ {
 		data := dataList[i]
-		record := pcData.GPURecord{Name: data[0], LinkCN: data[2], LinkUS: data[3], LinkHK: data[4]}
+		record := pcData.GPURecord{Name: data[1], Brand: data[0], LinkCN: data[2], LinkUS: data[3], LinkHK: data[4]}
 		recordList = append(recordList, record)
 	}
 
-	ticker := time.NewTicker(1500 * time.Millisecond)
+	ticker := time.NewTicker(3500 * time.Millisecond)
 	count := 0
 	totalLen := len(specdataList) + len(recordList)
 
@@ -110,14 +148,13 @@ func udpateGPULogic() {
 			} else {
 				newCount := count - len(specdataList)
 				tempData := recordList[newCount]
-				selectedSpec := findGPUSpecLogic(specList, tempData.Name)
-				gpuRecord := pcData.GetGPUData(selectedSpec, tempData.LinkUS, tempData.LinkCN, tempData.LinkHK)
+				gpuRecord := pcData.GetGPUData(specList, tempData.Brand, tempData.LinkUS, tempData.LinkCN, tempData.LinkHK)
 				gpuList = append(gpuList, gpuRecord)
 			}
 
 			count++
 			if count == totalLen {
-				saveData(gpuList)
+				saveData(gpuList, "gpuData")
 				ticker.Stop()
 				runtime.Goexit()
 			}
@@ -126,13 +163,4 @@ func udpateGPULogic() {
 
 	listLen := time.Duration((len(recordList) * 2) + 3)
 	time.Sleep(time.Second * listLen)
-}
-
-func findGPUSpecLogic(specList []pcData.GPUSpecTempStruct, matchName string) pcData.GPUSpecTempStruct {
-	for i := range specList {
-		if specList[i].Name == matchName {
-			return specList[i]
-		}
-	}
-	return pcData.GPUSpecTempStruct{}
 }

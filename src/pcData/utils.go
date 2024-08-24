@@ -3,6 +3,7 @@ package pcData
 import (
 	"regexp"
 	"strconv"
+	"strings"
 )
 
 func extractNumberFromString(str string) int {
@@ -24,5 +25,14 @@ func extractFloatStringFromString(str string) string {
 		result = matches[0]
 	}
 
+	return result
+}
+
+func extractGPUStringFromString(str string) string {
+	splitedStr := strings.Split(str, "NVIDIA GeForce")
+	result := ""
+	if len(splitedStr) > 1 {
+		result = splitedStr[1]
+	}
 	return result
 }
