@@ -12,17 +12,23 @@ import (
 )
 
 func main() {
-	getGPUSpecLogic()
-	/*
-		getDataNum := "spec"
-		if getDataNum == "cpu" {
-			udpateCPULogic()
-		} else if getDataNum == "spec" {
-			getGPUSpecLogic()
-		} else if getDataNum == "gpu" {
-			udpateGPULogic()
-		}
-	*/
+	const (
+		cpu         = "cpu"
+		gpu         = "gpu"
+		motherboard = "mb"
+		gpuSpec     = "gpuSpec"
+	)
+
+	getDataNum := motherboard
+	if getDataNum == "cpu" {
+		udpateCPULogic()
+	} else if getDataNum == "spec" {
+		getGPUSpecLogic()
+	} else if getDataNum == "gpu" {
+		udpateGPULogic()
+	} else if getDataNum == "mb" {
+		udpateMotherboardLogic()
+	}
 }
 
 func readCsvFile(filePath string) [][]string {
@@ -57,6 +63,9 @@ func saveData(result any, name string) {
 	}
 }
 
+/*
+CPU DATA
+*/
 func udpateCPULogic() {
 	dataList := readCsvFile("res/cpudata.csv")
 	var recordList []pcData.CPURecord
@@ -90,6 +99,9 @@ func udpateCPULogic() {
 	time.Sleep(time.Second * listLen)
 }
 
+/*
+GPU SPEC
+*/
 func getGPUSpecLogic() {
 	timeSet := 4000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
@@ -120,11 +132,21 @@ func getGPUSpecLogic() {
 	time.Sleep(listLen * time.Millisecond)
 }
 
+/*
+GPU DATA
+*/
 func udpateGPULogic() {
-	specdataList := pcData.GetGPUSpecDataList()
+	timeSet := 2000
+	timeDuration := time.Duration(timeSet) * time.Millisecond
+	ticker := time.NewTicker(timeDuration)
+
+	specdataFile, _ := os.ReadFile("tmp/gpuSpec.json")
+	var specdataList []pcData.GPUSpecTempStruct
+
+	_ = json.Unmarshal([]byte(specdataFile), &specdataList)
+
 	dataList := readCsvFile("res/gpudata.csv")
 	var recordList []pcData.GPURecord
-	var specList []pcData.GPUSpecTempStruct
 	var gpuList []pcData.GPUType
 
 	for i := 1; i < len(dataList); i++ {
@@ -133,28 +155,55 @@ func udpateGPULogic() {
 		recordList = append(recordList, record)
 	}
 
-	ticker := time.NewTicker(3500 * time.Millisecond)
 	count := 0
-	totalLen := len(specdataList) + len(recordList)
 
 	go func() {
 		for {
 			<-ticker.C
 
-			if count < len(specdataList) {
-				data := specdataList[count]
-				spec := pcData.GetGPUSpec(data.Name, data.Link)
-				specList = append(specList, spec)
-			} else {
-				newCount := count - len(specdataList)
-				tempData := recordList[newCount]
-				gpuRecord := pcData.GetGPUData(specList, tempData.Brand, tempData.LinkUS, tempData.LinkCN, tempData.LinkHK)
-				gpuList = append(gpuList, gpuRecord)
-			}
+			tempData := recordList[count]
+			gpuRecord := pcData.GetGPUData(specdataList, tempData.Brand, tempData.LinkUS, tempData.LinkCN, tempData.LinkHK)
+			gpuList = append(gpuList, gpuRecord)
 
 			count++
-			if count == totalLen {
+			if count == len(recordList) {
 				saveData(gpuList, "gpuData")
+				ticker.Stop()
+				runtime.Goexit()
+			}
+		}
+	}()
+
+	listLen := time.Duration(timeSet * (len(recordList) + 2))
+	time.Sleep(listLen * time.Millisecond)
+}
+
+/*
+MOTHERBOARD DATA
+*/
+func udpateMotherboardLogic() {
+	dataList := readCsvFile("res/motherboarddata.csv")
+	var recordList []pcData.MotherboardRecord
+	var motherboardList []pcData.MotherboardType
+
+	for i := 1; i < len(dataList); i++ {
+		data := dataList[i]
+		record := pcData.MotherboardRecord{Name: data[1], LinkCN: data[2], LinkUS: data[3], LinkHK: data[4]}
+		recordList = append(recordList, record)
+	}
+
+	ticker := time.NewTicker(1800 * time.Millisecond)
+	count := 0
+
+	go func() {
+		for {
+			<-ticker.C
+
+			motherboardRecord := pcData.GetMotherboardData(recordList[count].LinkCN, recordList[count].LinkUS, recordList[count].LinkHK)
+			motherboardList = append(motherboardList, motherboardRecord)
+			count++
+			if count == len(recordList) {
+				saveData(motherboardList, "motherboardData")
 				ticker.Stop()
 				runtime.Goexit()
 			}

@@ -17,9 +17,9 @@ type GPUSpecTempStruct struct {
 type GPUSpecSubData struct {
 	ProductName string
 	BoostClock  string
-	Length      string
+	Length      int
 	Slots       string
-	TDP         string
+	TDP         int
 }
 
 type GPUSpec struct {

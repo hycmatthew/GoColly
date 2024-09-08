@@ -34,5 +34,5 @@ func extractGPUStringFromString(str string) string {
 	if len(splitedStr) > 1 {
 		result = splitedStr[1]
 	}
-	return result
+	return strings.TrimSpace(result)
 }

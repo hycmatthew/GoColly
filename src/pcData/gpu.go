@@ -80,11 +80,9 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
-			// "https://nanoreview.net",
 			"nanoreview.net",
 			"www.newegg.com",
 			"newegg.com",
-			// "https://cu.manmanbuy.com",
 			"cu.manmanbuy.com",
 			"www.price.com.hk",
 			"price.com.hk",
@@ -96,20 +94,33 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 			"gpu-monkey.com",
 			"search.jd.com",
 			"jd.com",
-			"www.techpowerup.com",
-			"techpowerup.com",
 		),
 		colly.AllowURLRevisit(),
 	)
 
-	// usCollector := collector.Clone()
+	usCollector := collector.Clone()
 	cnCollector := collector.Clone()
 	// hkCollector := collector.Clone()
 
-	// GPUData.PriceUS, GPUData.Img = getGPUUSPrice(enLink, usCollector)
+	priceUs, gpuImg, specUpdate := getGPUUSPrice(enLink, usCollector)
 	priceCn, gpuName := getGPUCNPrice(cnLink, cnCollector)
 	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
 	specData := findGPUSpecLogic(specList, gpuName)
+
+	clockLogic := specData.Clock
+	if specUpdate.BoostClock != "" {
+		clockLogic = specUpdate.BoostClock
+	}
+
+	tdpLogic := specData.Power
+	if specUpdate.TDP > 0 {
+		tdpLogic = specUpdate.TDP
+	}
+
+	lengthLogic := specData.Length
+	if specUpdate.Length > 0 {
+		lengthLogic = specUpdate.Length
+	}
 
 	GPUData := GPUType{
 		Name:       specData.Name,
@@ -117,17 +128,18 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 		MemorySize: specData.MemorySize,
 		MemoryType: specData.MemoryType,
 		MemoryBus:  specData.MemoryBus,
-		Clock:      specData.Clock,
-		Power:      specData.Power,
-		Length:     specData.Length,
+		Clock:      clockLogic,
+		Power:      tdpLogic,
+		Length:     lengthLogic,
 		Slot:       specData.Slot,
 		Width:      specData.Width,
-		PriceUS:    0,
+		PriceUS:    priceUs,
 		PriceHK:    0,
 		PriceCN:    priceCn,
-		Img:        specData.Name,
+		Img:        gpuImg,
 	}
 
+	fmt.Println(GPUData)
 	return GPUData
 }
 
@@ -174,16 +186,16 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 
 		element.ForEach(".details.customboards tbody tr", func(i int, item *colly.HTMLElement) {
 			splitData := strings.Split(item.ChildText("td:nth-child(5)"), ",")
-			tempLength := ""
-			tempTdp := ""
+			tempLength := 0
+			tempTdp := 0
 			tempSlots := ""
 
 			for i := range splitData {
 				if strings.Contains(splitData[i], "mm") {
-					tempLength = strings.Split(splitData[i], "mm")[0]
+					tempLength = extractNumberFromString(strings.Split(splitData[i], "mm")[0])
 				}
 				if strings.Contains(splitData[i], "W") {
-					tempTdp = strings.Split(splitData[i], "W")[0]
+					tempTdp = extractNumberFromString(strings.Split(splitData[i], "W")[0])
 				}
 				if strings.Contains(splitData[i], "slot") {
 					tempSlots = splitData[i]
@@ -221,9 +233,10 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 	}
 }
 
-func getGPUUSPrice(link string, collector *colly.Collector) (float64, string) {
+func getGPUUSPrice(link string, collector *colly.Collector) (float64, string, GPUSpecSubData) {
 	imgLink := ""
 	price := 0.0
+	specSubData := GPUSpecSubData{}
 
 	collectorErrorHandle(collector, link)
 	fmt.Println(collector.AllowedDomains)
@@ -235,10 +248,21 @@ func getGPUUSPrice(link string, collector *colly.Collector) (float64, string) {
 			price = s
 			//fmt.Println(price)
 		}
+
+		element.ForEach(".product-details .tab-panes tr", func(i int, item *colly.HTMLElement) {
+			switch item.ChildText("th") {
+			case "Boost Clock":
+				specSubData.BoostClock = item.ChildText("dd")
+			case "Thermal Design Power":
+				specSubData.TDP = extractNumberFromString(item.ChildText("dd"))
+			case "Max GPU Length":
+				specSubData.Length = extractNumberFromString(item.ChildText("dd"))
+			}
+		})
 	})
 
 	collector.Visit(link)
-	return price, imgLink
+	return price, imgLink, specSubData
 }
 
 func getGPUHKPrice(link string, collector *colly.Collector) float64 {
@@ -278,7 +302,7 @@ func getGPUCNPrice(link string, collector *colly.Collector) (float64, string) {
 		} else {
 			fmt.Println(err)
 		}
-		gpuName = extractGPUStringFromString(element.ChildText(".baseParam i.u-longTxt:first-child"))
+		gpuName = extractGPUStringFromString(element.ChildText(".baseParam i:nth-child(2)"))
 		fmt.Println(gpuName)
 	})
 
