@@ -2,6 +2,7 @@ package pcData
 
 import (
 	"fmt"
+	"math"
 	"strconv"
 	"strings"
 
@@ -24,7 +25,8 @@ type GPUType struct {
 	MemorySize string
 	MemoryType string
 	MemoryBus  string
-	Clock      string
+	Clock      int
+	Score      int
 	Power      int
 	Length     int
 	Slot       string
@@ -35,7 +37,7 @@ type GPUType struct {
 	Img        string
 }
 
-func GetGPUSpec(name string, link string) GPUSpecTempStruct {
+func GetGPUSpec(name string, link string, score int) GPUSpecTempStruct {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
 
 	fmt.Println(fakeChrome.Headers.Get("user-agent"))
@@ -69,6 +71,7 @@ func GetGPUSpec(name string, link string) GPUSpecTempStruct {
 
 	GPUData := getGPUSpecData(link, collector)
 	GPUData.Name = name
+	GPUData.Score = score
 	return GPUData
 }
 
@@ -108,7 +111,7 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 	specData := findGPUSpecLogic(specList, gpuName)
 
 	clockLogic := specData.Clock
-	if specUpdate.BoostClock != "" {
+	if specUpdate.BoostClock != 0 {
 		clockLogic = specUpdate.BoostClock
 	}
 
@@ -122,12 +125,16 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 		lengthLogic = specUpdate.Length
 	}
 
+	newScore := newScoreLogic(clockLogic, specData.Clock, specData.Score)
+
 	GPUData := GPUType{
 		Name:       specData.Name,
 		Brand:      brand,
+		Generation: specData.Generation,
 		MemorySize: specData.MemorySize,
 		MemoryType: specData.MemoryType,
 		MemoryBus:  specData.MemoryBus,
+		Score:      newScore,
 		Clock:      clockLogic,
 		Power:      tdpLogic,
 		Length:     lengthLogic,
@@ -139,7 +146,6 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 		Img:        gpuImg,
 	}
 
-	fmt.Println(GPUData)
 	return GPUData
 }
 
@@ -149,7 +155,7 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 	memorySize := ""
 	memoryType := ""
 	memoryBus := ""
-	clock := ""
+	clock := 0
 	tdp := 0
 	length := 0
 	slot := ""
@@ -171,7 +177,7 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 			case "Memory Bus":
 				memoryBus = item.ChildText("dd")
 			case "Boost Clock":
-				clock = item.ChildText("dd")
+				clock = extractNumberFromString(item.ChildText("dd"))
 			case "TDP":
 				tdp = extractNumberFromString(item.ChildText("dd"))
 			case "Length":
@@ -204,14 +210,11 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 
 			subData := GPUSpecSubData{
 				ProductName: item.ChildText("td:nth-child(1)"),
-				BoostClock:  item.ChildText("td:nth-child(3)"),
+				BoostClock:  extractNumberFromString(item.ChildText("td:nth-child(3)")),
 				Length:      tempLength,
 				Slots:       tempSlots,
 				TDP:         tempTdp,
 			}
-
-			fmt.Println(subData)
-
 			subDataList = append(subDataList, subData)
 		})
 	})
@@ -252,7 +255,7 @@ func getGPUUSPrice(link string, collector *colly.Collector) (float64, string, GP
 		element.ForEach(".product-details .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Boost Clock":
-				specSubData.BoostClock = item.ChildText("dd")
+				specSubData.BoostClock = extractNumberFromString(item.ChildText("dd"))
 			case "Thermal Design Power":
 				specSubData.TDP = extractNumberFromString(item.ChildText("dd"))
 			case "Max GPU Length":
@@ -317,4 +320,10 @@ func findGPUSpecLogic(specList []GPUSpecTempStruct, matchName string) GPUSpecTem
 		}
 	}
 	return GPUSpecTempStruct{}
+}
+
+func newScoreLogic(boostClock int, baseClock int, score int) int {
+	clockFactor := float64(boostClock) / float64(baseClock)
+	updatedScore := float64(score) * (clockFactor * 0.6)
+	return int(math.Floor(updatedScore))
 }

@@ -19,10 +19,10 @@ func main() {
 		gpuSpec     = "gpuSpec"
 	)
 
-	getDataNum := cpu
+	getDataNum := gpuSpec
 	if getDataNum == "cpu" {
 		udpateCPULogic()
-	} else if getDataNum == "spec" {
+	} else if getDataNum == "gpuSpec" {
 		getGPUSpecLogic()
 	} else if getDataNum == "gpu" {
 		udpateGPULogic()
@@ -116,7 +116,7 @@ func getGPUSpecLogic() {
 		for {
 			<-ticker.C
 
-			spec := pcData.GetGPUSpec(specdataList[count].Name, specdataList[count].Link)
+			spec := pcData.GetGPUSpec(specdataList[count].Name, specdataList[count].Link, specdataList[count].Score)
 			specList = append(specList, spec)
 			count++
 
