@@ -1,6 +1,7 @@
 package pcData
 
 import (
+	"fmt"
 	"strings"
 )
 
@@ -60,10 +61,10 @@ func GetGPUSpecDataList() []GPUSpec {
 
 func filterByBrand(brand string, in []GPUSpecSubData) []GPUSpecSubData {
 	var out []GPUSpecSubData
-	for _, each := range in {
-		brandStr := strings.Split(each.ProductName, " ")[0]
+	for _, item := range in {
+		brandStr := strings.Split(item.ProductName, " ")[0]
 		if strings.ToLower(brandStr) == brand {
-			out = append(out, each)
+			out = append(out, item)
 		}
 	}
 	return out
@@ -108,6 +109,7 @@ func getBrandSeries(brand string) [][]string {
 		{"GAMING", "X", "TRIO"},
 		{"VENTUS", "2X"},
 		{"VENTUS", "3X"},
+		{"GAMING", "X", "SLIM"},
 	}
 
 	switch brand {
@@ -140,8 +142,9 @@ func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData
 	isOC := false
 	for _, item := range nameList {
 		if brandStr == "asus" {
-			first := item[0:]
+			first := item[0:1]
 			last := item[len(item)-1:]
+
 			if first == "O" && last == "G" {
 				isOC = true
 			}
@@ -150,9 +153,7 @@ func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData
 			isOC = true
 		}
 	}
-	if isOC {
-		nameList = append(nameList, "OC")
-	}
+
 	for i := range seriesList {
 		if isSubset(seriesList[i], nameList) {
 			matchedseries = seriesList[i]
@@ -161,27 +162,18 @@ func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData
 	var out GPUSpecSubData
 	tempSubdDataList := filterByBrand(brandStr, subDataList)
 	for i := range tempSubdDataList {
-		upperName := strings.ToUpper(subDataList[i].ProductName)
+		upperName := strings.ToUpper(tempSubdDataList[i].ProductName)
 		subDataNameList := strings.Split(upperName, " ")
 		subOC := strings.Contains(upperName, " OC")
+
 		if isSubset(matchedseries, subDataNameList) && isOC == subOC {
-			out = subDataList[i]
+			fmt.Println("matched sub data - ", tempSubdDataList[i])
+			out = tempSubdDataList[i]
 		}
+	}
+	if out.BoostClock == 0 {
+		fmt.Println(updatedName, " - cant find sub data - ", matchedseries)
+		fmt.Println(tempSubdDataList)
 	}
 	return out
-}
-
-func isSubset(arr1, arr2 []string) bool {
-	set := make(map[string]bool)
-
-	for _, str := range arr2 {
-		set[str] = true
-	}
-
-	for _, str := range arr1 {
-		if !set[str] {
-			return false
-		}
-	}
-	return true
 }

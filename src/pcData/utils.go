@@ -36,3 +36,18 @@ func extractGPUStringFromString(str string) string {
 	}
 	return strings.TrimSpace(result)
 }
+
+func isSubset(shortArr, longArr []string) bool {
+	set := make(map[string]bool)
+
+	for _, str := range longArr {
+		set[str] = true
+	}
+
+	for _, str := range shortArr {
+		if !set[str] {
+			return false
+		}
+	}
+	return true
+}

@@ -19,7 +19,7 @@ func main() {
 		gpuSpec     = "gpuSpec"
 	)
 
-	getDataNum := gpuSpec
+	getDataNum := gpu
 	if getDataNum == "cpu" {
 		udpateCPULogic()
 	} else if getDataNum == "gpuSpec" {

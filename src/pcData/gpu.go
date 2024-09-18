@@ -41,8 +41,6 @@ type GPUType struct {
 func GetGPUSpec(name string, link string, score int) GPUSpecTempStruct {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
 
-	fmt.Println(fakeChrome.Headers.Get("user-agent"))
-
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
@@ -79,7 +77,7 @@ func GetGPUSpec(name string, link string, score int) GPUSpecTempStruct {
 func GetGPUData(specList []GPUSpecTempStruct, name string, brand string, enLink string, cnLink string, hkLink string) GPUType {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
 
-	fmt.Println(fakeChrome.Headers.Get("user-agent"))
+	// fmt.Println(fakeChrome.Headers.Get("user-agent"))
 
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
@@ -244,7 +242,6 @@ func getGPUUSPrice(link string, collector *colly.Collector) (float64, string, GP
 	specSubData := GPUSpecSubData{}
 
 	collectorErrorHandle(collector, link)
-	fmt.Println(collector.AllowedDomains)
 
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
@@ -257,11 +254,11 @@ func getGPUUSPrice(link string, collector *colly.Collector) (float64, string, GP
 		element.ForEach(".product-details .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Boost Clock":
-				specSubData.BoostClock = extractNumberFromString(item.ChildText("dd"))
+				specSubData.BoostClock = extractNumberFromString(item.ChildText("td"))
 			case "Thermal Design Power":
-				specSubData.TDP = extractNumberFromString(item.ChildText("dd"))
+				specSubData.TDP = extractNumberFromString(item.ChildText("td"))
 			case "Max GPU Length":
-				specSubData.Length = extractNumberFromString(item.ChildText("dd"))
+				specSubData.Length = extractNumberFromString(item.ChildText("td"))
 			}
 		})
 	})
@@ -278,11 +275,10 @@ func getGPUHKPrice(link string, collector *colly.Collector) float64 {
 	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
 
 		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			fmt.Println(extractFloatStringFromString(element.ChildText("span")))
+			// fmt.Println(extractFloatStringFromString(element.ChildText("span")))
 			if price == 0.0 {
 				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
 					price = s
-					//fmt.Println(price)
 				} else {
 					fmt.Println(err)
 				}
@@ -303,12 +299,10 @@ func getGPUCNPrice(link string, collector *colly.Collector) (float64, string) {
 	collector.OnHTML(".product-detail-main", func(element *colly.HTMLElement) {
 		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".product-mallSales em.price")), 64); err == nil {
 			price = s
-			fmt.Println(price)
 		} else {
 			fmt.Println(err)
 		}
 		gpuName = extractGPUStringFromString(element.ChildText(".baseParam i:nth-child(2)"))
-		fmt.Println(gpuName)
 	})
 
 	collector.Visit(link)
@@ -316,12 +310,18 @@ func getGPUCNPrice(link string, collector *colly.Collector) (float64, string) {
 }
 
 func findGPUSpecLogic(specList []GPUSpecTempStruct, matchName string) GPUSpecTempStruct {
+	var tempData GPUSpecTempStruct
+	upperNameList := strings.Split(strings.ToUpper(matchName), " ")
+	seriesLength := 0
 	for i := range specList {
-		if specList[i].Series == matchName {
-			return specList[i]
+		seriesList := strings.Split(specList[i].Series, " ")
+
+		if isSubset(seriesList, upperNameList) && (len(seriesList) > seriesLength) {
+			tempData = specList[i]
+			seriesLength = len(seriesList)
 		}
 	}
-	return GPUSpecTempStruct{}
+	return tempData
 }
 
 func newScoreLogic(boostClock int, baseClock int, score int) int {
