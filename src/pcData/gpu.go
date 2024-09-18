@@ -21,6 +21,7 @@ type GPURecord struct {
 type GPUType struct {
 	Name       string
 	Brand      string
+	Series     string
 	Generation string
 	MemorySize string
 	MemoryType string
@@ -70,12 +71,12 @@ func GetGPUSpec(name string, link string, score int) GPUSpecTempStruct {
 	// hkCollector := collector.Clone()
 
 	GPUData := getGPUSpecData(link, collector)
-	GPUData.Name = name
+	GPUData.Series = name
 	GPUData.Score = score
 	return GPUData
 }
 
-func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLink string, hkLink string) GPUType {
+func GetGPUData(specList []GPUSpecTempStruct, name string, brand string, enLink string, cnLink string, hkLink string) GPUType {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
 
 	fmt.Println(fakeChrome.Headers.Get("user-agent"))
@@ -109,18 +110,19 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 	priceCn, gpuName := getGPUCNPrice(cnLink, cnCollector)
 	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
 	specData := findGPUSpecLogic(specList, gpuName)
+	updatedData := searchSubDataByName(name, brand, specData.ProductSpec)
 
-	clockLogic := specData.Clock
+	clockLogic := updatedData.BoostClock
 	if specUpdate.BoostClock != 0 {
 		clockLogic = specUpdate.BoostClock
 	}
 
-	tdpLogic := specData.Power
+	tdpLogic := updatedData.TDP
 	if specUpdate.TDP > 0 {
 		tdpLogic = specUpdate.TDP
 	}
 
-	lengthLogic := specData.Length
+	lengthLogic := updatedData.Length
 	if specUpdate.Length > 0 {
 		lengthLogic = specUpdate.Length
 	}
@@ -128,8 +130,9 @@ func GetGPUData(specList []GPUSpecTempStruct, brand string, enLink string, cnLin
 	newScore := newScoreLogic(clockLogic, specData.Clock, specData.Score)
 
 	GPUData := GPUType{
-		Name:       specData.Name,
+		Name:       name,
 		Brand:      brand,
+		Series:     specData.Series,
 		Generation: specData.Generation,
 		MemorySize: specData.MemorySize,
 		MemoryType: specData.MemoryType,
@@ -188,13 +191,12 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 				width = extractNumberFromString(item.ChildText("dd"))
 			}
 		})
-		name = element.ChildText(".card-head .title-h1")
 
 		element.ForEach(".details.customboards tbody tr", func(i int, item *colly.HTMLElement) {
 			splitData := strings.Split(item.ChildText("td:nth-child(5)"), ",")
-			tempLength := 0
-			tempTdp := 0
-			tempSlots := ""
+			tempLength := length
+			tempTdp := tdp
+			tempSlots := slot
 
 			for i := range splitData {
 				if strings.Contains(splitData[i], "mm") {
@@ -222,7 +224,7 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 	collector.Visit(link)
 
 	return GPUSpecTempStruct{
-		Name:        name,
+		Series:      name,
 		Generation:  generation,
 		MemorySize:  memorySize,
 		MemoryType:  memoryType,
@@ -315,7 +317,7 @@ func getGPUCNPrice(link string, collector *colly.Collector) (float64, string) {
 
 func findGPUSpecLogic(specList []GPUSpecTempStruct, matchName string) GPUSpecTempStruct {
 	for i := range specList {
-		if specList[i].Name == matchName {
+		if specList[i].Series == matchName {
 			return specList[i]
 		}
 	}

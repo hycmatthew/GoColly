@@ -162,7 +162,7 @@ func udpateGPULogic() {
 			<-ticker.C
 
 			tempData := recordList[count]
-			gpuRecord := pcData.GetGPUData(specdataList, tempData.Brand, tempData.LinkUS, tempData.LinkCN, tempData.LinkHK)
+			gpuRecord := pcData.GetGPUData(specdataList, tempData.Name, tempData.Brand, tempData.LinkUS, tempData.LinkCN, tempData.LinkHK)
 			gpuList = append(gpuList, gpuRecord)
 
 			count++

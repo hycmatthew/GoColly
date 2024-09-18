@@ -1,7 +1,11 @@
 package pcData
 
+import (
+	"strings"
+)
+
 type GPUSpecTempStruct struct {
-	Name        string
+	Series      string
 	Generation  string
 	MemorySize  string
 	MemoryType  string
@@ -54,35 +58,130 @@ func GetGPUSpecDataList() []GPUSpec {
 	return list
 }
 
-/*
-func getdGPUScore(generation string) int {
-	scoreRes := 0
-
-	scoreMap := []gpuScore{
-		{model: "RTX 4090", score: 36499},
-		{model: "RTX 4090 D", score: 34332},
-		{model: "RX 7900 XTX", score: 30621},
-		{model: "RTX 4080 SUPER", score: 28371},
-		{model: "RTX 4080", score: 28272},
-		{model: "RX 7900 XT", score: 26911},
-		{model: "RTX 4070 Ti SUPER", score: 24253},
-		{model: "RTX 4070 Ti", score: 22832},
-		{model: "RX 7900 GRE", score: 22344},
-		{model: "RTX 4070 SUPER", score: 20968},
-		{model: "RX 7800 XT", score: 20031},
-		{model: "RTX 4070", score: 17856},
-		{model: "RX 7700 XT", score: 16991},
-		{model: "RTX 4060 Ti", score: 13509},
-		{model: "RX 7600 XT", score: 11296},
-		{model: "RX 7600", score: 11014},
-		{model: "RTX 4060", score: 10620},
-	}
-
-	for _, v := range scoreMap {
-		if v.model == generation {
-			scoreRes = v.score
+func filterByBrand(brand string, in []GPUSpecSubData) []GPUSpecSubData {
+	var out []GPUSpecSubData
+	for _, each := range in {
+		brandStr := strings.Split(each.ProductName, " ")[0]
+		if strings.ToLower(brandStr) == brand {
+			out = append(out, each)
 		}
 	}
-	return scoreRes
+	return out
 }
-*/
+
+func getBrandSeries(brand string) [][]string {
+	asusSeries := [][]string{
+		{"DUAL", "V2"},
+		{"DUAL", "WHITE"},
+		{"MEGALODON"},
+		{"PRIME"},
+		{"STRIX"},
+		{"TUF"},
+	}
+	colorfulSeries := [][]string{
+		{"iGame", "Advanced"},
+		{"iGame", "Ultra", "DUO"},
+		{"iGame", "Ultra"},
+		{"Tomahawk", "Deluxe"},
+		{"Tomahawk", "DUO"},
+	}
+	galaxySeries := [][]string{
+		{"Click"},
+		{"BOOMSTAR"},
+		{"EX"},
+		{"EX", "White"},
+		{"METALTOP"},
+	}
+
+	gigabyteSeries := [][]string{
+		{"AORUS", "ELITE"},
+		{"AERO"},
+		{"EAGLE"},
+		{"GAMING"},
+		{"WINDFORCE"},
+	}
+
+	msiSeries := [][]string{
+		{"GAMING"},
+		{"GAMING", "TRIO"},
+		{"GAMING", "X"},
+		{"GAMING", "X", "TRIO"},
+		{"VENTUS", "2X"},
+		{"VENTUS", "3X"},
+	}
+
+	switch brand {
+	case "asus":
+		return asusSeries
+	case "colorful":
+		return colorfulSeries
+	case "galaxy":
+		return galaxySeries
+	case "gigabyte":
+		return gigabyteSeries
+	default:
+		return msiSeries
+	}
+
+}
+
+func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData) GPUSpecSubData {
+	brandStr := strings.ToLower(brand)
+	seriesList := getBrandSeries(brandStr)
+	for i := range seriesList {
+		for j := range seriesList[i] {
+			seriesList[i][j] = strings.ToUpper(seriesList[i][j])
+		}
+	}
+
+	updatedName := strings.ToUpper(strings.Replace(name, "-", " ", -1))
+	nameList := strings.Split(updatedName, " ")
+	var matchedseries []string
+	isOC := false
+	for _, item := range nameList {
+		if brandStr == "asus" {
+			first := item[0:]
+			last := item[len(item)-1:]
+			if first == "O" && last == "G" {
+				isOC = true
+			}
+		}
+		if item == "OC" {
+			isOC = true
+		}
+	}
+	if isOC {
+		nameList = append(nameList, "OC")
+	}
+	for i := range seriesList {
+		if isSubset(seriesList[i], nameList) {
+			matchedseries = seriesList[i]
+		}
+	}
+	var out GPUSpecSubData
+	tempSubdDataList := filterByBrand(brandStr, subDataList)
+	for i := range tempSubdDataList {
+		upperName := strings.ToUpper(subDataList[i].ProductName)
+		subDataNameList := strings.Split(upperName, " ")
+		subOC := strings.Contains(upperName, " OC")
+		if isSubset(matchedseries, subDataNameList) && isOC == subOC {
+			out = subDataList[i]
+		}
+	}
+	return out
+}
+
+func isSubset(arr1, arr2 []string) bool {
+	set := make(map[string]bool)
+
+	for _, str := range arr2 {
+		set[str] = true
+	}
+
+	for _, str := range arr1 {
+		if !set[str] {
+			return false
+		}
+	}
+	return true
+}
