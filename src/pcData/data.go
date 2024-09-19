@@ -167,13 +167,12 @@ func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData
 		subOC := strings.Contains(upperName, " OC")
 
 		if isSubset(matchedseries, subDataNameList) && isOC == subOC {
-			fmt.Println("matched sub data - ", tempSubdDataList[i])
+			fmt.Println("Matched sub data - ", tempSubdDataList[i])
 			out = tempSubdDataList[i]
 		}
 	}
 	if out.BoostClock == 0 {
 		fmt.Println(updatedName, " - cant find sub data - ", matchedseries)
-		fmt.Println(tempSubdDataList)
 	}
 	return out
 }
