@@ -9,14 +9,14 @@ import (
 	"github.com/imroc/req/v3"
 )
 
-type RamRecord struct {
+type SsdRecord struct {
 	Name   string
 	LinkCN string
 	LinkHK string
 	LinkUS string
 }
 
-type RamType struct {
+type SsdType struct {
 	Brand    string
 	Series   string
 	Model    string
@@ -32,7 +32,7 @@ type RamType struct {
 	Img      string
 }
 
-func GetRamData(cnLink string, enLink string, hkLink string) RamType {
+func GetSsdData(cnLink string, enLink string, hkLink string) SsdType {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -63,14 +63,14 @@ func GetRamData(cnLink string, enLink string, hkLink string) RamType {
 	cnCollector := collector.Clone()
 	// hkCollector := collector.Clone()
 
-	ramData := getRamUSPrice(enLink, usCollector)
-	ramData.PriceCN = getRamCNPrice(cnLink, cnCollector)
-	// ramData.PriceHK = getRamHKPrice(hkLink, hkCollector)
+	ramData := getSsdUSPrice(enLink, usCollector)
+	ramData.PriceCN = getSsdCNPrice(cnLink, cnCollector)
+	// ramData.PriceHK = getSsdHKPrice(hkLink, hkCollector)
 
 	return ramData
 }
 
-func getRamUSPrice(link string, collector *colly.Collector) RamType {
+func getSsdUSPrice(link string, collector *colly.Collector) SsdType {
 	brand := ""
 	series := ""
 	model := ""
@@ -119,7 +119,7 @@ func getRamUSPrice(link string, collector *colly.Collector) RamType {
 
 	collector.Visit(link)
 
-	return RamType{
+	return SsdType{
 		Brand:    brand,
 		Series:   series,
 		Model:    model,
@@ -136,7 +136,7 @@ func getRamUSPrice(link string, collector *colly.Collector) RamType {
 	}
 }
 
-func getRamHKPrice(link string, collector *colly.Collector) float64 {
+func getSsdHKPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
@@ -160,7 +160,7 @@ func getRamHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getRamCNPrice(link string, collector *colly.Collector) float64 {
+func getSsdCNPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
