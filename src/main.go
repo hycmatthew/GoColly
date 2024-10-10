@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"go-colly-lib/src/pcData"
+	"io"
 	"log"
 	"os"
 	"runtime"
@@ -16,18 +17,30 @@ func main() {
 		cpu         = "cpu"
 		gpu         = "gpu"
 		motherboard = "mb"
-		gpuSpec     = "gpuSpec"
+		ram         = "ram"
 	)
 
-	getDataNum := motherboard
-	if getDataNum == "cpu" {
-		udpateCPULogic()
-	} else if getDataNum == "gpuSpec" {
-		getGPUSpecLogic()
-	} else if getDataNum == "gpu" {
-		udpateGPULogic()
-	} else if getDataNum == "mb" {
-		udpateMotherboardLogic()
+	getDataName := ram
+	isUpdateSpec := true
+
+	if isUpdateSpec {
+		if getDataName == "gpu" {
+			updateGPUSpecLogic()
+		} else {
+			updateSpecLogic(getDataName)
+		}
+	} else {
+		if getDataName == "cpu" {
+			updatePriceLogic(getDataName)
+		} else if getDataName == "gpuSpec" {
+			updatePriceLogic(getDataName)
+		} else if getDataName == "gpu" {
+			updatePriceLogic(getDataName)
+		} else if getDataName == "mb" {
+			udpateMotherboardLogic()
+		} else if getDataName == "ram" {
+			updatePriceLogic(getDataName)
+		}
 	}
 }
 
@@ -63,119 +76,57 @@ func saveData(result any, name string) {
 	}
 }
 
-/*
-CPU DATA
-*/
-func udpateCPULogic() {
-	dataList := readCsvFile("res/cpudata.csv")
-	var recordList []pcData.CPURecord
-	var cpuList []pcData.CPUType
-
-	for i := 1; i < len(dataList); i++ {
-		data := dataList[i]
-		record := pcData.CPURecord{Name: data[0], LinkSpec: data[1], LinkCN: data[2], LinkUS: data[3], LinkHK: data[4]}
-		recordList = append(recordList, record)
+func saveSpecData(result any, name string) {
+	fmt.Println("save spec started!")
+	jsonData, err := json.Marshal(result)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
 	}
 
-	ticker := time.NewTicker(1500 * time.Millisecond)
-	count := 0
-
-	go func() {
-		for {
-			<-ticker.C
-
-			cpuRecord := pcData.GetCPUData(recordList[count].LinkSpec, recordList[count].LinkUS, recordList[count].LinkCN, recordList[count].LinkHK)
-			cpuList = append(cpuList, cpuRecord)
-			count++
-			if count == len(recordList) {
-				saveData(cpuList, "cpuData")
-				ticker.Stop()
-				runtime.Goexit()
-			}
-		}
-	}()
-
-	listLen := time.Duration((len(recordList) * 2) + 3)
-	time.Sleep(time.Second * listLen)
+	// Write JSON data to file
+	err = os.WriteFile("tmp/spec/"+name+"Spec.json", jsonData, 0644)
+	if err != nil {
+		fmt.Println("Error:", err)
+		return
+	}
 }
 
 /*
 GPU SPEC
 */
-func getGPUSpecLogic() {
-	timeSet := 4000
+func updateGPUSpecLogic() {
+	timeSet := 3000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
-	specdataList := pcData.GetGPUSpecDataList()
-	var specList []pcData.GPUSpecTempStruct
-
-	count := 0
-
-	go func() {
-		for {
-			<-ticker.C
-
-			spec := pcData.GetGPUSpec(specdataList[count].Name, specdataList[count].Link, specdataList[count].Score)
-			specList = append(specList, spec)
-			count++
-
-			if count == len(specdataList) {
-				saveData(specList, "gpuSpec")
-				ticker.Stop()
-				runtime.Goexit()
-			}
-		}
-	}()
-
-	listLen := time.Duration(timeSet * (len(specdataList) + 2))
-	time.Sleep(listLen * time.Millisecond)
-}
-
-/*
-GPU DATA
-*/
-func udpateGPULogic() {
-	timeSet := 2000
-	timeDuration := time.Duration(timeSet) * time.Millisecond
-	ticker := time.NewTicker(timeDuration)
-
-	specdataFile, _ := os.ReadFile("tmp/gpuSpec.json")
-	var specdataList []pcData.GPUSpecTempStruct
-
-	_ = json.Unmarshal([]byte(specdataFile), &specdataList)
-
-	dataList := readCsvFile("res/gpudata.csv")
-	var recordList []pcData.GPURecord
-	var gpuList []pcData.GPUType
+	dataList := readCsvFile("res/gpuspecdata.csv")
+	var recordList []pcData.GPUScoreData
 
 	for i := 1; i < len(dataList); i++ {
 		data := dataList[i]
-		record := pcData.GPURecord{Name: data[1], Brand: data[0], LinkCN: data[2], LinkUS: data[3], LinkHK: data[4]}
+		record := pcData.GPUScoreData{Name: data[0], ScoreLink: data[1], DataLink: data[2]}
 		recordList = append(recordList, record)
 	}
 
 	count := 0
-
+	var specList []pcData.GPUSpec
 	go func() {
 		for {
 			<-ticker.C
-
-			tempData := recordList[count]
-			gpuRecord := pcData.GetGPUData(specdataList, tempData.Name, tempData.Brand, tempData.LinkUS, tempData.LinkCN, tempData.LinkHK)
-			gpuList = append(gpuList, gpuRecord)
-
+			gpuRecord := pcData.GetGPUSpec(recordList[count])
+			specList = append(specList, gpuRecord)
 			count++
 			if count == len(recordList) {
-				saveData(gpuList, "gpuData")
+				saveSpecData(specList, "gpu")
 				ticker.Stop()
 				runtime.Goexit()
 			}
 		}
 	}()
 
-	listLen := time.Duration(timeSet * (len(recordList) + 2))
-	time.Sleep(listLen * time.Millisecond)
+	listLen := time.Duration(timeSet * (len(recordList) + 3))
+	time.Sleep(time.Second * listLen)
 }
 
 /*
@@ -215,4 +166,129 @@ func udpateMotherboardLogic() {
 
 	listLen := time.Duration(timeSet * (len(recordList) + 3))
 	time.Sleep(time.Second * listLen)
+}
+
+/*
+RAM DATA
+*/
+func updateSpecLogic(name string) {
+	timeSet := 3000
+	timeDuration := time.Duration(timeSet) * time.Millisecond
+	ticker := time.NewTicker(timeDuration)
+
+	dataList := readCsvFile("res/" + name + "data.csv")
+	var recordList []pcData.LinkRecord
+
+	for i := 1; i < len(dataList); i++ {
+		data := dataList[i]
+		record := pcData.LinkRecord{Brand: data[0], Name: data[1], PriceCN: data[2], LinkSpec: data[3], LinkCN: data[4], LinkUS: data[5], LinkHK: data[6]}
+		recordList = append(recordList, record)
+	}
+
+	count := 0
+	switch name {
+	case "cpu":
+		var specList []pcData.CPUSpec
+		go func() {
+			for {
+				<-ticker.C
+				cpuRecord := pcData.GetCPUSpec(recordList[count])
+				specList = append(specList, cpuRecord)
+				count++
+				if count == len(recordList) {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+	case "mb":
+		var specList []pcData.GPUSpec
+		go func() {
+			for {
+				<-ticker.C
+				gpuRecord := pcData.GetGPUSpec(recordList[count])
+				specList = append(specList, gpuRecord)
+				count++
+				if count == len(recordList) {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+	case "ram":
+		var specList []pcData.RamSpec
+		go func() {
+			for {
+				<-ticker.C
+				ramRecord := pcData.GetRamSpec(recordList[count])
+				specList = append(specList, ramRecord)
+				count++
+				if count == 1 {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+	default:
+		var specList []pcData.RamSpec
+		go func() {
+			for {
+				<-ticker.C
+				ramRecord := pcData.GetRamSpec(recordList[count])
+				specList = append(specList, ramRecord)
+				count++
+				if count == 1 {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+	}
+
+	listLen := time.Duration(timeSet * (len(recordList) + 3))
+	time.Sleep(time.Second * listLen)
+}
+
+func updatePriceLogic(name string) {
+	specFile, _ := os.Open("tmp/spec/" + name + "Spec.json")
+	byteValue, _ := io.ReadAll(specFile)
+
+	switch name {
+	case "cpu":
+	case "ram":
+		var specList []pcData.RamSpec
+		var ramList []pcData.RamType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		for i := 0; i < len(specList); i++ {
+			spec := specList[i]
+			record := pcData.GetRamData(spec)
+			ramList = append(ramList, record)
+
+			if i == 1 {
+				saveData(ramList, name+"Data")
+			}
+		}
+
+	default:
+		var specList []pcData.RamSpec
+		var ramList []pcData.RamType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		for i := 1; i < len(specList); i++ {
+			spec := specList[i]
+			record := pcData.GetRamData(spec)
+			ramList = append(ramList, record)
+
+			if i == 1 {
+				saveData(ramList, name+"Data")
+			}
+		}
+	}
 }

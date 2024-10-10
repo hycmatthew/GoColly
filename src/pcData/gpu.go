@@ -10,12 +10,35 @@ import (
 	"github.com/imroc/req/v3"
 )
 
-type GPURecord struct {
-	Name   string
-	Brand  string
-	LinkCN string
-	LinkHK string
-	LinkUS string
+type GPUScoreData struct {
+	Name      string
+	DataLink  string
+	ScoreLink string
+}
+
+type GPUSpec struct {
+	Code        string
+	Series      string
+	Generation  string
+	MemorySize  string
+	MemoryType  string
+	MemoryBus   string
+	Clock       int
+	TimeSpy     int
+	FrameScore  float64
+	Power       int
+	Length      int
+	Slot        string
+	Width       int
+	ProductSpec []GPUSpecSubData
+}
+
+type GPUSpecSubData struct {
+	ProductName string
+	BoostClock  int
+	Length      int
+	Slots       string
+	TDP         int
 }
 
 type GPUType struct {
@@ -27,7 +50,8 @@ type GPUType struct {
 	MemoryType string
 	MemoryBus  string
 	Clock      int
-	Score      int
+	TimeSpy    int
+	FrameScore float64
 	Power      int
 	Length     int
 	Slot       string
@@ -38,46 +62,31 @@ type GPUType struct {
 	Img        string
 }
 
-func GetGPUSpec(name string, link string, score int) GPUSpecTempStruct {
+func GetGPUSpec(record GPUScoreData) GPUSpec {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
 
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
-			// "https://nanoreview.net",
 			"nanoreview.net",
 			"www.newegg.com",
 			"newegg.com",
-			// "https://cu.manmanbuy.com",
-			"cu.manmanbuy.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-			"www.gpu-monkey.com",
-			"gpu-monkey.com",
-			"search.jd.com",
-			"jd.com",
 			"www.techpowerup.com",
 			"techpowerup.com",
 		),
 		colly.AllowURLRevisit(),
 	)
 
-	// hkCollector := collector.Clone()
+	scoreCollector := collector.Clone()
 
-	GPUData := getGPUSpecData(link, collector)
-	GPUData.Series = name
-	GPUData.Score = score
+	GPUData := getGPUSpecData(record.DataLink, collector)
+	GPUData.TimeSpy, GPUData.FrameScore = getGPUScoreData(record.ScoreLink, scoreCollector)
+	GPUData.Code = record.Name
 	return GPUData
 }
 
-func GetGPUData(specList []GPUSpecTempStruct, name string, brand string, enLink string, cnLink string, hkLink string) GPUType {
+func GetGPUData(specList []GPUSpec, name string, brand string, enLink string, cnLink string, hkLink string) GPUType {
 	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
-
-	// fmt.Println(fakeChrome.Headers.Get("user-agent"))
 
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
@@ -85,17 +94,12 @@ func GetGPUData(specList []GPUSpecTempStruct, name string, brand string, enLink 
 			"nanoreview.net",
 			"www.newegg.com",
 			"newegg.com",
-			"cu.manmanbuy.com",
 			"www.price.com.hk",
 			"price.com.hk",
 			"detail.zol.com.cn",
 			"zol.com.cn",
 			"product.pconline.com.cn",
 			"pconline.com.cn",
-			"www.gpu-monkey.com",
-			"gpu-monkey.com",
-			"search.jd.com",
-			"jd.com",
 		),
 		colly.AllowURLRevisit(),
 	)
@@ -125,7 +129,8 @@ func GetGPUData(specList []GPUSpecTempStruct, name string, brand string, enLink 
 		lengthLogic = specUpdate.Length
 	}
 
-	newScore := newScoreLogic(clockLogic, specData.Clock, specData.Score)
+	newTimeSpy := int(newScoreLogic(clockLogic, specData.Clock, float64(specData.TimeSpy)))
+	newFrameScore := newScoreLogic(clockLogic, specData.Clock, specData.FrameScore)
 
 	GPUData := GPUType{
 		Name:       name,
@@ -135,7 +140,8 @@ func GetGPUData(specList []GPUSpecTempStruct, name string, brand string, enLink 
 		MemorySize: specData.MemorySize,
 		MemoryType: specData.MemoryType,
 		MemoryBus:  specData.MemoryBus,
-		Score:      newScore,
+		TimeSpy:    newTimeSpy,
+		FrameScore: newFrameScore,
 		Clock:      clockLogic,
 		Power:      tdpLogic,
 		Length:     lengthLogic,
@@ -150,7 +156,7 @@ func GetGPUData(specList []GPUSpecTempStruct, name string, brand string, enLink 
 	return GPUData
 }
 
-func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
+func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 	name := ""
 	generation := ""
 	memorySize := ""
@@ -221,7 +227,7 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 
 	collector.Visit(link)
 
-	return GPUSpecTempStruct{
+	return GPUSpec{
 		Series:      name,
 		Generation:  generation,
 		MemorySize:  memorySize,
@@ -234,6 +240,26 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpecTempStruct {
 		Width:       width,
 		ProductSpec: subDataList,
 	}
+}
+
+func getGPUScoreData(link string, collector *colly.Collector) (int, float64) {
+	timespy := 0
+	framescore := 0.0
+
+	collectorErrorHandle(collector, link)
+
+	collector.OnHTML("#the-app", func(element *colly.HTMLElement) {
+		element.ForEach(".two-columns-item .score-bar", func(i int, item *colly.HTMLElement) {
+			fmt.Println(item.ChildText(".score-bar-name"))
+			switch item.ChildText(".score-bar-name") {
+			case "Time Spy Score":
+				timespy = extractNumberFromString(item.ChildText(".score-bar-result-number"))
+			case "Aztec Ruins High Tier 4K (FPS)":
+				framescore, _ = strconv.ParseFloat(extractFloatStringFromString(item.ChildText(".score-bar-result-number")), 64)
+			}
+		})
+	})
+	return timespy, framescore
 }
 
 func getGPUUSPrice(link string, collector *colly.Collector) (float64, string, GPUSpecSubData) {
@@ -309,8 +335,8 @@ func getGPUCNPrice(link string, collector *colly.Collector) (float64, string) {
 	return price, gpuName
 }
 
-func findGPUSpecLogic(specList []GPUSpecTempStruct, matchName string) GPUSpecTempStruct {
-	var tempData GPUSpecTempStruct
+func findGPUSpecLogic(specList []GPUSpec, matchName string) GPUSpec {
+	var tempData GPUSpec
 	upperNameList := strings.Split(strings.ToUpper(matchName), " ")
 	seriesLength := 0
 	for i := range specList {
@@ -324,8 +350,126 @@ func findGPUSpecLogic(specList []GPUSpecTempStruct, matchName string) GPUSpecTem
 	return tempData
 }
 
-func newScoreLogic(boostClock int, baseClock int, score int) int {
+func newScoreLogic(boostClock int, baseClock int, score float64) float64 {
 	clockFactor := float64(boostClock) / float64(baseClock)
-	updatedScore := float64(score) * (clockFactor * 0.6)
-	return int(math.Floor(updatedScore))
+	updatedScore := score * (clockFactor * 0.6)
+	return math.Floor(updatedScore)
+}
+
+func filterByBrand(brand string, in []GPUSpecSubData) []GPUSpecSubData {
+	var out []GPUSpecSubData
+	for _, item := range in {
+		brandStr := strings.Split(item.ProductName, " ")[0]
+		if strings.ToLower(brandStr) == brand {
+			out = append(out, item)
+		}
+	}
+	return out
+}
+
+func getBrandSeries(brand string) [][]string {
+	asusSeries := [][]string{
+		{"DUAL", "V2"},
+		{"DUAL", "WHITE"},
+		{"MEGALODON"},
+		{"PRIME"},
+		{"STRIX"},
+		{"TUF"},
+	}
+	colorfulSeries := [][]string{
+		{"iGame", "Advanced"},
+		{"iGame", "Ultra", "DUO"},
+		{"iGame", "Ultra"},
+		{"Tomahawk", "Deluxe"},
+		{"Tomahawk", "DUO"},
+	}
+	galaxySeries := [][]string{
+		{"Click"},
+		{"BOOMSTAR"},
+		{"EX"},
+		{"EX", "White"},
+		{"METALTOP"},
+	}
+
+	gigabyteSeries := [][]string{
+		{"AORUS", "ELITE"},
+		{"AERO"},
+		{"EAGLE"},
+		{"GAMING"},
+		{"WINDFORCE"},
+	}
+
+	msiSeries := [][]string{
+		{"GAMING"},
+		{"GAMING", "TRIO"},
+		{"GAMING", "X"},
+		{"GAMING", "X", "TRIO"},
+		{"VENTUS", "2X"},
+		{"VENTUS", "3X"},
+		{"GAMING", "X", "SLIM"},
+	}
+
+	switch brand {
+	case "asus":
+		return asusSeries
+	case "colorful":
+		return colorfulSeries
+	case "galaxy":
+		return galaxySeries
+	case "gigabyte":
+		return gigabyteSeries
+	default:
+		return msiSeries
+	}
+
+}
+
+func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData) GPUSpecSubData {
+	brandStr := strings.ToLower(brand)
+	seriesList := getBrandSeries(brandStr)
+	for i := range seriesList {
+		for j := range seriesList[i] {
+			seriesList[i][j] = strings.ToUpper(seriesList[i][j])
+		}
+	}
+
+	updatedName := strings.ToUpper(strings.Replace(name, "-", " ", -1))
+	nameList := strings.Split(updatedName, " ")
+	var matchedseries []string
+	isOC := false
+	for _, item := range nameList {
+		if brandStr == "asus" {
+			first := item[0:1]
+			last := item[len(item)-1:]
+
+			if first == "O" && last == "G" {
+				isOC = true
+			}
+		}
+		if item == "OC" {
+			isOC = true
+		}
+	}
+
+	for i := range seriesList {
+		if isSubset(seriesList[i], nameList) {
+			matchedseries = seriesList[i]
+		}
+	}
+	var out GPUSpecSubData
+	tempSubdDataList := filterByBrand(brandStr, subDataList)
+	for i := range tempSubdDataList {
+		upperName := strings.ToUpper(tempSubdDataList[i].ProductName)
+		subDataNameList := strings.Split(upperName, " ")
+		subOC := strings.Contains(upperName, " OC")
+
+		if isSubset(matchedseries, subDataNameList) && isOC == subOC {
+			fmt.Println("Matched sub data - ", tempSubdDataList[i])
+			out = tempSubdDataList[i]
+		}
+	}
+	if out.BoostClock == 0 {
+		fmt.Println(updatedName, " - cant find sub data - ", matchedseries)
+	}
+	return out
 }

@@ -9,12 +9,21 @@ import (
 	"github.com/imroc/req/v3"
 )
 
-type CPURecord struct {
-	Name     string
-	LinkSpec string
-	LinkCN   string
-	LinkHK   string
-	LinkUS   string
+type CPUSpec struct {
+	Code            string
+	Name            string
+	Brand           string
+	Socket          string
+	Cores           int
+	Threads         int
+	GPU             string
+	SingleCoreScore int
+	MultiCoreScore  int
+	Power           int
+	PriceUS         string
+	PriceHK         string
+	PriceCN         string
+	Img             string
 }
 
 type CPUType struct {
@@ -33,19 +42,16 @@ type CPUType struct {
 	Img             string
 }
 
-func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) CPUType {
+func GetCPUSpec(record LinkRecord) CPUSpec {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
-			// "https://nanoreview.net",
 			"nanoreview.net",
 			"www.newegg.com",
 			"newegg.com",
-			// "https://cu.manmanbuy.com",
-			"cu.manmanbuy.com",
 			"www.price.com.hk",
 			"price.com.hk",
 			"detail.zol.com.cn",
@@ -60,19 +66,16 @@ func GetCPUData(specLink string, enLink string, cnLink string, hkLink string) CP
 		Transport: fakeChrome.Transport,
 	})
 
-	usCollector := collector.Clone()
-	cnCollector := collector.Clone()
-	// hkCollector := collector.Clone()
-
-	cpuData := getCPUSpecData(specLink, collector)
-	cpuData.PriceUS, cpuData.Img = getCPUUSPrice(enLink, usCollector)
-	cpuData.PriceCN = getCPUCNPrice(cnLink, cnCollector)
+	cpuData := getCPUSpecData(record.LinkSpec, collector)
+	cpuData.Code = record.Name
+	cpuData.PriceCN = record.LinkCN
+	cpuData.PriceUS = record.LinkUS
+	cpuData.PriceHK = record.LinkHK
 	// cpuData.PriceHK = getCPUHKPrice(hkLink, hkCollector)
-
 	return cpuData
 }
 
-func getCPUSpecData(link string, collector *colly.Collector) CPUType {
+func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 	name := ""
 	brand := ""
 	socket := ""
@@ -119,22 +122,11 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUType {
 		})
 
 		name = element.ChildText(".card-head .title-h1")
-		/*
-			fmt.Println("record logic!!")
-			fmt.Println(brand)
-			fmt.Println(cores)
-			fmt.Println(thread)
-			fmt.Println(socket)
-			fmt.Println(singleCoreScore)
-			fmt.Println(muitiCoreScore)
-			fmt.Println(gpu)
-			fmt.Println(tdp)
-		*/
 	})
 
 	collector.Visit(link)
 
-	return CPUType{
+	return CPUSpec{
 		Name:            name,
 		Brand:           brand,
 		Cores:           cores,
@@ -213,7 +205,6 @@ func collectorErrorHandle(collector *colly.Collector, link string) {
 
 	collector.OnRequest(func(r *colly.Request) {
 		// USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
-
 		r.Headers.Set("Connection", "keep-alive")
 		r.Headers.Set("Accept", "*/*")
 	})
