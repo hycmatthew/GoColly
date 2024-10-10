@@ -30,17 +30,7 @@ func main() {
 			updateSpecLogic(getDataName)
 		}
 	} else {
-		if getDataName == "cpu" {
-			updatePriceLogic(getDataName)
-		} else if getDataName == "gpuSpec" {
-			updatePriceLogic(getDataName)
-		} else if getDataName == "gpu" {
-			updatePriceLogic(getDataName)
-		} else if getDataName == "mb" {
-			udpateMotherboardLogic()
-		} else if getDataName == "ram" {
-			updatePriceLogic(getDataName)
-		}
+		updatePriceLogic(getDataName)
 	}
 }
 
@@ -130,45 +120,6 @@ func updateGPUSpecLogic() {
 }
 
 /*
-MOTHERBOARD DATA
-*/
-func udpateMotherboardLogic() {
-	timeSet := 2200
-	timeDuration := time.Duration(timeSet) * time.Millisecond
-	ticker := time.NewTicker(timeDuration)
-
-	dataList := readCsvFile("res/motherboarddata.csv")
-	var recordList []pcData.MotherboardRecord
-	var motherboardList []pcData.MotherboardType
-
-	for i := 1; i < len(dataList); i++ {
-		data := dataList[i]
-		record := pcData.MotherboardRecord{Name: data[1], Spec: data[2], LinkCN: data[3], LinkUS: data[4], LinkHK: data[5]}
-		recordList = append(recordList, record)
-	}
-
-	count := 0
-
-	go func() {
-		for {
-			<-ticker.C
-
-			motherboardRecord := pcData.GetMotherboardData(recordList[count].Name, recordList[count].Spec, recordList[count].LinkCN, recordList[count].LinkUS, recordList[count].LinkHK)
-			motherboardList = append(motherboardList, motherboardRecord)
-			count++
-			if count == len(recordList) {
-				saveData(motherboardList, "motherboardData")
-				ticker.Stop()
-				runtime.Goexit()
-			}
-		}
-	}()
-
-	listLen := time.Duration(timeSet * (len(recordList) + 3))
-	time.Sleep(time.Second * listLen)
-}
-
-/*
 RAM DATA
 */
 func updateSpecLogic(name string) {
@@ -203,12 +154,12 @@ func updateSpecLogic(name string) {
 			}
 		}()
 	case "mb":
-		var specList []pcData.GPUSpec
+		var specList []pcData.MotherboardSpec
 		go func() {
 			for {
 				<-ticker.C
-				gpuRecord := pcData.GetGPUSpec(recordList[count])
-				specList = append(specList, gpuRecord)
+				mbRecord := pcData.GetMotherboardSpec(recordList[count])
+				specList = append(specList, mbRecord)
 				count++
 				if count == len(recordList) {
 					saveSpecData(specList, name)

@@ -36,9 +36,9 @@ type CPUType struct {
 	SingleCoreScore int
 	MultiCoreScore  int
 	Power           int
-	PriceUS         float64
-	PriceHK         float64
-	PriceCN         float64
+	PriceUS         string
+	PriceHK         string
+	PriceCN         string
 	Img             string
 }
 

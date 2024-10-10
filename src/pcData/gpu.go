@@ -56,9 +56,9 @@ type GPUType struct {
 	Length     int
 	Slot       string
 	Width      int
-	PriceUS    float64
-	PriceHK    float64
-	PriceCN    float64
+	PriceUS    string
+	PriceHK    string
+	PriceCN    string
 	Img        string
 }
 
@@ -148,7 +148,7 @@ func GetGPUData(specList []GPUSpec, name string, brand string, enLink string, cn
 		Slot:       specData.Slot,
 		Width:      specData.Width,
 		PriceUS:    priceUs,
-		PriceHK:    0,
+		PriceHK:    "",
 		PriceCN:    priceCn,
 		Img:        gpuImg,
 	}
@@ -262,9 +262,9 @@ func getGPUScoreData(link string, collector *colly.Collector) (int, float64) {
 	return timespy, framescore
 }
 
-func getGPUUSPrice(link string, collector *colly.Collector) (float64, string, GPUSpecSubData) {
+func getGPUUSPrice(link string, collector *colly.Collector) (string, string, GPUSpecSubData) {
 	imgLink := ""
-	price := 0.0
+	price := ""
 	specSubData := GPUSpecSubData{}
 
 	collectorErrorHandle(collector, link)
@@ -272,11 +272,7 @@ func getGPUUSPrice(link string, collector *colly.Collector) (float64, string, GP
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
 
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
-			price = s
-			//fmt.Println(price)
-		}
-
+		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
 		element.ForEach(".product-details .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Boost Clock":
@@ -316,18 +312,14 @@ func getGPUHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getGPUCNPrice(link string, collector *colly.Collector) (float64, string) {
-	price := 0.0
+func getGPUCNPrice(link string, collector *colly.Collector) (string, string) {
+	price := ""
 	gpuName := ""
 
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML(".product-detail-main", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".product-mallSales em.price")), 64); err == nil {
-			price = s
-		} else {
-			fmt.Println(err)
-		}
+		price = extractFloatStringFromString(element.ChildText(".product-mallSales em.price"))
 		gpuName = extractGPUStringFromString(element.ChildText(".baseParam i:nth-child(2)"))
 	})
 

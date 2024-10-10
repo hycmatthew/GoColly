@@ -10,12 +10,27 @@ import (
 	"github.com/imroc/req/v3"
 )
 
-type MotherboardRecord struct {
-	Name   string
-	Spec   string
-	LinkCN string
-	LinkHK string
-	LinkUS string
+type MotherboardSpec struct {
+	Code       string
+	Name       string
+	Brand      string
+	Socket     string
+	Chipset    string
+	RamSlot    int
+	RamType    string
+	RamSupport string
+	RamMax     int
+	Pcie16Slot int
+	Pcie4Slot  int
+	Pcie1Slot  int
+	M2Slot     int
+	SataSlot   int
+	FormFactor string
+	Wireless   bool
+	PriceUS    string
+	PriceHK    string
+	PriceCN    string
+	Img        string
 }
 
 type MotherboardType struct {
@@ -34,25 +49,21 @@ type MotherboardType struct {
 	SataSlot   int
 	FormFactor string
 	Wireless   bool
-	PriceUS    float64
-	PriceHK    float64
-	PriceCN    float64
+	PriceUS    string
+	PriceHK    string
+	PriceCN    string
 	Img        string
 }
 
-func GetMotherboardData(name string, spec string, cnLink string, enLink string, hkLink string) MotherboardType {
+func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
-			// "https://nanoreview.net",
-			"nanoreview.net",
 			"www.newegg.com",
 			"newegg.com",
-			// "https://cu.manmanbuy.com",
-			"cu.manmanbuy.com",
 			"www.price.com.hk",
 			"price.com.hk",
 			"detail.zol.com.cn",
@@ -69,23 +80,19 @@ func GetMotherboardData(name string, spec string, cnLink string, enLink string, 
 	})
 
 	specCollector := collector.Clone()
-	usCollector := collector.Clone()
-	cnCollector := collector.Clone()
-	// hkCollector := collector.Clone()
 
-	motherboardData := getMotherboardSpec(spec, specCollector)
-	motherboardData.PriceUS = getMotherboardUSPrice(enLink, usCollector)
-	motherboardData.PriceCN = getMotherboardCNPrice(cnLink, cnCollector)
-	// motherboardData.PriceHK = getMotherboardHKPrice(hkLink, hkCollector)
+	motherboardData := getMotherboardSpec(record.LinkSpec, specCollector)
+	motherboardData.PriceUS = record.LinkUS
+	motherboardData.PriceCN = record.LinkCN
 
-	if strings.Contains(strings.ToUpper(name), "WIFI") {
+	if strings.Contains(strings.ToUpper(record.Name), "WIFI") {
 		motherboardData.Wireless = true
 	}
 
 	return motherboardData
 }
 
-func getMotherboardSpec(link string, collector *colly.Collector) MotherboardType {
+func getMotherboardSpec(link string, collector *colly.Collector) MotherboardSpec {
 	name := ""
 	brand := ""
 	socket := ""
@@ -100,17 +107,14 @@ func getMotherboardSpec(link string, collector *colly.Collector) MotherboardType
 	m2Slot := 0
 	sataSlot := 0
 	formFactor := ""
-	price := 0.0
+	price := ""
 	imgLink := ""
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		imgLink = element.ChildAttr(".tns-inner img", "src")
 
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
-			price = s
-		}
-
+		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
 		ramType = element.ChildText(".table-striped .badge-primary")
 		var ramSupportList []string
 
@@ -157,30 +161,8 @@ func getMotherboardSpec(link string, collector *colly.Collector) MotherboardType
 	})
 
 	collector.Visit(link)
-	/*
-		fmt.Println(MotherboardType{
-			Name:       name,
-			Brand:      brand,
-			Socket:     socket,
-			Chipset:    chipset,
-			RamSlot:    ramSlot,
-			RamType:    ramType,
-			RamSupport: ramSupport,
-			RamMax:     ramMax,
-			Pcie16Slot: pcie16Slot,
-			Pcie4Slot:  pcie4Slot,
-			Pcie1Slot:  pcie1Slot,
-			M2Slot:     m2Slot,
-			SataSlot:   sataSlot,
-			FormFactor: formFactor,
-			Wireless:   wireless,
-			PriceUS:    price,
-			PriceHK:    0,
-			PriceCN:    0,
-			Img:        imgLink,
-		})
-	*/
-	return MotherboardType{
+
+	return MotherboardSpec{
 		Name:       name,
 		Brand:      brand,
 		Socket:     socket,
@@ -197,8 +179,8 @@ func getMotherboardSpec(link string, collector *colly.Collector) MotherboardType
 		FormFactor: formFactor,
 		Wireless:   false,
 		PriceUS:    price,
-		PriceHK:    0,
-		PriceCN:    0,
+		PriceHK:    "",
+		PriceCN:    "",
 		Img:        imgLink,
 	}
 }

@@ -49,9 +49,9 @@ type RamType struct {
 	Voltage  string
 	Channel  string
 	Profile  string
-	PriceUS  float64
-	PriceHK  float64
-	PriceCN  float64
+	PriceUS  string
+	PriceHK  string
+	PriceCN  string
 	Img      string
 }
 
@@ -81,7 +81,6 @@ func GetRamSpec(record LinkRecord) RamSpec {
 
 func GetRamData(spec RamSpec) RamType {
 	cnPrice := getRamCNPrice(spec.PriceCN)
-	usPrice, _ := strconv.ParseFloat(spec.PriceUS, 64)
 
 	return RamType{
 		Brand:    spec.Brand,
@@ -93,8 +92,8 @@ func GetRamData(spec RamSpec) RamType {
 		Voltage:  spec.Voltage,
 		Channel:  spec.Channel,
 		Profile:  spec.Profile,
-		PriceUS:  usPrice,
-		PriceHK:  0.0,
+		PriceUS:  spec.PriceUS,
+		PriceHK:  "",
 		PriceCN:  cnPrice,
 		Img:      spec.Img,
 	}
@@ -185,9 +184,8 @@ func getRamHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getRamCNPrice(link string) float64 {
+func getRamCNPrice(link string) string {
 	fmt.Println(link)
-	price := 0.0
 	opts := append(chromedp.DefaultExecAllocatorOptions[:],
 		chromedp.Flag("headless", false),
 	)
@@ -217,6 +215,5 @@ func getRamCNPrice(link string) float64 {
 		fmt.Println(err)
 	}
 	fmt.Println(cnPrice)
-
-	return price
+	return cnPrice
 }
