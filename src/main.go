@@ -16,11 +16,11 @@ func main() {
 	const (
 		cpu         = "cpu"
 		gpu         = "gpu"
-		motherboard = "mb"
+		motherboard = "motherboard"
 		ram         = "ram"
 	)
 
-	getDataName := ram
+	getDataName := motherboard
 	isUpdateSpec := true
 
 	if isUpdateSpec {
@@ -51,7 +51,7 @@ func readCsvFile(filePath string) [][]string {
 }
 
 func saveData(result any, name string) {
-	fmt.Println("saveData started")
+	fmt.Println("save Data started!")
 	jsonData, err := json.Marshal(result)
 	if err != nil {
 		fmt.Println("Error:", err)
@@ -59,7 +59,7 @@ func saveData(result any, name string) {
 	}
 
 	// Write JSON data to file
-	err = os.WriteFile("tmp/"+name+".json", jsonData, 0644)
+	err = os.WriteFile("tmp/"+name+"Data.json", jsonData, 0644)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
@@ -86,7 +86,7 @@ func saveSpecData(result any, name string) {
 GPU SPEC
 */
 func updateGPUSpecLogic() {
-	timeSet := 3000
+	timeSet := 5000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
@@ -120,8 +120,42 @@ func updateGPUSpecLogic() {
 }
 
 /*
-RAM DATA
+GPU PRICE
 */
+func updateGPUPriceLogic() {
+	timeSet := 3000
+	timeDuration := time.Duration(timeSet) * time.Millisecond
+	ticker := time.NewTicker(timeDuration)
+
+	dataList := readCsvFile("res/gpuspecdata.csv")
+	var recordList []pcData.GPUScoreData
+
+	for i := 1; i < len(dataList); i++ {
+		data := dataList[i]
+		record := pcData.GPUScoreData{Name: data[0], ScoreLink: data[1], DataLink: data[2]}
+		recordList = append(recordList, record)
+	}
+
+	count := 0
+	var specList []pcData.GPUSpec
+	go func() {
+		for {
+			<-ticker.C
+			gpuRecord := pcData.GetGPUSpec(recordList[count])
+			specList = append(specList, gpuRecord)
+			count++
+			if count == len(recordList) {
+				saveSpecData(specList, "gpu")
+				ticker.Stop()
+				runtime.Goexit()
+			}
+		}
+	}()
+
+	listLen := time.Duration(timeSet * (len(recordList) + 3))
+	time.Sleep(time.Second * listLen)
+}
+
 func updateSpecLogic(name string) {
 	timeSet := 3000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
@@ -153,7 +187,7 @@ func updateSpecLogic(name string) {
 				}
 			}
 		}()
-	case "mb":
+	case "motherboard":
 		var specList []pcData.MotherboardSpec
 		go func() {
 			for {
@@ -210,6 +244,30 @@ func updatePriceLogic(name string) {
 
 	switch name {
 	case "cpu":
+	case "gpu":
+		var specList []pcData.GPUSpec
+		var gpuList []pcData.GPUType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		dataList := readCsvFile("res/" + name + "data.csv")
+		var recordList []pcData.GPURecordData
+
+		for i := 1; i < len(dataList); i++ {
+			data := dataList[i]
+			record := pcData.GPURecordData{Brand: data[0], Name: data[1], PriceCN: data[2], LinkCN: data[3], LinkUS: data[4], LinkHK: data[5]}
+			recordList = append(recordList, record)
+		}
+
+		for i := 0; i < len(recordList); i++ {
+			data := recordList[i]
+			record := pcData.GetGPUData(specList, data)
+			gpuList = append(gpuList, record)
+
+			if i == 1 {
+				saveData(gpuList, name)
+			}
+		}
 	case "ram":
 		var specList []pcData.RamSpec
 		var ramList []pcData.RamType
@@ -222,10 +280,9 @@ func updatePriceLogic(name string) {
 			ramList = append(ramList, record)
 
 			if i == 1 {
-				saveData(ramList, name+"Data")
+				saveData(ramList, name)
 			}
 		}
-
 	default:
 		var specList []pcData.RamSpec
 		var ramList []pcData.RamType
@@ -238,7 +295,7 @@ func updatePriceLogic(name string) {
 			ramList = append(ramList, record)
 
 			if i == 1 {
-				saveData(ramList, name+"Data")
+				saveData(ramList, name)
 			}
 		}
 	}

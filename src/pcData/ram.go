@@ -12,16 +12,6 @@ import (
 	"github.com/imroc/req/v3"
 )
 
-type LinkRecord struct {
-	Brand    string
-	Name     string
-	PriceCN  string
-	LinkSpec string
-	LinkCN   string
-	LinkUS   string
-	LinkHK   string
-}
-
 type RamSpec struct {
 	Code     string `json:"code"`
 	Brand    string `json:"brand"`

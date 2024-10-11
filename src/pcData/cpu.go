@@ -3,11 +3,20 @@ package pcData
 import (
 	"fmt"
 	"net/http"
-	"strconv"
 
 	"github.com/gocolly/colly/v2"
 	"github.com/imroc/req/v3"
 )
+
+type LinkRecord struct {
+	Brand    string
+	Name     string
+	PriceCN  string
+	LinkSpec string
+	LinkCN   string
+	LinkUS   string
+	LinkHK   string
+}
 
 type CPUSpec struct {
 	Code            string
@@ -43,6 +52,32 @@ type CPUType struct {
 }
 
 func GetCPUSpec(record LinkRecord) CPUSpec {
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+
+	cpuData := getCPUSpecData(record.LinkSpec, collector)
+	cpuData.Code = record.Name
+	cpuData.PriceCN = record.LinkCN
+	cpuData.PriceUS = record.LinkUS
+	cpuData.PriceHK = record.LinkHK
+	// cpuData.PriceHK = getCPUHKPrice(hkLink, hkCollector)
+	return cpuData
+}
+
+func GetCPUData(spec CPUSpec) CPUType {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -65,14 +100,27 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 	collector.SetClient(&http.Client{
 		Transport: fakeChrome.Transport,
 	})
+	cnCollector := collector.Clone()
+	usCollector := collector.Clone()
 
-	cpuData := getCPUSpecData(record.LinkSpec, collector)
-	cpuData.Code = record.Name
-	cpuData.PriceCN = record.LinkCN
-	cpuData.PriceUS = record.LinkUS
-	cpuData.PriceHK = record.LinkHK
-	// cpuData.PriceHK = getCPUHKPrice(hkLink, hkCollector)
-	return cpuData
+	priceCN := getCPUCNPrice(spec.PriceCN, cnCollector)
+	PriceUS, tempImg := getCPUUSPrice(spec.PriceCN, usCollector)
+
+	return CPUType{
+		Name:            spec.Name,
+		Brand:           spec.Brand,
+		Cores:           spec.Cores,
+		Threads:         spec.Threads,
+		Socket:          spec.Socket,
+		GPU:             spec.GPU,
+		SingleCoreScore: spec.SingleCoreScore,
+		MultiCoreScore:  spec.MultiCoreScore,
+		Power:           spec.Power,
+		PriceCN:         priceCN,
+		PriceUS:         PriceUS,
+		PriceHK:         "",
+		Img:             tempImg,
+	}
 }
 
 func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
@@ -139,42 +187,29 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 	}
 }
 
-func getCPUUSPrice(link string, collector *colly.Collector) (float64, string) {
-	imgLink := ""
-	price := 0.0
+func getCPUUSPrice(link string, collector *colly.Collector) (string, string) {
+	imgLink, price := "", ""
 
 	collectorErrorHandle(collector, link)
 	fmt.Println(collector.AllowedDomains)
 
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
-			price = s
-			//fmt.Println(price)
-		}
+		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
 	})
-
 	collector.Visit(link)
 	return price, imgLink
 }
 
-func getCPUHKPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
+func getCPUHKPrice(link string, collector *colly.Collector) string {
+	price := ""
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
 
 		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			fmt.Println(extractFloatStringFromString(element.ChildText("span")))
-			if price == 0.0 {
-				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
-					price = s
-					//fmt.Println(price)
-				} else {
-					fmt.Println(err)
-				}
+			if price == "" {
+				price = extractFloatStringFromString(element.ChildText("span"))
 			}
 		})
 	})
@@ -183,18 +218,13 @@ func getCPUHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getCPUCNPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
+func getCPUCNPrice(link string, collector *colly.Collector) string {
+	price := ""
 
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("em.price")), 64); err == nil {
-			price = s
-			// fmt.Println(price)
-		} else {
-			fmt.Println(err)
-		}
+		price = extractFloatStringFromString(element.ChildText("em.price"))
 	})
 
 	collector.Visit(link)
@@ -202,7 +232,6 @@ func getCPUCNPrice(link string, collector *colly.Collector) float64 {
 }
 
 func collectorErrorHandle(collector *colly.Collector, link string) {
-
 	collector.OnRequest(func(r *colly.Request) {
 		// USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
 		r.Headers.Set("Connection", "keep-alive")

@@ -81,7 +81,7 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 
 	specCollector := collector.Clone()
 
-	motherboardData := getMotherboardSpec(record.LinkSpec, specCollector)
+	motherboardData := getMotherboardSpecData(record.LinkSpec, specCollector)
 	motherboardData.PriceUS = record.LinkUS
 	motherboardData.PriceCN = record.LinkCN
 
@@ -92,7 +92,7 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 	return motherboardData
 }
 
-func getMotherboardSpec(link string, collector *colly.Collector) MotherboardSpec {
+func getMotherboardSpecData(link string, collector *colly.Collector) MotherboardSpec {
 	name := ""
 	brand := ""
 	socket := ""

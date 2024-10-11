@@ -3,6 +3,7 @@ package pcData
 import (
 	"fmt"
 	"math"
+	"net/http"
 	"strconv"
 	"strings"
 
@@ -14,6 +15,15 @@ type GPUScoreData struct {
 	Name      string
 	DataLink  string
 	ScoreLink string
+}
+
+type GPURecordData struct {
+	Brand   string
+	Name    string
+	PriceCN string
+	LinkCN  string
+	LinkUS  string
+	LinkHK  string
 }
 
 type GPUSpec struct {
@@ -63,7 +73,7 @@ type GPUType struct {
 }
 
 func GetGPUSpec(record GPUScoreData) GPUSpec {
-	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
@@ -77,17 +87,19 @@ func GetGPUSpec(record GPUScoreData) GPUSpec {
 		colly.AllowURLRevisit(),
 	)
 
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
 	scoreCollector := collector.Clone()
 
-	GPUData := getGPUSpecData(record.DataLink, collector)
-	GPUData.TimeSpy, GPUData.FrameScore = getGPUScoreData(record.ScoreLink, scoreCollector)
-	GPUData.Code = record.Name
-	return GPUData
+	GPUSpec := getGPUSpecData(record.DataLink, collector)
+	GPUSpec.TimeSpy, GPUSpec.FrameScore = getGPUScoreData(record.ScoreLink, scoreCollector)
+	GPUSpec.Code = record.Name
+	return GPUSpec
 }
 
-func GetGPUData(specList []GPUSpec, name string, brand string, enLink string, cnLink string, hkLink string) GPUType {
-	fakeChrome := req.C().ImpersonateChrome().SetUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36").SetTLSFingerprintChrome()
-
+func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
@@ -108,11 +120,11 @@ func GetGPUData(specList []GPUSpec, name string, brand string, enLink string, cn
 	cnCollector := collector.Clone()
 	// hkCollector := collector.Clone()
 
-	priceUs, gpuImg, specUpdate := getGPUUSPrice(enLink, usCollector)
-	priceCn, gpuName := getGPUCNPrice(cnLink, cnCollector)
+	priceUs, gpuImg, specUpdate := getGPUUSPrice(record.LinkUS, usCollector)
+	priceCn, gpuName := getGPUCNPrice(record.LinkCN, cnCollector)
 	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
 	specData := findGPUSpecLogic(specList, gpuName)
-	updatedData := searchSubDataByName(name, brand, specData.ProductSpec)
+	updatedData := searchSubDataByName(record.Name, record.Brand, specData.ProductSpec)
 
 	clockLogic := updatedData.BoostClock
 	if specUpdate.BoostClock != 0 {
@@ -133,8 +145,8 @@ func GetGPUData(specList []GPUSpec, name string, brand string, enLink string, cn
 	newFrameScore := newScoreLogic(clockLogic, specData.Clock, specData.FrameScore)
 
 	GPUData := GPUType{
-		Name:       name,
-		Brand:      brand,
+		Name:       record.Name,
+		Brand:      record.Brand,
 		Series:     specData.Series,
 		Generation: specData.Generation,
 		MemorySize: specData.MemorySize,
@@ -245,12 +257,10 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 func getGPUScoreData(link string, collector *colly.Collector) (int, float64) {
 	timespy := 0
 	framescore := 0.0
-
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML("#the-app", func(element *colly.HTMLElement) {
 		element.ForEach(".two-columns-item .score-bar", func(i int, item *colly.HTMLElement) {
-			fmt.Println(item.ChildText(".score-bar-name"))
 			switch item.ChildText(".score-bar-name") {
 			case "Time Spy Score":
 				timespy = extractNumberFromString(item.ChildText(".score-bar-result-number"))
@@ -259,6 +269,7 @@ func getGPUScoreData(link string, collector *colly.Collector) (int, float64) {
 			}
 		})
 	})
+	collector.Visit(link)
 	return timespy, framescore
 }
 
