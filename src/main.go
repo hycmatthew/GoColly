@@ -18,10 +18,11 @@ func main() {
 		gpu         = "gpu"
 		motherboard = "motherboard"
 		ram         = "ram"
+		ssd         = "ssd"
 	)
 
-	getDataName := gpu
-	isUpdateSpec := false
+	getDataName := ssd
+	isUpdateSpec := true
 
 	if isUpdateSpec {
 		if getDataName == "gpu" {
@@ -172,6 +173,21 @@ func updateSpecLogic(name string) {
 				<-ticker.C
 				ramRecord := pcData.GetRamSpec(recordList[count])
 				specList = append(specList, ramRecord)
+				count++
+				if count == len(recordList) {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+	case "ssd":
+		var specList []pcData.SSDSpec
+		go func() {
+			for {
+				<-ticker.C
+				ssdRecord := pcData.GetSSDSpec(recordList[count])
+				specList = append(specList, ssdRecord)
 				count++
 				if count == len(recordList) {
 					saveSpecData(specList, name)

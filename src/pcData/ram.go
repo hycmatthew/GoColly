@@ -13,20 +13,23 @@ import (
 )
 
 type RamSpec struct {
-	Code     string `json:"code"`
-	Brand    string `json:"brand"`
-	Series   string `json:"series"`
-	Model    string `json:"model"`
-	Capacity string `json:"capacity"`
-	Speed    string `json:"speed"`
-	Timing   string `json:"timing"`
-	Voltage  string `json:"voltage"`
-	Channel  string `json:"channel"`
-	Profile  string `json:"profile"`
-	PriceUS  string `json:"priceUS"`
-	PriceHK  string `json:"priceHK"`
-	PriceCN  string `json:"priceCN"`
-	Img      string `json:"img"`
+	Code     string
+	Brand    string
+	Series   string
+	Model    string
+	Capacity string
+	Speed    string
+	Timing   string
+	Voltage  string
+	Channel  string
+	Profile  string
+	PriceUS  string
+	PriceHK  string
+	PriceCN  string
+	LinkUS   string
+	LinkHK   string
+	LinkCN   string
+	Img      string
 }
 
 type RamType struct {
@@ -42,6 +45,9 @@ type RamType struct {
 	PriceUS  string
 	PriceHK  string
 	PriceCN  string
+	LinkUS   string
+	LinkHK   string
+	LinkCN   string
 	Img      string
 }
 

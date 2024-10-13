@@ -11,17 +11,15 @@ import (
 	"github.com/imroc/req/v3"
 )
 
-type SSDSpec struct {
+type PowerSpec struct {
 	Code        string
 	Brand       string
 	ReleaseDate string
-	Model       string
-	Capacity    string
-	MaxRead     int
-	MaxWrite    int
-	Interface   string
-	FlashType   string
-	FormFactor  string
+	Wattage     string
+	Size        string
+	Modular     string
+	Efficiency  string
+	Length      string
 	PriceUS     string
 	PriceHK     string
 	PriceCN     string
@@ -31,16 +29,14 @@ type SSDSpec struct {
 	Img         string
 }
 
-type SSDType struct {
+type PowerType struct {
 	Brand       string
 	ReleaseDate string
-	Model       string
-	Capacity    string
-	MaxRead     int
-	MaxWrite    int
-	Interface   string
-	FlashType   string
-	FormFactor  string
+	Wattage     string
+	Size        string
+	Modular     string
+	Efficiency  string
+	Length      string
 	PriceUS     string
 	PriceHK     string
 	PriceCN     string
@@ -50,7 +46,7 @@ type SSDType struct {
 	Img         string
 }
 
-func GetSSDSpec(record LinkRecord) SSDSpec {
+func GetPowerSpec(record LinkRecord) PowerSpec {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -74,7 +70,7 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 
 	specCollector := collector.Clone()
 
-	ssdData := getSSDSpecData(record.LinkSpec, specCollector)
+	ssdData := getPowerSpecData(record.LinkSpec, specCollector)
 	ssdData.Code = record.Name
 	ssdData.Brand = record.Brand
 	ssdData.LinkCN = record.LinkCN
@@ -88,15 +84,13 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 	return ssdData
 }
 
-func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
+func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 	releaseDate := ""
-	model := ""
-	capacity := ""
-	maxRead := 0
-	maxWrite := 0
-	ssdInterface := ""
-	flashType := ""
-	formFactor := ""
+	wattage := ""
+	size := ""
+	modular := ""
+	efficiency := ""
+	length := ""
 	price := ""
 	usLink := ""
 	imgLink := ""
@@ -127,44 +121,38 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
-			case "Model":
-				model = item.ChildTexts("td")[1]
 			case "Release Date":
 				releaseDate = item.ChildText("td span")
 			case "Capacity":
-				capacity = item.ChildTexts("td")[1]
+				wattage = item.ChildTexts("td")[1]
 			case "Interface":
-				ssdInterface = item.ChildTexts("td")[1]
+				size = item.ChildTexts("td")[1]
 			case "Form Factor":
-				formFactor = item.ChildTexts("td")[1]
+				modular = item.ChildTexts("td")[1]
 			case "NAND Flash Type":
-				flashType = item.ChildTexts("td")[1]
+				efficiency = item.ChildTexts("td")[1]
 			case "Max Sequential Read":
-				maxRead = extractNumberFromString(item.ChildTexts("td")[1])
-			case "Max Sequential Write":
-				maxWrite = extractNumberFromString(item.ChildTexts("td")[1])
+				length = item.ChildTexts("td")[1]
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return SSDSpec{
+	return PowerSpec{
 		ReleaseDate: releaseDate,
-		Model:       model,
-		Capacity:    capacity,
-		MaxRead:     maxRead,
-		MaxWrite:    maxWrite,
-		Interface:   ssdInterface,
-		FlashType:   flashType,
-		FormFactor:  formFactor,
+		Wattage:     wattage,
+		Size:        size,
+		Modular:     modular,
+		Efficiency:  efficiency,
+		Length:      length,
 		PriceUS:     price,
 		LinkUS:      usLink,
 		Img:         imgLink,
 	}
 }
 
-func getSSDUSPrice(link string, collector *colly.Collector) float64 {
+func getPowerUSPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
@@ -178,7 +166,7 @@ func getSSDUSPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getSSDHKPrice(link string, collector *colly.Collector) float64 {
+func getPowerHKPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
@@ -202,7 +190,7 @@ func getSSDHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getSSDCNPrice(link string, collector *colly.Collector) float64 {
+func getPowerCNPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
