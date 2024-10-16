@@ -19,9 +19,11 @@ func main() {
 		motherboard = "motherboard"
 		ram         = "ram"
 		ssd         = "ssd"
+		power       = "power"
+		cooler      = "cooler"
 	)
 
-	getDataName := ssd
+	getDataName := cooler
 	isUpdateSpec := true
 
 	if isUpdateSpec {
@@ -196,6 +198,36 @@ func updateSpecLogic(name string) {
 				}
 			}
 		}()
+	case "power":
+		var specList []pcData.PowerSpec
+		go func() {
+			for {
+				<-ticker.C
+				powerRecord := pcData.GetPowerSpec(recordList[count])
+				specList = append(specList, powerRecord)
+				count++
+				if count == len(recordList) {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+	case "cooler":
+		var specList []pcData.CoolerSpec
+		go func() {
+			for {
+				<-ticker.C
+				coolerRecord := pcData.GetCoolerSpec(recordList[count])
+				specList = append(specList, coolerRecord)
+				count++
+				if count == len(recordList) {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
 	default:
 		var specList []pcData.RamSpec
 		go func() {
@@ -297,6 +329,29 @@ func updatePriceLogic(name string) {
 
 				if count == len(specList) {
 					saveData(ramList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+
+		listLen := time.Duration(timeSet * (len(specList) + 3))
+		time.Sleep(time.Second * listLen)
+	case "ssd":
+		var specList []pcData.SSDSpec
+		var ssdList []pcData.SSDType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		go func() {
+			for {
+				<-ticker.C
+				spec := specList[count]
+				record := pcData.GetSSDData(spec)
+				ssdList = append(ssdList, record)
+
+				if count == len(specList) {
+					saveData(ssdList, name)
 					ticker.Stop()
 					runtime.Goexit()
 				}

@@ -11,42 +11,42 @@ import (
 	"github.com/imroc/req/v3"
 )
 
-type PowerSpec struct {
-	Code        string
-	Brand       string
-	ReleaseDate string
-	Wattage     string
-	Size        string
-	Modular     string
-	Efficiency  string
-	Length      string
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
-	Img         string
+type CoolerSpec struct {
+	Code           string
+	Brand          string
+	ReleaseDate    string
+	Sockets        []string
+	IsLiquidCooler string
+	Size           string
+	NoiseLevel     string
+	FanSpeed       string
+	PriceUS        string
+	PriceHK        string
+	PriceCN        string
+	LinkUS         string
+	LinkHK         string
+	LinkCN         string
+	Img            string
 }
 
-type PowerType struct {
-	Brand       string
-	ReleaseDate string
-	Wattage     string
-	Size        string
-	Modular     string
-	Efficiency  string
-	Length      string
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
-	Img         string
+type CoolerType struct {
+	Brand          string
+	ReleaseDate    string
+	Sockets        []string
+	IsLiquidCooler string
+	Size           string
+	NoiseLevel     string
+	FanSpeed       string
+	PriceUS        string
+	PriceHK        string
+	PriceCN        string
+	LinkUS         string
+	LinkHK         string
+	LinkCN         string
+	Img            string
 }
 
-func GetPowerSpec(record LinkRecord) PowerSpec {
+func GetCoolerSpec(record LinkRecord) CoolerSpec {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -70,34 +70,34 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 
 	specCollector := collector.Clone()
 
-	ssdData := getPowerSpecData(record.LinkSpec, specCollector)
-	ssdData.Code = record.Name
-	ssdData.Brand = record.Brand
-	ssdData.LinkCN = record.LinkCN
-	if ssdData.LinkUS == "" {
-		ssdData.LinkUS = record.LinkUS
+	powerData := getCoolerSpecData(record.LinkSpec, specCollector)
+	powerData.Code = record.Name
+	powerData.Brand = record.Brand
+	powerData.LinkCN = record.LinkCN
+	if powerData.LinkUS == "" {
+		powerData.LinkUS = record.LinkUS
 	}
-	ssdData.LinkHK = record.LinkHK
+	powerData.LinkHK = record.LinkHK
 	if record.PriceCN != "" {
-		ssdData.PriceCN = record.PriceCN
+		powerData.PriceCN = record.PriceCN
 	}
-	return ssdData
+	return powerData
 }
 
-func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
+func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 	releaseDate := ""
-	wattage := ""
+	var socketslist []string
+	isLiquidCooler := ""
 	size := ""
-	modular := ""
-	efficiency := ""
-	length := ""
+	noiseLevel := ""
+	fanSpeed := ""
 	price := ""
 	usLink := ""
 	imgLink := ""
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".tns-inner img", "src")
+		imgLink = element.ChildAttr(".tns-inner .tns-item img", "src")
 		loopBreak := false
 
 		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
@@ -123,36 +123,38 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 			switch item.ChildText("strong") {
 			case "Release Date":
 				releaseDate = item.ChildText("td span")
-			case "Wattage":
-				wattage = item.ChildTexts("td")[1]
-			case "Type":
+			case "Supported Sockets":
+				item.ForEach("td li", func(i int, subitem *colly.HTMLElement) {
+					socketslist = append(socketslist, subitem.Text)
+				})
+			case "Liquid Cooler":
+				isLiquidCooler = item.ChildTexts("td")[1]
+			case "Radiator Size":
 				size = item.ChildTexts("td")[1]
-			case "Modular":
-				modular = item.ChildTexts("td")[1]
-			case "Efficiency":
-				efficiency = item.ChildTexts("td")[1]
-			case "Length":
-				length = item.ChildTexts("td")[1]
+			case "Noise Level":
+				noiseLevel = item.ChildTexts("td")[1]
+			case "Fan RPM":
+				fanSpeed = item.ChildTexts("td")[1]
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return PowerSpec{
-		ReleaseDate: releaseDate,
-		Wattage:     wattage,
-		Size:        size,
-		Modular:     modular,
-		Efficiency:  efficiency,
-		Length:      length,
-		PriceUS:     price,
-		LinkUS:      usLink,
-		Img:         imgLink,
+	return CoolerSpec{
+		ReleaseDate:    releaseDate,
+		Sockets:        socketslist,
+		IsLiquidCooler: isLiquidCooler,
+		Size:           size,
+		NoiseLevel:     noiseLevel,
+		FanSpeed:       fanSpeed,
+		PriceUS:        price,
+		LinkUS:         usLink,
+		Img:            imgLink,
 	}
 }
 
-func getPowerUSPrice(link string, collector *colly.Collector) float64 {
+func getCoolerUSPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
@@ -166,7 +168,7 @@ func getPowerUSPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getPowerHKPrice(link string, collector *colly.Collector) float64 {
+func getCoolerHKPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)
@@ -190,7 +192,7 @@ func getPowerHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getPowerCNPrice(link string, collector *colly.Collector) float64 {
+func getCoolerCNPrice(link string, collector *colly.Collector) float64 {
 	price := 0.0
 
 	collectorErrorHandle(collector, link)

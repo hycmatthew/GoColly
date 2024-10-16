@@ -88,6 +88,29 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 	return ssdData
 }
 
+func GetSSDData(spec SSDSpec) SSDType {
+	cnPrice := getRamCNPrice(spec.PriceCN)
+
+	return SSDType{
+		Brand:       spec.Brand,
+		ReleaseDate: spec.ReleaseDate,
+		Model:       spec.Model,
+		Capacity:    spec.Capacity,
+		MaxRead:     spec.MaxRead,
+		MaxWrite:    spec.MaxWrite,
+		Interface:   spec.Interface,
+		FlashType:   spec.FlashType,
+		FormFactor:  spec.FormFactor,
+		PriceUS:     spec.PriceUS,
+		PriceHK:     "",
+		PriceCN:     cnPrice,
+		LinkUS:      spec.LinkUS,
+		LinkHK:      spec.LinkHK,
+		LinkCN:      spec.LinkCN,
+		Img:         spec.Img,
+	}
+}
+
 func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 	releaseDate := ""
 	model := ""
