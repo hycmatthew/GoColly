@@ -151,7 +151,7 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
 			case "Model":
-				model = item.ChildTexts("td")[1]
+				model = strings.Split(item.ChildTexts("td")[1], "\n")[0]
 			case "Release Date":
 				releaseDate = item.ChildText("td span")
 			case "Capacity":

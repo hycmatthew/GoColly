@@ -21,9 +21,10 @@ func main() {
 		ssd         = "ssd"
 		power       = "power"
 		cooler      = "cooler"
+		pcCase      = "case"
 	)
 
-	getDataName := cooler
+	getDataName := pcCase
 	isUpdateSpec := true
 
 	if isUpdateSpec {
@@ -229,12 +230,12 @@ func updateSpecLogic(name string) {
 			}
 		}()
 	default:
-		var specList []pcData.RamSpec
+		var specList []pcData.CaseSpec
 		go func() {
 			for {
 				<-ticker.C
-				ramRecord := pcData.GetRamSpec(recordList[count])
-				specList = append(specList, ramRecord)
+				caseRecord := pcData.GetCaseSpec(recordList[count])
+				specList = append(specList, caseRecord)
 				count++
 				if count == len(recordList) {
 					saveSpecData(specList, name)

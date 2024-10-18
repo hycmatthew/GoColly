@@ -30,7 +30,7 @@ type GPUSpec struct {
 	Code        string
 	Series      string
 	Generation  string
-	MemorySize  string
+	MemorySize  int
 	MemoryType  string
 	MemoryBus   string
 	Clock       int
@@ -56,7 +56,7 @@ type GPUType struct {
 	Brand      string
 	Series     string
 	Generation string
-	MemorySize string
+	MemorySize int
 	MemoryType string
 	MemoryBus  string
 	Clock      int
@@ -171,7 +171,7 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 	name := ""
 	generation := ""
-	memorySize := ""
+	memorySize := 0
 	memoryType := ""
 	memoryBus := ""
 	clock := 0
@@ -188,9 +188,15 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 		element.ForEach(".sectioncontainer .details .clearfix", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("dt") {
 			case "Generation":
-				generation = item.ChildText("dd")
+				tempString := item.ChildText("dd")
+				if strings.Contains(tempString, "(") {
+					genString := strings.Split(item.ChildText("dd"), "(")
+					generation = strings.ReplaceAll(genString[1], ")", "")
+				} else {
+					generation = tempString
+				}
 			case "Memory Size":
-				memorySize = item.ChildText("dd")
+				memorySize = extractNumberFromString(item.ChildText("dd"))
 			case "Memory Type":
 				memoryType = item.ChildText("dd")
 			case "Memory Bus":
