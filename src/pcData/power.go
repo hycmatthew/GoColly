@@ -14,6 +14,7 @@ import (
 type PowerSpec struct {
 	Code        string
 	Brand       string
+	Model       string
 	ReleaseDate string
 	Wattage     int
 	Size        string
@@ -31,6 +32,7 @@ type PowerSpec struct {
 
 type PowerType struct {
 	Brand       string
+	Model       string
 	ReleaseDate string
 	Wattage     int
 	Size        string
@@ -84,7 +86,56 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 	return ssdData
 }
 
+func GetPowerData(spec PowerSpec) PowerType {
+
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+			"www.price.com.hk",
+			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+	cnCollector := collector.Clone()
+	usCollector := collector.Clone()
+
+	priceCN := getPowerCNPrice(spec.PriceCN, cnCollector)
+	priceUS, tempImg := getPowerUSPrice(spec.PriceCN, usCollector)
+
+	return PowerType{
+		Brand:       spec.Brand,
+		Model:       spec.Model,
+		ReleaseDate: spec.ReleaseDate,
+		Wattage:     spec.Wattage,
+		Size:        spec.Size,
+		Modular:     spec.Modular,
+		Efficiency:  spec.Efficiency,
+		Length:      spec.Length,
+		LinkUS:      spec.LinkUS,
+		LinkHK:      spec.LinkHK,
+		LinkCN:      spec.LinkCN,
+		PriceCN:     priceCN,
+		PriceUS:     priceUS,
+		PriceHK:     "",
+		Img:         tempImg,
+	}
+}
+
 func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
+	model := ""
 	releaseDate := ""
 	wattage := 0
 	size := ""
@@ -121,6 +172,8 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
+			case "Model":
+				model = item.ChildTexts("td")[1]
 			case "Release Date":
 				releaseDate = item.ChildText("td span")
 			case "Wattage":
@@ -141,6 +194,7 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 
 	return PowerSpec{
 		ReleaseDate: releaseDate,
+		Model:       model,
 		Wattage:     wattage,
 		Size:        size,
 		Modular:     modular,
@@ -152,18 +206,17 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 	}
 }
 
-func getPowerUSPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
+func getPowerUSPrice(link string, collector *colly.Collector) (string, string) {
+	price, imgLink := "", ""
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
-			price = s
-		}
+		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
+		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
 	})
 
 	collector.Visit(link)
-	return price
+	return price, imgLink
 }
 
 func getPowerHKPrice(link string, collector *colly.Collector) float64 {
@@ -190,18 +243,12 @@ func getPowerHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getPowerCNPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
+func getPowerCNPrice(link string, collector *colly.Collector) string {
+	price := ""
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("em.price")), 64); err == nil {
-			price = s
-			// fmt.Println(price)
-		} else {
-			fmt.Println(err)
-		}
+		price = extractFloatStringFromString(element.ChildText("em.price"))
 	})
 
 	collector.Visit(link)

@@ -66,6 +66,9 @@ type GPUType struct {
 	Length     int
 	Slot       string
 	Width      int
+	LinkCN     string
+	LinkUS     string
+	LinkHK     string
 	PriceUS    string
 	PriceHK    string
 	PriceCN    string
@@ -159,6 +162,9 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 		Length:     lengthLogic,
 		Slot:       specData.Slot,
 		Width:      specData.Width,
+		LinkUS:     record.LinkUS,
+		LinkHK:     record.LinkHK,
+		LinkCN:     record.LinkCN,
 		PriceUS:    priceUs,
 		PriceHK:    "",
 		PriceCN:    priceCn,

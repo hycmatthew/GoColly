@@ -32,6 +32,9 @@ type CPUSpec struct {
 	PriceUS         string
 	PriceHK         string
 	PriceCN         string
+	LinkUS          string
+	LinkHK          string
+	LinkCN          string
 	Img             string
 }
 
@@ -48,6 +51,9 @@ type CPUType struct {
 	PriceUS         string
 	PriceHK         string
 	PriceCN         string
+	LinkUS          string
+	LinkHK          string
+	LinkCN          string
 	Img             string
 }
 
@@ -73,7 +79,10 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 	cpuData.PriceCN = record.LinkCN
 	cpuData.PriceUS = record.LinkUS
 	cpuData.PriceHK = record.LinkHK
-	// cpuData.PriceHK = getCPUHKPrice(hkLink, hkCollector)
+	cpuData.LinkCN = record.LinkCN
+	if cpuData.LinkUS == "" {
+		cpuData.LinkUS = record.LinkUS
+	}
 	return cpuData
 }
 
@@ -104,7 +113,7 @@ func GetCPUData(spec CPUSpec) CPUType {
 	usCollector := collector.Clone()
 
 	priceCN := getCPUCNPrice(spec.PriceCN, cnCollector)
-	PriceUS, tempImg := getCPUUSPrice(spec.PriceCN, usCollector)
+	priceUS, tempImg := getCPUUSPrice(spec.PriceCN, usCollector)
 
 	return CPUType{
 		Name:            spec.Name,
@@ -116,8 +125,11 @@ func GetCPUData(spec CPUSpec) CPUType {
 		SingleCoreScore: spec.SingleCoreScore,
 		MultiCoreScore:  spec.MultiCoreScore,
 		Power:           spec.Power,
+		LinkUS:          spec.LinkUS,
+		LinkHK:          spec.LinkHK,
+		LinkCN:          spec.LinkCN,
 		PriceCN:         priceCN,
-		PriceUS:         PriceUS,
+		PriceUS:         priceUS,
 		PriceHK:         "",
 		Img:             tempImg,
 	}
@@ -191,7 +203,6 @@ func getCPUUSPrice(link string, collector *colly.Collector) (string, string) {
 	imgLink, price := "", ""
 
 	collectorErrorHandle(collector, link)
-	fmt.Println(collector.AllowedDomains)
 
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")

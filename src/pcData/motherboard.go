@@ -30,6 +30,9 @@ type MotherboardSpec struct {
 	PriceUS    string
 	PriceHK    string
 	PriceCN    string
+	LinkUS     string
+	LinkHK     string
+	LinkCN     string
 	Img        string
 }
 
@@ -52,6 +55,9 @@ type MotherboardType struct {
 	PriceUS    string
 	PriceHK    string
 	PriceCN    string
+	LinkUS     string
+	LinkHK     string
+	LinkCN     string
 	Img        string
 }
 
@@ -64,12 +70,6 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 		colly.AllowedDomains(
 			"www.newegg.com",
 			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
 			"pangoly.com",
 		),
 		colly.AllowURLRevisit(),
@@ -88,8 +88,71 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 	if strings.Contains(strings.ToUpper(record.Name), "WIFI") {
 		motherboardData.Wireless = true
 	}
+	motherboardData.LinkCN = record.LinkCN
+	if motherboardData.LinkUS == "" {
+		motherboardData.LinkUS = record.LinkUS
+	}
+	motherboardData.LinkHK = record.LinkHK
+	if record.PriceCN != "" {
+		motherboardData.PriceCN = record.PriceCN
+	}
 
 	return motherboardData
+}
+
+func GetMotherboardData(spec MotherboardSpec) MotherboardType {
+
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+			"www.price.com.hk",
+			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+	cnCollector := collector.Clone()
+	usCollector := collector.Clone()
+
+	priceCN := getMotherboardCNPrice(spec.PriceCN, cnCollector)
+	priceUS, tempImg := getMotherboardUSPrice(spec.PriceCN, usCollector)
+
+	return MotherboardType{
+		Name:       spec.Name,
+		Brand:      spec.Brand,
+		Socket:     spec.Socket,
+		Chipset:    spec.Chipset,
+		RamSlot:    spec.RamSlot,
+		RamType:    spec.RamType,
+		RamSupport: spec.RamSupport,
+		RamMax:     spec.RamMax,
+		Pcie16Slot: spec.Pcie1Slot,
+		Pcie4Slot:  spec.Pcie4Slot,
+		Pcie1Slot:  spec.Pcie16Slot,
+		M2Slot:     spec.M2Slot,
+		SataSlot:   spec.SataSlot,
+		FormFactor: spec.FormFactor,
+		Wireless:   spec.Wireless,
+		LinkUS:     spec.LinkUS,
+		LinkHK:     spec.LinkHK,
+		LinkCN:     spec.LinkCN,
+		PriceCN:    priceCN,
+		PriceUS:    priceUS,
+		PriceHK:    "",
+		Img:        tempImg,
+	}
 }
 
 func getMotherboardSpecData(link string, collector *colly.Collector) MotherboardSpec {
@@ -185,18 +248,17 @@ func getMotherboardSpecData(link string, collector *colly.Collector) Motherboard
 	}
 }
 
-func getMotherboardUSPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
+func getMotherboardUSPrice(link string, collector *colly.Collector) (string, string) {
+	price, imgLink := "", ""
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
-			price = s
-		}
+		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
+		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
 	})
 
 	collector.Visit(link)
-	return price
+	return price, imgLink
 }
 
 func getMotherboardHKPrice(link string, collector *colly.Collector) float64 {
@@ -223,18 +285,13 @@ func getMotherboardHKPrice(link string, collector *colly.Collector) float64 {
 	return price
 }
 
-func getMotherboardCNPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
+func getMotherboardCNPrice(link string, collector *colly.Collector) string {
+	price := ""
 
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("em.price")), 64); err == nil {
-			price = s
-			// fmt.Println(price)
-		} else {
-			fmt.Println(err)
-		}
+		price = extractFloatStringFromString(element.ChildText("em.price"))
 	})
 
 	collector.Visit(link)

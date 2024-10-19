@@ -76,22 +76,42 @@ func GetRamSpec(record LinkRecord) RamSpec {
 }
 
 func GetRamData(spec RamSpec) RamType {
-	cnPrice := getRamCNPrice(spec.PriceCN)
+
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			"www.newegg.com",
+			"newegg.com",
+			"pangoly.com",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+
+	ramData := getRamUSPrice(spec.LinkUS, collector)
 
 	return RamType{
-		Brand:    spec.Brand,
-		Series:   spec.Series,
-		Model:    spec.Model,
-		Capacity: spec.Capacity,
-		Speed:    spec.Speed,
-		Timing:   spec.Timing,
-		Voltage:  spec.Voltage,
-		Channel:  spec.Channel,
-		Profile:  spec.Profile,
-		PriceUS:  spec.PriceUS,
-		PriceHK:  "",
-		PriceCN:  cnPrice,
-		Img:      spec.Img,
+		Brand:    ramData.Brand,
+		Series:   ramData.Series,
+		Model:    ramData.Model,
+		Capacity: ramData.Capacity,
+		Speed:    ramData.Speed,
+		Timing:   ramData.Timing,
+		Voltage:  ramData.Voltage,
+		Channel:  ramData.Channel,
+		Profile:  ramData.Profile,
+		PriceUS:  ramData.PriceUS,
+		PriceHK:  ramData.PriceHK,
+		PriceCN:  ramData.PriceCN,
+		LinkHK:   ramData.LinkHK,
+		LinkUS:   ramData.LinkUS,
+		LinkCN:   ramData.LinkCN,
+		Img:      ramData.Img,
 	}
 }
 
