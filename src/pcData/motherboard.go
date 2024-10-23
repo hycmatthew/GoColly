@@ -3,7 +3,6 @@ package pcData
 import (
 	"fmt"
 	"net/http"
-	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -82,21 +81,18 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 	specCollector := collector.Clone()
 
 	motherboardData := getMotherboardSpecData(record.LinkSpec, specCollector)
-	motherboardData.PriceUS = record.LinkUS
-	motherboardData.PriceCN = record.LinkCN
 
 	if strings.Contains(strings.ToUpper(record.Name), "WIFI") {
 		motherboardData.Wireless = true
 	}
+	motherboardData.Code = record.Name
+	motherboardData.PriceCN = record.PriceCN
+	motherboardData.PriceHK = ""
+	motherboardData.LinkHK = ""
 	motherboardData.LinkCN = record.LinkCN
-	if motherboardData.LinkUS == "" {
+	if record.LinkUS != "" {
 		motherboardData.LinkUS = record.LinkUS
 	}
-	motherboardData.LinkHK = record.LinkHK
-	if record.PriceCN != "" {
-		motherboardData.PriceCN = record.PriceCN
-	}
-
 	return motherboardData
 }
 
@@ -126,8 +122,14 @@ func GetMotherboardData(spec MotherboardSpec) MotherboardType {
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
 
-	priceCN := getMotherboardCNPrice(spec.PriceCN, cnCollector)
-	priceUS, tempImg := getMotherboardUSPrice(spec.PriceCN, usCollector)
+	priceCN := spec.PriceCN
+	if priceCN != "" {
+		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	}
+	priceUS, tempImg := spec.PriceUS, spec.Img
+	if strings.Contains(spec.LinkUS, "newegg") {
+		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+	}
 
 	return MotherboardType{
 		Name:       spec.Name,
@@ -246,54 +248,4 @@ func getMotherboardSpecData(link string, collector *colly.Collector) Motherboard
 		PriceCN:    "",
 		Img:        imgLink,
 	}
-}
-
-func getMotherboardUSPrice(link string, collector *colly.Collector) (string, string) {
-	price, imgLink := "", ""
-
-	collectorErrorHandle(collector, link)
-	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
-	})
-
-	collector.Visit(link)
-	return price, imgLink
-}
-
-func getMotherboardHKPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
-
-		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			fmt.Println(extractFloatStringFromString(element.ChildText("span")))
-			if price == 0.0 {
-				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
-					price = s
-					//fmt.Println(price)
-				} else {
-					fmt.Println(err)
-				}
-			}
-		})
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func getMotherboardCNPrice(link string, collector *colly.Collector) string {
-	price := ""
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		price = extractFloatStringFromString(element.ChildText("em.price"))
-	})
-
-	collector.Visit(link)
-	return price
 }

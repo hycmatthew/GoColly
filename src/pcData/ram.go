@@ -1,13 +1,8 @@
 package pcData
 
 import (
-	"context"
-	"fmt"
 	"net/http"
-	"strconv"
-	"time"
 
-	"github.com/chromedp/chromedp"
 	"github.com/gocolly/colly/v2"
 	"github.com/imroc/req/v3"
 )
@@ -71,7 +66,13 @@ func GetRamSpec(record LinkRecord) RamSpec {
 
 	ramData := getRamUSPrice(record.LinkUS, collector)
 	ramData.Code = record.Name
-	ramData.PriceCN = record.LinkCN
+	ramData.PriceCN = record.PriceCN
+	ramData.PriceHK = ""
+	ramData.LinkHK = ""
+	ramData.LinkCN = record.LinkCN
+	if record.LinkUS != "" {
+		ramData.LinkUS = record.LinkUS
+	}
 	return ramData
 }
 
@@ -96,22 +97,22 @@ func GetRamData(spec RamSpec) RamType {
 	ramData := getRamUSPrice(spec.LinkUS, collector)
 
 	return RamType{
-		Brand:    ramData.Brand,
-		Series:   ramData.Series,
-		Model:    ramData.Model,
-		Capacity: ramData.Capacity,
-		Speed:    ramData.Speed,
-		Timing:   ramData.Timing,
-		Voltage:  ramData.Voltage,
-		Channel:  ramData.Channel,
-		Profile:  ramData.Profile,
+		Brand:    spec.Brand,
+		Series:   spec.Series,
+		Model:    spec.Model,
+		Capacity: spec.Capacity,
+		Speed:    spec.Speed,
+		Timing:   spec.Timing,
+		Voltage:  spec.Voltage,
+		Channel:  spec.Channel,
+		Profile:  spec.Profile,
 		PriceUS:  ramData.PriceUS,
-		PriceHK:  ramData.PriceHK,
-		PriceCN:  ramData.PriceCN,
-		LinkHK:   ramData.LinkHK,
+		PriceHK:  spec.PriceHK,
+		PriceCN:  spec.PriceCN,
+		LinkHK:   spec.LinkHK,
 		LinkUS:   ramData.LinkUS,
-		LinkCN:   ramData.LinkCN,
-		Img:      ramData.Img,
+		LinkCN:   spec.LinkCN,
+		Img:      spec.Img,
 	}
 }
 
@@ -174,62 +175,4 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 		PriceCN:  "",
 		Img:      imgLink,
 	}
-}
-
-func getRamHKPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
-
-		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			fmt.Println(extractFloatStringFromString(element.ChildText("span")))
-			if price == 0.0 {
-				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
-					price = s
-					//fmt.Println(price)
-				} else {
-					fmt.Println(err)
-				}
-			}
-		})
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func getRamCNPrice(link string) string {
-	fmt.Println(link)
-	opts := append(chromedp.DefaultExecAllocatorOptions[:],
-		chromedp.Flag("headless", false),
-	)
-	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
-	defer cancel()
-
-	// create chrome instance
-	ctx, cancel := chromedp.NewContext(
-		allocCtx,
-	)
-	defer cancel()
-
-	// create a timeout
-	ctx, cancel = context.WithTimeout(ctx, 600*time.Second)
-	defer cancel()
-
-	// navigate to a page, wait for an element, click
-	var cnPrice string
-	err := chromedp.Run(ctx,
-		chromedp.Navigate(link),
-		// wait for footer element is visible (ie, page is loaded)
-		chromedp.Sleep(600*time.Second),
-		// retrieve the value of the textarea
-		chromedp.Value(`.p-price .price`, &cnPrice),
-	)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(cnPrice)
-	return cnPrice
 }

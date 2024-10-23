@@ -1,10 +1,8 @@
 package pcData
 
 import (
-	"fmt"
 	"net/http"
 	"net/url"
-	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -76,20 +74,50 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 
 	ssdData := getSSDSpecData(record.LinkSpec, specCollector)
 	ssdData.Code = record.Name
-	ssdData.Brand = record.Brand
+	ssdData.PriceCN = record.PriceCN
+	ssdData.PriceHK = ""
+	ssdData.LinkHK = ""
 	ssdData.LinkCN = record.LinkCN
-	if ssdData.LinkUS == "" {
+	if record.LinkUS != "" {
 		ssdData.LinkUS = record.LinkUS
-	}
-	ssdData.LinkHK = record.LinkHK
-	if record.PriceCN != "" {
-		ssdData.PriceCN = record.PriceCN
 	}
 	return ssdData
 }
 
 func GetSSDData(spec SSDSpec) SSDType {
-	cnPrice := getRamCNPrice(spec.PriceCN)
+
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+			"www.price.com.hk",
+			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+	cnCollector := collector.Clone()
+	usCollector := collector.Clone()
+
+	priceCN := spec.PriceCN
+	if priceCN != "" {
+		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	}
+	priceUS, tempImg := spec.PriceUS, spec.Img
+	if strings.Contains(spec.LinkUS, "newegg") {
+		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+	}
 
 	return SSDType{
 		Brand:       spec.Brand,
@@ -101,13 +129,13 @@ func GetSSDData(spec SSDSpec) SSDType {
 		Interface:   spec.Interface,
 		FlashType:   spec.FlashType,
 		FormFactor:  spec.FormFactor,
-		PriceUS:     spec.PriceUS,
+		PriceUS:     priceUS,
 		PriceHK:     "",
-		PriceCN:     cnPrice,
+		PriceCN:     priceCN,
 		LinkUS:      spec.LinkUS,
 		LinkHK:      spec.LinkHK,
 		LinkCN:      spec.LinkCN,
-		Img:         spec.Img,
+		Img:         tempImg,
 	}
 }
 
@@ -185,60 +213,4 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 		LinkUS:      usLink,
 		Img:         imgLink,
 	}
-}
-
-func getSSDUSPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
-			price = s
-		}
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func getSSDHKPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
-
-		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			fmt.Println(extractFloatStringFromString(element.ChildText("span")))
-			if price == 0.0 {
-				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
-					price = s
-					//fmt.Println(price)
-				} else {
-					fmt.Println(err)
-				}
-			}
-		})
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func getSSDCNPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("em.price")), 64); err == nil {
-			price = s
-			// fmt.Println(price)
-		} else {
-			fmt.Println(err)
-		}
-	})
-
-	collector.Visit(link)
-	return price
 }

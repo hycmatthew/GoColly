@@ -312,29 +312,6 @@ func getGPUUSPrice(link string, collector *colly.Collector) (string, string, GPU
 	return price, imgLink, specSubData
 }
 
-func getGPUHKPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
-
-		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			// fmt.Println(extractFloatStringFromString(element.ChildText("span")))
-			if price == 0.0 {
-				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
-					price = s
-				} else {
-					fmt.Println(err)
-				}
-			}
-		})
-	})
-
-	collector.Visit(link)
-	return price
-}
-
 func getGPUCNPrice(link string, collector *colly.Collector) (string, string) {
 	price := ""
 	gpuName := ""

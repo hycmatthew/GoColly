@@ -13,6 +13,8 @@ import (
 )
 
 func main() {
+	// pcData.GetRamCNPriceFromChromedp("https://item.taobao.com/item.htm?abbucket=17&id=743688559462&skuId=5323436787436")
+
 	const (
 		cpu         = "cpu"
 		gpu         = "gpu"
@@ -24,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := pcCase
+	getDataName := cpu
 	isUpdateSpec := true
 
 	if isUpdateSpec {

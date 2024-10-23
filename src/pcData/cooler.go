@@ -1,10 +1,8 @@
 package pcData
 
 import (
-	"fmt"
 	"net/http"
 	"net/url"
-	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -70,18 +68,68 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 
 	specCollector := collector.Clone()
 
-	powerData := getCoolerSpecData(record.LinkSpec, specCollector)
-	powerData.Code = record.Name
-	powerData.Brand = record.Brand
-	powerData.LinkCN = record.LinkCN
-	if powerData.LinkUS == "" {
-		powerData.LinkUS = record.LinkUS
+	cooler := getCoolerSpecData(record.LinkSpec, specCollector)
+	cooler.Code = record.Name
+	cooler.PriceCN = record.PriceCN
+	cooler.PriceHK = ""
+	cooler.LinkHK = ""
+	cooler.LinkCN = record.LinkCN
+	if record.LinkUS != "" {
+		cooler.LinkUS = record.LinkUS
 	}
-	powerData.LinkHK = record.LinkHK
-	if record.PriceCN != "" {
-		powerData.PriceCN = record.PriceCN
+	return cooler
+}
+
+func GetCoolerData(spec CoolerSpec) CoolerType {
+
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+			"www.price.com.hk",
+			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
+		),
+		colly.AllowURLRevisit(),
+	)
+
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+	cnCollector := collector.Clone()
+	usCollector := collector.Clone()
+
+	priceCN := spec.PriceCN
+	if priceCN != "" {
+		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 	}
-	return powerData
+	priceUS, tempImg := spec.PriceUS, spec.Img
+	if strings.Contains(spec.LinkUS, "newegg") {
+		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+	}
+
+	return CoolerType{
+		ReleaseDate:    spec.ReleaseDate,
+		Sockets:        spec.Sockets,
+		IsLiquidCooler: spec.IsLiquidCooler,
+		Size:           spec.Size,
+		NoiseLevel:     spec.NoiseLevel,
+		FanSpeed:       spec.FanSpeed,
+		PriceUS:        priceUS,
+		PriceHK:        "",
+		PriceCN:        priceCN,
+		LinkUS:         spec.LinkUS,
+		LinkHK:         spec.LinkHK,
+		LinkCN:         spec.LinkCN,
+		Img:            tempImg,
+	}
 }
 
 func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
@@ -152,60 +200,4 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 		LinkUS:         usLink,
 		Img:            imgLink,
 	}
-}
-
-func getCoolerUSPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")), 64); err == nil {
-			price = s
-		}
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func getCoolerHKPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
-
-		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			fmt.Println(extractFloatStringFromString(element.ChildText("span")))
-			if price == 0.0 {
-				if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("span")), 64); err == nil {
-					price = s
-					//fmt.Println(price)
-				} else {
-					fmt.Println(err)
-				}
-			}
-		})
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func getCoolerCNPrice(link string, collector *colly.Collector) float64 {
-	price := 0.0
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		if s, err := strconv.ParseFloat(extractFloatStringFromString(element.ChildText("em.price")), 64); err == nil {
-			price = s
-			// fmt.Println(price)
-		} else {
-			fmt.Println(err)
-		}
-	})
-
-	collector.Visit(link)
-	return price
 }

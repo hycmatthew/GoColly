@@ -1,8 +1,8 @@
 package pcData
 
 import (
-	"fmt"
 	"net/http"
+	"strings"
 
 	"github.com/gocolly/colly/v2"
 	"github.com/imroc/req/v3"
@@ -76,11 +76,11 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 
 	cpuData := getCPUSpecData(record.LinkSpec, collector)
 	cpuData.Code = record.Name
-	cpuData.PriceCN = record.LinkCN
-	cpuData.PriceUS = record.LinkUS
-	cpuData.PriceHK = record.LinkHK
+	cpuData.PriceCN = record.PriceCN
+	cpuData.PriceHK = ""
+	cpuData.LinkHK = ""
 	cpuData.LinkCN = record.LinkCN
-	if cpuData.LinkUS == "" {
+	if record.LinkUS != "" {
 		cpuData.LinkUS = record.LinkUS
 	}
 	return cpuData
@@ -112,8 +112,15 @@ func GetCPUData(spec CPUSpec) CPUType {
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
 
-	priceCN := getCPUCNPrice(spec.PriceCN, cnCollector)
-	priceUS, tempImg := getCPUUSPrice(spec.PriceCN, usCollector)
+	priceCN := spec.PriceCN
+	if priceCN == "" {
+		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	}
+
+	priceUS, tempImg := spec.PriceUS, spec.Img
+	if strings.Contains(spec.LinkUS, "newegg") {
+		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+	}
 
 	return CPUType{
 		Name:            spec.Name,
@@ -126,7 +133,7 @@ func GetCPUData(spec CPUSpec) CPUType {
 		MultiCoreScore:  spec.MultiCoreScore,
 		Power:           spec.Power,
 		LinkUS:          spec.LinkUS,
-		LinkHK:          spec.LinkHK,
+		LinkHK:          "",
 		LinkCN:          spec.LinkCN,
 		PriceCN:         priceCN,
 		PriceUS:         priceUS,
@@ -197,63 +204,4 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 		MultiCoreScore:  muitiCoreScore,
 		Power:           tdp,
 	}
-}
-
-func getCPUUSPrice(link string, collector *colly.Collector) (string, string) {
-	imgLink, price := "", ""
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
-	})
-	collector.Visit(link)
-	return price, imgLink
-}
-
-func getCPUHKPrice(link string, collector *colly.Collector) string {
-	price := ""
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".line-05", func(element *colly.HTMLElement) {
-
-		element.ForEach(".product-price", func(i int, item *colly.HTMLElement) {
-			if price == "" {
-				price = extractFloatStringFromString(element.ChildText("span"))
-			}
-		})
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func getCPUCNPrice(link string, collector *colly.Collector) string {
-	price := ""
-
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		price = extractFloatStringFromString(element.ChildText("em.price"))
-	})
-
-	collector.Visit(link)
-	return price
-}
-
-func collectorErrorHandle(collector *colly.Collector, link string) {
-	collector.OnRequest(func(r *colly.Request) {
-		// USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
-		r.Headers.Set("Connection", "keep-alive")
-		r.Headers.Set("Accept", "*/*")
-	})
-
-	collector.OnError(func(response *colly.Response, err error) {
-		fmt.Println("请求期间发生错误,则调用:", err, " - link: ", link)
-	})
-
-	collector.OnResponse(func(response *colly.Response) {
-		fmt.Println("收到响应后调用:", response.Request.URL)
-	})
 }
