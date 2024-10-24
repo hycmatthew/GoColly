@@ -16,7 +16,7 @@ func getUSPriceAndImgFromNewEgg(link string, collector *colly.Collector) (string
 
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
+		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
 	})
 	collector.Visit(link)
 	return price, imgLink

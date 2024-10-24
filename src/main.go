@@ -27,7 +27,7 @@ func main() {
 	)
 
 	getDataName := cpu
-	isUpdateSpec := true
+	isUpdateSpec := false
 
 	if isUpdateSpec {
 		if getDataName == "gpu" {
@@ -126,7 +126,7 @@ func updateGPUSpecLogic() {
 }
 
 func updateSpecLogic(name string) {
-	timeSet := 3000
+	timeSet := 5000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
@@ -253,7 +253,7 @@ func updateSpecLogic(name string) {
 }
 
 func updatePriceLogic(name string) {
-	timeSet := 3000
+	timeSet := 5000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
