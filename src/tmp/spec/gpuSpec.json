@@ -1,14 +1,12 @@
 [
     {
-        "Code": "RTX 4060",
-        "Series": "",
+        "Series": "RTX 4060",
         "Generation": "GeForce 40",
-        "MemorySize": "8 GB",
+        "MemorySize": 8,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
-        "Clock": 2460,
-        "TimeSpy": 10613,
-        "FrameScore": 118.3,
+        "BoostClock": 2460,
+        "Benchmark": 10620,
         "Power": 115,
         "Length": 240,
         "Slot": "Dual-slot",
@@ -81,6 +79,20 @@
                 "ProductName": "ASUS ProArt RTX 4060 OC",
                 "BoostClock": 2550,
                 "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 115
+            },
+            {
+                "ProductName": "ASUS RTX 4060 Low Profile BRK",
+                "BoostClock": 2460,
+                "Length": 188,
+                "Slots": "Dual-slot",
+                "TDP": 115
+            },
+            {
+                "ProductName": "ASUS RTX 4060 Low Profile BRK OC",
+                "BoostClock": 2490,
+                "Length": 188,
                 "Slots": "Dual-slot",
                 "TDP": 115
             },
@@ -400,6 +412,27 @@
                 "TDP": 115
             },
             {
+                "ProductName": "Manli RTX 4060 Polar Fox Twin",
+                "BoostClock": 2460,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 115
+            },
+            {
+                "ProductName": "Manli RTX 4060 Polar Fox Twin V2",
+                "BoostClock": 2460,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 120
+            },
+            {
+                "ProductName": "Manli RTX 4060 Twin V2",
+                "BoostClock": 2460,
+                "Length": 215,
+                "Slots": "Dual-slot",
+                "TDP": 120
+            },
+            {
                 "ProductName": "MAXSUN RTX 4060 iCraft OC Limited",
                 "BoostClock": 2550,
                 "Length": 317,
@@ -633,15 +666,441 @@
         ]
     },
     {
-        "Code": "RTX 4060 Ti",
-        "Series": "",
+        "Series": "RTX 4060 Ti 16GB",
         "Generation": "GeForce 40",
-        "MemorySize": "8 GB",
+        "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
-        "Clock": 2535,
-        "TimeSpy": 13498,
-        "FrameScore": 139,
+        "BoostClock": 2535,
+        "Benchmark": 13489,
+        "Power": 165,
+        "Length": 240,
+        "Slot": "Dual-slot",
+        "Width": 111,
+        "ProductSpec": [
+            {
+                "ProductName": "ASUS DUAL RTX 4060 Ti 16 GB",
+                "BoostClock": 2535,
+                "Length": 227,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ASUS DUAL RTX 4060 Ti Advanced 16 GB",
+                "BoostClock": 2550,
+                "Length": 227,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ASUS DUAL RTX 4060 Ti OC 16 GB",
+                "BoostClock": 2595,
+                "Length": 227,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ASUS ProArt RTX 4060 Ti 16 GB",
+                "BoostClock": 2535,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ASUS ProArt RTX 4060 Ti Advanced 16 GB",
+                "BoostClock": 2550,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ASUS ProArt RTX 4060 Ti OC 16 GB",
+                "BoostClock": 2655,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorfire RTX 4060 Ti Shadow Purple 16 GB",
+                "BoostClock": 2535,
+                "Length": 319,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful iGame RTX 4060 Ti Advanced OC 16 GB",
+                "BoostClock": 2610,
+                "Length": 318,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful iGame RTX 4060 Ti Mini 16 GB",
+                "BoostClock": 2535,
+                "Length": 188,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful iGame RTX 4060 Ti Mini OC 16 GB",
+                "BoostClock": 2580,
+                "Length": 188,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful iGame RTX 4060 Ti Ultra W DUO OC 16 GB",
+                "BoostClock": 2580,
+                "Length": 255,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful iGame RTX 4060 Ti Ultra W OC 16 GB",
+                "BoostClock": 2580,
+                "Length": 325,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful iGame RTX 4060 Ti Wushan Five Elements Customized Edition OC",
+                "BoostClock": 2580,
+                "Length": 313,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 4060 Ti Deluxe 16 GB",
+                "BoostClock": 2535,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 4060 Ti DUO 16 GB",
+                "BoostClock": 2535,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Chaser 16 GB",
+                "BoostClock": 2550,
+                "Length": 206,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Chaser EX3 16 GB",
+                "BoostClock": 2580,
+                "Length": 278,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Panther OC 16 GB",
+                "BoostClock": 2595,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Treading Snow 16 GB",
+                "BoostClock": 2595,
+                "Length": 278,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Xingji Haoyue 16 GB",
+                "BoostClock": 2550,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Xingji Haoyue OC 16 GB",
+                "BoostClock": 2640,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Xingji Magic Ji 16 GB",
+                "BoostClock": 2550,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Gainward RTX 4060 Ti Xingji Magic Ji OC 16 GB",
+                "BoostClock": 2640,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti BOOMSTAR MAX 16 GB",
+                "BoostClock": 2535,
+                "Length": 314,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti BOOMSTAR MAX OC 16 GB",
+                "BoostClock": 2685,
+                "Length": 314,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti EX 1-Click OC 16 GB",
+                "BoostClock": 2640,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti EX White 1-Click OC 16 GB",
+                "BoostClock": 2640,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti General MAX 16 GB",
+                "BoostClock": 2535,
+                "Length": 243,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti General MAX OC 16 GB",
+                "BoostClock": 2565,
+                "Length": 243,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti Metal Master MAX 16 GB",
+                "BoostClock": 2535,
+                "Length": 312,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti Metal Master MAX OC 16 GB",
+                "BoostClock": 2640,
+                "Length": 312,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GALAX RTX 4060 Ti Wusou MAX 16 GB",
+                "BoostClock": 2535,
+                "Length": 267,
+                "Slots": " Single-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GIGABYTE RTX 4060 Ti AERO OC 16 GB",
+                "BoostClock": 2595,
+                "Length": 281,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "GIGABYTE RTX 4060 Ti GAMING OC 16 GB",
+                "BoostClock": 2595,
+                "Length": 281,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Inno3D RTX 4060 Ti TWIN X2 16 GB",
+                "BoostClock": 2535,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Inno3D RTX 4060 Ti TWIN X2 OC 16 GB",
+                "BoostClock": 2595,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Inno3D RTX 4060 Ti TWIN X2 OC WHITE 16 GB",
+                "BoostClock": 2565,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Inno3D RTX 4060 Ti X3 OC 16 GB",
+                "BoostClock": 2565,
+                "Length": 297,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "KFA2 RTX 4060 Ti EX 1-Click OC 16 GB",
+                "BoostClock": 2640,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "KFA2 RTX 4060 Ti EX White 1-Click OC 16 GB",
+                "BoostClock": 2640,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Manli RTX 4060 Ti Gallardo (M2565+N719) 16 GB",
+                "BoostClock": 2595,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Manli RTX 4060 Ti Polar Fox Twin 16 GB",
+                "BoostClock": 2535,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "MAXSUN RTX 4060 Ti iCraft OC Aijia S0 16 GB",
+                "BoostClock": 2595,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "MAXSUN RTX 4060 Ti iCraft OC S0 16 GB",
+                "BoostClock": 2595,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "MSI RTX 4060 Ti GAMING X 16 GB",
+                "BoostClock": 2640,
+                "Length": 247,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "MSI RTX 4060 Ti GAMING X SLIM 16 GB",
+                "BoostClock": 2670,
+                "Length": 307,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "MSI RTX 4060 Ti GAMING X SLIM WHITE 16 GB",
+                "BoostClock": 2670,
+                "Length": 307,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "MSI RTX 4060 Ti VENTUS 2X BLACK OC 16 GB",
+                "BoostClock": 2610,
+                "Length": 199,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "MSI RTX 4060 Ti VENTUS 3X OC 16 GB",
+                "BoostClock": 2610,
+                "Length": 308,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Palit RTX 4060 Ti JetStream 16 GB",
+                "BoostClock": 2535,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Palit RTX 4060 Ti JetStream OC 16 GB",
+                "BoostClock": 2595,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "PNY RTX 4060 Ti VERTO Dual Fan 16 GB",
+                "BoostClock": 2535,
+                "Length": 245,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "PNY XLR8 RTX 4060 Ti VERTO EPIC-X RGB Triple Fan 16 GB",
+                "BoostClock": 2535,
+                "Length": 305,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "PNY XLR8 RTX 4060 Ti VERTO EPIC-X RGB Triple Fan OC 16 GB",
+                "BoostClock": 2580,
+                "Length": 305,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Yeston RTX 4060 Ti Deluxe Edition 16 GB",
+                "BoostClock": 2595,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Yeston RTX 4060 Ti Game Ace PA 16 GB",
+                "BoostClock": 2595,
+                "Length": 299,
+                "Slots": " Triple-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ZOTAC RTX 4060 Ti AMP 16 GB",
+                "BoostClock": 2595,
+                "Length": 226,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ZOTAC RTX 4060 Ti Twin Edge 16 GB",
+                "BoostClock": 2535,
+                "Length": 226,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ZOTAC RTX 4060 Ti X-GAMING OC Opal White 16 GB",
+                "BoostClock": 2610,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            }
+        ]
+    },
+    {
+        "Series": "RTX 4060 Ti 8GB",
+        "Generation": "GeForce 40",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "128 bit",
+        "BoostClock": 2535,
+        "Benchmark": 13507,
         "Power": 160,
         "Length": 240,
         "Slot": "Dual-slot",
@@ -1054,6 +1513,20 @@
                 "TDP": 160
             },
             {
+                "ProductName": "Manli RTX 4060 Ti Polar Fox Twin",
+                "BoostClock": 2535,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Manli RTX 4060 Ti Stellar Triple OC",
+                "BoostClock": 2580,
+                "Length": 314,
+                "Slots": " Triple-slot",
+                "TDP": 165
+            },
+            {
                 "ProductName": "MAXSUN RTX 4060 Ti Turbo T0",
                 "BoostClock": 2535,
                 "Length": 250,
@@ -1273,15 +1746,13 @@
         ]
     },
     {
-        "Code": "RTX 4070",
-        "Series": "",
+        "Series": "RTX 4070",
         "Generation": "GeForce 40",
-        "MemorySize": "12 GB",
+        "MemorySize": 12,
         "MemoryType": "GDDR6X",
         "MemoryBus": "192 bit",
-        "Clock": 2475,
-        "TimeSpy": 17848,
-        "FrameScore": 192,
+        "BoostClock": 2475,
+        "Benchmark": 17857,
         "Power": 200,
         "Length": 240,
         "Slot": "Dual-slot",
@@ -1799,7 +2270,42 @@
                 "TDP": 200
             },
             {
-                "ProductName": "Manli RTX 4070 (M2524+N713)",
+                "ProductName": "Manli RTX 4070 Polar Fox Triple",
+                "BoostClock": 2475,
+                "Length": 315,
+                "Slots": "Dual-slot",
+                "TDP": 200
+            },
+            {
+                "ProductName": "Manli RTX 4070 Polar Fox Twin",
+                "BoostClock": 2475,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 200
+            },
+            {
+                "ProductName": "Manli RTX 4070 Polar Fox Twin V2",
+                "BoostClock": 2475,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 200
+            },
+            {
+                "ProductName": "Manli RTX 4070 Twin",
+                "BoostClock": 2475,
+                "Length": 250,
+                "Slots": " Triple-slot",
+                "TDP": 200
+            },
+            {
+                "ProductName": "Manli RTX 4070 Twin (M2524+N713)",
+                "BoostClock": 2475,
+                "Length": 254,
+                "Slots": " Triple-slot",
+                "TDP": 200
+            },
+            {
+                "ProductName": "Manli RTX 4070 Twin V2",
                 "BoostClock": 2475,
                 "Length": 254,
                 "Slots": " Triple-slot",
@@ -2032,15 +2538,13 @@
         ]
     },
     {
-        "Code": "RTX 4070 Super",
-        "Series": "",
+        "Series": "RTX 4070 Super",
         "Generation": "GeForce 40",
-        "MemorySize": "12 GB",
+        "MemorySize": 12,
         "MemoryType": "GDDR6X",
         "MemoryBus": "192 bit",
-        "Clock": 2475,
-        "TimeSpy": 20950,
-        "FrameScore": 219.6,
+        "BoostClock": 2475,
+        "Benchmark": 20981,
         "Power": 220,
         "Length": 267,
         "Slot": "Dual-slot",
@@ -2397,15 +2901,36 @@
                 "TDP": 220
             },
             {
-                "ProductName": "Manli RTX 4070 SUPER (M3596+N693)",
+                "ProductName": "Manli RTX 4070 SUPER Gallardo Triple (M3604+N693)",
                 "BoostClock": 2475,
                 "Length": 315,
                 "Slots": "Dual-slot",
                 "TDP": 220
             },
             {
-                "ProductName": "Manli RTX 4070 SUPER Gallardo(M3604+N693)",
+                "ProductName": "Manli RTX 4070 SUPER Polar Fox Triple (M3596+N693)",
                 "BoostClock": 2475,
+                "Length": 315,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Manli RTX 4070 SUPER Polar Fox Twin",
+                "BoostClock": 2475,
+                "Length": 251,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Manli RTX 4070 SUPER Stellar Triple OC",
+                "BoostClock": 2520,
+                "Length": 314,
+                "Slots": " Triple-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Manli RTX 4070 SUPER Triple Black Myth Wukong Limited Edition",
+                "BoostClock": 2505,
                 "Length": 315,
                 "Slots": "Dual-slot",
                 "TDP": 220
@@ -2623,15 +3148,13 @@
         ]
     },
     {
-        "Code": "RTX 4070 Ti",
-        "Series": "",
+        "Series": "RTX 4070 Ti",
         "Generation": "GeForce 40",
-        "MemorySize": "12 GB",
+        "MemorySize": 12,
         "MemoryType": "GDDR6X",
         "MemoryBus": "192 bit",
-        "Clock": 2610,
-        "TimeSpy": 22781,
-        "FrameScore": 249.8,
+        "BoostClock": 2610,
+        "Benchmark": 22831,
         "Power": 285,
         "Length": 285,
         "Slot": "Dual-slot",
@@ -3452,15 +3975,13 @@
         ]
     },
     {
-        "Code": "RTX 4070 Ti SUPER",
-        "Series": "",
+        "Series": "RTX 4070 Ti SUPER",
         "Generation": "GeForce 40",
-        "MemorySize": "16 GB",
+        "MemorySize": 16,
         "MemoryType": "GDDR6X",
         "MemoryBus": "256 bit",
-        "Clock": 2610,
-        "TimeSpy": 24248,
-        "FrameScore": 263.2,
+        "BoostClock": 2610,
+        "Benchmark": 24266,
         "Power": 285,
         "Length": 310,
         "Slot": "Triple-slot",
@@ -3803,13 +4324,6 @@
                 "TDP": 285
             },
             {
-                "ProductName": "Manli RTX 4070 Ti SUPER (M3596+N693)",
-                "BoostClock": 2610,
-                "Length": 315,
-                "Slots": " Dual-slot",
-                "TDP": 285
-            },
-            {
                 "ProductName": "Manli RTX 4070 Ti SUPER Gallardo (M3551+N693)",
                 "BoostClock": 2610,
                 "Length": 315,
@@ -3817,10 +4331,17 @@
                 "TDP": 285
             },
             {
-                "ProductName": "Manli RTX 4070 Ti SUPER Gallardo (M3604+N693)",
+                "ProductName": "Manli RTX 4070 Ti SUPER Gallardo Triple (M3604+N693)",
                 "BoostClock": 2610,
                 "Length": 315,
                 "Slots": "Triple-slot",
+                "TDP": 285
+            },
+            {
+                "ProductName": "Manli RTX 4070 Ti SUPER Polar Fox Triple (M3596+N693)",
+                "BoostClock": 2610,
+                "Length": 315,
+                "Slots": " Dual-slot",
                 "TDP": 285
             },
             {
@@ -4050,15 +4571,13 @@
         ]
     },
     {
-        "Code": "RTX 4080",
-        "Series": "",
+        "Series": "RTX 4080",
         "Generation": "GeForce 40",
-        "MemorySize": "16 GB",
+        "MemorySize": 16,
         "MemoryType": "GDDR6X",
         "MemoryBus": "256 bit",
-        "Clock": 2505,
-        "TimeSpy": 28180,
-        "FrameScore": 320.9,
+        "BoostClock": 2505,
+        "Benchmark": 28273,
         "Power": 320,
         "Length": 310,
         "Slot": "Triple-slot",
@@ -4788,15 +5307,13 @@
         ]
     },
     {
-        "Code": "RTX 4080 SUPER",
-        "Series": "",
+        "Series": "RTX 4080 SUPER",
         "Generation": "GeForce 40",
-        "MemorySize": "16 GB",
+        "MemorySize": 16,
         "MemoryType": "GDDR6X",
         "MemoryBus": "256 bit",
-        "Clock": 2550,
-        "TimeSpy": 28351,
-        "FrameScore": 319.8,
+        "BoostClock": 2550,
+        "Benchmark": 28381,
         "Power": 320,
         "Length": 310,
         "Slot": "Triple-slot",
@@ -5097,16 +5614,16 @@
                 "TDP": 320
             },
             {
-                "ProductName": "Manli RTX 4080 SUPER (M3600+N688)",
+                "ProductName": "Manli RTX 4080 SUPER Gallardo (M3535+N688)",
                 "BoostClock": 2550,
-                "Length": 318,
+                "Length": 351,
                 "Slots": "Triple-slot",
                 "TDP": 320
             },
             {
-                "ProductName": "Manli RTX 4080 SUPER Gallardo (M3535+N688)",
+                "ProductName": "Manli RTX 4080 SUPER Polar Fox Triple (M3600+N688)",
                 "BoostClock": 2550,
-                "Length": 351,
+                "Length": 318,
                 "Slots": "Triple-slot",
                 "TDP": 320
             },
@@ -5274,15 +5791,13 @@
         ]
     },
     {
-        "Code": "RTX 4090",
-        "Series": "",
+        "Series": "RTX 4090",
         "Generation": "GeForce 40",
-        "MemorySize": "24 GB",
+        "MemorySize": 24,
         "MemoryType": "GDDR6X",
         "MemoryBus": "384 bit",
-        "Clock": 2520,
-        "TimeSpy": 36343,
-        "FrameScore": 615.9,
+        "BoostClock": 2520,
+        "Benchmark": 36517,
         "Power": 450,
         "Length": 304,
         "Slot": "Triple-slot",
@@ -5991,15 +6506,13 @@
         ]
     },
     {
-        "Code": "RTX 4090D",
-        "Series": "",
+        "Series": "RTX 4090D",
         "Generation": "GeForce 40",
-        "MemorySize": "24 GB",
+        "MemorySize": 24,
         "MemoryType": "GDDR6X",
         "MemoryBus": "384 bit",
-        "Clock": 2520,
-        "TimeSpy": 36343,
-        "FrameScore": 615.9,
+        "BoostClock": 2520,
+        "Benchmark": 34292,
         "Power": 425,
         "Length": 304,
         "Slot": "Triple-slot",
@@ -6106,15 +6619,506 @@
         ]
     },
     {
-        "Code": "RX 7600",
-        "Series": "",
-        "Generation": "Navi III\n\t\t\t\t\t(RX 7000)",
-        "MemorySize": "8 GB",
+        "Series": "RX 6500 XT",
+        "Generation": "RX 6000",
+        "MemorySize": 4,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "64 bit",
+        "BoostClock": 2815,
+        "Benchmark": 4917,
+        "Power": 107,
+        "Length": 0,
+        "Slot": "Dual-slot",
+        "Width": 0,
+        "ProductSpec": [
+            {
+                "ProductName": "ASRock RX 6500 XT Challenger ITX",
+                "BoostClock": 2815,
+                "Length": 179,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "ASRock RX 6500 XT Phantom Gaming D OC",
+                "BoostClock": 2820,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "ASRock RX 6500 XT Phantom Gaming D OC 8 GB",
+                "BoostClock": 2820,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "ASUS DUAL RX 6500 XT OC",
+                "BoostClock": 2820,
+                "Length": 201,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "ASUS TUF RX 6500 XT GAMING OC",
+                "BoostClock": 2825,
+                "Length": 250,
+                "Slots": " Triple-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "BIOSTAR RX 6500 XT",
+                "BoostClock": 2815,
+                "Length": 0,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "Dataland RX 6500 XT X-Men",
+                "BoostClock": 2825,
+                "Length": 225,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "GIGABYTE RX 6500 XT EAGLE",
+                "BoostClock": 2815,
+                "Length": 192,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "GIGABYTE RX 6500 XT GAMING OC",
+                "BoostClock": 2825,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "MSI RX 6500 XT MECH 2X",
+                "BoostClock": 2815,
+                "Length": 172,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "MSI RX 6500 XT MECH 2X OC",
+                "BoostClock": 2825,
+                "Length": 172,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "PowerColor Fighter RX 6500 XT OC",
+                "BoostClock": 2820,
+                "Length": 191,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "PowerColor RX 6500 XT ITX",
+                "BoostClock": 2815,
+                "Length": 165,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6500 XT",
+                "BoostClock": 2825,
+                "Length": 194,
+                "Slots": "Dual-slot",
+                "TDP": 130
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6500 XT 8 GB",
+                "BoostClock": 2855,
+                "Length": 194,
+                "Slots": "Dual-slot",
+                "TDP": 130
+            },
+            {
+                "ProductName": "VASTARMOR RX 6500 XT EXPLORER",
+                "BoostClock": 2825,
+                "Length": 165,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "XFX Speedster QICK 210 RX 6500 XT Core",
+                "BoostClock": 2825,
+                "Length": 233,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "Yeston RX 6500 XT Cute Pet MA",
+                "BoostClock": 2815,
+                "Length": 175,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "Yeston RX 6500 XT Gaia GA",
+                "BoostClock": 2815,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            },
+            {
+                "ProductName": "Yeston RX 6500 XT Gaia GB",
+                "BoostClock": 2815,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 107
+            }
+        ]
+    },
+    {
+        "Series": "RX 6600",
+        "Generation": "RX 6000",
+        "MemorySize": 8,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
-        "Clock": 2655,
-        "TimeSpy": 0,
-        "FrameScore": 0,
+        "BoostClock": 2491,
+        "Benchmark": 8082,
+        "Power": 132,
+        "Length": 190,
+        "Slot": "Dual-slot",
+        "Width": 110,
+        "ProductSpec": [
+            {
+                "ProductName": "ASRock RX 6600 Challenger D",
+                "BoostClock": 2491,
+                "Length": 269,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "ASRock RX 6600 Challenger ITX",
+                "BoostClock": 2491,
+                "Length": 179,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "ASUS DUAL RX 6600",
+                "BoostClock": 2491,
+                "Length": 243,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "GIGABYTE RX 6600 EAGLE",
+                "BoostClock": 2491,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "MSI RX 6600 ARMOR",
+                "BoostClock": 2491,
+                "Length": 238,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "MSI RX 6600 ARMOR V1",
+                "BoostClock": 2491,
+                "Length": 238,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "MSI RX 6600 MECH 2X",
+                "BoostClock": 2491,
+                "Length": 235,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "PowerColor Fighter RX 6600",
+                "BoostClock": 2491,
+                "Length": 200,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "PowerColor Hellhound RX 6600",
+                "BoostClock": 2491,
+                "Length": 220,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "Sapphire GPRO X060",
+                "BoostClock": 2044,
+                "Length": 193,
+                "Slots": "Dual-slot",
+                "TDP": 140
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6600",
+                "BoostClock": 2491,
+                "Length": 193,
+                "Slots": "Dual-slot",
+                "TDP": 140
+            },
+            {
+                "ProductName": "Sparkle RX 6600 Mini GameStation",
+                "BoostClock": 2491,
+                "Length": 155,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "VASTARMOR RX 6600 STARRY SKY",
+                "BoostClock": 2491,
+                "Length": 224,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "XFX Speedster SWFT 210 RX 6600 Core",
+                "BoostClock": 2491,
+                "Length": 241,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            },
+            {
+                "ProductName": "Yeston RX 6600 GAEA",
+                "BoostClock": 2491,
+                "Length": 190,
+                "Slots": "Dual-slot",
+                "TDP": 132
+            }
+        ]
+    },
+    {
+        "Series": "RX 6600 XT",
+        "Generation": "RX 6000",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "128 bit",
+        "BoostClock": 2589,
+        "Benchmark": 9579,
+        "Power": 160,
+        "Length": 190,
+        "Slot": "Dual-slot",
+        "Width": 110,
+        "ProductSpec": [
+            {
+                "ProductName": "ASRock RX 6600 XT Challenger D OC",
+                "BoostClock": 2593,
+                "Length": 269,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "ASRock RX 6600 XT Challenger ITX",
+                "BoostClock": 2589,
+                "Length": 179,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "ASRock RX 6600 XT Challenger Pro OC",
+                "BoostClock": 2602,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "ASRock RX 6600 XT Phantom Gaming D OC",
+                "BoostClock": 2607,
+                "Length": 305,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "ASUS DUAL RX 6600 XT OC",
+                "BoostClock": 2593,
+                "Length": 243,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "ASUS ROG STRIX RX 6600 XT GAMING OC",
+                "BoostClock": 2607,
+                "Length": 243,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "BIOSTAR RX 6600 XT",
+                "BoostClock": 2589,
+                "Length": 190,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "Dataland RX 6600 XT X-Serial",
+                "BoostClock": 2607,
+                "Length": 224,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "Dell RX 6600 XT OEM",
+                "BoostClock": 2589,
+                "Length": 190,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "GIGABYTE RX 6600 XT EAGLE",
+                "BoostClock": 2589,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "GIGABYTE RX 6600 XT GAMING OC",
+                "BoostClock": 2593,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "GIGABYTE RX 6600 XT GAMING OC PRO",
+                "BoostClock": 2589,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "HP RX 6600 XT OEM",
+                "BoostClock": 2589,
+                "Length": 190,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "MSI RX 6600 XT GAMING",
+                "BoostClock": 2589,
+                "Length": 277,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "MSI RX 6600 XT GAMING X",
+                "BoostClock": 2607,
+                "Length": 277,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "MSI RX 6600 XT MECH",
+                "BoostClock": 2589,
+                "Length": 235,
+                "Slots": "Dual-slot",
+                "TDP": 140
+            },
+            {
+                "ProductName": "MSI RX 6600 XT MECH 2X OCV1",
+                "BoostClock": 2602,
+                "Length": 215,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "MSI RX 6600 XT MECH OC",
+                "BoostClock": 2602,
+                "Length": 235,
+                "Slots": "Dual-slot",
+                "TDP": 140
+            },
+            {
+                "ProductName": "PowerColor Fighter RX 6600 XT",
+                "BoostClock": 2589,
+                "Length": 200,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "PowerColor Hellhound RX 6600 XT",
+                "BoostClock": 2593,
+                "Length": 220,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6600 XT",
+                "BoostClock": 2607,
+                "Length": 251,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6600 XT",
+                "BoostClock": 2607,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6600 XT",
+                "BoostClock": 2593,
+                "Length": 240,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "VASTARMOR RX 6600 XT ALLOY",
+                "BoostClock": 2607,
+                "Length": 272,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "VASTARMOR RX 6600 XT STAR",
+                "BoostClock": 2589,
+                "Length": 272,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "XFX Speedster MERC 308 RX 6600 XT",
+                "BoostClock": 2607,
+                "Length": 274,
+                "Slots": " Triple-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "XFX Speedster QICK 308 RX 6600 XT",
+                "BoostClock": 2607,
+                "Length": 274,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "XFX Speedster SWFT 210 RX 6600 XT",
+                "BoostClock": 2589,
+                "Length": 241,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            },
+            {
+                "ProductName": "Yeston RX 6600 XT GAEA",
+                "BoostClock": 2589,
+                "Length": 190,
+                "Slots": "Dual-slot",
+                "TDP": 160
+            }
+        ]
+    },
+    {
+        "Series": "RX 7600",
+        "Generation": "RX 7000",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "128 bit",
+        "BoostClock": 2655,
+        "Benchmark": 11002,
         "Power": 165,
         "Length": 204,
         "Slot": "Dual-slot",
@@ -6159,6 +7163,13 @@
                 "ProductName": "ASRock RX 7600 Steel Legend OC",
                 "BoostClock": 2726,
                 "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "ASUS DUAL RX 7600 EVO OC",
+                "BoostClock": 2695,
+                "Length": 229,
                 "Slots": "Dual-slot",
                 "TDP": 165
             },
@@ -6291,15 +7302,13 @@
         ]
     },
     {
-        "Code": "RX 7600 XT",
-        "Series": "",
-        "Generation": "Navi III\n\t\t\t\t\t(RX 7000)",
-        "MemorySize": "16 GB",
+        "Series": "RX 7600 XT",
+        "Generation": "RX 7000",
+        "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
-        "Clock": 2755,
-        "TimeSpy": 11302,
-        "FrameScore": 113,
+        "BoostClock": 2755,
+        "Benchmark": 11291,
         "Power": 190,
         "Length": 204,
         "Slot": "Dual-slot",
@@ -6378,15 +7387,13 @@
         ]
     },
     {
-        "Code": "RX 7700 XT",
-        "Series": "",
-        "Generation": "Navi III\n\t\t\t\t\t(RX 7000)",
-        "MemorySize": "12 GB",
+        "Series": "RX 7700 XT",
+        "Generation": "RX 7000",
+        "MemorySize": 12,
         "MemoryType": "GDDR6",
         "MemoryBus": "192 bit",
-        "Clock": 2544,
-        "TimeSpy": 16986,
-        "FrameScore": 174.9,
+        "BoostClock": 2544,
+        "Benchmark": 16999,
         "Power": 245,
         "Length": 267,
         "Slot": "Dual-slot",
@@ -6563,15 +7570,13 @@
         ]
     },
     {
-        "Code": "RX 7800 XT",
-        "Series": "",
-        "Generation": "Navi III\n\t\t\t\t\t(RX 7000)",
-        "MemorySize": "16 GB",
+        "Series": "RX 7800 XT",
+        "Generation": "RX 7000",
+        "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "256 bit",
-        "Clock": 2430,
-        "TimeSpy": 20034,
-        "FrameScore": 223.1,
+        "BoostClock": 2430,
+        "Benchmark": 20026,
         "Power": 263,
         "Length": 267,
         "Slot": "Dual-slot",
@@ -6718,6 +7723,13 @@
                 "TDP": 270
             },
             {
+                "ProductName": "Sapphire PURE RX 7800 XT Once Human Edition",
+                "BoostClock": 2475,
+                "Length": 320,
+                "Slots": " Triple-slot",
+                "TDP": 270
+            },
+            {
                 "ProductName": "Sapphire RX 7800 XT",
                 "BoostClock": 2430,
                 "Length": 267,
@@ -6776,15 +7788,13 @@
         ]
     },
     {
-        "Code": "RX 7900 GRE",
-        "Series": "",
-        "Generation": "Navi III\n\t\t\t\t\t(RX 7000)",
-        "MemorySize": "16 GB",
+        "Series": "RX 7900 GRE",
+        "Generation": "RX 7000",
+        "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "256 bit",
-        "Clock": 2245,
-        "TimeSpy": 22360,
-        "FrameScore": 279.4,
+        "BoostClock": 2245,
+        "Benchmark": 22323,
         "Power": 260,
         "Length": 276,
         "Slot": "Dual-slot",
@@ -6884,15 +7894,13 @@
         ]
     },
     {
-        "Code": "RX 7900 XT",
-        "Series": "",
-        "Generation": "Navi III\n\t\t\t\t\t(RX 7000)",
-        "MemorySize": "20 GB",
+        "Series": "RX 7900 XT",
+        "Generation": "RX 7000",
+        "MemorySize": 20,
         "MemoryType": "GDDR6",
         "MemoryBus": "320 bit",
-        "Clock": 2394,
-        "TimeSpy": 26610,
-        "FrameScore": 323.2,
+        "BoostClock": 2394,
+        "Benchmark": 26853,
         "Power": 300,
         "Length": 276,
         "Slot": "Dual-slot",
@@ -7104,15 +8112,13 @@
         ]
     },
     {
-        "Code": "RX 7900 XTX",
-        "Series": "",
-        "Generation": "Navi III\n\t\t\t\t\t(RX 7000)",
-        "MemorySize": "24 GB",
+        "Series": "RX 7900 XTX",
+        "Generation": "RX 7000",
+        "MemorySize": 24,
         "MemoryType": "GDDR6",
         "MemoryBus": "384 bit",
-        "Clock": 2498,
-        "TimeSpy": 30404,
-        "FrameScore": 391.6,
+        "BoostClock": 2498,
+        "Benchmark": 30578,
         "Power": 355,
         "Length": 287,
         "Slot": "Dual-slot",

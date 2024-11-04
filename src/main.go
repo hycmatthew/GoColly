@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := cpu
+	getDataName := gpu
 	isUpdateSpec := false
 
 	if isUpdateSpec {
@@ -101,7 +101,7 @@ func updateGPUSpecLogic() {
 
 	for i := 1; i < len(dataList); i++ {
 		data := dataList[i]
-		record := pcData.GPUScoreData{Name: data[0], ScoreLink: data[1], DataLink: data[2]}
+		record := pcData.GPUScoreData{Name: data[0], Benchmark: data[1], DataLink: data[2]}
 		recordList = append(recordList, record)
 	}
 
@@ -273,8 +273,8 @@ func updatePriceLogic(name string) {
 				spec := specList[count]
 				record := pcData.GetCPUData(spec)
 				cpuList = append(cpuList, record)
-
 				count++
+
 				if count == len(specList) {
 					saveData(cpuList, name)
 					ticker.Stop()
@@ -293,10 +293,11 @@ func updatePriceLogic(name string) {
 
 		dataList := readCsvFile("res/" + name + "data.csv")
 		var recordList []pcData.GPURecordData
+		count++
 
 		for i := 1; i < len(dataList); i++ {
 			data := dataList[i]
-			record := pcData.GPURecordData{Brand: data[0], Name: data[1], PriceCN: data[2], LinkCN: data[3], LinkUS: data[4], LinkHK: data[5]}
+			record := pcData.GPURecordData{Brand: data[0], Name: data[1], PriceCN: data[2], SpecCN: data[3], LinkCN: data[4], LinkUS: data[5], LinkHK: data[6]}
 			recordList = append(recordList, record)
 		}
 
@@ -306,6 +307,7 @@ func updatePriceLogic(name string) {
 				data := recordList[count]
 				record := pcData.GetGPUData(specList, data)
 				gpuList = append(gpuList, record)
+				count++
 
 				if count == len(recordList) {
 					saveData(gpuList, name)
@@ -329,6 +331,7 @@ func updatePriceLogic(name string) {
 				spec := specList[count]
 				record := pcData.GetRamData(spec)
 				ramList = append(ramList, record)
+				count++
 
 				if count == len(specList) {
 					saveData(ramList, name)
@@ -352,6 +355,7 @@ func updatePriceLogic(name string) {
 				spec := specList[count]
 				record := pcData.GetSSDData(spec)
 				ssdList = append(ssdList, record)
+				count++
 
 				if count == len(specList) {
 					saveData(ssdList, name)
@@ -375,6 +379,7 @@ func updatePriceLogic(name string) {
 				spec := specList[count]
 				record := pcData.GetRamData(spec)
 				ramList = append(ramList, record)
+				count++
 
 				if count == len(specList) {
 					saveData(ramList, name)

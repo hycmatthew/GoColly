@@ -1,18 +1,22 @@
-name,link_score,link_data
-RTX 4060,https://nanoreview.net/en/gpu/geforce-rtx-4060,https://www.techpowerup.com/gpu-specs/geforce-rtx-4060.c4107
-RTX 4060 Ti,https://nanoreview.net/en/gpu/geforce-rtx-4060-ti-8gb,https://www.techpowerup.com/gpu-specs/geforce-rtx-4060-ti-8-gb.c3890
-RTX 4070,https://nanoreview.net/en/gpu/geforce-rtx-4070,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070.c3924
-RTX 4070 Super,https://nanoreview.net/en/gpu/geforce-rtx-4070-super,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4186
-RTX 4070 Ti,https://nanoreview.net/en/gpu/geforce-rtx-4070-ti,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-ti.c3950
-RTX 4070 Ti SUPER,https://nanoreview.net/en/gpu/geforce-rtx-4070-ti-super,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-ti-super.c4187
-RTX 4080,https://nanoreview.net/en/gpu/geforce-rtx-4080,https://www.techpowerup.com/gpu-specs/geforce-rtx-4080.c3888
-RTX 4080 SUPER,https://nanoreview.net/en/gpu/geforce-rtx-4080-super,https://www.techpowerup.com/gpu-specs/geforce-rtx-4080-super.c4182
-RTX 4090,https://nanoreview.net/en/gpu/geforce-rtx-4090,https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889
-RTX 4090D,https://nanoreview.net/en/gpu/geforce-rtx-4090,https://www.techpowerup.com/gpu-specs/geforce-rtx-4090-d.c4189
-RX 7600,,https://www.techpowerup.com/gpu-specs/radeon-rx-7600.c4153
-RX 7600 XT,https://nanoreview.net/en/gpu/radeon-rx-7600-xt,https://www.techpowerup.com/gpu-specs/radeon-rx-7600-xt.c4190
-RX 7700 XT,https://nanoreview.net/en/gpu/radeon-rx-7700-xt,https://www.techpowerup.com/gpu-specs/radeon-rx-7700-xt.c3911
-RX 7800 XT,https://nanoreview.net/en/gpu/radeon-rx-7800-xt,https://www.techpowerup.com/gpu-specs/radeon-rx-7800-xt.c3839
-RX 7900 GRE,https://nanoreview.net/en/gpu/radeon-rx-7900-gre,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-gre.c4166
-RX 7900 XT,https://nanoreview.net/en/gpu/radeon-rx-7900-xt,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xt.c3912
-RX 7900 XTX,https://nanoreview.net/en/gpu/radeon-rx-7900-xtx,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xtx.c3941
+name,3dmark_score,link_data
+RTX 4060,10620,https://www.techpowerup.com/gpu-specs/geforce-rtx-4060.c4107
+RTX 4060 Ti 16GB,13489,https://www.techpowerup.com/gpu-specs/geforce-rtx-4060-ti-16-gb.c4155
+RTX 4060 Ti 8GB,13507,https://www.techpowerup.com/gpu-specs/geforce-rtx-4060-ti-8-gb.c3890
+RTX 4070,17857,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070.c3924
+RTX 4070 Super,20981,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-super.c4186
+RTX 4070 Ti,22831,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-ti.c3950
+RTX 4070 Ti SUPER,24266,https://www.techpowerup.com/gpu-specs/geforce-rtx-4070-ti-super.c4187
+RTX 4080,28273,https://www.techpowerup.com/gpu-specs/geforce-rtx-4080.c3888
+RTX 4080 SUPER,28381,https://www.techpowerup.com/gpu-specs/geforce-rtx-4080-super.c4182
+RTX 4090,36517,https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889
+RTX 4090D,34292,https://www.techpowerup.com/gpu-specs/geforce-rtx-4090-d.c4189
+RX 6500 XT,4917,https://www.techpowerup.com/gpu-specs/radeon-rx-6500-xt.c3850
+RX 6600,8082,https://www.techpowerup.com/gpu-specs/radeon-rx-6600.c3696
+RX 6600 XT,9579,https://www.techpowerup.com/gpu-specs/radeon-rx-6600-xt.c3774
+RX 7600,11002,https://www.techpowerup.com/gpu-specs/radeon-rx-7600.c4153
+RX 7600 XT,11291,https://www.techpowerup.com/gpu-specs/radeon-rx-7600-xt.c4190
+RX 7700 XT,16999,https://www.techpowerup.com/gpu-specs/radeon-rx-7700-xt.c3911
+RX 7800 XT,20026,https://www.techpowerup.com/gpu-specs/radeon-rx-7800-xt.c3839
+RX 7900 GRE,22323,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-gre.c4166
+RX 7900 XT,26853,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xt.c3912
+RX 7900 XTX,30578,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xtx.c3941

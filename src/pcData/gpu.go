@@ -1,10 +1,11 @@
 package pcData
 
 import (
+	"encoding/json"
 	"fmt"
+	"io"
 	"math"
 	"net/http"
-	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -13,29 +14,28 @@ import (
 
 type GPUScoreData struct {
 	Name      string
+	Benchmark string
 	DataLink  string
-	ScoreLink string
 }
 
 type GPURecordData struct {
 	Brand   string
 	Name    string
 	PriceCN string
+	SpecCN  string
 	LinkCN  string
 	LinkUS  string
 	LinkHK  string
 }
 
 type GPUSpec struct {
-	Code        string
 	Series      string
 	Generation  string
 	MemorySize  int
 	MemoryType  string
 	MemoryBus   string
-	Clock       int
-	TimeSpy     int
-	FrameScore  float64
+	BoostClock  int
+	Benchmark   int
 	Power       int
 	Length      int
 	Slot        string
@@ -59,13 +59,12 @@ type GPUType struct {
 	MemorySize int
 	MemoryType string
 	MemoryBus  string
-	Clock      int
-	TimeSpy    int
-	FrameScore float64
+	BoostClock int
+	OcClock    int
+	Benchmark  int
 	Power      int
 	Length     int
 	Slot       string
-	Width      int
 	LinkCN     string
 	LinkUS     string
 	LinkHK     string
@@ -93,11 +92,11 @@ func GetGPUSpec(record GPUScoreData) GPUSpec {
 	collector.SetClient(&http.Client{
 		Transport: fakeChrome.Transport,
 	})
-	scoreCollector := collector.Clone()
+	// scoreCollector := collector.Clone()
 
 	GPUSpec := getGPUSpecData(record.DataLink, collector)
-	GPUSpec.TimeSpy, GPUSpec.FrameScore = getGPUScoreData(record.ScoreLink, scoreCollector)
-	GPUSpec.Code = record.Name
+	GPUSpec.Series = record.Name
+	GPUSpec.Benchmark = extractNumberFromString(record.Benchmark)
 	return GPUSpec
 }
 
@@ -115,6 +114,8 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 			"zol.com.cn",
 			"product.pconline.com.cn",
 			"pconline.com.cn",
+			"www.colorful.cn",
+			"colorful.cn",
 		),
 		colly.AllowURLRevisit(),
 	)
@@ -123,30 +124,40 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 	cnCollector := collector.Clone()
 	// hkCollector := collector.Clone()
 
-	priceUs, gpuImg, specUpdate := getGPUUSPrice(record.LinkUS, usCollector)
-	priceCn, gpuName := getGPUCNPrice(record.LinkCN, cnCollector)
+	specData := GPUSpec{}
+	ocClock := 0
+	priceUs, gpuImg, specUpdate := "", "", GPUSpecSubData{}
+
+	if record.LinkUS != "" {
+		priceUs, gpuImg, specUpdate = getGPUUSPrice(record.LinkUS, usCollector)
+	}
+	priceCn, tempSeries := getGPUCNPrice(record.LinkCN, cnCollector)
+	seriesName := updateSeriesName(record.Name, tempSeries)
 	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
-	specData := findGPUSpecLogic(specList, gpuName)
-	updatedData := searchSubDataByName(record.Name, record.Brand, specData.ProductSpec)
 
-	clockLogic := updatedData.BoostClock
-	if specUpdate.BoostClock != 0 {
-		clockLogic = specUpdate.BoostClock
+	switch record.Brand {
+	case "colorful":
+		specData, ocClock = getSpecFromColorful(record.SpecCN)
+		specData.Benchmark = findGPUScoreLogic(specList, seriesName)
+		fmt.Println(specData.Series)
+		fmt.Println(specData.Benchmark)
+	default:
+		specData = findGPUSpecLogic(specList, seriesName)
+		ocClock = specData.BoostClock
+
+		searchSubData := searchSubDataByName(record.Name, record.Brand, specData.ProductSpec)
+		if searchSubData.BoostClock != 0 {
+			specUpdate = searchSubData
+		}
+		specData.BoostClock = specUpdate.BoostClock
+		specData.Length = specUpdate.Length
+		specData.Power = specUpdate.TDP
+		specData.Slot = specUpdate.Slots
 	}
 
-	tdpLogic := updatedData.TDP
-	if specUpdate.TDP > 0 {
-		tdpLogic = specUpdate.TDP
-	}
-
-	lengthLogic := updatedData.Length
-	if specUpdate.Length > 0 {
-		lengthLogic = specUpdate.Length
-	}
-
-	newTimeSpy := int(newScoreLogic(clockLogic, specData.Clock, float64(specData.TimeSpy)))
-	newFrameScore := newScoreLogic(clockLogic, specData.Clock, specData.FrameScore)
-
+	newBenchmark := int(newScoreLogic(ocClock, specData.BoostClock, specData.Benchmark))
+	fmt.Println(newBenchmark)
+	fmt.Println("-----------------------")
 	GPUData := GPUType{
 		Name:       record.Name,
 		Brand:      record.Brand,
@@ -155,13 +166,12 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 		MemorySize: specData.MemorySize,
 		MemoryType: specData.MemoryType,
 		MemoryBus:  specData.MemoryBus,
-		TimeSpy:    newTimeSpy,
-		FrameScore: newFrameScore,
-		Clock:      clockLogic,
-		Power:      tdpLogic,
-		Length:     lengthLogic,
+		Benchmark:  newBenchmark,
+		BoostClock: specData.BoostClock,
+		OcClock:    ocClock,
+		Power:      specData.Power,
+		Length:     specData.Length,
 		Slot:       specData.Slot,
-		Width:      specData.Width,
 		LinkUS:     record.LinkUS,
 		LinkHK:     record.LinkHK,
 		LinkCN:     record.LinkCN,
@@ -257,7 +267,7 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 		MemorySize:  memorySize,
 		MemoryType:  memoryType,
 		MemoryBus:   memoryBus,
-		Clock:       clock,
+		BoostClock:  clock,
 		Power:       tdp,
 		Length:      length,
 		Slot:        slot,
@@ -266,6 +276,8 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 	}
 }
 
+// https://nanoreview.net/en/gpu/radeon-rx-6600-xt
+/*
 func getGPUScoreData(link string, collector *colly.Collector) (int, float64) {
 	timespy := 0
 	framescore := 0.0
@@ -284,6 +296,7 @@ func getGPUScoreData(link string, collector *colly.Collector) (int, float64) {
 	collector.Visit(link)
 	return timespy, framescore
 }
+*/
 
 func getGPUUSPrice(link string, collector *colly.Collector) (string, string, GPUSpecSubData) {
 	imgLink := ""
@@ -327,25 +340,38 @@ func getGPUCNPrice(link string, collector *colly.Collector) (string, string) {
 	return price, gpuName
 }
 
-func findGPUSpecLogic(specList []GPUSpec, matchName string) GPUSpec {
+func findGPUSpecLogic(specList []GPUSpec, matchSeries string) GPUSpec {
 	var tempData GPUSpec
-	upperNameList := strings.Split(strings.ToUpper(matchName), " ")
-	seriesLength := 0
-	for i := range specList {
-		seriesList := strings.Split(specList[i].Series, " ")
-
-		if isSubset(seriesList, upperNameList) && (len(seriesList) > seriesLength) {
-			tempData = specList[i]
-			seriesLength = len(seriesList)
+	upperSeries := strings.ToUpper(matchSeries)
+	for _, item := range specList {
+		if strings.ToUpper(item.Series) == upperSeries {
+			tempData = item
+			break
 		}
 	}
 	return tempData
 }
 
-func newScoreLogic(boostClock int, baseClock int, score float64) float64 {
-	clockFactor := float64(boostClock) / float64(baseClock)
-	updatedScore := score * (clockFactor * 0.6)
-	return math.Floor(updatedScore)
+func findGPUScoreLogic(specList []GPUSpec, matchSeries string) int {
+	var tempData GPUSpec
+	upperSeries := strings.ToUpper(matchSeries)
+	for _, item := range specList {
+		if strings.ToUpper(item.Series) == upperSeries {
+			tempData = item
+			break
+		}
+	}
+	return tempData.Benchmark
+}
+
+func newScoreLogic(ocClock int, boostClock int, score int) float64 {
+	resScore := float64(score)
+	if ocClock != boostClock {
+		clockFactor := float64(ocClock) / float64(boostClock)
+		updatedFactor := ((clockFactor - 1) * 0.6) + 1
+		resScore = resScore * updatedFactor
+	}
+	return math.Floor(resScore)
 }
 
 func filterByBrand(brand string, in []GPUSpecSubData) []GPUSpecSubData {
@@ -399,33 +425,37 @@ func getBrandSeries(brand string) [][]string {
 		{"VENTUS", "2X"},
 		{"VENTUS", "3X"},
 		{"GAMING", "X", "SLIM"},
+		{"AERO", "S"},
 	}
+
+	resSeries := msiSeries
 
 	switch brand {
 	case "asus":
-		return asusSeries
+		resSeries = asusSeries
 	case "colorful":
-		return colorfulSeries
+		resSeries = colorfulSeries
 	case "galaxy":
-		return galaxySeries
+		resSeries = galaxySeries
 	case "gigabyte":
-		return gigabyteSeries
+		resSeries = gigabyteSeries
 	default:
-		return msiSeries
+		resSeries = msiSeries
 	}
 
+	for i := range resSeries {
+		for j := range resSeries[i] {
+			resSeries[i][j] = strings.ToUpper(resSeries[i][j])
+		}
+	}
+	return resSeries
 }
 
 func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData) GPUSpecSubData {
 	brandStr := strings.ToLower(brand)
 	seriesList := getBrandSeries(brandStr)
-	for i := range seriesList {
-		for j := range seriesList[i] {
-			seriesList[i][j] = strings.ToUpper(seriesList[i][j])
-		}
-	}
 
-	updatedName := strings.ToUpper(strings.Replace(name, "-", " ", -1))
+	updatedName := strings.ToUpper(strings.ReplaceAll(name, "-", " "))
 	nameList := strings.Split(updatedName, " ")
 	var matchedseries []string
 	isOC := false
@@ -442,22 +472,24 @@ func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData
 			isOC = true
 		}
 	}
-
-	for i := range seriesList {
-		if isSubset(seriesList[i], nameList) {
-			matchedseries = seriesList[i]
+	fmt.Println(name, "is OC : ", isOC)
+	for _, item := range seriesList {
+		if isSubset(item, nameList) {
+			matchedseries = item
 		}
 	}
+
 	var out GPUSpecSubData
 	tempSubdDataList := filterByBrand(brandStr, subDataList)
-	for i := range tempSubdDataList {
-		upperName := strings.ToUpper(tempSubdDataList[i].ProductName)
+	for _, item := range tempSubdDataList {
+		upperName := strings.ToUpper(item.ProductName)
 		subDataNameList := strings.Split(upperName, " ")
 		subOC := strings.Contains(upperName, " OC")
 
 		if isSubset(matchedseries, subDataNameList) && isOC == subOC {
-			fmt.Println("Matched sub data - ", tempSubdDataList[i])
-			out = tempSubdDataList[i]
+			fmt.Println(name, " Matched sub data : ", item.ProductName)
+			out = item
+			break
 		}
 	}
 	if out.BoostClock == 0 {
@@ -465,3 +497,120 @@ func searchSubDataByName(name string, brand string, subDataList []GPUSpecSubData
 	}
 	return out
 }
+
+type ColorfulSpecData struct {
+	ArticleId   string `json:"article_id"`
+	AttributeId string `json:"attribute_id"`
+	Content     string `json:"content"`
+	CreateTime  string `json:"create_time"`
+	Id          string `json:"id"`
+	Mid         string `json:"mid"`
+	Title       string `json:"title"`
+	Typeid      string `json:"typeid"`
+}
+
+func getSpecFromColorful(link string) (GPUSpec, int) {
+	tempLink := strings.Split(link, "?")[1]
+	response, err := http.Get("https://www.colorful.cn/Home/GetAttrbuteValue?" + tempLink)
+	if err != nil {
+		fmt.Println("无法发起请求:", err)
+	}
+	defer response.Body.Close()
+
+	body, err := io.ReadAll(response.Body)
+	if err != nil {
+		fmt.Println("无法读取响应体:", err)
+	}
+
+	var jsonObj []ColorfulSpecData
+	json.Unmarshal(body, &jsonObj)
+
+	specData := GPUSpec{}
+	ocClock := 0
+
+	for _, element := range jsonObj {
+		if element.Title == "芯片系列" {
+			tempSeries := strings.Split(element.Content, "; ")
+			specData.Series = tempSeries[len(tempSeries)-1]
+		}
+		if element.Title == "显存容量" {
+			specData.MemorySize = extractNumberFromString(element.Content)
+		}
+		if element.Title == "显存类型" {
+			specData.MemoryType = element.Content
+		}
+		if element.Title == "显存位宽" {
+			specData.MemoryBus = element.Content
+		}
+		if element.Title == "TDP功耗" {
+			specData.Power = extractNumberFromString(element.Content)
+		}
+		if element.Title == "基础频率" {
+			tempClock := strings.Split(element.Content, "Boost")
+			specData.BoostClock = extractNumberFromString(tempClock[1])
+
+			if ocClock == 0 {
+				ocClock = specData.BoostClock
+			}
+		}
+		if element.Title == "一键OC核心频率" {
+			tempClock := strings.Split(element.Content, "Boost")
+			ocClock = extractNumberFromString(tempClock[1])
+		}
+		if element.Title == "产品尺寸" {
+			specData.Length = extractNumberFromString(element.Content)
+		}
+		if element.Title == "显卡类型" {
+			specData.Slot = slotTranslation(element.Content)
+		}
+	}
+
+	return specData, ocClock
+}
+
+func updateSeriesName(gpuName string, series string) string {
+	res := series
+	if strings.Contains(series, "Radeon") {
+		updatedName := strings.Split(series, "Radeon")
+		res = strings.TrimSpace(updatedName[len(updatedName)-1])
+	}
+
+	if strings.Contains(series, "GeForce") {
+		updatedName := strings.Split(series, "GeForce")
+		res = strings.TrimSpace(updatedName[len(updatedName)-1])
+	}
+
+	if res == "RTX 4060 Ti" {
+		if strings.Contains(strings.ToUpper(gpuName), "8G") {
+			res = "RTX 4060 Ti 8GB"
+		}
+		if strings.Contains(strings.ToUpper(gpuName), "16G") {
+			res = "RTX 4060 Ti 16GB"
+		}
+	}
+	return res
+}
+
+func slotTranslation(str string) string {
+	slotTranslation := map[string]string{
+		"双槽":  "2 Slots",
+		"超双槽": "2.5 Slots",
+		"三槽":  "3 Slots",
+		"超三槽": "3.5 Slots",
+	}
+
+	res, valid := slotTranslation[str]
+
+	if valid {
+		return res
+	} else {
+		return str
+	}
+}
+
+/*
+func getWidthFromDimension(dimension string) int {
+	numList := strings.Split(dimension, "*")
+	return extractNumberFromString(numList[0])
+}
+*/
