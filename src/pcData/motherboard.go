@@ -3,6 +3,7 @@ package pcData
 import (
 	"fmt"
 	"net/http"
+	"net/url"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -17,7 +18,7 @@ type MotherboardSpec struct {
 	Chipset    string
 	RamSlot    int
 	RamType    string
-	RamSupport string
+	RamSupport []string
 	RamMax     int
 	Pcie16Slot int
 	Pcie4Slot  int
@@ -42,7 +43,7 @@ type MotherboardType struct {
 	Chipset    string
 	RamSlot    int
 	RamType    string
-	RamSupport string
+	RamSupport []string
 	RamMax     int
 	Pcie16Slot int
 	Pcie4Slot  int
@@ -86,6 +87,7 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 		motherboardData.Wireless = true
 	}
 	motherboardData.Code = record.Name
+	motherboardData.Brand = record.Brand
 	motherboardData.PriceCN = record.PriceCN
 	motherboardData.PriceHK = ""
 	motherboardData.LinkHK = ""
@@ -123,7 +125,7 @@ func GetMotherboardData(spec MotherboardSpec) MotherboardType {
 	usCollector := collector.Clone()
 
 	priceCN := spec.PriceCN
-	if priceCN != "" {
+	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 	}
 	priceUS, tempImg := spec.PriceUS, spec.Img
@@ -158,94 +160,77 @@ func GetMotherboardData(spec MotherboardSpec) MotherboardType {
 }
 
 func getMotherboardSpecData(link string, collector *colly.Collector) MotherboardSpec {
-	name := ""
-	brand := ""
-	socket := ""
-	chipset := ""
-	ramSlot := 0
-	ramType := ""
-	ramSupport := ""
-	ramMax := 0
-	pcie16Slot := 0
-	pcie4Slot := 0
-	pcie1Slot := 0
-	m2Slot := 0
-	sataSlot := 0
-	formFactor := ""
-	price := ""
-	imgLink := ""
+	specData := MotherboardSpec{}
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".tns-inner img", "src")
+		specData.Img = element.ChildAttr(".tns-inner img", "src")
+		specData.Name = element.ChildText(".breadcrumb .active")
+		loopBreak := false
 
-		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
-		ramType = element.ChildText(".table-striped .badge-primary")
+		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
+			if !loopBreak {
+				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+				tempLink := item.ChildAttr(".detail-purchase", "href")
+
+				if strings.Contains(tempLink, "amazon") {
+					amazonLink := strings.Split(tempLink, "?tag=")[0]
+					specData.LinkUS = amazonLink
+					loopBreak = true
+				}
+				if strings.Contains(tempLink, "newegg") {
+					neweggLink := strings.Split(tempLink, "url=")[1]
+					UnescapeLink, _ := url.QueryUnescape(neweggLink)
+					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
+					loopBreak = true
+				}
+			}
+		})
+
+		specData.RamType = element.ChildText(".table-striped .badge-primary")
 		var ramSupportList []string
+		fmt.Println(specData.PriceUS)
 
 		element.ForEach(".table-striped .ram-values span", func(i int, item *colly.HTMLElement) {
 			temp := item.Text
 			ramSupportList = append(ramSupportList, temp)
 		})
 
-		for _, str := range ramSupportList {
-			ramSupport += (str + " ")
-		}
-		fmt.Println(ramSupport)
+		specData.RamSupport = ramSupportList
 
 		element.ForEach("ul.tail-links a", func(i int, item *colly.HTMLElement) {
 			itemStr := item.ChildText("strong")
 			if strings.Contains(itemStr, "Socket") {
-				socket = itemStr
+				specData.Socket = itemStr
 			}
 			if strings.Contains(itemStr, "Form factor") {
-				formFactor = itemStr
+				specData.FormFactor = itemStr
 			}
 			if strings.Contains(itemStr, "Chipset") {
-				chipset = itemStr
+				specData.Chipset = itemStr
 			}
 			if strings.Contains(itemStr, "PCI-Express x16 Slots") {
-				pcie16Slot = extractNumberFromString(itemStr)
+				specData.Pcie16Slot = extractNumberFromString(itemStr)
 			}
 			if strings.Contains(itemStr, "PCI-Express x4 Slots") {
-				pcie4Slot = extractNumberFromString(itemStr)
+				specData.Pcie4Slot = extractNumberFromString(itemStr)
 			}
 			if strings.Contains(itemStr, "PCI-Express x1 Slots") {
-				pcie1Slot = extractNumberFromString(itemStr)
+				specData.Pcie1Slot = extractNumberFromString(itemStr)
 			}
 			if strings.Contains(itemStr, "M.2 Ports") {
-				m2Slot = extractNumberFromString(itemStr)
+				specData.M2Slot = extractNumberFromString(itemStr)
 			}
 			if strings.Contains(itemStr, "RAM Slots") {
-				ramSlot = extractNumberFromString(itemStr)
+				specData.RamSlot = extractNumberFromString(itemStr)
 			}
 			if strings.Contains(itemStr, "Supported RAM") {
-				ramMax = extractNumberFromString(itemStr)
+				specData.RamMax = extractNumberFromString(itemStr)
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return MotherboardSpec{
-		Name:       name,
-		Brand:      brand,
-		Socket:     socket,
-		Chipset:    chipset,
-		RamSlot:    ramSlot,
-		RamType:    ramType,
-		RamSupport: ramSupport,
-		RamMax:     ramMax,
-		Pcie16Slot: pcie16Slot,
-		Pcie4Slot:  pcie4Slot,
-		Pcie1Slot:  pcie1Slot,
-		M2Slot:     m2Slot,
-		SataSlot:   sataSlot,
-		FormFactor: formFactor,
-		Wireless:   false,
-		PriceUS:    price,
-		PriceHK:    "",
-		PriceCN:    "",
-		Img:        imgLink,
-	}
+	return specData
 }

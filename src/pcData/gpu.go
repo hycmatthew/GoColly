@@ -137,10 +137,8 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 
 	switch record.Brand {
 	case "colorful":
-		specData, ocClock = getSpecFromColorful(record.SpecCN)
+		specData, ocClock, gpuImg = getSpecFromColorful(record.SpecCN)
 		specData.Benchmark = findGPUScoreLogic(specList, seriesName)
-		fmt.Println(specData.Series)
-		fmt.Println(specData.Benchmark)
 	default:
 		specData = findGPUSpecLogic(specList, seriesName)
 		ocClock = specData.BoostClock
@@ -156,8 +154,6 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 	}
 
 	newBenchmark := int(newScoreLogic(ocClock, specData.BoostClock, specData.Benchmark))
-	fmt.Println(newBenchmark)
-	fmt.Println("-----------------------")
 	GPUData := GPUType{
 		Name:       record.Name,
 		Brand:      record.Brand,
@@ -509,7 +505,7 @@ type ColorfulSpecData struct {
 	Typeid      string `json:"typeid"`
 }
 
-func getSpecFromColorful(link string) (GPUSpec, int) {
+func getSpecFromColorful(link string) (GPUSpec, int, string) {
 	tempLink := strings.Split(link, "?")[1]
 	response, err := http.Get("https://www.colorful.cn/Home/GetAttrbuteValue?" + tempLink)
 	if err != nil {
@@ -527,6 +523,7 @@ func getSpecFromColorful(link string) (GPUSpec, int) {
 
 	specData := GPUSpec{}
 	ocClock := 0
+	imgLink := ""
 
 	for _, element := range jsonObj {
 		if element.Title == "芯片系列" {
@@ -563,9 +560,12 @@ func getSpecFromColorful(link string) (GPUSpec, int) {
 		if element.Title == "显卡类型" {
 			specData.Slot = slotTranslation(element.Content)
 		}
+		if element.Title == "产品图片" {
+			imgLink = "https://www.colorful.cn/" + element.Content
+		}
 	}
 
-	return specData, ocClock
+	return specData, ocClock, imgLink
 }
 
 func updateSeriesName(gpuName string, series string) string {

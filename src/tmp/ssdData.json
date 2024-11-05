@@ -1,6 +1,5 @@
 [
     {
-        "Code": "Samsung 990 PRO 4TB",
         "Brand": "",
         "ReleaseDate": "September 2023",
         "Model": "MZ-V9P4T0BW",
@@ -10,16 +9,15 @@
         "Interface": "PCIe Gen4 x4",
         "FlashType": "V7 V-NAND 3bit MLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "289.99",
+        "PriceUS": "299.99",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "2199",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1962387.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-879-01.jpg"
     },
     {
-        "Code": "Samsung 990 PRO 1TB",
         "Brand": "",
         "ReleaseDate": "October 2022",
         "Model": "MZ-V9P1T0B/AM",
@@ -31,14 +29,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "109.00",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "639",
         "LinkUS": "https://www.amazon.com/dp/B0BHJF2VRN",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1676547_price.html",
         "Img": ""
     },
     {
-        "Code": "Samsung 990 PRO 2TB",
         "Brand": "",
         "ReleaseDate": "October 2022",
         "Model": "MZ-V9P2T0B/AM",
@@ -50,14 +47,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "149.99",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "1099",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1676567.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-861-01.jpg"
     },
     {
-        "Code": "Samsung 990 EVO 1TB",
         "Brand": "",
         "ReleaseDate": "January 2024",
         "Model": "MZ-V9E1T0B/AM",
@@ -69,14 +65,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "69.99",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "539",
         "LinkUS": "https://www.amazon.com/dp/B0CRCC9863",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/2099147.html",
         "Img": ""
     },
     {
-        "Code": "Samsung 990 EVO 2TB",
         "Brand": "",
         "ReleaseDate": "January 2024",
         "Model": "MZ-V9E2T0B/AM",
@@ -88,14 +83,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "129.99",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "998.9",
         "LinkUS": "https://www.amazon.com/dp/B0CRC7H66Z",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/2099167.html",
         "Img": ""
     },
     {
-        "Code": "Samsung 980 PRO 500GB",
         "Brand": "",
         "ReleaseDate": "September 2020",
         "Model": "MZ-V8P500B/AM",
@@ -107,14 +101,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "213.00",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "499",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHH3E4679",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1239907.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/AUUUD2201160KBDCJB7.jpg"
     },
     {
-        "Code": "Samsung 980 PRO 1TB",
         "Brand": "",
         "ReleaseDate": "September 2020",
         "Model": "MZ-V8P1T0B/AM",
@@ -126,14 +119,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "113.49",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "749",
         "LinkUS": "https://www.amazon.com/dp/B08GLX7TNT",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1239853.html",
         "Img": ""
     },
     {
-        "Code": "Samsung 980 PRO 2TB",
         "Brand": "",
         "ReleaseDate": "January 2021",
         "Model": "MZ-V8P2T0B/AM",
@@ -145,14 +137,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "197.70",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "749",
         "LinkUS": "https://www.amazon.com/dp/B08RK2SR23",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1239853.html",
         "Img": ""
     },
     {
-        "Code": "TiPlus7100 500GB",
         "Brand": "",
         "ReleaseDate": "",
         "Model": "",
@@ -164,14 +155,13 @@
         "FormFactor": "",
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "359",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/zhitai/1676647.html",
         "Img": ""
     },
     {
-        "Code": "TiPlus7100 1TB",
         "Brand": "",
         "ReleaseDate": "",
         "Model": "",
@@ -183,14 +173,13 @@
         "FormFactor": "",
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "489",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/zhitai/1676667.html",
         "Img": ""
     },
     {
-        "Code": "TiPlus7100 2TB",
         "Brand": "",
         "ReleaseDate": "",
         "Model": "",
@@ -202,14 +191,13 @@
         "FormFactor": "",
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "869",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/zhitai/1700507.html",
         "Img": ""
     },
     {
-        "Code": "TiPlus7100 4TB",
         "Brand": "",
         "ReleaseDate": "",
         "Model": "",
@@ -221,14 +209,13 @@
         "FormFactor": "",
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "1759",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/zhitai/2036827.html",
         "Img": ""
     },
     {
-        "Code": "WD BLACK SN770 1TB",
         "Brand": "",
         "ReleaseDate": "January 2022",
         "Model": "WDS100T3X0E",
@@ -247,7 +234,6 @@
         "Img": ""
     },
     {
-        "Code": "WD BLACK SN770 2TB",
         "Brand": "",
         "ReleaseDate": "January 2022",
         "Model": "WDS200T3X0E",
@@ -266,7 +252,6 @@
         "Img": ""
     },
     {
-        "Code": "WD BLACK SN850X 1TB",
         "Brand": "",
         "ReleaseDate": "August 2022",
         "Model": "WDS100T2X0E",
@@ -285,7 +270,6 @@
         "Img": ""
     },
     {
-        "Code": "WD BLACK SN850X 2TB",
         "Brand": "",
         "ReleaseDate": "August 2022",
         "Model": "WDS200T2X0E",
@@ -295,16 +279,15 @@
         "Interface": "PCIe Gen4 x4",
         "FlashType": "BiCS5 112-layer TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "149.99",
+        "PriceUS": "154.99",
         "PriceHK": "",
         "PriceCN": "999",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250247",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1633087_price.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-247-02.jpg"
     },
     {
-        "Code": "WD BLUE SN580 1TB",
         "Brand": "",
         "ReleaseDate": "May 2023",
         "Model": "WDS100T3B0E",
@@ -316,14 +299,13 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "60.99",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "539",
         "LinkUS": "https://www.amazon.com/dp/B0C8XMH264",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1910187.html",
         "Img": ""
     },
     {
-        "Code": "WD BLUE SN580 2TB",
         "Brand": "",
         "ReleaseDate": "June 2023",
         "Model": "WDS200T3B0E",
@@ -335,7 +317,7 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "109.99",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "949",
         "LinkUS": "https://www.amazon.com/dp/B0C8WPRM9T",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1910207_price.html",

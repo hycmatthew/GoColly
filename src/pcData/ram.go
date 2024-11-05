@@ -2,6 +2,7 @@ package pcData
 
 import (
 	"net/http"
+	"strings"
 
 	"github.com/gocolly/colly/v2"
 	"github.com/imroc/req/v3"
@@ -85,7 +86,12 @@ func GetRamData(spec RamSpec) RamType {
 		colly.AllowedDomains(
 			"www.newegg.com",
 			"newegg.com",
-			"pangoly.com",
+			"www.price.com.hk",
+			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
 		),
 		colly.AllowURLRevisit(),
 	)
@@ -93,8 +99,17 @@ func GetRamData(spec RamSpec) RamType {
 	collector.SetClient(&http.Client{
 		Transport: fakeChrome.Transport,
 	})
+	cnCollector := collector.Clone()
+	usCollector := collector.Clone()
 
-	ramData := getRamUSPrice(spec.LinkUS, collector)
+	priceCN := spec.PriceCN
+	if priceCN == "" {
+		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	}
+	priceUS, tempImg := spec.PriceUS, spec.Img
+	if strings.Contains(spec.LinkUS, "newegg") {
+		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+	}
 
 	return RamType{
 		Brand:    spec.Brand,
@@ -106,13 +121,13 @@ func GetRamData(spec RamSpec) RamType {
 		Voltage:  spec.Voltage,
 		Channel:  spec.Channel,
 		Profile:  spec.Profile,
-		PriceUS:  ramData.PriceUS,
+		PriceUS:  priceUS,
 		PriceHK:  spec.PriceHK,
-		PriceCN:  spec.PriceCN,
+		PriceCN:  priceCN,
 		LinkHK:   spec.LinkHK,
-		LinkUS:   ramData.LinkUS,
+		LinkUS:   spec.LinkUS,
 		LinkCN:   spec.LinkCN,
-		Img:      spec.Img,
+		Img:      tempImg,
 	}
 }
 

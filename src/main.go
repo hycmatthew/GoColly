@@ -26,11 +26,11 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := gpu
+	getDataName := ssd
 	isUpdateSpec := false
 
 	if isUpdateSpec {
-		if getDataName == "gpu" {
+		if getDataName == gpu {
 			updateGPUSpecLogic()
 		} else {
 			updateSpecLogic(getDataName)
@@ -127,6 +127,7 @@ func updateGPUSpecLogic() {
 
 func updateSpecLogic(name string) {
 	timeSet := 5000
+	extraTry := 50
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
@@ -162,8 +163,10 @@ func updateSpecLogic(name string) {
 			for {
 				<-ticker.C
 				mbRecord := pcData.GetMotherboardSpec(recordList[count])
-				specList = append(specList, mbRecord)
-				count++
+				if mbRecord.Name != "" {
+					specList = append(specList, mbRecord)
+					count++
+				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
 					ticker.Stop()
@@ -248,7 +251,7 @@ func updateSpecLogic(name string) {
 		}()
 	}
 
-	listLen := time.Duration(timeSet * (len(recordList) + 3))
+	listLen := time.Duration(timeSet * (len(recordList) + extraTry))
 	time.Sleep(time.Second * listLen)
 }
 
@@ -318,6 +321,30 @@ func updatePriceLogic(name string) {
 		}()
 
 		listLen := time.Duration(timeSet * (len(recordList) + 3))
+		time.Sleep(time.Second * listLen)
+	case "motherboard":
+		var specList []pcData.MotherboardSpec
+		var mbList []pcData.MotherboardType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		go func() {
+			for {
+				<-ticker.C
+				spec := specList[count]
+				record := pcData.GetMotherboardData(spec)
+				mbList = append(mbList, record)
+				count++
+
+				if count == len(specList) {
+					saveData(mbList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+
+		listLen := time.Duration(timeSet * (len(specList) + 3))
 		time.Sleep(time.Second * listLen)
 	case "ram":
 		var specList []pcData.RamSpec

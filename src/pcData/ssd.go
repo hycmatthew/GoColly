@@ -74,6 +74,7 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 
 	ssdData := getSSDSpecData(record.LinkSpec, specCollector)
 	ssdData.Code = record.Name
+	ssdData.Brand = record.Brand
 	ssdData.PriceCN = record.PriceCN
 	ssdData.PriceHK = ""
 	ssdData.LinkHK = ""
@@ -111,7 +112,7 @@ func GetSSDData(spec SSDSpec) SSDType {
 	usCollector := collector.Clone()
 
 	priceCN := spec.PriceCN
-	if priceCN != "" {
+	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 	}
 	priceUS, tempImg := spec.PriceUS, spec.Img
@@ -140,37 +141,27 @@ func GetSSDData(spec SSDSpec) SSDType {
 }
 
 func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
-	releaseDate := ""
-	model := ""
-	capacity := ""
-	maxRead := 0
-	maxWrite := 0
-	ssdInterface := ""
-	flashType := ""
-	formFactor := ""
-	price := ""
-	usLink := ""
-	imgLink := ""
+	specData := SSDSpec{}
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".tns-inner img", "src")
+		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		loopBreak := false
 
 		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
 			if !loopBreak {
-				price = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
 				tempLink := item.ChildAttr(".detail-purchase", "href")
 
-				if strings.Contains(tempLink, "amazon") {
+				if strings.Contains(tempLink, "amazon") && specData.LinkUS == "" {
 					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					usLink = amazonLink
+					specData.LinkUS = amazonLink
 					loopBreak = true
 				}
 				if strings.Contains(tempLink, "newegg") {
 					neweggLink := strings.Split(tempLink, "url=")[1]
 					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					usLink = strings.Split(UnescapeLink, "\u0026")[0]
+					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
 					loopBreak = true
 				}
 			}
@@ -179,38 +170,26 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
 			case "Model":
-				model = strings.Split(item.ChildTexts("td")[1], "\n")[0]
+				specData.Model = strings.Split(item.ChildTexts("td")[1], "\n")[0]
 			case "Release Date":
-				releaseDate = item.ChildText("td span")
+				specData.ReleaseDate = item.ChildText("td span")
 			case "Capacity":
-				capacity = item.ChildTexts("td")[1]
+				specData.Capacity = item.ChildTexts("td")[1]
 			case "Interface":
-				ssdInterface = item.ChildTexts("td")[1]
+				specData.Interface = item.ChildTexts("td")[1]
 			case "Form Factor":
-				formFactor = item.ChildTexts("td")[1]
+				specData.FormFactor = item.ChildTexts("td")[1]
 			case "NAND Flash Type":
-				flashType = item.ChildTexts("td")[1]
+				specData.FlashType = item.ChildTexts("td")[1]
 			case "Max Sequential Read":
-				maxRead = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.MaxRead = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Max Sequential Write":
-				maxWrite = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.MaxWrite = extractNumberFromString(item.ChildTexts("td")[1])
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return SSDSpec{
-		ReleaseDate: releaseDate,
-		Model:       model,
-		Capacity:    capacity,
-		MaxRead:     maxRead,
-		MaxWrite:    maxWrite,
-		Interface:   ssdInterface,
-		FlashType:   flashType,
-		FormFactor:  formFactor,
-		PriceUS:     price,
-		LinkUS:      usLink,
-		Img:         imgLink,
-	}
+	return specData
 }
