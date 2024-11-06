@@ -11,6 +11,7 @@ import (
 
 type CoolerSpec struct {
 	Code           string
+	Name           string
 	Brand          string
 	ReleaseDate    string
 	Sockets        []string
@@ -29,6 +30,7 @@ type CoolerSpec struct {
 
 type CoolerType struct {
 	Brand          string
+	Name           string
 	ReleaseDate    string
 	Sockets        []string
 	IsLiquidCooler string
@@ -107,7 +109,7 @@ func GetCoolerData(spec CoolerSpec) CoolerType {
 	usCollector := collector.Clone()
 
 	priceCN := spec.PriceCN
-	if priceCN != "" {
+	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 	}
 	priceUS, tempImg := spec.PriceUS, spec.Img
@@ -133,35 +135,29 @@ func GetCoolerData(spec CoolerSpec) CoolerType {
 }
 
 func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
-	releaseDate := ""
+	specData := CoolerSpec{}
 	var socketslist []string
-	isLiquidCooler := ""
-	size := ""
-	noiseLevel := ""
-	fanSpeed := ""
-	price := ""
-	usLink := ""
-	imgLink := ""
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".tns-inner .tns-item img", "src")
+		specData.Name = element.ChildText(".breadcrumb .active")
+		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
 		loopBreak := false
 
 		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
 			if !loopBreak {
-				price = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
 				tempLink := item.ChildAttr(".detail-purchase", "href")
 
 				if strings.Contains(tempLink, "amazon") {
 					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					usLink = amazonLink
+					specData.LinkUS = amazonLink
 					loopBreak = true
 				}
 				if strings.Contains(tempLink, "newegg") {
 					neweggLink := strings.Split(tempLink, "url=")[1]
 					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					usLink = strings.Split(UnescapeLink, "\u0026")[0]
+					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
 					loopBreak = true
 				}
 			}
@@ -170,34 +166,24 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
 			case "Release Date":
-				releaseDate = item.ChildText("td span")
+				specData.ReleaseDate = item.ChildText("td span")
 			case "Supported Sockets":
 				item.ForEach("td li", func(i int, subitem *colly.HTMLElement) {
 					socketslist = append(socketslist, subitem.Text)
 				})
 			case "Liquid Cooler":
-				isLiquidCooler = item.ChildTexts("td")[1]
+				specData.IsLiquidCooler = item.ChildTexts("td")[1]
 			case "Radiator Size":
-				size = item.ChildTexts("td")[1]
+				specData.Size = item.ChildTexts("td")[1]
 			case "Noise Level":
-				noiseLevel = item.ChildTexts("td")[1]
+				specData.NoiseLevel = item.ChildTexts("td")[1]
 			case "Fan RPM":
-				fanSpeed = item.ChildTexts("td")[1]
+				specData.FanSpeed = item.ChildTexts("td")[1]
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return CoolerSpec{
-		ReleaseDate:    releaseDate,
-		Sockets:        socketslist,
-		IsLiquidCooler: isLiquidCooler,
-		Size:           size,
-		NoiseLevel:     noiseLevel,
-		FanSpeed:       fanSpeed,
-		PriceUS:        price,
-		LinkUS:         usLink,
-		Img:            imgLink,
-	}
+	return specData
 }

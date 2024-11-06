@@ -11,6 +11,7 @@ import (
 
 type CaseSpec struct {
 	Code          string
+	Name          string
 	Brand         string
 	ReleaseDate   string
 	CaseSize      string
@@ -31,6 +32,7 @@ type CaseSpec struct {
 }
 
 type CaseType struct {
+	Name          string
 	Brand         string
 	ReleaseDate   string
 	CaseSize      string
@@ -75,6 +77,7 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 	specCollector := collector.Clone()
 
 	caseData := getCaseSpecData(record.LinkSpec, specCollector)
+	caseData.Brand = record.Brand
 	caseData.Code = record.Name
 	caseData.PriceCN = record.PriceCN
 	caseData.PriceHK = ""
@@ -113,7 +116,7 @@ func GetCaseData(spec CaseSpec) CaseType {
 	usCollector := collector.Clone()
 
 	priceCN := spec.PriceCN
-	if priceCN != "" {
+	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 	}
 	priceUS, tempImg := spec.PriceUS, spec.Img
@@ -142,38 +145,28 @@ func GetCaseData(spec CaseSpec) CaseType {
 }
 
 func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
-	releaseDate := ""
-	caseSize := ""
-	powerSupply := false
-	driveBays2 := 0
-	driveBays3 := 0
-	compatibility := ""
-	dimensions := ""
-	maxVGAlength := 0
-	slots := 0
-	price := ""
-	usLink := ""
-	imgLink := ""
+	specData := CaseSpec{}
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".tns-inner .tns-item img", "src")
+		specData.Name = element.ChildText(".breadcrumb .active")
+		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
 		loopBreak := false
 
 		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
 			if !loopBreak {
-				price = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
 				tempLink := item.ChildAttr(".detail-purchase", "href")
 
 				if strings.Contains(tempLink, "amazon") {
 					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					usLink = amazonLink
+					specData.LinkUS = amazonLink
 					loopBreak = true
 				}
 				if strings.Contains(tempLink, "newegg") {
 					neweggLink := strings.Split(tempLink, "url=")[1]
 					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					usLink = strings.Split(UnescapeLink, "\u0026")[0]
+					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
 					loopBreak = true
 				}
 			}
@@ -182,43 +175,30 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
 			case "Release Date":
-				releaseDate = item.ChildText("td span")
+				specData.ReleaseDate = item.ChildText("td span")
 			case "Type":
-				caseSize = item.ChildTexts("td")[1]
+				specData.CaseSize = item.ChildTexts("td")[1]
 			case "Includes Power Supply":
 				if item.ChildTexts("td")[1] != "No" {
-					powerSupply = true
+					specData.PowerSupply = true
 				}
 			case `Internal 2.5" Drive Bays`:
-				driveBays2 = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.DriveBays2 = extractNumberFromString(item.ChildTexts("td")[1])
 			case `Internal 3.5" Drive Bays`:
-				driveBays3 = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.DriveBays3 = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Motherboard Compatibility":
-				compatibility = item.ChildTexts("td")[1]
+				specData.Compatibility = item.ChildTexts("td")[1]
 			case "Dimensions":
-				dimensions = item.ChildTexts("td")[1]
+				specData.Dimensions = item.ChildTexts("td")[1]
 			case "Max VGA length allowance":
-				maxVGAlength = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.MaxVGAlength = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Expansion Slots":
-				slots = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.SlotsNum = extractNumberFromString(item.ChildTexts("td")[1])
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return CaseSpec{
-		ReleaseDate:   releaseDate,
-		CaseSize:      caseSize,
-		PowerSupply:   powerSupply,
-		DriveBays2:    driveBays2,
-		DriveBays3:    driveBays3,
-		Compatibility: compatibility,
-		Dimensions:    dimensions,
-		MaxVGAlength:  maxVGAlength,
-		SlotsNum:      slots,
-		PriceUS:       price,
-		LinkUS:        usLink,
-		Img:           imgLink,
-	}
+	return specData
 }

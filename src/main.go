@@ -26,8 +26,8 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := ssd
-	isUpdateSpec := false
+	getDataName := pcCase
+	isUpdateSpec := true
 
 	if isUpdateSpec {
 		if getDataName == gpu {
@@ -219,6 +219,21 @@ func updateSpecLogic(name string) {
 				}
 			}
 		}()
+	case "case":
+		var specList []pcData.CaseSpec
+		go func() {
+			for {
+				<-ticker.C
+				caseRecord := pcData.GetCaseSpec(recordList[count])
+				specList = append(specList, caseRecord)
+				count++
+				if count == len(recordList) {
+					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
 	case "cooler":
 		var specList []pcData.CoolerSpec
 		go func() {
@@ -386,6 +401,30 @@ func updatePriceLogic(name string) {
 
 				if count == len(specList) {
 					saveData(ssdList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+
+		listLen := time.Duration(timeSet * (len(specList) + 3))
+		time.Sleep(time.Second * listLen)
+	case "case":
+		var specList []pcData.CaseSpec
+		var caseList []pcData.CaseType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		go func() {
+			for {
+				<-ticker.C
+				spec := specList[count]
+				record := pcData.GetCaseData(spec)
+				caseList = append(caseList, record)
+				count++
+
+				if count == len(specList) {
+					saveData(caseList, name)
 					ticker.Stop()
 					runtime.Goexit()
 				}
