@@ -12,6 +12,7 @@ import (
 type SSDSpec struct {
 	Code        string
 	Brand       string
+	Name        string
 	ReleaseDate string
 	Model       string
 	Capacity    string
@@ -31,6 +32,7 @@ type SSDSpec struct {
 
 type SSDType struct {
 	Brand       string
+	Name        string
 	ReleaseDate string
 	Model       string
 	Capacity    string
@@ -81,6 +83,9 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 	ssdData.LinkCN = record.LinkCN
 	if record.LinkUS != "" {
 		ssdData.LinkUS = record.LinkUS
+	}
+	if ssdData.Name == "" {
+		ssdData.Name = record.Name
 	}
 	return ssdData
 }
@@ -145,6 +150,7 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
+		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		loopBreak := false
 

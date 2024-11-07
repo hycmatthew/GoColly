@@ -12,7 +12,7 @@ import (
 type PowerSpec struct {
 	Code        string
 	Brand       string
-	Model       string
+	Name        string
 	ReleaseDate string
 	Wattage     int
 	Size        string
@@ -30,7 +30,7 @@ type PowerSpec struct {
 
 type PowerType struct {
 	Brand       string
-	Model       string
+	Name        string
 	ReleaseDate string
 	Wattage     int
 	Size        string
@@ -72,6 +72,7 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 
 	ssdData := getPowerSpecData(record.LinkSpec, specCollector)
 	ssdData.Code = record.Name
+	ssdData.Brand = record.Brand
 	ssdData.PriceCN = record.PriceCN
 	ssdData.PriceHK = ""
 	ssdData.LinkHK = ""
@@ -119,7 +120,7 @@ func GetPowerData(spec PowerSpec) PowerType {
 
 	return PowerType{
 		Brand:       spec.Brand,
-		Model:       spec.Model,
+		Name:        spec.Name,
 		ReleaseDate: spec.ReleaseDate,
 		Wattage:     spec.Wattage,
 		Size:        spec.Size,
@@ -137,36 +138,28 @@ func GetPowerData(spec PowerSpec) PowerType {
 }
 
 func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
-	model := ""
-	releaseDate := ""
-	wattage := 0
-	size := ""
-	modular := ""
-	efficiency := ""
-	length := 0
-	price := ""
-	usLink := ""
-	imgLink := ""
+	specData := PowerSpec{}
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".tns-inner img", "src")
+		specData.Name = element.ChildText(".breadcrumb .active")
+		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		loopBreak := false
 
 		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
 			if !loopBreak {
-				price = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
 				tempLink := item.ChildAttr(".detail-purchase", "href")
 
 				if strings.Contains(tempLink, "amazon") {
 					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					usLink = amazonLink
+					specData.LinkUS = amazonLink
 					loopBreak = true
 				}
 				if strings.Contains(tempLink, "newegg") {
 					neweggLink := strings.Split(tempLink, "url=")[1]
 					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					usLink = strings.Split(UnescapeLink, "\u0026")[0]
+					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
 					loopBreak = true
 				}
 			}
@@ -174,36 +167,23 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
-			case "Model":
-				model = item.ChildTexts("td")[1]
 			case "Release Date":
-				releaseDate = item.ChildText("td span")
+				specData.ReleaseDate = item.ChildText("td span")
 			case "Wattage":
-				wattage = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.Wattage = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Type":
-				size = item.ChildTexts("td")[1]
+				specData.Size = item.ChildTexts("td")[1]
 			case "Modular":
-				modular = item.ChildTexts("td")[1]
+				specData.Modular = item.ChildTexts("td")[1]
 			case "Efficiency":
-				efficiency = item.ChildTexts("td")[1]
+				specData.Efficiency = item.ChildTexts("td")[1]
 			case "Length":
-				length = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.Length = extractNumberFromString(item.ChildTexts("td")[1])
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return PowerSpec{
-		ReleaseDate: releaseDate,
-		Model:       model,
-		Wattage:     wattage,
-		Size:        size,
-		Modular:     modular,
-		Efficiency:  efficiency,
-		Length:      length,
-		PriceUS:     price,
-		LinkUS:      usLink,
-		Img:         imgLink,
-	}
+	return specData
 }

@@ -11,8 +11,8 @@ import (
 
 type CaseSpec struct {
 	Code          string
-	Name          string
 	Brand         string
+	Name          string
 	ReleaseDate   string
 	CaseSize      string
 	PowerSupply   bool
@@ -32,8 +32,8 @@ type CaseSpec struct {
 }
 
 type CaseType struct {
-	Name          string
 	Brand         string
+	Name          string
 	ReleaseDate   string
 	CaseSize      string
 	PowerSupply   bool
@@ -126,6 +126,7 @@ func GetCaseData(spec CaseSpec) CaseType {
 
 	return CaseType{
 		Brand:         spec.Brand,
+		Name:          spec.Name,
 		ReleaseDate:   spec.ReleaseDate,
 		CaseSize:      spec.CaseSize,
 		PowerSupply:   spec.PowerSupply,

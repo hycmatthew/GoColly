@@ -11,8 +11,8 @@ import (
 
 type CoolerSpec struct {
 	Code           string
-	Name           string
 	Brand          string
+	Name           string
 	ReleaseDate    string
 	Sockets        []string
 	IsLiquidCooler string
@@ -118,6 +118,8 @@ func GetCoolerData(spec CoolerSpec) CoolerType {
 	}
 
 	return CoolerType{
+		Brand:          spec.Brand,
+		Name:           spec.Name,
 		ReleaseDate:    spec.ReleaseDate,
 		Sockets:        spec.Sockets,
 		IsLiquidCooler: spec.IsLiquidCooler,

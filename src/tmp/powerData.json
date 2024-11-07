@@ -1,6 +1,5 @@
 [
     {
-        "Code": "FOCUS GX750",
         "Brand": "seasonic",
         "Name": "Seasonic FOCUS-GX-750",
         "ReleaseDate": "August 2019",
@@ -15,10 +14,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151187",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229834.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "FOCUS GX650",
         "Brand": "seasonic",
         "Name": "Seasonic FOCUS-GX-650",
         "ReleaseDate": "August 2019",
@@ -27,16 +25,15 @@
         "Modular": "Full",
         "Efficiency": "80+ Gold",
         "Length": 140,
-        "PriceUS": "99.99",
+        "PriceUS": "109.99",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151186",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229704.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "FOCUS GX850",
         "Brand": "seasonic",
         "Name": "Seasonic Focus V3 GX-850",
         "ReleaseDate": "July 2023",
@@ -45,16 +42,15 @@
         "Modular": "Full",
         "Efficiency": "80+ Gold",
         "Length": 140,
-        "PriceUS": "158.99",
+        "PriceUS": "109.99",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151264",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229703.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "FOCUS GX1000",
         "Brand": "seasonic",
         "Name": "Seasonic Focus V3 GX-1000",
         "ReleaseDate": "July 2023",
@@ -69,10 +65,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151265",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229833.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-265-02.png"
     },
     {
-        "Code": "PRIME PX750",
         "Brand": "seasonic",
         "Name": "Seasonic PRIME PX-750",
         "ReleaseDate": "September 2019",
@@ -81,16 +76,15 @@
         "Modular": "Full",
         "Efficiency": "80+ Platinum",
         "Length": 140,
-        "PriceUS": "184.99",
+        "PriceUS": "216.19",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151217",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229695.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-206-S09.jpg"
     },
     {
-        "Code": "PRIME TX-750",
         "Brand": "seasonic",
         "Name": "Seasonic FOCUS PX-750",
         "ReleaseDate": "August 2019",
@@ -99,16 +93,15 @@
         "Modular": "Full",
         "Efficiency": "80+ Platinum",
         "Length": 140,
-        "PriceUS": "149.99",
+        "PriceUS": "109.99",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151191",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229692.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "PRIME TX-850",
         "Brand": "seasonic",
         "Name": "Seasonic PRIME TX-850",
         "ReleaseDate": "October 2019",
@@ -123,10 +116,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIADFRKAD0875",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229691.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-196-S09.jpg"
     },
     {
-        "Code": "PRIME TX-1000",
         "Brand": "seasonic",
         "Name": "Seasonic PRIME TX-1000",
         "ReleaseDate": "October 2019",
@@ -135,16 +127,15 @@
         "Modular": "Full",
         "Efficiency": "80+ Titanium",
         "Length": 170,
-        "PriceUS": "299.99",
+        "PriceUS": "216.19",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151195",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229690.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-206-S09.jpg"
     },
     {
-        "Code": "PRIME PX-1000",
         "Brand": "seasonic",
         "Name": "Seasonic PRIME PX-1000",
         "ReleaseDate": "October 2019",
@@ -153,16 +144,15 @@
         "Modular": "Full",
         "Efficiency": "80+ Platinum",
         "Length": 170,
-        "PriceUS": "228.88",
+        "PriceUS": "",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151200",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229696.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-194-Z01.jpg"
     },
     {
-        "Code": "FOCUS GM850",
         "Brand": "seasonic",
         "Name": "Seasonic FOCUS GM-850",
         "ReleaseDate": "",
@@ -177,10 +167,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151231",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229706.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "FOCUS GM650",
         "Brand": "seasonic",
         "Name": "SeaSonic FOCUS-GM-650",
         "ReleaseDate": "",
@@ -189,16 +178,15 @@
         "Modular": "Semi",
         "Efficiency": "80+ Gold",
         "Length": 140,
-        "PriceUS": "140.78",
+        "PriceUS": "109.99",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJWJRZ0679",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229848.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "FOCUS GX750 White",
         "Brand": "seasonic",
         "Name": "Seasonic FOCUS-GX-750",
         "ReleaseDate": "August 2019",
@@ -213,10 +201,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151187",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1327547.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "FOCUS GM750",
         "Brand": "seasonic",
         "Name": "SeaSonic FOCUS-GM-750",
         "ReleaseDate": "",
@@ -234,7 +221,6 @@
         "Img": ""
     },
     {
-        "Code": "FOCUS GX550",
         "Brand": "seasonic",
         "Name": "Seasonic FOCUS GX-550",
         "ReleaseDate": "August 2019",
@@ -243,16 +229,15 @@
         "Modular": "Full",
         "Efficiency": "80+ Gold",
         "Length": 140,
-        "PriceUS": "84.95",
+        "PriceUS": "109.99",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA25VJSU4975",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/power/haiyu/1229705.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/17-151-231-V06.jpg"
     },
     {
-        "Code": "PRIME GX-850 ",
         "Brand": "seasonic",
         "Name": "Seasonic PRIME GX-850",
         "ReleaseDate": "February 2020",

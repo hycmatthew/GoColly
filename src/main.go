@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := pcCase
+	getDataName := ssd
 	isUpdateSpec := true
 
 	if isUpdateSpec {
@@ -425,6 +425,30 @@ func updatePriceLogic(name string) {
 
 				if count == len(specList) {
 					saveData(caseList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+
+		listLen := time.Duration(timeSet * (len(specList) + 3))
+		time.Sleep(time.Second * listLen)
+	case "power":
+		var specList []pcData.PowerSpec
+		var powerList []pcData.PowerType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		go func() {
+			for {
+				<-ticker.C
+				spec := specList[count]
+				record := pcData.GetPowerData(spec)
+				powerList = append(powerList, record)
+				count++
+
+				if count == len(specList) {
+					saveData(powerList, name)
 					ticker.Stop()
 					runtime.Goexit()
 				}
