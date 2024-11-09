@@ -1,6 +1,5 @@
 [
     {
-        "Code": "Kraken Z73",
         "Brand": "nzxt",
         "Name": "NZXT Kraken Z73",
         "ReleaseDate": "",
@@ -29,14 +28,13 @@
         "FanSpeed": "500 - 1800 RPM",
         "PriceUS": "329.00",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "1999",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKK6H2123",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1242187.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-070-V01.jpg"
     },
     {
-        "Code": "Kraken Z53 RGB ",
         "Brand": "nzxt",
         "Name": "NZXT Kraken Z53 RGB",
         "ReleaseDate": "September 2021",
@@ -65,14 +63,13 @@
         "FanSpeed": "500 - 1500 RPM",
         "PriceUS": "298.30",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "1799",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKK6H2143",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1444947.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-080-01.jpg"
     },
     {
-        "Code": "Kraken X53",
         "Brand": "nzxt",
         "Name": "NZXT Kraken X53",
         "ReleaseDate": "January 2020",
@@ -99,16 +96,15 @@
         "Size": "240 mm",
         "NoiseLevel": "21 - 36 dB",
         "FanSpeed": "500 - 2000 RPM",
-        "PriceUS": "138.99",
+        "PriceUS": "215.93",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "939",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146066",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1257067.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-066-V08.jpg"
     },
     {
-        "Code": "Kraken Z63",
         "Brand": "nzxt",
         "Name": "NZXT Kraken Z63",
         "ReleaseDate": "January 2020",
@@ -137,14 +133,13 @@
         "FanSpeed": "500 - 1800 RPM",
         "PriceUS": "176.50",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "1699",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAWKTK0W4364",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1242147.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-069-V02.jpg"
     },
     {
-        "Code": "Kraken X72",
         "Brand": "nzxt",
         "Name": "NZXT Kraken X72",
         "ReleaseDate": "March 2018",
@@ -180,14 +175,13 @@
         "FanSpeed": "500 - 2000 RPM",
         "PriceUS": "299.00",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "969",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKK6H2038",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1089441.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-065-V21.jpg"
     },
     {
-        "Code": "Kraken X52",
         "Brand": "nzxt",
         "Name": "NZXT Kraken X52",
         "ReleaseDate": "June 2017",
@@ -223,14 +217,13 @@
         "FanSpeed": "500 - 2000 RPM",
         "PriceUS": "189.00",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "799",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKK6H2035",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/643767.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-060-08.jpg"
     },
     {
-        "Code": "Kraken Z73 RGB",
         "Brand": "nzxt",
         "Name": "NZXT Kraken Z73 RGB",
         "ReleaseDate": "September 2021",
@@ -257,16 +250,15 @@
         "Size": "360 mm",
         "NoiseLevel": "22 - 33 dB",
         "FanSpeed": "500 - 1500 RPM",
-        "PriceUS": "304.99",
+        "PriceUS": "194.90",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "2199",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146084",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1445007.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/1B4-00JX-000X9-S01.jpg"
     },
     {
-        "Code": "Kraken X53 RGB",
         "Brand": "nzxt",
         "Name": "NZXT Kraken X53 RGB",
         "ReleaseDate": "November 2020",
@@ -293,16 +285,15 @@
         "Size": "240 mm",
         "NoiseLevel": "22 - 33 dB",
         "FanSpeed": "500 - 1500 RPM",
-        "PriceUS": "173.01",
+        "PriceUS": "194.90",
         "PriceHK": "",
-        "PriceCN": "",
+        "PriceCN": "1199",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKK6H2144",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1445047.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/1B4-00JX-000X9-S01.jpg"
     },
     {
-        "Code": "Kraken Elite 240 RGB",
         "Brand": "nzxt",
         "Name": "NZXT Kraken Elite 240 RGB",
         "ReleaseDate": "",
@@ -331,10 +322,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146131",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1832107.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-131-01.jpg"
     },
     {
-        "Code": "Kraken Elite 280 RGB",
         "Brand": "nzxt",
         "Name": "NZXT Kraken Elite 280 RGB",
         "ReleaseDate": "",
@@ -363,10 +353,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146133",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1832087.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-133-V01.jpg"
     },
     {
-        "Code": "Kraken Elite 360 RGB",
         "Brand": "nzxt",
         "Name": "NZXT Kraken Elite 360 RGB",
         "ReleaseDate": "",
@@ -395,10 +384,9 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146135",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1830127.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-135-09.jpg"
     },
     {
-        "Code": "Kraken 280",
         "Brand": "nzxt",
         "Name": "NXZT Kraken 280",
         "ReleaseDate": "",
@@ -427,6 +415,6 @@
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146119",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1834687.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/35-146-119-10.jpg"
     }
 ]

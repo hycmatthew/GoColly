@@ -2,6 +2,7 @@ package pcData
 
 import (
 	"net/http"
+	"net/url"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -9,42 +10,48 @@ import (
 )
 
 type RamSpec struct {
-	Code     string
-	Brand    string
-	Series   string
-	Model    string
-	Capacity string
-	Speed    string
-	Timing   string
-	Voltage  string
-	Channel  string
-	Profile  string
-	PriceUS  string
-	PriceHK  string
-	PriceCN  string
-	LinkUS   string
-	LinkHK   string
-	LinkCN   string
-	Img      string
+	Code         string
+	Brand        string
+	Name         string
+	Series       string
+	Model        string
+	Capacity     string
+	Speed        string
+	Timing       string
+	Voltage      string
+	Channel      string
+	Profile      string
+	LED          string
+	HeatSpreader bool
+	PriceUS      string
+	PriceHK      string
+	PriceCN      string
+	LinkUS       string
+	LinkHK       string
+	LinkCN       string
+	Img          string
 }
 
 type RamType struct {
-	Brand    string
-	Series   string
-	Model    string
-	Capacity string
-	Speed    string
-	Timing   string
-	Voltage  string
-	Channel  string
-	Profile  string
-	PriceUS  string
-	PriceHK  string
-	PriceCN  string
-	LinkUS   string
-	LinkHK   string
-	LinkCN   string
-	Img      string
+	Brand        string
+	Name         string
+	Series       string
+	Model        string
+	Capacity     string
+	Speed        string
+	Timing       string
+	Voltage      string
+	Channel      string
+	Profile      string
+	LED          string
+	HeatSpreader bool
+	PriceUS      string
+	PriceHK      string
+	PriceCN      string
+	LinkUS       string
+	LinkHK       string
+	LinkCN       string
+	Img          string
 }
 
 func GetRamSpec(record LinkRecord) RamSpec {
@@ -57,6 +64,8 @@ func GetRamSpec(record LinkRecord) RamSpec {
 			"www.newegg.com",
 			"newegg.com",
 			"pangoly.com",
+			"www.newegg.com",
+			"newegg.com",
 		),
 		colly.AllowURLRevisit(),
 	)
@@ -65,14 +74,24 @@ func GetRamSpec(record LinkRecord) RamSpec {
 		Transport: fakeChrome.Transport,
 	})
 
-	ramData := getRamUSPrice(record.LinkUS, collector)
+	ramData := RamSpec{}
+
+	if record.LinkSpec != "" {
+		ramData = getRamSpecData(record.LinkSpec, collector)
+	} else {
+		ramData = getRamUSPrice(record.LinkUS, collector)
+	}
 	ramData.Code = record.Name
+	ramData.Brand = record.Brand
 	ramData.PriceCN = record.PriceCN
 	ramData.PriceHK = ""
 	ramData.LinkHK = ""
 	ramData.LinkCN = record.LinkCN
 	if record.LinkUS != "" {
 		ramData.LinkUS = record.LinkUS
+	}
+	if ramData.Name == "" {
+		ramData.Name = record.Name
 	}
 	return ramData
 }
@@ -106,88 +125,127 @@ func GetRamData(spec RamSpec) RamType {
 	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 	}
-	priceUS, tempImg := spec.PriceUS, spec.Img
+	newSpec := RamSpec{}
 	if strings.Contains(spec.LinkUS, "newegg") {
-		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+		newSpec = getRamUSPrice(spec.LinkUS, usCollector)
 	}
 
 	return RamType{
-		Brand:    spec.Brand,
-		Series:   spec.Series,
-		Model:    spec.Model,
-		Capacity: spec.Capacity,
-		Speed:    spec.Speed,
-		Timing:   spec.Timing,
-		Voltage:  spec.Voltage,
-		Channel:  spec.Channel,
-		Profile:  spec.Profile,
-		PriceUS:  priceUS,
-		PriceHK:  spec.PriceHK,
-		PriceCN:  priceCN,
-		LinkHK:   spec.LinkHK,
-		LinkUS:   spec.LinkUS,
-		LinkCN:   spec.LinkCN,
-		Img:      tempImg,
+		Brand:        spec.Brand,
+		Name:         spec.Name,
+		Series:       newSpec.Series,
+		Model:        spec.Model,
+		Capacity:     spec.Capacity,
+		Speed:        spec.Speed,
+		Timing:       spec.Timing,
+		Voltage:      spec.Voltage,
+		Channel:      newSpec.Channel,
+		LED:          spec.LED,
+		HeatSpreader: spec.HeatSpreader,
+		Profile:      newSpec.Profile,
+		PriceUS:      newSpec.PriceUS,
+		PriceHK:      spec.PriceHK,
+		PriceCN:      priceCN,
+		LinkHK:       spec.LinkHK,
+		LinkUS:       spec.LinkUS,
+		LinkCN:       spec.LinkCN,
+		Img:          newSpec.Img,
 	}
 }
 
+func getRamSpecData(link string, collector *colly.Collector) RamSpec {
+	specData := RamSpec{}
+	specData.HeatSpreader = false
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
+		specData.Name = element.ChildText(".breadcrumb .active")
+		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
+		loopBreak := false
+
+		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
+			if !loopBreak {
+				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+				tempLink := item.ChildAttr(".detail-purchase", "href")
+
+				if strings.Contains(tempLink, "amazon") {
+					amazonLink := strings.Split(tempLink, "?tag=")[0]
+					specData.LinkUS = amazonLink
+					loopBreak = true
+				}
+				if strings.Contains(tempLink, "newegg") {
+					neweggLink := strings.Split(tempLink, "url=")[1]
+					UnescapeLink, _ := url.QueryUnescape(neweggLink)
+					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
+					loopBreak = true
+				}
+			}
+		})
+
+		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
+			switch item.ChildText("strong") {
+			case "Model":
+				specData.Model = item.ChildText("td span")
+			case "Speed":
+				specData.Speed = item.ChildText("td span")
+			case "Size":
+				specData.Capacity = item.ChildText("td span")
+			case "Timing":
+				specData.Timing = item.ChildText("td span")
+			case "Voltage":
+				specData.Voltage = item.ChildText("td span")
+			case "LED Color":
+				specData.LED = item.ChildText("td span")
+			case "Heat Spreader":
+				if strings.ToUpper(item.ChildText("td span")) == "YES" {
+					specData.HeatSpreader = true
+				}
+			}
+		})
+	})
+	collector.Visit(link)
+
+	return specData
+}
+
 func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
-	brand := ""
-	series := ""
-	model := ""
-	capacity := ""
-	speed := ""
-	timing := ""
-	voltage := ""
-	channel := ""
-	profile := ""
-	price := ""
-	imgLink := ""
+	specData := RamSpec{}
+	specData.HeatSpreader = false
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
-		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		price = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
+		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
+		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
 
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Brand":
-				brand = item.ChildText("td")
+				specData.Brand = item.ChildText("td")
 			case "Series":
-				series = item.ChildText("td")
+				specData.Series = item.ChildText("td")
 			case "Model":
-				model = item.ChildText("td")
+				specData.Model = item.ChildText("td")
 			case "Capacity":
-				capacity = item.ChildText("td")
+				specData.Capacity = item.ChildText("td")
 			case "Speed":
-				speed = item.ChildText("td")
+				specData.Speed = item.ChildText("td")
 			case "Timing":
-				timing = item.ChildText("td")
+				specData.Timing = item.ChildText("td")
 			case "Voltage":
-				voltage = item.ChildText("td")
+				specData.Voltage = item.ChildText("td")
 			case "Multi-channel Kit":
-				channel = item.ChildText("td")
+				specData.Channel = item.ChildText("td")
 			case "BIOS/Performance Profile":
-				profile = item.ChildText("td")
+				specData.Profile = item.ChildText("td")
+			case "Heat Spreader":
+				if strings.ToUpper(item.ChildText("td")) == "YES" {
+					specData.HeatSpreader = true
+				}
 			}
 		})
 	})
 
 	collector.Visit(link)
 
-	return RamSpec{
-		Brand:    brand,
-		Series:   series,
-		Model:    model,
-		Capacity: capacity,
-		Speed:    speed,
-		Timing:   timing,
-		Voltage:  voltage,
-		Channel:  channel,
-		Profile:  profile,
-		PriceUS:  price,
-		PriceHK:  "",
-		PriceCN:  "",
-		Img:      imgLink,
-	}
+	return specData
 }

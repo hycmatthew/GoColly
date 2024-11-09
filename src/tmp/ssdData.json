@@ -1,6 +1,7 @@
 [
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 990 PRO 4TB",
         "ReleaseDate": "September 2023",
         "Model": "MZ-V9P4T0BW",
         "Capacity": "4000 GB",
@@ -11,14 +12,15 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "299.99",
         "PriceHK": "",
-        "PriceCN": "2199",
+        "PriceCN": "2499",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1962387.html",
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-879-01.jpg"
     },
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 990 PRO 1TB",
         "ReleaseDate": "October 2022",
         "Model": "MZ-V9P1T0B/AM",
         "Capacity": "1000 GB",
@@ -27,16 +29,17 @@
         "Interface": "PCIe Gen4 x4",
         "FlashType": "V7 V-NAND 3bit MLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "109.00",
+        "PriceUS": "114.00",
         "PriceHK": "",
-        "PriceCN": "639",
-        "LinkUS": "https://www.amazon.com/dp/B0BHJF2VRN",
+        "PriceCN": "749",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147860",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1676547_price.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-860-01.jpg"
     },
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 990 PRO 2TB",
         "ReleaseDate": "October 2022",
         "Model": "MZ-V9P2T0B/AM",
         "Capacity": "2000 GB",
@@ -45,16 +48,17 @@
         "Interface": "PCIe Gen4 x4",
         "FlashType": "V7 V-NAND 3bit MLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "149.99",
+        "PriceUS": "148.79",
         "PriceHK": "",
-        "PriceCN": "1099",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861",
+        "PriceCN": "1299",
+        "LinkUS": "https://www.amazon.com/dp/B0BHJJ9Y77",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1676567.html",
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-861-01.jpg"
+        "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 990 EVO 1TB",
         "ReleaseDate": "January 2024",
         "Model": "MZ-V9E1T0B/AM",
         "Capacity": "1000 GB",
@@ -65,14 +69,15 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "69.99",
         "PriceHK": "",
-        "PriceCN": "538.9",
+        "PriceCN": "539",
         "LinkUS": "https://www.amazon.com/dp/B0CRCC9863",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/2099147.html",
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 990 EVO 2TB",
         "ReleaseDate": "January 2024",
         "Model": "MZ-V9E2T0B/AM",
         "Capacity": "2000 GB",
@@ -83,14 +88,15 @@
         "FormFactor": "M.2-2280",
         "PriceUS": "129.99",
         "PriceHK": "",
-        "PriceCN": "998.9",
+        "PriceCN": "999",
         "LinkUS": "https://www.amazon.com/dp/B0CRC7H66Z",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/2099167.html",
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 980 PRO 500GB",
         "ReleaseDate": "September 2020",
         "Model": "MZ-V8P500B/AM",
         "Capacity": "500 GB",
@@ -108,7 +114,8 @@
         "Img": "https://c1.neweggimages.com/productimage/nb1280/AUUUD2201160KBDCJB7.jpg"
     },
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 980 PRO 1TB",
         "ReleaseDate": "September 2020",
         "Model": "MZ-V8P1T0B/AM",
         "Capacity": "1000 GB",
@@ -126,7 +133,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "samsung",
+        "Name": "Samsung 980 PRO 2TB",
         "ReleaseDate": "January 2021",
         "Model": "MZ-V8P2T0B/AM",
         "Capacity": "2000 GB",
@@ -135,16 +143,17 @@
         "Interface": "PCIe Gen4 x4",
         "FlashType": "Samsung V-NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "197.70",
+        "PriceUS": "198.30",
         "PriceHK": "",
         "PriceCN": "749",
-        "LinkUS": "https://www.amazon.com/dp/B08RK2SR23",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9M5379",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1239853.html",
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/A12KS210204AWbOg.jpg"
     },
     {
-        "Brand": "",
+        "Brand": "zhitai",
+        "Name": "TiPlus7100 500GB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "",
@@ -162,7 +171,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "zhitai",
+        "Name": "TiPlus7100 1TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "",
@@ -180,7 +190,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "zhitai",
+        "Name": "TiPlus7100 2TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "",
@@ -198,7 +209,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "zhitai",
+        "Name": "TiPlus7100 4TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "",
@@ -209,14 +221,15 @@
         "FormFactor": "",
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "1759",
+        "PriceCN": "1799",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/zhitai/2036827.html",
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "westerndigital",
+        "Name": "WD_BLACK SN770 1TB",
         "ReleaseDate": "January 2022",
         "Model": "WDS100T3X0E",
         "Capacity": "1000 GB",
@@ -234,7 +247,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "westerndigital",
+        "Name": "WD_BLACK SN770 2TB",
         "ReleaseDate": "January 2022",
         "Model": "WDS200T3X0E",
         "Capacity": "2000 GB",
@@ -252,7 +266,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "westerndigital",
+        "Name": "Western Digital BLACK SN850X 1TB",
         "ReleaseDate": "August 2022",
         "Model": "WDS100T2X0E",
         "Capacity": "1000 GB",
@@ -270,7 +285,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "westerndigital",
+        "Name": "Western Digital BLACK SN850X 2TB",
         "ReleaseDate": "August 2022",
         "Model": "WDS200T2X0E",
         "Capacity": "2000 GB",
@@ -279,16 +295,17 @@
         "Interface": "PCIe Gen4 x4",
         "FlashType": "BiCS5 112-layer TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "154.99",
+        "PriceUS": "146.99",
         "PriceHK": "",
         "PriceCN": "999",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250247",
+        "LinkUS": "https://www.amazon.com/dp/B0B7CMZ3QH",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1633087_price.html",
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-247-02.jpg"
+        "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "westerndigital",
+        "Name": "WD Blue SN580 1TB",
         "ReleaseDate": "May 2023",
         "Model": "WDS100T3B0E",
         "Capacity": "1000 GB",
@@ -297,7 +314,7 @@
         "Interface": "PCIe Gen4 x4",
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "60.99",
+        "PriceUS": "59.99",
         "PriceHK": "",
         "PriceCN": "539",
         "LinkUS": "https://www.amazon.com/dp/B0C8XMH264",
@@ -306,7 +323,8 @@
         "Img": ""
     },
     {
-        "Brand": "",
+        "Brand": "westerndigital",
+        "Name": "WD Blue SN580 2TB",
         "ReleaseDate": "June 2023",
         "Model": "WDS200T3B0E",
         "Capacity": "2000 GB",

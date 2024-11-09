@@ -127,6 +127,7 @@ func GetSSDData(spec SSDSpec) SSDType {
 
 	return SSDType{
 		Brand:       spec.Brand,
+		Name:        spec.Name,
 		ReleaseDate: spec.ReleaseDate,
 		Model:       spec.Model,
 		Capacity:    spec.Capacity,

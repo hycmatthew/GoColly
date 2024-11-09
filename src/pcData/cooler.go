@@ -1,6 +1,7 @@
 package pcData
 
 import (
+	"fmt"
 	"net/http"
 	"net/url"
 	"strings"
@@ -72,12 +73,16 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 
 	cooler := getCoolerSpecData(record.LinkSpec, specCollector)
 	cooler.Code = record.Name
+	cooler.Brand = record.Brand
 	cooler.PriceCN = record.PriceCN
 	cooler.PriceHK = ""
 	cooler.LinkHK = ""
 	cooler.LinkCN = record.LinkCN
 	if record.LinkUS != "" {
 		cooler.LinkUS = record.LinkUS
+	}
+	if cooler.Name == "" {
+		cooler.Name = record.Name
 	}
 	return cooler
 }
@@ -170,9 +175,11 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 			case "Release Date":
 				specData.ReleaseDate = item.ChildText("td span")
 			case "Supported Sockets":
-				item.ForEach("td li", func(i int, subitem *colly.HTMLElement) {
+				item.ForEach(".text-left li", func(i int, subitem *colly.HTMLElement) {
 					socketslist = append(socketslist, subitem.Text)
 				})
+				fmt.Println(socketslist)
+				specData.Sockets = socketslist
 			case "Liquid Cooler":
 				specData.IsLiquidCooler = item.ChildTexts("td")[1]
 			case "Radiator Size":
@@ -184,7 +191,6 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 			}
 		})
 	})
-
 	collector.Visit(link)
 
 	return specData

@@ -86,6 +86,9 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 	if record.LinkUS != "" {
 		caseData.LinkUS = record.LinkUS
 	}
+	if caseData.Name == "" {
+		caseData.Name = record.Name
+	}
 	return caseData
 }
 

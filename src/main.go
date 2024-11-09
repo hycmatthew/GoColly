@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := ssd
+	getDataName := ram
 	isUpdateSpec := true
 
 	if isUpdateSpec {
@@ -272,6 +272,7 @@ func updateSpecLogic(name string) {
 
 func updatePriceLogic(name string) {
 	timeSet := 5000
+	extraTry := 50
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
@@ -301,7 +302,7 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + 3))
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	case "gpu":
 		var specList []pcData.GPUSpec
@@ -335,7 +336,7 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(recordList) + 3))
+		listLen := time.Duration(timeSet * (len(recordList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	case "motherboard":
 		var specList []pcData.MotherboardSpec
@@ -359,7 +360,7 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + 3))
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	case "ram":
 		var specList []pcData.RamSpec
@@ -383,7 +384,7 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + 3))
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	case "ssd":
 		var specList []pcData.SSDSpec
@@ -407,7 +408,7 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + 3))
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	case "case":
 		var specList []pcData.CaseSpec
@@ -431,7 +432,31 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + 3))
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
+		time.Sleep(time.Second * listLen)
+	case "cooler":
+		var specList []pcData.CoolerSpec
+		var coolerList []pcData.CoolerType
+
+		json.Unmarshal([]byte(byteValue), &specList)
+
+		go func() {
+			for {
+				<-ticker.C
+				spec := specList[count]
+				record := pcData.GetCoolerData(spec)
+				coolerList = append(coolerList, record)
+				count++
+
+				if count == len(specList) {
+					saveData(coolerList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	case "power":
 		var specList []pcData.PowerSpec
@@ -455,7 +480,7 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + 3))
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	default:
 		var specList []pcData.RamSpec
@@ -479,7 +504,7 @@ func updatePriceLogic(name string) {
 			}
 		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + 3))
+		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	}
 }
