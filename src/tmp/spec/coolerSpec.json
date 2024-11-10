@@ -24,7 +24,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "360 mm",
+        "Size": 360,
         "NoiseLevel": "21 - 36 dB",
         "FanSpeed": "500 - 1800 RPM",
         "PriceUS": "329.00",
@@ -60,7 +60,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "240 mm",
+        "Size": 240,
         "NoiseLevel": "22 - 33 dB",
         "FanSpeed": "500 - 1500 RPM",
         "PriceUS": "298.30",
@@ -96,13 +96,13 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "240 mm",
+        "Size": 240,
         "NoiseLevel": "21 - 36 dB",
         "FanSpeed": "500 - 2000 RPM",
-        "PriceUS": "138.99",
+        "PriceUS": "215.73",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146066",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKK6H2215",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1257067.html",
         "Img": ""
@@ -132,13 +132,13 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "280 mm",
+        "Size": 280,
         "NoiseLevel": "21 - 38 dB",
         "FanSpeed": "500 - 1800 RPM",
-        "PriceUS": "176.50",
+        "PriceUS": "175.50",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAWKTK0W4364",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKK6H2218",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1242147.html",
         "Img": ""
@@ -175,7 +175,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "360 mm",
+        "Size": 360,
         "NoiseLevel": "21.0 - 36.0 dB",
         "FanSpeed": "500 - 2000 RPM",
         "PriceUS": "299.00",
@@ -218,7 +218,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "240 mm",
+        "Size": 240,
         "NoiseLevel": "21.0 - 36.0 dB",
         "FanSpeed": "500 - 2000 RPM",
         "PriceUS": "189.00",
@@ -254,7 +254,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "360 mm",
+        "Size": 360,
         "NoiseLevel": "22 - 33 dB",
         "FanSpeed": "500 - 1500 RPM",
         "PriceUS": "304.99",
@@ -290,7 +290,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "240 mm",
+        "Size": 240,
         "NoiseLevel": "22 - 33 dB",
         "FanSpeed": "500 - 1500 RPM",
         "PriceUS": "173.01",
@@ -322,13 +322,13 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "240 mm",
+        "Size": 240,
         "NoiseLevel": "17.9 - 30.6 dB",
         "FanSpeed": "500 - 1800 RPM",
         "PriceUS": "179.99",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146131",
+        "LinkUS": "https://www.amazon.com/dp/B0BY3F9VSL",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1832107.html",
         "Img": ""
@@ -354,7 +354,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "280 mm",
+        "Size": 280,
         "NoiseLevel": "34.48 dB",
         "FanSpeed": "500 - 1500 RPM",
         "PriceUS": "189.99",
@@ -386,13 +386,13 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "360 mm",
+        "Size": 360,
         "NoiseLevel": "17.9 - 30.6 dB",
         "FanSpeed": "500 - 1800 RPM",
         "PriceUS": "289.99",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16835146135",
+        "LinkUS": "https://www.amazon.com/dp/B0BY3HMXD4",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/sanre/nzxt/1830127.html",
         "Img": ""
@@ -418,7 +418,7 @@
             "sWRX8"
         ],
         "IsLiquidCooler": "Yes",
-        "Size": "280 mm",
+        "Size": 280,
         "NoiseLevel": "19.4 - 32.1 dB",
         "FanSpeed": "500 - 1500 RPM",
         "PriceUS": "143.99",

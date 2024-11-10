@@ -17,7 +17,7 @@ type CoolerSpec struct {
 	ReleaseDate    string
 	Sockets        []string
 	IsLiquidCooler string
-	Size           string
+	Size           int
 	NoiseLevel     string
 	FanSpeed       string
 	PriceUS        string
@@ -35,7 +35,7 @@ type CoolerType struct {
 	ReleaseDate    string
 	Sockets        []string
 	IsLiquidCooler string
-	Size           string
+	Size           int
 	NoiseLevel     string
 	FanSpeed       string
 	PriceUS        string
@@ -183,7 +183,7 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 			case "Liquid Cooler":
 				specData.IsLiquidCooler = item.ChildTexts("td")[1]
 			case "Radiator Size":
-				specData.Size = item.ChildTexts("td")[1]
+				specData.Size = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Noise Level":
 				specData.NoiseLevel = item.ChildTexts("td")[1]
 			case "Fan RPM":

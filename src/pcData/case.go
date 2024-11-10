@@ -14,12 +14,13 @@ type CaseSpec struct {
 	Brand         string
 	Name          string
 	ReleaseDate   string
+	Color         string
 	CaseSize      string
 	PowerSupply   bool
 	DriveBays2    int
 	DriveBays3    int
 	Compatibility string
-	Dimensions    string
+	Dimensions    []int
 	MaxVGAlength  int
 	SlotsNum      int
 	PriceUS       string
@@ -35,12 +36,13 @@ type CaseType struct {
 	Brand         string
 	Name          string
 	ReleaseDate   string
+	Color         string
 	CaseSize      string
 	PowerSupply   bool
 	DriveBays2    int
 	DriveBays3    int
 	Compatibility string
-	Dimensions    string
+	Dimensions    []int
 	MaxVGAlength  int
 	SlotsNum      int
 	PriceUS       string
@@ -132,6 +134,7 @@ func GetCaseData(spec CaseSpec) CaseType {
 		Name:          spec.Name,
 		ReleaseDate:   spec.ReleaseDate,
 		CaseSize:      spec.CaseSize,
+		Color:         spec.Color,
 		PowerSupply:   spec.PowerSupply,
 		DriveBays2:    spec.DriveBays2,
 		DriveBays3:    spec.DriveBays3,
@@ -182,6 +185,8 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 				specData.ReleaseDate = item.ChildText("td span")
 			case "Type":
 				specData.CaseSize = item.ChildTexts("td")[1]
+			case "Color":
+				specData.Color = item.ChildTexts("td")[1]
 			case "Includes Power Supply":
 				if item.ChildTexts("td")[1] != "No" {
 					specData.PowerSupply = true
@@ -193,7 +198,12 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 			case "Motherboard Compatibility":
 				specData.Compatibility = item.ChildTexts("td")[1]
 			case "Dimensions":
-				specData.Dimensions = item.ChildTexts("td")[1]
+				tempDimensions := strings.Split(item.ChildTexts("td")[1], "x")
+				var dimensionsList []int
+				for _, item := range tempDimensions {
+					dimensionsList = append(dimensionsList, extractNumberFromString(item))
+				}
+				specData.Dimensions = dimensionsList
 			case "Max VGA length allowance":
 				specData.MaxVGAlength = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Expansion Slots":

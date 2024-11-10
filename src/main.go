@@ -26,8 +26,8 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := ram
-	isUpdateSpec := true
+	getDataName := pcCase
+	isUpdateSpec := false
 
 	if isUpdateSpec {
 		if getDataName == gpu {
