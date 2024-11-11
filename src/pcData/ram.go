@@ -16,7 +16,8 @@ type RamSpec struct {
 	Series       string
 	Model        string
 	Capacity     string
-	Speed        string
+	Type         string
+	Speed        int
 	Timing       string
 	Voltage      string
 	Channel      string
@@ -38,7 +39,8 @@ type RamType struct {
 	Series       string
 	Model        string
 	Capacity     string
-	Speed        string
+	Type         string
+	Speed        int
 	Timing       string
 	Voltage      string
 	Channel      string
@@ -187,7 +189,16 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 			case "Model":
 				specData.Model = item.ChildText("td span")
 			case "Speed":
-				specData.Speed = item.ChildText("td span")
+				tempStr := strings.ReplaceAll(item.ChildText("td span"), "-", " ")
+				strList := strings.Split(tempStr, " ")
+				if strings.Contains(strings.ToUpper(tempStr), "DDR5") {
+					specData.Type = "DDR5"
+				} else {
+					specData.Type = "DDR4"
+				}
+				if len(strList) > 1 {
+					specData.Speed = extractNumberFromString(strList[1])
+				}
 			case "Size":
 				specData.Capacity = item.ChildText("td span")
 			case "Timing":
@@ -228,7 +239,16 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 			case "Capacity":
 				specData.Capacity = item.ChildText("td")
 			case "Speed":
-				specData.Speed = item.ChildText("td")
+				tempStr := strings.ReplaceAll(item.ChildText("td span"), "-", " ")
+				strList := strings.Split(tempStr, " ")
+				if strings.Contains(strings.ToUpper(tempStr), "DDR5") {
+					specData.Type = "DDR5"
+				} else {
+					specData.Type = "DDR4"
+				}
+				if len(strList) > 1 {
+					specData.Speed = extractNumberFromString(strList[1])
+				}
 			case "Timing":
 				specData.Timing = item.ChildText("td")
 			case "Voltage":
