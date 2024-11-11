@@ -1,5 +1,6 @@
 [
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4060",
         "Generation": "GeForce 40",
         "MemorySize": 8,
@@ -666,6 +667,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4060 Ti 16GB",
         "Generation": "GeForce 40",
         "MemorySize": 16,
@@ -1094,6 +1096,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4060 Ti 8GB",
         "Generation": "GeForce 40",
         "MemorySize": 8,
@@ -1746,6 +1749,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4070",
         "Generation": "GeForce 40",
         "MemorySize": 12,
@@ -2538,6 +2542,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4070 Super",
         "Generation": "GeForce 40",
         "MemorySize": 12,
@@ -3148,6 +3153,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4070 Ti",
         "Generation": "GeForce 40",
         "MemorySize": 12,
@@ -3975,6 +3981,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4070 Ti SUPER",
         "Generation": "GeForce 40",
         "MemorySize": 16,
@@ -4571,6 +4578,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4080",
         "Generation": "GeForce 40",
         "MemorySize": 16,
@@ -5307,6 +5315,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4080 SUPER",
         "Generation": "GeForce 40",
         "MemorySize": 16,
@@ -5791,6 +5800,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4090",
         "Generation": "GeForce 40",
         "MemorySize": 24,
@@ -6506,6 +6516,7 @@
         ]
     },
     {
+        "Manufacturer": "NVIDIA",
         "Series": "RTX 4090D",
         "Generation": "GeForce 40",
         "MemorySize": 24,
@@ -6619,6 +6630,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 6500 XT",
         "Generation": "RX 6000",
         "MemorySize": 4,
@@ -6774,6 +6786,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 6600",
         "Generation": "RX 6000",
         "MemorySize": 8,
@@ -6894,6 +6907,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 6600 XT",
         "Generation": "RX 6000",
         "MemorySize": 8,
@@ -7112,6 +7126,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 7600",
         "Generation": "RX 7000",
         "MemorySize": 8,
@@ -7302,6 +7317,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 7600 XT",
         "Generation": "RX 7000",
         "MemorySize": 16,
@@ -7387,6 +7403,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 7700 XT",
         "Generation": "RX 7000",
         "MemorySize": 12,
@@ -7570,6 +7587,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 7800 XT",
         "Generation": "RX 7000",
         "MemorySize": 16,
@@ -7788,6 +7806,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 7900 GRE",
         "Generation": "RX 7000",
         "MemorySize": 16,
@@ -7812,6 +7831,13 @@
                 "BoostClock": 2333,
                 "Length": 276,
                 "Slots": "Triple-slot",
+                "TDP": 260
+            },
+            {
+                "ProductName": "ASUS DUAL RX 7900 GRE OC",
+                "BoostClock": 2293,
+                "Length": 280,
+                "Slots": "Dual-slot",
                 "TDP": 260
             },
             {
@@ -7894,6 +7920,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 7900 XT",
         "Generation": "RX 7000",
         "MemorySize": 20,
@@ -8112,6 +8139,7 @@
         ]
     },
     {
+        "Manufacturer": "AMD",
         "Series": "RX 7900 XTX",
         "Generation": "RX 7000",
         "MemorySize": 24,

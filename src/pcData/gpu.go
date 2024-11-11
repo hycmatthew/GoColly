@@ -29,18 +29,19 @@ type GPURecordData struct {
 }
 
 type GPUSpec struct {
-	Series      string
-	Generation  string
-	MemorySize  int
-	MemoryType  string
-	MemoryBus   string
-	BoostClock  int
-	Benchmark   int
-	Power       int
-	Length      int
-	Slot        string
-	Width       int
-	ProductSpec []GPUSpecSubData
+	Manufacturer string
+	Series       string
+	Generation   string
+	MemorySize   int
+	MemoryType   string
+	MemoryBus    string
+	BoostClock   int
+	Benchmark    int
+	Power        int
+	Length       int
+	Slot         string
+	Width        int
+	ProductSpec  []GPUSpecSubData
 }
 
 type GPUSpecSubData struct {
@@ -52,26 +53,27 @@ type GPUSpecSubData struct {
 }
 
 type GPUType struct {
-	Name       string
-	Brand      string
-	Series     string
-	Generation string
-	MemorySize int
-	MemoryType string
-	MemoryBus  string
-	BoostClock int
-	OcClock    int
-	Benchmark  int
-	Power      int
-	Length     int
-	Slot       string
-	LinkCN     string
-	LinkUS     string
-	LinkHK     string
-	PriceUS    string
-	PriceHK    string
-	PriceCN    string
-	Img        string
+	Name         string
+	Brand        string
+	Manufacturer string
+	Series       string
+	Generation   string
+	MemorySize   int
+	MemoryType   string
+	MemoryBus    string
+	BoostClock   int
+	OcClock      int
+	Benchmark    int
+	Power        int
+	Length       int
+	Slot         string
+	LinkCN       string
+	LinkUS       string
+	LinkHK       string
+	PriceUS      string
+	PriceHK      string
+	PriceCN      string
+	Img          string
 }
 
 func GetGPUSpec(record GPUScoreData) GPUSpec {
@@ -155,47 +157,45 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 
 	newBenchmark := int(newScoreLogic(ocClock, specData.BoostClock, specData.Benchmark))
 	GPUData := GPUType{
-		Name:       record.Name,
-		Brand:      record.Brand,
-		Series:     specData.Series,
-		Generation: specData.Generation,
-		MemorySize: specData.MemorySize,
-		MemoryType: specData.MemoryType,
-		MemoryBus:  specData.MemoryBus,
-		Benchmark:  newBenchmark,
-		BoostClock: specData.BoostClock,
-		OcClock:    ocClock,
-		Power:      specData.Power,
-		Length:     specData.Length,
-		Slot:       specData.Slot,
-		LinkUS:     record.LinkUS,
-		LinkHK:     record.LinkHK,
-		LinkCN:     record.LinkCN,
-		PriceUS:    priceUs,
-		PriceHK:    "",
-		PriceCN:    priceCn,
-		Img:        gpuImg,
+		Name:         record.Name,
+		Brand:        record.Brand,
+		Manufacturer: specData.Manufacturer,
+		Series:       specData.Series,
+		Generation:   specData.Generation,
+		MemorySize:   specData.MemorySize,
+		MemoryType:   specData.MemoryType,
+		MemoryBus:    specData.MemoryBus,
+		Benchmark:    newBenchmark,
+		BoostClock:   specData.BoostClock,
+		OcClock:      ocClock,
+		Power:        specData.Power,
+		Length:       specData.Length,
+		Slot:         specData.Slot,
+		LinkUS:       record.LinkUS,
+		LinkHK:       record.LinkHK,
+		LinkCN:       record.LinkCN,
+		PriceUS:      priceUs,
+		PriceHK:      "",
+		PriceCN:      priceCn,
+		Img:          gpuImg,
 	}
 
 	return GPUData
 }
 
 func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
-	name := ""
-	generation := ""
-	memorySize := 0
-	memoryType := ""
-	memoryBus := ""
-	clock := 0
-	tdp := 0
-	length := 0
-	slot := ""
-	width := 0
+	specData := GPUSpec{}
 	var subDataList []GPUSpecSubData
 
 	collectorErrorHandle(collector, link)
 
 	collector.OnHTML(".contnt", func(element *colly.HTMLElement) {
+		tempName := strings.ToUpper(element.ChildText(".gpudb-name"))
+		if strings.Contains(tempName, "NVIDIA") {
+			specData.Manufacturer = "NVIDIA"
+		} else {
+			specData.Manufacturer = "AMD"
+		}
 
 		element.ForEach(".sectioncontainer .details .clearfix", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("dt") {
@@ -203,34 +203,34 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 				tempString := item.ChildText("dd")
 				if strings.Contains(tempString, "(") {
 					genString := strings.Split(item.ChildText("dd"), "(")
-					generation = strings.ReplaceAll(genString[1], ")", "")
+					specData.Generation = strings.ReplaceAll(genString[1], ")", "")
 				} else {
-					generation = tempString
+					specData.Generation = tempString
 				}
 			case "Memory Size":
-				memorySize = extractNumberFromString(item.ChildText("dd"))
+				specData.MemorySize = extractNumberFromString(item.ChildText("dd"))
 			case "Memory Type":
-				memoryType = item.ChildText("dd")
+				specData.MemoryType = item.ChildText("dd")
 			case "Memory Bus":
-				memoryBus = item.ChildText("dd")
+				specData.MemoryBus = item.ChildText("dd")
 			case "Boost Clock":
-				clock = extractNumberFromString(item.ChildText("dd"))
+				specData.BoostClock = extractNumberFromString(item.ChildText("dd"))
 			case "TDP":
-				tdp = extractNumberFromString(item.ChildText("dd"))
+				specData.Power = extractNumberFromString(item.ChildText("dd"))
 			case "Length":
-				length = extractNumberFromString(item.ChildText("dd"))
+				specData.Length = extractNumberFromString(item.ChildText("dd"))
 			case "Slot Width":
-				slot = item.ChildText("dd")
+				specData.Slot = item.ChildText("dd")
 			case "Width":
-				width = extractNumberFromString(item.ChildText("dd"))
+				specData.Width = extractNumberFromString(item.ChildText("dd"))
 			}
 		})
 
 		element.ForEach(".details.customboards tbody tr", func(i int, item *colly.HTMLElement) {
 			splitData := strings.Split(item.ChildText("td:nth-child(5)"), ",")
-			tempLength := length
-			tempTdp := tdp
-			tempSlots := slot
+			tempLength := specData.Length
+			tempTdp := specData.Power
+			tempSlots := specData.Slot
 
 			for i := range splitData {
 				if strings.Contains(splitData[i], "mm") {
@@ -253,23 +253,12 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 			}
 			subDataList = append(subDataList, subData)
 		})
+		specData.ProductSpec = subDataList
 	})
 
 	collector.Visit(link)
 
-	return GPUSpec{
-		Series:      name,
-		Generation:  generation,
-		MemorySize:  memorySize,
-		MemoryType:  memoryType,
-		MemoryBus:   memoryBus,
-		BoostClock:  clock,
-		Power:       tdp,
-		Length:      length,
-		Slot:        slot,
-		Width:       width,
-		ProductSpec: subDataList,
-	}
+	return specData
 }
 
 // https://nanoreview.net/en/gpu/radeon-rx-6600-xt
