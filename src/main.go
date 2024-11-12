@@ -27,7 +27,7 @@ func main() {
 	)
 
 	getDataName := ram
-	isUpdateSpec := true
+	isUpdateSpec := false
 
 	if isUpdateSpec {
 		if getDataName == gpu {

@@ -187,9 +187,9 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
 			case "Model":
-				specData.Model = item.ChildText("td span")
+				specData.Model = item.ChildTexts("td")[1]
 			case "Speed":
-				tempStr := strings.ReplaceAll(item.ChildText("td span"), "-", " ")
+				tempStr := strings.ReplaceAll(item.ChildTexts("td")[1], "-", " ")
 				strList := strings.Split(tempStr, " ")
 				if strings.Contains(strings.ToUpper(tempStr), "DDR5") {
 					specData.Type = "DDR5"
@@ -200,15 +200,15 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 					specData.Speed = extractNumberFromString(strList[1])
 				}
 			case "Size":
-				specData.Capacity = item.ChildText("td span")
+				specData.Capacity = item.ChildTexts("td")[1]
 			case "Timing":
-				specData.Timing = item.ChildText("td span")
+				specData.Timing = item.ChildTexts("td")[1]
 			case "Voltage":
-				specData.Voltage = item.ChildText("td span")
+				specData.Voltage = item.ChildTexts("td")[1]
 			case "LED Color":
-				specData.LED = item.ChildText("td span")
+				specData.LED = item.ChildTexts("td")[1]
 			case "Heat Spreader":
-				if strings.ToUpper(item.ChildText("td span")) == "YES" {
+				if strings.ToUpper(item.ChildTexts("td")[1]) == "YES" {
 					specData.HeatSpreader = true
 				}
 			}
