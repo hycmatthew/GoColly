@@ -1,6 +1,7 @@
 package pcData
 
 import (
+	"fmt"
 	"net/http"
 	"net/url"
 	"strings"
@@ -138,6 +139,7 @@ func GetRamData(spec RamSpec) RamType {
 		Series:       newSpec.Series,
 		Model:        spec.Model,
 		Capacity:     spec.Capacity,
+		Type:         spec.Type,
 		Speed:        spec.Speed,
 		Timing:       spec.Timing,
 		Voltage:      spec.Voltage,
@@ -239,7 +241,8 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 			case "Capacity":
 				specData.Capacity = item.ChildText("td")
 			case "Speed":
-				tempStr := strings.ReplaceAll(item.ChildText("td span"), "-", " ")
+				tempStr := strings.ReplaceAll(item.ChildText("td"), "-", " ")
+				fmt.Println(tempStr)
 				strList := strings.Split(tempStr, " ")
 				if strings.Contains(strings.ToUpper(tempStr), "DDR5") {
 					specData.Type = "DDR5"
@@ -266,6 +269,5 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 	})
 
 	collector.Visit(link)
-
 	return specData
 }

@@ -1,6 +1,7 @@
 package pcData
 
 import (
+	"fmt"
 	"net/http"
 	"net/url"
 	"strings"
@@ -10,48 +11,52 @@ import (
 )
 
 type CaseSpec struct {
-	Code          string
-	Brand         string
-	Name          string
-	ReleaseDate   string
-	Color         string
-	CaseSize      string
-	PowerSupply   bool
-	DriveBays2    int
-	DriveBays3    int
-	Compatibility string
-	Dimensions    []int
-	MaxVGAlength  int
-	SlotsNum      int
-	PriceUS       string
-	PriceHK       string
-	PriceCN       string
-	LinkUS        string
-	LinkHK        string
-	LinkCN        string
-	Img           string
+	Code               string
+	Brand              string
+	Name               string
+	ReleaseDate        string
+	Color              string
+	CaseSize           string
+	PowerSupply        bool
+	DriveBays2         int
+	DriveBays3         int
+	Compatibility      string
+	Dimensions         []int
+	MaxVGAlength       int
+	RadiatorSupport    int
+	MaxCpuCoolorHeight int
+	SlotsNum           int
+	PriceUS            string
+	PriceHK            string
+	PriceCN            string
+	LinkUS             string
+	LinkHK             string
+	LinkCN             string
+	Img                string
 }
 
 type CaseType struct {
-	Brand         string
-	Name          string
-	ReleaseDate   string
-	Color         string
-	CaseSize      string
-	PowerSupply   bool
-	DriveBays2    int
-	DriveBays3    int
-	Compatibility string
-	Dimensions    []int
-	MaxVGAlength  int
-	SlotsNum      int
-	PriceUS       string
-	PriceHK       string
-	PriceCN       string
-	LinkUS        string
-	LinkHK        string
-	LinkCN        string
-	Img           string
+	Brand              string
+	Name               string
+	ReleaseDate        string
+	Color              string
+	CaseSize           string
+	PowerSupply        bool
+	DriveBays2         int
+	DriveBays3         int
+	Compatibility      string
+	Dimensions         []int
+	MaxVGAlength       int
+	RadiatorSupport    int
+	MaxCpuCoolorHeight int
+	SlotsNum           int
+	PriceUS            string
+	PriceHK            string
+	PriceCN            string
+	LinkUS             string
+	LinkHK             string
+	LinkCN             string
+	Img                string
 }
 
 func GetCaseSpec(record LinkRecord) CaseSpec {
@@ -124,30 +129,34 @@ func GetCaseData(spec CaseSpec) CaseType {
 	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 	}
-	priceUS, tempImg := spec.PriceUS, spec.Img
+
+	newSpec := CaseSpec{}
 	if strings.Contains(spec.LinkUS, "newegg") {
-		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+		newSpec = getCaseUSPrice(spec.LinkUS, usCollector)
 	}
 
 	return CaseType{
-		Brand:         spec.Brand,
-		Name:          spec.Name,
-		ReleaseDate:   spec.ReleaseDate,
-		CaseSize:      spec.CaseSize,
-		Color:         spec.Color,
-		PowerSupply:   spec.PowerSupply,
-		DriveBays2:    spec.DriveBays2,
-		DriveBays3:    spec.DriveBays3,
-		Compatibility: spec.Compatibility,
-		Dimensions:    spec.Dimensions,
-		MaxVGAlength:  spec.MaxVGAlength,
-		PriceUS:       priceUS,
-		PriceHK:       "",
-		PriceCN:       priceCN,
-		LinkUS:        spec.LinkUS,
-		LinkHK:        spec.LinkHK,
-		LinkCN:        spec.LinkCN,
-		Img:           tempImg,
+		Brand:              spec.Brand,
+		Name:               spec.Name,
+		ReleaseDate:        spec.ReleaseDate,
+		CaseSize:           spec.CaseSize,
+		Color:              spec.Color,
+		PowerSupply:        spec.PowerSupply,
+		DriveBays2:         spec.DriveBays2,
+		DriveBays3:         spec.DriveBays3,
+		Compatibility:      spec.Compatibility,
+		Dimensions:         spec.Dimensions,
+		MaxVGAlength:       spec.MaxVGAlength,
+		RadiatorSupport:    newSpec.RadiatorSupport,
+		MaxCpuCoolorHeight: newSpec.MaxCpuCoolorHeight,
+		SlotsNum:           spec.SlotsNum,
+		PriceUS:            newSpec.PriceUS,
+		PriceHK:            "",
+		PriceCN:            priceCN,
+		LinkUS:             spec.LinkUS,
+		LinkHK:             spec.LinkHK,
+		LinkCN:             spec.LinkCN,
+		Img:                newSpec.Img,
 	}
 }
 
@@ -165,10 +174,9 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
 				tempLink := item.ChildAttr(".detail-purchase", "href")
 
-				if strings.Contains(tempLink, "amazon") {
+				if strings.Contains(tempLink, "amazon") && specData.LinkUS == "" {
 					amazonLink := strings.Split(tempLink, "?tag=")[0]
 					specData.LinkUS = amazonLink
-					loopBreak = true
 				}
 				if strings.Contains(tempLink, "newegg") {
 					neweggLink := strings.Split(tempLink, "url=")[1]
@@ -214,5 +222,38 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 
 	collector.Visit(link)
 
+	return specData
+}
+
+func getCaseUSPrice(link string, collector *colly.Collector) CaseSpec {
+	specData := CaseSpec{}
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
+		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
+		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
+
+		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
+			switch item.ChildText("th") {
+			case "Radiator Options":
+				tempStrList := strings.Split(item.ChildText("td"), ":")
+				highestSize := 120
+				fmt.Println(tempStrList)
+				for _, item := range tempStrList {
+					tempSize := extractNumberFromString(item)
+
+					if tempSize > highestSize {
+						fmt.Println(tempSize)
+						highestSize = tempSize
+					}
+				}
+				specData.RadiatorSupport = highestSize
+			case "Max CPU Cooler Height":
+				specData.MaxCpuCoolorHeight = extractNumberFromString(item.ChildText("td"))
+			}
+		})
+	})
+
+	collector.Visit(link)
 	return specData
 }

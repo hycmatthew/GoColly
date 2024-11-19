@@ -7,13 +7,16 @@ import (
 )
 
 func extractNumberFromString(str string) int {
+	digitCheck := regexp.MustCompile("[0-9]")
 	re := regexp.MustCompile("[0-9]+")
-	i, err := strconv.Atoi(re.FindAllString(strings.Replace(str, ",", "", -1), -1)[0])
-	if err != nil {
-		panic(err)
+	if digitCheck.MatchString(str) {
+		i, err := strconv.Atoi(re.FindAllString(strings.Replace(str, ",", "", -1), -1)[0])
+		if err != nil {
+			panic(err)
+		}
+		return i
 	}
-
-	return i
+	return 0
 }
 
 func extractFloatStringFromString(str string) string {

@@ -16,11 +16,13 @@
             464
         ],
         "MaxVGAlength": 365,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
-        "PriceUS": "129.99",
+        "PriceUS": "130.99",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.amazon.com/dp/B0B6Y6NQNF",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146345",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/case/nzxt/1706087.html",
         "Img": ""
@@ -42,11 +44,13 @@
             544
         ],
         "MaxVGAlength": 410,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
-        "PriceUS": "129.99",
+        "PriceUS": "133.99",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.amazon.com/dp/B0CV4R1TWS",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146361",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/case/nzxt/2097407.html",
         "Img": ""
@@ -68,11 +72,13 @@
             465
         ],
         "MaxVGAlength": 410,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
-        "PriceUS": "89.99",
+        "PriceUS": "94.98",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.amazon.com/dp/B0D2MK6NML",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146365",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/case/nzxt/1706107.html",
         "Img": ""
@@ -94,6 +100,8 @@
             495
         ],
         "MaxVGAlength": 435,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
         "PriceUS": "169.99",
         "PriceHK": "",
@@ -120,11 +128,13 @@
             435
         ],
         "MaxVGAlength": 365,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
-        "PriceUS": "109.98",
+        "PriceUS": "109.97",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.amazon.com/dp/B0C89FCDFP",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146357",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/case/nzxt/1996407.html",
         "Img": ""
@@ -146,11 +156,13 @@
             465
         ],
         "MaxVGAlength": 410,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
         "PriceUS": "99.99",
         "PriceHK": "",
         "PriceCN": "",
-        "LinkUS": "https://www.amazon.com/dp/B0D2MJT1FY",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146368",
         "LinkHK": "",
         "LinkCN": "https://product.pconline.com.cn/case/nzxt/1838007.html",
         "Img": ""
@@ -172,8 +184,10 @@
             505
         ],
         "MaxVGAlength": 400,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
-        "PriceUS": "123.31",
+        "PriceUS": "",
         "PriceHK": "",
         "PriceCN": "",
         "LinkUS": "https://www.amazon.com/dp/B09VP6L8T3",
@@ -198,6 +212,8 @@
             544
         ],
         "MaxVGAlength": 410,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
         "PriceUS": "149.99",
         "PriceHK": "",
@@ -224,6 +240,8 @@
             495
         ],
         "MaxVGAlength": 435,
+        "RadiatorSupport": 0,
+        "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
         "PriceUS": "159.99",
         "PriceHK": "",
