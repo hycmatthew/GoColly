@@ -175,13 +175,13 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 			case "Total Threads":
 				thread = extractNumberFromString(item.ChildText(".cell-s"))
 			case "Socket":
-				socket = item.ChildText("td")
+				socket = item.ChildText(".cell-s")
 			case "Integrated GPU":
-				gpu = item.ChildText("td")
+				gpu = item.ChildText(".cell-s")
 			case "TDP (PL1)":
-				tdp = extractNumberFromString(item.ChildText("td"))
+				tdp = extractNumberFromString(item.ChildText(".cell-s"))
 			case "Max. Boost TDP (PL2)":
-				tempTdp := extractNumberFromString(item.ChildText("td"))
+				tempTdp := extractNumberFromString(item.ChildText(".cell-s"))
 				if tempTdp > tdp {
 					tdp = tempTdp
 				}
@@ -198,7 +198,7 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 		Brand:           brand,
 		Cores:           cores,
 		Threads:         thread,
-		Socket:          socket,
+		Socket:          strings.Replace(socket, "-", "", -1),
 		GPU:             gpu,
 		SingleCoreScore: singleCoreScore,
 		MultiCoreScore:  muitiCoreScore,

@@ -200,15 +200,6 @@ func getMotherboardSpecData(link string, collector *colly.Collector) Motherboard
 
 		element.ForEach("ul.tail-links a", func(i int, item *colly.HTMLElement) {
 			itemStr := item.ChildText("strong")
-			if strings.Contains(itemStr, "Socket") {
-				specData.Socket = itemStr
-			}
-			if strings.Contains(itemStr, "Form factor") {
-				specData.FormFactor = itemStr
-			}
-			if strings.Contains(itemStr, "Chipset") {
-				specData.Chipset = itemStr
-			}
 			if strings.Contains(itemStr, "PCI-Express x16 Slots") {
 				specData.Pcie16Slot = extractNumberFromString(itemStr)
 			}
@@ -226,6 +217,17 @@ func getMotherboardSpecData(link string, collector *colly.Collector) Motherboard
 			}
 			if strings.Contains(itemStr, "Supported RAM") {
 				specData.RamMax = extractNumberFromString(itemStr)
+			}
+		})
+
+		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
+			switch item.ChildText("strong") {
+			case "Socket":
+				specData.Socket = item.ChildTexts("td")[1]
+			case "Form factor":
+				specData.FormFactor = item.ChildTexts("td")[1]
+			case "Chipset":
+				specData.Chipset = item.ChildTexts("td")[1]
 			}
 		})
 	})
