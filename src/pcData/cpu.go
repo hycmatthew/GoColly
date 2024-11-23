@@ -74,7 +74,10 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 		Transport: fakeChrome.Transport,
 	})
 
-	cpuData := getCPUSpecData(record.LinkSpec, collector)
+	cpuData := manualCPUSpecHandle(record.Name)
+	if cpuData.Name == "" {
+		cpuData = getCPUSpecData(record.LinkSpec, collector)
+	}
 	cpuData.Code = record.Name
 	cpuData.PriceCN = record.PriceCN
 	cpuData.PriceHK = ""
@@ -204,4 +207,21 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 		MultiCoreScore:  muitiCoreScore,
 		Power:           tdp,
 	}
+}
+
+func manualCPUSpecHandle(code string) CPUSpec {
+	if code == "Core i5-14490F" {
+		return CPUSpec{
+			Name:            "Intel Core i5 14490F",
+			Brand:           "Intel",
+			Cores:           10,
+			Threads:         16,
+			Socket:          "LGA1700",
+			GPU:             "No",
+			SingleCoreScore: 1899,
+			MultiCoreScore:  17396,
+			Power:           148,
+		}
+	}
+	return CPUSpec{}
 }

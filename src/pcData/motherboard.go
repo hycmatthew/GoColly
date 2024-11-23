@@ -192,7 +192,7 @@ func getMotherboardSpecData(link string, collector *colly.Collector) Motherboard
 		fmt.Println(specData.PriceUS)
 
 		element.ForEach(".table-striped .ram-values span", func(i int, item *colly.HTMLElement) {
-			temp := item.Text
+			temp := strings.Replace(item.Text, "Mhz", "", -1)
 			ramSupportList = append(ramSupportList, temp)
 		})
 
