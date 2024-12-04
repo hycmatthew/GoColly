@@ -44,14 +44,22 @@ func getCNPriceFromPcOnline(link string, collector *colly.Collector) string {
 
 	collectorErrorHandle(collector, link)
 
-	collector.OnHTML(".product-mallSales", func(element *colly.HTMLElement) {
-		price = extractFloatStringFromString(element.ChildText("em.price"))
+	collector.OnHTML(".product-price-info", func(element *colly.HTMLElement) {
+		mallPrice := extractFloatStringFromString(element.ChildText(".product-mallSales em.price"))
+
+		otherPrice := extractFloatStringFromString(element.ChildText(".product-price-other span"))
+
+		normalPrice := extractFloatStringFromString(element.ChildText(".r-price a"))
+
+		if mallPrice != "" {
+			price = mallPrice
+		} else if otherPrice != "" {
+			price = otherPrice
+		} else {
+			price = normalPrice
+		}
+		fmt.Println(price)
 	})
-	if price == "" {
-		collector.OnHTML(".product-price-other", func(element *colly.HTMLElement) {
-			price = extractFloatStringFromString(element.ChildText("span"))
-		})
-	}
 
 	collector.Visit(link)
 	return price

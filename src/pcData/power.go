@@ -83,7 +83,7 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 	return ssdData
 }
 
-func GetPowerData(spec PowerSpec) PowerType {
+func GetPowerData(spec PowerSpec) (PowerType, bool) {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -108,14 +108,23 @@ func GetPowerData(spec PowerSpec) PowerType {
 	})
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
+	isValid := true
 
 	priceCN := spec.PriceCN
 	if priceCN != "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if priceCN == "" {
+			isValid = false
+		}
 	}
 	priceUS, tempImg := spec.PriceUS, spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
 		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+
+		if priceUS == "" {
+			isValid = false
+		}
 	}
 
 	return PowerType{
@@ -134,7 +143,7 @@ func GetPowerData(spec PowerSpec) PowerType {
 		PriceUS:     priceUS,
 		PriceHK:     "",
 		Img:         tempImg,
-	}
+	}, isValid
 }
 
 func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {

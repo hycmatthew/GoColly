@@ -90,7 +90,7 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 	return ssdData
 }
 
-func GetSSDData(spec SSDSpec) SSDType {
+func GetSSDData(spec SSDSpec) (SSDType, bool) {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -115,14 +115,23 @@ func GetSSDData(spec SSDSpec) SSDType {
 	})
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
+	isValid := true
 
 	priceCN := spec.PriceCN
 	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if priceCN == "" {
+			isValid = false
+		}
 	}
 	priceUS, tempImg := spec.PriceUS, spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
 		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+
+		if priceUS == "" {
+			isValid = false
+		}
 	}
 
 	return SSDType{
@@ -143,7 +152,7 @@ func GetSSDData(spec SSDSpec) SSDType {
 		LinkHK:      spec.LinkHK,
 		LinkCN:      spec.LinkCN,
 		Img:         tempImg,
-	}
+	}, isValid
 }
 
 func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {

@@ -87,7 +87,7 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 	return cooler
 }
 
-func GetCoolerData(spec CoolerSpec) CoolerType {
+func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -112,14 +112,23 @@ func GetCoolerData(spec CoolerSpec) CoolerType {
 	})
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
+	isValid := true
 
 	priceCN := spec.PriceCN
 	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if priceCN == "" {
+			isValid = false
+		}
 	}
 	priceUS, tempImg := spec.PriceUS, spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
 		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+
+		if priceUS == "" {
+			isValid = false
+		}
 	}
 
 	return CoolerType{
@@ -138,7 +147,7 @@ func GetCoolerData(spec CoolerSpec) CoolerType {
 		LinkHK:         spec.LinkHK,
 		LinkCN:         spec.LinkCN,
 		Img:            tempImg,
-	}
+	}, isValid
 }
 
 func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {

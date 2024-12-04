@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := cpu
+	getDataName := motherboard
 	isUpdateSpec := false
 
 	if isUpdateSpec {
@@ -148,8 +148,10 @@ func updateSpecLogic(name string) {
 			for {
 				<-ticker.C
 				cpuRecord := pcData.GetCPUSpec(recordList[count])
-				specList = append(specList, cpuRecord)
-				count++
+				if cpuRecord.Name != "" {
+					specList = append(specList, cpuRecord)
+					count++
+				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
 					ticker.Stop()
@@ -180,8 +182,10 @@ func updateSpecLogic(name string) {
 			for {
 				<-ticker.C
 				ramRecord := pcData.GetRamSpec(recordList[count])
-				specList = append(specList, ramRecord)
-				count++
+				if ramRecord.Name != "" {
+					specList = append(specList, ramRecord)
+					count++
+				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
 					ticker.Stop()
@@ -195,8 +199,10 @@ func updateSpecLogic(name string) {
 			for {
 				<-ticker.C
 				ssdRecord := pcData.GetSSDSpec(recordList[count])
-				specList = append(specList, ssdRecord)
-				count++
+				if ssdRecord.Name != "" {
+					specList = append(specList, ssdRecord)
+					count++
+				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
 					ticker.Stop()
@@ -210,8 +216,10 @@ func updateSpecLogic(name string) {
 			for {
 				<-ticker.C
 				powerRecord := pcData.GetPowerSpec(recordList[count])
-				specList = append(specList, powerRecord)
-				count++
+				if powerRecord.Name != "" {
+					specList = append(specList, powerRecord)
+					count++
+				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
 					ticker.Stop()
@@ -225,8 +233,10 @@ func updateSpecLogic(name string) {
 			for {
 				<-ticker.C
 				caseRecord := pcData.GetCaseSpec(recordList[count])
-				specList = append(specList, caseRecord)
-				count++
+				if caseRecord.Name != "" {
+					specList = append(specList, caseRecord)
+					count++
+				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
 					ticker.Stop()
@@ -240,8 +250,10 @@ func updateSpecLogic(name string) {
 			for {
 				<-ticker.C
 				coolerRecord := pcData.GetCoolerSpec(recordList[count])
-				specList = append(specList, coolerRecord)
-				count++
+				if coolerRecord.Name != "" {
+					specList = append(specList, coolerRecord)
+					count++
+				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
 					ticker.Stop()
@@ -250,20 +262,7 @@ func updateSpecLogic(name string) {
 			}
 		}()
 	default:
-		var specList []pcData.CaseSpec
-		go func() {
-			for {
-				<-ticker.C
-				caseRecord := pcData.GetCaseSpec(recordList[count])
-				specList = append(specList, caseRecord)
-				count++
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
+		break
 	}
 
 	listLen := time.Duration(timeSet * (len(recordList) + extraTry))
@@ -290,9 +289,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetCPUData(spec)
-				cpuList = append(cpuList, record)
-				count++
+				record, valid := pcData.GetCPUData(spec)
+				if valid {
+					cpuList = append(cpuList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(cpuList, name)
@@ -324,9 +325,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				data := recordList[count]
-				record := pcData.GetGPUData(specList, data)
-				gpuList = append(gpuList, record)
-				count++
+				record, valid := pcData.GetGPUData(specList, data)
+				if valid {
+					gpuList = append(gpuList, record)
+					count++
+				}
 
 				if count == len(recordList) {
 					saveData(gpuList, name)
@@ -348,9 +351,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetMotherboardData(spec)
-				mbList = append(mbList, record)
-				count++
+				record, valid := pcData.GetMotherboardData(spec)
+				if valid {
+					mbList = append(mbList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(mbList, name)
@@ -372,9 +377,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetRamData(spec)
-				ramList = append(ramList, record)
-				count++
+				record, valid := pcData.GetRamData(spec)
+				if valid {
+					ramList = append(ramList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(ramList, name)
@@ -396,9 +403,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetSSDData(spec)
-				ssdList = append(ssdList, record)
-				count++
+				record, valid := pcData.GetSSDData(spec)
+				if valid {
+					ssdList = append(ssdList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(ssdList, name)
@@ -420,9 +429,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetCaseData(spec)
-				caseList = append(caseList, record)
-				count++
+				record, valid := pcData.GetCaseData(spec)
+				if valid {
+					caseList = append(caseList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(caseList, name)
@@ -444,9 +455,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetCoolerData(spec)
-				coolerList = append(coolerList, record)
-				count++
+				record, valid := pcData.GetCoolerData(spec)
+				if valid {
+					coolerList = append(coolerList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(coolerList, name)
@@ -468,9 +481,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetPowerData(spec)
-				powerList = append(powerList, record)
-				count++
+				record, valid := pcData.GetPowerData(spec)
+				if valid {
+					powerList = append(powerList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(powerList, name)
@@ -492,9 +507,11 @@ func updatePriceLogic(name string) {
 			for {
 				<-ticker.C
 				spec := specList[count]
-				record := pcData.GetRamData(spec)
-				ramList = append(ramList, record)
-				count++
+				record, valid := pcData.GetRamData(spec)
+				if valid {
+					ramList = append(ramList, record)
+					count++
+				}
 
 				if count == len(specList) {
 					saveData(ramList, name)

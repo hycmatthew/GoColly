@@ -99,7 +99,7 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 	return caseData
 }
 
-func GetCaseData(spec CaseSpec) CaseType {
+func GetCaseData(spec CaseSpec) (CaseType, bool) {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -124,15 +124,22 @@ func GetCaseData(spec CaseSpec) CaseType {
 	})
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
+	isValid := true
 
 	priceCN := spec.PriceCN
 	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		if priceCN == "" {
+			isValid = false
+		}
 	}
 
 	newSpec := CaseSpec{}
 	if strings.Contains(spec.LinkUS, "newegg") {
 		newSpec = getCaseUSPrice(spec.LinkUS, usCollector)
+		if newSpec.PriceUS == "" {
+			isValid = false
+		}
 	}
 
 	return CaseType{
@@ -157,7 +164,7 @@ func GetCaseData(spec CaseSpec) CaseType {
 		LinkHK:             spec.LinkHK,
 		LinkCN:             spec.LinkCN,
 		Img:                newSpec.Img,
-	}
+	}, isValid
 }
 
 func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {

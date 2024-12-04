@@ -102,7 +102,7 @@ func GetGPUSpec(record GPUScoreData) GPUSpec {
 	return GPUSpec
 }
 
-func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
+func GetGPUData(specList []GPUSpec, record GPURecordData) (GPUType, bool) {
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
@@ -129,13 +129,21 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 	specData := GPUSpec{}
 	ocClock := 0
 	priceUs, gpuImg, specUpdate := "", "", GPUSpecSubData{}
+	isValid := true
 
 	if record.LinkUS != "" {
 		priceUs, gpuImg, specUpdate = getGPUUSPrice(record.LinkUS, usCollector)
+		if priceUs == "" {
+			isValid = false
+		}
 	}
 	priceCn, tempSeries := getGPUCNPrice(record.LinkCN, cnCollector)
 	seriesName := updateSeriesName(record.Name, tempSeries)
 	// GPUData.PriceHK = getGPUHKPrice(hkLink, hkCollector)
+
+	if priceCn == "" {
+		isValid = false
+	}
 
 	switch record.Brand {
 	case "colorful":
@@ -180,7 +188,7 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) GPUType {
 		Img:          gpuImg,
 	}
 
-	return GPUData
+	return GPUData, isValid
 }
 
 func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {

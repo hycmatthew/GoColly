@@ -89,7 +89,7 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 	return cpuData
 }
 
-func GetCPUData(spec CPUSpec) CPUType {
+func GetCPUData(spec CPUSpec) (CPUType, bool) {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -114,15 +114,24 @@ func GetCPUData(spec CPUSpec) CPUType {
 	})
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
+	isValid := true
 
 	priceCN := spec.PriceCN
 	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if priceCN == "" {
+			isValid = false
+		}
 	}
 
 	priceUS, tempImg := spec.PriceUS, spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
 		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+
+		if priceUS == "" {
+			isValid = false
+		}
 	}
 
 	return CPUType{
@@ -142,7 +151,7 @@ func GetCPUData(spec CPUSpec) CPUType {
 		PriceUS:         priceUS,
 		PriceHK:         "",
 		Img:             tempImg,
-	}
+	}, isValid
 }
 
 func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {

@@ -99,7 +99,7 @@ func GetRamSpec(record LinkRecord) RamSpec {
 	return ramData
 }
 
-func GetRamData(spec RamSpec) RamType {
+func GetRamData(spec RamSpec) (RamType, bool) {
 
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
@@ -123,14 +123,23 @@ func GetRamData(spec RamSpec) RamType {
 	})
 	cnCollector := collector.Clone()
 	usCollector := collector.Clone()
+	isValid := true
 
 	priceCN := spec.PriceCN
 	if priceCN == "" {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if priceCN == "" {
+			isValid = false
+		}
 	}
 	newSpec := RamSpec{}
 	if strings.Contains(spec.LinkUS, "newegg") {
 		newSpec = getRamUSPrice(spec.LinkUS, usCollector)
+
+		if newSpec.PriceUS == "" {
+			isValid = false
+		}
 	}
 
 	return RamType{
@@ -154,7 +163,7 @@ func GetRamData(spec RamSpec) RamType {
 		LinkUS:       spec.LinkUS,
 		LinkCN:       spec.LinkCN,
 		Img:          newSpec.Img,
-	}
+	}, isValid
 }
 
 func getRamSpecData(link string, collector *colly.Collector) RamSpec {
@@ -203,7 +212,6 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 				}
 			case "Size":
 				specData.Capacity = item.ChildTexts("td")[1]
-			case "Timing":
 				specData.Timing = item.ChildTexts("td")[1]
 			case "Voltage":
 				specData.Voltage = item.ChildTexts("td")[1]

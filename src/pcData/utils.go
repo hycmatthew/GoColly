@@ -54,3 +54,20 @@ func isSubset(shortArr, longArr []string) bool {
 	}
 	return true
 }
+
+func getWordBeforeSpecificString(input string, specificString string) string {
+	index := strings.Index(input, specificString)
+	if index == -1 {
+		return ""
+	}
+	resList := strings.Split(strings.TrimSpace(input[:index]), " ")
+	return resList[len(resList)-1]
+}
+
+func getStringBeforeSpecificString(input string, specificString string) string {
+	index := strings.Index(input, specificString)
+	if index == -1 {
+		return ""
+	}
+	return strings.TrimSpace(input[:index])
+}
