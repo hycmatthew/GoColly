@@ -4,6 +4,8 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+
+	"github.com/axgle/mahonia"
 )
 
 func extractNumberFromString(str string) int {
@@ -70,4 +72,10 @@ func getStringBeforeSpecificString(input string, specificString string) string {
 		return ""
 	}
 	return strings.TrimSpace(input[:index])
+}
+
+func convertGBKString(str string) string {
+	encoder := mahonia.NewEncoder("GBK")
+	gbkBytes := encoder.ConvertString(str)
+	return string(gbkBytes)
 }

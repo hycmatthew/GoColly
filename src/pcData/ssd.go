@@ -73,8 +73,10 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 	})
 
 	specCollector := collector.Clone()
-
-	ssdData := getSSDSpecData(record.LinkSpec, specCollector)
+	ssdData := SSDSpec{}
+	if record.LinkSpec != "" {
+		ssdData = getSSDSpecData(record.LinkSpec, specCollector)
+	}
 	ssdData.Code = record.Name
 	ssdData.Brand = record.Brand
 	ssdData.PriceCN = record.PriceCN
@@ -119,7 +121,19 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 
 	priceCN := spec.PriceCN
 	if priceCN == "" {
-		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		if spec.Brand == "zhitai" {
+			tempSpec := getZhiTaiDataFromPcOnline(spec.LinkCN, cnCollector)
+			codeStringList := strings.Split(spec.Code, " ")
+			spec.Capacity = codeStringList[len(codeStringList)-1]
+			spec.FormFactor = tempSpec.FormFactor
+			spec.FlashType = tempSpec.FlashType
+			spec.Interface = tempSpec.Interface
+			spec.MaxRead = tempSpec.MaxRead
+			spec.MaxWrite = tempSpec.MaxWrite
+			priceCN = tempSpec.PriceCN
+		} else {
+			priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		}
 
 		if priceCN == "" {
 			isValid = false
@@ -160,6 +174,7 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
+
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		loopBreak := false
@@ -207,5 +222,52 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 
 	collector.Visit(link)
 
+	return specData
+}
+
+func getZhiTaiDataFromPcOnline(link string, collector *colly.Collector) SSDSpec {
+	specData := SSDSpec{
+		FormFactor: "M.2-2280",
+		Interface:  "PCle Gen 3x4",
+	}
+
+	collectorErrorHandle(collector, link)
+
+	collector.OnHTML(".product-detail-main", func(element *colly.HTMLElement) {
+		mallPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-mallSales em.price"))
+
+		otherPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-price-other span"))
+
+		normalPrice := extractFloatStringFromString(element.ChildText(".product-price-info .r-price a"))
+
+		if mallPrice != "" {
+			specData.PriceCN = mallPrice
+		} else if otherPrice != "" {
+			specData.PriceCN = otherPrice
+		} else {
+			specData.PriceCN = normalPrice
+		}
+
+		element.ForEach(".baseParam dd i", func(i int, item *colly.HTMLElement) {
+			// fmt.Println(item.Text)
+			convertedString := convertGBKString(item.Text)
+			if strings.Contains(convertedString, "类型") {
+				dataStrList := strings.Split(string(convertedString), "：")
+				specData.FlashType = dataStrList[len(dataStrList)-1]
+			}
+			if strings.Contains(convertedString, "连续读取") {
+				specData.MaxRead = extractNumberFromString(convertedString)
+			}
+			if strings.Contains(convertedString, "连续写入") {
+				specData.MaxWrite = extractNumberFromString(convertedString)
+			}
+		})
+
+		if specData.MaxRead > 4000 {
+			specData.Interface = "PCle Gen4X4"
+		}
+	})
+
+	collector.Visit(link)
 	return specData
 }

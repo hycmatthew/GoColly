@@ -44,7 +44,7 @@ func getCNPriceFromPcOnline(link string, collector *colly.Collector) string {
 
 	collectorErrorHandle(collector, link)
 
-	collector.OnHTML(".product-price-info", func(element *colly.HTMLElement) {
+	collector.OnHTML(".product-price, .price-info", func(element *colly.HTMLElement) {
 		mallPrice := extractFloatStringFromString(element.ChildText(".product-mallSales em.price"))
 
 		otherPrice := extractFloatStringFromString(element.ChildText(".product-price-other span"))
