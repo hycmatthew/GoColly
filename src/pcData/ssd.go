@@ -249,7 +249,6 @@ func getZhiTaiDataFromPcOnline(link string, collector *colly.Collector) SSDSpec 
 		}
 
 		element.ForEach(".baseParam dd i", func(i int, item *colly.HTMLElement) {
-			// fmt.Println(item.Text)
 			convertedString := convertGBKString(item.Text)
 			if strings.Contains(convertedString, "类型") {
 				dataStrList := strings.Split(string(convertedString), "：")

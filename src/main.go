@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := ssd
+	getDataName := ram
 	isUpdateSpec := false
 
 	if isUpdateSpec {
@@ -372,13 +372,21 @@ func updatePriceLogic(name string) {
 		var ramList []pcData.RamType
 
 		json.Unmarshal([]byte(byteValue), &specList)
-
+		/*
+			var filteredList []pcData.RamSpec
+			for _, item := range specList {
+				if item.Brand == "KINGBANK" {
+					filteredList = append(filteredList, item)
+				}
+			}
+		*/
 		go func() {
 			for {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetRamData(spec)
 				if valid {
+					fmt.Println(valid)
 					ramList = append(ramList, record)
 					count++
 				}

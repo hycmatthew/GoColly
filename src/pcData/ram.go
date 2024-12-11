@@ -20,6 +20,7 @@ type RamSpec struct {
 	Type         string
 	Speed        int
 	Timing       string
+	Latency      int
 	Voltage      string
 	Channel      string
 	Profile      string
@@ -43,6 +44,7 @@ type RamType struct {
 	Type         string
 	Speed        int
 	Timing       string
+	Latency      int
 	Voltage      string
 	Channel      string
 	Profile      string
@@ -81,7 +83,7 @@ func GetRamSpec(record LinkRecord) RamSpec {
 
 	if record.LinkSpec != "" {
 		ramData = getRamSpecData(record.LinkSpec, collector)
-	} else {
+	} else if record.LinkUS != "" {
 		ramData = getRamUSPrice(record.LinkUS, collector)
 	}
 	ramData.Code = record.Name
@@ -126,8 +128,21 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 	isValid := true
 
 	priceCN := spec.PriceCN
-	if priceCN == "" {
-		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	if strings.Contains(spec.LinkCN, "pconline") {
+		if spec.Brand == "KINGBANK" {
+			tempSpec := getKingBankDataFromPcOnline(spec.LinkCN, cnCollector)
+			// codeStringList := strings.Split(spec.Code, " ")
+			spec.Type = tempSpec.Type
+			spec.Voltage = tempSpec.Voltage
+			spec.Capacity = tempSpec.Capacity
+			spec.Channel = tempSpec.Channel
+			spec.Timing = tempSpec.Timing
+			spec.Latency = tempSpec.Latency
+			spec.Channel = tempSpec.Channel
+			priceCN = tempSpec.PriceCN
+		} else {
+			priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		}
 
 		if priceCN == "" {
 			isValid = false
@@ -151,6 +166,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		Type:         spec.Type,
 		Speed:        spec.Speed,
 		Timing:       spec.Timing,
+		Latency:      spec.Latency,
 		Voltage:      spec.Voltage,
 		Channel:      newSpec.Channel,
 		LED:          spec.LED,
@@ -210,9 +226,12 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 				if len(strList) > 1 {
 					specData.Speed = extractNumberFromString(strList[1])
 				}
+			case "CAS Latency":
+				specData.Latency = extractNumberFromString(item.ChildTexts("td")[1])
+			case "Timing":
+				specData.Timing = item.ChildTexts("td")[1]
 			case "Size":
 				specData.Capacity = item.ChildTexts("td")[1]
-				specData.Timing = item.ChildTexts("td")[1]
 			case "Voltage":
 				specData.Voltage = item.ChildTexts("td")[1]
 			case "LED Color":
@@ -236,7 +255,7 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
+		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
 
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
@@ -260,6 +279,8 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 				if len(strList) > 1 {
 					specData.Speed = extractNumberFromString(strList[1])
 				}
+			case "CAS Latency":
+				specData.Latency = extractNumberFromString(item.ChildText("td"))
 			case "Timing":
 				specData.Timing = item.ChildText("td")
 			case "Voltage":
@@ -272,6 +293,71 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 				if strings.ToUpper(item.ChildText("td")) == "YES" {
 					specData.HeatSpreader = true
 				}
+			}
+		})
+	})
+
+	collector.Visit(link)
+	return specData
+}
+
+func getKingBankDataFromPcOnline(link string, collector *colly.Collector) RamSpec {
+	specData := RamSpec{
+		Voltage: "1.35V/1.4V",
+	}
+
+	collectorErrorHandle(collector, link)
+
+	collector.OnHTML(".product-detail-main", func(element *colly.HTMLElement) {
+		mallPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-mallSales em.price"))
+
+		otherPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-price-other span"))
+
+		normalPrice := extractFloatStringFromString(element.ChildText(".product-price-info .r-price a"))
+
+		if mallPrice != "" {
+			specData.PriceCN = mallPrice
+		} else if otherPrice != "" {
+			specData.PriceCN = otherPrice
+		} else {
+			specData.PriceCN = normalPrice
+		}
+
+		element.ForEach(".baseParam dd i", func(i int, item *colly.HTMLElement) {
+			convertedString := convertGBKString(item.Text)
+			if strings.Contains(convertedString, "内存类型") {
+				dataStrList := strings.Split(string(convertedString), "：")
+				specData.Type = dataStrList[len(dataStrList)-1]
+				fmt.Println(specData.Type)
+			}
+			if strings.Contains(convertedString, "内存主") {
+				dataStrList := strings.Split(string(convertedString), " ")
+				specData.Speed = extractNumberFromString(dataStrList[len(dataStrList)-1])
+				fmt.Println(specData.Speed)
+			}
+			if strings.Contains(convertedString, "内存总") {
+				dataStrList := strings.Split(string(convertedString), "：")
+				specData.Capacity = dataStrList[len(dataStrList)-1]
+				fmt.Println(specData.Capacity)
+			}
+			if strings.Contains(convertedString, "内存容量描述") {
+				dataStrList := strings.Split(string(convertedString), ",")
+				specData.Channel = dataStrList[len(dataStrList)-1]
+				fmt.Println(specData.Channel)
+			}
+			if strings.Contains(convertedString, "延迟描述") {
+				dataStrList := strings.Split(string(convertedString), "=")
+				specData.Timing = dataStrList[len(dataStrList)-1]
+				clList := strings.Split(specData.Timing, "-")
+				specData.Latency = extractNumberFromString(clList[0])
+				fmt.Println(specData.Timing)
+			}
+			if strings.Contains(convertedString, "工作时序") && specData.Timing == "" {
+				dataStrList := strings.Split(string(convertedString), "=")
+				specData.Timing = dataStrList[len(dataStrList)-1]
+				clList := strings.Split(specData.Timing, "-")
+				specData.Latency = extractNumberFromString(clList[0])
+				fmt.Println(specData.Timing)
 			}
 		})
 	})
