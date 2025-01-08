@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
+	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -71,6 +72,8 @@ func GetRamSpec(record LinkRecord) RamSpec {
 			"pangoly.com",
 			"www.newegg.com",
 			"newegg.com",
+			"detail.zol.com.cn",
+			"zol.com.cn",
 		),
 		colly.AllowURLRevisit(),
 	)
@@ -80,18 +83,20 @@ func GetRamSpec(record LinkRecord) RamSpec {
 	})
 
 	ramData := RamSpec{}
-
-	if record.LinkSpec != "" {
-		ramData = getRamSpecData(record.LinkSpec, collector)
-	} else if record.LinkUS != "" {
-		ramData = getRamUSPrice(record.LinkUS, collector)
+	if strings.Contains(record.LinkCN, "zol") {
+		ramData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+	} else {
+		if record.LinkSpec != "" {
+			ramData = getRamSpecData(record.LinkSpec, collector)
+		} else if record.LinkUS != "" {
+			ramData = getRamUSPrice(record.LinkUS, collector)
+		}
+		ramData.PriceCN = record.PriceCN
 	}
 	ramData.Code = record.Name
 	ramData.Brand = record.Brand
-	ramData.PriceCN = record.PriceCN
 	ramData.PriceHK = ""
 	ramData.LinkHK = ""
-	ramData.LinkCN = record.LinkCN
 	if record.LinkUS != "" {
 		ramData.LinkUS = record.LinkUS
 	}
@@ -127,28 +132,40 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 	usCollector := collector.Clone()
 	isValid := true
 
-	priceCN := spec.PriceCN
-	if strings.Contains(spec.LinkCN, "pconline") {
-		if spec.Brand == "KINGBANK" {
-			tempSpec := getKingBankDataFromPcOnline(spec.LinkCN, cnCollector)
-			// codeStringList := strings.Split(spec.Code, " ")
-			spec.Type = tempSpec.Type
-			spec.Voltage = tempSpec.Voltage
-			spec.Capacity = tempSpec.Capacity
-			spec.Channel = tempSpec.Channel
-			spec.Timing = tempSpec.Timing
-			spec.Latency = tempSpec.Latency
-			spec.Channel = tempSpec.Channel
-			priceCN = tempSpec.PriceCN
-		} else {
-			priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	newSpec := RamSpec{}
+
+	if strings.Contains(spec.LinkCN, "zol") {
+		tempSpec := getRamSpecDataFromZol(spec.LinkCN, cnCollector)
+		// codeStringList := strings.Split(spec.Code, " ")
+
+		newSpec.Img = tempSpec.Img
+		if tempSpec.PriceCN != "" {
+			newSpec.PriceCN = tempSpec.PriceCN
 		}
 
-		if priceCN == "" {
+		newSpec.Type = tempSpec.Type
+		newSpec.Voltage = tempSpec.Voltage
+		newSpec.Capacity = tempSpec.Capacity
+		newSpec.Channel = tempSpec.Channel
+		newSpec.Timing = tempSpec.Timing
+		newSpec.Speed = tempSpec.Speed
+		newSpec.Latency = tempSpec.Latency
+		newSpec.Profile = tempSpec.Profile
+		newSpec.LED = tempSpec.LED
+		newSpec.HeatSpreader = tempSpec.HeatSpreader
+
+		if newSpec.PriceCN == "" {
 			isValid = false
 		}
 	}
-	newSpec := RamSpec{}
+	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if newSpec.PriceCN == "" {
+			isValid = false
+		}
+	}
+
 	if strings.Contains(spec.LinkUS, "newegg") {
 		newSpec = getRamUSPrice(spec.LinkUS, usCollector)
 
@@ -157,24 +174,28 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		}
 	}
 
+	if spec.PriceCN != "" {
+		newSpec.PriceCN = spec.PriceCN
+	}
+
 	return RamType{
 		Brand:        spec.Brand,
 		Name:         spec.Name,
 		Series:       newSpec.Series,
-		Model:        spec.Model,
-		Capacity:     spec.Capacity,
-		Type:         spec.Type,
-		Speed:        spec.Speed,
-		Timing:       spec.Timing,
-		Latency:      spec.Latency,
-		Voltage:      spec.Voltage,
+		Model:        newSpec.Model,
+		Capacity:     newSpec.Capacity,
+		Type:         newSpec.Type,
+		Speed:        newSpec.Speed,
+		Timing:       newSpec.Timing,
+		Latency:      newSpec.Latency,
+		Voltage:      newSpec.Voltage,
 		Channel:      newSpec.Channel,
-		LED:          spec.LED,
-		HeatSpreader: spec.HeatSpreader,
+		LED:          newSpec.LED,
+		HeatSpreader: newSpec.HeatSpreader,
 		Profile:      newSpec.Profile,
 		PriceUS:      newSpec.PriceUS,
 		PriceHK:      spec.PriceHK,
-		PriceCN:      priceCN,
+		PriceCN:      newSpec.PriceCN,
 		LinkHK:       spec.LinkHK,
 		LinkUS:       spec.LinkUS,
 		LinkCN:       spec.LinkCN,
@@ -301,67 +322,79 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 	return specData
 }
 
-func getKingBankDataFromPcOnline(link string, collector *colly.Collector) RamSpec {
+func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 	specData := RamSpec{
-		Voltage: "1.35V/1.4V",
+		HeatSpreader: false,
 	}
 
 	collectorErrorHandle(collector, link)
+	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
+		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
 
-	collector.OnHTML(".product-detail-main", func(element *colly.HTMLElement) {
-		mallPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-mallSales em.price"))
-
-		otherPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-price-other span"))
-
-		normalPrice := extractFloatStringFromString(element.ChildText(".product-price-info .r-price a"))
-
+		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
+		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
+		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
 		if mallPrice != "" {
 			specData.PriceCN = mallPrice
-		} else if otherPrice != "" {
-			specData.PriceCN = otherPrice
 		} else {
 			specData.PriceCN = normalPrice
 		}
 
-		element.ForEach(".baseParam dd i", func(i int, item *colly.HTMLElement) {
-			convertedString := convertGBKString(item.Text)
-			if strings.Contains(convertedString, "内存类型") {
-				dataStrList := strings.Split(string(convertedString), "：")
-				specData.Type = dataStrList[len(dataStrList)-1]
-				fmt.Println(specData.Type)
+		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
+			convertedHeader := convertGBKString(item.ChildText("th"))
+			convertedData := convertGBKString(item.ChildText("td span"))
+			// fmt.Println(convertedHeader)
+			// fmt.Println(convertedData)
+
+			switch convertedHeader {
+			case "发光方式":
+				if !strings.Contains(convertedData, "无光") {
+					specData.LED = convertedData
+				}
+			case "内存类型":
+				specData.Type = convertedData
+			case "容量描述":
+				ramNum := 1
+				capacity := 0
+				totalSize := 0
+				if strings.Contains(convertedData, "×") {
+					strList := strings.Split(convertedData, "×")
+					ramNum = extractNumberFromString(strList[0])
+					capacity = extractNumberFromString(strList[1])
+					totalSize = ramNum * capacity
+
+					if ramNum == 2 {
+						specData.Channel = "Dual Channel Kit"
+					}
+					if ramNum == 4 {
+						specData.Channel = "Quad Channel Kit"
+					}
+
+				} else {
+					totalSize = extractNumberFromString(convertedData)
+					capacity = totalSize
+				}
+				specData.Capacity = strings.Join([]string{strconv.Itoa(totalSize), "GB (", strconv.Itoa(ramNum), " x ", strconv.Itoa(capacity), "GB)"}, "")
+				fmt.Println("specData.Capacity : ", specData.Capacity)
+			case "CL延迟":
+				specData.Latency = extractNumberFromString(convertedData)
+				if strings.Contains(convertedData, "-") {
+					specData.Timing = convertedData
+				}
+			case "XMP":
+				specData.Profile = "XMP 3.0"
 			}
-			if strings.Contains(convertedString, "内存主") {
-				dataStrList := strings.Split(string(convertedString), " ")
-				specData.Speed = extractNumberFromString(dataStrList[len(dataStrList)-1])
+
+			if strings.Contains(convertedHeader, "内存主") {
+				specData.Speed = extractNumberFromString(convertedData)
 				fmt.Println(specData.Speed)
 			}
-			if strings.Contains(convertedString, "内存总") {
-				dataStrList := strings.Split(string(convertedString), "：")
-				specData.Capacity = dataStrList[len(dataStrList)-1]
-				fmt.Println(specData.Capacity)
-			}
-			if strings.Contains(convertedString, "内存容量描述") {
-				dataStrList := strings.Split(string(convertedString), ",")
-				specData.Channel = dataStrList[len(dataStrList)-1]
-				fmt.Println(specData.Channel)
-			}
-			if strings.Contains(convertedString, "延迟描述") {
-				dataStrList := strings.Split(string(convertedString), "=")
-				specData.Timing = dataStrList[len(dataStrList)-1]
-				clList := strings.Split(specData.Timing, "-")
-				specData.Latency = extractNumberFromString(clList[0])
-				fmt.Println(specData.Timing)
-			}
-			if strings.Contains(convertedString, "工作时序") && specData.Timing == "" {
-				dataStrList := strings.Split(string(convertedString), "=")
-				specData.Timing = dataStrList[len(dataStrList)-1]
-				clList := strings.Split(specData.Timing, "-")
-				specData.Latency = extractNumberFromString(clList[0])
-				fmt.Println(specData.Timing)
+			if strings.Contains(convertedHeader, "散热") {
+				specData.HeatSpreader = true
 			}
 		})
-	})
 
+	})
 	collector.Visit(link)
 	return specData
 }

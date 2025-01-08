@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := ram
+	getDataName := ssd
 	isUpdateSpec := false
 
 	if isUpdateSpec {

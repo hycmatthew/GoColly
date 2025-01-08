@@ -1,6 +1,7 @@
 package pcData
 
 import (
+	"fmt"
 	"net/http"
 	"net/url"
 	"strings"
@@ -64,6 +65,8 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 			"product.pconline.com.cn",
 			"pconline.com.cn",
 			"pangoly.com",
+			"detail.zol.com.cn",
+			"zol.com.cn",
 		),
 		colly.AllowURLRevisit(),
 	)
@@ -74,15 +77,20 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 
 	specCollector := collector.Clone()
 	ssdData := SSDSpec{}
-	if record.LinkSpec != "" {
-		ssdData = getSSDSpecData(record.LinkSpec, specCollector)
+	if strings.Contains(record.LinkCN, "zol") {
+		ssdData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+	} else {
+		if record.LinkSpec != "" {
+			ssdData = getSSDSpecData(record.LinkSpec, specCollector)
+		}
+		ssdData.LinkCN = record.LinkCN
 	}
+
 	ssdData.Code = record.Name
 	ssdData.Brand = record.Brand
 	ssdData.PriceCN = record.PriceCN
 	ssdData.PriceHK = ""
 	ssdData.LinkHK = ""
-	ssdData.LinkCN = record.LinkCN
 	if record.LinkUS != "" {
 		ssdData.LinkUS = record.LinkUS
 	}
@@ -119,53 +127,71 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 	usCollector := collector.Clone()
 	isValid := true
 
-	priceCN := spec.PriceCN
-	if priceCN == "" {
-		if spec.Brand == "zhitai" {
-			tempSpec := getZhiTaiDataFromPcOnline(spec.LinkCN, cnCollector)
-			codeStringList := strings.Split(spec.Code, " ")
-			spec.Capacity = codeStringList[len(codeStringList)-1]
-			spec.FormFactor = tempSpec.FormFactor
-			spec.FlashType = tempSpec.FlashType
-			spec.Interface = tempSpec.Interface
-			spec.MaxRead = tempSpec.MaxRead
-			spec.MaxWrite = tempSpec.MaxWrite
-			priceCN = tempSpec.PriceCN
-		} else {
-			priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	newSpec := spec
+
+	if strings.Contains(spec.LinkCN, "zol") {
+		tempSpec := getSSDSpecDataFromZol(spec.LinkCN, cnCollector)
+		// codeStringList := strings.Split(spec.Code, " ")
+
+		newSpec.Img = tempSpec.Img
+		if tempSpec.PriceCN != "" {
+			newSpec.PriceCN = tempSpec.PriceCN
 		}
 
-		if priceCN == "" {
+		newSpec.Capacity = tempSpec.Capacity
+		newSpec.FlashType = tempSpec.FlashType
+		newSpec.FormFactor = tempSpec.FormFactor
+		newSpec.MaxRead = tempSpec.MaxRead
+		newSpec.MaxWrite = tempSpec.MaxWrite
+		newSpec.Interface = tempSpec.Interface
+
+		if newSpec.PriceCN == "" {
 			isValid = false
 		}
 	}
-	priceUS, tempImg := spec.PriceUS, spec.Img
-	if strings.Contains(spec.LinkUS, "newegg") {
-		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
 
-		if priceUS == "" {
+	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if newSpec.PriceCN == "" {
 			isValid = false
 		}
+	}
+
+	tempImg := ""
+	if strings.Contains(spec.LinkUS, "newegg") {
+		newSpec.PriceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+
+		if tempImg != "" {
+			newSpec.Img = tempImg
+		}
+		if newSpec.PriceUS == "" {
+			isValid = false
+		}
+	}
+
+	if spec.PriceCN != "" {
+		newSpec.PriceCN = spec.PriceCN
 	}
 
 	return SSDType{
 		Brand:       spec.Brand,
 		Name:        spec.Name,
-		ReleaseDate: spec.ReleaseDate,
-		Model:       spec.Model,
-		Capacity:    spec.Capacity,
-		MaxRead:     spec.MaxRead,
-		MaxWrite:    spec.MaxWrite,
-		Interface:   spec.Interface,
-		FlashType:   spec.FlashType,
-		FormFactor:  spec.FormFactor,
-		PriceUS:     priceUS,
+		ReleaseDate: newSpec.ReleaseDate,
+		Model:       newSpec.Model,
+		Capacity:    newSpec.Capacity,
+		MaxRead:     newSpec.MaxRead,
+		MaxWrite:    newSpec.MaxWrite,
+		Interface:   newSpec.Interface,
+		FlashType:   newSpec.FlashType,
+		FormFactor:  newSpec.FormFactor,
+		PriceUS:     newSpec.PriceUS,
 		PriceHK:     "",
-		PriceCN:     priceCN,
+		PriceCN:     newSpec.PriceCN,
 		LinkUS:      spec.LinkUS,
 		LinkHK:      spec.LinkHK,
 		LinkCN:      spec.LinkCN,
-		Img:         tempImg,
+		Img:         newSpec.Img,
 	}, isValid
 }
 
@@ -222,6 +248,56 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 
 	collector.Visit(link)
 
+	return specData
+}
+
+func getSSDSpecDataFromZol(link string, collector *colly.Collector) SSDSpec {
+	specData := SSDSpec{}
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
+		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
+
+		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
+		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
+		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
+		if mallPrice != "" {
+			specData.PriceCN = mallPrice
+		} else {
+			specData.PriceCN = normalPrice
+		}
+
+		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
+			convertedHeader := convertGBKString(item.ChildText("th"))
+			convertedData := convertGBKString(item.ChildText("td span"))
+			fmt.Println(convertedHeader)
+			fmt.Println(convertedData)
+
+			switch convertedHeader {
+			case "存储容量":
+				specData.Capacity = convertedData
+			case "接口类型":
+				specData.FormFactor = convertedData
+			case "读取速度":
+				specData.MaxRead = extractNumberFromString(convertedData)
+			case "写入速度":
+				specData.MaxWrite = extractNumberFromString(convertedData)
+			case "通道":
+				if strings.Contains(convertedData, "x4") {
+					specData.Interface = "PCIe " + convertedData
+				} else {
+					specData.Interface = convertedData
+				}
+			}
+
+			if strings.Contains(convertedHeader, "架构") {
+				specData.FlashType = convertedData
+			}
+
+		})
+
+	})
+	collector.Visit(link)
 	return specData
 }
 

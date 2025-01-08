@@ -11,40 +11,48 @@ import (
 )
 
 type CoolerSpec struct {
-	Code           string
-	Brand          string
-	Name           string
-	ReleaseDate    string
-	Sockets        []string
-	IsLiquidCooler string
-	Size           int
-	NoiseLevel     string
-	FanSpeed       string
-	PriceUS        string
-	PriceHK        string
-	PriceCN        string
-	LinkUS         string
-	LinkHK         string
-	LinkCN         string
-	Img            string
+	Code             string
+	Brand            string
+	Name             string
+	ReleaseDate      string
+	Sockets          []string
+	IsLiquidCooler   bool
+	LiquidCoolerSize int
+	AirCoolerHeight  int
+	NoiseLevel       string
+	FanSpeed         string
+	Airflow          string
+	Pressure         string
+	LED              string
+	PriceUS          string
+	PriceHK          string
+	PriceCN          string
+	LinkUS           string
+	LinkHK           string
+	LinkCN           string
+	Img              string
 }
 
 type CoolerType struct {
-	Brand          string
-	Name           string
-	ReleaseDate    string
-	Sockets        []string
-	IsLiquidCooler string
-	Size           int
-	NoiseLevel     string
-	FanSpeed       string
-	PriceUS        string
-	PriceHK        string
-	PriceCN        string
-	LinkUS         string
-	LinkHK         string
-	LinkCN         string
-	Img            string
+	Brand            string
+	Name             string
+	ReleaseDate      string
+	Sockets          []string
+	IsLiquidCooler   bool
+	LiquidCoolerSize int
+	AirCoolerHeight  int
+	NoiseLevel       string
+	FanSpeed         string
+	Airflow          string
+	Pressure         string
+	LED              string
+	PriceUS          string
+	PriceHK          string
+	PriceCN          string
+	LinkUS           string
+	LinkHK           string
+	LinkCN           string
+	Img              string
 }
 
 func GetCoolerSpec(record LinkRecord) CoolerSpec {
@@ -54,13 +62,15 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
+			"pangoly.com",
 			"www.newegg.com",
 			"newegg.com",
 			"www.price.com.hk",
 			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
 			"product.pconline.com.cn",
 			"pconline.com.cn",
-			"pangoly.com",
 		),
 		colly.AllowURLRevisit(),
 	)
@@ -69,22 +79,30 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 		Transport: fakeChrome.Transport,
 	})
 
-	specCollector := collector.Clone()
+	coolerData := CoolerSpec{}
 
-	cooler := getCoolerSpecData(record.LinkSpec, specCollector)
-	cooler.Code = record.Name
-	cooler.Brand = record.Brand
-	cooler.PriceCN = record.PriceCN
-	cooler.PriceHK = ""
-	cooler.LinkHK = ""
-	cooler.LinkCN = record.LinkCN
+	if strings.Contains(record.LinkCN, "zol") {
+		coolerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+	} else {
+		if record.LinkSpec != "" {
+			coolerData = getCoolerSpecData(record.LinkSpec, collector)
+			coolerData.LinkCN = record.LinkCN
+		}
+	}
+
+	coolerData.Code = record.Name
+	coolerData.Brand = record.Brand
+	coolerData.PriceCN = record.PriceCN
+	coolerData.PriceHK = ""
+	coolerData.LinkHK = ""
 	if record.LinkUS != "" {
-		cooler.LinkUS = record.LinkUS
+		coolerData.LinkUS = record.LinkUS
 	}
-	if cooler.Name == "" {
-		cooler.Name = record.Name
+	if coolerData.Name == "" {
+		coolerData.Name = record.Name
 	}
-	return cooler
+
+	return coolerData
 }
 
 func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
@@ -114,14 +132,43 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 	usCollector := collector.Clone()
 	isValid := true
 
-	priceCN := spec.PriceCN
-	if priceCN == "" {
-		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+	newSpec := spec
 
-		if priceCN == "" {
+	if strings.Contains(spec.LinkCN, "zol") {
+		tempSpec := getCoolerSpecDataFromZol(spec.LinkCN, cnCollector)
+
+		newSpec.Img = tempSpec.Img
+		if tempSpec.PriceCN != "" {
+			newSpec.PriceCN = tempSpec.PriceCN
+		}
+		newSpec.IsLiquidCooler = tempSpec.IsLiquidCooler
+		newSpec.Sockets = tempSpec.Sockets
+		newSpec.AirCoolerHeight = tempSpec.AirCoolerHeight
+		newSpec.LiquidCoolerSize = tempSpec.LiquidCoolerSize
+		newSpec.NoiseLevel = tempSpec.NoiseLevel
+		newSpec.FanSpeed = tempSpec.FanSpeed
+		newSpec.Airflow = tempSpec.Airflow
+		newSpec.Pressure = tempSpec.Pressure
+		newSpec.LED = tempSpec.LED
+		if strings.Contains(newSpec.Name, "RGB") {
+			newSpec.LED = "RGB"
+		}
+		if strings.Contains(newSpec.Name, "ARGB") {
+			newSpec.LED = "ARGB"
+		}
+		if newSpec.PriceCN == "" {
 			isValid = false
 		}
 	}
+
+	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if newSpec.PriceCN == "" {
+			isValid = false
+		}
+	}
+
 	priceUS, tempImg := spec.PriceUS, spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
 		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
@@ -132,21 +179,24 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 	}
 
 	return CoolerType{
-		Brand:          spec.Brand,
-		Name:           spec.Name,
-		ReleaseDate:    spec.ReleaseDate,
-		Sockets:        spec.Sockets,
-		IsLiquidCooler: spec.IsLiquidCooler,
-		Size:           spec.Size,
-		NoiseLevel:     spec.NoiseLevel,
-		FanSpeed:       spec.FanSpeed,
-		PriceUS:        priceUS,
-		PriceHK:        "",
-		PriceCN:        priceCN,
-		LinkUS:         spec.LinkUS,
-		LinkHK:         spec.LinkHK,
-		LinkCN:         spec.LinkCN,
-		Img:            tempImg,
+		Brand:            spec.Brand,
+		Name:             spec.Name,
+		ReleaseDate:      newSpec.ReleaseDate,
+		Sockets:          newSpec.Sockets,
+		IsLiquidCooler:   newSpec.IsLiquidCooler,
+		LiquidCoolerSize: newSpec.LiquidCoolerSize,
+		NoiseLevel:       newSpec.NoiseLevel,
+		FanSpeed:         newSpec.FanSpeed,
+		Airflow:          newSpec.Airflow,
+		Pressure:         newSpec.Pressure,
+		LED:              newSpec.LED,
+		PriceUS:          priceUS,
+		PriceHK:          "",
+		PriceCN:          newSpec.PriceCN,
+		LinkUS:           spec.LinkUS,
+		LinkHK:           spec.LinkHK,
+		LinkCN:           spec.LinkCN,
+		Img:              tempImg,
 	}, isValid
 }
 
@@ -190,9 +240,10 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 				fmt.Println(socketslist)
 				specData.Sockets = socketslist
 			case "Liquid Cooler":
-				specData.IsLiquidCooler = item.ChildTexts("td")[1]
+				// specData.IsLiquidCooler = item.ChildTexts("td")[1]
+				specData.IsLiquidCooler = true
 			case "Radiator Size":
-				specData.Size = extractNumberFromString(item.ChildTexts("td")[1])
+				specData.LiquidCoolerSize = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Noise Level":
 				specData.NoiseLevel = item.ChildTexts("td")[1]
 			case "Fan RPM":
@@ -202,5 +253,84 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 	})
 	collector.Visit(link)
 
+	return specData
+}
+
+func getCoolerSpecDataFromZol(link string, collector *colly.Collector) CoolerSpec {
+	specData := CoolerSpec{
+		IsLiquidCooler: false,
+		LED:            "NO",
+	}
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
+		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
+
+		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
+		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
+		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
+		if mallPrice != "" {
+			specData.PriceCN = mallPrice
+		} else {
+			specData.PriceCN = normalPrice
+		}
+
+		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
+			convertedHeader := convertGBKString(item.ChildText("th"))
+			convertedData := convertGBKString(item.ChildText("td span"))
+			// fmt.Println(convertedHeader)
+			// fmt.Println(convertedData)
+
+			switch convertedHeader {
+			case "散热方式":
+				if strings.Contains(convertedData, "水冷") {
+					specData.IsLiquidCooler = true
+				} else {
+					specData.IsLiquidCooler = false
+				}
+			case "适用范围":
+				tempStrList := SplitAny(convertedData, "/")
+				specData.Sockets = SocketContainLogic(tempStrList)
+			case "发光方式":
+				if !strings.Contains(convertedData, "无光") {
+					specData.LED = convertedData
+				}
+			case "风压":
+				specData.Pressure = convertedData
+			}
+
+			if strings.Contains(convertedHeader, "产品尺") {
+				tempStrList := SplitAny(convertedData, "/")
+				heightNum := 0
+				for _, testStr := range tempStrList {
+					testNum := extractNumberFromString(testStr)
+					if testNum > heightNum {
+						heightNum = testNum
+					}
+				}
+				specData.AirCoolerHeight = heightNum
+			}
+
+			if strings.Contains(convertedHeader, "水冷排类") {
+				specData.LiquidCoolerSize = extractNumberFromString(convertedData)
+				fmt.Println("specData.Size : ", specData.LiquidCoolerSize)
+			}
+			if strings.Contains(convertedData, "dB") {
+				specData.NoiseLevel = strings.ReplaceAll(convertedData, "\ufffd\ufffd\u001a", "≤")
+			}
+			if strings.Contains(convertedData, "RPM") {
+				fmt.Println(convertedData)
+				if specData.FanSpeed == "" {
+					specData.FanSpeed = convertedData
+					fmt.Println("specData.FanSpeed: ", convertedData)
+				}
+			}
+			if strings.Contains(convertedData, "CFM") {
+				specData.Airflow = convertedData
+			}
+		})
+
+	})
+	collector.Visit(link)
 	return specData
 }

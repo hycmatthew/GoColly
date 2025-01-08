@@ -65,6 +65,38 @@ func getCNPriceFromPcOnline(link string, collector *colly.Collector) string {
 	return price
 }
 
+func getDetailsLinkFromZol(link string, collector *colly.Collector) string {
+	cnLink := "https://detail.zol.com.cn"
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
+		cnLink += element.ChildAttr(".section-header-link .more", "href")
+	})
+	collector.Visit(link)
+	return cnLink
+}
+
+func getCNPriceFromZol(link string, collector *colly.Collector) string {
+	price := ""
+
+	collectorErrorHandle(collector, link)
+
+	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
+		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
+		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
+		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
+
+		if mallPrice != "" {
+			price = mallPrice
+		} else {
+			price = normalPrice
+		}
+	})
+
+	collector.Visit(link)
+	return price
+}
+
 func collectorErrorHandle(collector *colly.Collector, link string) {
 	collector.OnRequest(func(r *colly.Request) {
 		// USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'

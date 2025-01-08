@@ -20,7 +20,7 @@ type CaseSpec struct {
 	PowerSupply        bool
 	DriveBays2         int
 	DriveBays3         int
-	Compatibility      string
+	Compatibility      []string
 	Dimensions         []int
 	MaxVGAlength       int
 	RadiatorSupport    int
@@ -44,7 +44,7 @@ type CaseType struct {
 	PowerSupply        bool
 	DriveBays2         int
 	DriveBays3         int
-	Compatibility      string
+	Compatibility      []string
 	Dimensions         []int
 	MaxVGAlength       int
 	RadiatorSupport    int
@@ -66,10 +66,13 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 	collector := colly.NewCollector(
 		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
 		colly.AllowedDomains(
+			"nanoreview.net",
 			"www.newegg.com",
 			"newegg.com",
 			"www.price.com.hk",
 			"price.com.hk",
+			"detail.zol.com.cn",
+			"zol.com.cn",
 			"product.pconline.com.cn",
 			"pconline.com.cn",
 			"pangoly.com",
@@ -81,15 +84,22 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 		Transport: fakeChrome.Transport,
 	})
 
-	specCollector := collector.Clone()
+	caseData := CaseSpec{}
 
-	caseData := getCaseSpecData(record.LinkSpec, specCollector)
+	if strings.Contains(record.LinkCN, "zol") {
+		caseData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+	} else {
+		if record.LinkSpec != "" {
+			caseData = getCaseSpecData(record.LinkSpec, collector)
+			caseData.LinkCN = record.LinkCN
+		}
+	}
+
 	caseData.Brand = record.Brand
 	caseData.Code = record.Name
 	caseData.PriceCN = record.PriceCN
 	caseData.PriceHK = ""
 	caseData.LinkHK = ""
-	caseData.LinkCN = record.LinkCN
 	if record.LinkUS != "" {
 		caseData.LinkUS = record.LinkUS
 	}
@@ -126,40 +136,76 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 	usCollector := collector.Clone()
 	isValid := true
 
-	priceCN := spec.PriceCN
-	if priceCN == "" {
-		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
-		if priceCN == "" {
+	newSpec := spec
+
+	if strings.Contains(spec.LinkCN, "zol") {
+		tempSpec := getCaseSpecDataFromZol(spec.LinkCN, cnCollector)
+
+		newSpec.Img = tempSpec.Img
+		if tempSpec.PriceCN != "" {
+			newSpec.PriceCN = tempSpec.PriceCN
+		}
+		newSpec.CaseSize = tempSpec.CaseSize
+		newSpec.Color = tempSpec.CaseSize
+		newSpec.Compatibility = tempSpec.Compatibility
+		newSpec.Dimensions = tempSpec.Dimensions
+		newSpec.DriveBays2 = tempSpec.DriveBays2
+		newSpec.DriveBays3 = tempSpec.DriveBays3
+		newSpec.MaxCpuCoolorHeight = tempSpec.MaxCpuCoolorHeight
+		newSpec.MaxVGAlength = tempSpec.MaxVGAlength
+		newSpec.PowerSupply = tempSpec.PowerSupply
+		newSpec.RadiatorSupport = tempSpec.RadiatorSupport
+		newSpec.SlotsNum = tempSpec.SlotsNum
+
+		if newSpec.PriceCN == "" {
 			isValid = false
 		}
 	}
 
-	newSpec := CaseSpec{}
+	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+
+		if newSpec.PriceCN == "" {
+			isValid = false
+		}
+	}
+
 	if strings.Contains(spec.LinkUS, "newegg") {
-		newSpec = getCaseUSPrice(spec.LinkUS, usCollector)
+		tempSpec := getCaseUSPrice(spec.LinkUS, usCollector)
+
+		if newSpec.Img == "" {
+			newSpec.Img = tempSpec.Img
+		}
+		newSpec.PriceUS = tempSpec.PriceUS
+		newSpec.MaxCpuCoolorHeight = tempSpec.MaxCpuCoolorHeight
+		newSpec.RadiatorSupport = tempSpec.RadiatorSupport
+
 		if newSpec.PriceUS == "" {
 			isValid = false
 		}
+	}
+	if !isValid {
+		fmt.Println(newSpec)
 	}
 
 	return CaseType{
 		Brand:              spec.Brand,
 		Name:               spec.Name,
 		ReleaseDate:        spec.ReleaseDate,
-		CaseSize:           spec.CaseSize,
-		Color:              spec.Color,
-		PowerSupply:        spec.PowerSupply,
-		DriveBays2:         spec.DriveBays2,
-		DriveBays3:         spec.DriveBays3,
-		Compatibility:      spec.Compatibility,
-		Dimensions:         spec.Dimensions,
-		MaxVGAlength:       spec.MaxVGAlength,
+		CaseSize:           newSpec.CaseSize,
+		Color:              newSpec.Color,
+		PowerSupply:        newSpec.PowerSupply,
+		DriveBays2:         newSpec.DriveBays2,
+		DriveBays3:         newSpec.DriveBays3,
+		Compatibility:      newSpec.Compatibility,
+		Dimensions:         newSpec.Dimensions,
+		MaxVGAlength:       newSpec.MaxVGAlength,
 		RadiatorSupport:    newSpec.RadiatorSupport,
 		MaxCpuCoolorHeight: newSpec.MaxCpuCoolorHeight,
-		SlotsNum:           spec.SlotsNum,
+		SlotsNum:           newSpec.SlotsNum,
 		PriceUS:            newSpec.PriceUS,
 		PriceHK:            "",
-		PriceCN:            priceCN,
+		PriceCN:            newSpec.PriceCN,
 		LinkUS:             spec.LinkUS,
 		LinkHK:             spec.LinkHK,
 		LinkCN:             spec.LinkCN,
@@ -211,7 +257,8 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 			case `Internal 3.5" Drive Bays`:
 				specData.DriveBays3 = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Motherboard Compatibility":
-				specData.Compatibility = item.ChildTexts("td")[1]
+				sizeList := strings.Split(item.ChildTexts("td")[1], ",")
+				specData.Compatibility = sizeList
 			case "Dimensions":
 				tempDimensions := strings.Split(item.ChildTexts("td")[1], "x")
 				var dimensionsList []int
@@ -238,7 +285,7 @@ func getCaseUSPrice(link string, collector *colly.Collector) CaseSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
+		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
 
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
@@ -261,6 +308,100 @@ func getCaseUSPrice(link string, collector *colly.Collector) CaseSpec {
 		})
 	})
 
+	collector.Visit(link)
+	return specData
+}
+
+func getCaseSpecDataFromZol(link string, collector *colly.Collector) CaseSpec {
+	specData := CaseSpec{
+		PowerSupply: false,
+	}
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
+		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
+
+		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
+		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
+		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
+		if mallPrice != "" {
+			specData.PriceCN = mallPrice
+		} else {
+			specData.PriceCN = normalPrice
+		}
+
+		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
+			convertedHeader := convertGBKString(item.ChildText("th"))
+			convertedData := convertGBKString(item.ChildText("td span"))
+			// fmt.Println(convertedHeader)
+			// fmt.Println(convertedData)
+
+			switch convertedHeader {
+			case "适用主板":
+				compatibilityStr := strings.Split(convertedData, "，")
+				specData.Compatibility = compatibilityStr
+			case "扩展插槽":
+				specData.SlotsNum = extractNumberFromString(convertedData)
+			case "颜色":
+				specData.Color = convertedData
+			case "显卡限长":
+				specData.MaxVGAlength = extractNumberFromString(convertedData)
+			case "80PLUS认证":
+				if strings.Contains(convertedData, "钛金") {
+					specData.CaseSize = "80+ Titanium"
+				} else if strings.Contains(convertedData, "白金") || strings.Contains(convertedData, "铂金") {
+					specData.CaseSize = "80+ Platinum"
+				} else if strings.Contains(convertedData, "金牌") {
+					specData.CaseSize = "80+ Gold"
+				} else if strings.Contains(convertedData, "银牌") {
+					specData.CaseSize = "80+ Silver"
+				} else if strings.Contains(convertedData, "铜") {
+					specData.CaseSize = "80+ Bronze"
+				} else {
+					specData.CaseSize = convertedData
+				}
+			}
+
+			if strings.Contains(convertedHeader, "水冷") {
+				tempStrList := SplitAny(convertedData, "/×")
+				highestSize := 120
+
+				for _, item := range tempStrList {
+					fmt.Println(item)
+					tempSize := extractNumberFromString(item)
+					fmt.Println(tempSize)
+					if tempSize > highestSize {
+						highestSize = tempSize
+					}
+				}
+				specData.RadiatorSupport = highestSize
+				fmt.Println("RadiatorSupport : ", highestSize)
+			}
+			if strings.Contains(convertedHeader, "结构") {
+				specData.CaseSize = convertedData
+			}
+			if strings.Contains(convertedHeader, "CPU散热器") {
+				specData.MaxCpuCoolorHeight = extractNumberFromString(convertedData)
+			}
+			if strings.Contains(convertedHeader, "2.5英") {
+				specData.DriveBays2 = extractNumberFromString(convertedData)
+			}
+			if strings.Contains(convertedHeader, "3.5英") {
+				specData.DriveBays3 = extractNumberFromString(convertedData)
+			}
+
+			if strings.Contains(convertedHeader, "产品尺") {
+				tempDimensions := strings.Split(convertedData, "×")
+				var dimensionsList []int
+				for _, item := range tempDimensions {
+					dimensionsList = append(dimensionsList, extractNumberFromString(item))
+				}
+
+				specData.Dimensions = dimensionsList
+			}
+		})
+
+	})
 	collector.Visit(link)
 	return specData
 }
