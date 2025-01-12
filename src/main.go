@@ -4,6 +4,7 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
+	"go-colly-lib/src/databaseLogic"
 	"go-colly-lib/src/pcData"
 	"io"
 	"log"
@@ -15,29 +16,32 @@ import (
 func main() {
 	// pcData.GetRamCNPriceFromChromedp("https://item.taobao.com/item.htm?abbucket=17&id=743688559462&skuId=5323436787436")
 
-	const (
-		cpu         = "cpu"
-		gpu         = "gpu"
-		motherboard = "motherboard"
-		ram         = "ram"
-		ssd         = "ssd"
-		power       = "power"
-		cooler      = "cooler"
-		pcCase      = "case"
-	)
+	databaseLogic.CreateDBLogic()
+	/*
+		const (
+			cpu         = "cpu"
+			gpu         = "gpu"
+			motherboard = "motherboard"
+			ram         = "ram"
+			ssd         = "ssd"
+			power       = "power"
+			cooler      = "cooler"
+			pcCase      = "case"
+		)
 
-	getDataName := ssd
-	isUpdateSpec := false
+		getDataName := motherboard
+		isUpdateSpec := false
 
-	if isUpdateSpec {
-		if getDataName == gpu {
-			updateGPUSpecLogic()
+		if isUpdateSpec {
+			if getDataName == gpu {
+				updateGPUSpecLogic()
+			} else {
+				updateSpecLogic(getDataName)
+			}
 		} else {
-			updateSpecLogic(getDataName)
+			updatePriceLogic(getDataName)
 		}
-	} else {
-		updatePriceLogic(getDataName)
-	}
+	*/
 }
 
 func readCsvFile(filePath string) [][]string {

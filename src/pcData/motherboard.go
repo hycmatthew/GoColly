@@ -106,7 +106,7 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 	motherboardData.PriceHK = ""
 	motherboardData.LinkHK = ""
 	motherboardData.LinkCN = record.LinkCN
-	if record.LinkUS != "" {
+	if motherboardData.LinkUS == "" {
 		motherboardData.LinkUS = record.LinkUS
 	}
 	return motherboardData
@@ -173,7 +173,7 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 		Pcie1Slot:  spec.Pcie16Slot,
 		M2Slot:     spec.M2Slot,
 		SataSlot:   spec.SataSlot,
-		FormFactor: spec.FormFactor,
+		FormFactor: getFormFactorLogic(spec.FormFactor),
 		Wireless:   spec.Wireless,
 		LinkUS:     spec.LinkUS,
 		LinkHK:     spec.LinkHK,
@@ -474,7 +474,7 @@ func getMotherboardSpecDataFromMsi(link string, collector *colly.Collector) Moth
 				specData.SataSlot = extractNumberFromString(getWordBeforeSpecificString(dataStr, "x SATA"))
 			}
 			if strings.Contains(itemStr, "PCB Info") {
-				specData.FormFactor = getFormFactorLogic(dataStr)
+				specData.FormFactor = dataStr
 			}
 		})
 	})
@@ -498,14 +498,14 @@ func getAllRamSupportList() []string {
 }
 
 func getFormFactorLogic(str string) string {
-	formFactorList := []string{"mATX", "Micro-ATX", "Mini-ATX", "EATX"}
+	formFactorList := []string{"mATX", "M-ATX", "Micro-ATX", "Micro ATX", "Mini-ATX", "Mini ATX", "EATX"}
 	upperStr := strings.ToUpper(str)
 	for _, item := range formFactorList {
 		if strings.Contains(upperStr, strings.ToUpper(item)) {
 			switch item {
-			case "mATX", "Micro-ATX":
+			case "mATX", "M-ATX", "Micro-ATX", "Micro ATX":
 				return "Micro-ATX"
-			case "Mini-ATX":
+			case "Mini-ATX", "Mini ATX":
 				return "Mini-ATX"
 			case "EATX":
 				return "EATX"

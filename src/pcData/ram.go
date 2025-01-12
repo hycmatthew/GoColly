@@ -23,7 +23,7 @@ type RamSpec struct {
 	Timing       string
 	Latency      int
 	Voltage      string
-	Channel      string
+	Channel      int
 	Profile      string
 	LED          string
 	HeatSpreader bool
@@ -47,7 +47,7 @@ type RamType struct {
 	Timing       string
 	Latency      int
 	Voltage      string
-	Channel      string
+	Channel      int
 	Profile      string
 	LED          string
 	HeatSpreader bool
@@ -288,6 +288,24 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 				specData.Model = item.ChildText("td")
 			case "Capacity":
 				specData.Capacity = item.ChildText("td")
+				ramNum := 1
+				if strings.Contains(specData.Capacity, "(") {
+					testStr := strings.Split(specData.Capacity, "(")[1]
+
+					if strings.Contains(testStr, "x") {
+						secList := strings.Split(testStr, "x")
+						ramNum = extractNumberFromString(secList[0])
+						specData.Channel = ramNum
+					}
+				}
+				if strings.Contains(strings.ToLower(item.ChildText("td")), "dual") {
+					specData.Channel = 2
+				} else if strings.Contains(strings.ToLower(item.ChildText("td")), "quad") {
+					specData.Channel = 4
+				} else {
+					specData.Channel = 1
+				}
+
 			case "Speed":
 				tempStr := strings.ReplaceAll(item.ChildText("td"), "-", " ")
 				fmt.Println(tempStr)
@@ -306,8 +324,6 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 				specData.Timing = item.ChildText("td")
 			case "Voltage":
 				specData.Voltage = item.ChildText("td")
-			case "Multi-channel Kit":
-				specData.Channel = item.ChildText("td")
 			case "BIOS/Performance Profile":
 				specData.Profile = item.ChildText("td")
 			case "Heat Spreader":
@@ -363,13 +379,7 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 					capacity = extractNumberFromString(strList[1])
 					totalSize = ramNum * capacity
 
-					if ramNum == 2 {
-						specData.Channel = "Dual Channel Kit"
-					}
-					if ramNum == 4 {
-						specData.Channel = "Quad Channel Kit"
-					}
-
+					specData.Channel = ramNum
 				} else {
 					totalSize = extractNumberFromString(convertedData)
 					capacity = totalSize
