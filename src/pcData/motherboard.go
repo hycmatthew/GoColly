@@ -173,7 +173,7 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 		Pcie1Slot:  spec.Pcie16Slot,
 		M2Slot:     spec.M2Slot,
 		SataSlot:   spec.SataSlot,
-		FormFactor: getFormFactorLogic(spec.FormFactor),
+		FormFactor: GetFormFactorLogic(spec.FormFactor),
 		Wireless:   spec.Wireless,
 		LinkUS:     spec.LinkUS,
 		LinkHK:     spec.LinkHK,
@@ -497,20 +497,46 @@ func getAllRamSupportList() []string {
 	}
 }
 
-func getFormFactorLogic(str string) string {
-	formFactorList := []string{"mATX", "M-ATX", "Micro-ATX", "Micro ATX", "Mini-ATX", "Mini ATX", "EATX"}
+func GetFormFactorLogic(str string) string {
+	formFactorList := []string{"mATX", "M-ATX", "Micro-ATX", "Micro ATX", "Mini-ITX", "Mini ITX", "ITX", "EATX", "E-ATX"}
 	upperStr := strings.ToUpper(str)
 	for _, item := range formFactorList {
 		if strings.Contains(upperStr, strings.ToUpper(item)) {
 			switch item {
 			case "mATX", "M-ATX", "Micro-ATX", "Micro ATX":
 				return "Micro-ATX"
-			case "Mini-ATX", "Mini ATX":
-				return "Mini-ATX"
-			case "EATX":
+			case "Mini-ITX", "Mini ITX":
+				return "Mini-ITX"
+			case "ITX":
+				return "ITX"
+			case "EATX", "E-ATX":
 				return "EATX"
 			}
 		}
 	}
 	return "ATX"
+}
+
+func CompareMotherboardDataLogic(cur MotherboardType, list []MotherboardType) MotherboardType {
+	newVal := cur
+	curTest := cur.Brand + cur.Name
+	oldVal := cur
+	for _, item := range list {
+		testStr := item.Brand + item.Name
+		if curTest == testStr {
+			oldVal = item
+			break
+		}
+	}
+
+	if newVal.PriceCN == "" {
+		newVal.PriceCN = oldVal.PriceCN
+	}
+	if newVal.PriceUS == "" {
+		newVal.PriceUS = oldVal.PriceUS
+	}
+	if newVal.PriceHK == "" {
+		newVal.PriceHK = oldVal.PriceHK
+	}
+	return newVal
 }

@@ -1,91 +1,99 @@
 [
     {
         "Brand": "nzxt",
-        "Name": "H5 Elite",
-        "ReleaseDate": "",
-        "Color": "ATX",
-        "CaseSize": "ATX",
+        "Name": "NZXT H5 Elite",
+        "ReleaseDate": "October 2022",
+        "Color": "Black",
+        "CaseSize": "ATX Mid Tower",
         "PowerSupply": false,
         "DriveBays2": 1,
         "DriveBays3": 1,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            " EATX",
+            " Micro ATX",
+            " Mini ITX"
         ],
         "Dimensions": [
-            464,
-            277,
-            446
-        ],
-        "MaxVGAlength": 265,
-        "RadiatorSupport": 280,
-        "MaxCpuCoolorHeight": 165,
-        "SlotsNum": 7,
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1433/1432128/param.shtml",
-        "Img": "https://2d.zol-img.com.cn/product/223_280x210/377/ceYG9UJiQdQBg.jpg"
-    },
-    {
-        "Brand": "nzxt",
-        "Name": "H5 Flow",
-        "ReleaseDate": "",
-        "Color": "ATX",
-        "CaseSize": "ATX",
-        "PowerSupply": false,
-        "DriveBays2": 2,
-        "DriveBays3": 1,
-        "Compatibility": null,
-        "Dimensions": [
-            465
-        ],
-        "MaxVGAlength": 0,
-        "RadiatorSupport": 0,
-        "MaxCpuCoolorHeight": 0,
-        "SlotsNum": 0,
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "549",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/2105/2104917/param.shtml",
-        "Img": "https://2e.zol-img.com.cn/product/269_280x210/606/cePSIcDDiTnqk.jpg"
-    },
-    {
-        "Brand": "nzxt",
-        "Name": "H5 Flow RGB",
-        "ReleaseDate": "",
-        "Color": "ATX",
-        "CaseSize": "ATX",
-        "PowerSupply": false,
-        "DriveBays2": 2,
-        "DriveBays3": 1,
-        "Compatibility": [
-            "MINI-ITX板型",
-            "Micro-ATX版型",
-            "ATX版型"
-        ],
-        "Dimensions": [
-            448,
+            446,
             227,
-            446
+            464
         ],
         "MaxVGAlength": 365,
         "RadiatorSupport": 280,
         "MaxCpuCoolorHeight": 165,
         "SlotsNum": 7,
-        "PriceUS": "",
+        "PriceUS": "139.98",
         "PriceHK": "",
-        "PriceCN": "799",
-        "LinkUS": "",
+        "PriceCN": "999",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146345",
         "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1950/1949522/param.shtml",
-        "Img": "https://2e.zol-img.com.cn/product/256_280x210/86/ceIXzq1kzIQRA.png"
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-345-07.jpg"
+    },
+    {
+        "Brand": "nzxt",
+        "Name": "NZXT H5 Flow 2024",
+        "ReleaseDate": "August 2024",
+        "Color": "Black",
+        "CaseSize": "ATX Mid Tower",
+        "PowerSupply": false,
+        "DriveBays2": 2,
+        "DriveBays3": 1,
+        "Compatibility": [
+            "ATX",
+            " EATX",
+            " Micro ATX",
+            " Mini ITX"
+        ],
+        "Dimensions": [
+            430,
+            225,
+            465
+        ],
+        "MaxVGAlength": 410,
+        "RadiatorSupport": 360,
+        "MaxCpuCoolorHeight": 170,
+        "SlotsNum": 7,
+        "PriceUS": "90.99",
+        "PriceHK": "",
+        "PriceCN": "",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146365",
+        "LinkHK": "",
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-365-04.png"
+    },
+    {
+        "Brand": "nzxt",
+        "Name": "NZXT H5 Flow RGB 2024",
+        "ReleaseDate": "August 2024",
+        "Color": "Black",
+        "CaseSize": "ATX Mid Tower",
+        "PowerSupply": false,
+        "DriveBays2": 2,
+        "DriveBays3": 1,
+        "Compatibility": [
+            "ATX",
+            " EATX",
+            " Micro ATX",
+            " Mini ITX"
+        ],
+        "Dimensions": [
+            430,
+            225,
+            465
+        ],
+        "MaxVGAlength": 410,
+        "RadiatorSupport": 360,
+        "MaxCpuCoolorHeight": 170,
+        "SlotsNum": 7,
+        "PriceUS": "113.99",
+        "PriceHK": "",
+        "PriceCN": "",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146368",
+        "LinkHK": "",
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-368-08.png"
     },
     {
         "Brand": "nzxt",
@@ -112,28 +120,30 @@
         "SlotsNum": 7,
         "PriceUS": "109.99",
         "PriceHK": "",
-        "PriceCN": "799",
+        "PriceCN": "",
         "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146357",
         "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/case/nzxt/1996407.html",
+        "LinkCN": "",
         "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-357-01.jpg"
     },
     {
         "Brand": "nzxt",
         "Name": "H6 Flow RGB",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 1,
         "Compatibility": [
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
-            415
+            415,
+            287,
+            435
         ],
         "MaxVGAlength": 365,
         "RadiatorSupport": 360,
@@ -141,7 +151,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "749",
+        "PriceCN": "799",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1949/1948910/param.shtml",
@@ -171,147 +181,152 @@
         "RadiatorSupport": 0,
         "MaxCpuCoolorHeight": 0,
         "SlotsNum": 7,
-        "PriceUS": "",
+        "PriceUS": "129.99",
         "PriceHK": "",
-        "PriceCN": "799",
-        "LinkUS": "https://www.amazon.com/dp/B09VP6L8T3",
+        "PriceCN": "",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAG1PHWR4160",
         "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/case/nzxt/2097507.html",
-        "Img": ""
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/AG1PD22052605W1VW1C.jpg"
     },
     {
         "Brand": "nzxt",
-        "Name": "H7 Flow",
-        "ReleaseDate": "",
-        "Color": "ATX",
-        "CaseSize": "ATX",
+        "Name": "NZXT H7 Flow 2024",
+        "ReleaseDate": "June 2024",
+        "Color": "Black",
+        "CaseSize": "ATX Mid Tower",
         "PowerSupply": false,
-        "DriveBays2": 0,
+        "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "E-ATX（加强型）",
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "ATX",
+            " EATX",
+            " Micro ATX",
+            " Mini ITX"
         ],
         "Dimensions": [
             468,
             244,
             544
         ],
-        "MaxVGAlength": 400,
+        "MaxVGAlength": 410,
         "RadiatorSupport": 420,
         "MaxCpuCoolorHeight": 185,
         "SlotsNum": 7,
-        "PriceUS": "",
+        "PriceUS": "119.99",
         "PriceHK": "",
-        "PriceCN": "899",
-        "LinkUS": "",
+        "PriceCN": "",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146361",
         "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/2088/2087766/param.shtml",
-        "Img": "https://2b.zol-img.com.cn/product/268_280x210/167/ceXsLO2mKgIwg.jpg"
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-361-04.jpg"
     },
     {
         "Brand": "nzxt",
-        "Name": "H7 Flow RGB",
-        "ReleaseDate": "",
-        "Color": "ATX",
-        "CaseSize": "ATX",
+        "Name": "NZXT H7 Flow RGB 2024",
+        "ReleaseDate": "June 2024",
+        "Color": "Black",
+        "CaseSize": "ATX Mid Tower",
         "PowerSupply": false,
-        "DriveBays2": 6,
+        "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MINI-ITX板型",
-            "Micro-ATX版型",
-            "ATX版型"
+            "ATX",
+            " EATX",
+            " Micro ATX",
+            " Mini ITX"
         ],
         "Dimensions": [
-            480,
-            230,
-            480
+            468,
+            244,
+            544
         ],
-        "MaxVGAlength": 400,
-        "RadiatorSupport": 360,
+        "MaxVGAlength": 410,
+        "RadiatorSupport": 420,
         "MaxCpuCoolorHeight": 185,
         "SlotsNum": 7,
-        "PriceUS": "",
+        "PriceUS": "139.99",
         "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "",
+        "PriceCN": "",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAG1PKC48921",
         "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1950/1949521/param.shtml",
-        "Img": "https://2e.zol-img.com.cn/product/256_280x210/68/ceOE1HqaugOp6.png"
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-363-04.jpg"
     },
     {
         "Brand": "nzxt",
-        "Name": "H9 Elite",
+        "Name": "NZXT H9 Elite",
         "ReleaseDate": "",
-        "Color": "ATX",
-        "CaseSize": "ATX",
+        "Color": "Black",
+        "CaseSize": "ATX Mid Tower",
         "PowerSupply": false,
-        "DriveBays2": 6,
+        "DriveBays2": 4,
         "DriveBays3": 2,
         "Compatibility": [
-            "MINI-ITX板型",
-            "Micro-ATX版型",
-            "ATX版型"
+            "ATX",
+            " Micro ATX",
+            " Mini ITX"
         ],
         "Dimensions": [
-            465,
+            466,
             290,
-            466
+            495
         ],
         "MaxVGAlength": 435,
         "RadiatorSupport": 360,
         "MaxCpuCoolorHeight": 165,
         "SlotsNum": 7,
-        "PriceUS": "",
+        "PriceUS": "279.93",
         "PriceHK": "",
-        "PriceCN": "2229",
-        "LinkUS": "",
+        "PriceCN": "",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16811146349",
         "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1950/1949523/param.shtml",
-        "Img": "https://2b.zol-img.com.cn/product/256_280x210/107/ceuPlVfoE40fM.jpg"
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-349-11.png"
     },
     {
         "Brand": "nzxt",
-        "Name": "H9 Flow",
-        "ReleaseDate": "",
-        "Color": "ATX",
-        "CaseSize": "ATX",
+        "Name": "NZXT H9 Flow",
+        "ReleaseDate": "January 2023",
+        "Color": "Black",
+        "CaseSize": "ATX Mid Tower",
         "PowerSupply": false,
-        "DriveBays2": 6,
+        "DriveBays2": 4,
         "DriveBays3": 2,
-        "Compatibility": null,
+        "Compatibility": [
+            "ATX",
+            " Micro ATX",
+            " Mini ITX"
+        ],
         "Dimensions": [
             466,
-            459,
-            290
+            290,
+            495
         ],
         "MaxVGAlength": 435,
         "RadiatorSupport": 360,
         "MaxCpuCoolorHeight": 165,
         "SlotsNum": 7,
-        "PriceUS": "",
+        "PriceUS": "164.98",
         "PriceHK": "",
-        "PriceCN": "1299",
-        "LinkUS": "",
+        "PriceCN": "",
+        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAG1PJHK5709",
         "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1441/1440962/param.shtml",
-        "Img": "https://2f.zol-img.com.cn/product/226_280x210/239/cemGxn7lpaL6Q.jpg"
+        "LinkCN": "",
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/11-146-347-10.png"
     },
     {
         "Brand": "sama",
         "Name": "平头哥M2",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 4,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             400,
@@ -334,14 +349,14 @@
         "Brand": "sama",
         "Name": "平头哥M3",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             437,
@@ -364,15 +379,15 @@
         "Brand": "sama",
         "Name": "平头哥M1电竞版",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "MINI-STX板型",
-            "MINI-ITX板型"
+            "Micro-ATX",
+            "ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             432,
@@ -395,14 +410,14 @@
         "Brand": "sama",
         "Name": "平头哥M2 Air",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 4,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             400,
@@ -425,14 +440,14 @@
         "Brand": "sama",
         "Name": "平头哥M1商务版",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             432,
@@ -455,14 +470,14 @@
         "Brand": "sama",
         "Name": "平头哥M2 雪装版",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 4,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             400,
@@ -485,14 +500,14 @@
         "Brand": "sama",
         "Name": "平头哥M7",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             429,
@@ -515,14 +530,14 @@
         "Brand": "sama",
         "Name": "平头哥M2 Air 雪装版",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 4,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             400,
@@ -545,15 +560,15 @@
         "Brand": "sama",
         "Name": "朱雀",
         "ReleaseDate": "",
-        "Color": "",
+        "Color": "黑色",
         "CaseSize": "",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             408,
@@ -576,15 +591,15 @@
         "Brand": "sama",
         "Name": "朱雀air",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             408,
@@ -607,18 +622,20 @@
         "Brand": "sama",
         "Name": "大境界",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 1,
         "DriveBays3": 1,
         "Compatibility": [
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
-            461
+            461,
+            235,
+            505
         ],
         "MaxVGAlength": 430,
         "RadiatorSupport": 360,
@@ -636,17 +653,19 @@
         "Brand": "sama",
         "Name": "平头哥M8",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 1,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
-            415
+            415,
+            229,
+            422
         ],
         "MaxVGAlength": 350,
         "RadiatorSupport": 360,
@@ -654,7 +673,7 @@
         "SlotsNum": 4,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "145",
+        "PriceCN": "149",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1949/1948010/param.shtml",
@@ -664,15 +683,15 @@
         "Brand": "sama",
         "Name": "鲁班1",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 5,
         "DriveBays3": 4,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": null,
         "MaxVGAlength": 380,
@@ -691,18 +710,20 @@
         "Brand": "sama",
         "Name": "幻境界",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 1,
         "Compatibility": [
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
-            453
+            453,
+            235,
+            450
         ],
         "MaxVGAlength": 410,
         "RadiatorSupport": 360,
@@ -720,14 +741,14 @@
         "Brand": "sama",
         "Name": "黑洞",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 5,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型"
+            "ATX",
+            "Micro-ATX"
         ],
         "Dimensions": [
             483,
@@ -740,7 +761,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "299",
+        "PriceCN": "279",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1100/1099796/param.shtml",
@@ -750,15 +771,15 @@
         "Brand": "sama",
         "Name": "黑洞7",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 3,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX板型",
-            "M-ATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             340,
@@ -785,16 +806,16 @@
         "Brand": "sama",
         "Name": "黑洞X",
         "ReleaseDate": "",
-        "Color": "",
+        "Color": "黑色",
         "CaseSize": "",
         "PowerSupply": false,
         "DriveBays2": 5,
         "DriveBays3": 3,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             485,
@@ -807,7 +828,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "379",
+        "PriceCN": "388",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1374/1373371/param.shtml",
@@ -817,15 +838,15 @@
         "Brand": "sama",
         "Name": "黑洞3",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 6,
         "DriveBays3": 4,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             530,
@@ -848,16 +869,16 @@
         "Brand": "sama",
         "Name": "黑洞5",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 4,
         "DriveBays3": 2,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "MITX板型"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             490,
@@ -880,13 +901,13 @@
         "Brand": "sama",
         "Name": "小黑洞",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX板型、ITX板型"
+            "Micro-ATX"
         ],
         "Dimensions": [
             456,
@@ -909,16 +930,16 @@
         "Brand": "sama",
         "Name": "黑洞5（魔镜版）",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 4,
         "DriveBays3": 3,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             490,
@@ -943,14 +964,14 @@
         "Brand": "sama",
         "Name": "趣造",
         "ReleaseDate": "",
-        "Color": "",
+        "Color": "黑色",
         "CaseSize": "",
         "PowerSupply": false,
         "DriveBays2": 7,
         "DriveBays3": 5,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             391,
@@ -973,14 +994,14 @@
         "Brand": "sama",
         "Name": "趣造air",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             396,
@@ -1003,16 +1024,16 @@
         "Brand": "sama",
         "Name": "颜之神Mesh雪装版",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "白色，黑\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 3,
         "DriveBays3": 2,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             475,
@@ -1035,14 +1056,14 @@
         "Brand": "sama",
         "Name": "颜之神mini（AIR版）",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "白色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             423,
@@ -1065,14 +1086,14 @@
         "Brand": "sama",
         "Name": "颜之神mini（电竞版）",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "白色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             423,
@@ -1095,14 +1116,14 @@
         "Brand": "sama",
         "Name": "颜之神mini（全透版）",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "白色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             423,
@@ -1125,14 +1146,14 @@
         "Brand": "aigo",
         "Name": "星璨 小岚",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 1,
         "DriveBays3": 3,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": null,
         "MaxVGAlength": 370,
@@ -1151,14 +1172,14 @@
         "Brand": "aigo",
         "Name": "星璨 岚",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑\ufffd\u001a\ufffd\ufffd\u001a",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             455,
@@ -1171,7 +1192,7 @@
         "SlotsNum": 5,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "359",
+        "PriceCN": "329",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1948/1947816/param.shtml",
@@ -1181,14 +1202,14 @@
         "Brand": "aigo",
         "Name": "V13",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             385,
@@ -1211,14 +1232,14 @@
         "Brand": "aigo",
         "Name": "星璨 岫",
         "ReleaseDate": "",
-        "Color": "",
+        "Color": "黑色",
         "CaseSize": "",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 4,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": null,
         "MaxVGAlength": 0,
@@ -1237,17 +1258,19 @@
         "Brand": "aigo",
         "Name": "W60",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 1,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX",
+            "Micro-ATX",
             "ITX"
         ],
         "Dimensions": [
-            440
+            440,
+            210,
+            445
         ],
         "MaxVGAlength": 400,
         "RadiatorSupport": 360,
@@ -1265,14 +1288,14 @@
         "Brand": "aigo",
         "Name": "V60",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "白色，黑\ufffd\ufffd\u001a",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             333,
@@ -1295,15 +1318,15 @@
         "Brand": "aigo",
         "Name": "星璨 大岚",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             467,
@@ -1316,7 +1339,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "429",
+        "PriceCN": "399",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/2105/2104949/param.shtml",
@@ -1326,15 +1349,15 @@
         "Brand": "aigo",
         "Name": "星璨 大岚屏显版",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             467,
@@ -1347,7 +1370,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "499",
+        "PriceCN": "539",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/2105/2104950/param.shtml",
@@ -1357,14 +1380,14 @@
         "Brand": "aigo",
         "Name": "V12水冷版",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             380,
@@ -1377,7 +1400,7 @@
         "SlotsNum": 4,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "119",
+        "PriceCN": "139",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1948/1947818/param.shtml",
@@ -1387,15 +1410,15 @@
         "Brand": "aigo",
         "Name": "YOGO T18",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "白色，黑\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             368,
@@ -1418,7 +1441,7 @@
         "Brand": "aigo",
         "Name": "YOGO T21",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 1,
@@ -1441,16 +1464,16 @@
         "Brand": "aigo",
         "Name": "月光宝盒（镜）",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 3,
         "DriveBays3": 3,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             473,
@@ -1473,14 +1496,14 @@
         "Brand": "aigo",
         "Name": "JV13",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             385,
@@ -1503,16 +1526,16 @@
         "Brand": "aigo",
         "Name": "F40",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             440,
@@ -1535,14 +1558,14 @@
         "Brand": "aigo",
         "Name": "星璨 岚 屏显版",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 3,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             455,
@@ -1565,18 +1588,20 @@
         "Brand": "aigo",
         "Name": "F60",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
             "ATX",
-            "M-ATX",
+            "Micro-ATX",
             "ITX"
         ],
         "Dimensions": [
-            440
+            440,
+            210,
+            485
         ],
         "MaxVGAlength": 400,
         "RadiatorSupport": 360,
@@ -1594,14 +1619,14 @@
         "Brand": "aigo",
         "Name": "YOGO M10",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             430,
@@ -1614,7 +1639,7 @@
         "SlotsNum": 5,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "149",
+        "PriceCN": "159",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/2114/2113018/param.shtml",
@@ -1624,16 +1649,18 @@
         "Brand": "aigo",
         "Name": "YOGO K200",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX,E-ATX"
+            "EATX"
         ],
         "Dimensions": [
-            468
+            468,
+            233,
+            493
         ],
         "MaxVGAlength": 400,
         "RadiatorSupport": 360,
@@ -1641,7 +1668,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "399",
+        "PriceCN": "383",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1981/1980574/param.shtml",
@@ -1651,15 +1678,15 @@
         "Brand": "aigo",
         "Name": "T16",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             418,
@@ -1682,15 +1709,15 @@
         "Brand": "aigo",
         "Name": "御风F80",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             460,
@@ -1713,16 +1740,16 @@
         "Brand": "aigo",
         "Name": "黑曼巴F2",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 2,
         "Compatibility": [
-            "E-ATX（加大型）",
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             420,
@@ -1735,7 +1762,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "169",
+        "PriceCN": "179",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/2114/2113019/param.shtml",
@@ -1745,14 +1772,14 @@
         "Brand": "aigo",
         "Name": "月光宝盒 镜mini",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "白色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             438,
@@ -1775,15 +1802,15 @@
         "Brand": "aigo",
         "Name": "A15非侧透",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 1,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             370,
@@ -1806,14 +1833,14 @@
         "Brand": "aigo",
         "Name": "YOGO M100降噪版",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "白色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 3,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             396,
@@ -1836,14 +1863,14 @@
         "Brand": "aigo",
         "Name": "YOGO Q1",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 1,
         "DriveBays3": 1,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             430,
@@ -1856,7 +1883,7 @@
         "SlotsNum": 5,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "219",
+        "PriceCN": "229",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/1948/1947822/param.shtml",
@@ -1866,14 +1893,14 @@
         "Brand": "aigo",
         "Name": "御风W80",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 2,
         "Compatibility": [
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             460,
@@ -1886,7 +1913,7 @@
         "SlotsNum": 5,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "149",
+        "PriceCN": "159",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/2114/2113017/param.shtml",
@@ -1896,15 +1923,15 @@
         "Brand": "aigo",
         "Name": "T19",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             410,
@@ -1927,14 +1954,14 @@
         "Brand": "aigo",
         "Name": "镜 mini 定制款",
         "ReleaseDate": "",
-        "Color": "MATX",
+        "Color": "白色",
         "CaseSize": "MATX",
         "PowerSupply": false,
         "DriveBays2": 2,
         "DriveBays3": 2,
         "Compatibility": [
-            "MATX板型",
-            "ITX板型"
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             438,
@@ -1957,16 +1984,16 @@
         "Brand": "lianli",
         "Name": "包豪斯O11D EVO",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色，白\ufffd\ufffd\u001a",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 0,
         "Compatibility": [
-            "EATX板型",
-            "ATX板型",
-            "MATX板型",
-            "ITX板型"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "ITX"
         ],
         "Dimensions": [
             465,
@@ -1989,16 +2016,16 @@
         "Brand": "lianli",
         "Name": "包豪斯 EVO 全视版",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 0,
         "Compatibility": [
-            "E-ATX（加强型）",
-            "ATX（标准型）",
-            "M-ATX（紧凑型）",
-            "MINI-ITX（迷你型\ufffd\ufffd\u001a"
+            "EATX",
+            "ATX",
+            "Micro-ATX",
+            "Mini-ITX"
         ],
         "Dimensions": [
             465,
@@ -2021,16 +2048,18 @@
         "Brand": "lianli",
         "Name": "包豪斯O11D EVO RGB",
         "ReleaseDate": "",
-        "Color": "",
+        "Color": "黑色/白色",
         "CaseSize": "",
         "PowerSupply": false,
         "DriveBays2": 0,
         "DriveBays3": 0,
         "Compatibility": [
-            "E-ATX(朢\ufffd\ufffd\ufffd\u001a280mm)/ATX/M-ATX/MINI-ITX"
+            "Micro-ATX"
         ],
         "Dimensions": [
-            290
+            290,
+            478,
+            471
         ],
         "MaxVGAlength": 456,
         "RadiatorSupport": 420,
@@ -2048,18 +2077,20 @@
         "Brand": "lianli",
         "Name": "L216R",
         "ReleaseDate": "",
-        "Color": "ATX",
+        "Color": "黑色",
         "CaseSize": "ATX",
         "PowerSupply": false,
         "DriveBays2": 6,
         "DriveBays3": 2,
         "Compatibility": [
-            "E-ATX (Under 280mm)",
-            "ATX/Micro-ATX",
+            "EATX",
+            "Micro-ATX",
             "Mini-ITX"
         ],
         "Dimensions": [
-            480
+            480,
+            235,
+            491
         ],
         "MaxVGAlength": 392,
         "RadiatorSupport": 0,
@@ -2067,7 +2098,7 @@
         "SlotsNum": 7,
         "PriceUS": "",
         "PriceHK": "",
-        "PriceCN": "599",
+        "PriceCN": "579",
         "LinkUS": "",
         "LinkHK": "",
         "LinkCN": "https://detail.zol.com.cn/2005/2004484/param.shtml",

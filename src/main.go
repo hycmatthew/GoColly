@@ -15,33 +15,30 @@ import (
 
 func main() {
 	// pcData.GetRamCNPriceFromChromedp("https://item.taobao.com/item.htm?abbucket=17&id=743688559462&skuId=5323436787436")
+	const (
+		cpu         = "cpu"
+		gpu         = "gpu"
+		motherboard = "motherboard"
+		ram         = "ram"
+		ssd         = "ssd"
+		power       = "power"
+		cooler      = "cooler"
+		pcCase      = "case"
+	)
 
-	databaseLogic.CreateDBLogic()
-	/*
-		const (
-			cpu         = "cpu"
-			gpu         = "gpu"
-			motherboard = "motherboard"
-			ram         = "ram"
-			ssd         = "ssd"
-			power       = "power"
-			cooler      = "cooler"
-			pcCase      = "case"
-		)
+	getDataName := pcCase
+	isUpdateSpec := false
 
-		getDataName := motherboard
-		isUpdateSpec := false
-
-		if isUpdateSpec {
-			if getDataName == gpu {
-				updateGPUSpecLogic()
-			} else {
-				updateSpecLogic(getDataName)
-			}
+	if isUpdateSpec {
+		if getDataName == gpu {
+			updateGPUSpecLogic()
 		} else {
-			updatePriceLogic(getDataName)
+			updateSpecLogic(getDataName)
 		}
-	*/
+	} else {
+		updatePriceLogic(getDataName)
+	}
+
 }
 
 func readCsvFile(filePath string) [][]string {
@@ -90,6 +87,10 @@ func saveSpecData(result any, name string) {
 		fmt.Println("Error:", err)
 		return
 	}
+}
+
+func saveRecordToDatabase(part string, record databaseLogic.DBRecord) {
+	databaseLogic.InsertRecord(part, record)
 }
 
 /*
@@ -171,6 +172,18 @@ func updateSpecLogic(name string) {
 				mbRecord := pcData.GetMotherboardSpec(recordList[count])
 				if mbRecord.Name != "" {
 					specList = append(specList, mbRecord)
+					/*
+						recordData := databaseLogic.DBRecord{
+							Brand:    mbRecord.Brand,
+							Name:     mbRecord.Name,
+							PriceCN:  mbRecord.PriceCN,
+							LinkSpec: recordList[count].LinkSpec,
+							LinkCN:   mbRecord.LinkCN,
+							LinkUS:   mbRecord.LinkUS,
+							LinkHK:   mbRecord.LinkHK,
+						}
+						saveRecordToDatabase("motherboard", recordData)
+					*/
 					count++
 				}
 				if count == len(recordList) {
@@ -276,6 +289,8 @@ func updateSpecLogic(name string) {
 func updatePriceLogic(name string) {
 	timeSet := 5000
 	extraTry := 50
+	maxRetryTime := 3
+	retryTime := 0
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
@@ -283,20 +298,30 @@ func updatePriceLogic(name string) {
 	byteValue, _ := io.ReadAll(specFile)
 	count := 0
 
+	dataFile, _ := os.Open("tmp/" + name + "Data.json")
+	dataByteValue, _ := io.ReadAll(dataFile)
+
 	switch name {
 	case "cpu":
 		var specList []pcData.CPUSpec
 		var cpuList []pcData.CPUType
 		json.Unmarshal([]byte(byteValue), &specList)
 
+		var oldCpuList []pcData.CPUType
+		json.Unmarshal([]byte(dataByteValue), &oldCpuList)
+
 		go func() {
 			for {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetCPUData(spec)
-				if valid {
-					cpuList = append(cpuList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.CompareCPUDataLogic(record, oldCpuList)
+					cpuList = append(cpuList, result)
+					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(specList) {
@@ -312,8 +337,10 @@ func updatePriceLogic(name string) {
 	case "gpu":
 		var specList []pcData.GPUSpec
 		var gpuList []pcData.GPUType
-
 		json.Unmarshal([]byte(byteValue), &specList)
+
+		var oldGpuList []pcData.GPUType
+		json.Unmarshal([]byte(dataByteValue), &oldGpuList)
 
 		dataList := readCsvFile("res/" + name + "data.csv")
 		var recordList []pcData.GPURecordData
@@ -330,9 +357,13 @@ func updatePriceLogic(name string) {
 				<-ticker.C
 				data := recordList[count]
 				record, valid := pcData.GetGPUData(specList, data)
-				if valid {
-					gpuList = append(gpuList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.CompareGPUDataLogic(record, oldGpuList)
+					gpuList = append(gpuList, result)
+					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(recordList) {
@@ -348,17 +379,23 @@ func updatePriceLogic(name string) {
 	case "motherboard":
 		var specList []pcData.MotherboardSpec
 		var mbList []pcData.MotherboardType
-
 		json.Unmarshal([]byte(byteValue), &specList)
+
+		var oldMotherboardList []pcData.MotherboardType
+		json.Unmarshal([]byte(dataByteValue), &oldMotherboardList)
 
 		go func() {
 			for {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetMotherboardData(spec)
-				if valid {
-					mbList = append(mbList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.CompareMotherboardDataLogic(record, oldMotherboardList)
+					mbList = append(mbList, result)
+					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(specList) {

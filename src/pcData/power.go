@@ -423,3 +423,27 @@ func getPowerSpecDataFromPcOnline(link string, collector *colly.Collector) Power
 	return specData
 }
 */
+
+func ComparePowerDataLogic(cur PowerType, list []PowerType) PowerType {
+	newVal := cur
+	curTest := cur.Brand + cur.Name
+	oldVal := cur
+	for _, item := range list {
+		testStr := item.Brand + item.Name
+		if curTest == testStr {
+			oldVal = item
+			break
+		}
+	}
+
+	if newVal.PriceCN == "" {
+		newVal.PriceCN = oldVal.PriceCN
+	}
+	if newVal.PriceUS == "" {
+		newVal.PriceUS = oldVal.PriceUS
+	}
+	if newVal.PriceHK == "" {
+		newVal.PriceHK = oldVal.PriceHK
+	}
+	return newVal
+}

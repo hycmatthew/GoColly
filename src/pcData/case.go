@@ -89,10 +89,10 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 	if strings.Contains(record.LinkCN, "zol") {
 		caseData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
 	} else {
-		if record.LinkSpec != "" {
-			caseData = getCaseSpecData(record.LinkSpec, collector)
-			caseData.LinkCN = record.LinkCN
-		}
+		caseData.LinkCN = record.LinkCN
+	}
+	if record.LinkSpec != "" {
+		caseData = getCaseSpecData(record.LinkSpec, collector)
 	}
 
 	caseData.Brand = record.Brand
@@ -145,17 +145,19 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 		if tempSpec.PriceCN != "" {
 			newSpec.PriceCN = tempSpec.PriceCN
 		}
-		newSpec.CaseSize = tempSpec.CaseSize
-		newSpec.Color = tempSpec.CaseSize
-		newSpec.Compatibility = tempSpec.Compatibility
-		newSpec.Dimensions = tempSpec.Dimensions
-		newSpec.DriveBays2 = tempSpec.DriveBays2
-		newSpec.DriveBays3 = tempSpec.DriveBays3
-		newSpec.MaxCpuCoolorHeight = tempSpec.MaxCpuCoolorHeight
-		newSpec.MaxVGAlength = tempSpec.MaxVGAlength
-		newSpec.PowerSupply = tempSpec.PowerSupply
-		newSpec.RadiatorSupport = tempSpec.RadiatorSupport
-		newSpec.SlotsNum = tempSpec.SlotsNum
+		if newSpec.CaseSize == "" {
+			newSpec.CaseSize = tempSpec.CaseSize
+			newSpec.Color = tempSpec.Color
+			newSpec.Compatibility = tempSpec.Compatibility
+			newSpec.Dimensions = tempSpec.Dimensions
+			newSpec.DriveBays2 = tempSpec.DriveBays2
+			newSpec.DriveBays3 = tempSpec.DriveBays3
+			newSpec.MaxCpuCoolorHeight = tempSpec.MaxCpuCoolorHeight
+			newSpec.MaxVGAlength = tempSpec.MaxVGAlength
+			newSpec.PowerSupply = tempSpec.PowerSupply
+			newSpec.RadiatorSupport = tempSpec.RadiatorSupport
+			newSpec.SlotsNum = tempSpec.SlotsNum
+		}
 
 		if newSpec.PriceCN == "" {
 			isValid = false
@@ -258,12 +260,19 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 				specData.DriveBays3 = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Motherboard Compatibility":
 				sizeList := strings.Split(item.ChildTexts("td")[1], ",")
+				for i, item := range sizeList {
+					sizeList[i] = strings.TrimSpace(item)
+				}
 				specData.Compatibility = sizeList
 			case "Dimensions":
 				tempDimensions := strings.Split(item.ChildTexts("td")[1], "x")
 				var dimensionsList []int
+				counter := 0
 				for _, item := range tempDimensions {
-					dimensionsList = append(dimensionsList, extractNumberFromString(item))
+					if counter < 3 {
+						dimensionsList = append(dimensionsList, extractNumberFromString(item))
+						counter++
+					}
 				}
 				specData.Dimensions = dimensionsList
 			case "Max VGA length allowance":
@@ -339,7 +348,12 @@ func getCaseSpecDataFromZol(link string, collector *colly.Collector) CaseSpec {
 			switch convertedHeader {
 			case "适用主板":
 				compatibilityStr := strings.Split(convertedData, "，")
-				specData.Compatibility = compatibilityStr
+				var compatibilityArr []string
+				for _, item := range compatibilityStr {
+					tempCompatibility := GetFormFactorLogic(item)
+					compatibilityArr = append(compatibilityArr, tempCompatibility)
+				}
+				specData.Compatibility = compatibilityArr
 			case "扩展插槽":
 				specData.SlotsNum = extractNumberFromString(convertedData)
 			case "颜色":
@@ -391,10 +405,14 @@ func getCaseSpecDataFromZol(link string, collector *colly.Collector) CaseSpec {
 			}
 
 			if strings.Contains(convertedHeader, "产品尺") {
-				tempDimensions := strings.Split(convertedData, "×")
+				tempDimensions := SplitAny(convertedData, "x×*")
 				var dimensionsList []int
+				counter := 0
 				for _, item := range tempDimensions {
-					dimensionsList = append(dimensionsList, extractNumberFromString(item))
+					if counter < 3 {
+						dimensionsList = append(dimensionsList, extractNumberFromString(item))
+						counter++
+					}
 				}
 
 				specData.Dimensions = dimensionsList
@@ -404,4 +422,28 @@ func getCaseSpecDataFromZol(link string, collector *colly.Collector) CaseSpec {
 	})
 	collector.Visit(link)
 	return specData
+}
+
+func CompareCaseDataLogic(cur CaseType, list []CaseType) CaseType {
+	newVal := cur
+	curTest := cur.Brand + cur.Name
+	oldVal := cur
+	for _, item := range list {
+		testStr := item.Brand + item.Name
+		if curTest == testStr {
+			oldVal = item
+			break
+		}
+	}
+
+	if newVal.PriceCN == "" {
+		newVal.PriceCN = oldVal.PriceCN
+	}
+	if newVal.PriceUS == "" {
+		newVal.PriceUS = oldVal.PriceUS
+	}
+	if newVal.PriceHK == "" {
+		newVal.PriceHK = oldVal.PriceHK
+	}
+	return newVal
 }

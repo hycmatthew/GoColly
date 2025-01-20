@@ -19,6 +19,8 @@ type SSDSpec struct {
 	Capacity    string
 	MaxRead     int
 	MaxWrite    int
+	Read4K      int
+	Write4K     int
 	Interface   string
 	FlashType   string
 	FormFactor  string
@@ -39,6 +41,8 @@ type SSDType struct {
 	Capacity    string
 	MaxRead     int
 	MaxWrite    int
+	Read4K      int
+	Write4K     int
 	Interface   string
 	FlashType   string
 	FormFactor  string
@@ -242,6 +246,10 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 				specData.MaxRead = extractNumberFromString(item.ChildTexts("td")[1])
 			case "Max Sequential Write":
 				specData.MaxWrite = extractNumberFromString(item.ChildTexts("td")[1])
+			case "4KB Random Read":
+				specData.Read4K = extractNumberFromString(item.ChildTexts("td")[1])
+			case "4KB Random Write":
+				specData.Write4K = extractNumberFromString(item.ChildTexts("td")[1])
 			}
 		})
 	})
@@ -282,6 +290,12 @@ func getSSDSpecDataFromZol(link string, collector *colly.Collector) SSDSpec {
 				specData.MaxRead = extractNumberFromString(convertedData)
 			case "写入速度":
 				specData.MaxWrite = extractNumberFromString(convertedData)
+			case "4K随机":
+				if specData.Read4K == 0 {
+					specData.Read4K = extractNumberFromString(convertedData)
+				} else {
+					specData.Write4K = extractNumberFromString(convertedData)
+				}
 			case "通道":
 				if strings.Contains(convertedData, "x4") {
 					specData.Interface = "PCIe " + convertedData
