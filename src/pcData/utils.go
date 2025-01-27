@@ -108,6 +108,10 @@ func getTheLargestValueInArray(num []string) int {
 	return res
 }
 
+func strContains(s string, sub string) bool {
+	return strings.Contains(strings.ToUpper(s), strings.ToUpper(sub))
+}
+
 func SplitAny(s string, seps string) []string {
 	splitter := func(r rune) bool {
 		return strings.ContainsRune(seps, r)

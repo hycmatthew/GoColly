@@ -192,7 +192,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		Channel:      newSpec.Channel,
 		LED:          newSpec.LED,
 		HeatSpreader: newSpec.HeatSpreader,
-		Profile:      newSpec.Profile,
+		Profile:      RamProfileLogic(newSpec),
 		PriceUS:      newSpec.PriceUS,
 		PriceHK:      spec.PriceHK,
 		PriceCN:      newSpec.PriceCN,
@@ -392,7 +392,7 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 					specData.Timing = convertedData
 				}
 			case "XMP":
-				specData.Profile = "XMP 3.0"
+				specData.Profile = "XMP"
 			}
 
 			if strings.Contains(convertedHeader, "内存主") {
@@ -431,4 +431,48 @@ func CompareRAMDataLogic(cur RamType, list []RamType) RamType {
 		newVal.PriceHK = oldVal.PriceHK
 	}
 	return newVal
+}
+
+func RamProfileLogic(ram RamSpec) string {
+	// profileList := []string{"Intel XMP 2.0", "Intel XMP 3.0", "AMD EXPO"}
+	amdList := []string{"FURY Beast", "Lancer", "Z5 Neo", "银爵", "刃"}
+	intelList := []string{"银爵", "刃"}
+	isXmp := false
+	isExpo := false
+	res := ""
+
+	if strContains(ram.Profile, "XMP") {
+		isXmp = true
+	}
+	if strContains(ram.Profile, "EXPO") {
+		isExpo = true
+	}
+
+	for _, item := range intelList {
+		if strContains(ram.Name, item) {
+			isXmp = true
+		}
+	}
+
+	for _, item := range amdList {
+		if strContains(ram.Name, item) {
+			isExpo = true
+		}
+	}
+
+	if isXmp {
+		if ram.Type == "DDR5" {
+			res = "Intel XMP 3.0"
+		} else {
+			res = "Intel XMP 2.0"
+		}
+	}
+	if isExpo {
+		if res == "" {
+			res = "AMD EXPO"
+		} else {
+			res += ", AMD EXPO"
+		}
+	}
+	return res
 }
