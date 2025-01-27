@@ -132,7 +132,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 	usCollector := collector.Clone()
 	isValid := true
 
-	newSpec := RamSpec{}
+	newSpec := spec
 
 	if strings.Contains(spec.LinkCN, "zol") {
 		tempSpec := getRamSpecDataFromZol(spec.LinkCN, cnCollector)
@@ -143,6 +143,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 			newSpec.PriceCN = tempSpec.PriceCN
 		}
 
+		newSpec.Series = handleRamSeries(newSpec)
 		newSpec.Type = tempSpec.Type
 		newSpec.Voltage = tempSpec.Voltage
 		newSpec.Capacity = tempSpec.Capacity
@@ -433,6 +434,18 @@ func CompareRAMDataLogic(cur RamType, list []RamType) RamType {
 	return newVal
 }
 
+func handleRamSeries(spec RamSpec) string {
+	if spec.Series == "" {
+		if strings.EqualFold(spec.Brand, "kingbank") {
+			nameList := strings.Split(spec.Name, "")
+			if len(nameList) > 0 {
+				return nameList[0]
+			}
+		}
+	}
+	return spec.Series
+}
+
 func RamProfileLogic(ram RamSpec) string {
 	// profileList := []string{"Intel XMP 2.0", "Intel XMP 3.0", "AMD EXPO"}
 	amdList := []string{"FURY Beast", "Lancer", "Z5 Neo", "银爵", "刃"}
@@ -441,6 +454,8 @@ func RamProfileLogic(ram RamSpec) string {
 	isExpo := false
 	res := ""
 
+	fmt.Println(ram.Series)
+	fmt.Println(ram.Profile)
 	if strContains(ram.Profile, "XMP") {
 		isXmp = true
 	}
@@ -448,15 +463,19 @@ func RamProfileLogic(ram RamSpec) string {
 		isExpo = true
 	}
 
-	for _, item := range intelList {
-		if strContains(ram.Name, item) {
-			isXmp = true
+	if !isXmp {
+		for _, item := range intelList {
+			if strContains(ram.Series, item) {
+				isXmp = true
+			}
 		}
 	}
 
-	for _, item := range amdList {
-		if strContains(ram.Name, item) {
-			isExpo = true
+	if !isExpo {
+		for _, item := range amdList {
+			if strContains(ram.Series, item) {
+				isExpo = true
+			}
 		}
 	}
 
