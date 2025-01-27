@@ -437,8 +437,9 @@ func CompareRAMDataLogic(cur RamType, list []RamType) RamType {
 func handleRamSeries(spec RamSpec) string {
 	if spec.Series == "" {
 		if strings.EqualFold(spec.Brand, "kingbank") {
-			nameList := strings.Split(spec.Name, "")
+			nameList := strings.Split(spec.Name, " ")
 			if len(nameList) > 0 {
+				fmt.Println(nameList[0])
 				return nameList[0]
 			}
 		}
