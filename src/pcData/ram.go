@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 	"net/url"
-	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -17,7 +16,7 @@ type RamSpec struct {
 	Name         string
 	Series       string
 	Model        string
-	Capacity     string
+	Capacity     int
 	Type         string
 	Speed        int
 	Timing       string
@@ -41,7 +40,7 @@ type RamType struct {
 	Name         string
 	Series       string
 	Model        string
-	Capacity     string
+	Capacity     int
 	Type         string
 	Speed        int
 	Timing       string
@@ -253,7 +252,8 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 			case "Timing":
 				specData.Timing = item.ChildTexts("td")[1]
 			case "Size":
-				specData.Capacity = item.ChildTexts("td")[1]
+				sizeList := strings.Split(item.ChildTexts("td")[1], " ")
+				specData.Capacity = extractNumberFromString(sizeList[0])
 			case "Voltage":
 				specData.Voltage = item.ChildTexts("td")[1]
 			case "LED Color":
@@ -288,10 +288,12 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 			case "Model":
 				specData.Model = item.ChildText("td")
 			case "Capacity":
-				specData.Capacity = item.ChildText("td")
+				specData.Capacity = extractNumberFromString(item.ChildText("td"))
 				ramNum := 1
-				if strings.Contains(specData.Capacity, "(") {
-					testStr := strings.Split(specData.Capacity, "(")[1]
+				if strings.Contains(item.ChildText("td"), "(") {
+					sizeList := strings.Split(item.ChildText("td"), "(")
+					specData.Capacity = extractNumberFromString(sizeList[0])
+					testStr := sizeList[1]
 
 					if strings.Contains(testStr, "x") {
 						secList := strings.Split(testStr, "x")
@@ -385,8 +387,7 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 					totalSize = extractNumberFromString(convertedData)
 					capacity = totalSize
 				}
-				specData.Capacity = strings.Join([]string{strconv.Itoa(totalSize), "GB (", strconv.Itoa(ramNum), " x ", strconv.Itoa(capacity), "GB)"}, "")
-				fmt.Println("specData.Capacity : ", specData.Capacity)
+				specData.Capacity = totalSize
 			case "CL延迟":
 				specData.Latency = extractNumberFromString(convertedData)
 				if strings.Contains(convertedData, "-") {
