@@ -1,6 +1,7 @@
 package pcData
 
 import (
+	"fmt"
 	"net/http"
 	"strings"
 
@@ -19,42 +20,44 @@ type LinkRecord struct {
 }
 
 type CPUSpec struct {
-	Code            string
-	Name            string
-	Brand           string
-	Socket          string
-	Cores           int
-	Threads         int
-	GPU             string
-	SingleCoreScore int
-	MultiCoreScore  int
-	Power           int
-	PriceUS         string
-	PriceHK         string
-	PriceCN         string
-	LinkUS          string
-	LinkHK          string
-	LinkCN          string
-	Img             string
+	Code                    string
+	Name                    string
+	Brand                   string
+	Socket                  string
+	Cores                   int
+	Threads                 int
+	GPU                     string
+	SingleCoreScore         int
+	MultiCoreScore          int
+	IntegratedGraphicsScore int
+	Power                   int
+	PriceUS                 string
+	PriceHK                 string
+	PriceCN                 string
+	LinkUS                  string
+	LinkHK                  string
+	LinkCN                  string
+	Img                     string
 }
 
 type CPUType struct {
-	Name            string
-	Brand           string
-	Socket          string
-	Cores           int
-	Threads         int
-	GPU             string
-	SingleCoreScore int
-	MultiCoreScore  int
-	Power           int
-	PriceUS         string
-	PriceHK         string
-	PriceCN         string
-	LinkUS          string
-	LinkHK          string
-	LinkCN          string
-	Img             string
+	Name                    string
+	Brand                   string
+	Socket                  string
+	Cores                   int
+	Threads                 int
+	GPU                     string
+	SingleCoreScore         int
+	MultiCoreScore          int
+	IntegratedGraphicsScore int
+	Power                   int
+	PriceUS                 string
+	PriceHK                 string
+	PriceCN                 string
+	LinkUS                  string
+	LinkHK                  string
+	LinkCN                  string
+	Img                     string
 }
 
 func GetCPUSpec(record LinkRecord) CPUSpec {
@@ -135,22 +138,23 @@ func GetCPUData(spec CPUSpec) (CPUType, bool) {
 	}
 
 	return CPUType{
-		Name:            spec.Name,
-		Brand:           spec.Brand,
-		Cores:           spec.Cores,
-		Threads:         spec.Threads,
-		Socket:          spec.Socket,
-		GPU:             spec.GPU,
-		SingleCoreScore: spec.SingleCoreScore,
-		MultiCoreScore:  spec.MultiCoreScore,
-		Power:           spec.Power,
-		LinkUS:          spec.LinkUS,
-		LinkHK:          "",
-		LinkCN:          spec.LinkCN,
-		PriceCN:         priceCN,
-		PriceUS:         priceUS,
-		PriceHK:         "",
-		Img:             tempImg,
+		Name:                    spec.Name,
+		Brand:                   spec.Brand,
+		Cores:                   spec.Cores,
+		Threads:                 spec.Threads,
+		Socket:                  spec.Socket,
+		GPU:                     spec.GPU,
+		SingleCoreScore:         spec.SingleCoreScore,
+		MultiCoreScore:          spec.MultiCoreScore,
+		IntegratedGraphicsScore: integratedGraphicsScoreHandle(spec.Name, spec.GPU),
+		Power:                   spec.Power,
+		LinkUS:                  spec.LinkUS,
+		LinkHK:                  "",
+		LinkCN:                  spec.LinkCN,
+		PriceCN:                 priceCN,
+		PriceUS:                 priceUS,
+		PriceHK:                 "",
+		Img:                     tempImg,
 	}, isValid
 }
 
@@ -257,4 +261,29 @@ func CompareCPUDataLogic(cur CPUType, list []CPUType) CPUType {
 		newVal.PriceHK = oldVal.PriceHK
 	}
 	return newVal
+}
+
+func integratedGraphicsScoreHandle(cpu string, gpu string) int {
+	integratedGraphicsMapping := map[string]int{
+		"UHD Graphics 730":             599,
+		"UHD Graphics 770":             739,
+		"Radeon RX Vega 7":             1310,
+		"Radeon RX Vega 8":             1377,
+		"Radeon Graphics (Ryzen 7000)": 850,
+		"Radeon 780M":                  3292,
+		"No":                           0,
+	}
+	if strContains(cpu, "intel") && strContains(cpu, "13") {
+		integratedGraphicsMapping["UHD Graphics 770"] = 807
+	}
+	if strContains(cpu, "intel") && strContains(cpu, "14") {
+		integratedGraphicsMapping["UHD Graphics 770"] = 855
+	}
+	_, exists := integratedGraphicsMapping[gpu]
+	if exists {
+		return integratedGraphicsMapping[gpu]
+	} else {
+		fmt.Println("GPU not found: ", gpu)
+		return 0
+	}
 }

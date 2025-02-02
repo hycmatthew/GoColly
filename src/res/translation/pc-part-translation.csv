@@ -86,11 +86,11 @@ suggestion-motherboard-overclock,choose a motherboard that support overclocking,
 suggestion-motherboard-type,can choose a more suitable motherboard,可以选择更合适的主板,可以選擇更合適的主機板
 type,Type,类型,類型
 warning-air-cooler-case-incompatible,The cooler is too high,The cooler is too high,The cooler is too high
-warning-gpu-case-incompatible,The length of the graphics card is too long,显卡长度太长,顯示卡長度太長
-warning-motherboard-case-incompatible,The motherboard and the computer case are incompatible,主板与电脑机箱不兼容,主機板與電腦機箱不相容
-warning-motherboard-cpu-incompatible,Motherboard and CPU are incompatible,主板和 CPU 不兼容,主機板和 CPU 不相容
+warning-gpu-case-incompatible,"The length of the graphics card is too long: length of graphics card, <b>{{ gpu }}</b>, exceeds the maximum VGA length of <b>{{ case }}</b>.",显卡长度太长：显卡的长度(<b>{{ gpu }}</b>)，超出了機箱最大支持的长度(<b>{{ case }}</b>)。,顯示卡長度太長：顯示卡的長度(<b>{{ gpu }}</b>)，超出了機箱最大支援的長度(<b>{{ case }}</b>)。
+warning-motherboard-case-incompatible,The motherboard form factor (<b>{{ mb }}</b>) is not compatible with the computer case.,主板与电脑机箱不兼容：主板規格(<b>{{ mb }}</b>),主機板與電腦機殼不兼容：主機板規格(<b>{{ mb }}</b>)
+warning-motherboard-cpu-incompatible,CPU is not compatible with the motherboard,CPU和主板不兼容,CPU和主機板不兼容
 warning-power-not-enough,Insufficient power supply wattage,电源功率不足,電源功率不足
-warning-ram-motherboard-incompatible,Motherboard and RAM are incompatible,主板和 RAM 不兼容,主機板和 RAM 不相容
+suggestion-ram-motherboard-incompatible,The motherboard does not accommodate the memory clock speeds(<b>{{ ram }}</b>).,主板不兼容记忆体时脉速度(<b>{{ ram }}</b>)。,主機板不兼容記憶體時脈速度(<b>{{ ram }}</b>)。
 watt,W,瓦,瓦
 weight,Weight,重量,重量
 western-digital,Western Digital,西部数据,西部數據
