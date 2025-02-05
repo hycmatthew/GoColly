@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := cpu
+	getDataName := cooler
 	isUpdateSpec := false
 
 	if isUpdateSpec {

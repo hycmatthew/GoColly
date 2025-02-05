@@ -79,14 +79,18 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 		Transport: fakeChrome.Transport,
 	})
 
-	coolerData := CoolerSpec{}
+	coolerData := CoolerSpec{
+		LinkCN: record.LinkCN,
+	}
 
 	if strings.Contains(record.LinkCN, "zol") {
 		coolerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
-	} else {
-		if record.LinkSpec != "" {
+	}
+	if record.LinkSpec != "" {
+		if strings.Contains(record.LinkSpec, "zol") {
+			coolerData = getCoolerSpecDataFromZol(record.LinkSpec, collector)
+		} else {
 			coolerData = getCoolerSpecData(record.LinkSpec, collector)
-			coolerData.LinkCN = record.LinkCN
 		}
 	}
 
@@ -184,6 +188,7 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 		ReleaseDate:      newSpec.ReleaseDate,
 		Sockets:          newSpec.Sockets,
 		IsLiquidCooler:   newSpec.IsLiquidCooler,
+		AirCoolerHeight:  newSpec.AirCoolerHeight,
 		LiquidCoolerSize: newSpec.LiquidCoolerSize,
 		NoiseLevel:       newSpec.NoiseLevel,
 		FanSpeed:         newSpec.FanSpeed,
@@ -271,6 +276,7 @@ func getCoolerSpecDataFromZol(link string, collector *colly.Collector) CoolerSpe
 		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
 		if mallPrice != "" {
 			specData.PriceCN = mallPrice
+			specData.LinkCN = element.ChildAttr("side .goods-card .item-b2cprice span a", "href")
 		} else {
 			specData.PriceCN = normalPrice
 		}
@@ -300,7 +306,7 @@ func getCoolerSpecDataFromZol(link string, collector *colly.Collector) CoolerSpe
 			}
 
 			if strings.Contains(convertedHeader, "产品尺") {
-				tempStrList := SplitAny(convertedData, "/")
+				tempStrList := SplitAny(convertedData, "*/")
 				heightNum := 0
 				for _, testStr := range tempStrList {
 					testNum := extractNumberFromString(testStr)
@@ -309,6 +315,7 @@ func getCoolerSpecDataFromZol(link string, collector *colly.Collector) CoolerSpe
 					}
 				}
 				specData.AirCoolerHeight = heightNum
+				fmt.Println("AirCoolerHeight : ", specData.AirCoolerHeight)
 			}
 
 			if strings.Contains(convertedHeader, "水冷排类") {
