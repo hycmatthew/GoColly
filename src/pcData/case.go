@@ -106,6 +106,7 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 	if caseData.Name == "" {
 		caseData.Name = record.Name
 	}
+	caseData.Name = RemoveBrandsFromName(caseData.Brand, caseData.Name)
 	return caseData
 }
 

@@ -105,7 +105,7 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 	if coolerData.Name == "" {
 		coolerData.Name = record.Name
 	}
-
+	coolerData.Name = RemoveBrandsFromName(coolerData.Brand, coolerData.Name)
 	return coolerData
 }
 
@@ -183,6 +183,7 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 	}
 
 	return CoolerType{
+		Id:               SetProductId(spec.Brand, spec.Code),
 		Brand:            spec.Brand,
 		Name:             spec.Name,
 		ReleaseDate:      newSpec.ReleaseDate,

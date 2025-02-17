@@ -90,6 +90,7 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 	if record.LinkUS != "" {
 		cpuData.LinkUS = record.LinkUS
 	}
+	cpuData.Name = RemoveBrandsFromName(cpuData.Brand, cpuData.Name)
 	return cpuData
 }
 
@@ -139,6 +140,7 @@ func GetCPUData(spec CPUSpec) (CPUType, bool) {
 	}
 
 	return CPUType{
+		Id:                      SetProductId(spec.Brand, spec.Code),
 		Name:                    spec.Name,
 		Brand:                   spec.Brand,
 		Cores:                   spec.Cores,

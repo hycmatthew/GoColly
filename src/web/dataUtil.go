@@ -31,7 +31,7 @@ func ExtractTypeFromURL(url string) string {
 	return substr[:lastSlashIndex]
 }
 
-func RemoveBrandsFromName(name, brand string) string {
+func RemoveBrandsFromName(brand, name string) string {
 	pattern := "(?i)" + regexp.QuoteMeta(brand)
 	re := regexp.MustCompile(pattern)
 

@@ -101,6 +101,7 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 	if ssdData.Name == "" {
 		ssdData.Name = record.Name
 	}
+	ssdData.Name = RemoveBrandsFromName(ssdData.Brand, ssdData.Name)
 	return ssdData
 }
 
@@ -179,7 +180,7 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 	}
 
 	return SSDType{
-		Id:          spec.Code,
+		Id:          SetProductId(spec.Brand, spec.Code),
 		Brand:       spec.Brand,
 		Name:        spec.Name,
 		ReleaseDate: newSpec.ReleaseDate,

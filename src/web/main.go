@@ -152,7 +152,7 @@ func getWebpageLinkData(link string, collector *colly.Collector) []CSVData {
 			tempName := item.ChildText(".productItemLink header")
 			tempLink := item.ChildAttr(".productItemLink", "href")
 			price := item.ChildText(".price .amprice")
-			updatedName := strings.TrimSpace(RemoveBrandsFromName(tempName, brand))
+			updatedName := strings.TrimSpace(RemoveBrandsFromName(brand, tempName))
 
 			// name is not completed
 			if strings.Contains(updatedName, "...") {
@@ -160,7 +160,7 @@ func getWebpageLinkData(link string, collector *colly.Collector) []CSVData {
 				nameFromUrl := GetLastSegment(tempLink)
 				typeFromUrl := ExtractTypeFromURL(tempLink)
 				newName := replaceHyphensAndCapitalize(typeFromUrl, nameFromUrl)
-				updatedName = strings.TrimSpace(RemoveBrandsFromName(newName, brand))
+				updatedName = strings.TrimSpace(RemoveBrandsFromName(brand, newName))
 			}
 
 			if price != "" {

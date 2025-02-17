@@ -92,6 +92,10 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 	if record.LinkUS != "" {
 		powerData.LinkUS = record.LinkUS
 	}
+	if powerData.Name == "" {
+		powerData.Name = record.Name
+	}
+	powerData.Name = RemoveBrandsFromName(powerData.Brand, powerData.Name)
 	return powerData
 }
 
@@ -149,7 +153,7 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 	}
 
 	return PowerType{
-		Id:          spec.Code,
+		Id:          SetProductId(spec.Brand, spec.Code),
 		Brand:       spec.Brand,
 		Name:        spec.Name,
 		ReleaseDate: spec.ReleaseDate,

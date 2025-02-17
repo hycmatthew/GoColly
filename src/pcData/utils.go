@@ -185,6 +185,22 @@ func GetPriceLinkFromPangoly(element *colly.HTMLElement) (string, string) {
 	return resPrice, resLink
 }
 
-func SetProductId(name string, brand string) string {
-	return strings.ToLower(strings.ReplaceAll(name+"-"+brand, " ", "-"))
+func SetProductId(brand string, name string) string {
+	re := regexp.MustCompile("[^a-zA-Z0-9 -]+")
+	tempStr := re.ReplaceAllString(brand+"-"+name, "")
+	return strings.ToLower(strings.ReplaceAll(tempStr, " ", "-"))
+}
+
+func RemoveBrandsFromName(brand, name string) string {
+	pattern := "(?i)" + regexp.QuoteMeta(brand)
+	re := regexp.MustCompile(pattern)
+
+	count := 0
+	return re.ReplaceAllStringFunc(name, func(matched string) string {
+		if count < 1 {
+			count++
+			return ""
+		}
+		return matched
+	})
 }

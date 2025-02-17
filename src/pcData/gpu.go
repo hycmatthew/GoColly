@@ -53,6 +53,7 @@ type GPUSpecSubData struct {
 }
 
 type GPUType struct {
+	Id           string
 	Name         string
 	Brand        string
 	Manufacturer string
@@ -165,6 +166,7 @@ func GetGPUData(specList []GPUSpec, record GPURecordData) (GPUType, bool) {
 
 	newBenchmark := int(newScoreLogic(ocClock, specData.BoostClock, specData.Benchmark))
 	GPUData := GPUType{
+		Id:           SetProductId(record.Brand, record.Name),
 		Name:         record.Name,
 		Brand:        record.Brand,
 		Manufacturer: specData.Manufacturer,

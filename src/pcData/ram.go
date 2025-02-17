@@ -102,6 +102,7 @@ func GetRamSpec(record LinkRecord) RamSpec {
 	if ramData.Name == "" {
 		ramData.Name = record.Name
 	}
+	ramData.Name = RemoveBrandsFromName(ramData.Brand, ramData.Name)
 	return ramData
 }
 
@@ -179,7 +180,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 	}
 
 	return RamType{
-		Id:           spec.Code,
+		Id:           SetProductId(spec.Brand, spec.Code),
 		Brand:        spec.Brand,
 		Name:         spec.Name,
 		Series:       newSpec.Series,

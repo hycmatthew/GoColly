@@ -109,6 +109,7 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 	if motherboardData.LinkUS == "" {
 		motherboardData.LinkUS = record.LinkUS
 	}
+	motherboardData.Name = RemoveBrandsFromName(motherboardData.Brand, motherboardData.Name)
 	return motherboardData
 }
 
@@ -160,7 +161,7 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 	}
 
 	return MotherboardType{
-		Id:         spec.Code,
+		Id:         SetProductId(spec.Brand, spec.Code),
 		Name:       spec.Name,
 		Brand:      spec.Brand,
 		Socket:     spec.Socket,
