@@ -3,7 +3,6 @@ package pcData
 import (
 	"fmt"
 	"net/http"
-	"net/url"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -31,6 +30,7 @@ type PowerSpec struct {
 }
 
 type PowerType struct {
+	Id          string
 	Brand       string
 	Name        string
 	ReleaseDate string
@@ -149,6 +149,7 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 	}
 
 	return PowerType{
+		Id:          spec.Code,
 		Brand:       spec.Brand,
 		Name:        spec.Name,
 		ReleaseDate: spec.ReleaseDate,
@@ -175,26 +176,7 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
-		loopBreak := false
-
-		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
-			if !loopBreak {
-				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
-				tempLink := item.ChildAttr(".detail-purchase", "href")
-
-				if strings.Contains(tempLink, "amazon") {
-					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					specData.LinkUS = amazonLink
-					loopBreak = true
-				}
-				if strings.Contains(tempLink, "newegg") {
-					neweggLink := strings.Split(tempLink, "url=")[1]
-					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
-					loopBreak = true
-				}
-			}
-		})
+		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {

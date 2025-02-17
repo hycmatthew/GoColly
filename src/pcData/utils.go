@@ -1,11 +1,13 @@
 package pcData
 
 import (
+	"net/url"
 	"regexp"
 	"strconv"
 	"strings"
 
 	"github.com/axgle/mahonia"
+	"github.com/gocolly/colly/v2"
 )
 
 func extractNumberFromString(str string) int {
@@ -139,4 +141,50 @@ func SocketContainLogic(strList []string) []string {
 		}
 	}
 	return resultList
+}
+
+func OutOfStockLogic(usPrice string, str string) string {
+	if strings.Contains(str, "Out of Stock") {
+		return "Out of Stock"
+	}
+	return usPrice
+}
+
+func GetPriceLinkFromPangoly(element *colly.HTMLElement) (string, string) {
+	resPrice := "Out of Stock"
+	resLink := ""
+	neweggLink := ""
+	loopBreak := false
+
+	element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
+		if !loopBreak {
+			tempPrice := extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+			tempAvailability := item.ChildText(".hidden-xs span")
+			tempLink := item.ChildAttr(".detail-purchase", "href")
+
+			if strings.Contains(tempLink, "amazon") && tempAvailability == "In Stock" {
+				amazonLink := strings.Split(tempLink, "?tag=")[0]
+				resLink = amazonLink
+				resPrice = tempPrice
+			}
+			if strings.Contains(tempLink, "newegg") {
+				neweggLink := strings.Split(tempLink, "url=")[1]
+				UnescapeLink, _ := url.QueryUnescape(neweggLink)
+				neweggLink = strings.Split(UnescapeLink, "\u0026")[0]
+				if tempAvailability == "In Stock" {
+					resLink = neweggLink
+					resPrice = tempPrice
+					loopBreak = true
+				}
+			}
+		}
+	})
+	if resLink == "" {
+		resLink = neweggLink
+	}
+	return resPrice, resLink
+}
+
+func SetProductId(name string, brand string) string {
+	return strings.ToLower(strings.ReplaceAll(name+"-"+brand, " ", "-"))
 }

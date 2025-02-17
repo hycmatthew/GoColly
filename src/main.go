@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := cooler
+	getDataName := pcCase
 	isUpdateSpec := false
 
 	if isUpdateSpec {
@@ -411,8 +411,10 @@ func updatePriceLogic(name string) {
 	case "ram":
 		var specList []pcData.RamSpec
 		var ramList []pcData.RamType
-
 		json.Unmarshal([]byte(byteValue), &specList)
+
+		var oldRamList []pcData.RamType
+		json.Unmarshal([]byte(dataByteValue), &oldRamList)
 		/*
 			var filteredList []pcData.RamSpec
 			for _, item := range specList {
@@ -426,9 +428,10 @@ func updatePriceLogic(name string) {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetRamData(spec)
-				if valid {
-					fmt.Println(valid)
-					ramList = append(ramList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.CompareRAMDataLogic(record, oldRamList)
+					ramList = append(ramList, result)
+					retryTime = 0
 					count++
 				}
 
@@ -445,16 +448,20 @@ func updatePriceLogic(name string) {
 	case "ssd":
 		var specList []pcData.SSDSpec
 		var ssdList []pcData.SSDType
-
 		json.Unmarshal([]byte(byteValue), &specList)
+
+		var oldSSDList []pcData.SSDType
+		json.Unmarshal([]byte(dataByteValue), &oldSSDList)
 
 		go func() {
 			for {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetSSDData(spec)
-				if valid {
-					ssdList = append(ssdList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.CompareSSDDataLogic(record, oldSSDList)
+					ssdList = append(ssdList, result)
+					retryTime = 0
 					count++
 				}
 
@@ -471,16 +478,20 @@ func updatePriceLogic(name string) {
 	case "case":
 		var specList []pcData.CaseSpec
 		var caseList []pcData.CaseType
-
 		json.Unmarshal([]byte(byteValue), &specList)
+
+		var oldCaseList []pcData.CaseType
+		json.Unmarshal([]byte(dataByteValue), &oldCaseList)
 
 		go func() {
 			for {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetCaseData(spec)
-				if valid {
-					caseList = append(caseList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.CompareCaseDataLogic(record, oldCaseList)
+					caseList = append(caseList, result)
+					retryTime = 0
 					count++
 				}
 
@@ -497,16 +508,20 @@ func updatePriceLogic(name string) {
 	case "cooler":
 		var specList []pcData.CoolerSpec
 		var coolerList []pcData.CoolerType
-
 		json.Unmarshal([]byte(byteValue), &specList)
+
+		var oldCoolerList []pcData.CoolerType
+		json.Unmarshal([]byte(dataByteValue), &oldCoolerList)
 
 		go func() {
 			for {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetCoolerData(spec)
-				if valid {
-					coolerList = append(coolerList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.CompareCoolerDataLogic(record, oldCoolerList)
+					coolerList = append(coolerList, result)
+					retryTime = 0
 					count++
 				}
 
@@ -523,16 +538,20 @@ func updatePriceLogic(name string) {
 	case "power":
 		var specList []pcData.PowerSpec
 		var powerList []pcData.PowerType
-
 		json.Unmarshal([]byte(byteValue), &specList)
+
+		var oldPowerList []pcData.PowerType
+		json.Unmarshal([]byte(dataByteValue), &oldPowerList)
 
 		go func() {
 			for {
 				<-ticker.C
 				spec := specList[count]
 				record, valid := pcData.GetPowerData(spec)
-				if valid {
-					powerList = append(powerList, record)
+				if valid || retryTime == maxRetryTime {
+					result := pcData.ComparePowerDataLogic(record, oldPowerList)
+					powerList = append(powerList, result)
+					retryTime = 0
 					count++
 				}
 
@@ -547,6 +566,7 @@ func updatePriceLogic(name string) {
 		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	default:
+		fmt.Println("something wrong!!")
 		var specList []pcData.RamSpec
 		var ramList []pcData.RamType
 

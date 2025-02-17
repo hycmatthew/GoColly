@@ -3,7 +3,6 @@ package pcData
 import (
 	"fmt"
 	"net/http"
-	"net/url"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -36,6 +35,7 @@ type CaseSpec struct {
 }
 
 type CaseType struct {
+	Id                 string
 	Brand              string
 	Name               string
 	ReleaseDate        string
@@ -191,6 +191,7 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 	}
 
 	return CaseType{
+		Id:                 SetProductId(spec.Brand, spec.Code),
 		Brand:              spec.Brand,
 		Name:               spec.Name,
 		ReleaseDate:        spec.ReleaseDate,
@@ -217,30 +218,12 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 
 func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 	specData := CaseSpec{}
-
 	collectorErrorHandle(collector, link)
+
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
-		loopBreak := false
-
-		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
-			if !loopBreak {
-				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
-				tempLink := item.ChildAttr(".detail-purchase", "href")
-
-				if strings.Contains(tempLink, "amazon") && specData.LinkUS == "" {
-					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					specData.LinkUS = amazonLink
-				}
-				if strings.Contains(tempLink, "newegg") {
-					neweggLink := strings.Split(tempLink, "url=")[1]
-					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
-					loopBreak = true
-				}
-			}
-		})
+		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -284,7 +267,6 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 	})
 
 	collector.Visit(link)
-
 	return specData
 }
 
@@ -295,6 +277,8 @@ func getCaseUSPrice(link string, collector *colly.Collector) CaseSpec {
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
 		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
+		available := element.ChildText(".row-side .product-buy-box .product-buy .btn-message")
+		specData.PriceUS = OutOfStockLogic(specData.PriceUS, available)
 
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {

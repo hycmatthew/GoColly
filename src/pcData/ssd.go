@@ -3,7 +3,6 @@ package pcData
 import (
 	"fmt"
 	"net/http"
-	"net/url"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -34,6 +33,7 @@ type SSDSpec struct {
 }
 
 type SSDType struct {
+	Id          string
 	Brand       string
 	Name        string
 	ReleaseDate string
@@ -179,6 +179,7 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 	}
 
 	return SSDType{
+		Id:          spec.Code,
 		Brand:       spec.Brand,
 		Name:        spec.Name,
 		ReleaseDate: newSpec.ReleaseDate,
@@ -207,26 +208,7 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
-		loopBreak := false
-
-		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
-			if !loopBreak {
-				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
-				tempLink := item.ChildAttr(".detail-purchase", "href")
-
-				if strings.Contains(tempLink, "amazon") && specData.LinkUS == "" {
-					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					specData.LinkUS = amazonLink
-					loopBreak = true
-				}
-				if strings.Contains(tempLink, "newegg") {
-					neweggLink := strings.Split(tempLink, "url=")[1]
-					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
-					loopBreak = true
-				}
-			}
-		})
+		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -359,4 +341,28 @@ func getZhiTaiDataFromPcOnline(link string, collector *colly.Collector) SSDSpec 
 
 	collector.Visit(link)
 	return specData
+}
+
+func CompareSSDDataLogic(cur SSDType, list []SSDType) SSDType {
+	newVal := cur
+	curTest := cur.Brand + cur.Name
+	oldVal := cur
+	for _, item := range list {
+		testStr := item.Brand + item.Name
+		if curTest == testStr {
+			oldVal = item
+			break
+		}
+	}
+
+	if newVal.PriceCN == "" {
+		newVal.PriceCN = oldVal.PriceCN
+	}
+	if newVal.PriceUS == "" {
+		newVal.PriceUS = oldVal.PriceUS
+	}
+	if newVal.PriceHK == "" {
+		newVal.PriceHK = oldVal.PriceHK
+	}
+	return newVal
 }

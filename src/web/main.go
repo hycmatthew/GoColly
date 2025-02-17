@@ -6,9 +6,11 @@ import (
 	"fmt"
 	"net/http"
 	"os"
+	"regexp"
 	"runtime"
 	"strings"
 	"time"
+	"unicode"
 
 	"github.com/gocolly/colly/v2"
 	"github.com/imroc/req/v3"
@@ -150,13 +152,22 @@ func getWebpageLinkData(link string, collector *colly.Collector) []CSVData {
 			tempName := item.ChildText(".productItemLink header")
 			tempLink := item.ChildAttr(".productItemLink", "href")
 			price := item.ChildText(".price .amprice")
-			updatedName := strings.TrimSpace(strings.Replace(tempName, brand, "", 1))
+			updatedName := strings.TrimSpace(RemoveBrandsFromName(tempName, brand))
 
-			fmt.Println("price: ", price)
+			// name is not completed
+			if strings.Contains(updatedName, "...") {
+				fmt.Println("name: ", updatedName)
+				nameFromUrl := GetLastSegment(tempLink)
+				typeFromUrl := ExtractTypeFromURL(tempLink)
+				newName := replaceHyphensAndCapitalize(typeFromUrl, nameFromUrl)
+				updatedName = strings.TrimSpace(RemoveBrandsFromName(newName, brand))
+			}
+
 			if price != "" {
+				fmt.Println("price: ", price)
 				csvItem := CSVData{
 					brand:    brand,
-					name:     updatedName,
+					name:     transformString(updatedName),
 					specLink: tempLink,
 				}
 				csvlist = append(csvlist, csvItem)
@@ -187,4 +198,67 @@ func collectorErrorHandle(collector *colly.Collector, link string) {
 	collector.OnResponse(func(response *colly.Response) {
 		fmt.Println("收到响应后调用:", response.Request.URL)
 	})
+}
+
+func transformString(input string) string {
+	// 正則表達式來匹配 2x16gb, 4 x 16gb, 2x 32gb 等格式
+	re := regexp.MustCompile(`(\d+)\s*[xX]\s*(\d+[gG][bB])`)
+
+	// 使用 ReplaceAllStringFunc 來處理匹配到的部分
+	transformed := re.ReplaceAllStringFunc(input, func(match string) string {
+		// 將 match 中的空白和大小寫統一處理
+		match = strings.ReplaceAll(match, "X", "x")
+		match = strings.ReplaceAll(match, " ", "")
+		return "(" + match + ")"
+	})
+
+	transformed = strings.ReplaceAll(transformed, "((", "(")
+	transformed = strings.ReplaceAll(transformed, "))", ")")
+	return transformed
+}
+
+func replaceHyphensAndCapitalize(partType string, s string) string {
+	fmt.Println("type: ", partType)
+	keepCaps := []string{"rgb", "amd", "gb", "cl", "ddr", "lpx"}
+	// Replace hyphens with spaces
+	s = strings.ReplaceAll(s, "-", " ")
+
+	// Split the string into words
+	words := strings.Fields(s)
+
+	// Capitalize the first letter of each word
+	for i, word := range words {
+		isConverted := false
+		/*
+			if strings.Contains(word, "gb") && strings.Contains(word, "x") {
+				words[i] = "(" + words[i] + ")"
+			}
+		*/
+		for _, keep := range keepCaps {
+			if strings.Contains(word, keep) {
+				words[i] = strings.ReplaceAll(word, keep, strings.ToUpper(keep))
+				isConverted = true
+				break
+			}
+		}
+
+		if strings.Contains(word, "mhz") {
+			words[i] = strings.ReplaceAll(word, "mhz", "MHz")
+		}
+
+		if len(word) > 0 && !isConverted {
+			words[i] = string(unicode.ToUpper(rune(word[0]))) + word[1:]
+		}
+	}
+	// Join the words back into a single string
+	return strings.Join(words, " ")
+}
+
+func updateWordsByType(word string, partType string) string {
+	// Split the string into words
+	res := word
+	if strings.Contains(word, "gb") && strings.Contains(word, "x") {
+		res = "(" + word + ")"
+	}
+	return res
 }

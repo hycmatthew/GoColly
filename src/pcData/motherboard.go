@@ -3,7 +3,6 @@ package pcData
 import (
 	"fmt"
 	"net/http"
-	"net/url"
 	"strconv"
 	"strings"
 
@@ -39,6 +38,7 @@ type MotherboardSpec struct {
 }
 
 type MotherboardType struct {
+	Id          string
 	Name        string
 	Brand       string
 	Socket      string
@@ -160,6 +160,7 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 	}
 
 	return MotherboardType{
+		Id:         spec.Code,
 		Name:       spec.Name,
 		Brand:      spec.Brand,
 		Socket:     spec.Socket,
@@ -192,26 +193,7 @@ func getMotherboardSpecData(link string, collector *colly.Collector) Motherboard
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		specData.Name = element.ChildText(".breadcrumb .active")
-		loopBreak := false
-
-		element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
-			if !loopBreak {
-				specData.PriceUS = extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
-				tempLink := item.ChildAttr(".detail-purchase", "href")
-
-				if strings.Contains(tempLink, "amazon") {
-					amazonLink := strings.Split(tempLink, "?tag=")[0]
-					specData.LinkUS = amazonLink
-					loopBreak = true
-				}
-				if strings.Contains(tempLink, "newegg") {
-					neweggLink := strings.Split(tempLink, "url=")[1]
-					UnescapeLink, _ := url.QueryUnescape(neweggLink)
-					specData.LinkUS = strings.Split(UnescapeLink, "\u0026")[0]
-					loopBreak = true
-				}
-			}
-		})
+		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
 
 		specData.RamType = element.ChildText(".table-striped .badge-primary")
 		var ramSupportList []int

@@ -41,6 +41,7 @@ type CPUSpec struct {
 }
 
 type CPUType struct {
+	Id                      string
 	Name                    string
 	Brand                   string
 	Socket                  string
