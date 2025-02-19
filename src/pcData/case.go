@@ -245,9 +245,9 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 			case "Motherboard Compatibility":
 				sizeList := strings.Split(item.ChildTexts("td")[1], ",")
 				for i, item := range sizeList {
-					sizeList[i] = strings.TrimSpace(item)
+					sizeList[i] = GetFormFactorLogic(strings.TrimSpace(item))
 				}
-				specData.Compatibility = sizeList
+				specData.Compatibility = RemoveDuplicates(sizeList)
 			case "Dimensions":
 				tempDimensions := strings.Split(item.ChildTexts("td")[1], "x")
 				var dimensionsList []int
@@ -338,7 +338,7 @@ func getCaseSpecDataFromZol(link string, collector *colly.Collector) CaseSpec {
 					tempCompatibility := GetFormFactorLogic(item)
 					compatibilityArr = append(compatibilityArr, tempCompatibility)
 				}
-				specData.Compatibility = compatibilityArr
+				specData.Compatibility = RemoveDuplicates(compatibilityArr)
 			case "扩展插槽":
 				specData.SlotsNum = extractNumberFromString(convertedData)
 			case "颜色":

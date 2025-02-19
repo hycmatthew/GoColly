@@ -204,3 +204,19 @@ func RemoveBrandsFromName(brand, name string) string {
 		return matched
 	})
 }
+
+// RemoveDuplicates removes duplicate strings from a slice
+func RemoveDuplicates(input []string) []string {
+	// Create a map to track unique strings
+	uniqueMap := make(map[string]struct{})
+	var result []string
+
+	for _, str := range input {
+		if _, exists := uniqueMap[str]; !exists {
+			uniqueMap[str] = struct{}{}  // Add unique string to the map
+			result = append(result, str) // Add to result slice
+		}
+	}
+
+	return result
+}
