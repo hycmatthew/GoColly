@@ -26,7 +26,7 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := pcCase
+	getDataName := power
 	isUpdateSpec := false
 
 	if isUpdateSpec {
@@ -433,6 +433,8 @@ func updatePriceLogic(name string) {
 					ramList = append(ramList, result)
 					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(specList) {
@@ -463,6 +465,8 @@ func updatePriceLogic(name string) {
 					ssdList = append(ssdList, result)
 					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(specList) {
@@ -493,10 +497,14 @@ func updatePriceLogic(name string) {
 					caseList = append(caseList, result)
 					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(specList) {
-					saveData(caseList, name)
+					validationData := pcData.LoadValidationData("case")
+					mergedCaseList := pcData.MergeCases(caseList, validationData)
+					saveData(mergedCaseList, name)
 					ticker.Stop()
 					runtime.Goexit()
 				}
@@ -523,6 +531,8 @@ func updatePriceLogic(name string) {
 					coolerList = append(coolerList, result)
 					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(specList) {
@@ -553,6 +563,8 @@ func updatePriceLogic(name string) {
 					powerList = append(powerList, result)
 					retryTime = 0
 					count++
+				} else {
+					retryTime++
 				}
 
 				if count == len(specList) {

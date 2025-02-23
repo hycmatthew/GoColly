@@ -253,12 +253,3 @@ func replaceHyphensAndCapitalize(partType string, s string) string {
 	// Join the words back into a single string
 	return strings.Join(words, " ")
 }
-
-func updateWordsByType(word string, partType string) string {
-	// Split the string into words
-	res := word
-	if strings.Contains(word, "gb") && strings.Contains(word, "x") {
-		res = "(" + word + ")"
-	}
-	return res
-}

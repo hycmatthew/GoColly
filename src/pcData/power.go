@@ -3,6 +3,7 @@ package pcData
 import (
 	"fmt"
 	"net/http"
+	"regexp"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -76,19 +77,18 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 	specCollector := collector.Clone()
 	powerData := PowerSpec{}
 
-	if record.LinkSpec == "" {
-		powerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, specCollector)
+	if strings.Contains(record.LinkCN, "zol") {
+		powerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
 	} else {
-		powerData := getPowerSpecData(record.LinkSpec, specCollector)
 		powerData.LinkCN = record.LinkCN
+	}
+	if record.LinkSpec != "" {
+		powerData = getPowerSpecData(record.LinkSpec, specCollector)
 	}
 
 	powerData.Code = record.Name
-	powerData.Name = record.Name
 	powerData.Brand = record.Brand
 	powerData.PriceCN = record.PriceCN
-	powerData.PriceHK = ""
-	powerData.LinkHK = ""
 	if record.LinkUS != "" {
 		powerData.LinkUS = record.LinkUS
 	}
@@ -100,7 +100,7 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 }
 
 func GetPowerData(spec PowerSpec) (PowerType, bool) {
-
+	fmt.Println(SetProductId(spec.Brand, spec.Code))
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
 	collector := colly.NewCollector(
@@ -126,50 +126,43 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 	usCollector := collector.Clone()
 	isValid := true
 
-	priceCN := spec.PriceCN
+	newSpec := spec
 	if spec.LinkCN != "" {
 		tempSpec := getPowerSpecDataFromZol(spec.LinkCN, cnCollector)
 
-		spec.Img = tempSpec.Img
-		spec.Standard = tempSpec.Standard
-		spec.Wattage = tempSpec.Wattage
-		spec.Size = tempSpec.Size
-		spec.Modular = tempSpec.Modular
-		spec.Efficiency = tempSpec.Efficiency
-		spec.Length = tempSpec.Length
-		priceCN = tempSpec.PriceCN
-
-		if priceCN == "" {
-			isValid = false
-		}
+		newSpec := MergeStruct(newSpec, tempSpec).(PowerSpec)
+		isValid = checkPriceValid(newSpec.PriceCN)
 	}
-	priceUS, tempImg := spec.PriceUS, spec.Img
-	if strings.Contains(spec.LinkUS, "newegg") {
-		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
 
-		if priceUS == "" {
-			isValid = false
+	if strings.Contains(spec.LinkUS, "newegg") {
+		tempSpec := getPowerUSPrice(spec.LinkUS, usCollector)
+		tempSpec.Standard = comparePSUStandard(tempSpec.Standard, newSpec.Standard)
+		if newSpec.Img == "" {
+			tempSpec.Img = newSpec.Img
 		}
+
+		newSpec := MergeStruct(tempSpec, newSpec).(PowerSpec)
+		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
 	return PowerType{
 		Id:          SetProductId(spec.Brand, spec.Code),
-		Brand:       spec.Brand,
-		Name:        spec.Name,
-		ReleaseDate: spec.ReleaseDate,
-		Standard:    spec.Standard,
-		Wattage:     spec.Wattage,
-		Size:        spec.Size,
-		Modular:     spec.Modular,
-		Efficiency:  spec.Efficiency,
-		Length:      spec.Length,
-		LinkUS:      spec.LinkUS,
-		LinkHK:      spec.LinkHK,
-		LinkCN:      spec.LinkCN,
-		PriceCN:     priceCN,
-		PriceUS:     priceUS,
-		PriceHK:     "",
-		Img:         tempImg,
+		Brand:       newSpec.Brand,
+		Name:        newSpec.Name,
+		ReleaseDate: newSpec.ReleaseDate,
+		Standard:    newSpec.Standard,
+		Wattage:     newSpec.Wattage,
+		Size:        newSpec.Size,
+		Modular:     newSpec.Modular,
+		Efficiency:  newSpec.Efficiency,
+		Length:      newSpec.Length,
+		LinkUS:      newSpec.LinkUS,
+		LinkHK:      newSpec.LinkHK,
+		LinkCN:      newSpec.LinkCN,
+		PriceCN:     newSpec.PriceCN,
+		PriceUS:     newSpec.PriceUS,
+		PriceHK:     newSpec.PriceHK,
+		Img:         newSpec.Img,
 	}, isValid
 }
 
@@ -181,6 +174,7 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
+		fmt.Println(specData.LinkUS)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -205,6 +199,34 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 	return specData
 }
 
+func getPowerUSPrice(link string, collector *colly.Collector) PowerSpec {
+	specData := PowerSpec{}
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
+		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
+		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
+		available := element.ChildText(".row-side .product-buy-box .product-buy .btn-message")
+		specData.PriceUS = OutOfStockLogic(specData.PriceUS, available)
+
+		prdName := element.ChildText(".product-title")
+		standard := extractATXStandard(prdName)
+
+		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
+			switch item.ChildText("th") {
+			case "Type":
+				if standard == "ATX 2.0" {
+					standard = extractATXStandard(item.ChildText("td"))
+				}
+			}
+		})
+		specData.Standard = standard
+	})
+
+	collector.Visit(link)
+	return specData
+}
+
 func getPowerSpecDataFromZol(link string, collector *colly.Collector) PowerSpec {
 	specData := PowerSpec{
 		Standard: "ATX 2.0",
@@ -226,11 +248,10 @@ func getPowerSpecDataFromZol(link string, collector *colly.Collector) PowerSpec 
 		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
 			convertedHeader := convertGBKString(item.ChildText("th"))
 			convertedData := convertGBKString(item.ChildText("td span"))
-			fmt.Println(convertedHeader)
 
 			switch convertedHeader {
 			case "电源版本":
-				specData.Standard = convertedData
+				specData.Standard = extractATXStandard(convertedData)
 			case "电源模组":
 				if strings.Contains(convertedData, "全模组") {
 					specData.Modular = "Full"
@@ -432,4 +453,33 @@ func ComparePowerDataLogic(cur PowerType, list []PowerType) PowerType {
 		newVal.PriceHK = oldVal.PriceHK
 	}
 	return newVal
+}
+
+func extractATXStandard(name string) string {
+	// 將名稱轉為大寫並去除空格
+	normalized := strings.ToUpper(strings.ReplaceAll(name, " ", ""))
+
+	// 定義正則表達式規則
+	patterns := map[string]string{
+		"ATX 3.1": `ATX(?:12V)?3\.1`,
+		"ATX 3.0": `ATX(?:12V)?3\.0`,
+		"ATX 3":   `ATX(?:12V)?3$`,
+	}
+
+	// 按順序匹配正則表達式
+	for standard, pattern := range patterns {
+		matched, _ := regexp.MatchString(pattern, normalized)
+		if matched {
+			return standard
+		}
+	}
+	// 如果沒有匹配，返回默認的 ATX 2.0
+	return "ATX 2.0"
+}
+
+func comparePSUStandard(str1 string, str2 string) string {
+	if str1 == "ATX 2.0" {
+		return str2
+	}
+	return str1
 }

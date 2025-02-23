@@ -1,7 +1,9 @@
 package pcData
 
 import (
+	"fmt"
 	"net/url"
+	"reflect"
 	"regexp"
 	"strconv"
 	"strings"
@@ -9,6 +11,10 @@ import (
 	"github.com/axgle/mahonia"
 	"github.com/gocolly/colly/v2"
 )
+
+func checkPriceValid(str string) bool {
+	return str != ""
+}
 
 func extractNumberFromString(str string) int {
 	digitCheck := regexp.MustCompile("[0-9]")
@@ -188,7 +194,8 @@ func GetPriceLinkFromPangoly(element *colly.HTMLElement) (string, string) {
 func SetProductId(brand string, name string) string {
 	re := regexp.MustCompile("[^a-zA-Z0-9 -]+")
 	tempStr := re.ReplaceAllString(brand+"-"+name, "")
-	return strings.ToLower(strings.ReplaceAll(tempStr, " ", "-"))
+	result := strings.ToLower(strings.ReplaceAll(tempStr, " ", "-"))
+	return MergeDashes(result)
 }
 
 func RemoveBrandsFromName(brand, name string) string {
@@ -219,4 +226,108 @@ func RemoveDuplicates(input []string) []string {
 	}
 
 	return result
+}
+
+func MergeDashes(s string) string {
+	var builder strings.Builder
+	prevDash := false
+
+	for _, r := range s {
+		if r == '-' {
+			if !prevDash {
+				builder.WriteRune('-')
+				prevDash = true
+			}
+		} else {
+			builder.WriteRune(r)
+			prevDash = false
+		}
+	}
+	return builder.String()
+}
+
+// Merge Data
+// 通用合并函数
+func mergeValue(id string, v1, v2 interface{}) interface{} {
+	// 统一转换为反射值
+	rv1 := reflect.ValueOf(v1)
+	rv2 := reflect.ValueOf(v2)
+
+	// 类型必须一致
+	if rv1.Type() != rv2.Type() {
+		panic("mergeValue: type mismatch")
+	}
+
+	// 判断是否双方都有数据
+	hasV1 := !isEmpty(rv1)
+	hasV2 := !isEmpty(rv2)
+
+	// 记录数据对比
+	if hasV1 && hasV2 {
+		if v1 != v2 {
+			fmt.Printf("[CONFLICT] %s:\n  V1 = %s\n  V2 = %s\n", id, rv1, rv2)
+		}
+	}
+
+	// 判断v1是否为空/零值
+	if isEmpty(rv1) {
+		return v2
+	}
+	return v1
+}
+
+// 判断值是否为空/零值
+func isEmpty(v reflect.Value) bool {
+	switch v.Kind() {
+	case reflect.String:
+		return v.Len() == 0
+	case reflect.Int, reflect.Int8, reflect.Int16, reflect.Int32, reflect.Int64:
+		return v.Int() == 0
+	case reflect.Uint, reflect.Uint8, reflect.Uint16, reflect.Uint32, reflect.Uint64:
+		return v.Uint() == 0
+	case reflect.Float32, reflect.Float64:
+		return v.Float() == 0
+	case reflect.Slice, reflect.Array:
+		return v.Len() == 0
+	case reflect.Ptr:
+		return v.IsNil()
+	case reflect.Interface:
+		return v.IsNil() || isEmpty(v.Elem())
+	default:
+		return v.IsZero()
+	}
+}
+
+// 自动获取ID字段（支持常见命名方式）
+func getID(v interface{}) string {
+	rv := reflect.Indirect(reflect.ValueOf(v))
+
+	// 尝试常见ID字段名称
+	for _, fieldName := range []string{"Code", "Name"} {
+		if field := rv.FieldByName(fieldName); field.IsValid() {
+			return fmt.Sprintf("%v", field)
+		}
+	}
+	return "unknown_id"
+}
+
+func MergeStruct(s1, s2 interface{}) interface{} {
+	rv1 := reflect.ValueOf(s1)
+	rv2 := reflect.ValueOf(s2)
+
+	// 创建新结构体
+	result := reflect.New(rv1.Type()).Elem()
+	tempId := getID(s1)
+
+	// 遍历字段
+	for i := 0; i < rv1.NumField(); i++ {
+		field1 := rv1.Field(i)
+		field2 := rv2.Field(i)
+
+		// 递归合并每个字段
+		merged := mergeValue(tempId, field1.Interface(), field2.Interface())
+		result.Field(i).Set(reflect.ValueOf(merged))
+	}
+
+	return result.Interface()
 }

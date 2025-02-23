@@ -142,50 +142,24 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 	if strings.Contains(spec.LinkCN, "zol") {
 		tempSpec := getCaseSpecDataFromZol(spec.LinkCN, cnCollector)
 
-		newSpec.Img = tempSpec.Img
-		if tempSpec.PriceCN != "" {
-			newSpec.PriceCN = tempSpec.PriceCN
-		}
-		if newSpec.CaseSize == "" {
-			newSpec.CaseSize = tempSpec.CaseSize
-			newSpec.Color = tempSpec.Color
-			newSpec.Compatibility = tempSpec.Compatibility
-			newSpec.Dimensions = tempSpec.Dimensions
-			newSpec.DriveBays2 = tempSpec.DriveBays2
-			newSpec.DriveBays3 = tempSpec.DriveBays3
-			newSpec.MaxCpuCoolorHeight = tempSpec.MaxCpuCoolorHeight
-			newSpec.MaxVGAlength = tempSpec.MaxVGAlength
-			newSpec.PowerSupply = tempSpec.PowerSupply
-			newSpec.RadiatorSupport = tempSpec.RadiatorSupport
-			newSpec.SlotsNum = tempSpec.SlotsNum
-		}
-
-		if newSpec.PriceCN == "" {
-			isValid = false
-		}
+		newSpec := MergeStruct(newSpec, tempSpec).(CaseSpec)
+		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
 	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
 		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
 
-		if newSpec.PriceCN == "" {
-			isValid = false
-		}
+		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
 	if strings.Contains(spec.LinkUS, "newegg") {
 		tempSpec := getCaseUSPrice(spec.LinkUS, usCollector)
-
 		if newSpec.Img == "" {
-			newSpec.Img = tempSpec.Img
+			tempSpec.Img = newSpec.Img
 		}
-		newSpec.PriceUS = tempSpec.PriceUS
-		newSpec.MaxCpuCoolorHeight = tempSpec.MaxCpuCoolorHeight
-		newSpec.RadiatorSupport = tempSpec.RadiatorSupport
 
-		if newSpec.PriceUS == "" {
-			isValid = false
-		}
+		newSpec := MergeStruct(tempSpec, newSpec).(CaseSpec)
+		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 	if !isValid {
 		fmt.Println(newSpec)

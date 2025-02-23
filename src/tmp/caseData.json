@@ -1488,7 +1488,7 @@
         "PowerSupply": false,
         "DriveBays2": 1,
         "DriveBays3": 2,
-        "Compatibility": null,
+        "Compatibility": ["ATX"],
         "Dimensions": null,
         "MaxVGAlength": 350,
         "RadiatorSupport": 360,
