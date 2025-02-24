@@ -14,6 +14,13 @@
         "Width": 111,
         "ProductSpec": [
             {
+                "ProductName": "ASL RTX 4060 Mini-ITX",
+                "BoostClock": 2460,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 115
+            },
+            {
                 "ProductName": "ASL RTX 4060 WUHUANG",
                 "BoostClock": 2460,
                 "Length": 240,
@@ -101,21 +108,21 @@
                 "ProductName": "ASUS TX RTX 4060 GAMING OC",
                 "BoostClock": 2460,
                 "Length": 317,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 115
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4060 GAMING",
                 "BoostClock": 2460,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 115
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4060 GAMING OC",
                 "BoostClock": 2670,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 115
             },
             {
@@ -164,6 +171,13 @@
                 "ProductName": "Colorful Tomahawk RTX 4060 Deluxe",
                 "BoostClock": 2460,
                 "Length": 325,
+                "Slots": "Dual-slot",
+                "TDP": 115
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 4060 Deluxe V3",
+                "BoostClock": 2460,
+                "Length": 313,
                 "Slots": "Dual-slot",
                 "TDP": 115
             },
@@ -287,6 +301,13 @@
                 "TDP": 115
             },
             {
+                "ProductName": "GALAX RTX 4060 LP White",
+                "BoostClock": 2475,
+                "Length": 182,
+                "Slots": "Dual-slot",
+                "TDP": 115
+            },
+            {
                 "ProductName": "GALAX RTX 4060 Metal Master",
                 "BoostClock": 2460,
                 "Length": 228,
@@ -304,7 +325,7 @@
                 "ProductName": "GIGABYTE AORUS RTX 4060 ELITE",
                 "BoostClock": 2640,
                 "Length": 299,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 115
             },
             {
@@ -619,7 +640,7 @@
                 "ProductName": "ZOTAC RTX 4060 Apocalypse OC",
                 "BoostClock": 2610,
                 "Length": 315,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 115
             },
             {
@@ -901,7 +922,7 @@
                 "ProductName": "GALAX RTX 4060 Ti Wusou MAX 16 GB",
                 "BoostClock": 2535,
                 "Length": 267,
-                "Slots": " Single-slot",
+                "Slots": "Single-slot",
                 "TDP": 165
             },
             {
@@ -1069,7 +1090,7 @@
                 "ProductName": "Yeston RTX 4060 Ti Game Ace PA 16 GB",
                 "BoostClock": 2595,
                 "Length": 299,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 165
             },
             {
@@ -1197,14 +1218,14 @@
                 "ProductName": "ASUS TUF RTX 4060 Ti GAMING",
                 "BoostClock": 2535,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
                 "ProductName": "ASUS TUF RTX 4060 Ti GAMING OC",
                 "BoostClock": 2625,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -1218,7 +1239,7 @@
                 "ProductName": "ASUS ROG STRIX RTX 4060 Ti GAMING OC",
                 "BoostClock": 2685,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -1407,7 +1428,7 @@
                 "ProductName": "GIGABYTE AORUS RTX 4060 Ti ELITE",
                 "BoostClock": 2655,
                 "Length": 301,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -1435,7 +1456,7 @@
                 "ProductName": "GIGABYTE RTX 4060 Ti GAMING OC",
                 "BoostClock": 2580,
                 "Length": 281,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -1526,7 +1547,7 @@
                 "ProductName": "Manli RTX 4060 Ti Stellar Triple OC",
                 "BoostClock": 2580,
                 "Length": 314,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 165
             },
             {
@@ -1666,7 +1687,7 @@
                 "ProductName": "Yeston RTX 4060 Ti Cute Pet MA",
                 "BoostClock": 2535,
                 "Length": 254,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -1687,14 +1708,14 @@
                 "ProductName": "Yeston RTX 4060 Ti Game Ace",
                 "BoostClock": 2535,
                 "Length": 299,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
                 "ProductName": "ZOTAC RTX 4060 Ti Apocalypse OC",
                 "BoostClock": 2640,
                 "Length": 315,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -1766,14 +1787,14 @@
                 "ProductName": "ASUS ATS RTX 4070 GAMING MEGALODON",
                 "BoostClock": 2475,
                 "Length": 317,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "ASUS ATS RTX 4070 GAMING MEGALODON OC",
                 "BoostClock": 2520,
                 "Length": 317,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -1864,35 +1885,35 @@
                 "ProductName": "ASUS TUF RTX 4070 GAMING",
                 "BoostClock": 2475,
                 "Length": 301,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "ASUS TUF RTX 4070 GAMING OC",
                 "BoostClock": 2550,
                 "Length": 301,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "ASUS TX RTX 4070 GAMING OC",
                 "BoostClock": 2520,
                 "Length": 317,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4070 GAMING",
                 "BoostClock": 2475,
                 "Length": 338,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4070 GAMING OC",
                 "BoostClock": 2610,
                 "Length": 338,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -1913,7 +1934,7 @@
                 "ProductName": "Colorful iGame RTX 4070 Advanced OC",
                 "BoostClock": 2610,
                 "Length": 344,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
@@ -1934,14 +1955,14 @@
                 "ProductName": "Colorful iGame RTX 4070 Ultra W OC V2",
                 "BoostClock": 2505,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "Colorful iGame RTX 4070 Ultra W V2",
                 "BoostClock": 2475,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -1955,14 +1976,14 @@
                 "ProductName": "Colorful iGame RTX 4070 Vulcan OC",
                 "BoostClock": 2625,
                 "Length": 349,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
                 "ProductName": "Colorful Tomahawk RTX 4070 Deluxe",
                 "BoostClock": 2475,
                 "Length": 325,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -1997,14 +2018,14 @@
                 "ProductName": "Gainward RTX 4070 Phoenix",
                 "BoostClock": 2475,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "Gainward RTX 4070 Phoenix GS",
                 "BoostClock": 2595,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -2074,14 +2095,14 @@
                 "ProductName": "GALAX RTX 4070 BOOMSTAR",
                 "BoostClock": 2475,
                 "Length": 338,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
                 "ProductName": "GALAX RTX 4070 BOOMSTAR OC",
                 "BoostClock": 2610,
                 "Length": 338,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
@@ -2130,14 +2151,14 @@
                 "ProductName": "GIGABYTE AORUS RTX 4070 MASTER",
                 "BoostClock": 2595,
                 "Length": 342,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 AERO OC",
                 "BoostClock": 2565,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -2158,14 +2179,14 @@
                 "ProductName": "GIGABYTE RTX 4070 GAMING OC",
                 "BoostClock": 2565,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 KOREA EDITION OC",
                 "BoostClock": 2565,
                 "Length": 298,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
@@ -2186,7 +2207,7 @@
                 "ProductName": "Inno3D RTX 4070 iCHILL X3",
                 "BoostClock": 2535,
                 "Length": 334,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -2270,7 +2291,7 @@
                 "ProductName": "Leadtek WinFast RTX 4070 HURRICANE",
                 "BoostClock": 2475,
                 "Length": 251,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -2298,35 +2319,35 @@
                 "ProductName": "Manli RTX 4070 Twin",
                 "BoostClock": 2475,
                 "Length": 250,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "Manli RTX 4070 Twin (M2524+N713)",
                 "BoostClock": 2475,
                 "Length": 254,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "Manli RTX 4070 Twin V2",
                 "BoostClock": 2475,
                 "Length": 254,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "MAXSUN RTX 4070 iCraft OC",
                 "BoostClock": 2535,
                 "Length": 317,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
                 "ProductName": "MAXSUN RTX 4070 iCraft OC Aijia",
                 "BoostClock": 2550,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
@@ -2431,7 +2452,7 @@
                 "ProductName": "Palit RTX 4070 JetStream",
                 "BoostClock": 2475,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             },
             {
@@ -2480,28 +2501,28 @@
                 "ProductName": "ZOTAC RTX 4070 AMP AIRO",
                 "BoostClock": 2535,
                 "Length": 308,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
                 "ProductName": "ZOTAC RTX 4070 AMP AIRO SPIDER-MAN",
                 "BoostClock": 2535,
                 "Length": 308,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Apocalypse OC",
                 "BoostClock": 2580,
                 "Length": 334,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Trinity",
                 "BoostClock": 2475,
                 "Length": 307,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 215
             },
             {
@@ -2536,7 +2557,7 @@
                 "ProductName": "ZOTAC RTX 4070 X-GAMING OC Opal White",
                 "BoostClock": 2520,
                 "Length": 303,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 200
             }
         ]
@@ -2643,28 +2664,28 @@
                 "ProductName": "ASUS TUF RTX 4070 SUPER GAMING",
                 "BoostClock": 2475,
                 "Length": 301,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ASUS TUF RTX 4070 SUPER GAMING OC",
                 "BoostClock": 2565,
                 "Length": 301,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4070 SUPER GAMING",
                 "BoostClock": 2475,
                 "Length": 339,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4070 SUPER GAMING OC",
                 "BoostClock": 2640,
                 "Length": 339,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2678,28 +2699,28 @@
                 "ProductName": "Colorful iGame RTX 4070 SUPER Advanced OC",
                 "BoostClock": 2640,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "Colorful iGame RTX 4070 SUPER Ultra W OC",
                 "BoostClock": 2565,
                 "Length": 314,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "Colorful iGame RTX 4070 SUPER Vulcan OC",
                 "BoostClock": 2670,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "Colorful iGame RTX 4070 SUPER Vulcan W OC",
                 "BoostClock": 2670,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2727,7 +2748,7 @@
                 "ProductName": "Gainward RTX 4070 SUPER Panther OC",
                 "BoostClock": 2640,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2762,28 +2783,28 @@
                 "ProductName": "GALAX RTX 4070 SUPER BOOMSTAR OC",
                 "BoostClock": 2625,
                 "Length": 338,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "GALAX RTX 4070 SUPER EX Gamer 1-Click OC",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "GALAX RTX 4070 SUPER EX Gamer Pink 1-Click OC",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "GALAX RTX 4070 SUPER EX Gamer White 1-Click OC",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2797,14 +2818,14 @@
                 "ProductName": "GIGABYTE AORUS RTX 4070 SUPER MASTER",
                 "BoostClock": 2655,
                 "Length": 342,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 SUPER AERO OC",
                 "BoostClock": 2565,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2818,7 +2839,7 @@
                 "ProductName": "GIGABYTE RTX 4070 SUPER GAMING OC",
                 "BoostClock": 2565,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2832,7 +2853,7 @@
                 "ProductName": "Inno3D RTX 4070 SUPER ICHILL X3",
                 "BoostClock": 2535,
                 "Length": 334,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2874,35 +2895,35 @@
                 "ProductName": "KFA2 RTX 4070 SUPER EX Gamer 1-Click OC",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "KFA2 RTX 4070 SUPER EX Gamer Pink 1-Click OC",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "KFA2 RTX 4070 SUPER EX Gamer White 1-Click OC",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "Leadtek WinFast RTX 4070 SUPER HURRICANE",
                 "BoostClock": 2475,
                 "Length": 251,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "Manli RTX 4070 SUPER (M2592+N693)",
                 "BoostClock": 2475,
                 "Length": 264,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2930,7 +2951,7 @@
                 "ProductName": "Manli RTX 4070 SUPER Stellar Triple OC",
                 "BoostClock": 2520,
                 "Length": 314,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -2944,7 +2965,7 @@
                 "ProductName": "MAXSUN RTX 4070 SUPER iCraft OC Aijia S0",
                 "BoostClock": 2640,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
@@ -3084,21 +3105,21 @@
                 "ProductName": "Yeston RTX 4070 SUPER SAKURA",
                 "BoostClock": 2640,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ZOTAC RTX 4070 SUPER Apocalypse OC",
                 "BoostClock": 2535,
                 "Length": 315,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ZOTAC RTX 4070 SUPER Trinity Black",
                 "BoostClock": 2475,
                 "Length": 307,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
@@ -3119,35 +3140,35 @@
                 "ProductName": "ZOTAC RTX 4070 SUPER X-GAMING GOC",
                 "BoostClock": 2505,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ZOTAC RTX 4070 SUPER X-GAMING GOC Black",
                 "BoostClock": 2505,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ZOTAC RTX 4070 SUPER X-GAMING HOC",
                 "BoostClock": 2505,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ZOTAC RTX 4070 SUPER X-GAMING HOC Black",
                 "BoostClock": 2505,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             },
             {
                 "ProductName": "ZOTAC RTX 4070 SUPER X-GAMING OC Opal White",
                 "BoostClock": 2505,
                 "Length": 303,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 220
             }
         ]
@@ -3184,28 +3205,28 @@
                 "ProductName": "ASUS ROG STRIX RTX 4070 Ti GAMING",
                 "BoostClock": 2610,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4070 Ti GAMING OC",
                 "BoostClock": 2760,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ASUS TUF RTX 4070 Ti GAMING",
                 "BoostClock": 2610,
                 "Length": 305,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ASUS TUF RTX 4070 Ti GAMING OC",
                 "BoostClock": 2730,
                 "Length": 305,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3219,35 +3240,35 @@
                 "ProductName": "Colorful iGame 4070 Ti Advanced",
                 "BoostClock": 2610,
                 "Length": 344,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Colorful iGame 4070 Ti Advanced OC",
                 "BoostClock": 2760,
                 "Length": 344,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 310
             },
             {
                 "ProductName": "Colorful iGame 4070 Ti Chinese New Year Gift Box 2023 Advanced",
                 "BoostClock": 2760,
                 "Length": 344,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 310
             },
             {
                 "ProductName": "Colorful iGame 4070 Ti Chinese New Year Gift Box 2023 Ultra",
                 "BoostClock": 2745,
                 "Length": 335,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Colorful iGame 4070 Ti Chinese New Year Gift Box 2023 Vulcan",
                 "BoostClock": 2775,
                 "Length": 349,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 310
             },
             {
@@ -3268,42 +3289,42 @@
                 "ProductName": "Colorful iGame 4070 Ti Ultra W",
                 "BoostClock": 2610,
                 "Length": 335,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Colorful iGame 4070 Ti Ultra W OC",
                 "BoostClock": 2745,
                 "Length": 335,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Colorful iGame 4070 Ti Vulcan",
                 "BoostClock": 2610,
                 "Length": 349,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Colorful iGame 4070 Ti Vulcan OC",
                 "BoostClock": 2775,
                 "Length": 349,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 310
             },
             {
                 "ProductName": "Colorful Tomahawk iGame 4070 Ti Deluxe Edition",
                 "BoostClock": 2610,
                 "Length": 327,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Colorful Tomahawk iGame 4070 Ti Deluxe Edition OC",
                 "BoostClock": 2715,
                 "Length": 327,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3324,49 +3345,49 @@
                 "ProductName": "Gainward RTX 4070 Ti Panther",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Gainward RTX 4070 Ti Phantom",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Gainward RTX 4070 Ti Phantom GS",
                 "BoostClock": 2775,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Gainward RTX 4070 Ti Phantom Reunion",
                 "BoostClock": 2610,
                 "Length": 314,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Gainward RTX 4070 Ti Phantom Reunion GS",
                 "BoostClock": 2760,
                 "Length": 314,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Gainward RTX 4070 Ti Phoenix",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Gainward RTX 4070 Ti Phoenix GS",
                 "BoostClock": 2760,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3415,112 +3436,112 @@
                 "ProductName": "GALAX RTX 4070 Ti Blackjack",
                 "BoostClock": 2610,
                 "Length": 321,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti Blackjack OC",
                 "BoostClock": 2640,
                 "Length": 321,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti BOOMSTAR",
                 "BoostClock": 2610,
                 "Length": 340,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti BOOMSTAR OC",
                 "BoostClock": 2685,
                 "Length": 340,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti EX Gamer",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti EX Gamer Pink",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti EX Gamer White",
                 "BoostClock": 2670,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti HOF OC LAB",
                 "BoostClock": 2715,
                 "Length": 344,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 366
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti HOF OC LAB PLUS",
                 "BoostClock": 2760,
                 "Length": 344,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 366
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti Metal Master",
                 "BoostClock": 2610,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti Metal Master OC",
                 "BoostClock": 2655,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti SG 1-Click OC",
                 "BoostClock": 2670,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti SG White 1-Click OC",
                 "BoostClock": 2670,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GALAX RTX 4070 Ti ST 1-Click OC",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4070 Ti ELITE",
                 "BoostClock": 2655,
                 "Length": 342,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4070 Ti MASTER",
                 "BoostClock": 2670,
                 "Length": 342,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 285
             },
             {
@@ -3541,28 +3562,28 @@
                 "ProductName": "GIGABYTE RTX 4070 Ti AERO",
                 "BoostClock": 2610,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 Ti AERO OC",
                 "BoostClock": 2640,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 Ti EAGLE",
                 "BoostClock": 2610,
                 "Length": 301,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 Ti EAGLE OC",
                 "BoostClock": 2625,
                 "Length": 301,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3583,21 +3604,21 @@
                 "ProductName": "GIGABYTE RTX 4070 Ti GAMING",
                 "BoostClock": 2610,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 Ti GAMING OC",
                 "BoostClock": 2640,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 Ti GAMING OC V2",
                 "BoostClock": 2640,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3618,7 +3639,7 @@
                 "ProductName": "Inno3D iChill RTX 4070 Ti X3",
                 "BoostClock": 2670,
                 "Length": 334,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3639,56 +3660,56 @@
                 "ProductName": "KFA2 RTX 4070 Ti EX Gamer",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "KFA2 RTX 4070 Ti EX Gamer Pink",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "KFA2 RTX 4070 Ti EX Gamer White",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "KFA2 RTX 4070 Ti SG 1-Click OC",
                 "BoostClock": 2670,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "KFA2 RTX 4070 Ti SG White 1-Click OC",
                 "BoostClock": 2670,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "KFA2 RTX 4070 Ti ST 1-Click OC",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "KUROUTOSHIKOU RTX 4070 Ti GALAKURO GAMING",
                 "BoostClock": 2610,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "KUROUTOSHIKOU RTX 4070 Ti GALAKURO GAMING OC",
                 "BoostClock": 2670,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3702,7 +3723,7 @@
                 "ProductName": "Leadtek WinFast RTX 4070 Ti HURRICANE",
                 "BoostClock": 2610,
                 "Length": 319,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3716,42 +3737,42 @@
                 "ProductName": "Manli RTX 4070 Ti Gallardo (M3542+N693)",
                 "BoostClock": 2610,
                 "Length": 315,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MAXSUN RTX 4070 Ti iCraft OC",
                 "BoostClock": 2640,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "MAXSUN RTX 4070 Ti iCraft OC Aijia",
                 "BoostClock": 2685,
                 "Length": 336,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "MAXSUN RTX 4070 Ti MGG OC S0",
                 "BoostClock": 2715,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "MSI RTX 4070 Ti GAMING TRIO",
                 "BoostClock": 2610,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti GAMING TRIO WHITE",
                 "BoostClock": 2610,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3765,28 +3786,28 @@
                 "ProductName": "MSI RTX 4070 Ti GAMING X TRIO",
                 "BoostClock": 2745,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti GAMING X TRIO WHITE",
                 "BoostClock": 2745,
                 "Length": 337,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPRIM",
                 "BoostClock": 2745,
                 "Length": 338,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPRIM X",
                 "BoostClock": 2775,
                 "Length": 338,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 285
             },
             {
@@ -3828,84 +3849,84 @@
                 "ProductName": "Palit RTX 4070 Ti GameRock",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti GameRock Classic",
                 "BoostClock": 2610,
                 "Length": 314,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti GameRock Classic OC",
                 "BoostClock": 2760,
                 "Length": 314,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti GameRock OC",
                 "BoostClock": 2775,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti GameRock Premium",
                 "BoostClock": 2790,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti GamingPro",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti GamingPro OC",
                 "BoostClock": 2760,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti GamingPro White OC",
                 "BoostClock": 2670,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Palit RTX 4070 Ti JetStream",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "PNY RTX 4070 Ti VERTO Triple Fan",
                 "BoostClock": 2610,
                 "Length": 305,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "PNY XLR8 RTX 4070 Ti VERTO EPIC-X Triple Fan",
                 "BoostClock": 2610,
                 "Length": 332,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "PNY XLR8 RTX 4070 Ti VERTO EPIC-X Triple Fan OC",
                 "BoostClock": 2670,
                 "Length": 332,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
@@ -3919,63 +3940,63 @@
                 "ProductName": "Yeston RTX 4070 Ti SAKURA Sugar",
                 "BoostClock": 2610,
                 "Length": 328,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti AMP AIRO",
                 "BoostClock": 2670,
                 "Length": 308,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti AMP AIRO SPIDER-MAN",
                 "BoostClock": 2670,
                 "Length": 308,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti AMP Extreme AIRO",
                 "BoostClock": 2700,
                 "Length": 356,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti Apocalypse",
                 "BoostClock": 2610,
                 "Length": 334,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti Apocalypse OC",
                 "BoostClock": 2670,
                 "Length": 334,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti Trinity",
                 "BoostClock": 2610,
                 "Length": 307,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti Trinity OC",
                 "BoostClock": 2625,
                 "Length": 307,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ZOTAC RTX 4070 Ti X-GAMING OC",
                 "BoostClock": 2640,
                 "Length": 303,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 285
             }
         ]
@@ -3998,14 +4019,14 @@
                 "ProductName": "ASUS ProArt RTX 4070 Ti SUPER",
                 "BoostClock": 2610,
                 "Length": 300,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "ASUS ProArt RTX 4070 Ti SUPER OC",
                 "BoostClock": 2640,
                 "Length": 300,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4075,7 +4096,7 @@
                 "ProductName": "Colorful iGame RTX 4070 Ti SUPER Neptune OC",
                 "BoostClock": 2685,
                 "Length": 240,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
@@ -4103,7 +4124,7 @@
                 "ProductName": "ELSA RTX 4070 Ti SUPER S.A.C",
                 "BoostClock": 2610,
                 "Length": 250,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4145,14 +4166,14 @@
                 "ProductName": "Gainward RTX 4070 Ti SUPER Python III",
                 "BoostClock": 2610,
                 "Length": 294,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Gainward RTX 4070 Ti SUPER Python III OC",
                 "BoostClock": 2640,
                 "Length": 294,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4222,14 +4243,14 @@
                 "ProductName": "GIGABYTE RTX 4070 Ti SUPER AI TOP",
                 "BoostClock": 2610,
                 "Length": 260,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "GIGABYTE RTX 4070 Ti SUPER EAGLE OC",
                 "BoostClock": 2640,
                 "Length": 261,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4243,7 +4264,7 @@
                 "ProductName": "GIGABYTE RTX 4070 Ti SUPER WINDFORCE OC",
                 "BoostClock": 2625,
                 "Length": 261,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4257,28 +4278,28 @@
                 "ProductName": "Inno3D RTX 4070 Ti SUPER TWIN X2",
                 "BoostClock": 2610,
                 "Length": 250,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Inno3D RTX 4070 Ti SUPER TWIN X2 OC",
                 "BoostClock": 2640,
                 "Length": 250,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Inno3D RTX 4070 Ti SUPER TWIN X2 OC WHITE",
                 "BoostClock": 2640,
                 "Length": 250,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "Inno3D RTX 4070 Ti SUPER X3 OC",
                 "BoostClock": 2640,
                 "Length": 297,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4348,7 +4369,7 @@
                 "ProductName": "Manli RTX 4070 Ti SUPER Polar Fox Triple (M3596+N693)",
                 "BoostClock": 2610,
                 "Length": 315,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4369,28 +4390,28 @@
                 "ProductName": "MSI RTX 4070 Ti SUPER AERO",
                 "BoostClock": 2610,
                 "Length": 242,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER GAMING SLIM",
                 "BoostClock": 2610,
                 "Length": 307,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER GAMING SLIM STALKER 2 EDITION",
                 "BoostClock": 2625,
                 "Length": 307,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER GAMING SLIM WHITE",
                 "BoostClock": 2610,
                 "Length": 307,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4404,14 +4425,14 @@
                 "ProductName": "MSI RTX 4070 Ti SUPER GAMING X SLIM",
                 "BoostClock": 2670,
                 "Length": 307,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER GAMING X SLIM WHITE",
                 "BoostClock": 2670,
                 "Length": 307,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4425,42 +4446,42 @@
                 "ProductName": "MSI RTX 4070 Ti SUPER VENTUS 2X",
                 "BoostClock": 2610,
                 "Length": 242,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER VENTUS 2X OC",
                 "BoostClock": 2640,
                 "Length": 242,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER VENTUS 2X WHITE",
                 "BoostClock": 2610,
                 "Length": 242,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER VENTUS 2X WHITE OC",
                 "BoostClock": 2640,
                 "Length": 242,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER VENTUS 3X",
                 "BoostClock": 2610,
                 "Length": 308,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
                 "ProductName": "MSI RTX 4070 Ti SUPER VENTUS 3X OC",
                 "BoostClock": 2640,
                 "Length": 308,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 285
             },
             {
@@ -4541,6 +4562,13 @@
                 "TDP": 285
             },
             {
+                "ProductName": "ZOTAC RTX 4070 Ti SUPER PGF OC",
+                "BoostClock": 2670,
+                "Length": 381,
+                "Slots": "Quad-slot",
+                "TDP": 285
+            },
+            {
                 "ProductName": "ZOTAC RTX 4070 Ti SUPER Trinity Black",
                 "BoostClock": 2610,
                 "Length": 307,
@@ -4616,42 +4644,42 @@
                 "ProductName": "ASUS TUF RTX 4080 GAMING",
                 "BoostClock": 2505,
                 "Length": 348,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ASUS TUF RTX 4080 GAMING OC",
                 "BoostClock": 2595,
                 "Length": 348,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4080 GAMING",
                 "BoostClock": 2505,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4080 GAMING OC",
                 "BoostClock": 2625,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4080 GAMING WHITE",
                 "BoostClock": 2505,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4080 GAMING WHITE OC",
                 "BoostClock": 2625,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -4700,14 +4728,14 @@
                 "ProductName": "Colorful iGame RTX 4080 Neptune",
                 "BoostClock": 2505,
                 "Length": 254,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "Colorful iGame RTX 4080 Neptune OC",
                 "BoostClock": 2640,
                 "Length": 254,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 470
             },
             {
@@ -4819,14 +4847,14 @@
                 "ProductName": "Gainward RTX 4080 Phantom",
                 "BoostClock": 2505,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "Gainward RTX 4080 Phantom GS",
                 "BoostClock": 2640,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -4875,7 +4903,7 @@
                 "ProductName": "GALAX RTX 4080 HOF LAB PLUS-X",
                 "BoostClock": 2640,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 470
             },
             {
@@ -4910,56 +4938,56 @@
                 "ProductName": "GALAX RTX 4080 SG (1-Click OC)",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GALAX RTX 4080 SG White (1-Click OC)",
                 "BoostClock": 2565,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GALAX RTX 4080 ST (1-Click OC)",
                 "BoostClock": 2505,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4080 MASTER",
                 "BoostClock": 2550,
                 "Length": 357,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4080 XTREME WATERFORCE",
                 "BoostClock": 2565,
                 "Length": 236,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4080 XTREME WATERFORCE WB",
                 "BoostClock": 2565,
                 "Length": 235,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE RTX 4080 AERO",
                 "BoostClock": 2505,
                 "Length": 342,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE RTX 4080 AERO OC",
                 "BoostClock": 2535,
                 "Length": 342,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -5001,14 +5029,14 @@
                 "ProductName": "Inno3D iChill RTX 4080 BLACK",
                 "BoostClock": 2565,
                 "Length": 280,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 340
             },
             {
                 "ProductName": "Inno3D iChill RTX 4080 FROSTBITE",
                 "BoostClock": 2565,
                 "Length": 200,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 340
             },
             {
@@ -5050,7 +5078,7 @@
                 "ProductName": "KUROUTOSHIKOU RTX 4080 GALAKURO",
                 "BoostClock": 2580,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -5155,14 +5183,14 @@
                 "ProductName": "MSI RTX 4080 SUPRIM",
                 "BoostClock": 2505,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "MSI RTX 4080 SUPRIM X",
                 "BoostClock": 2625,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -5194,24 +5222,31 @@
                 "TDP": 320
             },
             {
+                "ProductName": "ONDA RTX 4080 Magic Sword",
+                "BoostClock": 2505,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 320
+            },
+            {
                 "ProductName": "Palit RTX 4080 GameRock",
                 "BoostClock": 2505,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 340
             },
             {
                 "ProductName": "Palit RTX 4080 GameRock OC",
                 "BoostClock": 2640,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 340
             },
             {
                 "ProductName": "Palit RTX 4080 GameRock OmniBlack",
                 "BoostClock": 2505,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 340
             },
             {
@@ -5281,35 +5316,35 @@
                 "ProductName": "ZOTAC RTX 4080 AMP Extreme AIRO",
                 "BoostClock": 2565,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ZOTAC RTX 4080 AMP Extreme AIRO Moon White",
                 "BoostClock": 2565,
                 "Length": 355,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ZOTAC RTX 4080 Apocalypse OC",
                 "BoostClock": 2565,
                 "Length": 367,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ZOTAC RTX 4080 Trinity",
                 "BoostClock": 2505,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ZOTAC RTX 4080 Trinity OC",
                 "BoostClock": 2520,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             }
         ]
@@ -5332,14 +5367,14 @@
                 "ProductName": "ASUS ProArt RTX 4080 SUPER",
                 "BoostClock": 2550,
                 "Length": 300,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "ASUS ProArt RTX 4080 SUPER OC",
                 "BoostClock": 2610,
                 "Length": 300,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
@@ -5472,14 +5507,21 @@
                 "ProductName": "Gainward RTX 4080 SUPER Python III",
                 "BoostClock": 2550,
                 "Length": 294,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "Gainward RTX 4080 SUPER Python III OC",
                 "BoostClock": 2580,
                 "Length": 294,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
+                "TDP": 320
+            },
+            {
+                "ProductName": "GALAX RTX 4080 SUPER 3X",
+                "BoostClock": 2550,
+                "Length": 316,
+                "Slots": "Triple-slot",
                 "TDP": 320
             },
             {
@@ -5497,6 +5539,13 @@
                 "TDP": 320
             },
             {
+                "ProductName": "GALAX RTX 4080 SUPER SG 1-Click OC White",
+                "BoostClock": 2610,
+                "Length": 336,
+                "Slots": "Triple-slot",
+                "TDP": 320
+            },
+            {
                 "ProductName": "GALAX RTX 4080 SUPER ST 1-Click OC",
                 "BoostClock": 2550,
                 "Length": 336,
@@ -5507,28 +5556,28 @@
                 "ProductName": "GIGABYTE AORUS RTX 4080 SUPER MASTER",
                 "BoostClock": 2625,
                 "Length": 357,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4080 SUPER XTREME ICE",
                 "BoostClock": 2700,
                 "Length": 357,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE RTX 4080 SUPER AERO OC",
                 "BoostClock": 2595,
                 "Length": 342,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "GIGABYTE RTX 4080 SUPER GAMING OC",
                 "BoostClock": 2595,
                 "Length": 342,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -5549,14 +5598,14 @@
                 "ProductName": "Inno3D RTX 4080 SUPER iCHILL BLACK",
                 "BoostClock": 2610,
                 "Length": 280,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "Inno3D RTX 4080 SUPER iCHILL FROSTBITE",
                 "BoostClock": 2610,
                 "Length": 200,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
@@ -5570,7 +5619,7 @@
                 "ProductName": "Inno3D RTX 4080 SUPER X3",
                 "BoostClock": 2550,
                 "Length": 337,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 320
             },
             {
@@ -5696,14 +5745,14 @@
                 "ProductName": "MSI RTX 4080 SUPER SUPRIM",
                 "BoostClock": 2610,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
                 "ProductName": "MSI RTX 4080 SUPER SUPRIM X",
                 "BoostClock": 2640,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -5780,7 +5829,7 @@
                 "ProductName": "ZOTAC RTX 4080 SUPER AMP Extreme AIRO",
                 "BoostClock": 2610,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 320
             },
             {
@@ -5817,14 +5866,14 @@
                 "ProductName": "ASUS TUF RTX 4090 GAMING",
                 "BoostClock": 2520,
                 "Length": 348,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ASUS TUF RTX 4090 GAMING OC",
                 "BoostClock": 2565,
                 "Length": 348,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -5852,42 +5901,42 @@
                 "ProductName": "ASUS ROG STRIX LC RTX 4090 GAMING OC",
                 "BoostClock": 2610,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4090 GAMING",
                 "BoostClock": 2520,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4090 GAMING OC",
                 "BoostClock": 2610,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4090 GAMING WHITE",
                 "BoostClock": 2520,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4090 GAMING WHITE OC",
                 "BoostClock": 2610,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ASUS ROG STRIX RTX 4090 OC EVA-02",
                 "BoostClock": 2610,
                 "Length": 358,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -5936,14 +5985,14 @@
                 "ProductName": "Colorful iGame RTX 4090 Neptune",
                 "BoostClock": 2520,
                 "Length": 254,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Colorful iGame RTX 4090 Neptune OC",
                 "BoostClock": 2640,
                 "Length": 254,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 550
             },
             {
@@ -6013,14 +6062,14 @@
                 "ProductName": "Gainward RTX 4090 Phantom",
                 "BoostClock": 2520,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Gainward RTX 4090 Phantom GS",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -6041,28 +6090,28 @@
                 "ProductName": "GALAX RTX 4090 HOF OC LAB",
                 "BoostClock": 2595,
                 "Length": 344,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 550
             },
             {
                 "ProductName": "GALAX RTX 4090 HOF OC LAB PLUS",
                 "BoostClock": 2625,
                 "Length": 344,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 550
             },
             {
                 "ProductName": "GALAX RTX 4090 Hydro",
                 "BoostClock": 2580,
                 "Length": 203,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GALAX RTX 4090 Hydro White",
                 "BoostClock": 2580,
                 "Length": 203,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
@@ -6090,14 +6139,14 @@
                 "ProductName": "GALAX RTX 4090 ST (1-Click OC)",
                 "BoostClock": 2520,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GALAX RTX 4090 ST V2 (1-Click OC)",
                 "BoostClock": 2520,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -6111,56 +6160,56 @@
                 "ProductName": "GIGABYTE AORUS RTX 4090 MASTER",
                 "BoostClock": 2550,
                 "Length": 359,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4090 XTREME WATERFORCE",
                 "BoostClock": 2565,
                 "Length": 238,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GIGABYTE AORUS RTX 4090 XTREME WATERFORCE Rev. 1.1",
                 "BoostClock": 2565,
                 "Length": 238,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GIGABYTE RTX 4090 AERO OC",
                 "BoostClock": 2535,
                 "Length": 342,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GIGABYTE RTX 4090 GAMING",
                 "BoostClock": 2520,
                 "Length": 340,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GIGABYTE RTX 4090 GAMING OC",
                 "BoostClock": 2535,
                 "Length": 340,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GIGABYTE RTX 4090 TURBO",
                 "BoostClock": 2520,
                 "Length": 267,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "GIGABYTE RTX 4090 WINDFORCE",
                 "BoostClock": 2520,
                 "Length": 331,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -6181,28 +6230,28 @@
                 "ProductName": "Inno3D iChill RTX 4090 BLACK",
                 "BoostClock": 2580,
                 "Length": 280,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Inno3D iChill RTX 4090 FROSTBITE",
                 "BoostClock": 2580,
                 "Length": 200,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Inno3D iChill RTX 4090 FROSTBITE PRO",
                 "BoostClock": 2520,
                 "Length": 208,
-                "Slots": " Single-slot",
+                "Slots": "Single-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Inno3D iChill RTX 4090 FROSTBITE ULTRA",
                 "BoostClock": 2595,
                 "Length": 223,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
@@ -6223,49 +6272,49 @@
                 "ProductName": "KFA2 RTX 4090 HOF OC LAB",
                 "BoostClock": 2595,
                 "Length": 344,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 550
             },
             {
                 "ProductName": "KFA2 RTX 4090 Hydro",
                 "BoostClock": 2580,
                 "Length": 203,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "KFA2 RTX 4090 Hydro White",
                 "BoostClock": 2580,
                 "Length": 203,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "KFA2 RTX 4090 SG (1-Click OC)",
                 "BoostClock": 2580,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "KFA2 RTX 4090 ST (1-Click OC)",
                 "BoostClock": 2520,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "KFA2 RTX 4090 ST V2 (1-Click OC)",
                 "BoostClock": 2520,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "KUROUTOSHIKOU RTX 4090 GALAKURO",
                 "BoostClock": 2580,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -6321,7 +6370,7 @@
                 "ProductName": "MSI RTX 4090 GAMING TRIO",
                 "BoostClock": 2520,
                 "Length": 337,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -6335,42 +6384,42 @@
                 "ProductName": "MSI RTX 4090 GAMING X TRIO",
                 "BoostClock": 2595,
                 "Length": 337,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "MSI RTX 4090 GAMING X TRIO Classic",
                 "BoostClock": 2595,
                 "Length": 337,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "MSI RTX 4090 SUPRIM",
                 "BoostClock": 2595,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "MSI RTX 4090 SUPRIM LIQUID",
                 "BoostClock": 2595,
                 "Length": 280,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "MSI RTX 4090 SUPRIM LIQUID X",
                 "BoostClock": 2625,
                 "Length": 280,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "MSI RTX 4090 SUPRIM X",
                 "BoostClock": 2625,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -6412,21 +6461,21 @@
                 "ProductName": "Palit RTX 4090 GameRock",
                 "BoostClock": 2520,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Palit RTX 4090 GameRock OC",
                 "BoostClock": 2610,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Palit RTX 4090 GameRock OmniBlack",
                 "BoostClock": 2520,
                 "Length": 329,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
@@ -6454,63 +6503,63 @@
                 "ProductName": "PNY XLR8 RTX 4090 VERTO EPIC-X Triple Fan",
                 "BoostClock": 2520,
                 "Length": 332,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "PNY XLR8 RTX 4090 VERTO EPIC-X Triple Fan OC",
                 "BoostClock": 2565,
                 "Length": 332,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "Yeston RTX 4090 Deluxe HA",
                 "BoostClock": 2520,
                 "Length": 330,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ZOTAC RTX 4090 AMP Extreme AIRO",
                 "BoostClock": 2580,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ZOTAC RTX 4090 AMP Extreme AIRO Moon White",
                 "BoostClock": 2580,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ZOTAC RTX 4090 Apocalypse OC",
                 "BoostClock": 2550,
                 "Length": 367,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ZOTAC RTX 4090 PGF OC",
                 "BoostClock": 2625,
                 "Length": 367,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ZOTAC RTX 4090 Trinity",
                 "BoostClock": 2520,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             },
             {
                 "ProductName": "ZOTAC RTX 4090 Trinity OC",
                 "BoostClock": 2535,
                 "Length": 356,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 450
             }
         ]
@@ -6547,7 +6596,7 @@
                 "ProductName": "Colorful RTX 4090 D Neptune",
                 "BoostClock": 2520,
                 "Length": 254,
-                "Slots": " Dual-slot",
+                "Slots": "Dual-slot",
                 "TDP": 425
             },
             {
@@ -6575,7 +6624,7 @@
                 "ProductName": "Gainward RTX 4090 D Glare",
                 "BoostClock": 2520,
                 "Length": 350,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 425
             },
             {
@@ -6617,7 +6666,7 @@
                 "ProductName": "MSI RTX 4090 D SUPRIM X",
                 "BoostClock": 2520,
                 "Length": 336,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 425
             },
             {
@@ -6626,6 +6675,1351 @@
                 "Length": 381,
                 "Slots": "Triple-slot",
                 "TDP": 425
+            }
+        ]
+    },
+    {
+        "Manufacturer": "NVIDIA",
+        "Series": "RTX 5070 Ti",
+        "Generation": "GeForce 50",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "MemoryBus": "256 bit",
+        "BoostClock": 2452,
+        "Benchmark": 27668,
+        "Power": 300,
+        "Length": 304,
+        "Slot": "Dual-slot",
+        "Width": 137,
+        "ProductSpec": [
+            {
+                "ProductName": "ASUS PRIME RTX 5070 Ti",
+                "BoostClock": 2452,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS PRIME RTX 5070 Ti OC Edition",
+                "BoostClock": 2572,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5070 Ti",
+                "BoostClock": 2452,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5070 Ti OC Edition",
+                "BoostClock": 2588,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS ROG Strix RTX 5070 Ti",
+                "BoostClock": 2452,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS ROG Strix RTX 5070 Ti OC Edition",
+                "BoostClock": 2602,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "AX Gaming RTX 5070 Ti X3W",
+                "BoostClock": 2452,
+                "Length": 316,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Phantom",
+                "BoostClock": 2452,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Phantom GS",
+                "BoostClock": 2512,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Phoenix",
+                "BoostClock": 2452,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Phoenix GS",
+                "BoostClock": 2452,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti 1-Click OC",
+                "BoostClock": 2467,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti 1-Click OC White",
+                "BoostClock": 2467,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti EX Gamer 1-Click OC",
+                "BoostClock": 2497,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti EX Gamer 1-Click OC White",
+                "BoostClock": 2497,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5070 Ti MASTER",
+                "BoostClock": 2670,
+                "Length": 360,
+                "Slots": "Quad-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 Ti AERO OC",
+                "BoostClock": 2588,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 Ti EAGLE OC ICE SFF",
+                "BoostClock": 2542,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 Ti EAGLE OC SFF",
+                "BoostClock": 2542,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 Ti GAMING OC",
+                "BoostClock": 2588,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 Ti WINDFORCE OC SFF",
+                "BoostClock": 2497,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 Ti iCHILL X3",
+                "BoostClock": 2512,
+                "Length": 334,
+                "Slots": "Quad-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 Ti TWIN X2 OC WHITE",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 Ti X3",
+                "BoostClock": 2452,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 Ti X3 OC",
+                "BoostClock": 2482,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 Ti X3 OC WHITE",
+                "BoostClock": 2482,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 Ti 1-Click OC",
+                "BoostClock": 2467,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 Ti 1-Click OC White",
+                "BoostClock": 2467,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 Ti EX Gamer 1-Click OC",
+                "BoostClock": 2497,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 Ti EX Gamer 1-Click OC White",
+                "BoostClock": 2497,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Manli Gallardo RTX 5070 Ti OC",
+                "BoostClock": 2512,
+                "Length": 359,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Manli Nebula RTX 5070 Ti",
+                "BoostClock": 2452,
+                "Length": 312,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Manli Polar Fox RTX 5070 Ti OC",
+                "BoostClock": 2482,
+                "Length": 312,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Manli Stellar RTX 5070 Ti OC",
+                "BoostClock": 2482,
+                "Length": 315,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti GAMING TRIO OC PLUS",
+                "BoostClock": 2572,
+                "Length": 338,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti GAMING TRIO PLUS",
+                "BoostClock": 2452,
+                "Length": 338,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti INSPIRE OC PLUS",
+                "BoostClock": 2482,
+                "Length": 288,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti SHADOW 3X",
+                "BoostClock": 2452,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti SHADOW 3X OC",
+                "BoostClock": 2482,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti VANGUARD SOC",
+                "BoostClock": 2588,
+                "Length": 357,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti VANGUARD SOC LIMITED EDITION",
+                "BoostClock": 2588,
+                "Length": 357,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti VENTUS 3X",
+                "BoostClock": 2452,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti VENTUS 3X OC",
+                "BoostClock": 2482,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RTX 5070 Ti VENTUS 3X OC PLUS",
+                "BoostClock": 2482,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Palit RTX 5070 Ti GameRock",
+                "BoostClock": 2452,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Palit RTX 5070 Ti GameRock OC",
+                "BoostClock": 2512,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Palit RTX 5070 Ti GamingPro",
+                "BoostClock": 2452,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Palit RTX 5070 Ti GamingPro OC",
+                "BoostClock": 2482,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti ARGB EPIC-X Overclocked Triple Fan",
+                "BoostClock": 2452,
+                "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti ARGB EPIC-X Triple Fan",
+                "BoostClock": 2452,
+                "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti Overclocked Triple Fan",
+                "BoostClock": 2452,
+                "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti Triple Fan",
+                "BoostClock": 2452,
+                "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 Ti SOLID CORE",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 Ti SOLID CORE OC",
+                "BoostClock": 2482,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            }
+        ]
+    },
+    {
+        "Manufacturer": "NVIDIA",
+        "Series": "RTX 5080",
+        "Generation": "GeForce 50",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "MemoryBus": "256 bit",
+        "BoostClock": 2617,
+        "Benchmark": 33116,
+        "Power": 360,
+        "Length": 304,
+        "Slot": "Dual-slot",
+        "Width": 137,
+        "ProductSpec": [
+            {
+                "ProductName": "ASUS PRIME RTX 5080",
+                "BoostClock": 2617,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ASUS PRIME RTX 5080 OC Edition",
+                "BoostClock": 2655,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5080",
+                "BoostClock": 2617,
+                "Length": 348,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5080 OC Edition",
+                "BoostClock": 2700,
+                "Length": 348,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ASUS ROG Astral RTX 5080",
+                "BoostClock": 2617,
+                "Length": 358,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ASUS ROG Astral RTX 5080 OC Edition",
+                "BoostClock": 2760,
+                "Length": 358,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "AX Gaming RTX 5080 X3W OC",
+                "BoostClock": 2640,
+                "Length": 316,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5080 Advanced OC",
+                "BoostClock": 2670,
+                "Length": 355,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5080 Neptune OC",
+                "BoostClock": 2695,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5080 Ultra W OC",
+                "BoostClock": 2655,
+                "Length": 331,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5080 Vulcan OC",
+                "BoostClock": 2695,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Gainward RTX 5080 Glare OC",
+                "BoostClock": 2655,
+                "Length": 306,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Gainward RTX 5080 Phantom",
+                "BoostClock": 2617,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Gainward RTX 5080 Phantom GS",
+                "BoostClock": 2730,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Gainward RTX 5080 Phoenix",
+                "BoostClock": 2617,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Gainward RTX 5080 Phoenix GS",
+                "BoostClock": 2700,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Gainward RTX 5080 Wind OC",
+                "BoostClock": 2625,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 1-Click OC",
+                "BoostClock": 2625,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 1-Click OC White",
+                "BoostClock": 2625,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 EX Gamer 1-Click OC",
+                "BoostClock": 2617,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 EX Gamer 1-Click OC White",
+                "BoostClock": 2617,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5080 MASTER",
+                "BoostClock": 2805,
+                "Length": 360,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5080 MASTER ICE",
+                "BoostClock": 2805,
+                "Length": 360,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5080 XTREME WATERFORCE",
+                "BoostClock": 2805,
+                "Length": 220,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5080 XTREME WATERFORCE WB",
+                "BoostClock": 2805,
+                "Length": 208,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5080 AERO OC SFF",
+                "BoostClock": 2730,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5080 GAMING OC",
+                "BoostClock": 2730,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5080 WINDFORCE OC SFF",
+                "BoostClock": 2670,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5080 WINDFORCE SFF",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Inno3D RTX 5080 iCHILL Frostbite",
+                "BoostClock": 2640,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Inno3D RTX 5080 iCHILL X3",
+                "BoostClock": 2670,
+                "Length": 334,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Inno3D RTX 5080 X3",
+                "BoostClock": 2617,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Inno3D RTX 5080 X3 OC",
+                "BoostClock": 2640,
+                "Length": 333,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Inno3D RTX 5080 X3 OC WHITE",
+                "BoostClock": 2640,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "KFA2 RTX 5080 1-Click OC",
+                "BoostClock": 2625,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "KFA2 RTX 5080 1-Click OC White",
+                "BoostClock": 2625,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "KFA2 RTX 5080 EX Gamer 1-Click OC",
+                "BoostClock": 2617,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "KFA2 RTX 5080 EX Gamer 1-Click OC White",
+                "BoostClock": 2617,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU RTX 5080 GALAKURO",
+                "BoostClock": 2625,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Manli Gallardo RTX 5080 OC",
+                "BoostClock": 2670,
+                "Length": 359,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Manli Nebula RTX 5080",
+                "BoostClock": 2617,
+                "Length": 312,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Manli Polar Fox RTX 5080 OC",
+                "BoostClock": 2640,
+                "Length": 312,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Manli Stellar RTX 5080 OC",
+                "BoostClock": 2640,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 GAMING TRIO",
+                "BoostClock": 2617,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 GAMING TRIO OC",
+                "BoostClock": 2700,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 GAMING TRIO OC WHITE",
+                "BoostClock": 2700,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 GAMING TRIO WHITE",
+                "BoostClock": 2617,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 INSPIRE 3X",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 INSPIRE 3X OC",
+                "BoostClock": 2640,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 SUPRIM LIQUID SOC",
+                "BoostClock": 2745,
+                "Length": 280,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 SUPRIM OC",
+                "BoostClock": 2700,
+                "Length": 359,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 SUPRIM SOC",
+                "BoostClock": 2745,
+                "Length": 359,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 VANGUARD SOC",
+                "BoostClock": 2730,
+                "Length": 357,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 VANGUARD SOC LAUNCH EDITION",
+                "BoostClock": 2730,
+                "Length": 357,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 VENTUS 3X OC",
+                "BoostClock": 2640,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 VENTUS 3X OC PLUS",
+                "BoostClock": 2640,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MSI RTX 5080 VENTUS 3X OC WHITE",
+                "BoostClock": 2640,
+                "Length": 338,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Palit RTX 5080 GameRock",
+                "BoostClock": 2617,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Palit RTX 5080 GameRock OC",
+                "BoostClock": 2730,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Palit RTX 5080 GamingPro",
+                "BoostClock": 2617,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Palit RTX 5080 GamingPro OC",
+                "BoostClock": 2700,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "PNY RTX 5080 ARGB EPIC-X Overclocked Triple Fan",
+                "BoostClock": 2780,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "PNY RTX 5080 ARGB EPIC-X Triple Fan",
+                "BoostClock": 2617,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "PNY RTX 5080 Overclocked Triple Fan",
+                "BoostClock": 2730,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "PNY RTX 5080 Triple Fan",
+                "BoostClock": 2617,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ZOTAC RTX 5080 AMP Extreme INFINITY",
+                "BoostClock": 2670,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ZOTAC RTX 5080 SOLID",
+                "BoostClock": 2617,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ZOTAC RTX 5080 SOLID OC",
+                "BoostClock": 2640,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ZOTAC RTX 5080 XGAMING OC",
+                "BoostClock": 2640,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            }
+        ]
+    },
+    {
+        "Manufacturer": "NVIDIA",
+        "Series": "RTX 5090",
+        "Generation": "GeForce 50",
+        "MemorySize": 32,
+        "MemoryType": "GDDR7",
+        "MemoryBus": "512 bit",
+        "BoostClock": 2407,
+        "Benchmark": 48052,
+        "Power": 575,
+        "Length": 304,
+        "Slot": "Dual-slot",
+        "Width": 137,
+        "ProductSpec": [
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5090",
+                "BoostClock": 2407,
+                "Length": 348,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5090 OC Edition",
+                "BoostClock": 2407,
+                "Length": 348,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral LC RTX 5090",
+                "BoostClock": 2407,
+                "Length": 288,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral LC RTX 5090 OC Edition",
+                "BoostClock": 2580,
+                "Length": 288,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral RTX 5090",
+                "BoostClock": 2407,
+                "Length": 358,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral RTX 5090 Dhahab OC Edition",
+                "BoostClock": 2580,
+                "Length": 358,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral RTX 5090 OC Edition",
+                "BoostClock": 2580,
+                "Length": 358,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Gainward RTX 5090 Phantom",
+                "BoostClock": 2407,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Gainward RTX 5090 Phantom GS",
+                "BoostClock": 2527,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GALAX RTX 5090 1-Click OC",
+                "BoostClock": 2407,
+                "Length": 326,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5090 MASTER",
+                "BoostClock": 2655,
+                "Length": 360,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5090 MASTER ICE",
+                "BoostClock": 2655,
+                "Length": 360,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5090 XTREME WATERFORCE",
+                "BoostClock": 2655,
+                "Length": 220,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5090 XTREME WATERFORCE WB",
+                "BoostClock": 2655,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5090 GAMING OC",
+                "BoostClock": 2550,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5090 WINDFORCE",
+                "BoostClock": 2407,
+                "Length": 342,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5090 WINDFORCE OC",
+                "BoostClock": 2407,
+                "Length": 342,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Inno3D RTX 5090 iCHILL Frostbite",
+                "BoostClock": 2407,
+                "Length": 204,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Inno3D RTX 5090 iCHILL X3",
+                "BoostClock": 2407,
+                "Length": 334,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Inno3D RTX 5090 X3",
+                "BoostClock": 2407,
+                "Length": 333,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Inno3D RTX 5090 X3 OC WHITE",
+                "BoostClock": 2407,
+                "Length": 333,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "KFA2 RTX 5090 1-Click OC",
+                "BoostClock": 2407,
+                "Length": 326,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Manli Gallardo RTX 5090 OC",
+                "BoostClock": 2482,
+                "Length": 359,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Manli Stellar RTX 5090 OC",
+                "BoostClock": 2437,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 GAMING TRIO OC",
+                "BoostClock": 2482,
+                "Length": 359,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 Special Edition Air Cooling",
+                "BoostClock": 2407,
+                "Length": 357,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 Special Edition Liquid Cooling",
+                "BoostClock": 2407,
+                "Length": 357,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 SUPRIM LIQUID SOC",
+                "BoostClock": 2527,
+                "Length": 280,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 SUPRIM SOC",
+                "BoostClock": 2565,
+                "Length": 359,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 VANGUARD SOC",
+                "BoostClock": 2512,
+                "Length": 357,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 VANGUARD SOC LAUNCH EDITION",
+                "BoostClock": 2512,
+                "Length": 357,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 VENTUS 3X OC",
+                "BoostClock": 2437,
+                "Length": 325,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Palit RTX 5090 GameRock",
+                "BoostClock": 2407,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Palit RTX 5090 GameRock OC",
+                "BoostClock": 2527,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "PNY RTX 5090 ARGB EPIC-X Overclocked Triple Fan",
+                "BoostClock": 2407,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "PNY RTX 5090 ARGB EPIC-X Triple Fan",
+                "BoostClock": 2407,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "PNY RTX 5090 Overclocked Triple Fan",
+                "BoostClock": 2407,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "PNY RTX 5090 Triple Fan",
+                "BoostClock": 2407,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ZOTAC RTX 5090 AMP Extreme INFINITY",
+                "BoostClock": 2467,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ZOTAC RTX 5090 SOLID",
+                "BoostClock": 2407,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ZOTAC RTX 5090 SOLID OC",
+                "BoostClock": 2422,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            }
+        ]
+    },
+    {
+        "Manufacturer": "NVIDIA",
+        "Series": "RTX 5090D",
+        "Generation": "GeForce 50",
+        "MemorySize": 32,
+        "MemoryType": "GDDR7",
+        "MemoryBus": "512 bit",
+        "BoostClock": 2407,
+        "Benchmark": 47297,
+        "Power": 575,
+        "Length": 304,
+        "Slot": "Dual-slot",
+        "Width": 137,
+        "ProductSpec": [
+            {
+                "ProductName": "ASUS ROG Astral LC RTX 5090 D Water Cooled",
+                "BoostClock": 2407,
+                "Length": 288,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral LC RTX 5090 D Water Cooled OC",
+                "BoostClock": 2580,
+                "Length": 288,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral RTX 5090 D GAMING",
+                "BoostClock": 2407,
+                "Length": 358,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ASUS ROG Astral RTX 5090 D GAMING OC",
+                "BoostClock": 2580,
+                "Length": 358,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "AX Gaming RTX 5090 D X3W",
+                "BoostClock": 2407,
+                "Length": 358,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5090 D Advanced OC",
+                "BoostClock": 2512,
+                "Length": 355,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5090 D Neptune OC",
+                "BoostClock": 2527,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5090 D Vulcan OC",
+                "BoostClock": 2527,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5090 D Vulcan W OC",
+                "BoostClock": 2527,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Gainward RTX 5090 D Snow",
+                "BoostClock": 2437,
+                "Length": 339,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Gainward RTX 5090 D Snow OC",
+                "BoostClock": 2437,
+                "Length": 339,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GALAX RTX 5090 D 1-Click OC",
+                "BoostClock": 2407,
+                "Length": 326,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Inno3D RTX 5090 D Night X3",
+                "BoostClock": 2407,
+                "Length": 335,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Inno3D RTX 5090 D Super Ice Dragon",
+                "BoostClock": 2467,
+                "Length": 334,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Manli Renaissance RTX 5090 D",
+                "BoostClock": 2407,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Manli Renaissance RTX 5090 D OC",
+                "BoostClock": 2482,
+                "Length": 359,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Manli Renaissance RTX 5090 D OC",
+                "BoostClock": 2437,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ZOTAC RTX 5090 D SOLID",
+                "BoostClock": 2407,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "ZOTAC RTX 5090 D SOLID OC",
+                "BoostClock": 2437,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 575
             }
         ]
     },
@@ -6675,7 +8069,7 @@
                 "ProductName": "ASUS TUF RX 6500 XT GAMING OC",
                 "BoostClock": 2825,
                 "Length": 250,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 107
             },
             {
@@ -6959,7 +8353,7 @@
                 "ProductName": "ASUS ROG STRIX RX 6600 XT GAMING OC",
                 "BoostClock": 2607,
                 "Length": 243,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -7015,14 +8409,14 @@
                 "ProductName": "MSI RX 6600 XT GAMING",
                 "BoostClock": 2589,
                 "Length": 277,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
                 "ProductName": "MSI RX 6600 XT GAMING X",
                 "BoostClock": 2607,
                 "Length": 277,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -7064,7 +8458,7 @@
                 "ProductName": "PowerColor Red Devil RX 6600 XT",
                 "BoostClock": 2607,
                 "Length": 251,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -7078,28 +8472,28 @@
                 "ProductName": "Sapphire PULSE RX 6600 XT",
                 "BoostClock": 2593,
                 "Length": 240,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
                 "ProductName": "VASTARMOR RX 6600 XT ALLOY",
                 "BoostClock": 2607,
                 "Length": 272,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
                 "ProductName": "VASTARMOR RX 6600 XT STAR",
                 "BoostClock": 2589,
                 "Length": 272,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
                 "ProductName": "XFX Speedster MERC 308 RX 6600 XT",
                 "BoostClock": 2607,
                 "Length": 274,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 160
             },
             {
@@ -7206,7 +8600,7 @@
                 "ProductName": "ASUS ROG STRIX RX 7600 GAMING OC",
                 "BoostClock": 2754,
                 "Length": 281,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 165
             },
             {
@@ -7283,7 +8677,7 @@
                 "ProductName": "VASTARMOR RX 7600 Alloy",
                 "BoostClock": 2754,
                 "Length": 272,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 185
             },
             {
@@ -7311,7 +8705,7 @@
                 "ProductName": "Yeston RX 7600 Game Master",
                 "BoostClock": 2655,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 165
             }
         ]
@@ -7355,14 +8749,14 @@
                 "ProductName": "ASUS TUF RX 7600 XT GAMING OC",
                 "BoostClock": 2810,
                 "Length": 300,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 190
             },
             {
                 "ProductName": "GIGABYTE RX 7600 XT GAMING OC",
                 "BoostClock": 2810,
                 "Length": 281,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 190
             },
             {
@@ -7448,14 +8842,14 @@
                 "ProductName": "ASUS TUF RX 7700 XT GAMING",
                 "BoostClock": 2544,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
                 "ProductName": "ASUS TUF RX 7700 XT GAMING OC",
                 "BoostClock": 2599,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
@@ -7469,7 +8863,7 @@
                 "ProductName": "GIGABYTE RX 7700 XT GAMING OC",
                 "BoostClock": 2599,
                 "Length": 302,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
@@ -7511,7 +8905,7 @@
                 "ProductName": "Sapphire NITRO+ RX 7700 XT",
                 "BoostClock": 2599,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 252
             },
             {
@@ -7525,49 +8919,49 @@
                 "ProductName": "Sapphire PURE RX 7700 XT",
                 "BoostClock": 2584,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
                 "ProductName": "Sapphire PURE RX 7700 XT Frostpunk 2 Edition",
                 "BoostClock": 2584,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
                 "ProductName": "VASTARMOR RX 7700 XT Alloy",
                 "BoostClock": 2599,
                 "Length": 263,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
                 "ProductName": "VASTARMOR RX 7700 XT Alloy PRO",
                 "BoostClock": 2599,
                 "Length": 332,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
                 "ProductName": "VASTARMOR RX 7700 XT Alloy White",
                 "BoostClock": 2599,
                 "Length": 263,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
                 "ProductName": "VASTARMOR RX 7700 XT Starry Sky",
                 "BoostClock": 2565,
                 "Length": 263,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
                 "ProductName": "VASTARMOR RX 7700 XT Starry Sky PRO",
                 "BoostClock": 2565,
                 "Length": 263,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             },
             {
@@ -7581,7 +8975,7 @@
                 "ProductName": "Yeston RX 7700 XT Sakura Hitomi SA",
                 "BoostClock": 2544,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 245
             }
         ]
@@ -7639,14 +9033,14 @@
                 "ProductName": "ASUS TUF RX 7800 XT GAMING OC",
                 "BoostClock": 2520,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
                 "ProductName": "ASUS TUF RX 7800 XT GAMING OC WHITE",
                 "BoostClock": 2520,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
@@ -7660,7 +9054,7 @@
                 "ProductName": "GIGABYTE RX 7800 XT GAMING OC",
                 "BoostClock": 2565,
                 "Length": 302,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
@@ -7702,14 +9096,14 @@
                 "ProductName": "PowerColor Red Devil RX 7800 XT",
                 "BoostClock": 2520,
                 "Length": 332,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
                 "ProductName": "PowerColor Red Devil RX 7800 XT Limited Edition",
                 "BoostClock": 2565,
                 "Length": 332,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
@@ -7723,28 +9117,28 @@
                 "ProductName": "Sapphire NITRO+ RX 7800 XT",
                 "BoostClock": 2565,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 288
             },
             {
                 "ProductName": "Sapphire PULSE RX 7800 XT",
                 "BoostClock": 2430,
                 "Length": 280,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
                 "ProductName": "Sapphire PURE RX 7800 XT",
                 "BoostClock": 2475,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 270
             },
             {
                 "ProductName": "Sapphire PURE RX 7800 XT Once Human Edition",
                 "BoostClock": 2475,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 270
             },
             {
@@ -7758,21 +9152,21 @@
                 "ProductName": "VASTARMOR RX 7800 XT Alloy",
                 "BoostClock": 2565,
                 "Length": 328,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 288
             },
             {
                 "ProductName": "VASTARMOR RX 7800 XT Starry Sky",
                 "BoostClock": 2430,
                 "Length": 328,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
                 "ProductName": "XFX Speedster MERC 319 RX 7800 XT Black Edition",
                 "BoostClock": 2565,
                 "Length": 326,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             },
             {
@@ -7800,7 +9194,7 @@
                 "ProductName": "Yeston RX 7800 XT Sakura Hitomi Blossom SA",
                 "BoostClock": 2430,
                 "Length": 329,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 263
             }
         ]
@@ -7822,7 +9216,7 @@
             {
                 "ProductName": "ASRock RX 7900 GRE Challenger OC",
                 "BoostClock": 2293,
-                "Length": 276,
+                "Length": 269,
                 "Slots": "Triple-slot",
                 "TDP": 260
             },
@@ -7844,21 +9238,21 @@
                 "ProductName": "ASUS TUF RX 7900 GRE GAMING OC",
                 "BoostClock": 2333,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 260
             },
             {
                 "ProductName": "ASUS TUF RX 7900 GRE WHITE GAMING OC",
                 "BoostClock": 2333,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 260
             },
             {
                 "ProductName": "GIGABYTE RX 7900 GRE GAMING OC",
                 "BoostClock": 2391,
                 "Length": 302,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 260
             },
             {
@@ -7879,28 +9273,28 @@
                 "ProductName": "PowerColor Red Devil RX 7900 GRE",
                 "BoostClock": 2391,
                 "Length": 338,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 260
             },
             {
                 "ProductName": "Sapphire NITRO+ RX 7900 GRE",
                 "BoostClock": 2391,
                 "Length": 320,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 260
             },
             {
                 "ProductName": "Sapphire PULSE RX 7900 GRE",
                 "BoostClock": 2293,
                 "Length": 313,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 260
             },
             {
                 "ProductName": "Sapphire PURE RX 7900 GRE",
                 "BoostClock": 2333,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 275
             },
             {
@@ -7914,7 +9308,7 @@
                 "ProductName": "XFX RX 7900 GRE",
                 "BoostClock": 2391,
                 "Length": 335,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 260
             }
         ]
@@ -7965,28 +9359,28 @@
                 "ProductName": "ASRock RX 7900 XT Phantom Gaming OC",
                 "BoostClock": 2449,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "ASRock RX 7900 XT Phantom Gaming White OC",
                 "BoostClock": 2449,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "ASRock RX 7900 XT Taichi OC",
                 "BoostClock": 2559,
                 "Length": 345,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "ASUS DUAL RX 7900 XT OC",
-                "BoostClock": 2534,
+                "BoostClock": 2450,
                 "Length": 323,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
@@ -8000,14 +9394,14 @@
                 "ProductName": "ASUS TUF RX 7900 XT GAMING",
                 "BoostClock": 2394,
                 "Length": 353,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "ASUS TUF RX 7900 XT GAMING OC",
                 "BoostClock": 2499,
                 "Length": 353,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 300
             },
             {
@@ -8049,28 +9443,28 @@
                 "ProductName": "MSI RX 7900 XT GAMING TRIO CLASSIC",
                 "BoostClock": 2394,
                 "Length": 325,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 315
             },
             {
                 "ProductName": "PowerColor Hellhound RX 7900 XT",
                 "BoostClock": 2499,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "PowerColor Hellhound Spectral White RX 7900 XT",
                 "BoostClock": 2499,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "PowerColor Red Devil RX 7900 XT",
                 "BoostClock": 2534,
                 "Length": 338,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 300
             },
             {
@@ -8084,14 +9478,14 @@
                 "ProductName": "Sapphire NITRO+ RX 7900 XT Vapor-X",
                 "BoostClock": 2559,
                 "Length": 320,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 368
             },
             {
                 "ProductName": "Sapphire PULSE RX 7900 XT",
                 "BoostClock": 2449,
                 "Length": 313,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 331
             },
             {
@@ -8105,7 +9499,14 @@
                 "ProductName": "VASTARMOR RX 7900 XT Starry Sky",
                 "BoostClock": 2394,
                 "Length": 311,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Quicksilver RX 7900 XT",
+                "BoostClock": 2534,
+                "Length": 344,
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
@@ -8119,21 +9520,21 @@
                 "ProductName": "XFX Speedster MERC310 RX 7900 XT",
                 "BoostClock": 2534,
                 "Length": 344,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "XFX Speedster MERC310 RX 7900 XT Black",
                 "BoostClock": 2559,
                 "Length": 344,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
                 "ProductName": "Yeston RX 7900 XT SAKURA SUGAR",
                 "BoostClock": 2394,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 300
             }
         ]
@@ -8177,7 +9578,7 @@
                 "ProductName": "ASRock RX 7900 XTX Creator",
                 "BoostClock": 2498,
                 "Length": 312,
-                "Slots": " Triple-slot",
+                "Slots": "Dual-slot",
                 "TDP": 355
             },
             {
@@ -8191,28 +9592,28 @@
                 "ProductName": "ASRock RX 7900 XTX Phantom OC",
                 "BoostClock": 2617,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "ASRock RX 7900 XTX Taichi OC",
                 "BoostClock": 2680,
                 "Length": 345,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "ASRock RX 7900 XTX Taichi White OC",
                 "BoostClock": 2680,
                 "Length": 345,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "ASUS DUAL RX 7900 XTX OC",
                 "BoostClock": 2526,
                 "Length": 323,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
@@ -8226,14 +9627,14 @@
                 "ProductName": "ASUS TUF RX 7900 XTX GAMING",
                 "BoostClock": 2498,
                 "Length": 353,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "ASUS TUF RX 7900 XTX GAMING OC",
                 "BoostClock": 2565,
                 "Length": 353,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 355
             },
             {
@@ -8254,7 +9655,7 @@
                 "ProductName": "GIGABYTE AORUS RX 7900 XTX ELITE",
                 "BoostClock": 2680,
                 "Length": 335,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 355
             },
             {
@@ -8282,21 +9683,21 @@
                 "ProductName": "MSI RX 7900 XTX GAMING TRIO CLASSIC",
                 "BoostClock": 2498,
                 "Length": 325,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "PowerColor Hellhound RX 7900 XTX",
                 "BoostClock": 2526,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "PowerColor Hellhound Spectral White RX 7900 XTX",
                 "BoostClock": 2526,
                 "Length": 320,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
@@ -8310,14 +9711,14 @@
                 "ProductName": "PowerColor Red Devil RX 7900 XTX",
                 "BoostClock": 2565,
                 "Length": 338,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "PowerColor Red Devil RX 7900 XTX Limited Edition",
                 "BoostClock": 2565,
                 "Length": 338,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 355
             },
             {
@@ -8331,14 +9732,14 @@
                 "ProductName": "Sapphire NITRO+ RX 7900 XTX Vapor-X",
                 "BoostClock": 2680,
                 "Length": 320,
-                "Slots": " Quad-slot",
+                "Slots": "Quad-slot",
                 "TDP": 420
             },
             {
                 "ProductName": "Sapphire PULSE RX 7900 XTX",
                 "BoostClock": 2526,
                 "Length": 313,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 370
             },
             {
@@ -8352,21 +9753,21 @@
                 "ProductName": "VASTARMOR RX 7900 XTX Starry Sky",
                 "BoostClock": 2498,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "VASTARMOR RX 7900 XTX Super Alloy",
                 "BoostClock": 2680,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "XFX MERCURY MagAir RX 7900 XTX",
                 "BoostClock": 2617,
                 "Length": 346,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
@@ -8380,14 +9781,14 @@
                 "ProductName": "XFX Speedster MERC310 RX 7900 XTX Black",
                 "BoostClock": 2617,
                 "Length": 344,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             },
             {
                 "ProductName": "Yeston RX 7900 XTX SAKURA SUGAR",
                 "BoostClock": 2498,
                 "Length": 330,
-                "Slots": " Triple-slot",
+                "Slots": "Triple-slot",
                 "TDP": 355
             }
         ]

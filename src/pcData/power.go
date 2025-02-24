@@ -215,9 +215,7 @@ func getPowerUSPrice(link string, collector *colly.Collector) PowerSpec {
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Type":
-				if standard == "ATX 2.0" {
-					standard = extractATXStandard(item.ChildText("td"))
-				}
+				standard = comparePSUStandard(standard, extractATXStandard(item.ChildText("td")))
 			}
 		})
 		specData.Standard = standard

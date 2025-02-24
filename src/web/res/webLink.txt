@@ -1,1 +1,7 @@
-https://pangoly.com/en/browse/psu/lian-li
+https://pangoly.com/en/browse/vga/gigabyte
+https://pangoly.com/en/browse/vga/gigabyte?page=2
+https://pangoly.com/en/browse/vga/gigabyte?page=3
+https://pangoly.com/en/browse/vga/gigabyte?page=4
+https://pangoly.com/en/browse/vga/gigabyte?page=5
+https://pangoly.com/en/browse/vga/gigabyte?page=6
+https://pangoly.com/en/browse/vga/gigabyte?page=7

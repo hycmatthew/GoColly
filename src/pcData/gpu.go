@@ -258,7 +258,7 @@ func getGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 				ProductName: item.ChildText("td:nth-child(1)"),
 				BoostClock:  extractNumberFromString(item.ChildText("td:nth-child(3)")),
 				Length:      tempLength,
-				Slots:       tempSlots,
+				Slots:       strings.TrimSpace(tempSlots),
 				TDP:         tempTdp,
 			}
 			subDataList = append(subDataList, subData)

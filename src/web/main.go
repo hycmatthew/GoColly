@@ -149,7 +149,8 @@ func getWebpageLinkData(link string, collector *colly.Collector) []CSVData {
 		// tempData := element.ChildText(".products-grid")
 
 		element.ForEach(".products-grid .productItem", func(i int, item *colly.HTMLElement) {
-			tempName := item.ChildText(".productItemLink header")
+			removedText := item.DOM.Find(".productItemLink header").Children().Remove().End().Text()
+			tempName := strings.TrimSpace(removedText)
 			tempLink := item.ChildAttr(".productItemLink", "href")
 			price := item.ChildText(".price .amprice")
 			updatedName := strings.TrimSpace(RemoveBrandsFromName(brand, tempName))

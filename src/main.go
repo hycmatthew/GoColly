@@ -26,8 +26,8 @@ func main() {
 		pcCase      = "case"
 	)
 
-	getDataName := power
-	isUpdateSpec := false
+	getDataName := gpu
+	isUpdateSpec := true
 
 	if isUpdateSpec {
 		if getDataName == gpu {
@@ -97,7 +97,7 @@ func saveRecordToDatabase(part string, record databaseLogic.DBRecord) {
 GPU SPEC
 */
 func updateGPUSpecLogic() {
-	timeSet := 5000
+	timeSet := 8000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
