@@ -31,7 +31,7 @@ func extractNumberFromString(str string) int {
 
 func extractFloatStringFromString(str string) string {
 	re := regexp.MustCompile(`[\d.]+`)
-	matches := re.FindAllString(str, -1)
+	matches := re.FindAllString(strings.ReplaceAll(str, ",", ""), -1)
 	result := ""
 
 	if len(matches) > 0 {
@@ -198,13 +198,15 @@ func RemoveBrandsFromName(brand, name string) string {
 	re := regexp.MustCompile(pattern)
 
 	count := 0
-	return re.ReplaceAllStringFunc(name, func(matched string) string {
+	nameStr := re.ReplaceAllStringFunc(name, func(matched string) string {
 		if count < 1 {
 			count++
 			return ""
 		}
 		return matched
 	})
+
+	return strings.TrimSpace(nameStr)
 }
 
 // RemoveDuplicates removes duplicate strings from a slice

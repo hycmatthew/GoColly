@@ -3,12 +3,15 @@ package main
 import (
 	"encoding/csv"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"go-colly-lib/src/databaseLogic"
 	"go-colly-lib/src/pcData"
 	"io"
 	"log"
 	"os"
+	"path/filepath"
+	"reflect"
 	"runtime"
 	"time"
 )
@@ -24,21 +27,21 @@ func main() {
 		power       = "power"
 		cooler      = "cooler"
 		pcCase      = "case"
+		gpuScore    = "gpuScore"
 	)
 
 	getDataName := gpu
 	isUpdateSpec := true
 
 	if isUpdateSpec {
-		if getDataName == gpu {
-			updateGPUSpecLogic()
+		if getDataName == gpuScore {
+			updateGPUScoreLogic()
 		} else {
 			updateSpecLogic(getDataName)
 		}
 	} else {
 		updatePriceLogic(getDataName)
 	}
-
 }
 
 func readCsvFile(filePath string) [][]string {
@@ -73,20 +76,114 @@ func saveData(result any, name string) {
 	}
 }
 
-func saveSpecData(result any, name string) {
+// Merge Spec Logic
+func readSpecData(name string) ([]map[string]any, error) {
+	dirPath := "tmp/spec/"
+	filename := name + "Spec.json"
+	filePath := filepath.Join(dirPath, filename)
+	if _, err := os.ReadFile(filePath); errors.Is(err, os.ErrNotExist) {
+		return []map[string]any{}, nil // 文件不存在，返回空数组
+	}
+	jsonData, err := os.ReadFile(filePath)
+	if err != nil {
+		return nil, err
+	}
+	var data []map[string]any
+	if err := json.Unmarshal(jsonData, &data); err != nil {
+		return nil, err
+	}
+	return data, nil
+}
+
+func isSlice(v any) bool {
+	value := reflect.ValueOf(v)
+	return value.Kind() == reflect.Slice
+}
+
+func structToMap(data any) map[string]any {
+	val := reflect.ValueOf(data)
+	if val.Kind() != reflect.Struct {
+		panic("Input must be a struct")
+	}
+	m := make(map[string]any)
+	for i := 0; i < val.NumField(); i++ {
+		field := val.Type().Field(i)
+		if field.PkgPath != "" { // 跳过非导出字段
+			continue
+		}
+		m[field.Name] = val.Field(i).Interface()
+	}
+	return m
+}
+
+func resultToMaps(result any) []map[string]any {
+	if !isSlice(result) {
+		// 单个结构，包装为单元素数组
+		singleMap := structToMap(result)
+		return []map[string]any{singleMap}
+	}
+	sliceVal := reflect.ValueOf(result)
+	maps := make([]map[string]any, sliceVal.Len())
+	for i := 0; i < sliceVal.Len(); i++ {
+		elem := sliceVal.Index(i).Interface()
+		maps[i] = structToMap(elem)
+	}
+	return maps
+}
+
+func updateData(existing []map[string]any, newMaps []map[string]any) []map[string]any {
+	codeIndexMap := make(map[string]int)
+	for i, m := range existing {
+		code, ok := m["Code"].(string)
+		if !ok {
+			panic("Invalid existing data, 'Code' is not a string")
+		}
+		codeIndexMap[code] = i
+	}
+	for _, newMap := range newMaps {
+		code, ok := newMap["Code"].(string)
+		if !ok {
+			panic("Invalid new data, 'Code' is not a string")
+		}
+		if idx, ok := codeIndexMap[code]; ok {
+			existing[idx] = newMap
+		} else {
+			existing = append(existing, newMap)
+		}
+	}
+	return existing
+}
+
+func mergeSpecData(result any, name string, count int) {
+	fmt.Println("mergeSpecData ", name, " - ", count)
+	existing, err := readSpecData(name)
+	if err != nil {
+		fmt.Println("Error reading file:", err)
+		return
+	}
+	newMaps := resultToMaps(result)
+	updated := updateData(existing, newMaps)
+	err = saveSpecData(updated, name)
+	if err != nil {
+		fmt.Println("Error writing file:", err)
+	}
+}
+
+func saveSpecData(result any, name string) error {
 	fmt.Println("save spec started!")
 	jsonData, err := json.Marshal(result)
 	if err != nil {
 		fmt.Println("Error:", err)
-		return
+		return err
 	}
 
 	// Write JSON data to file
 	err = os.WriteFile("tmp/spec/"+name+"Spec.json", jsonData, 0644)
 	if err != nil {
 		fmt.Println("Error:", err)
-		return
+		return err
 	}
+	return nil
 }
 
 func saveRecordToDatabase(part string, record databaseLogic.DBRecord) {
@@ -96,7 +193,7 @@ func saveRecordToDatabase(part string, record databaseLogic.DBRecord) {
 /*
 GPU SPEC
 */
-func updateGPUSpecLogic() {
+func updateGPUScoreLogic() {
 	timeSet := 8000
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
@@ -111,15 +208,15 @@ func updateGPUSpecLogic() {
 	}
 
 	count := 0
-	var specList []pcData.GPUSpec
+	var specList []pcData.GPUScore
 	go func() {
 		for {
 			<-ticker.C
-			gpuRecord := pcData.GetGPUSpec(recordList[count])
+			gpuRecord := pcData.GetGPUScoreSpec(recordList[count])
 			specList = append(specList, gpuRecord)
 			count++
 			if count == len(recordList) {
-				saveSpecData(specList, "gpu")
+				saveSpecData(specList, "gpuScore")
 				ticker.Stop()
 				runtime.Goexit()
 			}
@@ -159,6 +256,26 @@ func updateSpecLogic(name string) {
 				}
 				if count == len(recordList) {
 					saveSpecData(specList, name)
+					ticker.Stop()
+					runtime.Goexit()
+				}
+			}
+		}()
+	case "gpu":
+		var specList []pcData.GPUSpec
+		go func() {
+			for {
+				<-ticker.C
+				gpuRecord := pcData.GetGPUSpec(recordList[count])
+				if gpuRecord.Name != "" {
+					specList = append(specList, gpuRecord)
+					count++
+				}
+				if count%100 == 0 {
+					mergeSpecData(specList, name, count)
+				}
+				if count == len(recordList) {
+					mergeSpecData(specList, name, count)
 					ticker.Stop()
 					runtime.Goexit()
 				}
@@ -335,7 +452,7 @@ func updatePriceLogic(name string) {
 		listLen := time.Duration(timeSet * (len(specList) + extraTry))
 		time.Sleep(time.Second * listLen)
 	case "gpu":
-		var specList []pcData.GPUSpec
+		var specList []pcData.GPUScore
 		var gpuList []pcData.GPUType
 		json.Unmarshal([]byte(byteValue), &specList)
 
