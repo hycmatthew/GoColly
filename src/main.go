@@ -227,6 +227,12 @@ func updateGPUScoreLogic() {
 	time.Sleep(time.Second * listLen)
 }
 
+// Update parts spec
+type specHandler[T any] struct {
+	getSpecFunc func(pcData.LinkRecord) T
+	specList    []T
+}
+
 func updateSpecLogic(name string) {
 	timeSet := 5000
 	extraTry := 50
@@ -238,169 +244,101 @@ func updateSpecLogic(name string) {
 
 	for i := 1; i < len(dataList); i++ {
 		data := dataList[i]
-		record := pcData.LinkRecord{Brand: data[0], Name: data[1], PriceCN: data[2], LinkSpec: data[3], LinkCN: data[4], LinkUS: data[5], LinkHK: data[6]}
+		record := pcData.LinkRecord{
+			Brand:    data[0],
+			Name:     data[1],
+			PriceCN:  data[2],
+			LinkSpec: data[3],
+			LinkCN:   data[4],
+			LinkUS:   data[5],
+			LinkHK:   data[6],
+		}
 		recordList = append(recordList, record)
 	}
 
-	count := 0
-	switch name {
-	case "cpu":
-		var specList []pcData.CPUSpec
-		go func() {
-			for {
-				<-ticker.C
-				cpuRecord := pcData.GetCPUSpec(recordList[count])
-				if cpuRecord.Name != "" {
-					specList = append(specList, cpuRecord)
-					count++
-				}
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
+	handlers := map[string]interface{}{
+		"cpu": specHandler[pcData.CPUSpec]{
+			getSpecFunc: pcData.GetCPUSpec,
+			specList:    []pcData.CPUSpec{},
+		},
+		"gpu": specHandler[pcData.GPUSpec]{
+			getSpecFunc: pcData.GetGPUSpec,
+			specList:    []pcData.GPUSpec{},
+		},
+		"motherboard": specHandler[pcData.MotherboardSpec]{
+			getSpecFunc: pcData.GetMotherboardSpec,
+			specList:    []pcData.MotherboardSpec{},
+		},
+		"ram": specHandler[pcData.RamSpec]{
+			getSpecFunc: pcData.GetRamSpec,
+			specList:    []pcData.RamSpec{},
+		},
+		"ssd": specHandler[pcData.SSDSpec]{
+			getSpecFunc: pcData.GetSSDSpec,
+			specList:    []pcData.SSDSpec{},
+		},
+		"power": specHandler[pcData.PowerSpec]{
+			getSpecFunc: pcData.GetPowerSpec,
+			specList:    []pcData.PowerSpec{},
+		},
+		"case": specHandler[pcData.CaseSpec]{
+			getSpecFunc: pcData.GetCaseSpec,
+			specList:    []pcData.CaseSpec{},
+		},
+		"cooler": specHandler[pcData.CoolerSpec]{
+			getSpecFunc: pcData.GetCoolerSpec,
+			specList:    []pcData.CoolerSpec{},
+		},
+	}
+
+	if handler, ok := handlers[name]; ok {
+		go func(h interface{}) {
+			switch h := h.(type) {
+			case specHandler[pcData.CPUSpec]:
+				processSpecs(h, recordList, ticker, name)
+			case specHandler[pcData.GPUSpec]:
+				processSpecs(h, recordList, ticker, name)
+			case specHandler[pcData.MotherboardSpec]:
+				processSpecs(h, recordList, ticker, name)
+			case specHandler[pcData.RamSpec]:
+				processSpecs(h, recordList, ticker, name)
+			case specHandler[pcData.SSDSpec]:
+				processSpecs(h, recordList, ticker, name)
+			case specHandler[pcData.PowerSpec]:
+				processSpecs(h, recordList, ticker, name)
+			case specHandler[pcData.CaseSpec]:
+				processSpecs(h, recordList, ticker, name)
+			case specHandler[pcData.CoolerSpec]:
+				processSpecs(h, recordList, ticker, name)
 			}
-		}()
-	case "gpu":
-		var specList []pcData.GPUSpec
-		go func() {
-			for {
-				<-ticker.C
-				gpuRecord := pcData.GetGPUSpec(recordList[count])
-				if gpuRecord.Name != "" {
-					specList = append(specList, gpuRecord)
-					count++
-				}
-				if count%100 == 0 {
-					mergeSpecData(specList, name, count)
-				}
-				if count == len(recordList) {
-					mergeSpecData(specList, name, count)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-	case "motherboard":
-		var specList []pcData.MotherboardSpec
-		go func() {
-			for {
-				<-ticker.C
-				mbRecord := pcData.GetMotherboardSpec(recordList[count])
-				if mbRecord.Name != "" {
-					specList = append(specList, mbRecord)
-					/*
-						recordData := databaseLogic.DBRecord{
-							Brand:    mbRecord.Brand,
-							Name:     mbRecord.Name,
-							PriceCN:  mbRecord.PriceCN,
-							LinkSpec: recordList[count].LinkSpec,
-							LinkCN:   mbRecord.LinkCN,
-							LinkUS:   mbRecord.LinkUS,
-							LinkHK:   mbRecord.LinkHK,
-						}
-						saveRecordToDatabase("motherboard", recordData)
-					*/
-					count++
-				}
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-	case "ram":
-		var specList []pcData.RamSpec
-		go func() {
-			for {
-				<-ticker.C
-				ramRecord := pcData.GetRamSpec(recordList[count])
-				if ramRecord.Name != "" {
-					specList = append(specList, ramRecord)
-					count++
-				}
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-	case "ssd":
-		var specList []pcData.SSDSpec
-		go func() {
-			for {
-				<-ticker.C
-				ssdRecord := pcData.GetSSDSpec(recordList[count])
-				if ssdRecord.Name != "" {
-					specList = append(specList, ssdRecord)
-					count++
-				}
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-	case "power":
-		var specList []pcData.PowerSpec
-		go func() {
-			for {
-				<-ticker.C
-				powerRecord := pcData.GetPowerSpec(recordList[count])
-				if powerRecord.Name != "" {
-					specList = append(specList, powerRecord)
-					count++
-				}
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-	case "case":
-		var specList []pcData.CaseSpec
-		go func() {
-			for {
-				<-ticker.C
-				caseRecord := pcData.GetCaseSpec(recordList[count])
-				if caseRecord.Name != "" {
-					specList = append(specList, caseRecord)
-					count++
-				}
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-	case "cooler":
-		var specList []pcData.CoolerSpec
-		go func() {
-			for {
-				<-ticker.C
-				coolerRecord := pcData.GetCoolerSpec(recordList[count])
-				if coolerRecord.Name != "" {
-					specList = append(specList, coolerRecord)
-					count++
-				}
-				if count == len(recordList) {
-					saveSpecData(specList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-	default:
-		break
+		}(handler)
 	}
 
 	listLen := time.Duration(timeSet * (len(recordList) + extraTry))
 	time.Sleep(time.Second * listLen)
+}
+
+func processSpecs[T any](handler specHandler[T], records []pcData.LinkRecord, ticker *time.Ticker, name string) {
+	count := 0
+	for range ticker.C {
+		if count >= len(records) {
+			mergeSpecData(handler.specList, name, count)
+			ticker.Stop()
+			return
+		}
+		if count%50 == 0 {
+			mergeSpecData(handler.specList, name, count)
+		}
+		spec := handler.getSpecFunc(records[count])
+		if !isZero(spec) {
+			handler.specList = append(handler.specList, spec)
+			count++
+		}
+	}
+}
+
+func isZero[T any](v T) bool {
+	return reflect.ValueOf(&v).Elem().IsZero()
 }
 
 func updatePriceLogic(name string) {
