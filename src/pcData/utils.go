@@ -295,26 +295,12 @@ func isEmpty(v reflect.Value) bool {
 	}
 }
 
-// 自动获取ID字段（支持常见命名方式）
-func getID(v interface{}) string {
-	rv := reflect.Indirect(reflect.ValueOf(v))
-
-	// 尝试常见ID字段名称
-	for _, fieldName := range []string{"Code", "Name"} {
-		if field := rv.FieldByName(fieldName); field.IsValid() {
-			return fmt.Sprintf("%v", field)
-		}
-	}
-	return "unknown_id"
-}
-
-func MergeStruct(s1, s2 interface{}) interface{} {
+func MergeStruct(s1, s2 interface{}, tempId string) interface{} {
 	rv1 := reflect.ValueOf(s1)
 	rv2 := reflect.ValueOf(s2)
 
 	// 创建新结构体
 	result := reflect.New(rv1.Type()).Elem()
-	tempId := getID(s1)
 
 	// 遍历字段
 	for i := 0; i < rv1.NumField(); i++ {

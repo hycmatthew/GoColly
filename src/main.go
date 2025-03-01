@@ -17,7 +17,6 @@ import (
 )
 
 func main() {
-	// pcData.GetRamCNPriceFromChromedp("https://item.taobao.com/item.htm?abbucket=17&id=743688559462&skuId=5323436787436")
 	const (
 		cpu         = "cpu"
 		gpu         = "gpu"
@@ -30,7 +29,7 @@ func main() {
 		gpuScore    = "gpuScore"
 	)
 
-	getDataName := gpu
+	getDataName := pcCase
 	isUpdateSpec := true
 
 	if isUpdateSpec {
@@ -326,7 +325,7 @@ func processSpecs[T any](handler specHandler[T], records []pcData.LinkRecord, ti
 			ticker.Stop()
 			return
 		}
-		if count%50 == 0 {
+		if count%50 == 0 && count != 0 {
 			mergeSpecData(handler.specList, name, count)
 		}
 		spec := handler.getSpecFunc(records[count])
@@ -341,6 +340,7 @@ func isZero[T any](v T) bool {
 	return reflect.ValueOf(&v).Elem().IsZero()
 }
 
+// update Price Logic
 func updatePriceLogic(name string) {
 	timeSet := 5000
 	extraTry := 50
@@ -470,14 +470,7 @@ func updatePriceLogic(name string) {
 
 		var oldRamList []pcData.RamType
 		json.Unmarshal([]byte(dataByteValue), &oldRamList)
-		/*
-			var filteredList []pcData.RamSpec
-			for _, item := range specList {
-				if item.Brand == "KINGBANK" {
-					filteredList = append(filteredList, item)
-				}
-			}
-		*/
+
 		go func() {
 			for {
 				<-ticker.C
@@ -558,7 +551,7 @@ func updatePriceLogic(name string) {
 
 				if count == len(specList) {
 					validationData := pcData.LoadValidationData("case")
-					mergedCaseList := pcData.MergeCases(caseList, validationData)
+					mergedCaseList := pcData.MergeData(caseList, validationData)
 					saveData(mergedCaseList, name)
 					ticker.Stop()
 					runtime.Goexit()

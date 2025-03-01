@@ -39,22 +39,38 @@ func validateCases(cases []pcData.CaseType) map[string][]string {
 }
 
 func main() {
-	// 读取输入文件
-	cases := loadData("../tmp/caseData.json")
+	const (
+		cpu         = "cpu"
+		gpu         = "gpu"
+		motherboard = "motherboard"
+		ram         = "ram"
+		ssd         = "ssd"
+		power       = "power"
+		cooler      = "cooler"
+		pcCase      = "case"
+		gpuScore    = "gpuScore"
+	)
 
+	testName := pcCase
+	// 读取输入文件
+	cases := loadData("../tmp/" + testName + "Data.json")
 	// 加载已有验证结果
-	existingErrors := loadExistingErrors("../tmp/validation/caseValidation.json")
+	existingErrors := loadExistingErrors("../tmp/validation/" + testName + "Validation.json")
 
 	// 执行验证
-	newErrors := validateCases(cases)
+	newErrors := make(map[string][]string)
+	switch testName {
+	case pcCase:
+		newErrors = validateCases(cases)
+	}
 
 	// 智能合并结果
 	finalErrors := mergeErrors(existingErrors, newErrors)
 
 	// 生成错误报告
-	saveErrors("caseValidation.json", finalErrors)
+	saveErrors(testName+"Validation.json", finalErrors)
 
-	fmt.Println("Validation completed. Errors saved to caseValidation.json")
+	fmt.Println("Validation completed. Errors saved to " + testName + "Validation.json")
 }
 
 func mergeErrors(old, new map[string][]string) map[string][]string {

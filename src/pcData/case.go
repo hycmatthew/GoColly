@@ -79,15 +79,15 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 		),
 		colly.AllowURLRevisit(),
 	)
-
 	collector.SetClient(&http.Client{
 		Transport: fakeChrome.Transport,
 	})
+	cnCollector := collector.Clone()
 
 	caseData := CaseSpec{}
 
 	if strings.Contains(record.LinkCN, "zol") {
-		caseData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+		caseData.LinkCN = getDetailsLinkFromZol(record.LinkCN, cnCollector)
 	} else {
 		caseData.LinkCN = record.LinkCN
 	}
@@ -111,7 +111,6 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 }
 
 func GetCaseData(spec CaseSpec) (CaseType, bool) {
-
 	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
 	collector := colly.NewCollector(
@@ -134,7 +133,6 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 		Transport: fakeChrome.Transport,
 	})
 	cnCollector := collector.Clone()
-	usCollector := collector.Clone()
 	isValid := true
 
 	newSpec := spec
@@ -142,7 +140,7 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 	if strings.Contains(spec.LinkCN, "zol") {
 		tempSpec := getCaseSpecDataFromZol(spec.LinkCN, cnCollector)
 
-		newSpec := MergeStruct(newSpec, tempSpec).(CaseSpec)
+		newSpec := MergeStruct(newSpec, tempSpec, newSpec.Name).(CaseSpec)
 		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
@@ -153,16 +151,13 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 	}
 
 	if strings.Contains(spec.LinkUS, "newegg") {
-		tempSpec := getCaseUSPrice(spec.LinkUS, usCollector)
+		tempSpec := getCaseUSPrice(spec.LinkUS, collector)
 		if newSpec.Img == "" {
 			tempSpec.Img = newSpec.Img
 		}
 
-		newSpec := MergeStruct(tempSpec, newSpec).(CaseSpec)
-		isValid = checkPriceValid(newSpec.PriceCN)
-	}
-	if !isValid {
-		fmt.Println(newSpec)
+		newSpec := MergeStruct(tempSpec, newSpec, newSpec.Name).(CaseSpec)
+		isValid = checkPriceValid(newSpec.PriceUS)
 	}
 
 	return CaseType{

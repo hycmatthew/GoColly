@@ -130,7 +130,7 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 	if spec.LinkCN != "" {
 		tempSpec := getPowerSpecDataFromZol(spec.LinkCN, cnCollector)
 
-		newSpec := MergeStruct(newSpec, tempSpec).(PowerSpec)
+		newSpec := MergeStruct(newSpec, tempSpec, newSpec.Name).(PowerSpec)
 		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
@@ -141,7 +141,7 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 			tempSpec.Img = newSpec.Img
 		}
 
-		newSpec := MergeStruct(tempSpec, newSpec).(PowerSpec)
+		newSpec := MergeStruct(tempSpec, newSpec, newSpec.Name).(PowerSpec)
 		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
