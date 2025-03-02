@@ -492,7 +492,7 @@ func loadJSON[T any](path string) T {
 func FilterSpecList[T any](specs []T, hardwareType string) []T {
 	var filtered []T
 	filterRules := map[string][]string{
-		"gpu": {"3060 Ti", "3060"},
+		"gpu": {"3050", "3060", "3070", "3080", "3090"},
 		// 可扩展其他硬件类型的过滤规则
 	}
 
