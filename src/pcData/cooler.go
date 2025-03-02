@@ -56,41 +56,18 @@ type CoolerType struct {
 }
 
 func GetCoolerSpec(record LinkRecord) CoolerSpec {
-
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"pangoly.com",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-
 	coolerData := CoolerSpec{
 		LinkCN: record.LinkCN,
 	}
 
 	if strings.Contains(record.LinkCN, "zol") {
-		coolerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+		coolerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	}
 	if record.LinkSpec != "" {
 		if strings.Contains(record.LinkSpec, "zol") {
-			coolerData = getCoolerSpecDataFromZol(record.LinkSpec, collector)
+			coolerData = getCoolerSpecDataFromZol(record.LinkSpec, CreateCollector())
 		} else {
-			coolerData = getCoolerSpecData(record.LinkSpec, collector)
+			coolerData = getCoolerSpecData(record.LinkSpec, CreateCollector())
 		}
 	}
 
@@ -322,28 +299,4 @@ func getCoolerSpecDataFromZol(link string, collector *colly.Collector) CoolerSpe
 	})
 	collector.Visit(link)
 	return specData
-}
-
-func CompareCoolerDataLogic(cur CoolerType, list []CoolerType) CoolerType {
-	newVal := cur
-	curTest := cur.Brand + cur.Name
-	oldVal := cur
-	for _, item := range list {
-		testStr := item.Brand + item.Name
-		if curTest == testStr {
-			oldVal = item
-			break
-		}
-	}
-
-	if newVal.PriceCN == "" {
-		newVal.PriceCN = oldVal.PriceCN
-	}
-	if newVal.PriceUS == "" {
-		newVal.PriceUS = oldVal.PriceUS
-	}
-	if newVal.PriceHK == "" {
-		newVal.PriceHK = oldVal.PriceHK
-	}
-	return newVal
 }

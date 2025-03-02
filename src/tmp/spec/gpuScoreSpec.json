@@ -1,7 +1,7 @@
 [
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4060",
+        "Chipset": "RTX 4060",
         "Generation": "GeForce 40",
         "MemorySize": 8,
         "MemoryType": "GDDR6",
@@ -689,7 +689,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4060 Ti 16GB",
+        "Chipset": "RTX 4060 Ti 16GB",
         "Generation": "GeForce 40",
         "MemorySize": 16,
         "MemoryType": "GDDR6",
@@ -1118,7 +1118,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4060 Ti 8GB",
+        "Chipset": "RTX 4060 Ti 8GB",
         "Generation": "GeForce 40",
         "MemorySize": 8,
         "MemoryType": "GDDR6",
@@ -1771,7 +1771,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4070",
+        "Chipset": "RTX 4070",
         "Generation": "GeForce 40",
         "MemorySize": 12,
         "MemoryType": "GDDR6X",
@@ -2564,7 +2564,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4070 Super",
+        "Chipset": "RTX 4070 Super",
         "Generation": "GeForce 40",
         "MemorySize": 12,
         "MemoryType": "GDDR6X",
@@ -3175,7 +3175,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4070 Ti",
+        "Chipset": "RTX 4070 Ti",
         "Generation": "GeForce 40",
         "MemorySize": 12,
         "MemoryType": "GDDR6X",
@@ -4003,7 +4003,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4070 Ti SUPER",
+        "Chipset": "RTX 4070 Ti SUPER",
         "Generation": "GeForce 40",
         "MemorySize": 16,
         "MemoryType": "GDDR6X",
@@ -4607,7 +4607,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4080",
+        "Chipset": "RTX 4080",
         "Generation": "GeForce 40",
         "MemorySize": 16,
         "MemoryType": "GDDR6X",
@@ -5351,7 +5351,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4080 SUPER",
+        "Chipset": "RTX 4080 SUPER",
         "Generation": "GeForce 40",
         "MemorySize": 16,
         "MemoryType": "GDDR6X",
@@ -5850,7 +5850,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4090",
+        "Chipset": "RTX 4090",
         "Generation": "GeForce 40",
         "MemorySize": 24,
         "MemoryType": "GDDR6X",
@@ -6566,7 +6566,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 4090D",
+        "Chipset": "RTX 4090D",
         "Generation": "GeForce 40",
         "MemorySize": 24,
         "MemoryType": "GDDR6X",
@@ -6680,7 +6680,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 5070 Ti",
+        "Chipset": "RTX 5070 Ti",
         "Generation": "GeForce 50",
         "MemorySize": 16,
         "MemoryType": "GDDR7",
@@ -7074,7 +7074,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 5080",
+        "Chipset": "RTX 5080",
         "Generation": "GeForce 50",
         "MemorySize": 16,
         "MemoryType": "GDDR7",
@@ -7573,7 +7573,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 5090",
+        "Chipset": "RTX 5090",
         "Generation": "GeForce 50",
         "MemorySize": 32,
         "MemoryType": "GDDR7",
@@ -7876,7 +7876,7 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Series": "RTX 5090D",
+        "Chipset": "RTX 5090D",
         "Generation": "GeForce 50",
         "MemorySize": 32,
         "MemoryType": "GDDR7",
@@ -8025,7 +8025,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 6500 XT",
+        "Chipset": "RX 6500 XT",
         "Generation": "RX 6000",
         "MemorySize": 4,
         "MemoryType": "GDDR6",
@@ -8181,7 +8181,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 6600",
+        "Chipset": "RX 6600",
         "Generation": "RX 6000",
         "MemorySize": 8,
         "MemoryType": "GDDR6",
@@ -8302,7 +8302,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 6600 XT",
+        "Chipset": "RX 6600 XT",
         "Generation": "RX 6000",
         "MemorySize": 8,
         "MemoryType": "GDDR6",
@@ -8521,7 +8521,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 7600",
+        "Chipset": "RX 7600",
         "Generation": "RX 7000",
         "MemorySize": 8,
         "MemoryType": "GDDR6",
@@ -8712,7 +8712,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 7600 XT",
+        "Chipset": "RX 7600 XT",
         "Generation": "RX 7000",
         "MemorySize": 16,
         "MemoryType": "GDDR6",
@@ -8798,7 +8798,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 7700 XT",
+        "Chipset": "RX 7700 XT",
         "Generation": "RX 7000",
         "MemorySize": 12,
         "MemoryType": "GDDR6",
@@ -8982,7 +8982,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 7800 XT",
+        "Chipset": "RX 7800 XT",
         "Generation": "RX 7000",
         "MemorySize": 16,
         "MemoryType": "GDDR6",
@@ -9201,7 +9201,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 7900 GRE",
+        "Chipset": "RX 7900 GRE",
         "Generation": "RX 7000",
         "MemorySize": 16,
         "MemoryType": "GDDR6",
@@ -9315,7 +9315,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 7900 XT",
+        "Chipset": "RX 7900 XT",
         "Generation": "RX 7000",
         "MemorySize": 20,
         "MemoryType": "GDDR6",
@@ -9541,7 +9541,7 @@
     },
     {
         "Manufacturer": "AMD",
-        "Series": "RX 7900 XTX",
+        "Chipset": "RX 7900 XTX",
         "Generation": "RX 7000",
         "MemorySize": 24,
         "MemoryType": "GDDR6",

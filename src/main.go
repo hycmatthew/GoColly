@@ -5,14 +5,13 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"go-colly-lib/src/databaseLogic"
 	"go-colly-lib/src/pcData"
-	"io"
 	"log"
 	"os"
 	"path/filepath"
 	"reflect"
 	"runtime"
+	"strings"
 	"time"
 )
 
@@ -29,8 +28,8 @@ func main() {
 		gpuScore    = "gpuScore"
 	)
 
-	getDataName := pcCase
-	isUpdateSpec := true
+	getDataName := gpu
+	isUpdateSpec := false
 
 	if isUpdateSpec {
 		if getDataName == gpuScore {
@@ -154,7 +153,7 @@ func updateData(existing []map[string]any, newMaps []map[string]any) []map[strin
 }
 
 func mergeSpecData(result any, name string, count int) {
-	fmt.Println("mergeSpecData ", name, " - ", count)
+	fmt.Println("mergeSpecData", name, " - ", count)
 	existing, err := readSpecData(name)
 	if err != nil {
 		fmt.Println("Error reading file:", err)
@@ -183,10 +182,6 @@ func saveSpecData(result any, name string) error {
 		return err
 	}
 	return nil
-}
-
-func saveRecordToDatabase(part string, record databaseLogic.DBRecord) {
-	databaseLogic.InsertRecord(part, record)
 }
 
 /*
@@ -341,316 +336,186 @@ func isZero[T any](v T) bool {
 }
 
 // update Price Logic
+type Processor[T any, D any] struct {
+	GetData       func(T) (D, bool)
+	ProcessResult func([]D, map[string][]string) []D
+}
+
 func updatePriceLogic(name string) {
-	timeSet := 5000
-	extraTry := 50
-	maxRetryTime := 3
-	retryTime := 0
-	timeDuration := time.Duration(timeSet) * time.Millisecond
-	ticker := time.NewTicker(timeDuration)
+	// 配置所有硬件类型的处理参数
+	processors := map[string]interface{}{
+		"cpu": Processor[pcData.CPUSpec, pcData.CPUType]{
+			GetData: pcData.GetCPUData,
+			ProcessResult: func(data []pcData.CPUType, vd map[string][]string) []pcData.CPUType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+		"gpu": Processor[pcData.GPUSpec, pcData.GPUType]{
+			GetData: pcData.GetGPUData,
+			ProcessResult: func(data []pcData.GPUType, vd map[string][]string) []pcData.GPUType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+		"motherboard": Processor[pcData.MotherboardSpec, pcData.MotherboardType]{
+			GetData: pcData.GetMotherboardData,
+			ProcessResult: func(data []pcData.MotherboardType, vd map[string][]string) []pcData.MotherboardType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+		"ram": Processor[pcData.RamSpec, pcData.RamType]{
+			GetData: pcData.GetRamData,
+			ProcessResult: func(data []pcData.RamType, vd map[string][]string) []pcData.RamType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+		"ssd": Processor[pcData.SSDSpec, pcData.SSDType]{
+			GetData: pcData.GetSSDData,
+			ProcessResult: func(data []pcData.SSDType, vd map[string][]string) []pcData.SSDType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+		"power": Processor[pcData.PowerSpec, pcData.PowerType]{
+			GetData: pcData.GetPowerData,
+			ProcessResult: func(data []pcData.PowerType, vd map[string][]string) []pcData.PowerType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+		"case": Processor[pcData.CaseSpec, pcData.CaseType]{
+			GetData: pcData.GetCaseData,
+			ProcessResult: func(data []pcData.CaseType, vd map[string][]string) []pcData.CaseType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+		"cooler": Processor[pcData.CoolerSpec, pcData.CoolerType]{
+			GetData: pcData.GetCoolerData,
+			ProcessResult: func(data []pcData.CoolerType, vd map[string][]string) []pcData.CoolerType {
+				return pcData.MergeData(data, vd)
+			},
+		},
+	}
 
-	specFile, _ := os.Open("tmp/spec/" + name + "Spec.json")
-	byteValue, _ := io.ReadAll(specFile)
-	count := 0
+	// 获取具体处理器配置
+	processor, ok := processors[name]
+	if !ok {
+		fmt.Printf("Unsupported hardware type: %s\n", name)
+		return
+	}
 
-	dataFile, _ := os.Open("tmp/" + name + "Data.json")
-	dataByteValue, _ := io.ReadAll(dataFile)
+	// 通用处理流程
+	switch p := processor.(type) {
+	case Processor[pcData.CPUSpec, pcData.CPUType]:
+		processGeneric[pcData.CPUSpec, pcData.CPUType](name, p)
+	case Processor[pcData.GPUSpec, pcData.GPUType]:
+		processGeneric[pcData.GPUSpec, pcData.GPUType](name, p)
+	case Processor[pcData.MotherboardSpec, pcData.MotherboardType]:
+		processGeneric[pcData.MotherboardSpec, pcData.MotherboardType](name, p)
+	case Processor[pcData.RamSpec, pcData.RamType]:
+		processGeneric[pcData.RamSpec, pcData.RamType](name, p)
+	case Processor[pcData.SSDSpec, pcData.SSDType]:
+		processGeneric[pcData.SSDSpec, pcData.SSDType](name, p)
+	case Processor[pcData.PowerSpec, pcData.PowerType]:
+		processGeneric[pcData.PowerSpec, pcData.PowerType](name, p)
+	case Processor[pcData.CaseSpec, pcData.CaseType]:
+		processGeneric[pcData.CaseSpec, pcData.CaseType](name, p)
+	case Processor[pcData.CoolerSpec, pcData.CoolerType]:
+		processGeneric[pcData.CoolerSpec, pcData.CoolerType](name, p)
+	}
+}
 
-	switch name {
-	case "cpu":
-		var specList []pcData.CPUSpec
-		var cpuList []pcData.CPUType
-		json.Unmarshal([]byte(byteValue), &specList)
+// 泛型处理核心逻辑
+func processGeneric[T any, D any](
+	name string,
+	processor Processor[T, D],
+) {
+	const (
+		timeSet      = 5000
+		extraTry     = 50
+		maxRetryTime = 3
+	)
+	// 加载数据
+	specList := loadJSON[[]T]("tmp/spec/" + name + "Spec.json")
+	filterList := FilterSpecList(specList, name)
+	oldData := loadJSON[[]D]("tmp/" + name + "Data.json")
 
-		var oldCpuList []pcData.CPUType
-		json.Unmarshal([]byte(dataByteValue), &oldCpuList)
+	ticker := time.NewTicker(time.Duration(timeSet) * time.Millisecond)
+	defer ticker.Stop()
 
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetCPUData(spec)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.CompareCPUDataLogic(record, oldCpuList)
-					cpuList = append(cpuList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
+	var (
+		results    []D
+		count      int
+		retryCount int
+	)
 
-				if count == len(specList) {
-					saveData(cpuList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
+	go func() {
+		for range ticker.C {
+			if count >= len(filterList) {
+				validationData := pcData.LoadValidationData(name)
+				finalData := processor.ProcessResult(results, validationData)
+				saveData(finalData, name)
+				runtime.Goexit()
 			}
-		}()
 
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	case "gpu":
-		var specList []pcData.GPUScore
-		var gpuList []pcData.GPUType
-		json.Unmarshal([]byte(byteValue), &specList)
+			spec := filterList[count]
+			record, valid := processor.GetData(spec)
 
-		var oldGpuList []pcData.GPUType
-		json.Unmarshal([]byte(dataByteValue), &oldGpuList)
+			if valid || retryCount >= maxRetryTime {
+				merged := pcData.ComparePreviousDataLogic(record, oldData)
+				results = append(results, merged)
+				retryCount = 0
+				count++
+			} else {
+				retryCount++
+			}
+		}
+	}()
 
-		dataList := readCsvFile("res/" + name + "data.csv")
-		var recordList []pcData.GPURecordData
-		count++
+	sleepDuration := time.Duration(timeSet*(len(filterList)+extraTry)) * time.Millisecond
+	time.Sleep(sleepDuration)
+}
 
-		for i := 1; i < len(dataList); i++ {
-			data := dataList[i]
-			record := pcData.GPURecordData{Brand: data[0], Name: data[1], PriceCN: data[2], SpecCN: data[3], LinkCN: data[4], LinkUS: data[5], LinkHK: data[6]}
-			recordList = append(recordList, record)
+// 安全加载JSON的泛型函数
+func loadJSON[T any](path string) T {
+	file, err := os.Open(path)
+	if err != nil {
+		return *new(T)
+	}
+	defer file.Close()
+
+	var data T
+	if err := json.NewDecoder(file).Decode(&data); err != nil {
+		return *new(T)
+	}
+	return data
+}
+
+// 泛型过滤函数
+func FilterSpecList[T any](specs []T, hardwareType string) []T {
+	var filtered []T
+	filterRules := map[string][]string{
+		"gpu": {"3060 Ti", "3060"},
+		// 可扩展其他硬件类型的过滤规则
+	}
+
+	rules, exists := filterRules[strings.ToLower(hardwareType)]
+	if !exists {
+		return specs // 未知类型不进行过滤
+	}
+
+	for _, spec := range specs {
+		v := reflect.ValueOf(spec)
+		if v.Kind() == reflect.Ptr {
+			v = v.Elem()
 		}
 
-		go func() {
-			for {
-				<-ticker.C
-				data := recordList[count]
-				record, valid := pcData.GetGPUData(specList, data)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.CompareGPUDataLogic(record, oldGpuList)
-					gpuList = append(gpuList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
+		field := v.FieldByName("Code")
+		if !field.IsValid() || field.Kind() != reflect.String {
+			continue
+		}
 
-				if count == len(recordList) {
-					saveData(gpuList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(recordList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	case "motherboard":
-		var specList []pcData.MotherboardSpec
-		var mbList []pcData.MotherboardType
-		json.Unmarshal([]byte(byteValue), &specList)
-
-		var oldMotherboardList []pcData.MotherboardType
-		json.Unmarshal([]byte(dataByteValue), &oldMotherboardList)
-
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetMotherboardData(spec)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.CompareMotherboardDataLogic(record, oldMotherboardList)
-					mbList = append(mbList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
-
-				if count == len(specList) {
-					saveData(mbList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	case "ram":
-		var specList []pcData.RamSpec
-		var ramList []pcData.RamType
-		json.Unmarshal([]byte(byteValue), &specList)
-
-		var oldRamList []pcData.RamType
-		json.Unmarshal([]byte(dataByteValue), &oldRamList)
-
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetRamData(spec)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.CompareRAMDataLogic(record, oldRamList)
-					ramList = append(ramList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
-
-				if count == len(specList) {
-					saveData(ramList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	case "ssd":
-		var specList []pcData.SSDSpec
-		var ssdList []pcData.SSDType
-		json.Unmarshal([]byte(byteValue), &specList)
-
-		var oldSSDList []pcData.SSDType
-		json.Unmarshal([]byte(dataByteValue), &oldSSDList)
-
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetSSDData(spec)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.CompareSSDDataLogic(record, oldSSDList)
-					ssdList = append(ssdList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
-
-				if count == len(specList) {
-					saveData(ssdList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	case "case":
-		var specList []pcData.CaseSpec
-		var caseList []pcData.CaseType
-		json.Unmarshal([]byte(byteValue), &specList)
-
-		var oldCaseList []pcData.CaseType
-		json.Unmarshal([]byte(dataByteValue), &oldCaseList)
-
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetCaseData(spec)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.CompareCaseDataLogic(record, oldCaseList)
-					caseList = append(caseList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
-
-				if count == len(specList) {
-					validationData := pcData.LoadValidationData("case")
-					mergedCaseList := pcData.MergeData(caseList, validationData)
-					saveData(mergedCaseList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	case "cooler":
-		var specList []pcData.CoolerSpec
-		var coolerList []pcData.CoolerType
-		json.Unmarshal([]byte(byteValue), &specList)
-
-		var oldCoolerList []pcData.CoolerType
-		json.Unmarshal([]byte(dataByteValue), &oldCoolerList)
-
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetCoolerData(spec)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.CompareCoolerDataLogic(record, oldCoolerList)
-					coolerList = append(coolerList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
-
-				if count == len(specList) {
-					saveData(coolerList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	case "power":
-		var specList []pcData.PowerSpec
-		var powerList []pcData.PowerType
-		json.Unmarshal([]byte(byteValue), &specList)
-
-		var oldPowerList []pcData.PowerType
-		json.Unmarshal([]byte(dataByteValue), &oldPowerList)
-
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetPowerData(spec)
-				if valid || retryTime == maxRetryTime {
-					result := pcData.ComparePowerDataLogic(record, oldPowerList)
-					powerList = append(powerList, result)
-					retryTime = 0
-					count++
-				} else {
-					retryTime++
-				}
-
-				if count == len(specList) {
-					saveData(powerList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
-	default:
-		fmt.Println("something wrong!!")
-		var specList []pcData.RamSpec
-		var ramList []pcData.RamType
-
-		json.Unmarshal([]byte(byteValue), &specList)
-
-		go func() {
-			for {
-				<-ticker.C
-				spec := specList[count]
-				record, valid := pcData.GetRamData(spec)
-				if valid {
-					ramList = append(ramList, record)
-					count++
-				}
-
-				if count == len(specList) {
-					saveData(ramList, name)
-					ticker.Stop()
-					runtime.Goexit()
-				}
-			}
-		}()
-
-		listLen := time.Duration(timeSet * (len(specList) + extraTry))
-		time.Sleep(time.Second * listLen)
+		name := strings.ToLower(field.String())
+		if !pcData.ContainsAny(name, rules) {
+			filtered = append(filtered, spec)
+		}
 	}
+	return filtered
 }

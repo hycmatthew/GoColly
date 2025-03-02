@@ -2,11 +2,9 @@ package pcData
 
 import (
 	"fmt"
-	"net/http"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/imroc/req/v3"
 )
 
 type CaseSpec struct {
@@ -60,39 +58,15 @@ type CaseType struct {
 }
 
 func GetCaseSpec(record LinkRecord) CaseSpec {
-
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-			"pangoly.com",
-		),
-		colly.AllowURLRevisit(),
-	)
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
-
 	caseData := CaseSpec{}
 
 	if strings.Contains(record.LinkCN, "zol") {
-		caseData.LinkCN = getDetailsLinkFromZol(record.LinkCN, cnCollector)
+		caseData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	} else {
 		caseData.LinkCN = record.LinkCN
 	}
 	if record.LinkSpec != "" {
-		caseData = getCaseSpecData(record.LinkSpec, collector)
+		caseData = getCaseSpecData(record.LinkSpec, CreateCollector())
 	}
 
 	caseData.Brand = record.Brand
@@ -111,47 +85,24 @@ func GetCaseSpec(record LinkRecord) CaseSpec {
 }
 
 func GetCaseData(spec CaseSpec) (CaseType, bool) {
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
 	isValid := true
-
 	newSpec := spec
 
 	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getCaseSpecDataFromZol(spec.LinkCN, cnCollector)
+		tempSpec := getCaseSpecDataFromZol(spec.LinkCN, CreateCollector())
 
 		newSpec := MergeStruct(newSpec, tempSpec, newSpec.Name).(CaseSpec)
 		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
 	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
 	if strings.Contains(spec.LinkUS, "newegg") {
-		tempSpec := getCaseUSPrice(spec.LinkUS, collector)
+		tempSpec := getCaseUSPrice(spec.LinkUS, CreateCollector())
 		if newSpec.Img == "" {
 			tempSpec.Img = newSpec.Img
 		}
@@ -376,28 +327,4 @@ func getCaseSpecDataFromZol(link string, collector *colly.Collector) CaseSpec {
 	})
 	collector.Visit(link)
 	return specData
-}
-
-func CompareCaseDataLogic(cur CaseType, list []CaseType) CaseType {
-	newVal := cur
-	curTest := cur.Brand + cur.Name
-	oldVal := cur
-	for _, item := range list {
-		testStr := item.Brand + item.Name
-		if curTest == testStr {
-			oldVal = item
-			break
-		}
-	}
-
-	if newVal.PriceCN == "" {
-		newVal.PriceCN = oldVal.PriceCN
-	}
-	if newVal.PriceUS == "" {
-		newVal.PriceUS = oldVal.PriceUS
-	}
-	if newVal.PriceHK == "" {
-		newVal.PriceHK = oldVal.PriceHK
-	}
-	return newVal
 }

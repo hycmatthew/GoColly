@@ -2,12 +2,10 @@ package pcData
 
 import (
 	"fmt"
-	"net/http"
 	"regexp"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/imroc/req/v3"
 )
 
 type PowerSpec struct {
@@ -51,39 +49,15 @@ type PowerType struct {
 }
 
 func GetPowerSpec(record LinkRecord) PowerSpec {
-
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"pangoly.com",
-			"www.huntkey.cn",
-			"huntkey.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-
-	specCollector := collector.Clone()
 	powerData := PowerSpec{}
 
 	if strings.Contains(record.LinkCN, "zol") {
-		powerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+		powerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	} else {
 		powerData.LinkCN = record.LinkCN
 	}
 	if record.LinkSpec != "" {
-		powerData = getPowerSpecData(record.LinkSpec, specCollector)
+		powerData = getPowerSpecData(record.LinkSpec, CreateCollector())
 	}
 
 	powerData.Code = record.Name
@@ -100,42 +74,19 @@ func GetPowerSpec(record LinkRecord) PowerSpec {
 }
 
 func GetPowerData(spec PowerSpec) (PowerType, bool) {
-	fmt.Println(SetProductId(spec.Brand, spec.Code))
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
 
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
-	usCollector := collector.Clone()
 	isValid := true
 
 	newSpec := spec
 	if spec.LinkCN != "" {
-		tempSpec := getPowerSpecDataFromZol(spec.LinkCN, cnCollector)
+		tempSpec := getPowerSpecDataFromZol(spec.LinkCN, CreateCollector())
 
 		newSpec := MergeStruct(newSpec, tempSpec, newSpec.Name).(PowerSpec)
 		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
 	if strings.Contains(spec.LinkUS, "newegg") {
-		tempSpec := getPowerUSPrice(spec.LinkUS, usCollector)
+		tempSpec := getPowerUSPrice(spec.LinkUS, CreateCollector())
 		tempSpec.Standard = comparePSUStandard(tempSpec.Standard, newSpec.Standard)
 		if newSpec.Img == "" {
 			tempSpec.Img = newSpec.Img
@@ -428,30 +379,6 @@ func getPowerSpecDataFromPcOnline(link string, collector *colly.Collector) Power
 	return specData
 }
 */
-
-func ComparePowerDataLogic(cur PowerType, list []PowerType) PowerType {
-	newVal := cur
-	curTest := cur.Brand + cur.Name
-	oldVal := cur
-	for _, item := range list {
-		testStr := item.Brand + item.Name
-		if curTest == testStr {
-			oldVal = item
-			break
-		}
-	}
-
-	if newVal.PriceCN == "" {
-		newVal.PriceCN = oldVal.PriceCN
-	}
-	if newVal.PriceUS == "" {
-		newVal.PriceUS = oldVal.PriceUS
-	}
-	if newVal.PriceHK == "" {
-		newVal.PriceHK = oldVal.PriceHK
-	}
-	return newVal
-}
 
 func extractATXStandard(name string) string {
 	// 將名稱轉為大寫並去除空格

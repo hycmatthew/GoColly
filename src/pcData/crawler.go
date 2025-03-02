@@ -3,10 +3,12 @@ package pcData
 import (
 	"context"
 	"fmt"
+	"net/http"
 	"time"
 
 	"github.com/chromedp/chromedp"
 	"github.com/gocolly/colly/v2"
+	"github.com/imroc/req/v3"
 )
 
 func getUSPriceAndImgFromNewEgg(link string, collector *colly.Collector) (string, string) {
@@ -97,6 +99,42 @@ func getCNPriceFromZol(link string, collector *colly.Collector) string {
 
 	collector.Visit(link)
 	return price
+}
+
+func CreateCollector() *colly.Collector {
+	fakeChrome := req.DefaultClient().ImpersonateChrome()
+
+	collector := colly.NewCollector(
+		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
+		colly.AllowedDomains(
+			"nanoreview.net",
+			"www.newegg.com",
+			"newegg.com",
+			"www.price.com.hk",
+			"price.com.hk",
+			"www.colorful.cn",
+			"colorful.cn",
+			"detail.zol.com.cn",
+			"zol.com.cn",
+			"product.pconline.com.cn",
+			"pconline.com.cn",
+			"pangoly.com",
+			// gpu
+			"www.techpowerup.com",
+			"techpowerup.com",
+			// motherboard
+			"asus.com",
+			"www.asus.com",
+			"tw.msi.com",
+			"www.msi.com",
+			"msi.com",
+		),
+		colly.AllowURLRevisit(),
+	)
+	collector.SetClient(&http.Client{
+		Transport: fakeChrome.Transport,
+	})
+	return collector
 }
 
 func collectorErrorHandle(collector *colly.Collector, link string) {

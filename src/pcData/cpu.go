@@ -2,11 +2,9 @@ package pcData
 
 import (
 	"fmt"
-	"net/http"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/imroc/req/v3"
 )
 
 type LinkRecord struct {
@@ -62,25 +60,9 @@ type CPUType struct {
 }
 
 func GetCPUSpec(record LinkRecord) CPUSpec {
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-
 	cpuData := manualCPUSpecHandle(record.Name)
 	if cpuData.Name == "" {
-		cpuData = getCPUSpecData(record.LinkSpec, collector)
+		cpuData = getCPUSpecData(record.LinkSpec, CreateCollector())
 	}
 	cpuData.Code = record.Name
 	cpuData.PriceCN = record.PriceCN
@@ -95,35 +77,11 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 }
 
 func GetCPUData(spec CPUSpec) (CPUType, bool) {
-
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
-	usCollector := collector.Clone()
 	isValid := true
 
 	priceCN := spec.PriceCN
 	if priceCN == "" {
-		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		priceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if priceCN == "" {
 			isValid = false
@@ -132,7 +90,7 @@ func GetCPUData(spec CPUSpec) (CPUType, bool) {
 
 	priceUS, tempImg := spec.PriceUS, spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
-		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
 
 		if priceUS == "" {
 			isValid = false
@@ -240,30 +198,6 @@ func manualCPUSpecHandle(code string) CPUSpec {
 		}
 	}
 	return CPUSpec{}
-}
-
-func CompareCPUDataLogic(cur CPUType, list []CPUType) CPUType {
-	newVal := cur
-	curTest := cur.Brand + cur.Name
-	oldVal := cur
-	for _, item := range list {
-		testStr := item.Brand + item.Name
-		if curTest == testStr {
-			oldVal = item
-			break
-		}
-	}
-
-	if newVal.PriceCN == "" {
-		newVal.PriceCN = oldVal.PriceCN
-	}
-	if newVal.PriceUS == "" {
-		newVal.PriceUS = oldVal.PriceUS
-	}
-	if newVal.PriceHK == "" {
-		newVal.PriceHK = oldVal.PriceHK
-	}
-	return newVal
 }
 
 func integratedGraphicsScoreHandle(cpu string, gpu string) int {

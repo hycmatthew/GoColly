@@ -2,11 +2,9 @@ package pcData
 
 import (
 	"fmt"
-	"net/http"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/imroc/req/v3"
 )
 
 type SSDSpec struct {
@@ -57,35 +55,12 @@ type SSDType struct {
 
 func GetSSDSpec(record LinkRecord) SSDSpec {
 
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-			"pangoly.com",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-
-	specCollector := collector.Clone()
 	ssdData := SSDSpec{}
 	if strings.Contains(record.LinkCN, "zol") {
-		ssdData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+		ssdData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	} else {
 		if record.LinkSpec != "" {
-			ssdData = getSSDSpecData(record.LinkSpec, specCollector)
+			ssdData = getSSDSpecData(record.LinkSpec, CreateCollector())
 		}
 		ssdData.LinkCN = record.LinkCN
 	}
@@ -106,36 +81,12 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 }
 
 func GetSSDData(spec SSDSpec) (SSDType, bool) {
-
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
-	usCollector := collector.Clone()
 	isValid := true
 
 	newSpec := spec
 
 	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getSSDSpecDataFromZol(spec.LinkCN, cnCollector)
+		tempSpec := getSSDSpecDataFromZol(spec.LinkCN, CreateCollector())
 		// codeStringList := strings.Split(spec.Code, " ")
 
 		newSpec.Img = tempSpec.Img
@@ -156,7 +107,7 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 	}
 
 	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if newSpec.PriceCN == "" {
 			isValid = false
@@ -165,7 +116,7 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 
 	tempImg := ""
 	if strings.Contains(spec.LinkUS, "newegg") {
-		newSpec.PriceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+		newSpec.PriceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
 
 		if tempImg != "" {
 			newSpec.Img = tempImg
@@ -342,28 +293,4 @@ func getZhiTaiDataFromPcOnline(link string, collector *colly.Collector) SSDSpec 
 
 	collector.Visit(link)
 	return specData
-}
-
-func CompareSSDDataLogic(cur SSDType, list []SSDType) SSDType {
-	newVal := cur
-	curTest := cur.Brand + cur.Name
-	oldVal := cur
-	for _, item := range list {
-		testStr := item.Brand + item.Name
-		if curTest == testStr {
-			oldVal = item
-			break
-		}
-	}
-
-	if newVal.PriceCN == "" {
-		newVal.PriceCN = oldVal.PriceCN
-	}
-	if newVal.PriceUS == "" {
-		newVal.PriceUS = oldVal.PriceUS
-	}
-	if newVal.PriceHK == "" {
-		newVal.PriceHK = oldVal.PriceHK
-	}
-	return newVal
 }

@@ -120,6 +120,16 @@ func strContains(s string, sub string) bool {
 	return strings.Contains(strings.ToUpper(s), strings.ToUpper(sub))
 }
 
+// 检查字符串是否包含任意关键词
+func ContainsAny(s string, substrs []string) bool {
+	for _, sub := range substrs {
+		if strings.Contains(s, strings.ToLower(sub)) {
+			return true
+		}
+	}
+	return false
+}
+
 func SplitAny(s string, seps string) []string {
 	splitter := func(r rune) bool {
 		return strings.ContainsRune(seps, r)
@@ -295,6 +305,7 @@ func isEmpty(v reflect.Value) bool {
 	}
 }
 
+// S1 為主要資料，S2 為次要資料 (S1 > S2)
 func MergeStruct(s1, s2 interface{}, tempId string) interface{} {
 	rv1 := reflect.ValueOf(s1)
 	rv2 := reflect.ValueOf(s2)

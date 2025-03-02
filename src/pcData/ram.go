@@ -2,11 +2,9 @@ package pcData
 
 import (
 	"fmt"
-	"net/http"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/imroc/req/v3"
 )
 
 type RamSpec struct {
@@ -61,34 +59,14 @@ type RamType struct {
 
 func GetRamSpec(record LinkRecord) RamSpec {
 
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"www.newegg.com",
-			"newegg.com",
-			"pangoly.com",
-			"www.newegg.com",
-			"newegg.com",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-
 	ramData := RamSpec{}
 	if strings.Contains(record.LinkCN, "zol") {
-		ramData.LinkCN = getDetailsLinkFromZol(record.LinkCN, collector)
+		ramData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	} else {
 		if record.LinkSpec != "" {
-			ramData = getRamSpecData(record.LinkSpec, collector)
+			ramData = getRamSpecData(record.LinkSpec, CreateCollector())
 		} else if record.LinkUS != "" {
-			ramData = getRamUSPrice(record.LinkUS, collector)
+			ramData = getRamUSPrice(record.LinkUS, CreateCollector())
 		}
 		ramData.PriceCN = record.PriceCN
 	}
@@ -108,34 +86,12 @@ func GetRamSpec(record LinkRecord) RamSpec {
 
 func GetRamData(spec RamSpec) (RamType, bool) {
 
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
-	usCollector := collector.Clone()
 	isValid := true
 
 	newSpec := spec
 
 	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getRamSpecDataFromZol(spec.LinkCN, cnCollector)
+		tempSpec := getRamSpecDataFromZol(spec.LinkCN, CreateCollector())
 		// codeStringList := strings.Split(spec.Code, " ")
 
 		newSpec.Img = tempSpec.Img
@@ -160,7 +116,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		}
 	}
 	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if newSpec.PriceCN == "" {
 			isValid = false
@@ -168,7 +124,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 	}
 
 	if strings.Contains(spec.LinkUS, "newegg") {
-		newSpec = getRamUSPrice(spec.LinkUS, usCollector)
+		newSpec = getRamUSPrice(spec.LinkUS, CreateCollector())
 
 		if newSpec.PriceUS == "" {
 			isValid = false
@@ -392,30 +348,6 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 	})
 	collector.Visit(link)
 	return specData
-}
-
-func CompareRAMDataLogic(cur RamType, list []RamType) RamType {
-	newVal := cur
-	curTest := cur.Brand + cur.Name
-	oldVal := cur
-	for _, item := range list {
-		testStr := item.Brand + item.Name
-		if curTest == testStr {
-			oldVal = item
-			break
-		}
-	}
-
-	if newVal.PriceCN == "" {
-		newVal.PriceCN = oldVal.PriceCN
-	}
-	if newVal.PriceUS == "" {
-		newVal.PriceUS = oldVal.PriceUS
-	}
-	if newVal.PriceHK == "" {
-		newVal.PriceHK = oldVal.PriceHK
-	}
-	return newVal
 }
 
 func handleRamSeries(spec RamSpec) string {

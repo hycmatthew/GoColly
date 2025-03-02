@@ -2,12 +2,10 @@ package pcData
 
 import (
 	"fmt"
-	"net/http"
 	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/imroc/req/v3"
 )
 
 type MotherboardSpec struct {
@@ -66,35 +64,14 @@ type MotherboardType struct {
 
 func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"www.newegg.com",
-			"newegg.com",
-			"pangoly.com",
-			"asus.com",
-			"www.asus.com",
-			"tw.msi.com",
-			"www.msi.com",
-			"msi.com",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-
 	motherboardData := MotherboardSpec{}
 	fmt.Println(record.LinkSpec)
 	if strings.Contains(record.LinkSpec, "asus.com") {
-		motherboardData = getMotherboardSpecDataFromAsus(record.LinkSpec, collector)
+		motherboardData = getMotherboardSpecDataFromAsus(record.LinkSpec, CreateCollector())
 	} else if strings.Contains(record.LinkSpec, "msi.com") {
-		motherboardData = getMotherboardSpecDataFromMsi(record.LinkSpec, collector)
+		motherboardData = getMotherboardSpecDataFromMsi(record.LinkSpec, CreateCollector())
 	} else if strings.Contains(record.LinkSpec, "pangoly.com") {
-		motherboardData = getMotherboardSpecData(record.LinkSpec, collector)
+		motherboardData = getMotherboardSpecData(record.LinkSpec, CreateCollector())
 	}
 
 	if strings.Contains(strings.ToUpper(record.Name), "WIFI") {
@@ -115,34 +92,10 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 
 func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
-	usCollector := collector.Clone()
 	isValid := true
-
 	priceCN := spec.PriceCN
 	if priceCN == "" {
-		priceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		priceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if priceCN == "" {
 			isValid = false
@@ -150,7 +103,7 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 	}
 	priceUS, tempPrice, tempImg := spec.PriceUS, "", spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
-		tempPrice, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+		tempPrice, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
 
 		if tempPrice != "" {
 			priceUS = tempPrice
@@ -498,28 +451,4 @@ func GetFormFactorLogic(str string) string {
 		}
 	}
 	return "ATX"
-}
-
-func CompareMotherboardDataLogic(cur MotherboardType, list []MotherboardType) MotherboardType {
-	newVal := cur
-	curTest := cur.Brand + cur.Name
-	oldVal := cur
-	for _, item := range list {
-		testStr := item.Brand + item.Name
-		if curTest == testStr {
-			oldVal = item
-			break
-		}
-	}
-
-	if newVal.PriceCN == "" {
-		newVal.PriceCN = oldVal.PriceCN
-	}
-	if newVal.PriceUS == "" {
-		newVal.PriceUS = oldVal.PriceUS
-	}
-	if newVal.PriceHK == "" {
-		newVal.PriceHK = oldVal.PriceHK
-	}
-	return newVal
 }
