@@ -100,7 +100,7 @@ func GetCPUData(spec CPUSpec) (CPUType, bool) {
 	return CPUType{
 		Id:                      SetProductId(spec.Brand, spec.Code),
 		Name:                    spec.Name,
-		Brand:                   spec.Brand,
+		Brand:                   strings.ToLower(spec.Brand),
 		Cores:                   spec.Cores,
 		Threads:                 spec.Threads,
 		Socket:                  spec.Socket,
@@ -172,7 +172,7 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 
 	return CPUSpec{
 		Name:            name,
-		Brand:           brand,
+		Brand:           strings.ToLower(brand),
 		Cores:           cores,
 		Threads:         thread,
 		Socket:          strings.Replace(socket, "-", "", -1),
