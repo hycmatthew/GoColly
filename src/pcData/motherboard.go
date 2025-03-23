@@ -2,6 +2,7 @@ package pcData
 
 import (
 	"fmt"
+	"regexp"
 	"strconv"
 	"strings"
 
@@ -91,10 +92,10 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 }
 
 func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
-
 	isValid := true
 	priceCN := spec.PriceCN
-	if priceCN == "" {
+
+	if priceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
 		priceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if priceCN == "" {
@@ -104,7 +105,6 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 	priceUS, tempPrice, tempImg := spec.PriceUS, "", spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
 		tempPrice, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
-
 		if tempPrice != "" {
 			priceUS = tempPrice
 		}
@@ -118,7 +118,7 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 		Name:       spec.Name,
 		Brand:      spec.Brand,
 		Socket:     spec.Socket,
-		Chipset:    spec.Chipset,
+		Chipset:    normalizeMotherboardChipset(spec.Chipset),
 		RamSlot:    spec.RamSlot,
 		RamType:    spec.RamType,
 		RamSupport: spec.RamSupport,
@@ -451,4 +451,65 @@ func GetFormFactorLogic(str string) string {
 		}
 	}
 	return "ATX"
+}
+
+func normalizeMotherboardChipset(chipset string) string {
+	// 預定義有效芯片組列表
+	validChipsets := map[string]bool{
+		"Z890":  true,
+		"B860":  true,
+		"H810":  true,
+		"W790":  true,
+		"Z790":  true,
+		"B760":  true,
+		"Z690":  true,
+		"Q670":  true,
+		"H670":  true,
+		"B660":  true,
+		"H610":  true,
+		"C621A": false,
+		// AMD
+		"X870E": true,
+		"X870":  true,
+		"B850":  true,
+		"B840":  true,
+		"X670E": true,
+		"X670":  true,
+		"B650E": true,
+		"B650":  true,
+		"A620":  true,
+		"X570":  true,
+		"B550":  true,
+		"A520":  true,
+	}
+
+	// 清理並標準化輸入字符串
+	cleaned := strings.ToUpper(chipset)
+
+	// 使用正則表達式提取芯片組型號
+	re := regexp.MustCompile(`([A-Z])(\d{3}[A-Z]?)`)
+	matches := re.FindStringSubmatch(cleaned)
+
+	var extracted string
+	if len(matches) >= 2 {
+		// 組合字母和數字部分
+		extracted = matches[1] + matches[2]
+	} else {
+		// 備用匹配模式（例如處理類似 "H610" 的格式）
+		reSimple := regexp.MustCompile(`([A-Z]\d{3}[A-Z]?)`)
+		extracted = reSimple.FindString(cleaned)
+	}
+
+	// 有效性檢查
+	if extracted == "" {
+		fmt.Printf("無法識別芯片組格式: %s\n", chipset)
+		return ""
+	}
+
+	if !validChipsets[extracted] {
+		fmt.Printf("發現未定義芯片組: %s (原始輸入: %s)\n", extracted, chipset)
+		return "" // 或者返回 extracted 根據需求
+	}
+
+	return extracted
 }

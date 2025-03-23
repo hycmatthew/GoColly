@@ -28,7 +28,7 @@ func main() {
 		gpuScore    = "gpuScore"
 	)
 
-	getDataName := cpu
+	getDataName := motherboard
 	isUpdateSpec := false
 
 	if isUpdateSpec {

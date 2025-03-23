@@ -2,11 +2,9 @@ package pcData
 
 import (
 	"fmt"
-	"net/http"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/imroc/req/v3"
 )
 
 type CoolerSpec struct {
@@ -87,36 +85,11 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 }
 
 func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
-
-	fakeChrome := req.DefaultClient().ImpersonateChrome()
-
-	collector := colly.NewCollector(
-		colly.UserAgent(fakeChrome.Headers.Get("user-agent")),
-		colly.AllowedDomains(
-			"nanoreview.net",
-			"www.newegg.com",
-			"newegg.com",
-			"www.price.com.hk",
-			"price.com.hk",
-			"detail.zol.com.cn",
-			"zol.com.cn",
-			"product.pconline.com.cn",
-			"pconline.com.cn",
-		),
-		colly.AllowURLRevisit(),
-	)
-
-	collector.SetClient(&http.Client{
-		Transport: fakeChrome.Transport,
-	})
-	cnCollector := collector.Clone()
-	usCollector := collector.Clone()
 	isValid := true
-
 	newSpec := spec
 
 	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getCoolerSpecDataFromZol(spec.LinkCN, cnCollector)
+		tempSpec := getCoolerSpecDataFromZol(spec.LinkCN, CreateCollector())
 
 		newSpec.Img = tempSpec.Img
 		if tempSpec.PriceCN != "" {
@@ -143,7 +116,7 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 	}
 
 	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, cnCollector)
+		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if newSpec.PriceCN == "" {
 			isValid = false
@@ -152,7 +125,7 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 
 	priceUS, tempImg := spec.PriceUS, spec.Img
 	if strings.Contains(spec.LinkUS, "newegg") {
-		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, usCollector)
+		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
 
 		if priceUS == "" {
 			isValid = false

@@ -155,6 +155,11 @@ func getWebpageLinkData(link string, collector *colly.Collector) []CSVData {
 			price := item.ChildText(".price .amprice")
 			updatedName := strings.TrimSpace(RemoveBrandsFromName(brand, tempName))
 
+			if hasForbiddenKeywords(updatedName, link) {
+				fmt.Printf("Filtered item with keywords: %s\n", updatedName)
+				return
+			}
+
 			// name is not completed
 			if strings.Contains(updatedName, "...") {
 				fmt.Println("name: ", updatedName)
@@ -175,11 +180,7 @@ func getWebpageLinkData(link string, collector *colly.Collector) []CSVData {
 			}
 		})
 	})
-	/*
-		collector.OnHTML("script[type='application/ld+json']", func(e *colly.HTMLElement) {
-			fmt.Printf(e.Text)
-		})
-	*/
+
 	collector.Visit(link)
 
 	return csvlist
@@ -191,14 +192,26 @@ func collectorErrorHandle(collector *colly.Collector, link string) {
 		r.Headers.Set("Connection", "keep-alive")
 		r.Headers.Set("Accept", "*/*")
 	})
-
 	collector.OnError(func(response *colly.Response, err error) {
 		fmt.Println("请求期间发生错误,则调用:", err, " - link: ", link)
 	})
-
 	collector.OnResponse(func(response *colly.Response) {
 		fmt.Println("收到响应后调用:", response.Request.URL)
 	})
+}
+
+// 關鍵詞檢測優化 (正則表達式版)
+func hasForbiddenKeywords(name string, link string) bool {
+	if strings.Contains(link, "motherboard") {
+		excludeKeywords := []string{"Z590", "H510", "B560", "H110", "H410"}
+		lowerName := strings.ToLower(name)
+		for _, kw := range excludeKeywords {
+			if strings.Contains(lowerName, strings.ToLower(kw)) {
+				return true
+			}
+		}
+	}
+	return false
 }
 
 func transformString(input string) string {
