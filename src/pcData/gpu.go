@@ -79,8 +79,8 @@ type GPUType struct {
 	MemorySize   int
 	MemoryType   string
 	MemoryBus    string
+	ClockRate    int
 	BoostClock   int
-	OcClock      int
 	Benchmark    int
 	Power        int
 	Length       int
@@ -115,6 +115,13 @@ func GetGPUScoreSpec(record GPUScoreData) GPUScore {
 	GPUSpec.Chipset = record.Name
 	GPUSpec.Benchmark = extractNumberFromString(record.Benchmark)
 	return GPUSpec
+}
+
+func UpdateGPUBenchmarks(data GPUType) GPUType {
+	matchedScore := findGPUScoreDataLogic(gpuScoreList, data.Chipset)
+	data.Benchmark = newScoreLogic(matchedScore.BoostClock, data.BoostClock, matchedScore.Benchmark)
+	fmt.Printf("UpdateGPUBenchmarks Chipset: %s, matchedScore.Benchmark: %d, data.Benchmark: %d\n", data.Chipset, matchedScore.Benchmark, data.Benchmark)
+	return data
 }
 
 func GetGPUSpec(record LinkRecord) GPUSpec {
@@ -196,8 +203,8 @@ func GetGPUData(spec GPUSpec) (GPUType, bool) {
 		MemoryType:   newSpec.MemoryType,
 		MemoryBus:    newSpec.MemoryBus,
 		Benchmark:    newBenchmark,
-		BoostClock:   newSpec.ClockRate,
-		OcClock:      newSpec.BoostClock,
+		ClockRate:    newSpec.ClockRate,
+		BoostClock:   newSpec.BoostClock,
 		Power:        newSpec.Power,
 		Length:       newSpec.Length,
 		Slot:         newSpec.Slot,
@@ -347,7 +354,7 @@ func fetchGPUUSPrice(link string, collector *colly.Collector) GPUSpec {
 		element.ForEach(".product-details .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Boost Clock":
-				specData.ClockRate = extractNumberFromString(item.ChildText("td"))
+				specData.BoostClock = extractNumberFromString(item.ChildText("td"))
 			case "Thermal Design Power":
 				specData.Power = extractNumberFromString(item.ChildText("td"))
 			case "Max GPU Length":

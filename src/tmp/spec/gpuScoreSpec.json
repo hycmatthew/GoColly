@@ -6,6 +6,7 @@
         "MemorySize": 8,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
+        "ClockRate": 1830,
         "BoostClock": 2460,
         "Benchmark": 10620,
         "Power": 115,
@@ -694,6 +695,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
+        "ClockRate": 2310,
         "BoostClock": 2535,
         "Benchmark": 13489,
         "Power": 165,
@@ -1123,6 +1125,7 @@
         "MemorySize": 8,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
+        "ClockRate": 2310,
         "BoostClock": 2535,
         "Benchmark": 13507,
         "Power": 160,
@@ -1776,6 +1779,7 @@
         "MemorySize": 12,
         "MemoryType": "GDDR6X",
         "MemoryBus": "192 bit",
+        "ClockRate": 1920,
         "BoostClock": 2475,
         "Benchmark": 17857,
         "Power": 200,
@@ -2569,6 +2573,7 @@
         "MemorySize": 12,
         "MemoryType": "GDDR6X",
         "MemoryBus": "192 bit",
+        "ClockRate": 1980,
         "BoostClock": 2475,
         "Benchmark": 20981,
         "Power": 220,
@@ -3180,6 +3185,7 @@
         "MemorySize": 12,
         "MemoryType": "GDDR6X",
         "MemoryBus": "192 bit",
+        "ClockRate": 2310,
         "BoostClock": 2610,
         "Benchmark": 22831,
         "Power": 285,
@@ -4008,6 +4014,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR6X",
         "MemoryBus": "256 bit",
+        "ClockRate": 2340,
         "BoostClock": 2610,
         "Benchmark": 24266,
         "Power": 285,
@@ -4612,6 +4619,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR6X",
         "MemoryBus": "256 bit",
+        "ClockRate": 2205,
         "BoostClock": 2505,
         "Benchmark": 28273,
         "Power": 320,
@@ -5356,6 +5364,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR6X",
         "MemoryBus": "256 bit",
+        "ClockRate": 2295,
         "BoostClock": 2550,
         "Benchmark": 28381,
         "Power": 320,
@@ -5855,6 +5864,7 @@
         "MemorySize": 24,
         "MemoryType": "GDDR6X",
         "MemoryBus": "384 bit",
+        "ClockRate": 2235,
         "BoostClock": 2520,
         "Benchmark": 36517,
         "Power": 450,
@@ -6566,11 +6576,12 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Chipset": "RTX 4090D",
+        "Chipset": "RTX 4090 D",
         "Generation": "GeForce 40",
         "MemorySize": 24,
         "MemoryType": "GDDR6X",
         "MemoryBus": "384 bit",
+        "ClockRate": 2280,
         "BoostClock": 2520,
         "Benchmark": 34292,
         "Power": 425,
@@ -6680,11 +6691,575 @@
     },
     {
         "Manufacturer": "NVIDIA",
+        "Chipset": "RTX 5070",
+        "Generation": "GeForce 50",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "MemoryBus": "192 bit",
+        "ClockRate": 2325,
+        "BoostClock": 2512,
+        "Benchmark": 22544,
+        "Power": 250,
+        "Length": 245,
+        "Slot": "Dual-slot",
+        "Width": 115,
+        "ProductSpec": [
+            {
+                "ProductName": "ASUS PRIME RTX 5070",
+                "BoostClock": 2512,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS PRIME RTX 5070 OC Edition",
+                "BoostClock": 2557,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5070",
+                "BoostClock": 2512,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5070 OC Edition",
+                "BoostClock": 2610,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS ROG Strix RTX 5070",
+                "BoostClock": 2512,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS ROG Strix RTX 5070 OC Edition",
+                "BoostClock": 2640,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "AX Gaming RTX 5070 X3W",
+                "BoostClock": 2512,
+                "Length": 316,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5070 Advanced OC",
+                "BoostClock": 2572,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5070 Ultra W OC",
+                "BoostClock": 2557,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5070 Vulcan OC",
+                "BoostClock": 2587,
+                "Length": 336,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 5070 Deluxe Edition",
+                "BoostClock": 2512,
+                "Length": 301,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Dazzling Light OC",
+                "BoostClock": 2572,
+                "Length": 302,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Phoenix",
+                "BoostClock": 2512,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Phoenix GS",
+                "BoostClock": 2572,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Python III",
+                "BoostClock": 2512,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Python III OC",
+                "BoostClock": 2542,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Snow OC",
+                "BoostClock": 2542,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Wind OC",
+                "BoostClock": 2527,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 1-Click OC",
+                "BoostClock": 2527,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 1-Click OC White",
+                "BoostClock": 2527,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 EX Gamer 1-Click OC",
+                "BoostClock": 2557,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 EX Gamer 1-Click OC White",
+                "BoostClock": 2557,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 FIRE",
+                "BoostClock": 2512,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Magic Blade",
+                "BoostClock": 2512,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Magic Blade OC",
+                "BoostClock": 2557,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Metal Master Black Gold Edition",
+                "BoostClock": 2512,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Metal Master Black Gold Edition OC",
+                "BoostClock": 2557,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Metal Master Platinum Edition",
+                "BoostClock": 2512,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Metal Master Platinum Edition OC",
+                "BoostClock": 2557,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Saber",
+                "BoostClock": 2512,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Saber OC",
+                "BoostClock": 2557,
+                "Length": 317,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5070 MASTER",
+                "BoostClock": 2715,
+                "Length": 317,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 AERO OC",
+                "BoostClock": 2625,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 EAGLE OC ICE SFF",
+                "BoostClock": 2587,
+                "Length": 290,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 EAGLE OC SFF",
+                "BoostClock": 2587,
+                "Length": 290,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 GAMING OC",
+                "BoostClock": 2625,
+                "Length": 327,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 WINDFORCE OC SFF",
+                "BoostClock": 2542,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5070 WINDFORCE SFF",
+                "BoostClock": 2512,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 TWIN X2",
+                "BoostClock": 2512,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 TWIN X2 OC",
+                "BoostClock": 2542,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 TWIN X2 OC WHITE",
+                "BoostClock": 2542,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 TWIN X2 WHITE",
+                "BoostClock": 2512,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Inno3D RTX 5070 X3 OC",
+                "BoostClock": 2542,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 1-Click OC",
+                "BoostClock": 2527,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 1-Click OC White",
+                "BoostClock": 2527,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 EX Gamer 1-Click OC",
+                "BoostClock": 2557,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "KFA2 RTX 5070 EX Gamer 1-Click OC White",
+                "BoostClock": 2557,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Manli RTX 5070 Nebula",
+                "BoostClock": 2512,
+                "Length": 312,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Manli RTX 5070 Snow Fox OC",
+                "BoostClock": 2542,
+                "Length": 315,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Manli RTX 5070 Stellar OC",
+                "BoostClock": 2542,
+                "Length": 312,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 GAMING TRIO",
+                "BoostClock": 2512,
+                "Length": 338,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 GAMING TRIO OC",
+                "BoostClock": 2610,
+                "Length": 338,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 GAMING TRIO OC WHITE",
+                "BoostClock": 2610,
+                "Length": 338,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 GAMING TRIO WHITE",
+                "BoostClock": 2512,
+                "Length": 338,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 INSPIRE 3X OC",
+                "BoostClock": 2542,
+                "Length": 337,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 SHADOW 2X",
+                "BoostClock": 2512,
+                "Length": 231,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 SHADOW 2X OC",
+                "BoostClock": 2542,
+                "Length": 231,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 SHADOW 3X",
+                "BoostClock": 2512,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 SHADOW 3X OC",
+                "BoostClock": 2542,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VANGUARD SOC",
+                "BoostClock": 2640,
+                "Length": 337,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VANGUARD SOC LAUNCH EDITION",
+                "BoostClock": 2640,
+                "Length": 337,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VENTUS 2X",
+                "BoostClock": 2512,
+                "Length": 236,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VENTUS 2X OC",
+                "BoostClock": 2542,
+                "Length": 236,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VENTUS 2X OC WHITE",
+                "BoostClock": 2542,
+                "Length": 236,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VENTUS 2X WHITE",
+                "BoostClock": 2512,
+                "Length": 236,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VENTUS 3X",
+                "BoostClock": 2512,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RTX 5070 VENTUS 3X OC",
+                "BoostClock": 2542,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "NVIDIA GeForce RTX 5070 Founders Edition",
+                "BoostClock": 2512,
+                "Length": 245,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Palit RTX 5070 GamingPro",
+                "BoostClock": 2512,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Palit RTX 5070 GamingPro OC",
+                "BoostClock": 2572,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PNY RTX 5070 ARGB EPIC-X Overclocked Triple Fan",
+                "BoostClock": 2685,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PNY RTX 5070 ARGB EPIC-X Triple Fan",
+                "BoostClock": 2512,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PNY RTX 5070 Overclocked Triple Fan",
+                "BoostClock": 2587,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PNY RTX 5070 Triple Fan",
+                "BoostClock": 2512,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 SOLID",
+                "BoostClock": 2512,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 SOLID OC",
+                "BoostClock": 2542,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 XGAMING",
+                "BoostClock": 2512,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 XGAMING OC",
+                "BoostClock": 2542,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            }
+        ]
+    },
+    {
+        "Manufacturer": "NVIDIA",
         "Chipset": "RTX 5070 Ti",
         "Generation": "GeForce 50",
         "MemorySize": 16,
         "MemoryType": "GDDR7",
         "MemoryBus": "256 bit",
+        "ClockRate": 2295,
         "BoostClock": 2452,
         "Benchmark": 27668,
         "Power": 300,
@@ -6701,7 +7276,7 @@
             },
             {
                 "ProductName": "ASUS PRIME RTX 5070 Ti OC Edition",
-                "BoostClock": 2572,
+                "BoostClock": 2497,
                 "Length": 306,
                 "Slots": "Dual-slot",
                 "TDP": 300
@@ -6742,6 +7317,34 @@
                 "TDP": 300
             },
             {
+                "ProductName": "Colorful iGame RTX 5070 Ti Advanced OC",
+                "BoostClock": 2512,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5070 Ti Ultra W OC",
+                "BoostClock": 2497,
+                "Length": 331,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5070 Ti Vulcan OC",
+                "BoostClock": 2542,
+                "Length": 336,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 5070 Ti Deluxe Edition",
+                "BoostClock": 2452,
+                "Length": 331,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
                 "ProductName": "Gainward RTX 5070 Ti Phantom",
                 "BoostClock": 2452,
                 "Length": 332,
@@ -6764,9 +7367,37 @@
             },
             {
                 "ProductName": "Gainward RTX 5070 Ti Phoenix GS",
-                "BoostClock": 2452,
+                "BoostClock": 2482,
                 "Length": 332,
                 "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Shimmering Light Super OC",
+                "BoostClock": 2512,
+                "Length": 306,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Snow OC",
+                "BoostClock": 2482,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Wind",
+                "BoostClock": 2452,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Gainward RTX 5070 Ti Wind OC",
+                "BoostClock": 2467,
+                "Length": 302,
+                "Slots": "Dual-slot",
                 "TDP": 300
             },
             {
@@ -6795,6 +7426,76 @@
                 "BoostClock": 2497,
                 "Length": 322,
                 "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti HOF OC LAB Deluxe",
+                "BoostClock": 2580,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti HOF OC LAB Deluxe-X",
+                "BoostClock": 2610,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Magic Blade",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Magic Blade OC",
+                "BoostClock": 2497,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Metal Master Black Gold Edition",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Metal Master Black Gold Edition OC",
+                "BoostClock": 2497,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Metal Master Platinum Edition",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Metal Master Platinum Edition OC",
+                "BoostClock": 2497,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Saber",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GALAX RTX 5070 Ti Saber OC",
+                "BoostClock": 2497,
+                "Length": 304,
+                "Slots": "Dual-slot",
                 "TDP": 300
             },
             {
@@ -6903,6 +7604,13 @@
                 "TDP": 300
             },
             {
+                "ProductName": "Leadtek WinFast RTX 5070 Ti HURRICANE",
+                "BoostClock": 2452,
+                "Length": 317,
+                "Slots": "Quad-slot",
+                "TDP": 300
+            },
+            {
                 "ProductName": "Manli Gallardo RTX 5070 Ti OC",
                 "BoostClock": 2512,
                 "Length": 359,
@@ -6928,6 +7636,20 @@
                 "BoostClock": 2482,
                 "Length": 315,
                 "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MAXSUN RTX 5070 Ti iCraft OC",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MAXSUN RTX 5070 Ti Turbo",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
                 "TDP": 300
             },
             {
@@ -7029,23 +7751,30 @@
                 "TDP": 300
             },
             {
-                "ProductName": "PNY RTX 5070 Ti ARGB EPIC-X Overclocked Triple Fan",
+                "ProductName": "PNY RTX 5070 Ti ARGB Triple Fan",
                 "BoostClock": 2452,
                 "Length": 300,
                 "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
-                "ProductName": "PNY RTX 5070 Ti ARGB EPIC-X Triple Fan",
-                "BoostClock": 2452,
+                "ProductName": "PNY RTX 5070 Ti ARGB Triple Fan OC",
+                "BoostClock": 2640,
                 "Length": 300,
                 "Slots": "Triple-slot",
                 "TDP": 300
             },
             {
-                "ProductName": "PNY RTX 5070 Ti Overclocked Triple Fan",
+                "ProductName": "PNY RTX 5070 Ti ARGB Triple Fan Plus",
                 "BoostClock": 2452,
-                "Length": 300,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti ARGB Triple Fan Plus OC",
+                "BoostClock": 2640,
+                "Length": 329,
                 "Slots": "Triple-slot",
                 "TDP": 300
             },
@@ -7053,6 +7782,41 @@
                 "ProductName": "PNY RTX 5070 Ti Triple Fan",
                 "BoostClock": 2452,
                 "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti Triple Fan OC",
+                "BoostClock": 2572,
+                "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti Triple Fan Plus",
+                "BoostClock": 2452,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PNY RTX 5070 Ti Triple Fan Plus OC",
+                "BoostClock": 2572,
+                "Length": 329,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 Ti AMP Extreme INFINITY",
+                "BoostClock": 2512,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 Ti SOLID",
+                "BoostClock": 2452,
+                "Length": 330,
                 "Slots": "Triple-slot",
                 "TDP": 300
             },
@@ -7069,6 +7833,13 @@
                 "Length": 304,
                 "Slots": "Triple-slot",
                 "TDP": 300
+            },
+            {
+                "ProductName": "ZOTAC RTX 5070 Ti SOLID OC",
+                "BoostClock": 2482,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 300
             }
         ]
     },
@@ -7079,6 +7850,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR7",
         "MemoryBus": "256 bit",
+        "ClockRate": 2295,
         "BoostClock": 2617,
         "Benchmark": 33116,
         "Power": 360,
@@ -7116,7 +7888,7 @@
             },
             {
                 "ProductName": "ASUS ROG Astral RTX 5080",
-                "BoostClock": 2617,
+                "BoostClock": 2640,
                 "Length": 358,
                 "Slots": "Quad-slot",
                 "TDP": 360
@@ -7231,6 +8003,76 @@
                 "BoostClock": 2617,
                 "Length": 322,
                 "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 HOF OC LAB Plus",
+                "BoostClock": 2685,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 HOF OC LAB Plus-X",
+                "BoostClock": 2730,
+                "Length": 338,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Magic Blade",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Magic Blade OC",
+                "BoostClock": 2655,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Metal Master Black Gold Edition",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Metal Master Black Gold Edition OC",
+                "BoostClock": 2655,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Metal Master Platinum Edition",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Metal Master Platinum Edition OC",
+                "BoostClock": 2655,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Saber",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "GALAX RTX 5080 Saber OC",
+                "BoostClock": 2655,
+                "Length": 304,
+                "Slots": "Dual-slot",
                 "TDP": 360
             },
             {
@@ -7360,6 +8202,20 @@
                 "TDP": 360
             },
             {
+                "ProductName": "Leadtek WinFast RTX 5080 HURRICANE",
+                "BoostClock": 2617,
+                "Length": 317,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Lenovo RTX 5080 LEGION",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Quad-slot",
+                "TDP": 360
+            },
+            {
                 "ProductName": "Manli Gallardo RTX 5080 OC",
                 "BoostClock": 2670,
                 "Length": 359,
@@ -7385,6 +8241,20 @@
                 "BoostClock": 2640,
                 "Length": 360,
                 "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MAXSUN RTX 5080 iCraft OC AIGA",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "MAXSUN RTX 5080 iCraft OC AIGA Plus",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
                 "TDP": 360
             },
             {
@@ -7486,6 +8356,13 @@
                 "TDP": 360
             },
             {
+                "ProductName": "NVIDIA GeForce RTX 5080 Founders Edition",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 360
+            },
+            {
                 "ProductName": "Palit RTX 5080 GameRock",
                 "BoostClock": 2617,
                 "Length": 332,
@@ -7515,7 +8392,7 @@
             },
             {
                 "ProductName": "PNY RTX 5080 ARGB EPIC-X Overclocked Triple Fan",
-                "BoostClock": 2780,
+                "BoostClock": 2775,
                 "Length": 329,
                 "Slots": "Triple-slot",
                 "TDP": 360
@@ -7549,6 +8426,13 @@
                 "TDP": 360
             },
             {
+                "ProductName": "ZOTAC RTX 5080 AMP Extreme INFINITY ULTRA",
+                "BoostClock": 2730,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
                 "ProductName": "ZOTAC RTX 5080 SOLID",
                 "BoostClock": 2617,
                 "Length": 330,
@@ -7556,7 +8440,28 @@
                 "TDP": 360
             },
             {
+                "ProductName": "ZOTAC RTX 5080 SOLID CORE",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ZOTAC RTX 5080 SOLID CORE OC",
+                "BoostClock": 2640,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
                 "ProductName": "ZOTAC RTX 5080 SOLID OC",
+                "BoostClock": 2640,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "ZOTAC RTX 5080 SOLID OC White",
                 "BoostClock": 2640,
                 "Length": 330,
                 "Slots": "Triple-slot",
@@ -7578,8 +8483,9 @@
         "MemorySize": 32,
         "MemoryType": "GDDR7",
         "MemoryBus": "512 bit",
+        "ClockRate": 2017,
         "BoostClock": 2407,
-        "Benchmark": 48052,
+        "Benchmark": 48252,
         "Power": 575,
         "Length": 304,
         "Slot": "Dual-slot",
@@ -7594,7 +8500,7 @@
             },
             {
                 "ProductName": "ASUS TUF Gaming RTX 5090 OC Edition",
-                "BoostClock": 2407,
+                "BoostClock": 2550,
                 "Length": 348,
                 "Slots": "Quad-slot",
                 "TDP": 575
@@ -7650,7 +8556,7 @@
             },
             {
                 "ProductName": "GALAX RTX 5090 1-Click OC",
-                "BoostClock": 2407,
+                "BoostClock": 2422,
                 "Length": 326,
                 "Slots": "Triple-slot",
                 "TDP": 575
@@ -7699,7 +8605,7 @@
             },
             {
                 "ProductName": "GIGABYTE RTX 5090 WINDFORCE OC",
-                "BoostClock": 2407,
+                "BoostClock": 2467,
                 "Length": 342,
                 "Slots": "Triple-slot",
                 "TDP": 575
@@ -7734,9 +8640,16 @@
             },
             {
                 "ProductName": "KFA2 RTX 5090 1-Click OC",
-                "BoostClock": 2407,
+                "BoostClock": 2422,
                 "Length": 326,
                 "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Leadtek WinFast RTX 5090 HURRICANE",
+                "BoostClock": 2407,
+                "Length": 360,
+                "Slots": "Quad-slot",
                 "TDP": 575
             },
             {
@@ -7810,6 +8723,13 @@
                 "TDP": 575
             },
             {
+                "ProductName": "NVIDIA GeForce RTX 5090 Founders Edition",
+                "BoostClock": 2407,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 575
+            },
+            {
                 "ProductName": "Palit RTX 5090 GameRock",
                 "BoostClock": 2407,
                 "Length": 332,
@@ -7839,7 +8759,7 @@
             },
             {
                 "ProductName": "PNY RTX 5090 Overclocked Triple Fan",
-                "BoostClock": 2407,
+                "BoostClock": 2625,
                 "Length": 329,
                 "Slots": "Triple-slot",
                 "TDP": 575
@@ -7876,13 +8796,14 @@
     },
     {
         "Manufacturer": "NVIDIA",
-        "Chipset": "RTX 5090D",
+        "Chipset": "RTX 5090 D",
         "Generation": "GeForce 50",
         "MemorySize": 32,
         "MemoryType": "GDDR7",
         "MemoryBus": "512 bit",
+        "ClockRate": 2017,
         "BoostClock": 2407,
-        "Benchmark": 47297,
+        "Benchmark": 48097,
         "Power": 575,
         "Length": 304,
         "Slot": "Dual-slot",
@@ -7924,10 +8845,24 @@
                 "TDP": 575
             },
             {
+                "ProductName": "Colorful iGame RTX 5090 D Advanced",
+                "BoostClock": 2407,
+                "Length": 355,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
                 "ProductName": "Colorful iGame RTX 5090 D Advanced OC",
                 "BoostClock": 2512,
                 "Length": 355,
                 "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5090 D Neptune",
+                "BoostClock": 2407,
+                "Length": 282,
+                "Slots": "Dual-slot",
                 "TDP": 575
             },
             {
@@ -7938,8 +8873,22 @@
                 "TDP": 575
             },
             {
+                "ProductName": "Colorful iGame RTX 5090 D Vulcan",
+                "BoostClock": 2407,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
                 "ProductName": "Colorful iGame RTX 5090 D Vulcan OC",
                 "BoostClock": 2527,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5090 D Vulcan W",
+                "BoostClock": 2407,
                 "Length": 360,
                 "Slots": "Triple-slot",
                 "TDP": 575
@@ -7973,6 +8922,27 @@
                 "TDP": 575
             },
             {
+                "ProductName": "GALAX RTX 5090 D General",
+                "BoostClock": 2407,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5090 D MASTER",
+                "BoostClock": 2655,
+                "Length": 360,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5090 D MASTER ICE",
+                "BoostClock": 2655,
+                "Length": 360,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
                 "ProductName": "Inno3D RTX 5090 D Night X3",
                 "BoostClock": 2407,
                 "Length": 335,
@@ -7987,24 +8957,45 @@
                 "TDP": 575
             },
             {
-                "ProductName": "Manli Renaissance RTX 5090 D",
+                "ProductName": "Lenovo RTX 5090 D LEGION",
                 "BoostClock": 2407,
                 "Length": 304,
-                "Slots": "Triple-slot",
+                "Slots": "Quad-slot",
                 "TDP": 575
             },
             {
-                "ProductName": "Manli Renaissance RTX 5090 D OC",
+                "ProductName": "Manli RTX 5090 D Gallardo OC",
                 "BoostClock": 2482,
                 "Length": 359,
                 "Slots": "Triple-slot",
                 "TDP": 575
             },
             {
-                "ProductName": "Manli Renaissance RTX 5090 D OC",
+                "ProductName": "Manli RTX 5090 D Stellar",
+                "BoostClock": 2407,
+                "Length": 304,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "Manli RTX 5090 D Stellar OC",
                 "BoostClock": 2437,
                 "Length": 360,
                 "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 D SUPRIM SOC",
+                "BoostClock": 2565,
+                "Length": 359,
+                "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 D VANGUARD SOC",
+                "BoostClock": 2512,
+                "Length": 357,
+                "Slots": "Quad-slot",
                 "TDP": 575
             },
             {
@@ -8030,6 +9021,7 @@
         "MemorySize": 4,
         "MemoryType": "GDDR6",
         "MemoryBus": "64 bit",
+        "ClockRate": 2310,
         "BoostClock": 2815,
         "Benchmark": 4917,
         "Power": 107,
@@ -8186,6 +9178,7 @@
         "MemorySize": 8,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
+        "ClockRate": 1626,
         "BoostClock": 2491,
         "Benchmark": 8082,
         "Power": 132,
@@ -8307,6 +9300,7 @@
         "MemorySize": 8,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
+        "ClockRate": 1968,
         "BoostClock": 2589,
         "Benchmark": 9579,
         "Power": 160,
@@ -8521,11 +9515,1301 @@
     },
     {
         "Manufacturer": "AMD",
+        "Chipset": "RX 6700",
+        "Generation": "RX 6000",
+        "MemorySize": 10,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "160 bit",
+        "ClockRate": 1941,
+        "BoostClock": 2450,
+        "Benchmark": 11195,
+        "Power": 175,
+        "Length": 267,
+        "Slot": "Dual-slot",
+        "Width": 110,
+        "ProductSpec": [
+            {
+                "ProductName": "Lenovo RX 6700 OEM",
+                "BoostClock": 2450,
+                "Length": 242,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "PowerColor Fighter RX 6700",
+                "BoostClock": 2495,
+                "Length": 228,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Sapphire GPRO X080",
+                "BoostClock": 2450,
+                "Length": 242,
+                "Slots": "Dual-slot",
+                "TDP": 165
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6700",
+                "BoostClock": 2495,
+                "Length": 260,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Sapphire RX 6700",
+                "BoostClock": 2495,
+                "Length": 242,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "XFX Speedster QICK 319 RX 6700 XL",
+                "BoostClock": 2450,
+                "Length": 323,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "XFX Speedster SWFT 309 RX 6700",
+                "BoostClock": 2450,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 175
+            },
+            {
+                "ProductName": "XFX Speedster SWFT 309 RX 6700 XL",
+                "BoostClock": 2450,
+                "Length": 242,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            }
+        ]
+    },
+    {
+        "Manufacturer": "AMD",
+        "Chipset": "RX 6700 XT",
+        "Generation": "RX 6000",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "192 bit",
+        "ClockRate": 2321,
+        "BoostClock": 2581,
+        "Benchmark": 12804,
+        "Power": 230,
+        "Length": 267,
+        "Slot": "Dual-slot",
+        "Width": 110,
+        "ProductSpec": [
+            {
+                "ProductName": "AMD Radeon RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASRock RX 6700 XT Challenger D",
+                "BoostClock": 2581,
+                "Length": 269,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASRock RX 6700 XT Challenger D OC",
+                "BoostClock": 2615,
+                "Length": 269,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASRock RX 6700 XT Challenger Pro OC",
+                "BoostClock": 2620,
+                "Length": 303,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASRock RX 6700 XT Phantom Gaming D OC",
+                "BoostClock": 2622,
+                "Length": 305,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASUS DUAL RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 295,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASUS DUAL RX 6700 XT OC",
+                "BoostClock": 2620,
+                "Length": 295,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASUS RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASUS TUF RX 6700 XT GAMING OC",
+                "BoostClock": 2622,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "ASUS ROG STRIX RX 6700 XT GAMING OC",
+                "BoostClock": 2629,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Dataland RX 6700 XT God of War",
+                "BoostClock": 2622,
+                "Length": 310,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Dell RX 6700 XT OEM",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 6700 XT ELITE",
+                "BoostClock": 2622,
+                "Length": 296,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "GIGABYTE RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "GIGABYTE RX 6700 XT EAGLE",
+                "BoostClock": 2581,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "GIGABYTE RX 6700 XT EAGLE OC",
+                "BoostClock": 2620,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "GIGABYTE RX 6700 XT GAMING OC",
+                "BoostClock": 2622,
+                "Length": 281,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "HP RX 6700 XT OEM",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 228,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "MSI RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "MSI RX 6700 XT GAMING",
+                "BoostClock": 2581,
+                "Length": 279,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "MSI RX 6700 XT GAMING X",
+                "BoostClock": 2622,
+                "Length": 279,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "MSI RX 6700 XT MECH 2X",
+                "BoostClock": 2581,
+                "Length": 247,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "MSI RX 6700 XT MECH 2X OC",
+                "BoostClock": 2620,
+                "Length": 247,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "PowerColor Fighter RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 228,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "PowerColor Hellhound RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 305,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "PowerColor Hellhound RX 6700 XT Spectral White",
+                "BoostClock": 2581,
+                "Length": 305,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6700 XT",
+                "BoostClock": 2622,
+                "Length": 320,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "PowerColor RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6700 XT",
+                "BoostClock": 2622,
+                "Length": 310,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 260,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6700 XT OC",
+                "BoostClock": 2620,
+                "Length": 260,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Sapphire RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "VASTARMOR RX 6700 XT ALLOY",
+                "BoostClock": 2581,
+                "Length": 326,
+                "Slots": "Triple-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "XFX RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "XFX Speedster MERC319 RX 6700 XT BLACK",
+                "BoostClock": 2622,
+                "Length": 323,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "XFX Speedster QICK319 RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 323,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "XFX Speedster QICK319 RX 6700 XT ULTRA",
+                "BoostClock": 2622,
+                "Length": 323,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "XFX Speedster SWFT309 RX 6700 XT",
+                "BoostClock": 2581,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Yeston RX 6700 XT Sakura Hitomi Edition",
+                "BoostClock": 2622,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            },
+            {
+                "ProductName": "Yeston RX 6700 XT Six Way Soldiers",
+                "BoostClock": 2581,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 230
+            }
+        ]
+    },
+    {
+        "Manufacturer": "AMD",
+        "Chipset": "RX 6800",
+        "Generation": "RX 6000",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "256 bit",
+        "ClockRate": 1700,
+        "BoostClock": 2105,
+        "Benchmark": 16182,
+        "Power": 250,
+        "Length": 267,
+        "Slot": "Dual-slot",
+        "Width": 120,
+        "ProductSpec": [
+            {
+                "ProductName": "AMD Radeon RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASRock RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASRock RX 6800 Challenger Pro OC",
+                "BoostClock": 2140,
+                "Length": 305,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASRock RX 6800 Phantom Gaming D OC",
+                "BoostClock": 2190,
+                "Length": 305,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS TUF RX 6800 GAMING OC",
+                "BoostClock": 2155,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS ROG STRIX RX 6800 GAMING OC",
+                "BoostClock": 2190,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "BIOSTAR RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Dataland RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Dataland RX 6800 X-Serial Ares",
+                "BoostClock": 2190,
+                "Length": 311,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 6800 MASTER",
+                "BoostClock": 2190,
+                "Length": 286,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "GIGABYTE RX 6800 GAMING OC",
+                "BoostClock": 2155,
+                "Length": 286,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU Fighter RX 6800",
+                "BoostClock": 2155,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RX 6800 GAMING TRIO",
+                "BoostClock": 2105,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "MSI RX 6800 GAMING X TRIO",
+                "BoostClock": 2155,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PowerColor Fighter RX 6800",
+                "BoostClock": 2155,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6800",
+                "BoostClock": 2190,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6800 Limited Edition",
+                "BoostClock": 2190,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PowerColor Red Dragon RX 6800",
+                "BoostClock": 2170,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "PowerColor RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6800",
+                "BoostClock": 2190,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6800",
+                "BoostClock": 2170,
+                "Length": 313,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Sapphire RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "XFX RX 6800",
+                "BoostClock": 2105,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "XFX Speedster MERC319 RX 6800 BLACK",
+                "BoostClock": 2190,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "XFX Speedster QICK319 RX 6800 BLACK",
+                "BoostClock": 2190,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "XFX Speedster SWFT319 RX 6800 CORE",
+                "BoostClock": 2105,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "Yeston RX 6800 Sakura Hitomi",
+                "BoostClock": 2190,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            }
+        ]
+    },
+    {
+        "Manufacturer": "AMD",
+        "Chipset": "RX 6800 XT",
+        "Generation": "RX 6000",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "256 bit",
+        "ClockRate": 1825,
+        "BoostClock": 2250,
+        "Benchmark": 19329,
+        "Power": 300,
+        "Length": 267,
+        "Slot": "Dual-slot",
+        "Width": 120,
+        "ProductSpec": [
+            {
+                "ProductName": "AMD Radeon RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "AMD Radeon RX 6800 XT Midnight Black",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASRock RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASRock RX 6800 XT Phantom Gaming D OC",
+                "BoostClock": 2310,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASRock RX 6800 XT Taichi X OC",
+                "BoostClock": 2360,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS TUF RX 6800 XT GAMING OC",
+                "BoostClock": 2310,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS ROG STRIX LC RX 6800 XT GAMING OC",
+                "BoostClock": 2360,
+                "Length": 277,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS ROG STRIX RX 6800 XT GAMING OC",
+                "BoostClock": 2360,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "BIOSTAR RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Dataland RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Dataland RX 6800 XT Ares X",
+                "BoostClock": 2360,
+                "Length": 311,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Dell RX 6800 XT OEM",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 6800 XT MASTER",
+                "BoostClock": 2310,
+                "Length": 319,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 6800 XT MASTER TYPE C",
+                "BoostClock": 2310,
+                "Length": 319,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RX 6800 XT GAMING OC",
+                "BoostClock": 2285,
+                "Length": 286,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RX 6800 XT GAMING PRO OC",
+                "BoostClock": 2285,
+                "Length": 286,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU Red Dragon RX 6800 XT",
+                "BoostClock": 2310,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Lenovo RX 6800 XT LEGION",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Lenovo RX 6800 XT OEM",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6800 XT GAMING TRIO",
+                "BoostClock": 2250,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6800 XT GAMING X TRIO",
+                "BoostClock": 2285,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6800 XT GAMING Z TRIO",
+                "BoostClock": 2310,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Liquid Devil RX 6800 XT",
+                "BoostClock": 2360,
+                "Length": 266,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6800 XT",
+                "BoostClock": 2340,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6800 XT Limited Edition",
+                "BoostClock": 2340,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Red Dragon RX 6800 XT",
+                "BoostClock": 2310,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6800 XT",
+                "BoostClock": 2360,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6800 XT SE",
+                "BoostClock": 2360,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 6800 XT",
+                "BoostClock": 2310,
+                "Length": 313,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "VASTARMOR RX 6800 XT ALLOY",
+                "BoostClock": 2340,
+                "Length": 345,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster MERC319 RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster MERC319 RX 6800 XT BLACK",
+                "BoostClock": 2340,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster SWFT319 RX 6800 XT",
+                "BoostClock": 2250,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Yeston RX 6800 XT Sakura Hitomi",
+                "BoostClock": 2310,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            }
+        ]
+    },
+    {
+        "Manufacturer": "AMD",
+        "Chipset": "RX 6900 XT",
+        "Generation": "RX 6000",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "256 bit",
+        "ClockRate": 1825,
+        "BoostClock": 2250,
+        "Benchmark": 20764,
+        "Power": 300,
+        "Length": 267,
+        "Slot": "Triple-slot",
+        "Width": 120,
+        "ProductSpec": [
+            {
+                "ProductName": "AMD Radeon RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "AMD Radeon RX 6900 XT Halo Infinite Limited Edition",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "AMD Radeon RX 6900 XT LC",
+                "BoostClock": 2435,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 330
+            },
+            {
+                "ProductName": "ASRock LC RX 6900 XT OEM",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASRock RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASRock RX 6900 XT OC Formula",
+                "BoostClock": 2475,
+                "Length": 332,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASRock RX 6900 XT Phantom Gaming D OC",
+                "BoostClock": 2340,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS TUF RX 6900 XT GAMING OC",
+                "BoostClock": 2310,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS TUF RX 6900 XT GAMING TOP",
+                "BoostClock": 2335,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS ROG STRIX LC RX 6900 XT GAMING OC",
+                "BoostClock": 2365,
+                "Length": 277,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "ASUS ROG STRIX LC RX 6900 XT GAMING TOP",
+                "BoostClock": 2525,
+                "Length": 277,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "BIOSTAR RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Dataland RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Dataland RX 6900 XT Ares X",
+                "BoostClock": 2285,
+                "Length": 311,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Dell RX 6900 XT OEM",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 6900 XT MASTER Rev. 1.0",
+                "BoostClock": 2365,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 6900 XT MASTER Rev. 2.0",
+                "BoostClock": 2335,
+                "Length": 322,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 6900 XT Xtreme WaterForce WB",
+                "BoostClock": 2525,
+                "Length": 282,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "GIGABYTE RX 6900 XT GAMING OC",
+                "BoostClock": 2285,
+                "Length": 286,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Lenovo RX 6900 XT LEGION",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6900 XT GAMING TRIO",
+                "BoostClock": 2250,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6900 XT GAMING X TRIO",
+                "BoostClock": 2340,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "MSI RX 6900 XT GAMING Z TRIO",
+                "BoostClock": 2425,
+                "Length": 324,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Liquid Devil RX 6900 XT",
+                "BoostClock": 2365,
+                "Length": 266,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Liquid Devil RX 6900 XT Ultimate",
+                "BoostClock": 2480,
+                "Length": 266,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6900 XT",
+                "BoostClock": 2340,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6900 XT Limited Edition",
+                "BoostClock": 2340,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 6900 XT Ultimate",
+                "BoostClock": 2425,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "PowerColor RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6900 XT OC",
+                "BoostClock": 2285,
+                "Length": 310,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6900 XT Special Edition OC",
+                "BoostClock": 2365,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 6900 XT Special Edition OC",
+                "BoostClock": 2365,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire RX 6900 XT LC",
+                "BoostClock": 2435,
+                "Length": 267,
+                "Slots": "Dual-slot",
+                "TDP": 330
+            },
+            {
+                "ProductName": "Sapphire TOXIC RX 6900 XT Air Cooled",
+                "BoostClock": 2425,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 330
+            },
+            {
+                "ProductName": "Sapphire TOXIC RX 6900 XT Extreme Edition",
+                "BoostClock": 2525,
+                "Length": 270,
+                "Slots": "Dual-slot",
+                "TDP": 430
+            },
+            {
+                "ProductName": "Sapphire TOXIC RX 6900 XT Limited Edition",
+                "BoostClock": 2365,
+                "Length": 270,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire TOXIC RX 6900 XT Limited Edition",
+                "BoostClock": 2365,
+                "Length": 270,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "Sapphire TOXIC RX 6900 XT Limited Edition",
+                "BoostClock": 2365,
+                "Length": 270,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "VASTARMOR RX 6900 XT ALLOY",
+                "BoostClock": 2365,
+                "Length": 345,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "VASTARMOR RX 6900 XTH SUPER ALLOY",
+                "BoostClock": 2365,
+                "Length": 345,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX RX 6900 XT",
+                "BoostClock": 2250,
+                "Length": 267,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster MERC319 RX 6900 XT BLACK",
+                "BoostClock": 2365,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster MERC319 RX 6900 XT Limited Black",
+                "BoostClock": 2495,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster MERC319 RX 6900 XT ULTRA",
+                "BoostClock": 2340,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster SWFT319 RX 6900 XT CORE",
+                "BoostClock": 2250,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            },
+            {
+                "ProductName": "XFX Speedster ZERO RX 6900 XT WB",
+                "BoostClock": 2525,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 300
+            }
+        ]
+    },
+    {
+        "Manufacturer": "AMD",
         "Chipset": "RX 7600",
         "Generation": "RX 7000",
         "MemorySize": 8,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
+        "ClockRate": 1720,
         "BoostClock": 2655,
         "Benchmark": 11002,
         "Power": 165,
@@ -8717,6 +11001,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "128 bit",
+        "ClockRate": 1980,
         "BoostClock": 2755,
         "Benchmark": 11291,
         "Power": 190,
@@ -8803,6 +11088,7 @@
         "MemorySize": 12,
         "MemoryType": "GDDR6",
         "MemoryBus": "192 bit",
+        "ClockRate": 1435,
         "BoostClock": 2544,
         "Benchmark": 16999,
         "Power": 245,
@@ -8987,6 +11273,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "256 bit",
+        "ClockRate": 1295,
         "BoostClock": 2430,
         "Benchmark": 20026,
         "Power": 263,
@@ -9163,6 +11450,20 @@
                 "TDP": 263
             },
             {
+                "ProductName": "XFX QICKSILVER MagAir RX 7800 XT",
+                "BoostClock": 2430,
+                "Length": 337,
+                "Slots": "Dual-slot",
+                "TDP": 263
+            },
+            {
+                "ProductName": "XFX QICKSILVER MagAir RX 7800 XT",
+                "BoostClock": 2430,
+                "Length": 337,
+                "Slots": "Dual-slot",
+                "TDP": 263
+            },
+            {
                 "ProductName": "XFX Speedster MERC 319 RX 7800 XT Black Edition",
                 "BoostClock": 2565,
                 "Length": 326,
@@ -9173,20 +11474,6 @@
                 "ProductName": "XFX Speedster QICK 319 RX 7800 XT Core Edition",
                 "BoostClock": 2430,
                 "Length": 335,
-                "Slots": "Dual-slot",
-                "TDP": 263
-            },
-            {
-                "ProductName": "XFX XFX QICKSILVER MagAir RX 7800 XT",
-                "BoostClock": 2430,
-                "Length": 337,
-                "Slots": "Dual-slot",
-                "TDP": 263
-            },
-            {
-                "ProductName": "XFX XFX QICKSILVER MagAir RX 7800 XT",
-                "BoostClock": 2430,
-                "Length": 337,
                 "Slots": "Dual-slot",
                 "TDP": 263
             },
@@ -9206,6 +11493,7 @@
         "MemorySize": 16,
         "MemoryType": "GDDR6",
         "MemoryBus": "256 bit",
+        "ClockRate": 1287,
         "BoostClock": 2245,
         "Benchmark": 22323,
         "Power": 260,
@@ -9320,6 +11608,7 @@
         "MemorySize": 20,
         "MemoryType": "GDDR6",
         "MemoryBus": "320 bit",
+        "ClockRate": 1387,
         "BoostClock": 2394,
         "Benchmark": 26853,
         "Power": 300,
@@ -9546,6 +11835,7 @@
         "MemorySize": 24,
         "MemoryType": "GDDR6",
         "MemoryBus": "384 bit",
+        "ClockRate": 1929,
         "BoostClock": 2498,
         "Benchmark": 30578,
         "Power": 355,

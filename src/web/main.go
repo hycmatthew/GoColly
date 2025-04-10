@@ -172,7 +172,7 @@ func getWebpageLinkData(link string, collector *colly.Collector) []CSVData {
 			if price != "" {
 				fmt.Println("price: ", price)
 				csvItem := CSVData{
-					brand:    brand,
+					brand:    strings.ToLower(brand),
 					name:     transformString(updatedName),
 					specLink: tempLink,
 				}
@@ -204,6 +204,15 @@ func collectorErrorHandle(collector *colly.Collector, link string) {
 func hasForbiddenKeywords(name string, link string) bool {
 	if strings.Contains(link, "motherboard") {
 		excludeKeywords := []string{"Z590", "H510", "B560", "H110", "H410"}
+		lowerName := strings.ToLower(name)
+		for _, kw := range excludeKeywords {
+			if strings.Contains(lowerName, strings.ToLower(kw)) {
+				return true
+			}
+		}
+	}
+	if strings.Contains(link, "vga") {
+		excludeKeywords := []string{"3050", "3060", "3070", "3080", "3090", "1660", "1650", "1050"}
 		lowerName := strings.ToLower(name)
 		for _, kw := range excludeKeywords {
 			if strings.Contains(lowerName, strings.ToLower(kw)) {

@@ -28,15 +28,17 @@ func main() {
 		gpuScore    = "gpuScore"
 	)
 
-	getDataName := motherboard
+	getDataName := gpuScore
 	isUpdateSpec := false
 
-	if isUpdateSpec {
-		if getDataName == gpuScore {
+	if getDataName == gpuScore {
+		if isUpdateSpec {
 			updateGPUScoreLogic()
 		} else {
-			updateSpecLogic(getDataName)
+			UpdateBenchmarks()
 		}
+	} else if isUpdateSpec {
+		updateSpecLogic(getDataName)
 	} else {
 		updatePriceLogic(getDataName)
 	}
@@ -192,7 +194,7 @@ func updateGPUScoreLogic() {
 	timeDuration := time.Duration(timeSet) * time.Millisecond
 	ticker := time.NewTicker(timeDuration)
 
-	dataList := readCsvFile("res/gpuspecdata.csv")
+	dataList := readCsvFile("res/gpuscoredata.csv")
 	var recordList []pcData.GPUScoreData
 
 	for i := 1; i < len(dataList); i++ {
@@ -219,6 +221,19 @@ func updateGPUScoreLogic() {
 
 	listLen := time.Duration(timeSet * (len(recordList) + 3))
 	time.Sleep(time.Second * listLen)
+}
+
+func UpdateBenchmarks() {
+	dataList := loadJSON[[]pcData.GPUType]("tmp/gpuData.json")
+	var recordList []pcData.GPUType
+
+	for i := 0; i < len(dataList); i++ {
+		data := dataList[i]
+		record := pcData.UpdateGPUBenchmarks(data)
+		recordList = append(recordList, record)
+
+	}
+	saveData(recordList, "gpu")
 }
 
 // Update parts spec
