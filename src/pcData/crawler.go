@@ -43,10 +43,15 @@ func getHKPrice(link string, collector *colly.Collector) string {
 	return price
 }
 
-func getCNPriceFromPcOnline(link string, collector *colly.Collector) string {
+func getCNNameAndPriceFromPcOnline(link string, collector *colly.Collector) (string, string) {
 	price := ""
+	name := ""
 
 	collectorErrorHandle(collector, link)
+
+	collector.OnHTML(".pro-info", func(element *colly.HTMLElement) {
+		name = convertGBKString(element.ChildText(".pro-tit h1"))
+	})
 
 	collector.OnHTML(".product-price, .price-info", func(element *colly.HTMLElement) {
 		mallPrice := extractFloatStringFromString(element.ChildText(".product-mallSales em.price"))
@@ -62,11 +67,10 @@ func getCNPriceFromPcOnline(link string, collector *colly.Collector) string {
 		} else {
 			price = normalPrice
 		}
-		fmt.Println(price)
 	})
-
 	collector.Visit(link)
-	return price
+	fmt.Println(name, ":", price)
+	return name, price
 }
 
 func getDetailsLinkFromZol(link string, collector *colly.Collector) string {

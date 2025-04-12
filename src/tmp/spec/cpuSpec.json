@@ -1,360 +1,486 @@
 [
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i3-12100",
         "Cores": 4,
         "GPU": "UHD Graphics 730",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1473307.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i3-12100-core-i3-12th-gen/p/N82E16819118370",
         "MultiCoreScore": 8061,
         "Name": "Core i3 12100",
+        "NameCN": "",
         "Power": 89,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1473307.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i3-12100-core-i3-12th-gen/p/N82E16819118370"
+            }
+        ],
         "SingleCoreScore": 1673,
         "Socket": "LGA1700",
         "Threads": 8
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i3-12100F",
         "Cores": 4,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1473327.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i3-12100f-core-i3-12th-gen/p/N82E16819118357",
         "MultiCoreScore": 8447,
         "Name": "Core i3 12100F",
+        "NameCN": "",
         "Power": 89,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1473327.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i3-12100f-core-i3-12th-gen/p/N82E16819118357"
+            }
+        ],
         "SingleCoreScore": 1624,
         "Socket": "LGA1700",
         "Threads": 8
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i3-13100",
         "Cores": 4,
         "GPU": "UHD Graphics 730",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707727.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i3-13100-core-i3-13th-gen/p/19-118-432",
         "MultiCoreScore": 8636,
         "Name": "Core i3 13100",
+        "NameCN": "",
         "Power": 89,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707727.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i3-13100-core-i3-13th-gen/p/19-118-432"
+            }
+        ],
         "SingleCoreScore": 1680,
         "Socket": "LGA1700",
         "Threads": 8
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i3-13100F",
         "Cores": 4,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707747.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i3-13100f-core-i3-13th-gen/p/19-118-433",
         "MultiCoreScore": 8805,
         "Name": "Core i3 13100F",
+        "NameCN": "",
         "Power": 89,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707747.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i3-13100f-core-i3-13th-gen/p/19-118-433"
+            }
+        ],
         "SingleCoreScore": 1715,
         "Socket": "LGA1700",
         "Threads": 8
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i3-14100",
         "Cores": 4,
         "GPU": "UHD Graphics 730",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5323436787434",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i3-14100-core-i3-14th-gen/p/N82E16819118483",
         "MultiCoreScore": 9112,
         "Name": "Core i3 14100",
+        "NameCN": "",
         "Power": 110,
-        "PriceCN": "715",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "715",
+                "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5323436787434"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i3-14100-core-i3-14th-gen/p/N82E16819118483"
+            }
+        ],
         "SingleCoreScore": 1789,
         "Socket": "LGA1700",
         "Threads": 8
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i3-14100F",
         "Cores": 4,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/2072847.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i3-14100f-core-i3-14th-gen/p/N82E16819118492",
         "MultiCoreScore": 8794,
         "Name": "Core i3 14100F",
+        "NameCN": "",
         "Power": 110,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2072847.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i3-14100f-core-i3-14th-gen/p/N82E16819118492"
+            }
+        ],
         "SingleCoreScore": 1740,
         "Socket": "LGA1700",
         "Threads": 8
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-12400",
         "Cores": 6,
         "GPU": "UHD Graphics 730",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1468167.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118358",
         "MultiCoreScore": 12023,
         "Name": "Core i5 12400",
+        "NameCN": "",
         "Power": 117,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1468167.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118358"
+            }
+        ],
         "SingleCoreScore": 1710,
         "Socket": "LGA1700",
         "Threads": 12
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-12400F",
         "Cores": 6,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1468187.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118360",
         "MultiCoreScore": 12047,
         "Name": "Core i5 12400F",
+        "NameCN": "",
         "Power": 117,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1468187.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118360"
+            }
+        ],
         "SingleCoreScore": 1704,
         "Socket": "LGA1700",
         "Threads": 12
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-12500",
         "Cores": 6,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://item.taobao.com/item.htm?abbucket=17\u0026id=636349015152\u0026skuId=4953076172840",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478",
         "MultiCoreScore": 12528,
         "Name": "Core i5 12500",
+        "NameCN": "",
         "Power": 117,
-        "PriceCN": "995",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "995",
+                "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=636349015152\u0026skuId=4953076172840"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478"
+            }
+        ],
         "SingleCoreScore": 1810,
         "Socket": "LGA1700",
         "Threads": 12
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-12600K",
         "Cores": 10,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1447867.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-12600k-core-i5-12th-gen/p/N82E16819118347",
         "MultiCoreScore": 17333,
         "Name": "Core i5 12600K",
+        "NameCN": "",
         "Power": 150,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447867.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-12600k-core-i5-12th-gen/p/N82E16819118347"
+            }
+        ],
         "SingleCoreScore": 1886,
         "Socket": "LGA1700",
         "Threads": 16
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-12600KF",
         "Cores": 10,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1447887.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-12600kf-core-i5-12th-gen/p/N82E16819118349",
         "MultiCoreScore": 17693,
         "Name": "Core i5 12600KF",
+        "NameCN": "",
         "Power": 150,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447887.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-12600kf-core-i5-12th-gen/p/N82E16819118349"
+            }
+        ],
         "SingleCoreScore": 1902,
         "Socket": "LGA1700",
         "Threads": 16
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-13400",
         "Cores": 10,
         "GPU": "UHD Graphics 730",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707587.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-13400-core-i5-13th-gen/p/N82E16819118430",
         "MultiCoreScore": 15953,
         "Name": "Core i5 13400",
+        "NameCN": "",
         "Power": 154,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707587.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-13400-core-i5-13th-gen/p/N82E16819118430"
+            }
+        ],
         "SingleCoreScore": 1786,
         "Socket": "LGA1700",
         "Threads": 16
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-13400F",
         "Cores": 10,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707607.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-13400f-core-i5-13th-gen/p/19-118-431",
         "MultiCoreScore": 15911,
         "Name": "Core i5 13400F",
+        "NameCN": "",
         "Power": 148,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707607.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-13400f-core-i5-13th-gen/p/19-118-431"
+            }
+        ],
         "SingleCoreScore": 1744,
         "Socket": "LGA1700",
         "Threads": 16
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-13500",
         "Cores": 14,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://item.taobao.com/item.htm?id=690000210447",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-13500-core-i5-13th-gen/p/N82E16819118429",
         "MultiCoreScore": 21007,
         "Name": "Core i5 13500",
+        "NameCN": "",
         "Power": 154,
-        "PriceCN": "1300",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "1300",
+                "PriceLink": "https://item.taobao.com/item.htm?id=690000210447"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-13500-core-i5-13th-gen/p/N82E16819118429"
+            }
+        ],
         "SingleCoreScore": 1876,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-13600K",
         "Cores": 14,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1647447.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-13600k-core-i5-13th-gen/p/N82E16819118416",
         "MultiCoreScore": 23396,
         "Name": "Core i5 13600K",
+        "NameCN": "",
         "Power": 181,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647447.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-13600k-core-i5-13th-gen/p/N82E16819118416"
+            }
+        ],
         "SingleCoreScore": 1998,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-13600KF",
         "Cores": 14,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1647467.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-13600kf-core-i5-13th-gen/p/N82E16819118417",
         "MultiCoreScore": 23710,
         "Name": "Core i5 13600KF",
+        "NameCN": "",
         "Power": 181,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647467.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-13600kf-core-i5-13th-gen/p/N82E16819118417"
+            }
+        ],
         "SingleCoreScore": 1818,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-14400",
         "Cores": 10,
         "GPU": "UHD Graphics 730",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5323436787436",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-14400-core-i5-14th-gen/p/N82E16819118480",
         "MultiCoreScore": 15926,
         "Name": "Core i5 14400",
+        "NameCN": "",
         "Power": 148,
-        "PriceCN": "1220",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "1220",
+                "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5323436787436"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-14400-core-i5-14th-gen/p/N82E16819118480"
+            }
+        ],
         "SingleCoreScore": 1816,
         "Socket": "LGA1700",
         "Threads": 16
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-14400F",
         "Cores": 10,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/2072867.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-14400f-core-i5-14th-gen/p/N82E16819118489",
         "MultiCoreScore": 16252,
         "Name": "Core i5 14400F",
+        "NameCN": "",
         "Power": 148,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2072867.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-14400f-core-i5-14th-gen/p/N82E16819118489"
+            }
+        ],
         "SingleCoreScore": 1816,
         "Socket": "LGA1700",
         "Threads": 16
@@ -366,1077 +492,1499 @@
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/2083167.html",
-        "LinkHK": "",
-        "LinkUS": "",
         "MultiCoreScore": 17396,
         "Name": "Core i5 14490F",
+        "NameCN": "",
         "Power": 148,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2083167.html"
+            }
+        ],
         "SingleCoreScore": 1899,
         "Socket": "LGA1700",
         "Threads": 16
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-14500",
         "Cores": 14,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5168079089787",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478",
         "MultiCoreScore": 22092,
         "Name": "Core i5 14500",
+        "NameCN": "",
         "Power": 154,
-        "PriceCN": "1470",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "1470",
+                "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5168079089787"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478"
+            }
+        ],
         "SingleCoreScore": 1937,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-14600K",
         "Cores": 14,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1971327.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-14600k-core-i5-14th-gen/p/N82E16819118470",
         "MultiCoreScore": 25270,
         "Name": "Core i5 14600K",
+        "NameCN": "",
         "Power": 181,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971327.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-14600k-core-i5-14th-gen/p/N82E16819118470"
+            }
+        ],
         "SingleCoreScore": 2072,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i5-14600KF",
         "Cores": 14,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1971387.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i5-14600kf-core-i5-14th-gen/p/N82E16819118472",
         "MultiCoreScore": 24119,
         "Name": "Core i5 14600KF",
+        "NameCN": "",
         "Power": 181,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971387.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i5-14600kf-core-i5-14th-gen/p/N82E16819118472"
+            }
+        ],
         "SingleCoreScore": 2063,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-12700",
         "Cores": 12,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1471107.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-12700-core-i7-12th-gen/p/N82E16819118368",
         "MultiCoreScore": 19714,
         "Name": "Core i7 12700",
+        "NameCN": "",
         "Power": 180,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1471107.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-12700-core-i7-12th-gen/p/N82E16819118368"
+            }
+        ],
         "SingleCoreScore": 1883,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-12700F",
         "Cores": 12,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1485327.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-12700f-core-i7-12th-gen/p/N82E16819118359",
         "MultiCoreScore": 20658,
         "Name": "Core i7 12700F",
+        "NameCN": "",
         "Power": 180,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1485327.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-12700f-core-i7-12th-gen/p/N82E16819118359"
+            }
+        ],
         "SingleCoreScore": 1850,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-12700K",
         "Cores": 12,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1447687.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-12700k-core-i7-12th-gen/p/N82E16819118343",
         "MultiCoreScore": 22970,
         "Name": "Core i7 12700K",
+        "NameCN": "",
         "Power": 190,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447687.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-12700k-core-i7-12th-gen/p/N82E16819118343"
+            }
+        ],
         "SingleCoreScore": 1935,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-12700KF",
         "Cores": 12,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1447787.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-12700kf-core-i7-12th-gen/p/N82E16819118345",
         "MultiCoreScore": 22784,
         "Name": "Core i7 12700KF",
+        "NameCN": "",
         "Power": 190,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447787.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-12700kf-core-i7-12th-gen/p/N82E16819118345"
+            }
+        ],
         "SingleCoreScore": 1949,
         "Socket": "LGA1700",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-13700",
         "Cores": 16,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707627.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-13700-core-i7-13th-gen/p/19-118-427",
         "MultiCoreScore": 25369,
         "Name": "Core i7 13700",
+        "NameCN": "",
         "Power": 219,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707627.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-13700-core-i7-13th-gen/p/19-118-427"
+            }
+        ],
         "SingleCoreScore": 2008,
         "Socket": "LGA1700",
         "Threads": 24
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-13700F",
         "Cores": 16,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707647.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-13700f-core-i7-13th-gen/p/19-118-428",
         "MultiCoreScore": 25699,
         "Name": "Core i7 13700F",
+        "NameCN": "",
         "Power": 219,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707647.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-13700f-core-i7-13th-gen/p/19-118-428"
+            }
+        ],
         "SingleCoreScore": 1997,
         "Socket": "LGA1700",
         "Threads": 24
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-13900F",
         "Cores": 24,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707687.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i9-13900f-core-i9-13th-gen-raptor-lake-lga-1700-desktop-processor/p/N82E16819118426",
         "MultiCoreScore": 35774,
         "Name": "Core i9 13900F",
+        "NameCN": "",
         "Power": 219,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707687.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i9-13900f-core-i9-13th-gen-raptor-lake-lga-1700-desktop-processor/p/N82E16819118426"
+            }
+        ],
         "SingleCoreScore": 2008,
         "Socket": "LGA1700",
         "Threads": 32
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-13700K",
         "Cores": 16,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1647407.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-13700k-core-i7-13th-gen/p/N82E16819118414",
         "MultiCoreScore": 30468,
         "Name": "Core i7 13700K",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647407.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-13700k-core-i7-13th-gen/p/N82E16819118414"
+            }
+        ],
         "SingleCoreScore": 2082,
         "Socket": "LGA1700",
         "Threads": 24
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-13700KF",
         "Cores": 16,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1647427.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-13700kf-core-i7-13th-gen/p/N82E16819118415",
         "MultiCoreScore": 30435,
         "Name": "Core i7 13700KF",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647427.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-13700kf-core-i7-13th-gen/p/N82E16819118415"
+            }
+        ],
         "SingleCoreScore": 1978,
         "Socket": "LGA1700",
         "Threads": 24
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-14700",
         "Cores": 20,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5158623513954",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-14700-core-i7-14th-gen/p/N82E16819118476",
         "MultiCoreScore": 32772,
         "Name": "Core i7 14700",
+        "NameCN": "",
         "Power": 219,
-        "PriceCN": "2200",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "2200",
+                "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5158623513954"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-14700-core-i7-14th-gen/p/N82E16819118476"
+            }
+        ],
         "SingleCoreScore": 2106,
         "Socket": "LGA1700",
         "Threads": 28
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-14700F",
         "Cores": 20,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/2072887.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-14700f-core-i7-14th-gen/p/N82E16819118487",
         "MultiCoreScore": 33114,
         "Name": "Core i7 14700F",
+        "NameCN": "",
         "Power": 219,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2072887.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-14700f-core-i7-14th-gen/p/N82E16819118487"
+            }
+        ],
         "SingleCoreScore": 2098,
         "Socket": "LGA1700",
         "Threads": 28
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-14700K",
         "Cores": 20,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1971107.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118466",
         "MultiCoreScore": 34895,
         "Name": "Core i7 14700K",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971107.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118466"
+            }
+        ],
         "SingleCoreScore": 2072,
         "Socket": "LGA1700",
         "Threads": 28
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i7-14700KF",
         "Cores": 20,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1971307.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118468",
         "MultiCoreScore": 35265,
         "Name": "Core i7 14700KF",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971307.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118468"
+            }
+        ],
         "SingleCoreScore": 2160,
         "Socket": "LGA1700",
         "Threads": 28
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i9-13900",
         "Cores": 24,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1707667.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i9-13900-core-i9-13th-gen/p/N82E16819118425",
         "MultiCoreScore": 38496,
         "Name": "Core i9 13900",
+        "NameCN": "",
         "Power": 219,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707667.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i9-13900-core-i9-13th-gen/p/N82E16819118425"
+            }
+        ],
         "SingleCoreScore": 2191,
         "Socket": "LGA1700",
         "Threads": 32
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i9-13900K",
         "Cores": 24,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1647367.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118412",
         "MultiCoreScore": 37486,
         "Name": "Core i9 13900K",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647367.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118412"
+            }
+        ],
         "SingleCoreScore": 2076,
         "Socket": "LGA1700",
         "Threads": 32
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i9-13900KF",
         "Cores": 24,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1647387.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118413",
         "MultiCoreScore": 39012,
         "Name": "Core i9 13900KF",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647387.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118413"
+            }
+        ],
         "SingleCoreScore": 2262,
         "Socket": "LGA1700",
         "Threads": 32
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i9-14900",
         "Cores": 24,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5288541801182",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i9-14900kf-core-i9-14th-gen/p/N82E16819118474",
         "MultiCoreScore": 31070,
         "Name": "Core i9 14900",
+        "NameCN": "",
         "Power": 219,
-        "PriceCN": "3600",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "3600",
+                "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5288541801182"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i9-14900kf-core-i9-14th-gen/p/N82E16819118474"
+            }
+        ],
         "SingleCoreScore": 2212,
         "Socket": "LGA1700",
         "Threads": 32
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i9-14900K",
         "Cores": 24,
         "GPU": "UHD Graphics 770",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1970967.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118462",
         "MultiCoreScore": 40400,
         "Name": "Core i9 14900K",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1970967.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118462"
+            }
+        ],
         "SingleCoreScore": 2293,
         "Socket": "LGA1700",
         "Threads": 32
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core i9-14900KF",
         "Cores": 24,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/intel/1971027.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118464",
         "MultiCoreScore": 40616,
         "Name": "Core i9 14900KF",
+        "NameCN": "",
         "Power": 253,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971027.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118464"
+            }
+        ],
         "SingleCoreScore": 2290,
         "Socket": "LGA1700",
         "Threads": 32
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 5 5600",
         "Cores": 6,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1494727.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736",
         "MultiCoreScore": 10898,
         "Name": "Ryzen 5 5600",
+        "NameCN": "",
         "Power": 65,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1494727.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
+            }
+        ],
         "SingleCoreScore": 1464,
         "Socket": "AM4",
         "Threads": 12
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 5 5600G",
         "Cores": 6,
         "GPU": "Radeon RX Vega 7",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1379967.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736",
         "MultiCoreScore": 10860,
         "Name": "Ryzen 5 5600G",
+        "NameCN": "",
         "Power": 88,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1379967.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
+            }
+        ],
         "SingleCoreScore": 1456,
         "Socket": "AM4",
         "Threads": 12
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 5 5600X",
         "Cores": 6,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1312649.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-5-5600x/p/N82E16819113666",
         "MultiCoreScore": 11838,
         "Name": "Ryzen 5 5600X",
+        "NameCN": "",
         "Power": 88,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312649.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-5-5600x/p/N82E16819113666"
+            }
+        ],
         "SingleCoreScore": 1541,
         "Socket": "AM4",
         "Threads": 12
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 5 5700G",
         "Cores": 8,
         "GPU": "Radeon RX Vega 8",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1379947.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-5700g-ryzen-7-5000-g-series/p/N82E16819113682",
         "MultiCoreScore": 14047,
         "Name": "Ryzen 7 5700G",
+        "NameCN": "",
         "Power": 45,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1379947.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-5700g-ryzen-7-5000-g-series/p/N82E16819113682"
+            }
+        ],
         "SingleCoreScore": 1509,
         "Socket": "AM4",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 5 7600X",
         "Cores": 6,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1635328.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-5-7600x-ryzen-5-7000-series/p/N82E16819113770",
         "MultiCoreScore": 15210,
         "Name": "Ryzen 5 7600X",
+        "NameCN": "",
         "Power": 116,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635328.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-5-7600x-ryzen-5-7000-series/p/N82E16819113770"
+            }
+        ],
         "SingleCoreScore": 1951,
         "Socket": "AM5",
         "Threads": 12
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 5700X",
         "Cores": 8,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1494707.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-5700x-ryzen-7-5000-series/p/N82E16819113735",
         "MultiCoreScore": 14077,
         "Name": "Ryzen 7 5700X",
+        "NameCN": "",
         "Power": 65,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1494707.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-5700x-ryzen-7-5000-series/p/N82E16819113735"
+            }
+        ],
         "SingleCoreScore": 1510,
         "Socket": "AM4",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 5700X3D",
         "Cores": 8,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/2106587.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-5700x3d-ryzen-7-5000-series/p/N82E16819113812",
         "MultiCoreScore": 13535,
         "Name": "Ryzen 7 5700X3D",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2106587.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-5700x3d-ryzen-7-5000-series/p/N82E16819113812"
+            }
+        ],
         "SingleCoreScore": 1356,
         "Socket": "AM4",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 5800X",
         "Cores": 8,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1312629.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-5800x/p/N82E16819113665",
         "MultiCoreScore": 15344,
         "Name": "Ryzen 7 5800X",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312629.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-5800x/p/N82E16819113665"
+            }
+        ],
         "SingleCoreScore": 1600,
         "Socket": "AM4",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 5800X3D",
         "Cores": 8,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1494687.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-5800x3d-ryzen-7-5000-series/p/N82E16819113734",
         "MultiCoreScore": 14804,
         "Name": "Ryzen 7 5800X3D",
+        "NameCN": "",
         "Power": 105,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1494687.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-5800x3d-ryzen-7-5000-series/p/N82E16819113734"
+            }
+        ],
         "SingleCoreScore": 1453,
         "Socket": "AM4",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 7700X",
         "Cores": 8,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1635287.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-7700x-ryzen-7-7000-series/p/N82E16819113768",
         "MultiCoreScore": 19872,
         "Name": "Ryzen 7 7700X",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635287.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-7700x-ryzen-7-7000-series/p/N82E16819113768"
+            }
+        ],
         "SingleCoreScore": 2006,
         "Socket": "AM5",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 7800X3D",
         "Cores": 8,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1778027.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-7800x3d-ryzen-7-7000-series/p/N82E16819113793",
         "MultiCoreScore": 18193,
         "Name": "Ryzen 7 7800X3D",
+        "NameCN": "",
         "Power": 162,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1778027.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-7800x3d-ryzen-7-7000-series/p/N82E16819113793"
+            }
+        ],
         "SingleCoreScore": 1785,
         "Socket": "AM5",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 8700G",
         "Cores": 8,
         "GPU": "Radeon 780M",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/2106567.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-8700g-ryzen-7-7000-series/p/N82E16819113811",
         "MultiCoreScore": 18049,
         "Name": "Ryzen 7 8700G",
+        "NameCN": "",
         "Power": 88,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2106567.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-8700g-ryzen-7-7000-series/p/N82E16819113811"
+            }
+        ],
         "SingleCoreScore": 1821,
         "Socket": "AM5",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 5900X",
         "Cores": 12,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1312627.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-5900x/p/N82E16819113664",
         "MultiCoreScore": 20634,
         "Name": "Ryzen 9 5900X",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312627.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-5900x/p/N82E16819113664"
+            }
+        ],
         "SingleCoreScore": 1568,
         "Socket": "AM4",
         "Threads": 24
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 5950X",
         "Cores": 16,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1312628.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-5950x/p/N82E16819113663",
         "MultiCoreScore": 26017,
         "Name": "Ryzen 9 5950X",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312628.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-5950x/p/N82E16819113663"
+            }
+        ],
         "SingleCoreScore": 1614,
         "Socket": "AM4",
         "Threads": 32
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 7900",
         "Cores": 12,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1710007.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-7900/p/N82E16819113785",
         "MultiCoreScore": 24444,
         "Name": "Ryzen 9 7900",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1710007.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-7900/p/N82E16819113785"
+            }
+        ],
         "SingleCoreScore": 1959,
         "Socket": "AM5",
         "Threads": 24
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 7900X",
         "Cores": 12,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1635347.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-7900x-ryzen-9-7000-series/p/N82E16819113769",
         "MultiCoreScore": 29300,
         "Name": "Ryzen 9 7900X",
+        "NameCN": "",
         "Power": 230,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635347.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-7900x-ryzen-9-7000-series/p/N82E16819113769"
+            }
+        ],
         "SingleCoreScore": 2016,
         "Socket": "AM5",
         "Threads": 24
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 7900X3D",
         "Cores": 12,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1744327.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-7900x3d-ryzen-9-7000-series/p/N82E16819113792",
         "MultiCoreScore": 27817,
         "Name": "Ryzen 9 7900X3D",
+        "NameCN": "",
         "Power": 162,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1744327.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-7900x3d-ryzen-9-7000-series/p/N82E16819113792"
+            }
+        ],
         "SingleCoreScore": 2041,
         "Socket": "AM5",
         "Threads": 24
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 7950X",
         "Cores": 16,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1635367.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-7950x-ryzen-9-7000-series/p/N82E16819113771",
         "MultiCoreScore": 36742,
         "Name": "Ryzen 9 7950X",
+        "NameCN": "",
         "Power": 230,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635367.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-7950x-ryzen-9-7000-series/p/N82E16819113771"
+            }
+        ],
         "SingleCoreScore": 2009,
         "Socket": "AM5",
         "Threads": 32
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 7950X3D",
         "Cores": 16,
         "GPU": "Radeon Graphics (Ryzen 7000)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "https://product.pconline.com.cn/cpu/amd/1744387.html",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-7950x3d-ryzen-9-7000-series/p/N82E16819113791",
         "MultiCoreScore": 36291,
         "Name": "Ryzen 9 7950X3D",
+        "NameCN": "",
         "Power": 162,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/1744387.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-7950x3d-ryzen-9-7000-series/p/N82E16819113791"
+            }
+        ],
         "SingleCoreScore": 2053,
         "Socket": "AM5",
         "Threads": 32
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core Ultra 5 245K",
         "Cores": 14,
         "GPU": "Arc iGPU (4-Cores)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-ultra-5-245k-arrow-lake-lga-1851-processor/p/N82E16819118508",
         "MultiCoreScore": 25085,
         "Name": "Core Ultra 5 245K",
+        "NameCN": "",
         "Power": 159,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394819.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-ultra-5-245k-arrow-lake-lga-1851-processor/p/N82E16819118508"
+            }
+        ],
         "SingleCoreScore": 2118,
         "Socket": "FCLGA1851",
         "Threads": 14
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core Ultra 5 245KF",
         "Cores": 14,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-ultra-5-245kf-arrow-lake-lga-1851-processor/p/N82E16819118509",
         "MultiCoreScore": 25182,
         "Name": "Core Ultra 5 245KF",
+        "NameCN": "",
         "Power": 159,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394859.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-ultra-5-245kf-arrow-lake-lga-1851-processor/p/N82E16819118509"
+            }
+        ],
         "SingleCoreScore": 2130,
         "Socket": "FCLGA1851",
         "Threads": 14
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core Ultra 7 265K",
         "Cores": 20,
         "GPU": "Arc iGPU (4-Cores)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-ultra-7-265k-arrow-lake-lga-1851-processor/p/N82E16819118506",
         "MultiCoreScore": 36309,
         "Name": "Core Ultra 7 265K",
+        "NameCN": "",
         "Power": 250,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394879.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-ultra-7-265k-arrow-lake-lga-1851-processor/p/N82E16819118506"
+            }
+        ],
         "SingleCoreScore": 2304,
         "Socket": "FCLGA1851",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core Ultra 7 265KF",
         "Cores": 20,
         "GPU": "No",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-ultra-7-265kf-arrow-lake-lga-1851-processor/p/N82E16819118507",
         "MultiCoreScore": 37278,
         "Name": "Core Ultra 7 265KF",
+        "NameCN": "",
         "Power": 250,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-ultra-7-265kf-arrow-lake-lga-1851-processor/p/N82E16819118507"
+            }
+        ],
         "SingleCoreScore": 2309,
         "Socket": "FCLGA1851",
         "Threads": 20
     },
     {
-        "Brand": "Intel",
+        "Brand": "intel",
         "Code": "Core Ultra 9 285K",
         "Cores": 24,
         "GPU": "Arc iGPU (4-Cores)",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/intel-core-ultra-9-285k-arrow-lake-lga-1851-processor/p/N82E16819118505",
         "MultiCoreScore": 41558,
         "Name": "Core Ultra 9 285K",
+        "NameCN": "",
         "Power": 250,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394919.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-ultra-9-285k-arrow-lake-lga-1851-processor/p/N82E16819118505"
+            }
+        ],
         "SingleCoreScore": 2320,
         "Socket": "FCLGA1851",
         "Threads": 24
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 5 9600X",
         "Cores": 6,
         "GPU": "Radeon 610M",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-5-9600x-ryzen-5-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113844",
         "MultiCoreScore": 17447,
         "Name": "Ryzen 5 9600X",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248539.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-5-9600x-ryzen-5-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113844"
+            }
+        ],
         "SingleCoreScore": 2154,
         "Socket": "AM5",
         "Threads": 12
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 9700X",
         "Cores": 8,
         "GPU": "Radeon 610M",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-9700x-ryzen-7-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113843",
         "MultiCoreScore": 20228,
         "Name": "Ryzen 7 9700X",
+        "NameCN": "",
         "Power": 142,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248520.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-9700x-ryzen-7-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113843"
+            }
+        ],
         "SingleCoreScore": 2213,
         "Socket": "AM5",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 7 9800X3D",
         "Cores": 8,
         "GPU": "Radeon Graphics",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-7-9800x3d-ryzen-7-9000-series-granite-ridge-zen-5-socket-am5-processor/p/N82E16819113877",
         "MultiCoreScore": 23334,
         "Name": "Ryzen 7 9800X3D",
+        "NameCN": "",
         "Power": 162,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2423239.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-7-9800x3d-ryzen-7-9000-series-granite-ridge-zen-5-socket-am5-processor/p/N82E16819113877"
+            }
+        ],
         "SingleCoreScore": 2073,
         "Socket": "AM5",
         "Threads": 16
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 9900X",
         "Cores": 12,
         "GPU": "Radeon Graphics",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-9900x-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113842",
         "MultiCoreScore": 33042,
         "Name": "Ryzen 9 9900X",
+        "NameCN": "",
         "Power": 120,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248519.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-9900x-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113842"
+            }
+        ],
         "SingleCoreScore": 2232,
         "Socket": "AM5",
         "Threads": 24
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 9900X3D",
         "Cores": 12,
         "GPU": "Radeon Graphics",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-9900x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113886",
         "MultiCoreScore": 38356,
         "Name": "Ryzen 9 9900X3D",
+        "NameCN": "",
         "Power": 230,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2503079.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-9900x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113886"
+            }
+        ],
         "SingleCoreScore": 2190,
         "Socket": "AM5",
         "Threads": 24
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 9950X",
         "Cores": 16,
         "GPU": "Radeon Graphics",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-9950x-4-3-ghz-16-core-am5-170w-processor-100-100001277wof/p/N82E16819113841",
         "MultiCoreScore": 42103,
         "Name": "Ryzen 9 9950X",
+        "NameCN": "",
         "Power": 230,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248499.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-9950x-4-3-ghz-16-core-am5-170w-processor-100-100001277wof/p/N82E16819113841"
+            }
+        ],
         "SingleCoreScore": 2243,
         "Socket": "AM5",
         "Threads": 32
     },
     {
-        "Brand": "Amd",
+        "Brand": "amd",
         "Code": "Ryzen 9 9950X3D",
         "Cores": 16,
         "GPU": "Radeon Graphics",
         "Img": "",
         "IntegratedGraphicsScore": 0,
-        "LinkCN": "",
-        "LinkHK": "",
-        "LinkUS": "https://www.newegg.com/amd-ryzen-9-9950x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113884",
         "MultiCoreScore": 42377,
         "Name": "Ryzen 9 9950X3D",
+        "NameCN": "",
         "Power": 230,
-        "PriceCN": "",
-        "PriceHK": "",
-        "PriceUS": "",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/amd/2503059.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/amd-ryzen-9-9950x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113884"
+            }
+        ],
         "SingleCoreScore": 2242,
         "Socket": "AM5",
         "Threads": 32
+    },
+    {
+        "Brand": "intel",
+        "Code": "Core Ultra 5 225",
+        "Cores": 10,
+        "GPU": "Arc Graphics",
+        "Img": "",
+        "IntegratedGraphicsScore": 0,
+        "MultiCoreScore": 17050,
+        "Name": "Core Ultra 5 225",
+        "NameCN": "",
+        "Power": 121,
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2505080.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-ultra-5-225-arrow-lake-lga-1851-processor/p/N82E16819118577?srsltid=AfmBOoqIOssHWEoPXYhtPm0gVCHD9f_7MoLeqkcfX2U9LP9DFJlHr4vs"
+            }
+        ],
+        "SingleCoreScore": 2081,
+        "Socket": "FCLGA1851",
+        "Threads": 10
+    },
+    {
+        "Brand": "intel",
+        "Code": "Core Ultra 7 265F",
+        "Cores": 20,
+        "GPU": "Arc Graphics",
+        "Img": "",
+        "IntegratedGraphicsScore": 0,
+        "MultiCoreScore": 28684,
+        "Name": "Core Ultra 7 265",
+        "NameCN": "",
+        "Power": 182,
+        "Prices": [
+            {
+                "Region": "CN",
+                "Price": "",
+                "PriceLink": "https://product.pconline.com.cn/cpu/intel/2505059.html"
+            },
+            {
+                "Region": "US",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/intel-core-ultra-7-265f-arrow-lake-lga-1851-processor/p/N82E16819118576?srsltid=AfmBOorJQAPKsxXGaVoOpI6eiHxEHx5urIzOFJvbNq0t4Q0UVXF5fakf"
+            }
+        ],
+        "SingleCoreScore": 2156,
+        "Socket": "FCLGA1851",
+        "Threads": 20
     }
 ]

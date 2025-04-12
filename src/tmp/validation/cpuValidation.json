@@ -1,5 +1,9 @@
 {
     "intel-core-i3-12100f": [
       "IntegratedGraphicsScore:0"
+    ],
+    "intel-core-ultra-7-265f": [
+      "GPU:No",
+      "IntegratedGraphicsScore:0"
     ]
 }

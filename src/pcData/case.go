@@ -96,7 +96,7 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 	}
 
 	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
+		_, newSpec.PriceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		isValid = checkPriceValid(newSpec.PriceCN)
 	}

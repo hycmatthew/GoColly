@@ -96,7 +96,7 @@ func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 	priceCN := spec.PriceCN
 
 	if priceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		priceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
+		_, priceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if priceCN == "" {
 			isValid = false

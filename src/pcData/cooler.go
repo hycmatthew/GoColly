@@ -116,7 +116,7 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 	}
 
 	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		newSpec.PriceCN = getCNPriceFromPcOnline(spec.LinkCN, CreateCollector())
+		_, newSpec.PriceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
 
 		if newSpec.PriceCN == "" {
 			isValid = false
