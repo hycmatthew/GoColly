@@ -23,12 +23,7 @@ type RamSpec struct {
 	Profile      string
 	LED          string
 	HeatSpreader bool
-	PriceUS      string
-	PriceHK      string
-	PriceCN      string
-	LinkUS       string
-	LinkHK       string
-	LinkCN       string
+	Prices       []PriceType
 	Img          string
 }
 
@@ -36,6 +31,7 @@ type RamType struct {
 	Id           string
 	Brand        string
 	Name         string
+	NameCN       string
 	Series       string
 	Model        string
 	Capacity     int
@@ -48,97 +44,89 @@ type RamType struct {
 	Profile      string
 	LED          string
 	HeatSpreader bool
-	PriceUS      string
-	PriceHK      string
-	PriceCN      string
-	LinkUS       string
-	LinkHK       string
-	LinkCN       string
+	Prices       []PriceType
 	Img          string
 }
 
 func GetRamSpec(record LinkRecord) RamSpec {
-
 	ramData := RamSpec{}
+
 	if strings.Contains(record.LinkCN, "zol") {
-		ramData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
-	} else {
-		if record.LinkSpec != "" {
-			ramData = getRamSpecData(record.LinkSpec, CreateCollector())
-		} else if record.LinkUS != "" {
-			ramData = getRamUSPrice(record.LinkUS, CreateCollector())
-		}
-		ramData.PriceCN = record.PriceCN
+		record.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	}
+	if record.LinkSpec != "" {
+		ramData = getRamSpecData(record.LinkSpec, CreateCollector())
+	} else if record.LinkUS != "" {
+		// newegg
+		ramData = getRamUSPrice(record.LinkUS, CreateCollector())
+	}
+
 	ramData.Code = record.Name
 	ramData.Brand = record.Brand
-	ramData.PriceHK = ""
-	ramData.LinkHK = ""
-	if record.LinkUS != "" {
-		ramData.LinkUS = record.LinkUS
-	}
+
 	if ramData.Name == "" {
 		ramData.Name = record.Name
 	}
 	ramData.Name = RemoveBrandsFromName(ramData.Brand, ramData.Name)
+
+	// 添加各區域價格連結
+	ramData.Prices = handleSpecPricesLogic(ramData.Prices, record)
 	return ramData
 }
 
 func GetRamData(spec RamSpec) (RamType, bool) {
-
 	isValid := true
-
 	newSpec := spec
+	nameCN := spec.Name
+	collector := CreateCollector()
 
-	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getRamSpecDataFromZol(spec.LinkCN, CreateCollector())
-		// codeStringList := strings.Split(spec.Code, " ")
+	// 遍历所有价格数据进行处理
+	for _, price := range newSpec.Prices {
+		switch price.Region {
+		case "CN":
+			if strings.Contains(price.PriceLink, "zol") {
+				tempSpec := getRamSpecDataFromZol(price.PriceLink, collector)
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(RamSpec)
 
-		newSpec.Img = tempSpec.Img
-		if tempSpec.PriceCN != "" {
-			newSpec.PriceCN = tempSpec.PriceCN
+				// 更新价格信息
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "CN", Platform_JD); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
+			}
+			if strings.Contains(price.PriceLink, "pconline") {
+				if price.Price == "" {
+					tempNameCN, priceCN := getCNNameAndPriceFromPcOnline(price.PriceLink, collector)
+					nameCN = tempNameCN
+					newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+						Region:    "CN",
+						Platform:  Platform_JD,
+						Price:     priceCN,
+						PriceLink: price.PriceLink,
+					})
+					isValid = isValid && checkPriceValid(priceCN)
+				}
+			}
+		case "US":
+			tempSpec := getRamUSPrice(price.PriceLink, collector)
+			// 合并图片数据
+			if newSpec.Img == "" && tempSpec.Img != "" {
+				newSpec.Img = tempSpec.Img
+			}
+			// 合并规格数据
+			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(RamSpec)
+
+			// 更新价格
+			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+				isValid = isValid && checkPriceValid(updatedPrice.Price)
+			}
 		}
-
-		newSpec.Series = handleRamSeries(newSpec)
-		newSpec.Type = tempSpec.Type
-		newSpec.Voltage = tempSpec.Voltage
-		newSpec.Capacity = tempSpec.Capacity
-		newSpec.Channel = tempSpec.Channel
-		newSpec.Timing = tempSpec.Timing
-		newSpec.Speed = tempSpec.Speed
-		newSpec.Latency = tempSpec.Latency
-		newSpec.Profile = tempSpec.Profile
-		newSpec.LED = tempSpec.LED
-		newSpec.HeatSpreader = tempSpec.HeatSpreader
-
-		if newSpec.PriceCN == "" {
-			isValid = false
-		}
-	}
-	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		_, newSpec.PriceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
-
-		if newSpec.PriceCN == "" {
-			isValid = false
-		}
-	}
-
-	if strings.Contains(spec.LinkUS, "newegg") {
-		newSpec = getRamUSPrice(spec.LinkUS, CreateCollector())
-
-		if newSpec.PriceUS == "" {
-			isValid = false
-		}
-	}
-
-	if spec.PriceCN != "" {
-		newSpec.PriceCN = spec.PriceCN
 	}
 
 	return RamType{
 		Id:           SetProductId(spec.Brand, spec.Code),
 		Brand:        spec.Brand,
 		Name:         spec.Name,
+		NameCN:       nameCN,
 		Series:       newSpec.Series,
 		Model:        newSpec.Model,
 		Capacity:     newSpec.Capacity,
@@ -151,12 +139,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		LED:          newSpec.LED,
 		HeatSpreader: newSpec.HeatSpreader,
 		Profile:      RamProfileLogic(newSpec),
-		PriceUS:      newSpec.PriceUS,
-		PriceHK:      spec.PriceHK,
-		PriceCN:      newSpec.PriceCN,
-		LinkHK:       spec.LinkHK,
-		LinkUS:       spec.LinkUS,
-		LinkCN:       spec.LinkCN,
+		Prices:       deduplicatePrices(newSpec.Prices),
 		Img:          newSpec.Img,
 	}, isValid
 }
@@ -169,7 +152,7 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
-		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
+		specData.Prices = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -216,7 +199,12 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
+		specData.Prices = upsertPrice(specData.Prices, PriceType{
+			Region:    "US",
+			Platform:  Platform_Newegg,
+			Price:     extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current")),
+			PriceLink: link,
+		})
 
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
@@ -288,15 +276,7 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
-
-		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
-		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
-		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
-		if mallPrice != "" {
-			specData.PriceCN = mallPrice
-		} else {
-			specData.PriceCN = normalPrice
-		}
+		specData.Prices = upsertPrice(specData.Prices, extractJDPriceFromZol(element))
 
 		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
 			convertedHeader := convertGBKString(item.ChildText("th"))

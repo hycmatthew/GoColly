@@ -23,12 +23,7 @@ type SSDSpec struct {
 	Interface   string
 	FlashType   string
 	FormFactor  string
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
+	Prices      []PriceType
 	Img         string
 }
 
@@ -36,6 +31,7 @@ type SSDType struct {
 	Id          string
 	Brand       string
 	Name        string
+	NameCN      string
 	ReleaseDate string
 	Model       string
 	Capacity    string
@@ -46,96 +42,89 @@ type SSDType struct {
 	Interface   string
 	FlashType   string
 	FormFactor  string
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
+	Prices      []PriceType
 	Img         string
 }
 
 func GetSSDSpec(record LinkRecord) SSDSpec {
-
 	ssdData := SSDSpec{}
+
+	// 处理中国区链接
 	if strings.Contains(record.LinkCN, "zol") {
-		ssdData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
-	} else {
-		if record.LinkSpec != "" {
-			ssdData = getSSDSpecData(record.LinkSpec, CreateCollector())
-		}
-		ssdData.LinkCN = record.LinkCN
+		record.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
+	}
+
+	if record.LinkSpec != "" {
+		ssdData = getSSDSpecData(record.LinkSpec, CreateCollector())
 	}
 
 	ssdData.Code = record.Name
 	ssdData.Brand = record.Brand
-	ssdData.PriceCN = record.PriceCN
-	ssdData.PriceHK = ""
-	ssdData.LinkHK = ""
-	if record.LinkUS != "" {
-		ssdData.LinkUS = record.LinkUS
-	}
 	if ssdData.Name == "" {
 		ssdData.Name = record.Name
 	}
 	ssdData.Name = RemoveBrandsFromName(ssdData.Brand, ssdData.Name)
+
+	// 添加各區域價格連結
+	ssdData.Prices = handleSpecPricesLogic(ssdData.Prices, record)
 	return ssdData
 }
 
 func GetSSDData(spec SSDSpec) (SSDType, bool) {
 	isValid := true
-
 	newSpec := spec
+	nameCN := spec.Name
+	collector := CreateCollector()
 
-	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getSSDSpecDataFromZol(spec.LinkCN, CreateCollector())
-		// codeStringList := strings.Split(spec.Code, " ")
+	// 遍历所有价格数据进行处理
+	for _, price := range newSpec.Prices {
+		switch price.Region {
+		case "CN":
+			if strings.Contains(price.PriceLink, "zol") {
+				tempSpec := getSSDSpecDataFromZol(price.PriceLink, collector)
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(SSDSpec)
 
-		newSpec.Img = tempSpec.Img
-		if tempSpec.PriceCN != "" {
-			newSpec.PriceCN = tempSpec.PriceCN
+				// 更新价格信息
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "CN", Platform_JD); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
+			}
+			if strings.Contains(price.PriceLink, "pconline") {
+				if price.Price == "" {
+					tempNameCN, priceCN := getCNNameAndPriceFromPcOnline(price.PriceLink, collector)
+					nameCN = tempNameCN
+					newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+						Region:    "CN",
+						Platform:  Platform_JD,
+						Price:     priceCN,
+						PriceLink: price.PriceLink,
+					})
+					isValid = isValid && checkPriceValid(priceCN)
+				}
+			}
+		case "US":
+			if strings.Contains(price.PriceLink, "newegg") {
+				priceUS, tempImg := getUSPriceAndImgFromNewEgg(price.PriceLink, collector)
+				if tempImg != "" {
+					newSpec.Img = tempImg
+				}
+				fmt.Println(spec.Name, " orginPrice: ", price, "- priceUS: ", priceUS)
+				newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+					Region:    "US",
+					Platform:  Platform_Newegg,
+					Price:     priceUS,
+					PriceLink: price.PriceLink,
+				})
+				isValid = isValid && checkPriceValid(priceUS)
+			}
 		}
-
-		newSpec.Capacity = tempSpec.Capacity
-		newSpec.FlashType = tempSpec.FlashType
-		newSpec.FormFactor = tempSpec.FormFactor
-		newSpec.MaxRead = tempSpec.MaxRead
-		newSpec.MaxWrite = tempSpec.MaxWrite
-		newSpec.Interface = tempSpec.Interface
-
-		if newSpec.PriceCN == "" {
-			isValid = false
-		}
-	}
-
-	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		_, newSpec.PriceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
-
-		if newSpec.PriceCN == "" {
-			isValid = false
-		}
-	}
-
-	tempImg := ""
-	if strings.Contains(spec.LinkUS, "newegg") {
-		newSpec.PriceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
-
-		if tempImg != "" {
-			newSpec.Img = tempImg
-		}
-		if newSpec.PriceUS == "" {
-			isValid = false
-		}
-	}
-
-	if spec.PriceCN != "" {
-		newSpec.PriceCN = spec.PriceCN
 	}
 
 	return SSDType{
 		Id:          SetProductId(spec.Brand, spec.Code),
 		Brand:       spec.Brand,
 		Name:        spec.Name,
+		NameCN:      nameCN,
 		ReleaseDate: newSpec.ReleaseDate,
 		Model:       newSpec.Model,
 		Capacity:    NormalizeSSDCapacity(newSpec.Capacity),
@@ -144,12 +133,7 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 		Interface:   NormalizeSSDInterface(newSpec.Interface),
 		FlashType:   newSpec.FlashType,
 		FormFactor:  newSpec.FormFactor,
-		PriceUS:     newSpec.PriceUS,
-		PriceHK:     "",
-		PriceCN:     newSpec.PriceCN,
-		LinkUS:      spec.LinkUS,
-		LinkHK:      spec.LinkHK,
-		LinkCN:      spec.LinkCN,
+		Prices:      deduplicatePrices(newSpec.Prices),
 		Img:         newSpec.Img,
 	}, isValid
 }
@@ -162,7 +146,7 @@ func getSSDSpecData(link string, collector *colly.Collector) SSDSpec {
 
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
-		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
+		specData.Prices = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -201,21 +185,12 @@ func getSSDSpecDataFromZol(link string, collector *colly.Collector) SSDSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
-
-		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
-		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
-		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
-		if mallPrice != "" {
-			specData.PriceCN = mallPrice
-		} else {
-			specData.PriceCN = normalPrice
-		}
+		fmt.Println(element.DOM.Html())
+		specData.Prices = upsertPrice(specData.Prices, extractJDPriceFromZol(element))
 
 		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
 			convertedHeader := convertGBKString(item.ChildText("th"))
 			convertedData := convertGBKString(item.ChildText("td span"))
-			fmt.Println(convertedHeader)
-			fmt.Println(convertedData)
 
 			switch convertedHeader {
 			case "存储容量":
@@ -261,18 +236,15 @@ func getZhiTaiDataFromPcOnline(link string, collector *colly.Collector) SSDSpec 
 
 	collector.OnHTML(".product-detail-main", func(element *colly.HTMLElement) {
 		mallPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-mallSales em.price"))
-
-		otherPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-price-other span"))
-
+		// otherPrice := extractFloatStringFromString(element.ChildText(".product-price-info .product-price-other span"))
 		normalPrice := extractFloatStringFromString(element.ChildText(".product-price-info .r-price a"))
 
-		if mallPrice != "" {
-			specData.PriceCN = mallPrice
-		} else if otherPrice != "" {
-			specData.PriceCN = otherPrice
-		} else {
-			specData.PriceCN = normalPrice
-		}
+		specData.Prices = upsertPrice(specData.Prices, PriceType{
+			Region:    "CN",
+			Platform:  Platform_JD,
+			Price:     firstNonEmpty(mallPrice, normalPrice, ""),
+			PriceLink: "",
+		})
 
 		element.ForEach(".baseParam dd i", func(i int, item *colly.HTMLElement) {
 			convertedString := convertGBKString(item.Text)

@@ -19,6 +19,7 @@ type LinkRecord struct {
 
 type PriceType struct {
 	Region    string
+	Platform  string
 	Price     string
 	PriceLink string
 }
@@ -65,23 +66,8 @@ func GetCPUSpec(record LinkRecord) CPUSpec {
 	cpuData.Code = record.Name
 	cpuData.Name = RemoveBrandsFromName(cpuData.Brand, cpuData.Name)
 
-	// 初始化Prices陣列
-	cpuData.Prices = []PriceType{}
 	// 添加各區域價格連結
-	if record.LinkCN != "" {
-		cpuData.Prices = append(cpuData.Prices, PriceType{
-			Region:    "CN",
-			PriceLink: record.LinkCN,
-			Price:     record.PriceCN, // 保留原有的PriceCN值
-		})
-	}
-	// Hard Code CN price
-	if record.LinkUS != "" {
-		cpuData.Prices = append(cpuData.Prices, PriceType{
-			Region:    "US",
-			PriceLink: record.LinkUS,
-		})
-	}
+	cpuData.Prices = handleSpecPricesLogic(cpuData.Prices, record)
 	return cpuData
 }
 

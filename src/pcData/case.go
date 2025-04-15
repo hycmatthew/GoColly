@@ -23,12 +23,7 @@ type CaseSpec struct {
 	RadiatorSupport    int
 	MaxCpuCoolorHeight int
 	SlotsNum           int
-	PriceUS            string
-	PriceHK            string
-	PriceCN            string
-	LinkUS             string
-	LinkHK             string
-	LinkCN             string
+	Prices             []PriceType
 	Img                string
 }
 
@@ -36,6 +31,7 @@ type CaseType struct {
 	Id                 string
 	Brand              string
 	Name               string
+	NameCN             string
 	ReleaseDate        string
 	Color              string
 	CaseSize           string
@@ -48,74 +44,91 @@ type CaseType struct {
 	RadiatorSupport    int
 	MaxCpuCoolorHeight int
 	SlotsNum           int
-	PriceUS            string
-	PriceHK            string
-	PriceCN            string
-	LinkUS             string
-	LinkHK             string
-	LinkCN             string
+	Prices             []PriceType
 	Img                string
 }
 
 func GetCaseSpec(record LinkRecord) CaseSpec {
 	caseData := CaseSpec{}
-
+	// 处理zol链接
 	if strings.Contains(record.LinkCN, "zol") {
-		caseData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
-	} else {
-		caseData.LinkCN = record.LinkCN
+		record.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	}
+
+	// 获取规格数据
 	if record.LinkSpec != "" {
 		caseData = getCaseSpecData(record.LinkSpec, CreateCollector())
 	}
-
 	caseData.Brand = record.Brand
 	caseData.Code = record.Name
-	caseData.PriceCN = record.PriceCN
-	caseData.PriceHK = ""
-	caseData.LinkHK = ""
-	if record.LinkUS != "" {
-		caseData.LinkUS = record.LinkUS
-	}
+
+	// 处理名称
 	if caseData.Name == "" {
 		caseData.Name = record.Name
 	}
 	caseData.Name = RemoveBrandsFromName(caseData.Brand, caseData.Name)
+
+	// 添加各區域價格連結
+	caseData.Prices = handleSpecPricesLogic(caseData.Prices, record)
 	return caseData
 }
 
 func GetCaseData(spec CaseSpec) (CaseType, bool) {
 	isValid := true
 	newSpec := spec
+	nameCN := spec.Name
+	collector := CreateCollector()
 
-	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getCaseSpecDataFromZol(spec.LinkCN, CreateCollector())
+	// 遍历所有价格数据进行处理
+	for _, price := range newSpec.Prices {
+		// 根據平台類型進行處理
+		switch price.Region {
+		case "CN":
+			if strings.Contains(price.PriceLink, "zol") {
+				tempSpec := getCaseSpecDataFromZol(price.PriceLink, collector)
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(CaseSpec)
 
-		newSpec := MergeStruct(newSpec, tempSpec, newSpec.Name).(CaseSpec)
-		isValid = checkPriceValid(newSpec.PriceCN)
-	}
+				// 更新價格信息
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "CN", Platform_JD); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
 
-	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		_, newSpec.PriceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
+			}
+			if strings.Contains(price.PriceLink, "pconline") {
+				if price.Price == "" {
+					tempNameCN, priceCN := getCNNameAndPriceFromPcOnline(price.PriceLink, collector)
+					nameCN = tempNameCN
+					newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+						Region:    "CN",
+						Platform:  Platform_JD,
+						Price:     priceCN,
+						PriceLink: price.PriceLink,
+					})
+					isValid = isValid && checkPriceValid(priceCN)
+				}
+			}
+		case "US":
+			tempSpec := getCaseUSPrice(price.PriceLink, collector)
+			// 合併圖片數據
+			if newSpec.Img == "" && tempSpec.Img != "" {
+				newSpec.Img = tempSpec.Img
+			}
+			// 合併其他規格數據
+			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(CaseSpec)
 
-		isValid = checkPriceValid(newSpec.PriceCN)
-	}
-
-	if strings.Contains(spec.LinkUS, "newegg") {
-		tempSpec := getCaseUSPrice(spec.LinkUS, CreateCollector())
-		if newSpec.Img == "" {
-			tempSpec.Img = newSpec.Img
+			// 更新價格
+			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+				isValid = isValid && checkPriceValid(updatedPrice.Price)
+			}
 		}
-
-		newSpec := MergeStruct(tempSpec, newSpec, newSpec.Name).(CaseSpec)
-		isValid = checkPriceValid(newSpec.PriceUS)
 	}
 
 	return CaseType{
-		Id:                 SetProductId(spec.Brand, spec.Code),
-		Brand:              spec.Brand,
-		Name:               spec.Name,
-		ReleaseDate:        spec.ReleaseDate,
+		Id:                 SetProductId(newSpec.Brand, spec.Code),
+		Brand:              newSpec.Brand,
+		Name:               newSpec.Name,
+		NameCN:             nameCN,
+		ReleaseDate:        newSpec.ReleaseDate,
 		CaseSize:           newSpec.CaseSize,
 		Color:              newSpec.Color,
 		PowerSupply:        newSpec.PowerSupply,
@@ -127,12 +140,7 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 		RadiatorSupport:    newSpec.RadiatorSupport,
 		MaxCpuCoolorHeight: newSpec.MaxCpuCoolorHeight,
 		SlotsNum:           newSpec.SlotsNum,
-		PriceUS:            newSpec.PriceUS,
-		PriceHK:            "",
-		PriceCN:            newSpec.PriceCN,
-		LinkUS:             spec.LinkUS,
-		LinkHK:             spec.LinkHK,
-		LinkCN:             spec.LinkCN,
+		Prices:             deduplicatePrices(newSpec.Prices),
 		Img:                newSpec.Img,
 	}, isValid
 }
@@ -144,7 +152,7 @@ func getCaseSpecData(link string, collector *colly.Collector) CaseSpec {
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
-		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
+		specData.Prices = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -197,9 +205,16 @@ func getCaseUSPrice(link string, collector *colly.Collector) CaseSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
+		tempPrice := extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
 		available := element.ChildText(".row-side .product-buy-box .product-buy .btn-message")
-		specData.PriceUS = OutOfStockLogic(specData.PriceUS, available)
+		tempPrice = OutOfStockLogic(tempPrice, available)
+
+		specData.Prices = upsertPrice(specData.Prices, PriceType{
+			Region:    "US",
+			Platform:  Platform_Newegg,
+			Price:     tempPrice,
+			PriceLink: link,
+		})
 
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
@@ -234,15 +249,7 @@ func getCaseSpecDataFromZol(link string, collector *colly.Collector) CaseSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
-
-		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
-		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
-		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
-		if mallPrice != "" {
-			specData.PriceCN = mallPrice
-		} else {
-			specData.PriceCN = normalPrice
-		}
+		specData.Prices = upsertPrice(specData.Prices, extractJDPriceFromZol(element))
 
 		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
 			convertedHeader := convertGBKString(item.ChildText("th"))

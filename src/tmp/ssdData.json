@@ -1,1370 +1,2384 @@
 [
     {
+        "Id": "crucial-p2-1tb",
         "Brand": "crucial",
-        "Name": "Crucial P2 1TB",
+        "Name": "P2 1TB",
+        "NameCN": "英睿达P2 1TB M.2 SSD",
         "ReleaseDate": "September 2020",
         "Model": "CT1000P2SSD8",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 2400,
         "MaxWrite": 1800,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "119.99",
-        "PriceHK": "",
-        "PriceCN": "669",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8TKDHB8893",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1394190.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "119.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8TKDHB8893"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "669",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1394190.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-252-S06.jpg"
     },
     {
+        "Id": "crucial-p2-2tb",
         "Brand": "crucial",
-        "Name": "Crucial P2 2TB",
+        "Name": "P2 2TB",
+        "NameCN": "英睿达P2 2TB M.2 SSD",
         "ReleaseDate": "September 2020",
         "Model": "CT2000P2SSD8",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 2400,
         "MaxWrite": 1900,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "289.00",
-        "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKXTJJV7130",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1394207.html",
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-274-S07.jpg"
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1394207.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "119.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKXTJJV7130"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "199.99",
+                "PriceLink": "https://www.amazon.com/dp/B08GVDNTGJ"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-252-S06.jpg"
     },
     {
+        "Id": "crucial-p2-500gb",
         "Brand": "crucial",
-        "Name": "Crucial P2 500GB",
+        "Name": "P2 500GB",
+        "NameCN": "英睿达P2 500GB M.2 SSD",
         "ReleaseDate": "April 2020",
         "Model": "CT500P2SSD8",
-        "Capacity": "500 GB",
+        "Capacity": "500GB",
         "MaxRead": 2300,
         "MaxWrite": 940,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "90.00",
-        "PriceHK": "",
-        "PriceCN": "279",
-        "LinkUS": "https://www.amazon.com/dp/B086BGWNY8",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1393507.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "104.00",
+                "PriceLink": "https://www.amazon.com/dp/B086BGWNY8"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "279",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1393507.html"
+            }
+        ],
         "Img": ""
     },
     {
+        "Id": "crucial-p3-1tb",
         "Brand": "crucial",
-        "Name": "Crucial P3 1TB",
+        "Name": "P3 1TB",
+        "NameCN": "英睿达P3 1TB M.2 SSD",
         "ReleaseDate": "June 2022",
         "Model": "CT1000P3SSD8",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 3500,
         "MaxWrite": 3000,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "61.94",
-        "PriceHK": "",
-        "PriceCN": "449",
-        "LinkUS": "https://www.amazon.com/dp/B0B25LZGGW",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1647067.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "59.74",
+                "PriceLink": "https://www.amazon.com/dp/B0B25LZGGW"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "59.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JHY4231"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "449",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647067.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg"
     },
     {
+        "Id": "crucial-p3-2tb",
         "Brand": "crucial",
-        "Name": "Crucial P3 2TB",
+        "Name": "P3 2TB",
+        "NameCN": "英睿达P3 2TB M.2 SSD",
         "ReleaseDate": "June 2022",
         "Model": "CT2000P3SSD8",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 3500,
         "MaxWrite": 3000,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "123.99",
-        "PriceHK": "",
-        "PriceCN": "839",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1070",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1647087.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "129.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25MJ1YT"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "133.30",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JHY4232"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "839",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647087.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg"
     },
     {
+        "Id": "crucial-p3-4tb",
         "Brand": "crucial",
-        "Name": "Crucial P3 4TB",
+        "Name": "P3 4TB",
+        "NameCN": "英睿达P3 4TB M.2 SSD",
         "ReleaseDate": "June 2022",
         "Model": "CT4000P3SSD8",
-        "Capacity": "4000 GB",
+        "Capacity": "4TB",
         "MaxRead": 3500,
         "MaxWrite": 3000,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "224.00",
-        "PriceHK": "",
-        "PriceCN": "1849",
-        "LinkUS": "https://www.amazon.com/dp/B0B25P44CL",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1647107.html",
-        "Img": ""
-    },
-    {
-        "Brand": "crucial",
-        "Name": "Crucial P3 500GB",
-        "ReleaseDate": "June 2022",
-        "Model": "CT500P3SSD8",
-        "Capacity": "500 GB",
-        "MaxRead": 3500,
-        "MaxWrite": 1900,
-        "Interface": "PCIe Gen3 x4",
-        "FlashType": "3D NAND",
-        "FormFactor": "M.2-2280",
-        "PriceUS": "38.98",
-        "PriceHK": "",
-        "PriceCN": "229",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JJ08201",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1647047.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "249.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JPE6567"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1849",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647107.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "249.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25P44CL"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg"
     },
     {
+        "Id": "crucial-p3-500gb",
         "Brand": "crucial",
-        "Name": "Crucial P3 Plus 2TB",
+        "Name": "P3 500GB",
+        "NameCN": "英睿达P3 500GB M.2 SSD",
+        "ReleaseDate": "June 2022",
+        "Model": "CT500P3SSD8",
+        "Capacity": "500GB",
+        "MaxRead": 3500,
+        "MaxWrite": 1900,
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "3D NAND",
+        "FormFactor": "M.2-2280",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "229",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647047.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "44.59",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JJ08201"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "44.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25LQQPC"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg"
+    },
+    {
+        "Id": "crucial-p3-plus-2tb",
+        "Brand": "crucial",
+        "Name": "P3 Plus 2TB",
+        "NameCN": "英睿达P3 Plus 2TB M.2 SSD",
         "ReleaseDate": "June 2022",
         "Model": "CT2000P3PSSD8",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 5000,
         "MaxWrite": 4200,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "124.00",
-        "PriceHK": "",
-        "PriceCN": "799",
-        "LinkUS": "https://www.amazon.com/dp/B0B25ML2FH",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1647007.html",
-        "Img": ""
-    },
-    {
-        "Brand": "crucial",
-        "Name": "Crucial P3 Plus 4TB",
-        "ReleaseDate": "June 2022",
-        "Model": "CT4000P3PSSD8",
-        "Capacity": "4000 GB",
-        "MaxRead": 4800,
-        "MaxWrite": 4100,
-        "Interface": "PCIe Gen4 x4",
-        "FlashType": "3D NAND",
-        "FormFactor": "M.2-2280",
-        "PriceUS": "243.95",
-        "PriceHK": "",
-        "PriceCN": "1699",
-        "LinkUS": "https://www.amazon.com/dp/B0B25M8FXX",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1647027.html",
-        "Img": ""
-    },
-    {
-        "Brand": "crucial",
-        "Name": "Crucial P3 Plus 500GB",
-        "ReleaseDate": "June 2022",
-        "Model": "CT500P3PSSD8",
-        "Capacity": "500 GB",
-        "MaxRead": 4700,
-        "MaxWrite": 1900,
-        "Interface": "PCIe Gen4 x4",
-        "FlashType": "3D NAND",
-        "FormFactor": "M.2-2280",
-        "PriceUS": "40.59",
-        "PriceHK": "",
-        "PriceCN": "239",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K0R8876",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1646967.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "117.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25ML2FH"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "116.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156301"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "799",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647007.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg"
     },
     {
+        "Id": "crucial-p3-plus-4tb",
         "Brand": "crucial",
-        "Name": "Crucial P310 1TB",
+        "Name": "P3 Plus 4TB",
+        "NameCN": "英睿达P3 Plus 4TB M.2 SSD",
+        "ReleaseDate": "June 2022",
+        "Model": "CT4000P3PSSD8",
+        "Capacity": "4TB",
+        "MaxRead": 4800,
+        "MaxWrite": 4100,
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
+        "FlashType": "3D NAND",
+        "FormFactor": "M.2-2280",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "265.95",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156302"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "258.00",
+                "PriceLink": "https://www.amazon.com/dp/B0B25M8FXX"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1699",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647027.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg"
+    },
+    {
+        "Id": "crucial-p3-plus-500gb",
+        "Brand": "crucial",
+        "Name": "P3 Plus 500GB",
+        "NameCN": "英睿达P3 Plus 500GB M.2 SSD",
+        "ReleaseDate": "June 2022",
+        "Model": "CT500P3PSSD8",
+        "Capacity": "500GB",
+        "MaxRead": 4700,
+        "MaxWrite": 1900,
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
+        "FlashType": "3D NAND",
+        "FormFactor": "M.2-2280",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "44.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K0R8876"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "279",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1646967.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "41.92",
+                "PriceLink": "https://www.amazon.com/dp/B0B25NTRGD"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg"
+    },
+    {
+        "Id": "crucial-p310-1tb",
+        "Brand": "crucial",
+        "Name": "P310 1TB",
+        "NameCN": "英睿达P310 1TB M.2 SSD",
         "ReleaseDate": "",
         "Model": "CT1000P310SSD8",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 7100,
         "MaxWrite": 6000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "79.99",
-        "PriceHK": "",
-        "PriceCN": "499",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156412",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/2368879.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "68.55",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0KEH0592"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "419",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2368879.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-411-01.jpg"
     },
     {
+        "Id": "crucial-p310-2tb",
         "Brand": "crucial",
-        "Name": "Crucial P310 2TB",
+        "Name": "P310 2TB",
+        "NameCN": "英睿达P310 2TB M.2 SSD",
         "ReleaseDate": "",
         "Model": "CT2000P310SSD8",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 7100,
         "MaxWrite": 6000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "144.99",
-        "PriceHK": "",
-        "PriceCN": "949",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFKDJ7616",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/2368899.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "129.59",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKFE0321"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "899",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2368899.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-411-01.jpg"
     },
     {
+        "Id": "crucial-p310-500gb",
         "Brand": "crucial",
-        "Name": "Crucial P310 500GB",
+        "Name": "P310 500GB",
+        "NameCN": "英睿达P310 500GB M.2 SSD",
         "ReleaseDate": "",
         "Model": "CT500P310SSD8",
-        "Capacity": "500 GB",
+        "Capacity": "500GB",
         "MaxRead": 6600,
         "MaxWrite": 3500,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "49.99",
-        "PriceHK": "",
-        "PriceCN": "299",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156411",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/2368839.html",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "299",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2368839.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "45.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156411"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-411-01.jpg"
     },
     {
+        "Id": "crucial-p5-1tb",
         "Brand": "crucial",
-        "Name": "Crucial P5 1TB",
+        "Name": "P5 1TB",
+        "NameCN": "英睿达P5 1TB M.2 SSD",
         "ReleaseDate": "July 2020",
         "Model": "CT1000P5SSD8",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 3400,
         "MaxWrite": 3000,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "348.99",
-        "PriceHK": "",
-        "PriceCN": "1299",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156247",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1295694.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "Out of Stock",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4475"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1299",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1295694.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-250-S02.jpg"
     },
     {
+        "Id": "crucial-p5-2tb",
         "Brand": "crucial",
-        "Name": "Crucial P5 2TB",
+        "Name": "P5 2TB",
+        "NameCN": "英睿达P5 2TB M.2 SSD",
         "ReleaseDate": "July 2020",
         "Model": "CT2000P5SSD8",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 3400,
         "MaxWrite": 3000,
-        "Interface": "PCIe Gen3 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 3.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "228.65",
-        "PriceHK": "",
-        "PriceCN": "1499",
-        "LinkUS": "https://www.amazon.com/dp/B0892TWDP1",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1394192.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "232.99",
+                "PriceLink": "https://www.amazon.com/dp/B0892TWDP1"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1499",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1394192.html"
+            }
+        ],
         "Img": ""
     },
     {
+        "Id": "crucial-p5-plus-1tb",
         "Brand": "crucial",
-        "Name": "Crucial P5 Plus 1TB",
+        "Name": "P5 Plus 1TB",
+        "NameCN": "英睿达P5 Plus 1TB M.2 SSD",
         "ReleaseDate": "August 2021",
         "Model": "CT1000P5PSSD8",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 6600,
         "MaxWrite": 5000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "115.00",
-        "PriceHK": "",
-        "PriceCN": "499",
-        "LinkUS": "https://www.amazon.com/dp/B098WL46RS",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1415927.html",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "499",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1415927.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "139.90",
+                "PriceLink": "https://www.amazon.com/dp/B098WL46RS"
+            }
+        ],
         "Img": ""
     },
     {
+        "Id": "crucial-p5-plus-2tb",
         "Brand": "crucial",
-        "Name": "Crucial P5 Plus 2TB",
+        "Name": "P5 Plus 2TB",
+        "NameCN": "英睿达P5 Plus 2TB M.2 SSD",
         "ReleaseDate": "August 2021",
         "Model": "CT2000P5PSSD8",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 6600,
         "MaxWrite": 5000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "207.00",
-        "PriceHK": "",
-        "PriceCN": "899",
-        "LinkUS": "https://www.amazon.com/dp/B098WKQRDL",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1416187.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "199.99",
+                "PriceLink": "https://www.amazon.com/dp/B098WKQRDL"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "315.00",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4394"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "899",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1416187.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-281-V22.jpg"
     },
     {
+        "Id": "crucial-p5-plus-500gb",
         "Brand": "crucial",
-        "Name": "Crucial P5 Plus 500GB",
+        "Name": "P5 Plus 500GB",
+        "NameCN": "英睿达P5 Plus 500GB M.2 SSD",
         "ReleaseDate": "August 2021",
         "Model": "CT500P5PSSD8",
-        "Capacity": "500 GB",
+        "Capacity": "500GB",
         "MaxRead": 6600,
         "MaxWrite": 4000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "98.85",
-        "PriceHK": "",
-        "PriceCN": "649",
-        "LinkUS": "https://www.amazon.com/dp/B098W1NDV2",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1416188.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "107.52",
+                "PriceLink": "https://www.amazon.com/dp/B098W1NDV2"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "649",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1416188.html"
+            }
+        ],
         "Img": ""
     },
     {
+        "Id": "crucial-pro-t705-2tb",
         "Brand": "crucial",
-        "Name": "Crucial T705 2TB Heatsink",
+        "Name": "T705 2TB Heatsink",
+        "NameCN": "英睿达Pro系列 T705巅峰\ufffd\ufffd\u001a\ufffd\ufffd\ufffd\ufffd\u001a 2TB M.2 SSD",
         "ReleaseDate": "March 2024",
         "Model": "CT2000T705SSD5",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 14500,
         "MaxWrite": 12700,
-        "Interface": "PCIe Gen5 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 5.0 x4",
         "FlashType": "TLC NAND²",
         "FormFactor": "M.2-2280",
-        "PriceUS": "281.99",
-        "PriceHK": "",
-        "PriceCN": "1899",
-        "LinkUS": "https://www.amazon.com/dp/B0CTS93WML",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/2152959.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1599",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2152959.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "349.90",
+                "PriceLink": "https://www.amazon.com/dp/B0CTS93WML"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "439.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HK9X5129"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-401-02.png"
     },
     {
+        "Id": "crucial-pro-t705-1tb",
         "Brand": "crucial",
-        "Name": "Crucial T705 1TB",
+        "Name": "T705 1TB",
+        "NameCN": "英睿达Pro系列 T705巅峰\ufffd\ufffd\u001a 1TB M.2 SSD",
         "ReleaseDate": "March 2024",
         "Model": "CT1000T705SSD3",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 13600,
         "MaxWrite": 10200,
-        "Interface": "PCIe Gen5 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 5.0 x4",
         "FlashType": "TLC NAND²",
         "FormFactor": "M.2-2280",
-        "PriceUS": "154.99",
-        "PriceHK": "",
-        "PriceCN": "1099",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156397",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/2152879.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "172.95",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156397"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "175.80",
+                "PriceLink": "https://www.amazon.com/dp/B0CTRV9CVP"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2152879.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-397-09.png"
     },
     {
+        "Id": "crucial-pro-t705-4tb",
         "Brand": "crucial",
-        "Name": "Crucial T705 4TB",
+        "Name": "T705 4TB",
+        "NameCN": "英睿达Pro系列 T705巅峰\ufffd\ufffd\u001a 4TB M.2 SSD",
         "ReleaseDate": "March 2024",
         "Model": "CT4000T705SSD3",
-        "Capacity": "4000 GB",
+        "Capacity": "4TB",
         "MaxRead": 14100,
         "MaxWrite": 12600,
-        "Interface": "PCIe Gen5 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 5.0 x4",
         "FlashType": "TLC NAND²",
         "FormFactor": "M.2-2280",
-        "PriceUS": "772.73",
-        "PriceHK": "",
-        "PriceCN": "3799",
-        "LinkUS": "https://www.amazon.com/dp/B0CTSSMTZK",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/2152919.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "599.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16517"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "678.91",
+                "PriceLink": "https://www.amazon.com/dp/B0CTSSMTZK"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "2999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2152919.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-397-09.png"
     },
     {
+        "Id": "crucial-t500-1tb",
         "Brand": "crucial",
-        "Name": "Crucial T500 1TB",
+        "Name": "T500 1TB",
+        "NameCN": "英睿达T500 1TB M.2 SSD",
         "ReleaseDate": "October 2023",
         "Model": "CT1000T500SSD8",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 7300,
         "MaxWrite": 6800,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "88.59",
-        "PriceHK": "",
-        "PriceCN": "549",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7426",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1996007.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "89.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CK39YR9V"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "99.95",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7426"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "569",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1996007.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-387-01.png"
     },
     {
+        "Id": "crucial-t500-2tb",
         "Brand": "crucial",
-        "Name": "Crucial T500 2TB",
+        "Name": "T500 2TB",
+        "NameCN": "英睿达T500 2TB M.2 SSD",
         "ReleaseDate": "October 2023",
         "Model": "CT2000T500SSD8",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 7400,
         "MaxWrite": 7000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "154.99",
-        "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "https://www.amazon.com/dp/B0CK2TC9XQ",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1996027.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "153.95",
+                "PriceLink": "https://www.amazon.com/dp/B0CK2TC9XQ"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "158.75",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7443"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1996027.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-387-01.png"
     },
     {
+        "Id": "crucial-t500-500gb",
         "Brand": "crucial",
-        "Name": "Crucial T500 500GB",
+        "Name": "T500 500GB",
+        "NameCN": "英睿达T500 500GB M.2 SSD",
         "ReleaseDate": "October 2023",
         "Model": "CT500T500SSD8",
-        "Capacity": "500 GB",
+        "Capacity": "500GB",
         "MaxRead": 7200,
         "MaxWrite": 7000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "64.99",
-        "PriceHK": "",
-        "PriceCN": "499",
-        "LinkUS": "https://www.amazon.com/dp/B0CK2R8YLY",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1995987.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "64.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CK2R8YLY"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "91.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156387"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "499",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1995987.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-387-01.png"
     },
     {
+        "Id": "crucial-t500-1tb",
         "Brand": "crucial",
-        "Name": "Crucial T500 2TB Heatsink",
+        "Name": "T500 2TB Heatsink",
+        "NameCN": "英睿达T500\ufffd\ufffd\u001a\ufffd\ufffd\ufffd\ufffd\u001a 1TB M.2 SSD",
         "ReleaseDate": "October 2023",
         "Model": "CT2000T500SSD5",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 7400,
         "MaxWrite": 7000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "163.65",
-        "PriceHK": "",
-        "PriceCN": "649",
-        "LinkUS": "https://www.amazon.com/dp/B0CK2RKPBL",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1996047.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "154.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0KDH0231"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "154.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CK2RKPBL"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "669",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1996047.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-390-07.png"
     },
     {
+        "Id": "crucial-t500-2tb",
         "Brand": "crucial",
-        "Name": "Crucial T500 1TB Heatsink",
+        "Name": "T500 1TB Heatsink",
+        "NameCN": "英睿达T500\ufffd\ufffd\u001a\ufffd\ufffd\ufffd\ufffd\u001a 2TB M.2 SSD",
         "ReleaseDate": "October 2023",
         "Model": "CT1000T500SSD5",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 7300,
         "MaxWrite": 6800,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D NAND TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "104.99",
-        "PriceHK": "",
-        "PriceCN": "1099",
-        "LinkUS": "https://www.amazon.com/dp/B0CK2S298S",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1996067.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "79.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CK2S298S"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "98.32",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKEP6415"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1199",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1996067.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-390-07.png"
     },
     {
+        "Id": "crucial-t700-2tb",
         "Brand": "crucial",
-        "Name": "Crucial T700 2TB",
+        "Name": "T700 2TB",
+        "NameCN": "英睿达T700 2TB M.2 SSD",
         "ReleaseDate": "May 2023",
         "Model": "CT2000T700SSD3",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 12400,
         "MaxWrite": 11800,
-        "Interface": "PCIe Gen5 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 5.0 x4",
         "FlashType": "TLC NAND²",
         "FormFactor": "M.2-2280",
-        "PriceUS": "289.99",
-        "PriceHK": "",
-        "PriceCN": "2699",
-        "LinkUS": "https://www.amazon.com/dp/B0C3K7MTSY",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/micron/1849707.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "209.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156330"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "253.53",
+                "PriceLink": "https://www.amazon.com/dp/B0C3K7MTSY"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "2699",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1849707.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-329-19.jpg"
     },
     {
+        "Id": "kingston-snv2s-1tb",
         "Brand": "kingston",
-        "Name": "Kingston NV2 1TB",
+        "Name": "NV2 1TB",
+        "NameCN": "金士顿SNV2S 1TB M.2 SSD",
         "ReleaseDate": "November 2022",
         "Model": "SNV2S/1000G",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 3500,
         "MaxWrite": 2100,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "59.99",
-        "PriceHK": "",
-        "PriceCN": "379",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242730",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1647287.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "105.00",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEK308687"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "69.64",
+                "PriceLink": "https://www.amazon.com/dp/B0BBWH1R8H"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1039",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1647287.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-729-05.jpg"
     },
     {
+        "Id": "kingston-snv2s-500gb",
         "Brand": "kingston",
-        "Name": "Kingston NV2 500G",
+        "Name": "NV2 500G",
+        "NameCN": "金士顿SNV2S 500GB M.2 SSD",
         "ReleaseDate": "September 2022",
         "Model": "SNV2S/500G",
-        "Capacity": "500 GB",
+        "Capacity": "500GB",
         "MaxRead": 3500,
         "MaxWrite": 2100,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "37.99",
-        "PriceHK": "",
-        "PriceCN": "299",
-        "LinkUS": "https://www.amazon.com/dp/B0BBWJH1P8",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1647267.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "54.16",
+                "PriceLink": "https://www.amazon.com/dp/B0BBWJH1P8"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "849",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1647267.html"
+            }
+        ],
         "Img": ""
     },
     {
+        "Id": "kingston-snv3s-1tb",
         "Brand": "kingston",
-        "Name": "Kingston NV3 1TB",
+        "Name": "NV3 1TB",
+        "NameCN": "金士顿SNV3S 1TB M.2 SSD",
         "ReleaseDate": "August 2024",
         "Model": "SNV3S/1000G",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 6000,
         "MaxWrite": 4000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "59.99",
-        "PriceHK": "",
-        "PriceCN": "399",
-        "LinkUS": "https://www.amazon.com/dp/B0DBR3DZWG",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/2317119.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "64.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DBR3DZWG"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "65.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKCT1925"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "459",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317119.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-902-02.jpg"
     },
     {
+        "Id": "kingston-snv3s-500gb",
         "Brand": "kingston",
-        "Name": "Kingston NV3 500GB",
+        "Name": "NV3 500GB",
+        "NameCN": "金士顿SNV3S 500GB M.2 SSD",
         "ReleaseDate": "August 2024",
         "Model": "SNV3S/500G",
-        "Capacity": "500 GB",
+        "Capacity": "500GB",
         "MaxRead": 5000,
         "MaxWrite": 3000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "42.50",
-        "PriceHK": "",
-        "PriceCN": "319",
-        "LinkUS": "https://www.amazon.com/dp/B0DBR9RZLV",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/2317099.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "309",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317099.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "49.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DBR9RZLV"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "49.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242901"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-901-02.jpg"
     },
     {
+        "Id": "kingston-snv2s-2tb",
         "Brand": "kingston",
-        "Name": "Kingston NV2 2TB",
+        "Name": "NV2 2TB",
+        "NameCN": "金士顿SNV2S 2TB M.2 SSD",
         "ReleaseDate": "September 2022",
         "Model": "SNV2S/2000G",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 3500,
         "MaxWrite": 2800,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "105.99",
-        "PriceHK": "",
-        "PriceCN": "749",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1K855950",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1647307.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "132.95",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAEYEJSS3047"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "127.50",
+                "PriceLink": "https://www.amazon.com/dp/B0BDTC589G"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "749",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1647307.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-729-05.jpg"
     },
     {
+        "Id": "kingston-snv3s-2tb",
         "Brand": "kingston",
-        "Name": "Kingston NV3 2TB",
+        "Name": "NV3 2TB",
+        "NameCN": "金士顿SNV3S 2TB M.2 SSD",
         "ReleaseDate": "August 2024",
         "Model": "SNV3S/2000G",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 6000,
         "MaxWrite": 5000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "119.99",
-        "PriceHK": "",
-        "PriceCN": "859",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242903",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/2317139.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "128.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKCT1926"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "869",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317139.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "118.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DBR6TRZQ"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-903-02.jpg"
     },
     {
+        "Id": "kingston-kc3000-512gb",
         "Brand": "kingston",
-        "Name": "Kingston KC3000 512GB",
+        "Name": "KC3000 512GB",
+        "NameCN": "金士顿KC3000 512GB M.2 SSD",
         "ReleaseDate": "January 2022",
         "Model": "SKC3000S/512G",
-        "Capacity": "512 GB",
+        "Capacity": "500GB",
         "MaxRead": 7000,
         "MaxWrite": 3900,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "59.99",
-        "PriceHK": "",
-        "PriceCN": "359",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242658",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1455952.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "72.94",
+                "PriceLink": "https://www.amazon.com/dp/B09K7CR37G"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "439",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1455952.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "59.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB59TJSM8188"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-658-S01.jpg"
     },
     {
+        "Id": "kingston-snv3s-4tb",
         "Brand": "kingston",
-        "Name": "Kingston NV3 4TB",
+        "Name": "NV3 4TB",
+        "NameCN": "金士顿SNV3S 4TB M.2 SSD",
         "ReleaseDate": "September 2024",
         "Model": "SNV3S/4000G",
-        "Capacity": "4000 GB",
+        "Capacity": "4TB",
         "MaxRead": 6000,
         "MaxWrite": 5000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "239.99",
-        "PriceHK": "",
-        "PriceCN": "1899",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242904",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/2427799.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "244.77",
+                "PriceLink": "https://www.amazon.com/dp/B0DJ1QC42R"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "249.37",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKEP6388"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1899",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2427799.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-904-02.jpg"
     },
     {
+        "Id": "kingston-kc3000-2tb",
         "Brand": "kingston",
-        "Name": "Kingston KC3000 2TB",
+        "Name": "KC3000 2TB",
+        "NameCN": "金士顿KC3000 2TB M.2 SSD",
         "ReleaseDate": "January 2022",
         "Model": "SKC3000D/2048G",
-        "Capacity": "2048 GB",
+        "Capacity": "2TB",
         "MaxRead": 7000,
         "MaxWrite": 7000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "146.89",
-        "PriceHK": "",
-        "PriceCN": "899",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIAEYEHG02635",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1455968.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "145.88",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAEYEHG02635"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "153.93",
+                "PriceLink": "https://www.amazon.com/dp/B09K7DRMSC"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1149",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1455968.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-660-S01.jpg"
     },
     {
+        "Id": "kingston-fury-renegade-1tb",
         "Brand": "kingston",
-        "Name": "Kingston FURY Renegade 1TB",
+        "Name": "FURY Renegade 1TB",
+        "NameCN": "金士顿FURY 1TB M.2 SSD",
         "ReleaseDate": "February 2022",
         "Model": "SFYRS/1000G",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 7300,
         "MaxWrite": 6000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "94.99",
-        "PriceHK": "",
-        "PriceCN": "599",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242655",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1455970.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "94.99",
+                "PriceLink": "https://www.amazon.com/dp/B09K3H2YHX"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "102.71",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKEP6373"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "699",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1455970.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-655-S01.jpg"
     },
     {
+        "Id": "kingston-fury-renegade-4tb",
         "Brand": "kingston",
-        "Name": "Kingston FURY Renegade 4TB",
+        "Name": "FURY Renegade 4TB",
+        "NameCN": "金士顿FURY Renegade系列 散热器版 4TB M.2 SSD",
         "ReleaseDate": "November 2021",
         "Model": "SFYRD/4000G",
-        "Capacity": "4000 GB",
+        "Capacity": "4TB",
         "MaxRead": 7300,
         "MaxWrite": 7000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "279.99",
-        "PriceHK": "",
-        "PriceCN": "2299",
-        "LinkUS": "https://www.amazon.com/dp/B09K3PSWD2",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/2317219.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "299.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK8T1993"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "309.99",
+                "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "2399",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317219.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg"
     },
     {
+        "Id": "kingston-snv2s-4tb",
         "Brand": "kingston",
-        "Name": "Kingston NV2 4TB",
+        "Name": "NV2 4TB",
+        "NameCN": "金士顿SNV2S 4TB M.2 SSD",
         "ReleaseDate": "April 2023",
         "Model": "SNV2S/4000G",
-        "Capacity": "4000 GB",
+        "Capacity": "4TB",
         "MaxRead": 3500,
         "MaxWrite": 2800,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "",
         "FormFactor": "M.2-2280",
-        "PriceUS": "238.77",
-        "PriceHK": "",
-        "PriceCN": "1599",
-        "LinkUS": "https://www.amazon.com/dp/B0BZMK1LWS",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/2317080.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "265.77",
+                "PriceLink": "https://www.amazon.com/dp/B0BZMK1LWS"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "289.75",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCR2293"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317080.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-729-05.jpg"
     },
     {
+        "Id": "kingston-fury-renegade-4tb",
         "Brand": "kingston",
-        "Name": "Kingston FURY Renegade 4TB",
+        "Name": "FURY Renegade 4TB",
+        "NameCN": "金士顿FURY Renegade系列 4TB M.2 SSD",
         "ReleaseDate": "November 2021",
         "Model": "SFYRD/4000G",
-        "Capacity": "4000 GB",
+        "Capacity": "4TB",
         "MaxRead": 7300,
         "MaxWrite": 7000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "279.99",
-        "PriceHK": "",
-        "PriceCN": "2299",
-        "LinkUS": "https://www.amazon.com/dp/B09K3PSWD2",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1686547.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "299.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK8T1993"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "309.99",
+                "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "2399",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1686547.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg"
     },
     {
+        "Id": "kingston-fury-renegade-2tb",
         "Brand": "kingston",
-        "Name": "Kingston FURY Renegade 2TB",
+        "Name": "FURY Renegade 2TB",
+        "NameCN": "金士顿FURY Renegade系列 2TB M.2 SSD",
         "ReleaseDate": "March 2022",
         "Model": "SFYRD/2000G",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 7300,
         "MaxWrite": 7000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "144.99",
-        "PriceHK": "",
-        "PriceCN": "1199",
-        "LinkUS": "https://www.amazon.com/dp/B09K36S11S",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/kingston/1686527.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "168.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAEYEHG01468"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1279",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1686527.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "144.99",
+                "PriceLink": "https://www.amazon.com/dp/B09K36S11S"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg"
     },
     {
+        "Id": "samsung-samsung-980-pro-1tb",
         "Brand": "samsung",
-        "Name": "Samsung 980 PRO 1TB",
+        "Name": "980 PRO 1TB",
+        "NameCN": "三星980 Pro 1TB NVMe M.2 SSD",
         "ReleaseDate": "September 2020",
         "Model": "MZ-V8P1T0B/AM",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 7000,
         "MaxWrite": 5000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "Samsung V-NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "121.99",
-        "PriceHK": "",
-        "PriceCN": "749",
-        "LinkUS": "https://www.amazon.com/dp/B08GLX7TNT",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1239853.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "134.99",
+                "PriceLink": "https://www.amazon.com/dp/B08GLX7TNT"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "749",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1239853.html"
+            }
+        ],
         "Img": ""
     },
     {
+        "Id": "samsung-samsung-980-pro-2tb",
         "Brand": "samsung",
-        "Name": "Samsung 980 PRO 2TB",
+        "Name": "980 PRO 2TB",
+        "NameCN": "三星980 PRO 2TB M.2 SSD",
         "ReleaseDate": "January 2021",
         "Model": "MZ-V8P2T0B/AM",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 7000,
         "MaxWrite": 5100,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "Samsung V-NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "169.00",
-        "PriceHK": "",
-        "PriceCN": "1249",
-        "LinkUS": "https://www.amazon.com/dp/B08RK2SR23",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1308847.html",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1249",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1308847.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "169.99",
+                "PriceLink": "https://www.amazon.com/dp/B08RK2SR23"
+            }
+        ],
         "Img": ""
     },
     {
+        "Id": "samsung-samsung-980-pro-500gb",
         "Brand": "samsung",
-        "Name": "Samsung 980 PRO 500GB",
+        "Name": "980 PRO 500GB",
+        "NameCN": "三星980 Pro 500GB NVMe M.2 SSD",
         "ReleaseDate": "September 2020",
         "Model": "MZ-V8P500B/AM",
-        "Capacity": "500 GB",
+        "Capacity": "500GB",
         "MaxRead": 6900,
         "MaxWrite": 5000,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "Samsung V-NAND",
         "FormFactor": "M.2-2280",
-        "PriceUS": "161.46",
-        "PriceHK": "",
-        "PriceCN": "499",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147789",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1239907.html",
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-789-V01.jpg"
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "168.65",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBEC2KCF0636"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "499",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1239907.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-796-V01.jpg"
     },
     {
+        "Id": "samsung-samsung-990-evo-1tb",
         "Brand": "samsung",
-        "Name": "Samsung 990 EVO 1TB",
+        "Name": "990 EVO 1TB",
+        "NameCN": "三星990 EVO 1TB M.2 SSD",
         "ReleaseDate": "January 2024",
         "Model": "MZ-V9E1T0B/AM",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 5000,
         "MaxWrite": 4200,
-        "Interface": "PCIe Gen5 x2",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 5.0 x2",
         "FlashType": "V-NAND TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "74.99",
-        "PriceHK": "",
-        "PriceCN": "549",
-        "LinkUS": "https://www.amazon.com/dp/B0CRCC9863",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/2099147.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "69.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CRCC9863"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "69.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147886"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "549",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/2099147.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2412170QAVS0B4.jpg"
     },
     {
+        "Id": "samsung-samsung-990-evo-2tb",
         "Brand": "samsung",
-        "Name": "Samsung 990 EVO 2TB",
+        "Name": "990 EVO 2TB",
+        "NameCN": "三星990 EVO 2TB M.2 SSD",
         "ReleaseDate": "January 2024",
         "Model": "MZ-V9E2T0B/AM",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 5000,
         "MaxWrite": 4200,
-        "Interface": "PCIe Gen5 x2",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 5.0 x2",
         "FlashType": "V-NAND TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "129.99",
-        "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "https://www.amazon.com/dp/B0CRC7H66Z",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/2099167.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "129.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CRC7H66Z"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "124.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147887"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/2099167.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-887-01.jpg"
     },
     {
+        "Id": "samsung-samsung-990-pro-1tb",
         "Brand": "samsung",
-        "Name": "Samsung 990 PRO 1TB",
+        "Name": "990 PRO 1TB",
+        "NameCN": "三星990 PRO 1TB M.2 SSD报价",
         "ReleaseDate": "October 2022",
         "Model": "MZ-V9P1T0B/AM",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 7450,
         "MaxWrite": 6900,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "V7 V-NAND 3bit MLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "118.99",
-        "PriceHK": "",
-        "PriceCN": "749",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJB21853",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1676547_price.html",
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-860-01.jpg"
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "99.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BHJF2VRN"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "759",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1676547_price.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "99.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147860"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2404090EWHDWC1.jpg"
     },
     {
+        "Id": "samsung-samsung-990-pro-2tb",
         "Brand": "samsung",
-        "Name": "Samsung 990 PRO 2TB",
+        "Name": "990 PRO 2TB",
+        "NameCN": "三星990 PRO 2TB M.2 SSD",
         "ReleaseDate": "October 2022",
         "Model": "MZ-V9P2T0B/AM",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 7450,
         "MaxWrite": 6900,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "V7 V-NAND 3bit MLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "178.99",
-        "PriceHK": "",
-        "PriceCN": "1299",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1676567.html",
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-861-01.jpg"
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "169.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "169.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BHJJ9Y77"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1299",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1676567.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2401190ZB13BEE.jpg"
     },
     {
+        "Id": "samsung-samsung-990-pro-4tb",
         "Brand": "samsung",
-        "Name": "Samsung 990 PRO 4TB",
+        "Name": "990 PRO 4TB",
+        "NameCN": "三星990 PRO 4TB M.2 SSD",
         "ReleaseDate": "September 2023",
         "Model": "MZ-V9P4T0B/AM",
-        "Capacity": "4000 GB",
+        "Capacity": "4TB",
         "MaxRead": 0,
         "MaxWrite": 0,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "V7 V-NAND 3bit MLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "328.99",
-        "PriceHK": "",
-        "PriceCN": "2499",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK5N5303",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/samsung/1962387.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "319.95",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "2499",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1962387.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "299.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CHGT1KFJ"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-879-01.jpg"
     },
     {
+        "Id": "westerndigital-wd-black-sn770-1tb",
         "Brand": "westerndigital",
         "Name": "WD_BLACK SN770 1TB",
+        "NameCN": "WD_BLACK SN770 1TB",
         "ReleaseDate": "January 2022",
         "Model": "WDS100T3X0E",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 5150,
         "MaxWrite": 4900,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC BiCS5",
         "FormFactor": "M.2-2280",
-        "PriceUS": "71.73",
-        "PriceHK": "",
-        "PriceCN": "489",
-        "LinkUS": "https://www.amazon.com/dp/B09QV692XY",
-        "LinkHK": "",
-        "LinkCN": "https://item.jd.com/10046656811913.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "71.59",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1K851371"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "69.99",
+                "PriceLink": "https://www.amazon.com/dp/B09QV692XY"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JB",
+                "Price": "489",
+                "PriceLink": "https://item.jd.com/10046656811913.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-217-V05.jpg"
     },
     {
+        "Id": "westerndigital-wd-black-sn770-2tb",
         "Brand": "westerndigital",
         "Name": "WD_BLACK SN770 2TB",
+        "NameCN": "WD_BLACK SN770 2TB",
         "ReleaseDate": "January 2022",
         "Model": "WDS200T3X0E",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 5150,
         "MaxWrite": 4850,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "3D TLC BiCS5",
         "FormFactor": "M.2-2280",
-        "PriceUS": "119.00",
-        "PriceHK": "",
-        "PriceCN": "869",
-        "LinkUS": "https://www.amazon.com/dp/B09QV5KJHV",
-        "LinkHK": "",
-        "LinkCN": "https://item.jd.com/10046656811914.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "125.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250218"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "126.99",
+                "PriceLink": "https://www.amazon.com/dp/B09QV5KJHV"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JB",
+                "Price": "869",
+                "PriceLink": "https://item.jd.com/10046656811914.html"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-218-V05.jpg"
     },
     {
+        "Id": "westerndigital-wd-black-sn850x-1tb",
         "Brand": "westerndigital",
         "Name": "Western Digital BLACK SN850X 1TB",
+        "NameCN": "Western Digital BLACK SN850X 1TB",
         "ReleaseDate": "August 2022",
         "Model": "WDS100T2X0E",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 7300,
         "MaxWrite": 6300,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "BiCS5 112-layer TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "89.99",
-        "PriceHK": "",
-        "PriceCN": "599",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250243",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1633067.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "89.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B7CKVCCV"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "91.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1K4B2808"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JB",
+                "Price": "599",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/wd/1633067.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-243-05.jpg"
     },
     {
+        "Id": "westerndigital-wd-black-sn850x-2tb",
         "Brand": "westerndigital",
         "Name": "Western Digital BLACK SN850X 2TB",
+        "NameCN": "Western Digital BLACK SN850X 2TB",
         "ReleaseDate": "August 2022",
         "Model": "WDS200T2X0E",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 7300,
         "MaxWrite": 6600,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "BiCS5 112-layer TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "149.99",
-        "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250247",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1633087_price.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "147.00",
+                "PriceLink": "https://www.amazon.com/dp/B0B7CMZ3QH"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "148.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1K436582"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JB",
+                "Price": "999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/wd/1633087_price.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-247-02.jpg"
     },
     {
+        "Id": "westerndigital-wd-blue-sn580-1tb",
         "Brand": "westerndigital",
         "Name": "WD Blue SN580 1TB",
+        "NameCN": "西部数据WD Blue SN580 1TB M.2 SSD",
         "ReleaseDate": "May 2023",
         "Model": "WDS100T3B0E",
-        "Capacity": "1000 GB",
+        "Capacity": "1TB",
         "MaxRead": 4150,
         "MaxWrite": 4150,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "58.96",
-        "PriceHK": "",
-        "PriceCN": "539",
-        "LinkUS": "https://www.newegg.com/Product/Product.aspx?Item=9SIBMJCKEA3179",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1910187.html",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "59.99",
+                "PriceLink": "https://www.amazon.com/dp/B0C8XMH264"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "59.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K3T4156"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "539",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/wd/1910187.html"
+            }
+        ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-254-01.jpg"
     },
     {
+        "Id": "westerndigital-wd-blue-sn580-2tb",
         "Brand": "westerndigital",
         "Name": "WD Blue SN580 2TB",
+        "NameCN": "西部数据WD Blue SN580 2TB M.2 SSD报价",
         "ReleaseDate": "June 2023",
         "Model": "WDS200T3B0E",
-        "Capacity": "2000 GB",
+        "Capacity": "2TB",
         "MaxRead": 4150,
         "MaxWrite": 4150,
-        "Interface": "PCIe Gen4 x4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "PCIe 4.0 x4",
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
-        "PriceUS": "114.99",
-        "PriceHK": "",
-        "PriceCN": "949",
-        "LinkUS": "https://www.amazon.com/dp/B0C8WPRM9T",
-        "LinkHK": "",
-        "LinkCN": "https://product.pconline.com.cn/dianziyingpan/wd/1910207_price.html",
-        "Img": ""
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "109.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K4D2916"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "949",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/wd/1910207_price.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "109.99",
+                "PriceLink": "https://www.amazon.com/dp/B0C8WPRM9T"
+            }
+        ],
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-253-04.jpg"
     },
     {
+        "Id": "zhitai-tiplus7100-1tb",
         "Brand": "zhitai",
         "Name": "TiPlus7100 1TB",
+        "NameCN": "TiPlus7100 1TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "1TB",
         "MaxRead": 7000,
         "MaxWrite": 6000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "529",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1433/1432187/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "529",
+                "PriceLink": "https://item.jd.com/100041006319.html"
+            }
+        ],
         "Img": "https://2d.zol-img.com.cn/product/223_280x210/555/ce7ZOVlOE3Ug.jpg"
     },
     {
+        "Id": "zhitai-tiplus7100-2tb",
         "Brand": "zhitai",
         "Name": "TiPlus7100 2TB",
+        "NameCN": "TiPlus7100 2TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "2TB",
         "MaxRead": 7000,
         "MaxWrite": 6000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "849",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1433/1432188/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "949",
+                "PriceLink": "https://item.jd.com/100049404395.html"
+            }
+        ],
         "Img": "https://2f.zol-img.com.cn/product/223_280x210/557/cenAKIsrEbSxU.jpg"
     },
     {
+        "Id": "zhitai-tiplus7100-512gb",
         "Brand": "zhitai",
         "Name": "TiPlus7100 512GB",
+        "NameCN": "TiPlus7100 512GB",
         "ReleaseDate": "",
         "Model": "",
-        "Capacity": "512GB",
+        "Capacity": "500GB",
         "MaxRead": 7000,
         "MaxWrite": 3600,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "359",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1433/1432186/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "399",
+                "PriceLink": "https://item.jd.com/100041006345.html"
+            }
+        ],
         "Img": "https://2e.zol-img.com.cn/product/223_280x210/562/cedCP5EtPnnoE.jpg"
     },
     {
+        "Id": "zhitai-tiplus7100-4tb",
         "Brand": "zhitai",
         "Name": "TiPlus7100 4TB",
+        "NameCN": "TiPlus7100 4TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "4TB",
         "MaxRead": 7000,
         "MaxWrite": 6000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "1699",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1967/1966753/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1859",
+                "PriceLink": "https://item.jd.com/100077740918.html"
+            }
+        ],
         "Img": "https://2d.zol-img.com.cn/product/258_280x210/41/ceqeXAZrPhdAw.png"
     },
     {
+        "Id": "zhitai-ti600-1tb",
         "Brand": "zhitai",
         "Name": "Ti600 1TB",
+        "NameCN": "Ti600 1TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "1TB",
         "MaxRead": 7000,
         "MaxWrite": 6000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "QLC",
         "FormFactor": "M.2 PCIe接口（Gen4\ufffd\ufffd\u001a",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "459",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1919/1918448/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "419",
+                "PriceLink": "https://item.jd.com/100068720859.html"
+            }
+        ],
         "Img": "https://2b.zol-img.com.cn/product/253_280x210/113/ce1VVsW4tofw.jpg"
     },
     {
+        "Id": "zhitai-ti600-500gb",
         "Brand": "zhitai",
         "Name": "Ti600 500GB",
+        "NameCN": "Ti600 500GB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "500GB",
         "MaxRead": 6000,
         "MaxWrite": 3000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "QLC",
         "FormFactor": "M.2 PCIe接口（Gen4\ufffd\ufffd\u001a",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "309",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1919/1918447/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "309",
+                "PriceLink": "https://item.jd.com/100067394454.html"
+            }
+        ],
         "Img": "https://2c.zol-img.com.cn/product/253_280x210/96/ceR91JXpfmeA.jpg"
     },
     {
+        "Id": "zhitai-ti600-2tb",
         "Brand": "zhitai",
         "Name": "Ti600 2TB",
+        "NameCN": "Ti600 2TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "2TB",
         "MaxRead": 7000,
         "MaxWrite": 6000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "QLC",
         "FormFactor": "M.2 PCIe接口（Gen4\ufffd\ufffd\u001a",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "739",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1919/1918449/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "799",
+                "PriceLink": "https://item.jd.com/100067394436.html"
+            }
+        ],
         "Img": "https://2f.zol-img.com.cn/product/253_280x210/99/cevXEbVZLYl8w.jpg"
     },
     {
+        "Id": "zhitai-tiplus7100-2tb-",
         "Brand": "zhitai",
         "Name": "TiPlus7100 2TB 黑神话·悟空联名版",
+        "NameCN": "TiPlus7100 2TB 黑神话·悟空联名版",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "2TB",
         "MaxRead": 7000,
         "MaxWrite": 6000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "1099",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/2087/2086726/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "969",
+                "PriceLink": "https://item.jd.com/100135244590.html"
+            }
+        ],
         "Img": "https://2c.zol-img.com.cn/product/269_280x210/552/ceqSOAAEKFJ1o.jpg"
     },
     {
+        "Id": "zhitai-tiplus7100-1tb-",
         "Brand": "zhitai",
         "Name": "TiPlus7100 1TB 黑神话·悟空联名版",
+        "NameCN": "TiPlus7100 1TB 黑神话·悟空联名版",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "1TB",
         "MaxRead": 7000,
         "MaxWrite": 6000,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "629",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/2105/2104252/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "549",
+                "PriceLink": "https://item.jd.com/100113956235.html"
+            }
+        ],
         "Img": "https://2c.zol-img.com.cn/product/269_280x210/552/ceqSOAAEKFJ1o.jpg"
     },
     {
+        "Id": "zhitai-tipro9000-2tb",
         "Brand": "zhitai",
         "Name": "TiPro9000 2TB",
+        "NameCN": "TiPro9000 2TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "2TB",
         "MaxRead": 14000,
         "MaxWrite": 12500,
-        "Interface": "Gen 5.0 ×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "1649",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/2118/2117181/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1649",
+                "PriceLink": "https://item.jd.com/100165487104.html"
+            }
+        ],
         "Img": "https://2d.zol-img.com.cn/product/270_280x210/211/cetSFb6L6Gobs.jpg"
     },
     {
+        "Id": "zhitai-tipro9000-1tb",
         "Brand": "zhitai",
         "Name": "TiPro9000 1TB",
+        "NameCN": "TiPro9000 1TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "1TB",
         "MaxRead": 14000,
         "MaxWrite": 12500,
-        "Interface": "Gen 5.0 ×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/2118/2117180/param.shtml",
-        "Img": "https://2b.zol-img.com.cn/product/270_280x210/209/ceHXfEcvJYSx2.jpg"
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "999",
+                "PriceLink": "https://item.jd.com/100165487088.html"
+            }
+        ],
+        "Img": "https://2b.zol-img.com.cn/product/270_280x210/227/ceDFSvFUjl22w.jpg"
     },
     {
+        "Id": "zhitai-tiplus5000-2tb",
         "Brand": "zhitai",
         "Name": "TiPlus5000 2TB",
+        "NameCN": "TiPlus5000 2TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "2TB",
         "MaxRead": 3500,
         "MaxWrite": 3200,
-        "Interface": "Gen3×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "799",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1404/1403189/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "799",
+                "PriceLink": ""
+            }
+        ],
         "Img": "https://2d.zol-img.com.cn/product/221_280x210/415/ceXHbzxLkewx.jpg"
     },
     {
+        "Id": "zhitai-tiplus5000-1tb",
         "Brand": "zhitai",
         "Name": "TiPlus5000 1TB",
+        "NameCN": "TiPlus5000 1TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "1TB",
         "MaxRead": 3500,
         "MaxWrite": 3100,
-        "Interface": "Gen3×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "739",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1404/1403186/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "499",
+                "PriceLink": "https://item.jd.com/100018551171.html"
+            }
+        ],
         "Img": "https://2e.zol-img.com.cn/product/221_280x210/416/ceC5NBWgu7yI.jpg"
     },
     {
+        "Id": "zhitai-tiplus5000-512gb",
         "Brand": "zhitai",
         "Name": "TiPlus5000 512GB",
+        "NameCN": "TiPlus5000 512GB",
         "ReleaseDate": "",
         "Model": "",
-        "Capacity": "512GB",
+        "Capacity": "500GB",
         "MaxRead": 3500,
         "MaxWrite": 2700,
-        "Interface": "Gen3×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "439",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1404/1403187/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "439",
+                "PriceLink": ""
+            }
+        ],
         "Img": "https://2b.zol-img.com.cn/product/221_280x210/419/cebhNweiycqUc.jpg"
     },
     {
+        "Id": "zhitai-tipro7000-2tb",
         "Brand": "zhitai",
         "Name": "TiPro7000 2TB",
+        "NameCN": "TiPro7000 2TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "2TB",
         "MaxRead": 7400,
         "MaxWrite": 6700,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "999",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1422/1421471/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1029",
+                "PriceLink": "https://item.jd.com/100027952225.html"
+            }
+        ],
         "Img": "https://2a.zol-img.com.cn/product/221_280x210/880/ceyF41CzNWM6c.jpg"
     },
     {
+        "Id": "zhitai-tipro7000-1tb",
         "Brand": "zhitai",
         "Name": "TiPro7000 1TB",
+        "NameCN": "TiPro7000 1TB",
         "ReleaseDate": "",
         "Model": "",
         "Capacity": "1TB",
         "MaxRead": 7400,
         "MaxWrite": 5400,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "519",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1397/1396337/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "569",
+                "PriceLink": "https://item.jd.com/100017474683.html"
+            }
+        ],
         "Img": "https://2e.zol-img.com.cn/product/221_280x210/878/ceh0888OVy9oE.jpg"
     },
     {
+        "Id": "zhitai-tipro7000-512gb",
         "Brand": "zhitai",
         "Name": "TiPro7000 512GB",
+        "NameCN": "TiPro7000 512GB",
         "ReleaseDate": "",
         "Model": "",
-        "Capacity": "512GB",
+        "Capacity": "500GB",
         "MaxRead": 6900,
         "MaxWrite": 2700,
-        "Interface": "Gen4×4",
+        "Read4K": 0,
+        "Write4K": 0,
+        "Interface": "",
         "FlashType": "TLC三层单元",
         "FormFactor": "M.2 PCIe接口",
-        "PriceUS": "",
-        "PriceHK": "",
-        "PriceCN": "429",
-        "LinkUS": "",
-        "LinkHK": "",
-        "LinkCN": "https://detail.zol.com.cn/1397/1396336/param.shtml",
+        "Prices": [
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "429",
+                "PriceLink": ""
+            }
+        ],
         "Img": "https://2d.zol-img.com.cn/product/221_280x210/883/ce46tsX6Vmte6.jpg"
     }
 ]

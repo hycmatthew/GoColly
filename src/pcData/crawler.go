@@ -84,25 +84,50 @@ func getDetailsLinkFromZol(link string, collector *colly.Collector) string {
 	return cnLink
 }
 
-func getCNPriceFromZol(link string, collector *colly.Collector) string {
-	price := ""
+func extractJDPriceFromZol(element *colly.HTMLElement) PriceType {
+	// 封裝選擇器
+	selectors := struct {
+		MallPrice    string
+		NormalPrice  string
+		LinkSelector string
+	}{
+		".side .goods-card .item-b2cprice span",
+		".side .goods-card .goods-card__price span",
+		".side .goods-card .item-b2cprice a",
+	}
 
-	collectorErrorHandle(collector, link)
-
-	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
-		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
-		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
-		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
-
-		if mallPrice != "" {
-			price = mallPrice
-		} else {
-			price = normalPrice
+	// 提取價格
+	extractPrice := func(selector string) string {
+		price := extractFloatStringFromString(element.ChildText(selector))
+		if price == "" {
+			fmt.Printf("從選擇器 %s 提取價格失敗", selector)
 		}
-	})
+		return price
+	}
 
-	collector.Visit(link)
-	return price
+	mallPrice := extractPrice(selectors.MallPrice)
+	normalPrice := extractPrice(selectors.NormalPrice)
+
+	// 鏈接提取
+	jdLink := GetJDPriceLinkFromZol(
+		element.ChildAttr(selectors.LinkSelector, "href"),
+	)
+
+	return PriceType{
+		Region:    "CN",
+		Platform:  Platform_JD,
+		Price:     firstNonEmpty(mallPrice, normalPrice, ""),
+		PriceLink: jdLink,
+	}
+}
+
+func firstNonEmpty(values ...string) string {
+	for _, v := range values {
+		if v != "" {
+			return v
+		}
+	}
+	return ""
 }
 
 func CreateCollector() *colly.Collector {

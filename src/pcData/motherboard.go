@@ -27,18 +27,14 @@ type MotherboardSpec struct {
 	SataSlot    int
 	FormFactor  string
 	Wireless    bool
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
+	Prices      []PriceType // 替换原有PriceXX和LinkXX
 	Img         string
 }
 
 type MotherboardType struct {
 	Id          string
 	Name        string
+	NameCN      string
 	Brand       string
 	Socket      string
 	Chipset     string
@@ -54,17 +50,11 @@ type MotherboardType struct {
 	SataSlot    int
 	FormFactor  string
 	Wireless    bool
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
+	Prices      []PriceType // 替换原有PriceXX和LinkXX
 	Img         string
 }
 
 func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
-
 	motherboardData := MotherboardSpec{}
 	fmt.Println(record.LinkSpec)
 	if strings.Contains(record.LinkSpec, "asus.com") {
@@ -78,65 +68,84 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 	if strings.Contains(strings.ToUpper(record.Name), "WIFI") {
 		motherboardData.Wireless = true
 	}
+
 	motherboardData.Code = record.Name
 	motherboardData.Brand = record.Brand
-	motherboardData.PriceCN = record.PriceCN
-	motherboardData.PriceHK = ""
-	motherboardData.LinkHK = ""
-	motherboardData.LinkCN = record.LinkCN
-	if motherboardData.LinkUS == "" {
-		motherboardData.LinkUS = record.LinkUS
-	}
 	motherboardData.Name = RemoveBrandsFromName(motherboardData.Brand, motherboardData.Name)
+
+	// 添加各區域價格連結
+	motherboardData.Prices = handleSpecPricesLogic(motherboardData.Prices, record)
 	return motherboardData
 }
 
 func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 	isValid := true
-	priceCN := spec.PriceCN
+	tempImg := spec.Img
+	nameCN := spec.Name
+	updatedPrices := make([]PriceType, len(spec.Prices))
 
-	if priceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		_, priceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
+	copy(updatedPrices, spec.Prices)
 
-		if priceCN == "" {
-			isValid = false
-		}
+	priceHandlers := map[string]func(string, *colly.Collector) (string, string){
+		"CN": func(link string, c *colly.Collector) (string, string) {
+			name, price := getCNNameAndPriceFromPcOnline(link, c)
+			return price, name
+		},
+		"US": func(link string, c *colly.Collector) (string, string) {
+			if strings.Contains(link, Platform_Newegg) {
+				price, img := getUSPriceAndImgFromNewEgg(link, c)
+				return price, img
+			}
+			return "", ""
+		},
 	}
-	priceUS, tempPrice, tempImg := spec.PriceUS, "", spec.Img
-	if strings.Contains(spec.LinkUS, "newegg") {
-		tempPrice, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
-		if tempPrice != "" {
-			priceUS = tempPrice
-		}
-		if priceUS == "" {
-			isValid = false
+
+	for i, price := range updatedPrices {
+		if price.Price == "" {
+			handler, exists := priceHandlers[price.Region]
+			if exists {
+				collectedPrice, collectedData := handler(price.PriceLink, CreateCollector())
+				updatedPrices[i].Price = collectedPrice
+
+				switch price.Region {
+				case "CN":
+					if collectedData != "" {
+						nameCN = collectedData
+					}
+				case "US":
+					if collectedData != "" {
+						tempImg = collectedData
+					}
+				}
+			}
+
+			if updatedPrices[i].Price == "" {
+				isValid = false
+			}
 		}
 	}
 
 	return MotherboardType{
-		Id:         SetProductId(spec.Brand, spec.Code),
-		Name:       spec.Name,
-		Brand:      spec.Brand,
-		Socket:     spec.Socket,
-		Chipset:    normalizeMotherboardChipset(spec.Chipset),
-		RamSlot:    spec.RamSlot,
-		RamType:    spec.RamType,
-		RamSupport: spec.RamSupport,
-		RamMax:     spec.RamMax,
-		Pcie16Slot: spec.Pcie1Slot,
-		Pcie4Slot:  spec.Pcie4Slot,
-		Pcie1Slot:  spec.Pcie16Slot,
-		M2Slot:     spec.M2Slot,
-		SataSlot:   spec.SataSlot,
-		FormFactor: GetFormFactorLogic(spec.FormFactor),
-		Wireless:   spec.Wireless,
-		LinkUS:     spec.LinkUS,
-		LinkHK:     spec.LinkHK,
-		LinkCN:     spec.LinkCN,
-		PriceCN:    priceCN,
-		PriceUS:    priceUS,
-		PriceHK:    "",
-		Img:        tempImg,
+		Id:          SetProductId(spec.Brand, spec.Code),
+		Name:        spec.Name,
+		NameCN:      nameCN,
+		Brand:       spec.Brand,
+		Socket:      spec.Socket,
+		Chipset:     normalizeMotherboardChipset(spec.Chipset),
+		RamSlot:     spec.RamSlot,
+		RamType:     spec.RamType,
+		RamSupport:  spec.RamSupport,
+		RamMax:      spec.RamMax,
+		Pcie16Slot:  spec.Pcie16Slot,
+		Pcie4Slot:   spec.Pcie4Slot,
+		Pcie1Slot:   spec.Pcie1Slot,
+		PcieSlotStr: spec.PcieSlotStr,
+		M2Slot:      spec.M2Slot,
+		SataSlot:    spec.SataSlot,
+		FormFactor:  GetFormFactorLogic(spec.FormFactor),
+		Wireless:    spec.Wireless,
+		Prices:      updatedPrices,
+		Img:         tempImg,
 	}, isValid
 }
 
@@ -147,11 +156,10 @@ func getMotherboardSpecData(link string, collector *colly.Collector) Motherboard
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		specData.Name = element.ChildText(".breadcrumb .active")
-		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
+		specData.Prices = GetPriceLinkFromPangoly(element)
 
 		specData.RamType = element.ChildText(".table-striped .badge-primary")
 		var ramSupportList []int
-		fmt.Println(specData.PriceUS)
 
 		element.ForEach(".table-striped .ram-values span", func(i int, item *colly.HTMLElement) {
 			temp := extractNumberFromString(strings.Replace(item.Text, "", "", -1))

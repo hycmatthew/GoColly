@@ -60,18 +60,14 @@ type GPUSpec struct {
 	Power        int
 	Length       int
 	Slot         string
-	LinkCN       string
-	LinkUS       string
-	LinkHK       string
-	PriceUS      string
-	PriceHK      string
-	PriceCN      string
+	Prices       []PriceType
 	Img          string
 }
 
 type GPUType struct {
 	Id           string
 	Name         string
+	NameCN       string
 	Brand        string
 	Manufacturer string
 	Chipset      string
@@ -85,12 +81,7 @@ type GPUType struct {
 	Power        int
 	Length       int
 	Slot         string
-	LinkCN       string
-	LinkUS       string
-	LinkHK       string
-	PriceUS      string
-	PriceHK      string
-	PriceCN      string
+	Prices       []PriceType
 	Img          string
 }
 
@@ -131,9 +122,7 @@ func GetGPUSpec(record LinkRecord) GPUSpec {
 		gpuData = fetchSpecFromColorful(record.LinkSpec)
 	default:
 		if strings.Contains(record.LinkCN, "zol") {
-			gpuData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
-		} else {
-			gpuData.LinkCN = record.LinkCN
+			record.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 		}
 		if record.LinkSpec != "" {
 			gpuData = fetchGPUSpecData(record.LinkSpec, CreateCollector())
@@ -142,35 +131,62 @@ func GetGPUSpec(record LinkRecord) GPUSpec {
 
 	gpuData.Brand = record.Brand
 	gpuData.Code = record.Name
-	gpuData.PriceCN = record.PriceCN
-	if record.LinkUS != "" {
-		gpuData.LinkUS = record.LinkUS
-	}
 	if gpuData.Name == "" {
 		gpuData.Name = record.Name
 	}
 	gpuData.Name = RemoveBrandsFromName(gpuData.Brand, gpuData.Name)
+
+	// 合并价格链接
+	gpuData.Prices = handleSpecPricesLogic(gpuData.Prices, record)
 	return gpuData
 }
 
 func GetGPUData(spec GPUSpec) (GPUType, bool) {
-	newSpec := spec
 	isValid := true
+	newSpec := spec
+	collector := CreateCollector()
 
-	if strings.Contains(spec.LinkCN, "pconline") {
-		newSpec.PriceCN = fetchGPUCNPrice(spec.LinkCN, CreateCollector())
-		// newSpec := MergeStruct(newSpec, tempSpec, newSpec.Name).(GPUSpec)
-		isValid = checkPriceValid(newSpec.PriceCN)
-	}
+	// 遍历所有价格数据进行处理
+	for _, price := range newSpec.Prices {
+		switch price.Region {
+		case "CN":
+			/*
+				if strings.Contains(price.PriceLink, "zol") {
 
-	if strings.Contains(spec.LinkUS, "newegg") {
-		tempSpec := fetchGPUUSPrice(spec.LinkUS, CreateCollector())
-		if newSpec.Img == "" {
-			tempSpec.Img = newSpec.Img
+					tempSpec := getGPUSpecFromZol(price.PriceLink, collector)
+					newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(GPUSpec)
+
+					if updatedPrice := getPriceByPlatform(tempSpec.Prices, "CN", Platform_JD); updatedPrice != nil {
+						isValid = isValid && checkPriceValid(updatedPrice.Price)
+					}
+
+				}
+			*/
+			if strings.Contains(price.PriceLink, "pconline") {
+				if price.Price == "" {
+					priceCN := fetchGPUCNPrice(price.PriceLink, collector)
+					newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+						Region:    "CN",
+						Platform:  Platform_JD,
+						Price:     priceCN,
+						PriceLink: price.PriceLink,
+					})
+					isValid = isValid && checkPriceValid(priceCN)
+				}
+			}
+		case "US":
+			tempSpec := fetchGPUUSPrice(price.PriceLink, collector)
+			// 合并图片数据
+			if newSpec.Img == "" && tempSpec.Img != "" {
+				newSpec.Img = tempSpec.Img
+			}
+			// 合并规格数据
+			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(GPUSpec)
+
+			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+				isValid = isValid && checkPriceValid(updatedPrice.Price)
+			}
 		}
-
-		newSpec := MergeStruct(tempSpec, newSpec, newSpec.Name).(GPUSpec)
-		isValid = checkPriceValid(newSpec.PriceUS)
 	}
 
 	// update chipset and get boost clock and benchmark from score data
@@ -195,6 +211,7 @@ func GetGPUData(spec GPUSpec) (GPUType, bool) {
 	GPUData := GPUType{
 		Id:           SetProductId(spec.Brand, spec.Name),
 		Name:         newSpec.Name,
+		NameCN:       newSpec.Name,
 		Brand:        newSpec.Brand,
 		Manufacturer: newSpec.Manufacturer,
 		Series:       newSpec.Series,
@@ -208,12 +225,7 @@ func GetGPUData(spec GPUSpec) (GPUType, bool) {
 		Power:        newSpec.Power,
 		Length:       newSpec.Length,
 		Slot:         newSpec.Slot,
-		LinkUS:       spec.LinkUS,
-		LinkHK:       spec.LinkHK,
-		LinkCN:       spec.LinkCN,
-		PriceUS:      newSpec.PriceUS,
-		PriceHK:      "",
-		PriceCN:      newSpec.PriceCN,
+		Prices:       deduplicatePrices(newSpec.Prices),
 		Img:          newSpec.Img,
 	}
 
@@ -307,7 +319,7 @@ func fetchGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = strings.TrimSpace(element.ChildText(".breadcrumb .active"))
 		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
-		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
+		specData.Prices = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -349,8 +361,13 @@ func fetchGPUUSPrice(link string, collector *colly.Collector) GPUSpec {
 
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
+		specData.Prices = upsertPrice(specData.Prices, PriceType{
+			Region:    "US",
+			Platform:  Platform_Newegg,
+			Price:     extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")),
+			PriceLink: link,
+		})
 
-		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current"))
 		element.ForEach(".product-details .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Boost Clock":

@@ -166,34 +166,62 @@ func OutOfStockLogic(usPrice string, str string) string {
 	return usPrice
 }
 
-func GetPriceLinkFromPangoly(element *colly.HTMLElement) (string, string) {
-	resPrice := "Out of Stock"
-	resLink := ""
-	loopBreak := false
+func GetPriceLinkFromPangoly(element *colly.HTMLElement) []PriceType {
+	var prices []PriceType
 
 	element.ForEach("table.table-prices tr", func(i int, item *colly.HTMLElement) {
-		if !loopBreak {
-			tempPrice := extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
-			// tempAvailability := item.ChildText(".hidden-xs span")
-			tempLink := item.ChildAttr(".detail-purchase", "href")
+		tempPrice := extractFloatStringFromString(item.ChildText(".detail-purchase strong"))
+		tempLink := item.ChildAttr(".detail-purchase", "href")
 
-			if strings.Contains(tempLink, "amazon") {
-				amazonLink := strings.Split(tempLink, "?tag=")[0]
-				resLink = amazonLink
-				resPrice = tempPrice
-			}
-			if strings.Contains(tempLink, "newegg") {
-				neweggLink := strings.Split(tempLink, "url=")[1]
-				UnescapeLink, _ := url.QueryUnescape(neweggLink)
-				neweggLink = strings.Split(UnescapeLink, "\u0026")[0]
-				resLink = neweggLink
-				resPrice = tempPrice
-				loopBreak = true
-			}
+		if tempPrice == "" || tempLink == "" {
+			return
 		}
+
+		var cleanedLink string
+		var platform string
+		switch {
+		case strings.Contains(tempLink, "amazon"):
+			cleanedLink = strings.Split(tempLink, "?tag=")[0]
+			tempPrice = ""
+			platform = Platform_Amazon
+		case strings.Contains(tempLink, "newegg"):
+			decoded, _ := url.QueryUnescape(strings.Split(tempLink, "url=")[1])
+			cleanedLink = strings.Split(decoded, "\u0026")[0]
+			platform = Platform_Newegg
+		default:
+			return // 跳过非目标平台
+		}
+
+		prices = append(prices, PriceType{
+			Region:    "US", // 固定为US
+			Platform:  platform,
+			Price:     tempPrice,
+			PriceLink: cleanedLink,
+		})
 	})
 
-	return resPrice, resLink
+	// 保留缺省值逻辑
+	if len(prices) == 0 {
+		prices = append(prices, PriceType{
+			Region:    "US",
+			Price:     "Out of Stock",
+			PriceLink: "",
+		})
+	}
+	return prices
+}
+
+func GetJDPriceLinkFromZol(input string) string {
+	re := regexp.MustCompile(`to=(https://[^\s&]+)`)
+	// Find the match
+	matches := re.FindStringSubmatch(input)
+
+	if len(matches) > 1 {
+		return matches[1]
+	} else {
+		fmt.Println("No URL found")
+		return input
+	}
 }
 
 func SetProductId(brand string, name string) string {
@@ -256,27 +284,48 @@ func MergeDashes(s string) string {
 // Merge Data
 // 通用合并函数
 func mergeValue(id string, v1, v2 interface{}) interface{} {
-	// 统一转换为反射值
 	rv1 := reflect.ValueOf(v1)
 	rv2 := reflect.ValueOf(v2)
 
-	// 类型必须一致
 	if rv1.Type() != rv2.Type() {
 		panic("mergeValue: type mismatch")
 	}
 
-	// 判断是否双方都有数据
 	hasV1 := !isEmpty(rv1)
 	hasV2 := !isEmpty(rv2)
 
-	// 记录数据对比
-	if hasV1 && hasV2 {
-		if v1 != v2 {
-			fmt.Printf("[CONFLICT] %s:\n  V1 = %s\n  V2 = %s\n", id, rv1, rv2)
+	// 处理结构体类型：递归合并
+	if rv1.Kind() == reflect.Struct {
+		return MergeStruct(v1, v2, id)
+	}
+
+	// 处理切片类型
+	if rv1.Kind() == reflect.Slice {
+		elemType := rv1.Type().Elem()
+		// 检查是否为 []PriceType
+		if elemType == reflect.TypeOf(PriceType{}) {
+			s1 := rv1.Interface().([]PriceType)
+			s2 := rv2.Interface().([]PriceType)
+			return mergePriceSlices(s1, s2)
+		} else {
+			// 其他切片类型按原逻辑处理
+			if hasV1 && hasV2 && !reflect.DeepEqual(v1, v2) {
+				fmt.Printf("[CONFLICT] %s:\n  V1 = %+v\n  V2 = %+v\n", id, v1, v2)
+			}
+			if isEmpty(rv1) {
+				return v2
+			}
+			return v1
 		}
 	}
 
-	// 判断v1是否为空/零值
+	// 基本类型处理冲突
+	if hasV1 && hasV2 {
+		if v1 != v2 {
+			fmt.Printf("[CONFLICT] %s:\n  V1 = %+v\n  V2 = %+v\n", id, v1, v2)
+		}
+	}
+
 	if isEmpty(rv1) {
 		return v2
 	}
@@ -303,6 +352,16 @@ func isEmpty(v reflect.Value) bool {
 	default:
 		return v.IsZero()
 	}
+}
+
+// 合并两个 PriceType 切片，使用 upsertPrice 逐个处理
+func mergePriceSlices(s1, s2 []PriceType) []PriceType {
+	merged := make([]PriceType, len(s1))
+	copy(merged, s1)
+	for _, p := range s2 {
+		merged = upsertPrice(merged, p)
+	}
+	return merged
 }
 
 // S1 為主要資料，S2 為次要資料 (S1 > S2)

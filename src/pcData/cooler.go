@@ -21,12 +21,7 @@ type CoolerSpec struct {
 	Airflow          string
 	Pressure         string
 	LED              string
-	PriceUS          string
-	PriceHK          string
-	PriceCN          string
-	LinkUS           string
-	LinkHK           string
-	LinkCN           string
+	Prices           []PriceType
 	Img              string
 }
 
@@ -34,6 +29,7 @@ type CoolerType struct {
 	Id               string
 	Brand            string
 	Name             string
+	NameCN           string
 	ReleaseDate      string
 	Sockets          []string
 	IsLiquidCooler   bool
@@ -44,23 +40,17 @@ type CoolerType struct {
 	Airflow          string
 	Pressure         string
 	LED              string
-	PriceUS          string
-	PriceHK          string
-	PriceCN          string
-	LinkUS           string
-	LinkHK           string
-	LinkCN           string
+	Prices           []PriceType
 	Img              string
 }
 
 func GetCoolerSpec(record LinkRecord) CoolerSpec {
-	coolerData := CoolerSpec{
-		LinkCN: record.LinkCN,
-	}
+	coolerData := CoolerSpec{}
 
 	if strings.Contains(record.LinkCN, "zol") {
-		coolerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
+		record.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	}
+
 	if record.LinkSpec != "" {
 		if strings.Contains(record.LinkSpec, "zol") {
 			coolerData = getCoolerSpecDataFromZol(record.LinkSpec, CreateCollector())
@@ -71,71 +61,76 @@ func GetCoolerSpec(record LinkRecord) CoolerSpec {
 
 	coolerData.Code = record.Name
 	coolerData.Brand = record.Brand
-	coolerData.PriceCN = record.PriceCN
-	coolerData.PriceHK = ""
-	coolerData.LinkHK = ""
-	if record.LinkUS != "" {
-		coolerData.LinkUS = record.LinkUS
-	}
 	if coolerData.Name == "" {
 		coolerData.Name = record.Name
 	}
 	coolerData.Name = RemoveBrandsFromName(coolerData.Brand, coolerData.Name)
+
+	// 合并价格链接
+	coolerData.Prices = handleSpecPricesLogic(coolerData.Prices, record)
 	return coolerData
 }
 
 func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 	isValid := true
 	newSpec := spec
+	nameCN := spec.Name
+	collector := CreateCollector()
 
-	if strings.Contains(spec.LinkCN, "zol") {
-		tempSpec := getCoolerSpecDataFromZol(spec.LinkCN, CreateCollector())
+	// 遍历所有价格数据进行处理
+	for _, price := range newSpec.Prices {
+		// 根據平台類型進行處理
+		switch price.Region {
+		case "CN":
+			if strings.Contains(price.PriceLink, "zol") {
+				tempSpec := getCoolerSpecDataFromZol(price.PriceLink, collector)
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(CoolerSpec)
 
-		newSpec.Img = tempSpec.Img
-		if tempSpec.PriceCN != "" {
-			newSpec.PriceCN = tempSpec.PriceCN
-		}
-		newSpec.IsLiquidCooler = tempSpec.IsLiquidCooler
-		newSpec.Sockets = tempSpec.Sockets
-		newSpec.AirCoolerHeight = tempSpec.AirCoolerHeight
-		newSpec.LiquidCoolerSize = tempSpec.LiquidCoolerSize
-		newSpec.NoiseLevel = tempSpec.NoiseLevel
-		newSpec.FanSpeed = tempSpec.FanSpeed
-		newSpec.Airflow = tempSpec.Airflow
-		newSpec.Pressure = tempSpec.Pressure
-		newSpec.LED = tempSpec.LED
-		if strings.Contains(newSpec.Name, "RGB") {
-			newSpec.LED = "RGB"
-		}
-		if strings.Contains(newSpec.Name, "ARGB") {
-			newSpec.LED = "ARGB"
-		}
-		if newSpec.PriceCN == "" {
-			isValid = false
+				// 更新價格信息
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "CN", Platform_JD); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
+			}
+			if strings.Contains(price.PriceLink, "pconline") {
+				if price.Price == "" {
+					tempNameCN, priceCN := getCNNameAndPriceFromPcOnline(price.PriceLink, collector)
+					nameCN = tempNameCN
+					newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+						Region:    "CN",
+						Platform:  Platform_JD,
+						Price:     priceCN,
+						PriceLink: price.PriceLink,
+					})
+					isValid = isValid && checkPriceValid(priceCN)
+				}
+			}
+		case "US":
+			priceUS, tempImg := getUSPriceAndImgFromNewEgg(price.PriceLink, collector)
+			if tempImg != "" {
+				newSpec.Img = tempImg
+			}
+			newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+				Region:    "US",
+				Platform:  Platform_Newegg,
+				Price:     priceUS,
+				PriceLink: price.PriceLink,
+			})
+			isValid = isValid && checkPriceValid(priceUS)
 		}
 	}
 
-	if newSpec.PriceCN == "" && strings.Contains(spec.LinkCN, "pconline") {
-		_, newSpec.PriceCN = getCNNameAndPriceFromPcOnline(spec.LinkCN, CreateCollector())
-
-		if newSpec.PriceCN == "" {
-			isValid = false
-		}
-	}
-
-	priceUS, tempImg := spec.PriceUS, spec.Img
-	if strings.Contains(spec.LinkUS, "newegg") {
-		priceUS, tempImg = getUSPriceAndImgFromNewEgg(spec.LinkUS, CreateCollector())
-
-		if priceUS == "" {
-			isValid = false
-		}
+	// 自动检测LED类型
+	if strings.Contains(newSpec.Name, "RGB") {
+		newSpec.LED = "RGB"
+	} else if strings.Contains(newSpec.Name, "ARGB") {
+		newSpec.LED = "ARGB"
 	}
 
 	return CoolerType{
-		Id:               SetProductId(spec.Brand, spec.Code),
-		Brand:            spec.Brand,
-		Name:             spec.Name,
+		Id:               SetProductId(newSpec.Brand, spec.Code),
+		Brand:            newSpec.Brand,
+		Name:             newSpec.Name,
+		NameCN:           nameCN,
 		ReleaseDate:      newSpec.ReleaseDate,
 		Sockets:          newSpec.Sockets,
 		IsLiquidCooler:   newSpec.IsLiquidCooler,
@@ -146,13 +141,8 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 		Airflow:          newSpec.Airflow,
 		Pressure:         newSpec.Pressure,
 		LED:              newSpec.LED,
-		PriceUS:          priceUS,
-		PriceHK:          "",
-		PriceCN:          newSpec.PriceCN,
-		LinkUS:           spec.LinkUS,
-		LinkHK:           spec.LinkHK,
-		LinkCN:           spec.LinkCN,
-		Img:              tempImg,
+		Prices:           deduplicatePrices(newSpec.Prices),
+		Img:              newSpec.Img,
 	}, isValid
 }
 
@@ -164,7 +154,7 @@ func getCoolerSpecData(link string, collector *colly.Collector) CoolerSpec {
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner .tns-item img", "src")
-		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
+		specData.Prices = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -202,16 +192,7 @@ func getCoolerSpecDataFromZol(link string, collector *colly.Collector) CoolerSpe
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
-
-		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
-		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
-		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
-		if mallPrice != "" {
-			specData.PriceCN = mallPrice
-			specData.LinkCN = element.ChildAttr("side .goods-card .item-b2cprice span a", "href")
-		} else {
-			specData.PriceCN = normalPrice
-		}
+		specData.Prices = upsertPrice(specData.Prices, extractJDPriceFromZol(element))
 
 		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
 			convertedHeader := convertGBKString(item.ChildText("th"))

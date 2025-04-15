@@ -1,7 +1,6 @@
 package pcData
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 
@@ -19,12 +18,7 @@ type PowerSpec struct {
 	Modular     string
 	Efficiency  string
 	Length      int
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
+	Prices      []PriceType
 	Img         string
 }
 
@@ -32,6 +26,7 @@ type PowerType struct {
 	Id          string
 	Brand       string
 	Name        string
+	NameCN      string
 	ReleaseDate string
 	Wattage     int
 	Size        string
@@ -39,67 +34,74 @@ type PowerType struct {
 	Modular     string
 	Efficiency  string
 	Length      int
-	PriceUS     string
-	PriceHK     string
-	PriceCN     string
-	LinkUS      string
-	LinkHK      string
-	LinkCN      string
+	Prices      []PriceType
 	Img         string
 }
 
 func GetPowerSpec(record LinkRecord) PowerSpec {
 	powerData := PowerSpec{}
 
+	// 处理中国区链接
 	if strings.Contains(record.LinkCN, "zol") {
-		powerData.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
-	} else {
-		powerData.LinkCN = record.LinkCN
+		record.LinkCN = getDetailsLinkFromZol(record.LinkCN, CreateCollector())
 	}
+
 	if record.LinkSpec != "" {
 		powerData = getPowerSpecData(record.LinkSpec, CreateCollector())
 	}
 
 	powerData.Code = record.Name
 	powerData.Brand = record.Brand
-	powerData.PriceCN = record.PriceCN
-	if record.LinkUS != "" {
-		powerData.LinkUS = record.LinkUS
-	}
 	if powerData.Name == "" {
 		powerData.Name = record.Name
 	}
 	powerData.Name = RemoveBrandsFromName(powerData.Brand, powerData.Name)
+
+	// 合并价格链接
+	powerData.Prices = handleSpecPricesLogic(powerData.Prices, record)
 	return powerData
 }
 
 func GetPowerData(spec PowerSpec) (PowerType, bool) {
-
 	isValid := true
-
 	newSpec := spec
-	if spec.LinkCN != "" {
-		tempSpec := getPowerSpecDataFromZol(spec.LinkCN, CreateCollector())
+	nameCN := spec.Name
+	collector := CreateCollector()
 
-		newSpec := MergeStruct(newSpec, tempSpec, newSpec.Name).(PowerSpec)
-		isValid = checkPriceValid(newSpec.PriceCN)
-	}
+	// 遍历所有价格数据进行处理
+	for _, price := range newSpec.Prices {
+		switch price.Region {
+		case "CN":
+			if strings.Contains(price.PriceLink, "zol") {
+				tempSpec := getPowerSpecDataFromZol(price.PriceLink, collector)
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(PowerSpec)
 
-	if strings.Contains(spec.LinkUS, "newegg") {
-		tempSpec := getPowerUSPrice(spec.LinkUS, CreateCollector())
-		tempSpec.Standard = comparePSUStandard(tempSpec.Standard, newSpec.Standard)
-		if newSpec.Img == "" {
-			tempSpec.Img = newSpec.Img
+				// 更新价格信息
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "CN", Platform_JD); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
+			}
+		case "US":
+			tempSpec := getPowerUSPrice(price.PriceLink, collector)
+			// 合并图片数据
+			if newSpec.Img == "" && tempSpec.Img != "" {
+				newSpec.Img = tempSpec.Img
+			}
+			// 合并规格数据
+			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(PowerSpec)
+
+			// 更新价格
+			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+				isValid = isValid && checkPriceValid(updatedPrice.Price)
+			}
 		}
-
-		newSpec := MergeStruct(tempSpec, newSpec, newSpec.Name).(PowerSpec)
-		isValid = checkPriceValid(newSpec.PriceCN)
 	}
 
 	return PowerType{
 		Id:          SetProductId(spec.Brand, spec.Code),
 		Brand:       newSpec.Brand,
 		Name:        newSpec.Name,
+		NameCN:      nameCN,
 		ReleaseDate: newSpec.ReleaseDate,
 		Standard:    newSpec.Standard,
 		Wattage:     newSpec.Wattage,
@@ -107,12 +109,7 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 		Modular:     newSpec.Modular,
 		Efficiency:  newSpec.Efficiency,
 		Length:      newSpec.Length,
-		LinkUS:      newSpec.LinkUS,
-		LinkHK:      newSpec.LinkHK,
-		LinkCN:      newSpec.LinkCN,
-		PriceCN:     newSpec.PriceCN,
-		PriceUS:     newSpec.PriceUS,
-		PriceHK:     newSpec.PriceHK,
+		Prices:      deduplicatePrices(newSpec.Prices),
 		Img:         newSpec.Img,
 	}, isValid
 }
@@ -124,8 +121,7 @@ func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
-		specData.PriceUS, specData.LinkUS = GetPriceLinkFromPangoly(element)
-		fmt.Println(specData.LinkUS)
+		specData.Prices = GetPriceLinkFromPangoly(element)
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -156,9 +152,16 @@ func getPowerUSPrice(link string, collector *colly.Collector) PowerSpec {
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
-		specData.PriceUS = extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
+		tempPrice := extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current"))
 		available := element.ChildText(".row-side .product-buy-box .product-buy .btn-message")
-		specData.PriceUS = OutOfStockLogic(specData.PriceUS, available)
+		tempPrice = OutOfStockLogic(tempPrice, available)
+
+		specData.Prices = upsertPrice(specData.Prices, PriceType{
+			Region:    "US",
+			Platform:  Platform_Newegg,
+			Price:     tempPrice,
+			PriceLink: link,
+		})
 
 		prdName := element.ChildText(".product-title")
 		standard := extractATXStandard(prdName)
@@ -184,15 +187,7 @@ func getPowerSpecDataFromZol(link string, collector *colly.Collector) PowerSpec 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
-
-		mallPrice := extractFloatStringFromString(element.ChildText("side .goods-card .item-b2cprice span"))
-		// otherPrice := extractFloatStringFromString(element.ChildText(".price__merchant .price"))
-		normalPrice := extractFloatStringFromString(element.ChildText(".side .goods-card .goods-card__price span"))
-		if mallPrice != "" {
-			specData.PriceCN = mallPrice
-		} else {
-			specData.PriceCN = normalPrice
-		}
+		specData.Prices = upsertPrice(specData.Prices, extractJDPriceFromZol(element))
 
 		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
 			convertedHeader := convertGBKString(item.ChildText("th"))
