@@ -108,17 +108,19 @@ func GetCaseData(spec CaseSpec) (CaseType, bool) {
 				}
 			}
 		case "US":
-			tempSpec := getCaseUSPrice(price.PriceLink, collector)
-			// 合併圖片數據
-			if newSpec.Img == "" && tempSpec.Img != "" {
-				newSpec.Img = tempSpec.Img
-			}
-			// 合併其他規格數據
-			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(CaseSpec)
+			if strings.Contains(price.PriceLink, "newegg") {
+				tempSpec := getCaseUSPrice(price.PriceLink, collector)
+				// 合併圖片數據
+				if newSpec.Img == "" && tempSpec.Img != "" {
+					newSpec.Img = tempSpec.Img
+				}
+				// 合併其他規格數據
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(CaseSpec)
 
-			// 更新價格
-			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
-				isValid = isValid && checkPriceValid(updatedPrice.Price)
+				// 更新價格
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
 			}
 		}
 	}

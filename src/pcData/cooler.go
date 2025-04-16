@@ -105,17 +105,22 @@ func GetCoolerData(spec CoolerSpec) (CoolerType, bool) {
 				}
 			}
 		case "US":
-			priceUS, tempImg := getUSPriceAndImgFromNewEgg(price.PriceLink, collector)
-			if tempImg != "" {
-				newSpec.Img = tempImg
+			if strings.Contains(price.PriceLink, "newegg") {
+				priceUS, tempImg := getUSPriceAndImgFromNewEgg(price.PriceLink, collector)
+				if tempImg == "404" {
+					continue
+				}
+				if tempImg != "" {
+					newSpec.Img = tempImg
+				}
+				newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+					Region:    "US",
+					Platform:  Platform_Newegg,
+					Price:     priceUS,
+					PriceLink: price.PriceLink,
+				})
+				isValid = isValid && checkPriceValid(priceUS)
 			}
-			newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
-				Region:    "US",
-				Platform:  Platform_Newegg,
-				Price:     priceUS,
-				PriceLink: price.PriceLink,
-			})
-			isValid = isValid && checkPriceValid(priceUS)
 		}
 	}
 

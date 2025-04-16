@@ -12,9 +12,20 @@ import (
 )
 
 func getUSPriceAndImgFromNewEgg(link string, collector *colly.Collector) (string, string) {
-	imgLink, price := "", ""
+	imgLink, price, updatedUrl := "", "", link
 
 	collectorErrorHandle(collector, link)
+	collector.OnError(func(r *colly.Response, err error) {
+		if r != nil && r.StatusCode == 404 {
+			fmt.Println("404 error:", r.Request.URL)
+			imgLink = "404"
+			price = ""
+		}
+	})
+	collector.OnResponse(func(r *colly.Response) {
+		updatedUrl = r.Request.URL.String()
+		fmt.Println("Response received:", updatedUrl)
+	})
 
 	collector.OnHTML(".is-product", func(element *colly.HTMLElement) {
 		imgLink = element.ChildAttr(".swiper-slide .swiper-zoom-container img", "src")
@@ -22,6 +33,7 @@ func getUSPriceAndImgFromNewEgg(link string, collector *colly.Collector) (string
 		available := element.ChildText(".row-side .product-buy-box .product-buy .btn-message")
 		price = OutOfStockLogic(price, available)
 	})
+
 	collector.Visit(link)
 	return price, imgLink
 }
