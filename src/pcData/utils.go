@@ -182,11 +182,11 @@ func GetPriceLinkFromPangoly(element *colly.HTMLElement) []PriceType {
 		switch {
 		case strings.Contains(tempLink, "amazon"):
 			cleanedLink = strings.Split(tempLink, "?tag=")[0]
-			tempPrice = ""
 			platform = Platform_Amazon
 		case strings.Contains(tempLink, "newegg"):
 			decoded, _ := url.QueryUnescape(strings.Split(tempLink, "url=")[1])
 			cleanedLink = strings.Split(decoded, "\u0026")[0]
+			tempPrice = ""
 			platform = Platform_Newegg
 		default:
 			return // 跳过非目标平台
