@@ -80,72 +80,77 @@ func GetMotherboardSpec(record LinkRecord) MotherboardSpec {
 
 func GetMotherboardData(spec MotherboardSpec) (MotherboardType, bool) {
 	isValid := true
-	tempImg := spec.Img
+	newSpec := spec
 	nameCN := spec.Name
-	updatedPrices := make([]PriceType, len(spec.Prices))
+	collector := CreateCollector()
 
-	copy(updatedPrices, spec.Prices)
+	// 遍历所有价格数据进行处理
+	for _, price := range newSpec.Prices {
+		switch price.Region {
+		case "CN":
+			if strings.Contains(price.PriceLink, "zol") {
+				tempSpec := getRamSpecDataFromZol(price.PriceLink, collector)
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(MotherboardSpec)
 
-	priceHandlers := map[string]func(string, *colly.Collector) (string, string){
-		"CN": func(link string, c *colly.Collector) (string, string) {
-			name, price := getCNNameAndPriceFromPcOnline(link, c)
-			return price, name
-		},
-		"US": func(link string, c *colly.Collector) (string, string) {
-			if strings.Contains(link, Platform_Newegg) {
-				price, img := getUSPriceAndImgFromNewEgg(link, c)
-				return price, img
-			}
-			return "", ""
-		},
-	}
-
-	for i, price := range updatedPrices {
-		if price.Price == "" {
-			handler, exists := priceHandlers[price.Region]
-			if exists {
-				collectedPrice, collectedData := handler(price.PriceLink, CreateCollector())
-				updatedPrices[i].Price = collectedPrice
-
-				switch price.Region {
-				case "CN":
-					if collectedData != "" {
-						nameCN = collectedData
-					}
-				case "US":
-					if collectedData != "" {
-						tempImg = collectedData
-					}
+				// 更新价格信息
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "CN", Platform_JD); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
 				}
 			}
-
-			if updatedPrices[i].Price == "" {
-				isValid = false
+			if strings.Contains(price.PriceLink, "pconline") {
+				if price.Price == "" {
+					tempNameCN, priceCN := getCNNameAndPriceFromPcOnline(price.PriceLink, collector)
+					nameCN = tempNameCN
+					newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+						Region:    "CN",
+						Platform:  Platform_JD,
+						Price:     priceCN,
+						PriceLink: price.PriceLink,
+					})
+					isValid = isValid && checkPriceValid(priceCN)
+				}
+			}
+		case "US":
+			if strings.Contains(price.PriceLink, "newegg") {
+				priceUS, tempImg := getUSPriceAndImgFromNewEgg(price.PriceLink, collector)
+				if tempImg == "404" {
+					continue
+				}
+				if tempImg != "" {
+					newSpec.Img = tempImg
+				}
+				newSpec.Prices = upsertPrice(newSpec.Prices, PriceType{
+					Region:    "US",
+					Platform:  Platform_Newegg,
+					Price:     priceUS,
+					PriceLink: price.PriceLink,
+				})
+				isValid = isValid && checkPriceValid(priceUS)
 			}
 		}
 	}
 
 	return MotherboardType{
-		Id:          SetProductId(spec.Brand, spec.Code),
-		Name:        spec.Name,
+		Id:          SetProductId(newSpec.Brand, newSpec.Code),
+		Name:        newSpec.Name,
 		NameCN:      nameCN,
-		Brand:       spec.Brand,
-		Socket:      spec.Socket,
-		Chipset:     normalizeMotherboardChipset(spec.Chipset),
-		RamSlot:     spec.RamSlot,
-		RamType:     spec.RamType,
-		RamSupport:  spec.RamSupport,
-		RamMax:      spec.RamMax,
-		Pcie16Slot:  spec.Pcie16Slot,
-		Pcie4Slot:   spec.Pcie4Slot,
-		Pcie1Slot:   spec.Pcie1Slot,
-		PcieSlotStr: spec.PcieSlotStr,
-		M2Slot:      spec.M2Slot,
-		SataSlot:    spec.SataSlot,
-		FormFactor:  GetFormFactorLogic(spec.FormFactor),
-		Wireless:    spec.Wireless,
-		Prices:      updatedPrices,
-		Img:         tempImg,
+		Brand:       newSpec.Brand,
+		Socket:      newSpec.Socket,
+		Chipset:     normalizeMotherboardChipset(newSpec.Chipset),
+		RamSlot:     newSpec.RamSlot,
+		RamType:     newSpec.RamType,
+		RamSupport:  newSpec.RamSupport,
+		RamMax:      newSpec.RamMax,
+		Pcie16Slot:  newSpec.Pcie16Slot,
+		Pcie4Slot:   newSpec.Pcie4Slot,
+		Pcie1Slot:   newSpec.Pcie1Slot,
+		PcieSlotStr: newSpec.PcieSlotStr,
+		M2Slot:      newSpec.M2Slot,
+		SataSlot:    newSpec.SataSlot,
+		FormFactor:  GetFormFactorLogic(newSpec.FormFactor),
+		Wireless:    newSpec.Wireless,
+		Prices:      deduplicatePrices(newSpec.Prices),
+		Img:         newSpec.Img,
 	}, isValid
 }
 
