@@ -111,9 +111,6 @@ func extractJDPriceFromZol(element *colly.HTMLElement) PriceType {
 	// 提取價格
 	extractPrice := func(selector string) string {
 		price := extractFloatStringFromString(element.ChildText(selector))
-		if price == "" {
-			fmt.Printf("從選擇器 %s 提取價格失敗", selector)
-		}
 		return price
 	}
 

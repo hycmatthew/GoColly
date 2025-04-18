@@ -28,7 +28,7 @@ func main() {
 		gpuScore    = "gpuScore"
 	)
 
-	getDataName := cooler
+	getDataName := ram
 	isUpdateSpec := false
 
 	if getDataName == gpuScore {

@@ -59,10 +59,18 @@ func getPriceByPlatform(prices []PriceType, region, platform string) *PriceType 
 // 輔助函數：更新或插入價格數據（使用Region+Platform作為唯一鍵）
 func upsertPrice(prices []PriceType, newPrice PriceType) []PriceType {
 	for i, p := range prices {
-		if p.Region == newPrice.Region && p.Platform == newPrice.Platform && p.PriceLink == newPrice.PriceLink {
+		if p.Region == newPrice.Region && p.Platform == newPrice.Platform {
 			// 保留已有價格數據除非新數據有更新
 			if newPrice.Price != "" {
-				prices[i].Price = newPrice.Price
+				if newPrice.Platform == Platform_Newegg {
+					if p.Price == "" {
+						prices[i].Price = newPrice.Price
+						prices[i].PriceLink = newPrice.PriceLink
+					}
+				} else {
+					prices[i].Price = newPrice.Price
+					prices[i].PriceLink = newPrice.PriceLink
+				}
 			}
 			return prices
 		}

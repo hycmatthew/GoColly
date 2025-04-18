@@ -107,17 +107,19 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 				}
 			}
 		case "US":
-			tempSpec := getRamUSPrice(price.PriceLink, collector)
-			// 合并图片数据
-			if newSpec.Img == "" && tempSpec.Img != "" {
-				newSpec.Img = tempSpec.Img
-			}
-			// 合并规格数据
-			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(RamSpec)
+			if strings.Contains(price.PriceLink, "newegg") {
+				tempSpec := getRamUSPrice(price.PriceLink, collector)
+				// 合并图片数据
+				if newSpec.Img == "" && tempSpec.Img != "" {
+					newSpec.Img = tempSpec.Img
+				}
+				// 合并规格数据
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(RamSpec)
 
-			// 更新价格
-			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
-				isValid = isValid && checkPriceValid(updatedPrice.Price)
+				// 更新价格
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
 			}
 		}
 	}
@@ -238,7 +240,6 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 
 			case "Speed":
 				tempStr := strings.ReplaceAll(item.ChildText("td"), "-", " ")
-				fmt.Println(tempStr)
 				strList := strings.Split(tempStr, " ")
 				if strings.Contains(strings.ToUpper(tempStr), "DDR5") {
 					specData.Type = "DDR5"
@@ -277,6 +278,7 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
 		specData.Img = element.ChildAttr(".side .goods-card .goods-card__pic img", "src")
 		specData.Prices = upsertPrice(specData.Prices, extractJDPriceFromZol(element))
+		fmt.Println("specData.Prices : ", specData.Prices)
 
 		element.ForEach(".content table tr", func(i int, item *colly.HTMLElement) {
 			convertedHeader := convertGBKString(item.ChildText("th"))
@@ -318,7 +320,6 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 
 			if strings.Contains(convertedHeader, "内存主") {
 				specData.Speed = extractNumberFromString(convertedData)
-				fmt.Println(specData.Speed)
 			}
 			if strings.Contains(convertedHeader, "散热") {
 				specData.HeatSpreader = true
@@ -351,8 +352,6 @@ func RamProfileLogic(ram RamSpec) string {
 	isExpo := false
 	res := ""
 
-	fmt.Println(ram.Series)
-	fmt.Println(ram.Profile)
 	if strContains(ram.Profile, "XMP") {
 		isXmp = true
 	}
