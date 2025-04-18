@@ -82,17 +82,19 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 				}
 			}
 		case "US":
-			tempSpec := getPowerUSPrice(price.PriceLink, collector)
-			// 合并图片数据
-			if newSpec.Img == "" && tempSpec.Img != "" {
-				newSpec.Img = tempSpec.Img
-			}
-			// 合并规格数据
-			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(PowerSpec)
+			if strings.Contains(price.PriceLink, "newegg") {
+				tempSpec := getPowerUSPrice(price.PriceLink, collector)
+				// 合并图片数据
+				if newSpec.Img == "" && tempSpec.Img != "" {
+					newSpec.Img = tempSpec.Img
+				}
+				// 合并规格数据
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(PowerSpec)
 
-			// 更新价格
-			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
-				isValid = isValid && checkPriceValid(updatedPrice.Price)
+				// 更新价格
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
 			}
 		}
 	}
