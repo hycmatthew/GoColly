@@ -28,7 +28,7 @@ func main() {
 		gpuScore    = "gpuScore"
 	)
 
-	getDataName := power
+	getDataName := gpu
 	isUpdateSpec := false
 
 	if getDataName == gpuScore {
@@ -444,7 +444,7 @@ func processGeneric[T any, D any](
 ) {
 	const (
 		timeSet      = 5000
-		extraTry     = 500
+		extraTry     = 800
 		maxRetryTime = 3
 	)
 	// 加载数据

@@ -175,16 +175,18 @@ func GetGPUData(spec GPUSpec) (GPUType, bool) {
 				}
 			}
 		case "US":
-			tempSpec := fetchGPUUSPrice(price.PriceLink, collector)
-			// 合并图片数据
-			if newSpec.Img == "" && tempSpec.Img != "" {
-				newSpec.Img = tempSpec.Img
-			}
-			// 合并规格数据
-			newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(GPUSpec)
+			if strings.Contains(price.PriceLink, "newegg") {
+				tempSpec := fetchGPUUSPrice(price.PriceLink, collector)
+				// 合并图片数据
+				if newSpec.Img == "" && tempSpec.Img != "" {
+					newSpec.Img = tempSpec.Img
+				}
+				// 合并规格数据
+				newSpec = MergeStruct(newSpec, tempSpec, newSpec.Name).(GPUSpec)
 
-			if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
-				isValid = isValid && checkPriceValid(updatedPrice.Price)
+				if updatedPrice := getPriceByPlatform(tempSpec.Prices, "US", Platform_Newegg); updatedPrice != nil {
+					isValid = isValid && checkPriceValid(updatedPrice.Price)
+				}
 			}
 		}
 	}
@@ -364,7 +366,7 @@ func fetchGPUUSPrice(link string, collector *colly.Collector) GPUSpec {
 		specData.Prices = upsertPrice(specData.Prices, PriceType{
 			Region:    "US",
 			Platform:  Platform_Newegg,
-			Price:     extractFloatStringFromString(element.ChildText(".row-side .product-buy-box li.price-current")),
+			Price:     extractFloatStringFromString(element.ChildText(".row-side .product-buy-box .price-current")),
 			PriceLink: link,
 		})
 
