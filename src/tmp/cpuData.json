@@ -15,11 +15,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "849",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1473307.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "113.60",
                 "PriceLink": "https://www.newegg.com/intel-core-i3-12100-core-i3-12th-gen/p/N82E16819118370"
             }
@@ -42,12 +44,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "880",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1473327.html"
             },
             {
                 "Region": "US",
-                "Price": "79.99",
+                "Platform": "Newegg",
+                "Price": "82.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i3-12100f-core-i3-12th-gen/p/N82E16819118357"
             }
         ],
@@ -69,11 +73,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707727.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "120.13",
                 "PriceLink": "https://www.newegg.com/intel-core-i3-13100-core-i3-13th-gen/p/19-118-432"
             }
@@ -96,12 +102,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707747.html"
             },
             {
                 "Region": "US",
-                "Price": "88.21",
+                "Platform": "Newegg",
+                "Price": "87.30",
                 "PriceLink": "https://www.newegg.com/intel-core-i3-13100f-core-i3-13th-gen/p/19-118-433"
             }
         ],
@@ -123,11 +131,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JB",
                 "Price": "715",
                 "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5323436787434"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "119.97",
                 "PriceLink": "https://www.newegg.com/intel-core-i3-14100-core-i3-14th-gen/p/N82E16819118483"
             }
@@ -150,11 +160,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2072847.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "90.07",
                 "PriceLink": "https://www.newegg.com/intel-core-i3-14100f-core-i3-14th-gen/p/N82E16819118492"
             }
@@ -177,11 +189,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1129",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1468167.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "143.57",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118358"
             }
@@ -204,11 +218,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "839",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1468187.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "110.49",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118360"
             }
@@ -231,11 +247,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JB",
                 "Price": "995",
                 "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=636349015152\u0026skuId=4953076172840"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "246.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478"
             }
@@ -258,11 +276,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2199",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447867.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "180.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-12600k-core-i5-12th-gen/p/N82E16819118347"
             }
@@ -285,11 +305,13 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "1099",
+                "Platform": "JD",
+                "Price": "1199",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447887.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "157.00",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-12600kf-core-i5-12th-gen/p/N82E16819118349"
             }
@@ -312,11 +334,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1350",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707587.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "160.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-13400-core-i5-13th-gen/p/N82E16819118430"
             }
@@ -339,12 +363,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "989",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707607.html"
             },
             {
                 "Region": "US",
-                "Price": "137.40",
+                "Platform": "Newegg",
+                "Price": "134.45",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-13400f-core-i5-13th-gen/p/19-118-431"
             }
         ],
@@ -366,11 +392,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JB",
                 "Price": "1300",
                 "PriceLink": "https://item.taobao.com/item.htm?id=690000210447"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "243.47",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-13500-core-i5-13th-gen/p/N82E16819118429"
             }
@@ -393,11 +421,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647447.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "499.00",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-13600k-core-i5-13th-gen/p/N82E16819118416"
             }
@@ -420,11 +450,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1649",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647467.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "465.40",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-13600kf-core-i5-13th-gen/p/N82E16819118417"
             }
@@ -447,11 +479,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JB",
                 "Price": "1220",
                 "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5323436787436"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "178.98",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-14400-core-i5-14th-gen/p/N82E16819118480"
             }
@@ -474,11 +508,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1449",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2072867.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "130.00",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-14400f-core-i5-14th-gen/p/N82E16819118489"
             }
@@ -501,7 +537,8 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "1149",
+                "Platform": "JD",
+                "Price": "1249",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2083167.html"
             }
         ],
@@ -523,11 +560,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JB",
                 "Price": "1470",
                 "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5168079089787"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "246.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478"
             }
@@ -550,12 +589,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1799",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971327.html"
             },
             {
                 "Region": "US",
-                "Price": "207.99",
+                "Platform": "Newegg",
+                "Price": "218.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-14600k-core-i5-14th-gen/p/N82E16819118470"
             }
         ],
@@ -577,11 +618,13 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "1429",
+                "Platform": "JD",
+                "Price": "1499",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971387.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "215.26",
                 "PriceLink": "https://www.newegg.com/intel-core-i5-14600kf-core-i5-14th-gen/p/N82E16819118472"
             }
@@ -604,11 +647,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1471107.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "263.34",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-12700-core-i7-12th-gen/p/N82E16819118368"
             }
@@ -631,11 +676,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2399",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1485327.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "235.97",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-12700f-core-i7-12th-gen/p/N82E16819118359"
             }
@@ -658,11 +705,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1899",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447687.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "219.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-12700k-core-i7-12th-gen/p/N82E16819118343"
             }
@@ -685,11 +734,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1447787.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "189.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-12700kf-core-i7-12th-gen/p/N82E16819118345"
             }
@@ -712,11 +763,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3299",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707627.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "319.95",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-13700-core-i7-13th-gen/p/19-118-427"
             }
@@ -739,12 +792,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3099",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707647.html"
             },
             {
                 "Region": "US",
-                "Price": "317.24",
+                "Platform": "Newegg",
+                "Price": "327.85",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-13700f-core-i7-13th-gen/p/19-118-428"
             }
         ],
@@ -766,11 +821,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "4299",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707687.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "585.00",
                 "PriceLink": "https://www.newegg.com/intel-core-i9-13900f-core-i9-13th-gen-raptor-lake-lga-1700-desktop-processor/p/N82E16819118426"
             }
@@ -793,12 +850,14 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "3068",
+                "Platform": "JD",
+                "Price": "3006.9",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647407.html"
             },
             {
                 "Region": "US",
-                "Price": "436.48",
+                "Platform": "Newegg",
+                "Price": "416.35",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-13700k-core-i7-13th-gen/p/N82E16819118414"
             }
         ],
@@ -820,11 +879,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2399",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647427.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "542.00",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-13700kf-core-i7-13th-gen/p/N82E16819118415"
             }
@@ -847,11 +908,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JB",
                 "Price": "2200",
                 "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5158623513954"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "319.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-14700-core-i7-14th-gen/p/N82E16819118476"
             }
@@ -874,11 +937,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2499",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2072887.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "307.72",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-14700f-core-i7-14th-gen/p/N82E16819118487"
             }
@@ -901,12 +966,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2799",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971107.html"
             },
             {
                 "Region": "US",
-                "Price": "329.00",
+                "Platform": "Newegg",
+                "Price": "324.30",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118466"
             }
         ],
@@ -928,11 +995,13 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "2399",
+                "Platform": "JD",
+                "Price": "2499",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971307.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "319.40",
                 "PriceLink": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118468"
             }
@@ -955,12 +1024,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "4399",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1707667.html"
             },
             {
                 "Region": "US",
-                "Price": "671.06",
+                "Platform": "Newegg",
+                "Price": "627.76",
                 "PriceLink": "https://www.newegg.com/intel-core-i9-13900-core-i9-13th-gen/p/N82E16819118425"
             }
         ],
@@ -982,12 +1053,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3299",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647367.html"
             },
             {
                 "Region": "US",
-                "Price": "489.99",
+                "Platform": "Newegg",
+                "Price": "531.74",
                 "PriceLink": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118412"
             }
         ],
@@ -1009,11 +1082,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1647387.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "533.32",
                 "PriceLink": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118413"
             }
@@ -1036,11 +1111,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JB",
                 "Price": "3600",
                 "PriceLink": "https://item.taobao.com/item.htm?abbucket=17\u0026id=743688559462\u0026skuId=5288541801182"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "579.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i9-14900kf-core-i9-14th-gen/p/N82E16819118474"
             }
@@ -1063,11 +1140,13 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "3399",
+                "Platform": "JD",
+                "Price": "3499",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1970967.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "449.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118462"
             }
@@ -1090,12 +1169,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3199",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/1971027.html"
             },
             {
                 "Region": "US",
-                "Price": "425.00",
+                "Platform": "Newegg",
+                "Price": "439.99",
                 "PriceLink": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118464"
             }
         ],
@@ -1117,12 +1198,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "629",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1494727.html"
             },
             {
                 "Region": "US",
-                "Price": "111.29",
+                "Platform": "Newegg",
+                "Price": "113.34",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
             }
         ],
@@ -1144,12 +1227,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "779",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1379967.html"
             },
             {
                 "Region": "US",
-                "Price": "111.29",
+                "Platform": "Newegg",
+                "Price": "113.34",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
             }
         ],
@@ -1171,12 +1256,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "899",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312649.html"
             },
             {
                 "Region": "US",
-                "Price": "140.47",
+                "Platform": "Newegg",
+                "Price": "140.57",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-5-5600x/p/N82E16819113666"
             }
         ],
@@ -1198,11 +1285,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "959",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1379947.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "164.49",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-5700g-ryzen-7-5000-g-series/p/N82E16819113682"
             }
@@ -1225,11 +1314,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1299",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635328.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "209.00",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-5-7600x-ryzen-5-7000-series/p/N82E16819113770"
             }
@@ -1252,12 +1343,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "799",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1494707.html"
             },
             {
                 "Region": "US",
-                "Price": "109.55",
+                "Platform": "Newegg",
+                "Price": "141.25",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-5700x-ryzen-7-5000-series/p/N82E16819113735"
             }
         ],
@@ -1279,11 +1372,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1199",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2106587.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "288.59",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-5700x3d-ryzen-7-5000-series/p/N82E16819113812"
             }
@@ -1306,11 +1401,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312629.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "172.99",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-5800x/p/N82E16819113665"
             }
@@ -1333,12 +1430,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1494687.html"
             },
             {
                 "Region": "US",
-                "Price": "462.98",
+                "Platform": "Newegg",
+                "Price": "559.53",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-5800x3d-ryzen-7-5000-series/p/N82E16819113734"
             }
         ],
@@ -1360,11 +1459,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2199",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635287.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "318.99",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-7700x-ryzen-7-7000-series/p/N82E16819113768"
             }
@@ -1387,11 +1488,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1778027.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "409.00",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-7800x3d-ryzen-7-7000-series/p/N82E16819113793"
             }
@@ -1414,11 +1517,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1889",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2106567.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "303.44",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-8700g-ryzen-7-7000-series/p/N82E16819113811"
             }
@@ -1441,12 +1546,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312627.html"
             },
             {
                 "Region": "US",
-                "Price": "262.00",
+                "Platform": "Newegg",
+                "Price": "261.62",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-5900x/p/N82E16819113664"
             }
         ],
@@ -1468,11 +1575,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3699",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1312628.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "346.99",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-5950x/p/N82E16819113663"
             }
@@ -1495,11 +1604,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3099",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1710007.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "377.99",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-7900/p/N82E16819113785"
             }
@@ -1522,12 +1633,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2449",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635347.html"
             },
             {
                 "Region": "US",
-                "Price": "341.98",
+                "Platform": "Newegg",
+                "Price": "341.15",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-7900x-ryzen-9-7000-series/p/N82E16819113769"
             }
         ],
@@ -1549,12 +1662,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1744327.html"
             },
             {
                 "Region": "US",
-                "Price": "654.24",
+                "Platform": "Newegg",
+                "Price": "579.59",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-7900x3d-ryzen-9-7000-series/p/N82E16819113792"
             }
         ],
@@ -1576,12 +1691,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3469",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1635367.html"
             },
             {
                 "Region": "US",
-                "Price": "480.00",
+                "Platform": "Newegg",
+                "Price": "536.99",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-7950x-ryzen-9-7000-series/p/N82E16819113771"
             }
         ],
@@ -1603,11 +1720,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "4099",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/1744387.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "699.99",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-7950x3d-ryzen-9-7000-series/p/N82E16819113791"
             }
@@ -1630,12 +1749,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "1999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394819.html"
             },
             {
                 "Region": "US",
-                "Price": "317.00",
+                "Platform": "Newegg",
+                "Price": "298.99",
                 "PriceLink": "https://www.newegg.com/intel-core-ultra-5-245k-arrow-lake-lga-1851-processor/p/N82E16819118508"
             }
         ],
@@ -1657,12 +1778,14 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "1949",
+                "Platform": "JD",
+                "Price": "1999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394859.html"
             },
             {
                 "Region": "US",
-                "Price": "284.99",
+                "Platform": "Newegg",
+                "Price": "289.99",
                 "PriceLink": "https://www.newegg.com/intel-core-ultra-5-245kf-arrow-lake-lga-1851-processor/p/N82E16819118509"
             }
         ],
@@ -1684,12 +1807,14 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "2499",
+                "Platform": "JD",
+                "Price": "2999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394879.html"
             },
             {
                 "Region": "US",
-                "Price": "352.99",
+                "Platform": "Newegg",
+                "Price": "338.99",
                 "PriceLink": "https://www.newegg.com/intel-core-ultra-7-265k-arrow-lake-lga-1851-processor/p/N82E16819118506"
             }
         ],
@@ -1711,6 +1836,7 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "339.99",
                 "PriceLink": "https://www.newegg.com/intel-core-ultra-7-265kf-arrow-lake-lga-1851-processor/p/N82E16819118507"
             }
@@ -1733,11 +1859,13 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "4699",
+                "Platform": "JD",
+                "Price": "4799",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2394919.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "589.45",
                 "PriceLink": "https://www.newegg.com/intel-core-ultra-9-285k-arrow-lake-lga-1851-processor/p/N82E16819118505"
             }
@@ -1760,11 +1888,13 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "1449",
+                "Platform": "JD",
+                "Price": "1499",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248539.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "229.99",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-5-9600x-ryzen-5-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113844"
             }
@@ -1787,11 +1917,13 @@
         "Prices": [
             {
                 "Region": "CN",
-                "Price": "1999",
+                "Platform": "JD",
+                "Price": "2059",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248520.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "329.00",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-9700x-ryzen-7-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113843"
             }
@@ -1814,12 +1946,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2423239.html"
             },
             {
                 "Region": "US",
-                "Price": "479.00",
+                "Platform": "Newegg",
+                "Price": "Out of Stock",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-7-9800x3d-ryzen-7-9000-series-granite-ridge-zen-5-socket-am5-processor/p/N82E16819113877"
             }
         ],
@@ -1841,12 +1975,14 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "3049",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248519.html"
             },
             {
                 "Region": "US",
-                "Price": "406.08",
+                "Platform": "Newegg",
+                "Price": "402.26",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-9900x-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113842"
             }
         ],
@@ -1868,11 +2004,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "4599",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2503079.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "Out of Stock",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-9900x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113886"
             }
@@ -1895,11 +2033,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "4399",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2248499.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "548.88",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-9950x-4-3-ghz-16-core-am5-170w-processor-100-100001277wof/p/N82E16819113841"
             }
@@ -1922,11 +2062,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "5599",
                 "PriceLink": "https://product.pconline.com.cn/cpu/amd/2503059.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "Out of Stock",
                 "PriceLink": "https://www.newegg.com/amd-ryzen-9-9950x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113884"
             }
@@ -1949,11 +2091,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2149",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2505080.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "246.00",
                 "PriceLink": "https://www.newegg.com/intel-core-ultra-5-225-arrow-lake-lga-1851-processor/p/N82E16819118577?srsltid=AfmBOoqIOssHWEoPXYhtPm0gVCHD9f_7MoLeqkcfX2U9LP9DFJlHr4vs"
             }
@@ -1976,11 +2120,13 @@
         "Prices": [
             {
                 "Region": "CN",
+                "Platform": "JD",
                 "Price": "2999",
                 "PriceLink": "https://product.pconline.com.cn/cpu/intel/2505059.html"
             },
             {
                 "Region": "US",
+                "Platform": "Newegg",
                 "Price": "369.99",
                 "PriceLink": "https://www.newegg.com/intel-core-ultra-7-265f-arrow-lake-lga-1851-processor/p/N82E16819118576?srsltid=AfmBOorJQAPKsxXGaVoOpI6eiHxEHx5urIzOFJvbNq0t4Q0UVXF5fakf"
             }

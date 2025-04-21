@@ -78,6 +78,13 @@ func upsertPrice(prices []PriceType, newPrice PriceType) []PriceType {
 	return append(prices, newPrice)
 }
 
+type priceSortItem struct {
+	price     float64
+	isValid   bool
+	priceLink string
+	original  PriceType
+}
+
 // 輔助函數：價格數據去重
 func deduplicatePrices(prices []PriceType) []PriceType {
 	priceMap := make(map[string][]PriceType)
@@ -125,5 +132,34 @@ func deduplicatePrices(prices []PriceType) []PriceType {
 		}
 	}
 
-	return result
+	sortItems := make([]priceSortItem, len(result))
+	for i, p := range result {
+		price, err := strconv.ParseFloat(p.Price, 64)
+		sortItems[i] = priceSortItem{
+			price:     price,
+			isValid:   err == nil && price > 0,
+			priceLink: p.PriceLink,
+			original:  p,
+		}
+	}
+
+	// 排序逻辑
+	sort.Slice(sortItems, func(i, j int) bool {
+		switch {
+		case sortItems[i].isValid && sortItems[j].isValid:
+			return sortItems[i].price < sortItems[j].price
+		case !sortItems[i].isValid && !sortItems[j].isValid:
+			return sortItems[i].priceLink < sortItems[j].priceLink
+		default:
+			return sortItems[i].isValid
+		}
+	})
+
+	// 重建结果
+	final := make([]PriceType, len(sortItems))
+	for i, item := range sortItems {
+		final[i] = item.original
+	}
+
+	return final
 }
