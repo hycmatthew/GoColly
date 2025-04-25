@@ -130,7 +130,7 @@ func GetCPUData(spec CPUSpec) (CPUType, bool) {
 		Brand:                   strings.ToLower(spec.Brand),
 		Cores:                   spec.Cores,
 		Threads:                 spec.Threads,
-		Socket:                  spec.Socket,
+		Socket:                  normalizeCPUSocket(spec.Socket),
 		GPU:                     iGPU,
 		SingleCoreScore:         spec.SingleCoreScore,
 		MultiCoreScore:          spec.MultiCoreScore,
@@ -197,7 +197,7 @@ func getCPUSpecData(link string, collector *colly.Collector) CPUSpec {
 		Brand:           strings.ToLower(brand),
 		Cores:           cores,
 		Threads:         thread,
-		Socket:          strings.Replace(socket, "-", "", -1),
+		Socket:          socket,
 		GPU:             gpu,
 		SingleCoreScore: singleCoreScore,
 		MultiCoreScore:  muitiCoreScore,
@@ -342,4 +342,13 @@ func integratedGraphicsScoreHandle(cpuName string) (gpu string, score int) {
 		return "error", 0
 	}
 	return info.Name, info.Score
+}
+
+func normalizeCPUSocket(socket string) string {
+	updateSocket := strings.Replace(socket, "-", "", -1)
+
+	if strings.Contains(updateSocket, "LGA") {
+		updateSocket = strings.Replace(updateSocket, "FCLGA", "LGA", -1)
+	}
+	return updateSocket
 }
