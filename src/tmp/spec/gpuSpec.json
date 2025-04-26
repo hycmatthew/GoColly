@@ -51,7 +51,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1179.00",
+                "Price": "1196.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DTR8FDMN"
             }
         ],
@@ -78,8 +78,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1149.99",
+                "Price": "899.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DTR7GWG6"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932770"
             }
         ],
         "ReleaseDate": "February 2025",
@@ -105,7 +111,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1140.00",
+                "Price": "1279.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DTQT98M3"
             }
         ],
@@ -132,7 +138,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "939.00",
+                "Price": "938.09",
                 "PriceLink": "https://www.amazon.com/dp/B0D8RG693Z"
             }
         ],
@@ -165,7 +171,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1295.80",
+                "Price": "1348.60",
                 "PriceLink": "https://www.amazon.com/dp/B0DTQVHQ6G"
             }
         ],
@@ -198,7 +204,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1199.00",
+                "Price": "1238.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DTRCBYQC"
             }
         ],
@@ -224,15 +230,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1539.99",
-                "PriceLink": "https://www.amazon.com/dp/B0DS2R6948"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932753"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1539.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DS2R6948"
             }
         ],
         "ReleaseDate": "January 2025",
@@ -264,7 +270,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1894.00",
+                "Price": "1819.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7HVT16"
             }
         ],
@@ -290,15 +296,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932756"
+                "Platform": "Amazon",
+                "Price": "1579.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DT7JVPVH"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1699.00",
-                "PriceLink": "https://www.amazon.com/dp/B0DT7JVPVH"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932756"
             }
         ],
         "ReleaseDate": "January 2025",
@@ -330,7 +336,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1749.93",
+                "Price": "1639.90",
                 "PriceLink": "https://www.amazon.com/dp/B0DS2R7N4F"
             }
         ],
@@ -363,7 +369,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "2349.00",
+                "Price": "2099.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7H5JYL"
             }
         ],
@@ -389,9 +395,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1669.97",
-                "PriceLink": "https://www.amazon.com/dp/B0DXWKQN7J"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932780"
             }
         ],
         "ReleaseDate": "January 2025",
@@ -444,7 +450,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "3659.99",
+                "Price": "3999.97",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7GMXHB"
             }
         ],
@@ -471,7 +477,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "3679.00",
+                "Price": "3879.94",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7GBNWQ"
             }
         ],
@@ -498,7 +504,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "4100.00",
+                "Price": "4089.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7GHQMD"
             }
         ],
@@ -525,7 +531,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "4149.00",
+                "Price": "4029.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DVCH9WJH"
             }
         ],
@@ -579,7 +585,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1305.00",
+                "Price": "1427.90",
                 "PriceLink": "https://www.amazon.com/dp/B0D87BVDWQ"
             }
         ],
@@ -633,7 +639,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1099.99",
+                "Price": "1049.97",
                 "PriceLink": "https://www.amazon.com/dp/B0CVHD8Y97"
             }
         ],
@@ -660,7 +666,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "514.99",
+                "Price": "528.90",
                 "PriceLink": "https://www.amazon.com/dp/B0CVQN2XKX"
             }
         ],
@@ -686,9 +692,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932672"
+                "Platform": "Amazon",
+                "Price": "2150.00",
+                "PriceLink": "https://www.amazon.com/dp/B0CSK2GHR8"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -848,14 +854,8 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932690"
-            },
-            {
-                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "280.60",
+                "Price": "256.29",
                 "PriceLink": "https://www.amazon.com/dp/B0CV4CPQ7S"
             }
         ],
@@ -888,7 +888,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "385.99",
+                "Price": "399.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CSVJZNNX"
             }
         ],
@@ -915,7 +915,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1399.00",
+                "Price": "1299.00",
                 "PriceLink": "https://www.amazon.com/dp/B0CSK87B4R"
             }
         ],
@@ -942,7 +942,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1349.99",
+                "Price": "1249.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CSJVCD3Y"
             }
         ],
@@ -1103,9 +1103,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1159.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CSJZ9YK3"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932680"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -1245,7 +1245,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "598.99",
+                "Price": "718.00",
                 "PriceLink": "https://www.amazon.com/dp/B0CGC5P7H3"
             }
         ],
@@ -1278,7 +1278,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "707.59",
+                "Price": "739.00",
                 "PriceLink": "https://www.amazon.com/dp/B0CGHQ32S2"
             }
         ],
@@ -1425,7 +1425,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "399.99",
+                "Price": "443.90",
                 "PriceLink": "https://www.amazon.com/dp/B0C8JZNLZL"
             }
         ],
@@ -1452,7 +1452,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "439.99",
+                "Price": "504.99",
                 "PriceLink": "https://www.amazon.com/dp/B0C8KQRH32"
             }
         ],
@@ -1479,7 +1479,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "529.00",
+                "Price": "539.90",
                 "PriceLink": "https://www.amazon.com/dp/B0C8K3DFD9"
             }
         ],
@@ -1599,7 +1599,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "391.35",
+                "Price": "362.39",
                 "PriceLink": "https://www.amazon.com/dp/B0C5DXJ165"
             }
         ],
@@ -1800,7 +1800,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "934.17",
+                "Price": "931.97",
                 "PriceLink": "https://www.amazon.com/dp/B0BZHCQ6PF"
             }
         ],
@@ -1827,7 +1827,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "980.90",
+                "Price": "975.90",
                 "PriceLink": "https://www.amazon.com/dp/B0BZHBRQCQ"
             }
         ],
@@ -2022,7 +2022,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "799.95",
+                "Price": "769.23",
                 "PriceLink": "https://www.amazon.com/dp/B0BMNGT8XM"
             }
         ],
@@ -2399,14 +2399,8 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126757"
-            },
-            {
-                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1149.00",
+                "Price": "1175.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DS6WFRBP"
             }
         ],
@@ -2492,15 +2486,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126754"
+                "Platform": "Amazon",
+                "Price": "1099.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DS6WTXGP"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1199.00",
-                "PriceLink": "https://www.amazon.com/dp/B0DS6WTXGP"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126754"
             }
         ],
         "ReleaseDate": "February 2025",
@@ -2532,7 +2526,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "2067.93",
+                "Price": "1849.98",
                 "PriceLink": "https://www.amazon.com/dp/B0DQSD7YQC"
             }
         ],
@@ -2565,7 +2559,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1706.95",
+                "Price": "1697.89",
                 "PriceLink": "https://www.amazon.com/dp/B0DQSLHSP2"
             }
         ],
@@ -2598,7 +2592,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1484.99",
+                "Price": "1599.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DQSMMCSH"
             }
         ],
@@ -2625,7 +2619,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1818.00",
+                "Price": "1730.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DTPG3B1N"
             }
         ],
@@ -2787,7 +2781,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1319.90",
+                "Price": "1319.89",
                 "PriceLink": "https://www.amazon.com/dp/B0DC1WFPZF"
             }
         ],
@@ -2841,7 +2835,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "926.18",
+                "Price": "922.76",
                 "PriceLink": "https://www.amazon.com/dp/B0DC29KHWS"
             }
         ],
@@ -2901,7 +2895,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "369.76",
+                "Price": "401.16",
                 "PriceLink": "https://www.amazon.com/dp/B0CVPDY3HN"
             }
         ],
@@ -2934,7 +2928,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "538.97",
+                "Price": "618.93",
                 "PriceLink": "https://www.amazon.com/dp/B0CVPHDLTD"
             }
         ],
@@ -3021,7 +3015,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1915.99",
+                "Price": "2065.00",
                 "PriceLink": "https://www.amazon.com/dp/B0CQPZTRL3"
             }
         ],
@@ -3128,9 +3122,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1978.00",
-                "PriceLink": "https://www.amazon.com/dp/B0CSZCV12L"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126704"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -3323,9 +3317,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1629.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CQPWZXY3"
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
             }
         ],
         "ReleaseDate": "January 2024",
@@ -3350,9 +3344,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1399.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CQPXD5WD"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126685"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -3539,9 +3533,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "",
-                "Price": "Out of Stock",
-                "PriceLink": ""
+                "Platform": "Amazon",
+                "Price": "1399.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CQPWN1GF"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -3594,7 +3588,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "929.00",
+                "Price": "846.85",
                 "PriceLink": "https://www.amazon.com/dp/B0CVCKX2GD"
             }
         ],
@@ -3647,9 +3641,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1089.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CQPZ1V9N"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126697"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -3783,7 +3777,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "700.63",
+                "Price": "710.68",
                 "PriceLink": "https://www.amazon.com/dp/B0CQRVST38"
             }
         ],
@@ -3816,7 +3810,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "799.99",
+                "Price": "843.96",
                 "PriceLink": "https://www.amazon.com/dp/B0CQRX9HPK"
             }
         ],
@@ -4085,9 +4079,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126670"
+                "Platform": "Amazon",
+                "Price": "789.83",
+                "PriceLink": "https://www.amazon.com/dp/B0CCC7MP3H"
             }
         ],
         "ReleaseDate": "July 2023",
@@ -4301,6 +4295,12 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126658"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
                 "Price": "3499.00",
                 "PriceLink": "https://www.amazon.com/dp/B0C7JYX6LN"
@@ -4356,7 +4356,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "679.41",
+                "Price": "689.41",
                 "PriceLink": "https://www.amazon.com/dp/B0C5SDCMF3"
             }
         ],
@@ -4491,7 +4491,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "649.95",
+                "Price": "654.99",
                 "PriceLink": "https://www.amazon.com/dp/B0C422MFHV"
             }
         ],
@@ -4977,7 +4977,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1139.00",
+                "Price": "1387.88",
                 "PriceLink": "https://www.amazon.com/dp/B0BSVLCJHL"
             },
             {
@@ -5171,9 +5171,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "3799.95",
-                "PriceLink": "https://www.amazon.com/dp/B0BGT61797"
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
             }
         ],
         "ReleaseDate": "October 2022",
@@ -5468,9 +5468,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "",
-                "Price": "Out of Stock",
-                "PriceLink": ""
+                "Platform": "Amazon",
+                "Price": "579.00",
+                "PriceLink": "https://www.amazon.com/dp/B09CBYXJD9"
             }
         ],
         "ReleaseDate": "August 2021",
@@ -5550,7 +5550,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "599.00",
+                "Price": "637.99",
                 "PriceLink": "https://www.amazon.com/dp/B09CFWSJLB"
             }
         ],
@@ -5604,7 +5604,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "394.98",
+                "Price": "329.99",
                 "PriceLink": "https://www.amazon.com/dp/B0985X2YR1"
             }
         ],
@@ -5637,7 +5637,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1198.00",
+                "Price": "1099.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DZD6QV9L"
             }
         ],
@@ -5751,7 +5751,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1327.99",
+                "Price": "1299.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DWHGLDHG"
             }
         ],
@@ -5777,15 +5777,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "979.99",
-                "PriceLink": "https://www.amazon.com/dp/B0DWH7F8KX"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137924"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1300.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DWH7F8KX"
             }
         ],
         "ReleaseDate": "February 2025",
@@ -5877,7 +5877,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1629.71",
+                "Price": "1644.43",
                 "PriceLink": "https://www.amazon.com/dp/B0DSXNXTSS"
             }
         ],
@@ -5910,7 +5910,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1829.99",
+                "Price": "1649.99",
                 "PriceLink": "https://www.amazon.com/dp/B0BSN91TGK"
             }
         ],
@@ -5937,7 +5937,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "3714.00",
+                "Price": "3826.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7JS6BG"
             }
         ],
@@ -5970,7 +5970,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1884.98",
+                "Price": "1994.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DSXGNFJL"
             }
         ],
@@ -5997,7 +5997,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "2249.95",
+                "Price": "1989.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DSWP51N3"
             }
         ],
@@ -6023,9 +6023,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "2499.93",
-                "PriceLink": "https://www.amazon.com/dp/B0DSWRLSD4"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137907"
             }
         ],
         "ReleaseDate": "January 2025",
@@ -6051,7 +6051,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "2099.95",
+                "Price": "1989.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DSXJ5QF4"
             }
         ],
@@ -6077,15 +6077,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137914"
+                "Platform": "Amazon",
+                "Price": "1369.97",
+                "PriceLink": "https://www.amazon.com/dp/B0DSXKZ2T9"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1599.95",
-                "PriceLink": "https://www.amazon.com/dp/B0DSXKZ2T9"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137914"
             }
         ],
         "ReleaseDate": "January 2025",
@@ -6144,7 +6144,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "2149.97",
+                "Price": "1989.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DSWR8WMB"
             }
         ],
@@ -6204,7 +6204,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1829.95",
+                "Price": "1749.95",
                 "PriceLink": "https://www.amazon.com/dp/B0DSWQNGYF"
             }
         ],
@@ -6231,7 +6231,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "4049.95",
+                "Price": "3899.95",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7L98J1"
             }
         ],
@@ -6258,7 +6258,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "4199.00",
+                "Price": "3890.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7KGND2"
             }
         ],
@@ -6284,9 +6284,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137917"
+                "Platform": "Amazon",
+                "Price": "4099.98",
+                "PriceLink": "https://www.amazon.com/dp/B0DT7L992Z"
             }
         ],
         "ReleaseDate": "January 2025",
@@ -6312,7 +6312,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "4189.97",
+                "Price": "3927.90",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7JYTXQ"
             }
         ],
@@ -6339,7 +6339,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "4499.95",
+                "Price": "4899.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DT7K9VV3"
             }
         ],
@@ -6680,9 +6680,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1399.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CSG9Z9ML"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137858"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -6708,7 +6708,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1329.90",
+                "Price": "1359.90",
                 "PriceLink": "https://www.amazon.com/dp/B0CSGCTMT2"
             }
         ],
@@ -6735,7 +6735,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1499.99",
+                "Price": "1548.88",
                 "PriceLink": "https://www.amazon.com/dp/B0CSKD1366"
             }
         ],
@@ -6815,8 +6815,14 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137861"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "820.00",
+                "Price": "909.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CS718XC3"
             }
         ],
@@ -6843,7 +6849,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "989.00",
+                "Price": "919.88",
                 "PriceLink": "https://www.amazon.com/dp/B0CSHFM3D5"
             }
         ],
@@ -6869,8 +6875,14 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137860"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "969.69",
+                "Price": "969.49",
                 "PriceLink": "https://www.amazon.com/dp/B0CS7MBND4"
             }
         ],
@@ -6977,14 +6989,8 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137832"
-            },
-            {
-                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "444.00",
+                "Price": "548.28",
                 "PriceLink": "https://www.amazon.com/dp/B0CHC2LQF5"
             }
         ],
@@ -7011,7 +7017,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "3099.99",
+                "Price": "3798.00",
                 "PriceLink": "https://www.amazon.com/dp/B0CHBVHQRQ"
             }
         ],
@@ -7172,15 +7178,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "329.99",
-                "PriceLink": "https://www.amazon.com/dp/B0C8BPW1SP"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137804"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "377.49",
+                "PriceLink": "https://www.amazon.com/dp/B0C8BPW1SP"
             }
         ],
         "ReleaseDate": "June 2023",
@@ -7314,7 +7320,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "462.99",
+                "Price": "619.99",
                 "PriceLink": "https://www.amazon.com/dp/B0C5B4XNWR"
             }
         ],
@@ -7340,9 +7346,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "1198.00",
-                "PriceLink": "https://www.amazon.com/dp/B0C4F931LC"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137797"
             }
         ],
         "ReleaseDate": "May 2023",
@@ -7446,6 +7452,12 @@
         "Name": "GeForce RTX 4070 VENTUS 3X 12G OC",
         "Power": 200,
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137789"
+            },
             {
                 "Region": "US",
                 "Platform": "Amazon",
@@ -7691,9 +7703,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137761"
+                "Platform": "Amazon",
+                "Price": "3699.95",
+                "PriceLink": "https://www.amazon.com/dp/B0BG94PS2F"
             }
         ],
         "ReleaseDate": "October 2022",
@@ -7718,9 +7730,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137762"
+                "Platform": "Amazon",
+                "Price": "3599.95",
+                "PriceLink": "https://www.amazon.com/dp/B0BG959RCF"
             }
         ],
         "ReleaseDate": "October 2022",
@@ -7800,7 +7812,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1680.94",
+                "Price": "1627.45",
                 "PriceLink": "https://www.amazon.com/dp/B09FSWGS7L"
             }
         ],
@@ -7935,7 +7947,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "618.88",
+                "Price": "500.00",
                 "PriceLink": "https://www.amazon.com/dp/B09BK6NJ9N"
             }
         ],
@@ -7962,7 +7974,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "574.47",
+                "Price": "574.34",
                 "PriceLink": "https://www.amazon.com/dp/B09BK8NCPB"
             }
         ],
@@ -8076,7 +8088,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "895.00",
+                "Price": "499.99",
                 "PriceLink": "https://www.amazon.com/dp/B099NZHTQL"
             }
         ],
@@ -8103,8 +8115,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "929.99",
+                "Price": "899.99",
                 "PriceLink": "https://www.amazon.com/dp/B096M7NPNP"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/msi-radeon-rx-6900-xt-rx-6900-xt-gaming-z-trio-16g/p/N82E16814137654T?srsltid=AfmBOopxNGMZsyCtP6Ey6GljFU2l-WRJCdfiK-B1fPdezrlG88P_xS3z"
             }
         ],
         "ReleaseDate": "July 2021",
@@ -8196,7 +8214,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1680.49",
+                "Price": "999.95",
                 "PriceLink": "https://www.amazon.com/dp/B0995S7548"
             }
         ],
@@ -8484,7 +8502,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1116.98",
+                "Price": "1150.65",
                 "PriceLink": "https://www.amazon.com/dp/B08W2GPR62"
             }
         ],
@@ -8517,7 +8535,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "370.00",
+                "Price": "375.00",
                 "PriceLink": "https://www.amazon.com/dp/B08WPRMVWB"
             }
         ],
@@ -8571,7 +8589,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "499.99",
+                "Price": "574.99",
                 "PriceLink": "https://www.amazon.com/dp/B08WTFG5BX"
             }
         ],
@@ -8652,7 +8670,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1202.32",
+                "Price": "1217.20",
                 "PriceLink": "https://www.amazon.com/dp/B08RJ6YBH5"
             }
         ],
@@ -8982,7 +9000,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1399.00",
+                "Price": "1439.99",
                 "PriceLink": "https://www.amazon.com/dp/B0C3SPXZJ8"
             }
         ],
@@ -9035,9 +9053,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1FT-0004-00835"
+                "Platform": "Amazon",
+                "Price": "3569.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BJFRT43X"
             }
         ],
         "ReleaseDate": "October 2022",
@@ -9117,7 +9135,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "564.30",
+                "Price": "562.17",
                 "PriceLink": "https://www.amazon.com/dp/B08PW559LL"
             }
         ],
@@ -9144,7 +9162,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "619.99",
+                "Price": "609.99",
                 "PriceLink": "https://www.amazon.com/dp/B08MYCN952"
             }
         ],
@@ -9279,7 +9297,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "406.38",
+                "Price": "386.00",
                 "PriceLink": "https://www.amazon.com/dp/B0CTD21LW1"
             }
         ],
@@ -9306,7 +9324,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "495.05",
+                "Price": "630.03",
                 "PriceLink": "https://www.amazon.com/dp/B0CFWQR5MW"
             }
         ],
@@ -9333,7 +9351,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "616.18",
+                "Price": "575.00",
                 "PriceLink": "https://www.amazon.com/dp/B0CFWW2CZZ"
             }
         ],
@@ -9360,7 +9378,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "661.77",
+                "Price": "648.26",
                 "PriceLink": "https://www.amazon.com/dp/B0CFX69R1R"
             }
         ],
@@ -9393,7 +9411,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "649.99",
+                "Price": "648.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CFWM1LNH"
             }
         ],
@@ -9447,7 +9465,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "624.73",
+                "Price": "729.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CFWRLDB5"
             }
         ],
@@ -9501,7 +9519,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "389.00",
+                "Price": "306.25",
                 "PriceLink": "https://www.amazon.com/dp/B0C4WBW3XX"
             }
         ],
@@ -9554,9 +9572,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814202416"
+                "Platform": "Amazon",
+                "Price": "224.99",
+                "PriceLink": "https://www.amazon.com/dp/B09Y2JWMXS"
             }
         ],
         "ReleaseDate": "April 2022",
@@ -9690,7 +9708,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1193.76",
+                "Price": "1185.36",
                 "PriceLink": "https://www.amazon.com/dp/B094DYSQQL"
             }
         ],
@@ -9717,7 +9735,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1776.83",
+                "Price": "1782.20",
                 "PriceLink": "https://www.amazon.com/dp/B094YPQ5FH"
             }
         ],
@@ -10089,7 +10107,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "2799.93",
+                "Price": "1780.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DWSNFSF7"
             }
         ],
@@ -10143,7 +10161,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "3699.99",
+                "Price": "3639.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DV6MK91R"
             }
         ],
@@ -10172,6 +10190,12 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500593"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "4200.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DV64SCM8"
             }
         ],
         "ReleaseDate": "January 2025",
@@ -10223,9 +10247,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500580"
+                "Platform": "Amazon",
+                "Price": "1799.50",
+                "PriceLink": "https://www.amazon.com/dp/B0CSBDFS55"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -10250,9 +10274,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500581"
+                "Platform": "Amazon",
+                "Price": "1799.95",
+                "PriceLink": "https://www.amazon.com/dp/B0CSBDKXK3"
             }
         ],
         "ReleaseDate": "January 2024",
@@ -10554,7 +10578,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "425.00",
+                "Price": "414.79",
                 "PriceLink": "https://www.amazon.com/dp/B0CCST62N5"
             }
         ],
@@ -10664,12 +10688,6 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500560"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "567.93",
-                "PriceLink": "https://www.amazon.com/dp/B0C91MZBPZ"
             }
         ],
         "ReleaseDate": "June 2023",
@@ -11280,7 +11298,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "1750.00",
+                "Price": "1769.99",
                 "PriceLink": "https://www.amazon.com/dp/B08ZL6XD9H"
             }
         ],
@@ -11466,7 +11484,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "444.43",
+                "Price": "450.00",
                 "PriceLink": "https://www.amazon.com/dp/B08W8DGK3X"
             }
         ],
@@ -11499,7 +11517,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "356.13",
+                "Price": "370.99",
                 "PriceLink": "https://www.amazon.com/dp/B08ZZW34T3"
             }
         ],
@@ -11526,7 +11544,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "798.97",
+                "Price": "566.16",
                 "PriceLink": "https://www.amazon.com/dp/B08P3V572B"
             }
         ],
@@ -12133,5 +12151,4928 @@
         "ReleaseDate": "",
         "Series": "",
         "Slot": "3.5 Slots"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2632,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "Dual GeForce RTX 5060 Ti OC Edition 16GB",
+        "Img": "",
+        "Length": 229,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "Dual GeForce RTX 5060 Ti OC Edition 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126798"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2587,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 Prime OC",
+        "Img": "",
+        "Length": 306,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Prime OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "699.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DS6WPTLL"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126760"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2640,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 TUF GAMING OC",
+        "Img": "",
+        "Length": 329,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 TUF GAMING OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "739.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DS6S98ZF"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126758"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2602,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "Prime GeForce RTX 5060 Ti 16GB",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "Prime GeForce RTX 5060 Ti 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126791"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "629.99",
+                "PriceLink": "https://www.amazon.com/dp/B0F4RZDFD5"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2602,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "PRIME GeForce RTX 5060 Ti 8GB",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "PRIME GeForce RTX 5060 Ti 8GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126794"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2647,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "Prime GeForce RTX 5060 Ti OC Edition 16GB",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "Prime GeForce RTX 5060 Ti OC Edition 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126795"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "799.99",
+                "PriceLink": "https://www.amazon.com/dp/B0F4RVCY79"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2647,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "PRIME GeForce RTX 5060 Ti OC Edition 8GB",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "PRIME GeForce RTX 5060 Ti OC Edition 8GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126793"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2542,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "PRIME GeForce RTX 5070",
+        "Img": "",
+        "Length": 306,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "PRIME GeForce RTX 5070",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126761"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "818.97",
+                "PriceLink": "https://www.amazon.com/dp/B0DS6V1YSY"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2610,
+        "Brand": "asus",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 2070,
+        "Code": "Prime Radeon RX 9070 OC Edition",
+        "Img": "",
+        "Length": 312,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Prime Radeon RX 9070 OC Edition",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126748"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "908.88",
+                "PriceLink": "https://www.amazon.com/dp/B0DRRJ511M"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3030,
+        "Brand": "asus",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 2400,
+        "Code": "Prime Radeon RX 9070 XT OC Edition",
+        "Img": "",
+        "Length": 312,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Prime Radeon RX 9070 XT OC Edition",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126746"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1133.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DRRMZDH6"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2670,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5080",
+        "ClockRate": 2300,
+        "Code": "ROG Astral GeForce RTX 5080",
+        "Img": "",
+        "Length": 358,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "ROG Astral GeForce RTX 5080",
+        "Power": 360,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2692,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "Tuf Gaming Geforce Rtx 5060 Ti Oc Edition 16GB",
+        "Img": "",
+        "Length": 302,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "TUF Gaming GeForce RTX 5060 Ti OC Edition 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126790"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2692,
+        "Brand": "asus",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "TUF Gaming GeForce RTX 5060 Ti OC Edition 8GB",
+        "Img": "",
+        "Length": 302,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "TUF Gaming GeForce RTX 5060 Ti OC Edition 8GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126792"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2670,
+        "Brand": "asus",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 2070,
+        "Code": "TUF Gaming Radeon RX 9070 OC Edition",
+        "Img": "",
+        "Length": 330,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "TUF Gaming Radeon RX 9070 OC Edition",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126747"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1195.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DRRWCF9J"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3080,
+        "Brand": "asus",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 2400,
+        "Code": "TUF Gaming Radeon RX 9070 XT OC Edition",
+        "Img": "",
+        "Length": 330,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "TUF Gaming Radeon RX 9070 XT OC Edition",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814126745"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1039.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DRRDLC8J"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2722,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "AORUS GeForce RTX 5060 Ti ELITE 16GB",
+        "Img": "",
+        "Length": 329,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "AORUS GeForce RTX 5060 Ti ELITE 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932785"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2715,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "AORUS GeForce RTX 5070 MASTER 12G",
+        "Img": "",
+        "Length": 317,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "AORUS GeForce RTX 5070 MASTER 12G",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932772"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "769.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DTR3WM7Y"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2805,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5080",
+        "ClockRate": 2300,
+        "Code": "Aorus Geforce Rtx 5080 Xtreme Waterforce 16g",
+        "Img": "",
+        "Length": 220,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "Aorus GeForce RTX 5080 Xtreme Waterforce 16G",
+        "Power": 360,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932759"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "2166.38",
+                "PriceLink": "https://www.amazon.com/dp/B0DT9VM5DC"
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3100,
+        "Brand": "gigabyte",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 2400,
+        "Code": "AORUS Radeon RX 9070 XT ELITE 16G",
+        "Img": "",
+        "Length": 339,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "AORUS Radeon RX 9070 XT ELITE 16G",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1122.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DS2QZ8FN"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2647,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti AERO OC 16GB",
+        "Img": "",
+        "Length": 281,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti AERO OC 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932786"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2647,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti AERO OC 8G",
+        "Img": "",
+        "Length": 281,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti AERO OC 8G",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932792"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2617,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti EAGLE OC 16GB",
+        "Img": "",
+        "Length": 215,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti EAGLE OC 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932789"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2617,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti EAGLE OC 8G",
+        "Img": "",
+        "Length": 215,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti EAGLE OC 8G",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932795"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2617,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti EAGLE OC ICE 16GB",
+        "Img": "",
+        "Length": 215,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti EAGLE OC ICE 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932788"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2617,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti EAGLE OC ICE 8G",
+        "Img": "",
+        "Length": 215,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti EAGLE OC ICE 8G",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932794"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2647,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti GAMING OC 16GB",
+        "Img": "",
+        "Length": 281,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti GAMING OC 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932787"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2647,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti GAMING OC 8G",
+        "Img": "",
+        "Length": 281,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti GAMING OC 8G",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932793"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2572,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti WINDFORCE 16G",
+        "Img": "",
+        "Length": 208,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti WINDFORCE 16G",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932791"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2572,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti WINDFORCE 8G",
+        "Img": "",
+        "Length": 208,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti WINDFORCE 8G",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932797"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2587,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti WINDFORCE OC 16GB",
+        "Img": "",
+        "Length": 208,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti WINDFORCE OC 16GB",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932790"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2587,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti WINDFORCE OC 8G",
+        "Img": "",
+        "Length": 208,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti WINDFORCE OC 8G",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932796"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2625,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 AERO OC 12G White",
+        "Img": "",
+        "Length": 324,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 AERO OC 12G White",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "699.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DTR54HZZ"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932773"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2587,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 EAGLE OC ICE SFF 12G",
+        "Img": "",
+        "Length": 290,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 EAGLE OC ICE SFF 12G",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932775"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "799.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DTQTJQGZ"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2586,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 EAGLE OC SFF 12G",
+        "Img": "",
+        "Length": 290,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 EAGLE OC SFF 12G",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932776"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "799.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DTQNSRZG"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2625,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 GAMING OC 12G",
+        "Img": "",
+        "Length": 327,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 GAMING OC 12G",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932774"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "699.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DTR3JK3Y"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2452,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070 Ti",
+        "ClockRate": 2295,
+        "Code": "GeForce RTX 5070 Ti WINDFORCE SFF 16G",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Ti WINDFORCE SFF 16G",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932781"
+            }
+        ],
+        "ReleaseDate": "February 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2542,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 WINDFORCE OC SFF 12G",
+        "Img": "",
+        "Length": 282,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 WINDFORCE OC SFF 12G",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "609.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DTQMLX4F"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932777"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2512,
+        "Brand": "gigabyte",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 WINDFORCE SFF 12G",
+        "Img": "",
+        "Length": 282,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 WINDFORCE SFF 12G",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932782"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2700,
+        "Brand": "gigabyte",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 2210,
+        "Code": "Radeon RX 9070 GAMING OC 16G",
+        "Img": "",
+        "Length": 288,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 GAMING OC 16G",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814932752"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1017.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DS2QZC9P"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3060,
+        "Brand": "gigabyte",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 2400,
+        "Code": "Radeon RX 9070 XT GAMING OC 16G",
+        "Img": "",
+        "Length": 288,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 XT GAMING OC 16G",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "886.49",
+                "PriceLink": "https://www.amazon.com/dp/B0DS2QG2KW"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2662,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G GAMING OC",
+        "Img": "",
+        "Length": 247,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G GAMING OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137955"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "729.00",
+                "PriceLink": "https://www.amazon.com/dp/B0F45LTZYJ"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2662,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G GAMING TRIO OC",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G GAMING TRIO OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137954"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "698.95",
+                "PriceLink": "https://www.amazon.com/dp/B0F45YF7RY"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2662,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G GAMING TRIO OC WHITE",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G GAMING TRIO OC WHITE",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137953"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2632,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G INSPIRE 2X OC",
+        "Img": "",
+        "Length": 204,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G INSPIRE 2X OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137956"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2707,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G VANGUARD SOC",
+        "Img": "",
+        "Length": 337,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G VANGUARD SOC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137952"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2617,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G VENTUS 2X OC PLUS",
+        "Img": "",
+        "Length": 227,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G VENTUS 2X OC PLUS",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137958"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2587,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G VENTUS 2X PLUS",
+        "Img": "",
+        "Length": 227,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G VENTUS 2X PLUS",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137967"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2617,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16G VENTUS 3X OC",
+        "Img": "",
+        "Length": 306,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16G VENTUS 3X OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 0,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8G GAMING OC",
+        "Img": "",
+        "Length": 247,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8G GAMING OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137963"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2662,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8G GAMING TRIO OC",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8G GAMING TRIO OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137962"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2662,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8G GAMING TRIO OC WHITE",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8G GAMING TRIO OC WHITE",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2617,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS",
+        "Img": "",
+        "Length": 227,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8G VENTUS 2X OC PLUS",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137965"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2587,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8G VENTUS 2X PLUS",
+        "Img": "",
+        "Length": 227,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8G VENTUS 2X PLUS",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137968"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2610,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 12G GAMING TRIO OC",
+        "Img": "",
+        "Length": 338,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 12G GAMING TRIO OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "714.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DYFXGDJF"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137938"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2610,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 12G GAMING TRIO OC WHITE",
+        "Img": "",
+        "Length": 338,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 12G GAMING TRIO OC WHITE",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137937"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2557,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GEFORCE RTX 5070 12G SHADOW 2X OC",
+        "Img": "",
+        "Length": 231,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GEFORCE RTX 5070 12G SHADOW 2X OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137944"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "787.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DYGFJK7C"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2557,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GEFORCE RTX 5070 12G SHADOW 3X OC",
+        "Img": "",
+        "Length": 303,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GEFORCE RTX 5070 12G SHADOW 3X OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137941"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2588,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 12G VANGUARD SOC",
+        "Img": "",
+        "Length": 337,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 12G VANGUARD SOC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137936"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2640,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "Geforce Rtx 5070 12g Vanguard Soc Launch Edition",
+        "Img": "",
+        "Length": 337,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 12G VANGUARD SOC LAUNCH EDITION",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137934"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "929.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DYG4WPZC"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2557,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 12G VENTUS 2X OC",
+        "Img": "",
+        "Length": 236,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 12G VENTUS 2X OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137943"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2557,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 12G VENTUS 2X OC WHITE",
+        "Img": "",
+        "Length": 236,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 12G VENTUS 2X OC WHITE",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137942"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2557,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 12G VENTUS 3X OC",
+        "Img": "",
+        "Length": 302,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 12G VENTUS 3X OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137940"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2625,
+        "Brand": "msi",
+        "Chipset": "GeForce RTX 5080",
+        "ClockRate": 2300,
+        "Code": "GeForce RTX 5080 16G SHADOW 3X",
+        "Img": "",
+        "Length": 303,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5080 16G SHADOW 3X",
+        "Power": 360,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814137951"
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2460,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060",
+        "ClockRate": 1830,
+        "Code": "GeForce RTX 4060 8GB Verto Dual Fan",
+        "Img": "",
+        "Length": 210,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 8GB Verto Dual Fan",
+        "Power": 115,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133859"
+            }
+        ],
+        "ReleaseDate": "June 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2505,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060",
+        "ClockRate": 1830,
+        "Code": "Geforce Rtx 4060 8GB Xlr8 Gaming Verto Epic X RGB overCLocked",
+        "Img": "",
+        "Length": 260,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 8GB XLR8 Gaming VERTO EPIC-X RGB Overclocked",
+        "Power": 115,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133860"
+            }
+        ],
+        "ReleaseDate": "June 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2460,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060",
+        "ClockRate": 1830,
+        "Code": "Geforce Rtx 4060 8GB Xlr8 Gaming Verto RGB Triple Fan",
+        "Img": "",
+        "Length": 260,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 8GB XLR8 Gaming Verto RGB Triple Fan",
+        "Power": 115,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "551.33",
+                "PriceLink": "https://www.amazon.com/dp/B0C92Q7J9F"
+            }
+        ],
+        "ReleaseDate": "June 2023",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2535,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060 Ti",
+        "ClockRate": 2310,
+        "Code": "GeForce RTX 4060 Ti 16GB VERTO Dual Fan",
+        "Img": "",
+        "Length": 245,
+        "Manufacturer": "",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 Ti 16GB VERTO Dual Fan",
+        "Power": 165,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "August 2023",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2550,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060 Ti",
+        "ClockRate": 2310,
+        "Code": "Geforce Rtx 4060 Ti 16GB Xlr8 Gaming Verto overCLocked Dual Fan",
+        "Img": "",
+        "Length": 245,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 Ti 16GB XLR8 Gaming VERTO Overclocked Dual Fan",
+        "Power": 165,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133888"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2535,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060 Ti",
+        "ClockRate": 2310,
+        "Code": "GeForce RTX 4060 Ti 8GB VERTO Dual Fan",
+        "Img": "",
+        "Length": 245,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 Ti 8GB VERTO Dual Fan",
+        "Power": 160,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "574.99",
+                "PriceLink": "https://www.amazon.com/dp/B0C5P31ZK6"
+            }
+        ],
+        "ReleaseDate": "May 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2550,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060 Ti",
+        "ClockRate": 2310,
+        "Code": "GeForce RTX 4060 Ti 8GB VERTO OC Dual Fan",
+        "Img": "",
+        "Length": 245,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 Ti 8GB VERTO OC Dual Fan",
+        "Power": 160,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "629.90",
+                "PriceLink": "https://www.amazon.com/dp/B0CJ9D1VBH"
+            }
+        ],
+        "ReleaseDate": "November 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2535,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4060 Ti",
+        "ClockRate": 2310,
+        "Code": "Geforce Rtx 4060 Ti 8GB Xlr8 Gaming Verto Epic X RGB Triple Fan",
+        "Img": "",
+        "Length": 305,
+        "Manufacturer": "",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "GeForce RTX 4060 Ti 8GB XLR8 Gaming VERTO EPIC-X RGB Triple Fan",
+        "Power": 160,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "May 2023",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2475,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070",
+        "ClockRate": 1920,
+        "Code": "GeForce RTX 4070 12GB VERTO Dual Fan",
+        "Img": "",
+        "Length": 247,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 12GB VERTO Dual Fan",
+        "Power": 200,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133855"
+            }
+        ],
+        "ReleaseDate": "April 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2475,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070",
+        "ClockRate": 1920,
+        "Code": "Geforce Rtx 4070 12GB Xlr8 Gaming Verto Epic X RGB Triple Fan",
+        "Img": "",
+        "Length": 305,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 12GB XLR8 Gaming VERTO EPIC-X RGB Triple Fan",
+        "Power": 200,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133854"
+            }
+        ],
+        "ReleaseDate": "April 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2520,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070",
+        "ClockRate": 1920,
+        "Code": "Geforce Rtx 4070 12GB Xlr8 Verto Epic X RGB Triple Fan Oc",
+        "Img": "",
+        "Length": 305,
+        "Manufacturer": "",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 12GB XLR8 VERTO EPIC-X RGB Triple Fan OC",
+        "Power": 200,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "April 2023",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2490,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070 SUPER",
+        "ClockRate": 1980,
+        "Code": "GeForce RTX 4070 SUPER 12GB OC DF",
+        "Img": "",
+        "Length": 247,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 2,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 SUPER 12GB OC DF",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133863"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1049.88",
+                "PriceLink": "https://www.amazon.com/dp/B0CS197RJM"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2505,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070 SUPER",
+        "ClockRate": 1980,
+        "Code": "Geforce Rtx 4070 Super 12GB Xlr8 Gaming Verto Epic X RGB overCLocked",
+        "Img": "",
+        "Length": 305,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 SUPER 12GB XLR8 Gaming VERTO EPIC-X RGB Overclocked",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133864"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2670,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070 Ti",
+        "ClockRate": 2310,
+        "Code": "Geforce Rtx 4070 Ti 12GB Xlr8 Gaming Verto Epic X RGB overCLocked Triple Fan",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 Ti 12GB XLR8 Gaming Verto Epic-X RGB Overclocked Triple Fan",
+        "Power": 285,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133848"
+            }
+        ],
+        "ReleaseDate": "January 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2610,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070 Ti",
+        "ClockRate": 2310,
+        "Code": "Geforce Rtx 4070 Ti 12GB Xlr8 Gaming Verto Epic X RGB Triple Fan",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 Ti 12GB XLR8 Gaming Verto Epic-X RGB Triple Fan",
+        "Power": 285,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133847"
+            }
+        ],
+        "ReleaseDate": "January 2023",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2625,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070 Ti SUPER",
+        "ClockRate": 2340,
+        "Code": "Geforce Rtx 4070 Ti Super 16GB Verto overCLocked Triple Fan",
+        "Img": "",
+        "Length": 305,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 Ti Super 16GB Verto Overclocked Triple Fan",
+        "Power": 285,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133865"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2655,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4070 Ti SUPER",
+        "ClockRate": 2340,
+        "Code": "Geforce Rtx 4070 Ti Super 16GB Xlr8 Gaming Verto Epic X RGB overCLocked Tripl",
+        "Img": "",
+        "Length": 333,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4070 Ti SUPER 16GB XLR8 Gaming VERTO EPIC-X RGB Overclocked Triple Fan",
+        "Power": 285,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133866"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2505,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4080",
+        "ClockRate": 2205,
+        "Code": "Geforce Rtx 4080 16GB Xlr8 Gaming Verto Epic X RGB Triple Fan",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4080 16GB XLR8 Gaming Verto Epic-X RGB Triple Fan",
+        "Power": 320,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133843"
+            }
+        ],
+        "ReleaseDate": "November 2022",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2565,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4080 SUPER",
+        "ClockRate": 2210,
+        "Code": "Geforce Rtx 4080 Super 16GB Verto overCLocked Triple Fan",
+        "Img": "",
+        "Length": 340,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4080 SUPER 16GB VERTO Overclocked Triple Fan",
+        "Power": 320,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1999.00",
+                "PriceLink": "https://www.amazon.com/dp/B0CS6XC69Y"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2595,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4080 SUPER",
+        "ClockRate": 2210,
+        "Code": "Geforce Rtx 4080 Super 16GB Xlr8 Gaming Verto Epic X RGB overCLocked",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4080 SUPER 16GB XLR8 Gaming VERTO EPIC-X RGB Overclocked",
+        "Power": 320,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133869"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2520,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4090",
+        "ClockRate": 2235,
+        "Code": "GeForce RTX 4090 24GB TF Verto Edition",
+        "Img": "",
+        "Length": 337,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4090 24GB TF Verto Edition",
+        "Power": 450,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "2995.00",
+                "PriceLink": "https://www.amazon.com/dp/B0BHBTJ2X2"
+            }
+        ],
+        "ReleaseDate": "October 2022",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2565,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4090",
+        "ClockRate": 2230,
+        "Code": "Geforce Rtx 4090 24GB Xlr8 Gaming Verto Epic X RGB Tf Oc",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4090 24GB XLR8 Gaming Verto EPIC-X RGB TF OC",
+        "Power": 450,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133842"
+            }
+        ],
+        "ReleaseDate": "October 2022",
+        "Series": "",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2520,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 4090",
+        "ClockRate": 2230,
+        "Code": "Geforce Rtx 4090 24GB Xlr8 Gaming Verto Epic X RGB Triple Fan",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6X",
+        "Name": "GeForce RTX 4090 24GB XLR8 Gaming VERTO EPIC-X RGB Triple Fan",
+        "Power": 450,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133841"
+            }
+        ],
+        "ReleaseDate": "October 2022",
+        "Series": "NVIDIA GeForce RTX 40 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2685,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2325,
+        "Code": "Geforce Rtx 5070 aRGB Epic X RGB overCLocked Triple Fan",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 ARGB EPIC-X RGB Overclocked Triple Fan",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133903"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2587,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2325,
+        "Code": "GeForce RTX 5070 Overclocked Triple Fan",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Overclocked Triple Fan",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "798.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DYPGBX6J"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2572,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5070 Ti",
+        "ClockRate": 2300,
+        "Code": "Geforce Rtx 5070 Ti 16GB overCLocked Triple Fan",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Ti 16GB Overclocked Triple Fan",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133900"
+            }
+        ],
+        "ReleaseDate": "February 2025",
+        "Series": "",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2640,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5070 Ti",
+        "ClockRate": 2300,
+        "Code": "Geforce Rtx 5070 Ti aRGB Epic X RGB overCLocked Triple Fan",
+        "Img": "",
+        "Length": 300,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Ti ARGB EPIC-X RGB Overclocked Triple Fan",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814133901"
+            }
+        ],
+        "ReleaseDate": "February 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2780,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5080",
+        "ClockRate": 2300,
+        "Code": "GeForce RTX 5080 ARGB Overclocked Triple Fan",
+        "Img": "",
+        "Length": 329,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5080 ARGB Overclocked Triple Fan",
+        "Power": 360,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1529.72",
+                "PriceLink": "https://www.amazon.com/dp/B0DTJDR3V9"
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2730,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5080",
+        "ClockRate": 2300,
+        "Code": "GeForce RTX 5080 Overclocked Triple Fan",
+        "Img": "",
+        "Length": 329,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5080 Overclocked Triple Fan",
+        "Power": 360,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1393.49",
+                "PriceLink": "https://www.amazon.com/dp/B0DTJFZ4YS"
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2625,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5090",
+        "ClockRate": 2010,
+        "Code": "Geforce Rtx 5090 aRGB Epic X RGB overCLocked Triple Fan",
+        "Img": "",
+        "Length": 329,
+        "Manufacturer": "",
+        "MemoryBus": "512-bit",
+        "MemorySize": 32,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5090 ARGB EPIC-X RGB Overclocked Triple Fan",
+        "Power": 600,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "4195.49",
+                "PriceLink": "https://www.amazon.com/dp/B0DTJFSSZG"
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2527,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5090",
+        "ClockRate": 2010,
+        "Code": "GeForce RTX 5090 Overclocked Triple Fan",
+        "Img": "",
+        "Length": 329,
+        "Manufacturer": "",
+        "MemoryBus": "512-bit",
+        "MemorySize": 32,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5090 Overclocked Triple Fan",
+        "Power": 600,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2620,
+        "Brand": "pny",
+        "Chipset": "GeForce RTX 5080",
+        "ClockRate": 2300,
+        "Code": "VCG508016TFXPB1",
+        "Img": "",
+        "Length": 329,
+        "Manufacturer": "",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "VCG508016TFXPB1",
+        "Power": 360,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "January 2025",
+        "Series": "",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2655,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7600",
+        "ClockRate": 1720,
+        "Code": "Fighter Radeon RX 7600",
+        "Img": "",
+        "Length": 212,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "Fighter Radeon RX 7600",
+        "Power": 165,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "338.81",
+                "PriceLink": "https://www.amazon.com/dp/B0C488N4BF"
+            }
+        ],
+        "ReleaseDate": "May 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2584,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7700 XT",
+        "ClockRate": 1700,
+        "Code": "Fighter Radeon RX 7700 XT",
+        "Img": "",
+        "Length": 290,
+        "Manufacturer": "AMD",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Fighter Radeon RX 7700 XT",
+        "Power": 245,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "601.00",
+                "PriceLink": "https://www.amazon.com/dp/B0CFP6F859"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2475,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Fighter Radeon RX 7800 XT",
+        "Img": "",
+        "Length": 290,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Fighter Radeon RX 7800 XT",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "696.74",
+                "PriceLink": "https://www.amazon.com/dp/B0CJGP4P4V"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2655,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7600",
+        "ClockRate": 1720,
+        "Code": "Hellhound Radeon RX 7600",
+        "Img": "",
+        "Length": 223,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "Hellhound Radeon RX 7600",
+        "Power": 165,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131815"
+            }
+        ],
+        "ReleaseDate": "May 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2599,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7700 XT",
+        "ClockRate": 1700,
+        "Code": "Hellhound Radeon RX 7700 XT",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "AMD",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Hellhound Radeon RX 7700 XT",
+        "Power": 245,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131823"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2520,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Hellhound Radeon RX 7800 XT",
+        "Img": "",
+        "Length": 322,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Hellhound Radeon RX 7800 XT",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "726.52",
+                "PriceLink": "https://www.amazon.com/dp/B0CFPJY54Q"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2520,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Hellhound Sakura Radeon 7800 XT",
+        "Img": "",
+        "Length": 322,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Hellhound Sakura Radeon 7800 XT",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131866"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA17PKDX3988"
+            }
+        ],
+        "ReleaseDate": "April 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2520,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Hellhound Spectral White Radeon Rx 7800 Xt",
+        "Img": "",
+        "Length": 322,
+        "Manufacturer": "",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Hellhound Spectral White Radeon RX 7800 XT",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131867"
+            }
+        ],
+        "ReleaseDate": "October 2023",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2755,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7600 XT",
+        "ClockRate": 1720,
+        "Code": "Radeon RX 7600 XT Fighter",
+        "Img": "",
+        "Length": 217,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7600 XT Fighter",
+        "Power": 190,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131862"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2500,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7900 XT",
+        "ClockRate": 2000,
+        "Code": "Radeon RX 7900 XT HellHound OC",
+        "Img": "",
+        "Length": 338,
+        "Manufacturer": "AMD",
+        "MemoryBus": "320-bit",
+        "MemorySize": 20,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7900 XT HellHound OC",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "924.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BMWHJ5Q7"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2535,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7900 XT",
+        "ClockRate": 2000,
+        "Code": "Radeon RX 7900 XT Red Devil OC",
+        "Img": "",
+        "Length": 348,
+        "Manufacturer": "AMD",
+        "MemoryBus": "320-bit",
+        "MemorySize": 20,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7900 XT Red Devil OC",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131809"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2525,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7900 XTX",
+        "ClockRate": 2300,
+        "Code": "Radeon RX 7900 XTX HellHound OC",
+        "Img": "",
+        "Length": 338,
+        "Manufacturer": "AMD",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7900 XTX HellHound OC",
+        "Power": 355,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131808"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2565,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7900 XTX",
+        "ClockRate": 2300,
+        "Code": "Radeon Rx 7900 Xtx Red Devil Limited Edition",
+        "Img": "",
+        "Length": 348,
+        "Manufacturer": "AMD",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7900 XTX Red Devil Limited Edition",
+        "Power": 355,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131806"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2590,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 2070,
+        "Code": "Radeon RX 9070 Hellhound",
+        "Img": "",
+        "Length": 327,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 Hellhound",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131873"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "699.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CWCTSC1M"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2520,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 2070,
+        "Code": "Radeon RX 9070 Reaper",
+        "Img": "",
+        "Length": 289,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 Reaper",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131874"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2700,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 2170,
+        "Code": "Radeon RX 9070 Red Devil",
+        "Img": "",
+        "Length": 340,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 Red Devil",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131872"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "893.58",
+                "PriceLink": "https://www.amazon.com/dp/B0DQF3G9R9"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3010,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 2400,
+        "Code": "Radeon RX 9070 XT Hellhound",
+        "Img": "",
+        "Length": 327,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 XT Hellhound",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131870"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "859.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CVVLV5TV"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2970,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 2400,
+        "Code": "Radeon RX 9070 XT Reaper",
+        "Img": "",
+        "Length": 289,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 XT Reaper",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131871"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2599,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7700 XT",
+        "ClockRate": 1700,
+        "Code": "Red Devil Radeon RX 7700 XT",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "AMD",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Red Devil Radeon RX 7700 XT",
+        "Power": 245,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131822"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2565,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Red Devil Radeon RX 7800 XT",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Red Devil Radeon RX 7800 XT",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131820"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2565,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Red Devil Radeon Rx 7800 Xt Limited Edition",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Red Devil Radeon RX 7800 XT Limited Edition",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131819"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3060,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 2460,
+        "Code": "Red Devil Radeon RX 9070 XT",
+        "Img": "",
+        "Length": 340,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Red Devil Radeon RX 9070 XT",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131869"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1199.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CWD7DNTB"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2400,
+        "Brand": "powercolor",
+        "Chipset": "Radeon RX 7900 XT",
+        "ClockRate": 2000,
+        "Code": "RX 7900 XT 20G",
+        "Img": "",
+        "Length": 290,
+        "Manufacturer": "AMD",
+        "MemoryBus": "320-bit",
+        "MemorySize": 20,
+        "MemoryType": "GDDR6",
+        "Name": "RX 7900 XT 20G",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814131813"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2615,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7900 XTX",
+        "ClockRate": 1855,
+        "Code": "Mercury Magnetic Air Radeon RX 7900 XTX",
+        "Img": "",
+        "Length": 346,
+        "Manufacturer": "AMD",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6",
+        "Name": "Mercury Magnetic Air Radeon RX 7900 XTX",
+        "Power": 355,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150893"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1538.00",
+                "PriceLink": "https://www.amazon.com/dp/B0D6NPDFGP"
+            }
+        ],
+        "ReleaseDate": "June 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3100,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1870,
+        "Code": "Mercury Radeon RX 9070 XT OC Gaming Edition",
+        "Img": "",
+        "Length": 360,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Mercury Radeon RX 9070 XT OC Gaming Edition",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150899"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3100,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1870,
+        "Code": "Mercury Radeon Rx 9070 Xt Oc Gaming Edition Rx 97tRGBbba",
+        "Img": "",
+        "Length": 360,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Mercury Radeon RX 9070 XT OC Gaming Edition RX-97TRGBBBA",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "999.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DW4G95GG"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3100,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1870,
+        "Code": "Mercury Radeon Rx 9070 Xt Oc Magnetic Air Edition",
+        "Img": "",
+        "Length": 360,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Mercury Radeon RX 9070 XT OC Magnetic Air Edition",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3100,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1870,
+        "Code": "Mercury Radeon Rx 9070 Xt Oc Magnetic Air Edition White",
+        "Img": "",
+        "Length": 360,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Mercury Radeon RX 9070 XT OC Magnetic Air Edition White",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3100,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1870,
+        "Code": "Mercury Radeon Rx 9070 Xt Oc White Gaming Edition",
+        "Img": "",
+        "Length": 360,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Mercury Radeon RX 9070 XT OC White Gaming Edition",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1106.45",
+                "PriceLink": "https://www.amazon.com/dp/B0DWPH5N38"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2430,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Quicksilver Magnetic Air Radeon RX 7800 XT",
+        "Img": "",
+        "Length": 337,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Quicksilver Magnetic Air Radeon RX 7800 XT",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "898.00",
+                "PriceLink": "https://www.amazon.com/dp/B0D6NNW6NS"
+            }
+        ],
+        "ReleaseDate": "June 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2430,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Quicksilver Magnetic Air Radeon Rx 7800 Xt White",
+        "Img": "",
+        "Length": 337,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Quicksilver Magnetic Air Radeon RX 7800 XT White",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "699.99",
+                "PriceLink": "https://www.amazon.com/dp/B0D6NLRMB9"
+            }
+        ],
+        "ReleaseDate": "June 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2700,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 1440,
+        "Code": "QuickSilver Radeon RX 9070 OC Gaming Edition",
+        "Img": "",
+        "Length": 355,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "QuickSilver Radeon RX 9070 OC Gaming Edition",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2700,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 1440,
+        "Code": "Quicksilver Radeon Rx 9070 Oc White Gaming Edition",
+        "Img": "",
+        "Length": 350,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "QuickSilver Radeon RX 9070 OC White Gaming Edition",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2970,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1870,
+        "Code": "Quicksilver Radeon RX 9070 XT Gaming Edition",
+        "Img": "",
+        "Length": 350,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Quicksilver Radeon RX 9070 XT Gaming Edition",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150902"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2970,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1660,
+        "Code": "Quicksilver Radeon Rx 9070 Xt White Gaming Edition",
+        "Img": "",
+        "Length": 350,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Quicksilver Radeon RX 9070 XT White Gaming Edition",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "999.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DX16XMDN"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2825,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6500 XT",
+        "ClockRate": 2310,
+        "Code": "Radeon Rx 6500xt Black Gaming Speedster Qick210",
+        "Img": "",
+        "Length": 232,
+        "Manufacturer": "",
+        "MemoryBus": "64-bit",
+        "MemorySize": 4,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 6500XT Black Gaming Speedster QICK210",
+        "Power": 107,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD2CHGB3198"
+            }
+        ],
+        "ReleaseDate": "January 2022",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2607,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6600 XT",
+        "ClockRate": 2188,
+        "Code": "Radeon RX 6600 XT Speedster MERC 308",
+        "Img": "",
+        "Length": 274,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 6600 XT Speedster MERC 308",
+        "Power": 160,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150860"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAYTVGGZ2256"
+            }
+        ],
+        "ReleaseDate": "August 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2615,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6700 XT",
+        "ClockRate": 2330,
+        "Code": "Radeon RX 6700 XT",
+        "Img": "",
+        "Length": 266,
+        "Manufacturer": "AMD",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 6700 XT",
+        "Power": 230,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAPMXEY52698"
+            }
+        ],
+        "ReleaseDate": "March 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2622,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6700 XT",
+        "ClockRate": 2321,
+        "Code": "Radeon RX 6700 XT Speedster MERC319 Black",
+        "Img": "",
+        "Length": 323,
+        "Manufacturer": "AMD",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 6700 XT Speedster MERC319 Black",
+        "Power": 230,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "998.97",
+                "PriceLink": "https://www.amazon.com/dp/B08YK97LKC"
+            }
+        ],
+        "ReleaseDate": "March 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2365,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6900 XT",
+        "ClockRate": 1950,
+        "Code": "Radeon Rx 6900 Xt Black Gaming Speedster Merc319",
+        "Img": "",
+        "Length": 340,
+        "Manufacturer": "",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 6900 XT Black Gaming Speedster MERC319",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
+            }
+        ],
+        "ReleaseDate": "August 2021",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2250,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6900 XT",
+        "ClockRate": 1825,
+        "Code": "Radeon RX 6900 XT CORE Speedster SWFT 319",
+        "Img": "",
+        "Length": 340,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 6900 XT CORE Speedster SWFT 319",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0HTX2054"
+            }
+        ],
+        "ReleaseDate": "August 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2395,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7900 GRE",
+        "ClockRate": 1270,
+        "Code": "Radeon RX 7900 GRE",
+        "Img": "",
+        "Length": 335,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7900 GRE",
+        "Power": 260,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150891"
+            }
+        ],
+        "ReleaseDate": "February 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2400,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7900 XT",
+        "ClockRate": 2000,
+        "Code": "Radeon RX 7900XT",
+        "Img": "",
+        "Length": 276,
+        "Manufacturer": "AMD",
+        "MemoryBus": "320-bit",
+        "MemorySize": 20,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7900XT",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150876"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2500,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7900 XTX",
+        "ClockRate": 2300,
+        "Code": "Radeon RX 7900XTX",
+        "Img": "",
+        "Length": 287,
+        "Manufacturer": "AMD",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 7900XTX",
+        "Power": 355,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150875"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 3100,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070 XT",
+        "ClockRate": 1870,
+        "Code": "Radeon RX 9070 XT Mercury Magnetic Air OC",
+        "Img": "",
+        "Length": 360,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Radeon RX 9070 XT Mercury Magnetic Air OC",
+        "Power": 304,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1239.90",
+                "PriceLink": "https://www.amazon.com/dp/B0DW4FGLCC"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2615,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7900 XTX",
+        "ClockRate": 1855,
+        "Code": "Speedster Merc310 Radeon Rx 7900 Xtx Black Gaming",
+        "Img": "",
+        "Length": 344,
+        "Manufacturer": "AMD",
+        "MemoryBus": "384-bit",
+        "MemorySize": 24,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster MERC310 Radeon RX 7900 XTX Black Gaming",
+        "Power": 355,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1099.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BNLSW23M"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150878"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2560,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7900 XT",
+        "ClockRate": 2000,
+        "Code": "Speedster MERC310 Radeon RX 7900XT",
+        "Img": "",
+        "Length": 344,
+        "Manufacturer": "AMD",
+        "MemoryBus": "320-bit",
+        "MemorySize": 20,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster MERC310 Radeon RX 7900XT",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150877"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1228.00",
+                "PriceLink": "https://www.amazon.com/dp/B0BNLSZDCX"
+            }
+        ],
+        "ReleaseDate": "December 2022",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2565,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Speedster MERC319 RX 7800 XT Black Edition",
+        "Img": "",
+        "Length": 326,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster MERC319 RX 7800 XT Black Edition",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150882"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2810,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7600 XT",
+        "ClockRate": 1720,
+        "Code": "SPEEDSTER QICK 309 Radeon RX 7600 XT",
+        "Img": "",
+        "Length": 302,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "SPEEDSTER QICK 309 Radeon RX 7600 XT",
+        "Power": 190,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150888"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2599,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7700 XT",
+        "ClockRate": 1700,
+        "Code": "Speedster Qick 319 Radeon Rx 7700 Xt Black Edition",
+        "Img": "",
+        "Length": 335,
+        "Manufacturer": "AMD",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster QICK 319 Radeon RX 7700 XT Black Edition",
+        "Power": 245,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150884"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "499.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CGMBYMY6"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2430,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Speedster Qick 319 Radeon Rx 7800 Xt Core Edition",
+        "Img": "",
+        "Length": 335,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster QICK 319 Radeon RX 7800 XT Core Edition",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150883"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "599.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CGM92TW8"
+            }
+        ],
+        "ReleaseDate": "September 2023",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2607,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6600 XT",
+        "ClockRate": 2188,
+        "Code": "Speedster Qick308 Radeon Rx 6600 Xt Black Gaming",
+        "Img": "",
+        "Length": 274,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster QICK308 Radeon RX 6600 XT Black Gaming",
+        "Power": 160,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "609.99",
+                "PriceLink": "https://www.amazon.com/dp/B09B46MZ3T"
+            }
+        ],
+        "ReleaseDate": "August 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2755,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7600",
+        "ClockRate": 1875,
+        "Code": "Speedster QICK308 Radeon RX 7600 Black Edition",
+        "Img": "",
+        "Length": 274,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster QICK308 Radeon RX 7600 Black Edition",
+        "Power": 165,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "395.77",
+                "PriceLink": "https://www.amazon.com/dp/B0C59PD6LD"
+            }
+        ],
+        "ReleaseDate": "May 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2581,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6700 XT",
+        "ClockRate": 2321,
+        "Code": "Speedster QICK319 AMD Radeon RX 6700 XT CORE",
+        "Img": "",
+        "Length": 323,
+        "Manufacturer": "",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster QICK319 AMD Radeon RX 6700 XT CORE",
+        "Power": 230,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1019.00",
+                "PriceLink": "https://www.amazon.com/dp/B08YKH7VMN"
+            }
+        ],
+        "ReleaseDate": "March 2021",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2190,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6800",
+        "ClockRate": 1850,
+        "Code": "Speedster QICK319 Radeon RX 6800 Black",
+        "Img": "",
+        "Length": 340,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster QICK319 Radeon RX 6800 Black",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1094.99",
+                "PriceLink": "https://www.amazon.com/dp/B08THKRCSR"
+            }
+        ],
+        "ReleaseDate": "February 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2491,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6600",
+        "ClockRate": 1626,
+        "Code": "Speedster SWFT 210 Radeon RX 6600 CORE",
+        "Img": "",
+        "Length": 241,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT 210 Radeon RX 6600 CORE",
+        "Power": 132,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "269.99",
+                "PriceLink": "https://www.amazon.com/dp/B09HHLX543"
+            }
+        ],
+        "ReleaseDate": "October 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2655,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7600",
+        "ClockRate": 1875,
+        "Code": "SPEEDSTER SWFT 210 Radeon RX 7600 Core Edition",
+        "Img": "",
+        "Length": 241,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "SPEEDSTER SWFT 210 Radeon RX 7600 Core Edition",
+        "Power": 165,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150879"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "351.99",
+                "PriceLink": "https://www.amazon.com/dp/B0C59RVD98"
+            }
+        ],
+        "ReleaseDate": "May 2023",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2430,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Speedster Swft 210 Radeon Rx 7800 Xt Core Edition",
+        "Img": "",
+        "Length": 283,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT 210 Radeon RX 7800 XT Core Edition",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150895"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "729.00",
+                "PriceLink": "https://www.amazon.com/dp/B0D9QKFT9T"
+            }
+        ],
+        "ReleaseDate": "August 2024",
+        "Series": "AMD Radeon RX 7000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2430,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7800 XT",
+        "ClockRate": 1295,
+        "Code": "Speedster Swft 210 Radeon Rx 7800 Xt Core Edition Rx 78tswftfa",
+        "Img": "",
+        "Length": 283,
+        "Manufacturer": "",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT 210 Radeon RX 7800 XT Core Edition RX-78TSWFTFA",
+        "Power": 263,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "768.87",
+                "PriceLink": "https://www.amazon.com/dp/B0DCPBWGPD"
+            }
+        ],
+        "ReleaseDate": "August 2024",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2589,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6600 XT",
+        "ClockRate": 2092,
+        "Code": "Speedster SWFT210 Radeon RX 6600 XT CORE",
+        "Img": "",
+        "Length": 241,
+        "Manufacturer": "AMD",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT210 Radeon RX 6600 XT CORE",
+        "Power": 160,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8X5J7M4721"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150861"
+            }
+        ],
+        "ReleaseDate": "August 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2755,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 7600 XT",
+        "ClockRate": 1720,
+        "Code": "Speedster SWFT210 Radeon RX 7600 XT CORE",
+        "Img": "",
+        "Length": 302,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT210 Radeon RX 7600 XT CORE",
+        "Power": 190,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "419.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CRZBXYVQ"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150889"
+            }
+        ],
+        "ReleaseDate": "January 2024",
+        "Series": "",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2581,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6700 XT",
+        "ClockRate": 2321,
+        "Code": "Speedster SWFT309 AMD Radeon RX 6700 XT CORE",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "AMD",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT309 AMD Radeon RX 6700 XT CORE",
+        "Power": 230,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150852"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD2CHJ22055"
+            }
+        ],
+        "ReleaseDate": "March 2021",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2425,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6700",
+        "ClockRate": 2132,
+        "Code": "Speedster SWFT309 Radeon RX 6700 Gaming",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "AMD",
+        "MemoryBus": "160-bit",
+        "MemorySize": 10,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT309 Radeon RX 6700 Gaming",
+        "Power": 175,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150874"
+            }
+        ],
+        "ReleaseDate": "May 2022",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2105,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 6800",
+        "ClockRate": 1700,
+        "Code": "Speedster SWFT319 Radeon RX 6800 Core",
+        "Img": "",
+        "Length": 340,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Speedster SWFT319 Radeon RX 6800 Core",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=27N-0002-00117"
+            }
+        ],
+        "ReleaseDate": "May 2022",
+        "Series": "AMD Radeon RX 6000 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2700,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 1440,
+        "Code": "Swift Radeon Rx 9070 Oc Triple Fan Gaming Edition",
+        "Img": "",
+        "Length": 325,
+        "Manufacturer": "AMD",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Swift Radeon RX 9070 OC Triple Fan Gaming Edition",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814150901"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "AMD Radeon RX 9000 Series",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2700,
+        "Brand": "xfx",
+        "Chipset": "Radeon RX 9070",
+        "ClockRate": 1440,
+        "Code": "Swift Radeon Rx 9070 Oc White Triple Fan Gaming Edition",
+        "Img": "",
+        "Length": 325,
+        "Manufacturer": "",
+        "MemoryBus": "",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "Name": "Swift Radeon RX 9070 OC White Triple Fan Gaming Edition",
+        "Power": 220,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "960.26",
+                "PriceLink": "https://www.amazon.com/dp/B0DWPHKWWD"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "",
+        "Slot": "4"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2632,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16GB AMP",
+        "Img": "",
+        "Length": 220,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16GB AMP",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500611"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2572,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16GB TWIN EDGE",
+        "Img": "",
+        "Length": 220,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16GB TWIN EDGE",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500610"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2602,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 16GB Twin Edge OC",
+        "Img": "",
+        "Length": 220,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 16GB Twin Edge OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500612"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2632,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8GB AMP",
+        "Img": "",
+        "Length": 220,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8GB AMP",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500614"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2572,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8GB TWIN EDGE",
+        "Img": "",
+        "Length": 220,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8GB TWIN EDGE",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500613"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2602,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5060 Ti",
+        "ClockRate": 2410,
+        "Code": "GeForce RTX 5060 Ti 8GB TWIN EDGE OC",
+        "Img": "",
+        "Length": 220,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "128-bit",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5060 Ti 8GB TWIN EDGE OC",
+        "Power": 180,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500609"
+            }
+        ],
+        "ReleaseDate": "April 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2512,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 SOLID",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 SOLID",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500602"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2542,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5070",
+        "ClockRate": 2160,
+        "Code": "GeForce RTX 5070 SOLID OC",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "192-bit",
+        "MemorySize": 12,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 SOLID OC",
+        "Power": 250,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500603"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "699.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DZF2QZSM"
+            }
+        ],
+        "ReleaseDate": "March 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2512,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5070 Ti",
+        "ClockRate": 2300,
+        "Code": "GeForce RTX 5070 Ti AMP Extreme INFINITY",
+        "Img": "",
+        "Length": 332,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Ti AMP Extreme INFINITY",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500599"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1369.69",
+                "PriceLink": "https://www.amazon.com/dp/B0DXWG32MB"
+            }
+        ],
+        "ReleaseDate": "February 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2452,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5070 Ti",
+        "ClockRate": 2300,
+        "Code": "GeForce RTX 5070 Ti SOLID",
+        "Img": "",
+        "Length": 330,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Ti SOLID",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500600"
+            }
+        ],
+        "ReleaseDate": "February 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2482,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5070 Ti",
+        "ClockRate": 2300,
+        "Code": "GeForce RTX 5070 Ti Solid OC",
+        "Img": "",
+        "Length": 330,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Ti Solid OC",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500601"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "1149.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DXWKQNCH"
+            }
+        ],
+        "ReleaseDate": "February 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "3"
+    },
+    {
+        "Benchmark": 0,
+        "BoostClock": 2482,
+        "Brand": "zotac",
+        "Chipset": "GeForce RTX 5070 Ti",
+        "ClockRate": 2300,
+        "Code": "GeForce RTX 5070 Ti SOLID SFF OC",
+        "Img": "",
+        "Length": 304,
+        "Manufacturer": "NVIDIA",
+        "MemoryBus": "256-bit",
+        "MemorySize": 16,
+        "MemoryType": "GDDR7",
+        "Name": "GeForce RTX 5070 Ti SOLID SFF OC",
+        "Power": 300,
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16814500607"
+            }
+        ],
+        "ReleaseDate": "February 2025",
+        "Series": "NVIDIA GeForce RTX 50 Series",
+        "Slot": "2"
     }
 ]

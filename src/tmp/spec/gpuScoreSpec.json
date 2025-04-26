@@ -6029,7 +6029,7 @@
             {
                 "ProductName": "Colorful Tomahawk RTX 4090 Deluxe Edition",
                 "BoostClock": 2565,
-                "Length": 304,
+                "Length": 312,
                 "Slots": "Triple-slot",
                 "TDP": 450
             },
@@ -6691,6 +6691,1017 @@
     },
     {
         "Manufacturer": "NVIDIA",
+        "Chipset": "RTX 5060 Ti",
+        "Generation": "GeForce 50",
+        "MemorySize": 8,
+        "MemoryType": "GDDR7",
+        "MemoryBus": "128 bit",
+        "ClockRate": 2407,
+        "BoostClock": 2572,
+        "Benchmark": 16065,
+        "Power": 180,
+        "Length": 241,
+        "Slot": "Dual-slot",
+        "Width": 111,
+        "ProductSpec": [
+            {
+                "ProductName": "ASUS DUAL RTX 5060 Ti",
+                "BoostClock": 2572,
+                "Length": 229,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS DUAL RTX 5060 Ti 16 GB",
+                "BoostClock": 2572,
+                "Length": 229,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS DUAL RTX 5060 Ti OC Edition",
+                "BoostClock": 2602,
+                "Length": 229,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS DUAL RTX 5060 Ti OC Edition 16  GB",
+                "BoostClock": 2602,
+                "Length": 229,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS PRIME RTX 5060 Ti",
+                "BoostClock": 2572,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS PRIME RTX 5060 Ti 16 GB",
+                "BoostClock": 2572,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS PRIME RTX 5060 Ti OC Edition",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS PRIME RTX 5060 Ti OC Edition 16  GB",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5060 Ti",
+                "BoostClock": 2572,
+                "Length": 302,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5060 Ti 16 GB",
+                "BoostClock": 2572,
+                "Length": 302,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5060 Ti OC Edition",
+                "BoostClock": 2662,
+                "Length": 302,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RTX 5060 Ti OC Edition 16  GB",
+                "BoostClock": 2662,
+                "Length": 302,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "AX Gaming Rebel RTX 5060 Ti X2W",
+                "BoostClock": 2572,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "AX Gaming Rebel RTX 5060 Ti X2W 16 GB",
+                "BoostClock": 2572,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "AX Gaming Rebel RTX 5060 Ti X2W OC",
+                "BoostClock": 2587,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "AX Gaming Rebel RTX 5060 Ti X2W OC 16 GB",
+                "BoostClock": 2587,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "AX Gaming Rebel RTX 5060 Ti X3W OC",
+                "BoostClock": 2602,
+                "Length": 316,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "AX Gaming Rebel RTX 5060 Ti X3W OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 316,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorfire RTX 5060 Ti Orange",
+                "BoostClock": 2572,
+                "Length": 301,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorfire RTX 5060 Ti Orange 16 GB",
+                "BoostClock": 2572,
+                "Length": 301,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5060 Ti Advanced OC",
+                "BoostClock": 2662,
+                "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5060 Ti Advanced OC 16 GB",
+                "BoostClock": 2662,
+                "Length": 300,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5060 Ti Ultra W DUO OC",
+                "BoostClock": 2632,
+                "Length": 231,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5060 Ti Ultra W DUO OC 16 GB",
+                "BoostClock": 2632,
+                "Length": 231,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5060 Ti Ultra W OC",
+                "BoostClock": 2632,
+                "Length": 301,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful iGame RTX 5060 Ti Ultra W OC 16 GB",
+                "BoostClock": 2632,
+                "Length": 301,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 5060 Ti Deluxe Edition",
+                "BoostClock": 2572,
+                "Length": 301,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 5060 Ti Deluxe Edition 16 GB",
+                "BoostClock": 2572,
+                "Length": 301,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Colorful Tomahawk RTX 5060 Ti DUO 16 GB",
+                "BoostClock": 2572,
+                "Length": 231,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Ghost",
+                "BoostClock": 2572,
+                "Length": 262,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Ghost OC",
+                "BoostClock": 2632,
+                "Length": 262,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Python III",
+                "BoostClock": 2572,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Python III 16 GB",
+                "BoostClock": 2572,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Python III OC",
+                "BoostClock": 2662,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Python III OC 16 GB",
+                "BoostClock": 2662,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Snow X2 OC",
+                "BoostClock": 2587,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Snow X2 OC 16 GB",
+                "BoostClock": 2587,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Snow X3 OC",
+                "BoostClock": 2617,
+                "Length": 315,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Snow X3 OC 16 GB",
+                "BoostClock": 2617,
+                "Length": 315,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Wind",
+                "BoostClock": 2572,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Wind 16 GB",
+                "BoostClock": 2572,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Wind OC",
+                "BoostClock": 2587,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Wind OC 16 GB",
+                "BoostClock": 2587,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Wind White OC",
+                "BoostClock": 2587,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Gainward RTX 5060 Ti Wind White OC 16 GB",
+                "BoostClock": 2587,
+                "Length": 234,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti 1-Click OC",
+                "BoostClock": 2587,
+                "Length": 235,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti 1-Click OC 16 GB",
+                "BoostClock": 2587,
+                "Length": 235,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti 1-Click OC White",
+                "BoostClock": 2587,
+                "Length": 235,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti EX",
+                "BoostClock": 2617,
+                "Length": 255,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti EX White",
+                "BoostClock": 2617,
+                "Length": 255,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti FIRE",
+                "BoostClock": 2572,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti FIRE MAX 16 GB",
+                "BoostClock": 2572,
+                "Length": 302,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Holy Blade",
+                "BoostClock": 2572,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Holy Blade MAX 16 GB",
+                "BoostClock": 2572,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Holy Blade MAX OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Holy Blade OC",
+                "BoostClock": 2602,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Magic Blade",
+                "BoostClock": 2572,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Magic Blade MAX 16 GB",
+                "BoostClock": 2572,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Magic Blade MAX OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GALAX RTX 5060 Ti Magic Blade OC",
+                "BoostClock": 2602,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RTX 5060 Ti ELITE 16 GB",
+                "BoostClock": 2722,
+                "Length": 329,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti AERO OC",
+                "BoostClock": 2647,
+                "Length": 281,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti AERO OC 16 GB",
+                "BoostClock": 2647,
+                "Length": 281,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti EAGLE OC",
+                "BoostClock": 2617,
+                "Length": 215,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti EAGLE OC 16 GB",
+                "BoostClock": 2617,
+                "Length": 215,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti EAGLE OC ICE",
+                "BoostClock": 2617,
+                "Length": 215,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti EAGLE OC ICE 16 GB",
+                "BoostClock": 2617,
+                "Length": 215,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti GAMING OC",
+                "BoostClock": 2647,
+                "Length": 281,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti GAMING OC 16 GB",
+                "BoostClock": 2647,
+                "Length": 281,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti WINDFORCE",
+                "BoostClock": 2572,
+                "Length": 208,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti WINDFORCE 16 GB",
+                "BoostClock": 2572,
+                "Length": 208,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti WINDFORCE OC",
+                "BoostClock": 2587,
+                "Length": 208,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5060 Ti WINDFORCE OC 16 GB",
+                "BoostClock": 2587,
+                "Length": 208,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti TWIN X2",
+                "BoostClock": 2572,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti TWIN X2 16 GB",
+                "BoostClock": 2572,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti TWIN X2 OC",
+                "BoostClock": 2602,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti TWIN X2 OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti TWIN X2 OC WHITE",
+                "BoostClock": 2602,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti TWIN X2 OC WHITE 16 GB",
+                "BoostClock": 2602,
+                "Length": 250,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti X3 OC",
+                "BoostClock": 2602,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Inno3D RTX 5060 Ti X3 OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "KFA2 RTX 5060 Ti EX",
+                "BoostClock": 2617,
+                "Length": 255,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Manli Nebula RTX 5060 Ti",
+                "BoostClock": 2572,
+                "Length": 239,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Manli Nebula RTX 5060 Ti 16 GB",
+                "BoostClock": 2572,
+                "Length": 239,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Manli Polar RTX 5060 Ti OC",
+                "BoostClock": 2602,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Manli Polar RTX 5060 Ti OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 240,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Manli Stellar RTX 5060 Ti OC",
+                "BoostClock": 2632,
+                "Length": 315,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Manli Stellar RTX 5060 Ti OC 16 GB",
+                "BoostClock": 2632,
+                "Length": 315,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MAXSUN RTX 5060 Ti Turbo T0 16 GB",
+                "BoostClock": 2572,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING",
+                "BoostClock": 2572,
+                "Length": 247,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING 16 GB",
+                "BoostClock": 2572,
+                "Length": 247,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING OC",
+                "BoostClock": 2647,
+                "Length": 247,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING OC 16 GB",
+                "BoostClock": 2647,
+                "Length": 247,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO",
+                "BoostClock": 2572,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO 16 GB",
+                "BoostClock": 2572,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO OC",
+                "BoostClock": 2647,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO OC 16 GB",
+                "BoostClock": 2647,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO OC WHITE",
+                "BoostClock": 2647,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO OC WHITE 16 GB",
+                "BoostClock": 2647,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO WHITE",
+                "BoostClock": 2572,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti GAMING TRIO WHITE 16 GB",
+                "BoostClock": 2572,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti INSPIRE 2X",
+                "BoostClock": 2572,
+                "Length": 204,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti INSPIRE 2X 16 GB",
+                "BoostClock": 2572,
+                "Length": 204,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti INSPIRE 2X OC",
+                "BoostClock": 2617,
+                "Length": 204,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti INSPIRE 2X OC 16 GB",
+                "BoostClock": 2617,
+                "Length": 204,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VANGUARD OC 16 GB",
+                "BoostClock": 2647,
+                "Length": 337,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VANGUARD SOC 16 GB",
+                "BoostClock": 2692,
+                "Length": 337,
+                "Slots": "Triple-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 2X OC PLUS",
+                "BoostClock": 2602,
+                "Length": 227,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 2X OC PLUS 16 GB",
+                "BoostClock": 2602,
+                "Length": 227,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 2X PLUS",
+                "BoostClock": 2572,
+                "Length": 227,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 2X PLUS 16 GB",
+                "BoostClock": 2572,
+                "Length": 227,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 3X",
+                "BoostClock": 2572,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 3X 16 GB",
+                "BoostClock": 2572,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 3X OC",
+                "BoostClock": 2602,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "MSI RTX 5060 Ti VENTUS 3X OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 306,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Palit RTX 5060 Ti Dual",
+                "BoostClock": 2572,
+                "Length": 262,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Palit RTX 5060 Ti Dual OC",
+                "BoostClock": 2632,
+                "Length": 262,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Palit RTX 5060 Ti Infinity 3",
+                "BoostClock": 2572,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Palit RTX 5060 Ti Infinity 3 16  GB",
+                "BoostClock": 2572,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Palit RTX 5060 Ti Infinity 3 OC",
+                "BoostClock": 2662,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "Palit RTX 5060 Ti Infinity 3 OC 16  GB",
+                "BoostClock": 2662,
+                "Length": 292,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti",
+                "BoostClock": 2572,
+                "Length": 245,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti 16 GB",
+                "BoostClock": 2572,
+                "Length": 245,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti EPIC-X RGB",
+                "BoostClock": 2572,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti EPIC-X RGB 16 GB",
+                "BoostClock": 2572,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti EPIC-X RGB OC",
+                "BoostClock": 2692,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti EPIC-X RGB OC 16 GB",
+                "BoostClock": 2692,
+                "Length": 300,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti OC",
+                "BoostClock": 2692,
+                "Length": 245,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "PNY RTX 5060 Ti OC 16 GB",
+                "BoostClock": 2692,
+                "Length": 245,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti AMP",
+                "BoostClock": 2632,
+                "Length": 221,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti AMP 16 GB",
+                "BoostClock": 2632,
+                "Length": 221,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Moonlight White OC",
+                "BoostClock": 2602,
+                "Length": 293,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Moonshadow OC",
+                "BoostClock": 2602,
+                "Length": 293,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Starry Night OC",
+                "BoostClock": 2587,
+                "Length": 238,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Starry Sky OC",
+                "BoostClock": 2587,
+                "Length": 238,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Twin Edge",
+                "BoostClock": 2572,
+                "Length": 221,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Twin Edge 16 GB",
+                "BoostClock": 2572,
+                "Length": 221,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Twin Edge OC",
+                "BoostClock": 2602,
+                "Length": 221,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti Twin Edge OC 16 GB",
+                "BoostClock": 2602,
+                "Length": 221,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti XGAMING 16 GB",
+                "BoostClock": 2572,
+                "Length": 320,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti XGAMING OC",
+                "BoostClock": 2632,
+                "Length": 320,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            },
+            {
+                "ProductName": "ZOTAC RTX 5060 Ti XGAMING OC 16 GB",
+                "BoostClock": 2632,
+                "Length": 320,
+                "Slots": "Dual-slot",
+                "TDP": 180
+            }
+        ]
+    },
+    {
+        "Manufacturer": "NVIDIA",
         "Chipset": "RTX 5070",
         "Generation": "GeForce 50",
         "MemorySize": 12,
@@ -6730,6 +7741,20 @@
                 "BoostClock": 2610,
                 "Length": 329,
                 "Slots": "Triple-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS TX RTX 5070",
+                "BoostClock": 2512,
+                "Length": 305,
+                "Slots": "Dual-slot",
+                "TDP": 250
+            },
+            {
+                "ProductName": "ASUS TX RTX 5070 OC",
+                "BoostClock": 2557,
+                "Length": 305,
+                "Slots": "Dual-slot",
                 "TDP": 250
             },
             {
@@ -7541,6 +8566,13 @@
                 "TDP": 300
             },
             {
+                "ProductName": "GIGABYTE RTX 5070 Ti WINDFORCE SFF",
+                "BoostClock": 2452,
+                "Length": 304,
+                "Slots": "Dual-slot",
+                "TDP": 300
+            },
+            {
                 "ProductName": "Inno3D RTX 5070 Ti iCHILL X3",
                 "BoostClock": 2512,
                 "Length": 334,
@@ -7930,9 +8962,16 @@
             },
             {
                 "ProductName": "Colorful iGame RTX 5080 Vulcan OC",
-                "BoostClock": 2695,
+                "BoostClock": 2685,
                 "Length": 360,
                 "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "Dell RTX 5080",
+                "BoostClock": 2617,
+                "Length": 304,
+                "Slots": "Dual-slot",
                 "TDP": 360
             },
             {
@@ -8632,6 +9671,13 @@
                 "TDP": 575
             },
             {
+                "ProductName": "Inno3D RTX 5090 X3 OC",
+                "BoostClock": 2452,
+                "Length": 333,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
                 "ProductName": "Inno3D RTX 5090 X3 OC WHITE",
                 "BoostClock": 2407,
                 "Length": 333,
@@ -8745,7 +9791,7 @@
             },
             {
                 "ProductName": "PNY RTX 5090 ARGB EPIC-X Overclocked Triple Fan",
-                "BoostClock": 2407,
+                "BoostClock": 2625,
                 "Length": 329,
                 "Slots": "Triple-slot",
                 "TDP": 575
@@ -8759,7 +9805,7 @@
             },
             {
                 "ProductName": "PNY RTX 5090 Overclocked Triple Fan",
-                "BoostClock": 2625,
+                "BoostClock": 2527,
                 "Length": 329,
                 "Slots": "Triple-slot",
                 "TDP": 575
@@ -8902,7 +9948,7 @@
             },
             {
                 "ProductName": "Gainward RTX 5090 D Snow",
-                "BoostClock": 2437,
+                "BoostClock": 2407,
                 "Length": 339,
                 "Slots": "Triple-slot",
                 "TDP": 575
@@ -8929,6 +9975,20 @@
                 "TDP": 575
             },
             {
+                "ProductName": "GALAX RTX 5090 D Stellar LUNA",
+                "BoostClock": 2407,
+                "Length": 335,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GALAX RTX 5090 D Stellar LUNA OC",
+                "BoostClock": 2452,
+                "Length": 335,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
                 "ProductName": "GIGABYTE AORUS RTX 5090 D MASTER",
                 "BoostClock": 2655,
                 "Length": 360,
@@ -8940,6 +10000,13 @@
                 "BoostClock": 2655,
                 "Length": 360,
                 "Slots": "Quad-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "GIGABYTE RTX 5090 D WINDFORCE OC",
+                "BoostClock": 2467,
+                "Length": 342,
+                "Slots": "Triple-slot",
                 "TDP": 575
             },
             {
@@ -8981,6 +10048,13 @@
                 "ProductName": "Manli RTX 5090 D Stellar OC",
                 "BoostClock": 2437,
                 "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 575
+            },
+            {
+                "ProductName": "MSI RTX 5090 D GAMING TRIO OC",
+                "BoostClock": 2482,
+                "Length": 359,
                 "Slots": "Triple-slot",
                 "TDP": 575
             },
@@ -12080,6 +13154,446 @@
                 "Length": 330,
                 "Slots": "Triple-slot",
                 "TDP": 355
+            }
+        ]
+    },
+    {
+        "Manufacturer": "AMD",
+        "Chipset": "RX 9070",
+        "Generation": "RX 9000",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "256 bit",
+        "ClockRate": 1330,
+        "BoostClock": 2520,
+        "Benchmark": 26876,
+        "Power": 220,
+        "Length": 0,
+        "Slot": "Dual-slot",
+        "Width": 0,
+        "ProductSpec": [
+            {
+                "ProductName": "Acer Nitro RX 9070",
+                "BoostClock": 2520,
+                "Length": 0,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Acer Nitro RX 9070 OC",
+                "BoostClock": 2700,
+                "Length": 0,
+                "Slots": "Dual-slot",
+                "TDP": 245
+            },
+            {
+                "ProductName": "ASRock RX 9070 Challenger",
+                "BoostClock": 2520,
+                "Length": 290,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "ASRock RX 9070 Steel Legend OC",
+                "BoostClock": 2700,
+                "Length": 298,
+                "Slots": "Triple-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "ASUS PRIME RX 9070 OC",
+                "BoostClock": 2590,
+                "Length": 312,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RX 9070 OC",
+                "BoostClock": 2650,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 240
+            },
+            {
+                "ProductName": "GIGABYTE RX 9070 GAMING OC",
+                "BoostClock": 2700,
+                "Length": 288,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU RX 9070",
+                "BoostClock": 2520,
+                "Length": 289,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "PowerColor Hellhound RX 9070",
+                "BoostClock": 2590,
+                "Length": 327,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "PowerColor Reaper RX 9070",
+                "BoostClock": 2520,
+                "Length": 289,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 9070",
+                "BoostClock": 2700,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Sapphire METAL Alloy Pulse RX 9070",
+                "BoostClock": 2520,
+                "Length": 280,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 9070",
+                "BoostClock": 2700,
+                "Length": 331,
+                "Slots": "Triple-slot",
+                "TDP": 245
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 9070",
+                "BoostClock": 2520,
+                "Length": 280,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Sapphire PURE RX 9070",
+                "BoostClock": 2700,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 245
+            },
+            {
+                "ProductName": "VASTARMOR RX 9070 Super Alloy",
+                "BoostClock": 2700,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "VASTARMOR RX 9070 Super Alloy White",
+                "BoostClock": 2700,
+                "Length": 282,
+                "Slots": "Dual-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "XFX QuickSilver RX 9070 OC Gaming Edition",
+                "BoostClock": 2700,
+                "Length": 355,
+                "Slots": "Quad-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "XFX QuickSilver RX 9070 OC White Gaming Edition",
+                "BoostClock": 2700,
+                "Length": 355,
+                "Slots": "Quad-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "XFX Swift RX 9070 OC Triple Fan Edition",
+                "BoostClock": 2700,
+                "Length": 350,
+                "Slots": "Triple-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "XFX Swift RX 9070 OC White Triple Fan Edition",
+                "BoostClock": 2700,
+                "Length": 350,
+                "Slots": "Triple-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Yeston RX 9070 Sakura Atlantis",
+                "BoostClock": 2520,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 220
+            },
+            {
+                "ProductName": "Yeston RX 9070 Sakura Atlantis OC",
+                "BoostClock": 2700,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 220
+            }
+        ]
+    },
+    {
+        "Manufacturer": "AMD",
+        "Chipset": "RX 9070 XT",
+        "Generation": "RX 9000",
+        "MemorySize": 16,
+        "MemoryType": "GDDR6",
+        "MemoryBus": "256 bit",
+        "ClockRate": 1660,
+        "BoostClock": 2970,
+        "Benchmark": 30445,
+        "Power": 304,
+        "Length": 0,
+        "Slot": "Dual-slot",
+        "Width": 0,
+        "ProductSpec": [
+            {
+                "ProductName": "Acer Nitro RX 9070 XT",
+                "BoostClock": 2970,
+                "Length": 0,
+                "Slots": "Dual-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "Acer Nitro RX 9070 XT OC",
+                "BoostClock": 3100,
+                "Length": 0,
+                "Slots": "Dual-slot",
+                "TDP": 340
+            },
+            {
+                "ProductName": "ASRock RX 9070 XT Steel Legend",
+                "BoostClock": 2970,
+                "Length": 298,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "ASRock RX 9070 XT Steel Legend Dark",
+                "BoostClock": 2970,
+                "Length": 298,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "ASRock RX 9070 XT Taichi OC",
+                "BoostClock": 3100,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "ASUS PRIME RX 9070 XT OC",
+                "BoostClock": 3010,
+                "Length": 312,
+                "Slots": "Dual-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "ASUS TUF Gaming RX 9070 XT OC",
+                "BoostClock": 3060,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "GIGABYTE AORUS RX 9070 XT ELITE",
+                "BoostClock": 3100,
+                "Length": 339,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "GIGABYTE RX 9070 XT GAMING OC",
+                "BoostClock": 3060,
+                "Length": 288,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "KUROUTOSHIKOU RX 9070 XT",
+                "BoostClock": 2970,
+                "Length": 289,
+                "Slots": "Dual-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "PowerColor Hellhound RX 9070 XT",
+                "BoostClock": 3010,
+                "Length": 327,
+                "Slots": "Dual-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "PowerColor Hellhound Special White RX 9070 XT",
+                "BoostClock": 3010,
+                "Length": 327,
+                "Slots": "Dual-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "PowerColor Reaper RX 9070 XT",
+                "BoostClock": 2970,
+                "Length": 289,
+                "Slots": "Dual-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 9070 XT",
+                "BoostClock": 3060,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "PowerColor Red Devil RX 9070 XT Limited Edition",
+                "BoostClock": 3060,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "PowerColor Red Devil Special White RX 9070 XT",
+                "BoostClock": 3060,
+                "Length": 340,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "Sapphire METAL Alloy Pulse RX 9070 XT",
+                "BoostClock": 2970,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "Sapphire NITRO+ RX 9070 XT",
+                "BoostClock": 3060,
+                "Length": 331,
+                "Slots": "Triple-slot",
+                "TDP": 330
+            },
+            {
+                "ProductName": "Sapphire PULSE RX 9070 XT",
+                "BoostClock": 2970,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "Sapphire PURE RX 9070 XT",
+                "BoostClock": 3010,
+                "Length": 320,
+                "Slots": "Triple-slot",
+                "TDP": 317
+            },
+            {
+                "ProductName": "VASTARMOR RX 9070 XT Super Alloy",
+                "BoostClock": 3100,
+                "Length": 327,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "VASTARMOR RX 9070 XT Super Alloy White",
+                "BoostClock": 3100,
+                "Length": 327,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Mercury RX 9070 XT Gaming Edition",
+                "BoostClock": 2970,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Mercury RX 9070 XT OC Gaming Edition",
+                "BoostClock": 3100,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Mercury RX 9070 XT OC Magnetic Air Edition",
+                "BoostClock": 3100,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 360
+            },
+            {
+                "ProductName": "XFX Mercury RX 9070 XT OC White Gaming Edition",
+                "BoostClock": 3100,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Mercury RX 9070 XT OC White Magnetic Air Edition",
+                "BoostClock": 3100,
+                "Length": 360,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Quicksilver RX 9070 XT Gaming Edition",
+                "BoostClock": 2970,
+                "Length": 350,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Quicksilver RX 9070 XT Magnetic Air Edition",
+                "BoostClock": 2970,
+                "Length": 350,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Quicksilver RX 9070 XT White Gaming Edition",
+                "BoostClock": 2970,
+                "Length": 350,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Quicksilver RX 9070 XT White Magnetic Air Edition",
+                "BoostClock": 2970,
+                "Length": 350,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Swift RX 9070 XT Triple Fan Edition",
+                "BoostClock": 2970,
+                "Length": 325,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "XFX Swift RX 9070 XT White Triple Fan Edition",
+                "BoostClock": 2970,
+                "Length": 325,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "Yeston RX 9070 XT Sakura Atlantis OC",
+                "BoostClock": 3060,
+                "Length": 330,
+                "Slots": "Triple-slot",
+                "TDP": 304
+            },
+            {
+                "ProductName": "Yeston RX 9070 XT Sakura Hanayome OC",
+                "BoostClock": 3060,
+                "Length": 326,
+                "Slots": "Triple-slot",
+                "TDP": 304
             }
         ]
     }

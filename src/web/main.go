@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"encoding/csv"
 	"fmt"
+	"log"
 	"net/http"
 	"os"
 	"regexp"
@@ -14,6 +15,11 @@ import (
 
 	"github.com/gocolly/colly/v2"
 	"github.com/imroc/req/v3"
+)
+
+var (
+	gpuNames          []string
+	processedGpuNames []string
 )
 
 type CSVData struct {
@@ -53,11 +59,11 @@ func createTempCSV(data []CSVData) {
 			return
 		}
 	}
-
 	fmt.Println("Data successfully written to output.csv")
 }
 
 func main() {
+	initGPUNames()
 	// 打開文件
 	file, err := os.Open("res/webLink.txt")
 	if err != nil {
@@ -79,10 +85,10 @@ func main() {
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
 	}
-	getDatgaLogic(lines)
+	getDataLogic(lines)
 }
 
-func getDatgaLogic(data []string) {
+func getDataLogic(data []string) {
 	timeSet := 5000
 	extraTry := 50
 	maxRetryTime := 3
@@ -200,29 +206,36 @@ func collectorErrorHandle(collector *colly.Collector, link string) {
 	})
 }
 
-// 關鍵詞檢測優化 (正則表達式版)
 func hasForbiddenKeywords(name string, link string) bool {
+	processedName := strings.ToLower(name)
+	processedName = strings.ReplaceAll(processedName, " ", "")
+
 	if strings.Contains(link, "motherboard") {
-		excludeKeywords := []string{"Z590", "H510", "B560", "H110", "H410"}
-		lowerName := strings.ToLower(name)
+		excludeKeywords := []string{"z590", "h510", "b560", "h110", "h410"}
 		for _, kw := range excludeKeywords {
-			if strings.Contains(lowerName, strings.ToLower(kw)) {
+			if strings.Contains(processedName, kw) {
 				return true
 			}
 		}
 	}
 	if strings.Contains(link, "vga") {
-		excludeKeywords := []string{"3050", "3060", "3070", "3080", "3090", "1660", "1650", "1050"}
-		lowerName := strings.ToLower(name)
-		for _, kw := range excludeKeywords {
-			if strings.Contains(lowerName, strings.ToLower(kw)) {
-				return true
+		// 空列表时不过滤
+		if len(processedGpuNames) == 0 {
+			return false
+		}
+
+		// 检查是否包含任一允许的名称
+		for _, allowed := range processedGpuNames {
+			if strings.Contains(processedName, allowed) {
+				return false // 包含允许名称 -> 保留
 			}
 		}
+		return true // 未包含任何允许名称 -> 过滤
 	}
 	return false
 }
 
+// 關鍵詞檢測優化 (正則表達式版)
 func transformString(input string) string {
 	// 正則表達式來匹配 2x16gb, 4 x 16gb, 2x 32gb 等格式
 	re := regexp.MustCompile(`(\d+)\s*[xX]\s*(\d+[gG][bB])`)
@@ -275,4 +288,47 @@ func replaceHyphensAndCapitalize(partType string, s string) string {
 	}
 	// Join the words back into a single string
 	return strings.Join(words, " ")
+}
+
+/* Support Function of CSV */
+// 初始化时预加载（在 main 或其他初始化函数中调用）
+func initGPUNames() {
+	gpuNames = GetGPUNames("../res/gpuscoredata.csv") // 请替换实际路径
+
+	// 预处理：转为小写 + 移除空格
+	processedGpuNames = make([]string, len(gpuNames))
+	for i, name := range gpuNames {
+		processed := strings.ToLower(name)
+		processed = strings.ReplaceAll(processed, " ", "")
+		processedGpuNames[i] = processed
+	}
+}
+
+func GetGPUNames(filePath string) []string {
+	f, err := os.Open(filePath)
+	if err != nil {
+		log.Fatal("Unable to read input file "+filePath, err)
+	}
+	defer f.Close()
+
+	csvReader := csv.NewReader(f)
+
+	// 读取所有CSV记录
+	records, err := csvReader.ReadAll()
+	if err != nil {
+		return nil
+	}
+
+	var names []string
+
+	// 跳过标题行（第一个元素），遍历剩余记录
+	for i, record := range records {
+		if i == 0 { // 跳过标题行
+			continue
+		}
+		if len(record) > 0 {
+			names = append(names, record[0]) // 添加name字段
+		}
+	}
+	return names
 }

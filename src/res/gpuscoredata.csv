@@ -10,6 +10,7 @@ RTX 4080,28273,https://www.techpowerup.com/gpu-specs/geforce-rtx-4080.c3888
 RTX 4080 SUPER,28381,https://www.techpowerup.com/gpu-specs/geforce-rtx-4080-super.c4182
 RTX 4090,36517,https://www.techpowerup.com/gpu-specs/geforce-rtx-4090.c3889
 RTX 4090 D,34292,https://www.techpowerup.com/gpu-specs/geforce-rtx-4090-d.c4189
+RTX 5060 Ti,16065,https://www.techpowerup.com/gpu-specs/geforce-rtx-5060-ti.c4246
 RTX 5070,22544,https://www.techpowerup.com/gpu-specs/geforce-rtx-5070.c4218
 RTX 5070 Ti,27668,https://www.techpowerup.com/gpu-specs/geforce-rtx-5070-ti.c4243
 RTX 5080,33116,https://www.techpowerup.com/gpu-specs/geforce-rtx-5080.c4217
@@ -30,3 +31,5 @@ RX 7800 XT,20026,https://www.techpowerup.com/gpu-specs/radeon-rx-7800-xt.c3839
 RX 7900 GRE,22323,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-gre.c4166
 RX 7900 XT,26853,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xt.c3912
 RX 7900 XTX,30578,https://www.techpowerup.com/gpu-specs/radeon-rx-7900-xtx.c3941
+RX 9070,26876,https://www.techpowerup.com/gpu-specs/radeon-rx-9070.c4250
+RX 9070 XT,30445,https://www.techpowerup.com/gpu-specs/radeon-rx-9070-xt.c4229
