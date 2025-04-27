@@ -2,6 +2,7 @@ package pcData
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly/v2"
@@ -124,6 +125,11 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		}
 	}
 
+	channelNum := newSpec.Channel
+	if channelNum == 0 {
+		channelNum = getRAMChannel(spec.Name)
+	}
+
 	return RamType{
 		Id:           SetProductId(spec.Brand, spec.Code),
 		Brand:        spec.Brand,
@@ -137,7 +143,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		Timing:       newSpec.Timing,
 		Latency:      newSpec.Latency,
 		Voltage:      newSpec.Voltage,
-		Channel:      newSpec.Channel,
+		Channel:      channelNum,
 		LED:          newSpec.LED,
 		HeatSpreader: newSpec.HeatSpreader,
 		Profile:      RamProfileLogic(newSpec),
@@ -178,8 +184,9 @@ func getRamSpecData(link string, collector *colly.Collector) RamSpec {
 			case "Size":
 				sizeList := strings.Split(item.ChildTexts("td")[1], " ")
 				specData.Capacity = extractNumberFromString(sizeList[0])
+				specData.Channel = getRAMChannel(item.ChildTexts("td")[1])
 			case "Voltage":
-				specData.Voltage = item.ChildTexts("td")[1]
+				specData.Voltage = normalizeVoltage(item.ChildTexts("td")[1])
 			case "LED Color":
 				specData.LED = item.ChildTexts("td")[1]
 			case "Heat Spreader":
@@ -218,26 +225,7 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 				specData.Model = item.ChildText("td")
 			case "Capacity":
 				specData.Capacity = extractNumberFromString(item.ChildText("td"))
-				ramNum := 1
-				if strings.Contains(item.ChildText("td"), "(") {
-					sizeList := strings.Split(item.ChildText("td"), "(")
-					specData.Capacity = extractNumberFromString(sizeList[0])
-					testStr := sizeList[1]
-
-					if strings.Contains(testStr, "x") {
-						secList := strings.Split(testStr, "x")
-						ramNum = extractNumberFromString(secList[0])
-						specData.Channel = ramNum
-					}
-				}
-				if strings.Contains(strings.ToLower(item.ChildText("td")), "dual") {
-					specData.Channel = 2
-				} else if strings.Contains(strings.ToLower(item.ChildText("td")), "quad") {
-					specData.Channel = 4
-				} else {
-					specData.Channel = 1
-				}
-
+				specData.Channel = getRAMChannel(item.ChildText("td"))
 			case "Speed":
 				tempStr := strings.ReplaceAll(item.ChildText("td"), "-", " ")
 				strList := strings.Split(tempStr, " ")
@@ -254,7 +242,7 @@ func getRamUSPrice(link string, collector *colly.Collector) RamSpec {
 			case "Timing":
 				specData.Timing = item.ChildText("td")
 			case "Voltage":
-				specData.Voltage = item.ChildText("td")
+				specData.Voltage = normalizeVoltage(item.ChildText("td"))
 			case "BIOS/Performance Profile":
 				specData.Profile = item.ChildText("td")
 			case "Heat Spreader":
@@ -331,17 +319,29 @@ func getRamSpecDataFromZol(link string, collector *colly.Collector) RamSpec {
 	return specData
 }
 
-func handleRamSeries(spec RamSpec) string {
-	if spec.Series == "" {
-		if strings.EqualFold(spec.Brand, "kingbank") {
-			nameList := strings.Split(spec.Name, " ")
-			if len(nameList) > 0 {
-				fmt.Println(nameList[0])
-				return nameList[0]
+func getRAMChannel(text string) int {
+	// 處理括號內 x 數字格式
+	if strings.Contains(text, "(") {
+		parts := strings.SplitN(text, "(", 2) // 只分割一次
+		testStr := parts[1]
+
+		if strings.Contains(testStr, "x") {
+			xParts := strings.SplitN(testStr, "x", 2)
+			if ramNum := extractNumberFromString(xParts[0]); ramNum > 0 {
+				return ramNum
 			}
 		}
 	}
-	return spec.Series
+
+	// 處理關鍵字判斷
+	switch {
+	case strings.Contains(strings.ToLower(text), "dual"):
+		return 2
+	case strings.Contains(strings.ToLower(text), "quad"):
+		return 4
+	default:
+		return 1
+	}
 }
 
 func RamProfileLogic(ram RamSpec) string {
@@ -390,4 +390,33 @@ func RamProfileLogic(ram RamSpec) string {
 		}
 	}
 	return res
+}
+
+func normalizeVoltage(voltageStr string) string {
+	// 移除所有空格並轉大寫
+	s := strings.ToUpper(strings.ReplaceAll(voltageStr, " ", ""))
+
+	// 直接切割數字部分
+	numStr := ""
+	for _, c := range s {
+		if c == '.' || (c >= '0' && c <= '9') {
+			numStr += string(c)
+		} else if c == 'V' {
+			break // 遇到 V 就停止
+		}
+	}
+
+	// 轉換為浮點數
+	value, err := strconv.ParseFloat(numStr, 64)
+	if err != nil {
+		return ""
+	}
+
+	// 智能格式化輸出
+	result := strconv.FormatFloat(value, 'f', -1, 64)
+	if strings.Contains(result, ".") {
+		result = strings.TrimRight(result, "0") // 移除尾部多餘的零
+		result = strings.TrimRight(result, ".") // 移除最後剩下的小數點
+	}
+	return result + "V"
 }
