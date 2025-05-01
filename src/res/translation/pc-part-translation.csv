@@ -3,18 +3,30 @@ add-to-comparison,Add To Comparison,添加比较,添加比較
 aio,AIO,一体式水冷,一體式水冷
 air-cooler,Air CPU Cooler,风冷,風冷
 airflow,Airflow,风量,風量
-amd,AMD,AMD,AMD
-asus,ASUS,华硕,華碩
 benchmark,Benchmark,天梯榜,天梯榜
 brand,Brand,品牌,品牌
+brand-amd,AMD,AMD,AMD
+brand-asus,ASUS,华硕,華碩
+brand-colorful,Colorful,七彩虹,七彩虹
+brand-corsair,Corsair,海盜船,海盜船
+brand-gskill,G.SKILL,芝奇,芝奇
+brand-intel,Intel,英特尔,英特爾
+brand-kingston,Kingston,金士顿,金士頓
+brand-lian-li,LIAN LI,联力,聯力
+brand-msi,MSI,微星,微星
+brand-nvidia,NVIDIA,英伟达,英偉達
+brand-nzxt,NZXT,NZXT,NZXT
+brand-samsung,SAMSUNG,三星,三星
+brand-sapphire,SAPPHIRE,蓝宝石,藍寶石
+brand-seasonic,Seasonic,海韵,海韻
+brand-western-digital,Western Digital,西部数据,西部數據
 capacity,Capacity,容量,容量
 chipset,Chipset,芯片组,晶片組
 color,Color,颜色,顏色
-colorful,Colorful,七彩虹,七彩虹
 compare,Compare,比较,比較
 computer-case,Computer Case,机箱,機箱
-corsair,Corsair,海盜船,海盜船
 cpu,CPU,中央处理器,中央處理器
+cpu-cooler,CPU Cooler,处理器散热,CPU散熱器
 cpu-cores,Cores,核心,核心
 cpu-multi-score,Multi-Core (Cinebench R23),Multi-Core (Cinebench R23),Multi-Core (Cinebench R23)
 cpu-score,CPU Benchmark,CPU Benchmark,CPU Benchmark
@@ -33,15 +45,11 @@ gpu-memory-type,GPU Memory Type,GPU 内存类型,GPU 記憶體類型
 gpu-score,GPU Benchmark,GPU Benchmark,GPU Benchmark
 graphic-card,Graphic Card,显卡,顯示卡
 graphics-processing-unit,Graphics Processing Unit,图形处理单元,圖形處理單元
-gskill,G.SKILL,芝奇,芝奇
 integrated-graphics,Integrated Graphics,集成显卡,整合顯示卡
-Intel,Intel,英特尔,英特爾
 interface,Interface,介面,介面
 is-rgb,RGB,RGB,RGB
-kingston,Kingston,金士顿,金士頓
 latency,Latency,延迟,延遲
 length,Length,长度,長度
-lian-li,LIAN LI,联力,聯力
 manufacturer,Manufacturer,制造商,製造商
 max-gpu-length,Maximum GPU Length,最大 GPU 长度,最大 GPU 長度
 max-psu-length,Maximum PSU Length,最大 PSU 长度,最大 PSU 長度
@@ -51,13 +59,10 @@ model,Model,型号,型號
 modular-design,Modular Design,模块化设计,模組化設計
 motherboard,Motherboard,主板,主機板
 motherboard-compatibility,Motherboard Compatibility,主板兼容性,主機板相容性
-msi,MSI,微星,微星
 multi-core,Multi-Core,多核,多核
 name,Name,名称,名稱
 no-suggestion,No sugguestion,没有建议,沒有建議
 noise,Noise,噪音,噪音
-nvidia,NVIDIA,英伟达,英偉達
-nzxt,NZXT,NZXT,NZXT
 overall-performance,Overall Performance,总体性能,整體性能
 pc-builder,Build Your PC,Build Your PC,Build Your PC
 power,Power,功率,功率
@@ -74,24 +79,22 @@ read-speed,Read Speed,读取速度,讀取速度
 recommended-psu-wattage,Recommended PSU wattage,建议电源功率,建議電源功率
 remove,Remove,移除,移除
 remove-comparison,Remove From Comparison,从比较中移除,從比較中移除
-samsung,SAMSUNG,三星,三星
-sapphire,SAPPHIRE,蓝宝石,藍寶石
-seasonic,Seasonic,海韵,海韻
 single-core,Single-Core,单核,單核
 size,Size,尺寸,尺寸
 ssd,SSD,固态硬盘,固態硬碟
 ssd-score,SSD Benchmark,SSD Benchmark,SSD Benchmark
 suggestion,Suggestion,建议,建議
-suggestion-motherboard-overclock,choose a motherboard that support overclocking,选择支持超频的主板,選擇支援超頻的主機板
-suggestion-motherboard-type,can choose a more suitable motherboard,可以选择更合适的主板,可以選擇更合適的主機板
+suggestion-motherboard-overclock,choose a motherboard that support overclocking,选择支持超频的主板。,選擇支援超頻的主機板。
+suggestion-motherboard-type,can choose a more suitable motherboard,可以选择更合适的主板。,可以選擇更合適的主機板。
+suggestion-ram-motherboard-incompatible,The motherboard does not accommodate the memory clock speeds(<b>{{ ram }} MHz</b>).,主板不兼容内存速度(<b>{{ ram }} MHz</b>)。,主機板不兼容記憶體速度(<b>{{ ram }} MHz</b>)。
+total-price,Total: ,总额: ,總額: 
 type,Type,类型,類型
+warning-aio-cooler-case-incompatible,The aio cooler is not compatible with the case,The aio cooler is not compatible with the case,The aio cooler is not compatible with the case
 warning-air-cooler-case-incompatible,The cooler is too high,The cooler is too high,The cooler is too high
-warning-gpu-case-incompatible,"The length of the graphics card is too long: length of graphics card, <b>{{ gpu }}</b>, exceeds the maximum VGA length of <b>{{ case }}</b>.",显卡长度太长：显卡的长度(<b>{{ gpu }}</b>)，超出了機箱最大支持的长度(<b>{{ case }}</b>)。,顯示卡長度太長：顯示卡的長度(<b>{{ gpu }}</b>)，超出了機箱最大支援的長度(<b>{{ case }}</b>)。
+warning-gpu-case-incompatible,"The length of the graphics card is too long: length of graphics card, <b>{{ gpu }} mm</b>, exceeds the maximum VGA length of <b>{{ case }} mm</b>.",显卡长度太长：显卡的长度(<b>{{ gpu }} mm</b>)，超出了機箱最大支持的长度(<b>{{ case }} mm</b>)。,顯示卡長度太長：顯示卡的長度(<b>{{ gpu }} mm</b>)，超出了機箱最大支援的長度(<b>{{ case }} mm</b>)。
 warning-motherboard-case-incompatible,The motherboard form factor (<b>{{ mb }}</b>) is not compatible with the computer case.,主板与电脑机箱不兼容：主板規格(<b>{{ mb }}</b>),主機板與電腦機殼不兼容：主機板規格(<b>{{ mb }}</b>)
-warning-motherboard-cpu-incompatible,CPU is not compatible with the motherboard,CPU和主板不兼容,CPU和主機板不兼容
-warning-power-not-enough,Insufficient power supply wattage,电源功率不足,電源功率不足
-suggestion-ram-motherboard-incompatible,The motherboard does not accommodate the memory clock speeds(<b>{{ ram }}</b>).,主板不兼容记忆体时脉速度(<b>{{ ram }}</b>)。,主機板不兼容記憶體時脈速度(<b>{{ ram }}</b>)。
+warning-motherboard-cpu-incompatible,CPU is not compatible with the motherboard,CPU和主板不兼容。,CPU和主機板不兼容。
+warning-power-not-enough,Insufficient power supply wattage,电源功率不足。,電源功率不足。
 watt,W,瓦,瓦
 weight,Weight,重量,重量
-western-digital,Western Digital,西部数据,西部數據
 write-speed,Write Speed,写入速度,寫入速度
