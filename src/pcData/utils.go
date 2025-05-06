@@ -364,7 +364,7 @@ func mergePriceSlices(s1, s2 []PriceType) []PriceType {
 	return merged
 }
 
-// S1 為主要資料，S2 為次要資料 (S1 > S2)
+// S1 為主要資料，S2 為次要資料 (S1 is empty then S2)
 func MergeStruct(s1, s2 interface{}, tempId string) interface{} {
 	rv1 := reflect.ValueOf(s1)
 	rv2 := reflect.ValueOf(s2)

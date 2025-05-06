@@ -17,7 +17,7 @@ func saveTranslationData(result any, name string) {
 	}
 
 	// Write JSON data to file
-	err = os.WriteFile("res/"+name+"/translation.json", jsonData, 0644)
+	err = os.WriteFile("locales/"+name+"/translation.json", jsonData, 0644)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return

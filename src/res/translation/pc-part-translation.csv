@@ -98,3 +98,5 @@ warning-power-not-enough,Insufficient power supply wattage,电源功率不足。
 watt,W,瓦,瓦
 weight,Weight,重量,重量
 write-speed,Write Speed,写入速度,寫入速度
+try-ai-build-header,Want some advice?,想要一些建议吗?,想要一些建議嗎 ?
+try-ai-build-button,Try AI PC Builder,试试AI装机,試試AI裝機

@@ -130,6 +130,12 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		channelNum = getRAMChannel(spec.Name)
 	}
 
+	// 合并解码结果
+	if decodedRAM, ok := DecodeRAMFromPN(spec.Brand, spec.Model); ok {
+		decodedRAM.Profile = RamProfileLogic(newSpec, decodedRAM.Profile)
+		newSpec = MergeStruct(decodedRAM, newSpec, newSpec.Name).(RamSpec)
+	}
+
 	return RamType{
 		Id:           SetProductId(spec.Brand, spec.Code),
 		Brand:        spec.Brand,
@@ -146,7 +152,7 @@ func GetRamData(spec RamSpec) (RamType, bool) {
 		Channel:      channelNum,
 		LED:          newSpec.LED,
 		HeatSpreader: newSpec.HeatSpreader,
-		Profile:      RamProfileLogic(newSpec),
+		Profile:      newSpec.Profile,
 		Prices:       deduplicatePrices(newSpec.Prices),
 		Img:          newSpec.Img,
 	}, isValid
@@ -344,7 +350,7 @@ func getRAMChannel(text string) int {
 	}
 }
 
-func RamProfileLogic(ram RamSpec) string {
+func RamProfileLogic(ram RamSpec, subProfileString string) string {
 	// profileList := []string{"Intel XMP 2.0", "Intel XMP 3.0", "AMD EXPO"}
 	amdList := []string{"FURY Beast", "Lancer", "Z5 Neo", "银爵", "刃"}
 	intelList := []string{"银爵", "刃"}
@@ -352,10 +358,10 @@ func RamProfileLogic(ram RamSpec) string {
 	isExpo := false
 	res := ""
 
-	if strContains(ram.Profile, "XMP") {
+	if strContains(ram.Profile, "XMP") || strContains(subProfileString, "XMP") || strings.Contains(strings.ToUpper(ram.Name), " XMP") {
 		isXmp = true
 	}
-	if strContains(ram.Profile, "EXPO") {
+	if strContains(ram.Profile, "EXPO") || strContains(subProfileString, "EXPO") || strings.Contains(strings.ToUpper(ram.Name), " AMD") {
 		isExpo = true
 	}
 
@@ -386,7 +392,7 @@ func RamProfileLogic(ram RamSpec) string {
 		if res == "" {
 			res = "AMD EXPO"
 		} else {
-			res += ", AMD EXPO"
+			res += " / AMD EXPO"
 		}
 	}
 	return res
@@ -419,4 +425,306 @@ func normalizeVoltage(voltageStr string) string {
 		result = strings.TrimRight(result, ".") // 移除最後剩下的小數點
 	}
 	return result + "V"
+}
+
+var ramSeries = []struct {
+	Name     string
+	Keywords []string
+}{
+	// Corsair
+	{"Vengeance", []string{"Vengeance"}},
+	{"Dominator", []string{"Dominator"}},
+	{"Corsair WS", []string{"WS"}}, // 新增工作站專用系列
+	{"Corsair LPX", []string{"LPX"}},
+
+	// G.SKILL
+	{"Trident Z", []string{"Trident Z", "TridentZ", "Trident Z5", "TridentZ5"}},
+	{"Ripjaws", []string{"Ripjaws", "RS5", "Rs5k"}},
+	{"Trident Z Royal", []string{"Trident Z Royal"}},
+	{"Aegis", []string{"Aegis"}},
+	{"Zeta R5", []string{"Zeta R5"}},
+
+	// Kingston
+	{"Fury", []string{"Fury"}},
+	{"Fury Renegade", []string{"Renegade"}}, // 新增次系列
+	{"ValueRAM", []string{"ValueRAM"}},      // 新增經濟型系列
+	{"Server Premier", []string{"Server Premier"}},
+
+	// Silicon Power
+	{"Xpower", []string{"Xpower"}},
+	{"Zenith", []string{"Zenith"}}, // 新增旗艦系列
+
+	// KINGBANK (需處理中文字符)
+	{"黑刃", []string{"黑刃", "HeiRen"}},
+	{"银爵", []string{"银爵", "YinJue"}},
+	{"星刃", []string{"星刃", "XingRen"}},
+	{"刃RGB", []string{"刃RGB", "Ren RGB"}},
+
+	// 通用系列
+	{"SO-DIMM", []string{"SO-DIMM", "Sodimm"}},
+	{"ECC RDIMM", []string{"ECC RDIMM"}},
+}
+
+type keywordMapping struct {
+	lowerKeyword string
+	series       string
+}
+
+func DetermineRAMSeries(ramName string) string {
+	var keywordMappings []keywordMapping
+	for _, series := range ramSeries {
+		for _, kw := range series.Keywords {
+			keywordMappings = append(keywordMappings, keywordMapping{
+				lowerKeyword: strings.ToLower(kw),
+				series:       series.Name,
+			})
+		}
+	}
+
+	lowerName := strings.ToLower(ramName)
+	for _, mapping := range keywordMappings {
+		if strings.Contains(lowerName, mapping.lowerKeyword) {
+			return mapping.series
+		}
+	}
+	return "Unknown"
+}
+
+// Decode RAM Part Number
+func DecodeRAMFromPN(brand, model string) (RamSpec, bool) {
+	var ram RamSpec
+	isXmp := false
+	isExpo := false
+	mainPN := strings.ToUpper(strings.ReplaceAll(model, " ", ""))
+	lowerBrand := strings.ToLower(brand)
+
+	switch lowerBrand {
+	case "corsair":
+		mainPN = strings.ToUpper(mainPN)
+
+		// 基本结构校验
+		if len(mainPN) < 12 || !strings.HasPrefix(mainPN, "CM") {
+			return ram, false
+		}
+
+		// 解析系列代码
+		seriesCode := mainPN[2:3] // 第3个字符
+		seriesMap := map[string]string{
+			"U": "Vengeance LED",
+			"W": "Vengeance RGB Pro",
+			"N": "Vengeance RGB RT",
+			"G": "Vengeance RGB RS",
+			"D": "Dominator Platinum",
+			"K": "Vengeance LPX", // DDR5 Start
+			"T": "Dominator Platinum RGB",
+			"H": "Vengeance RGB",
+			"P": "Dominator Titanium RGB",
+		}
+
+		// DDR版本判断
+		isXmp = true
+		length := len(mainPN)
+		lastStr := mainPN[length-5:]
+		if strings.Contains(lastStr, "Z") {
+			fmt.Println("Corsair AMD EXPO Support :", lastStr)
+			isExpo = true
+		}
+
+		// 系列名称处理
+		if name, exists := seriesMap[seriesCode]; exists {
+			ram.Series = name
+		}
+
+		// RGB判断逻辑
+		switch {
+		case strings.Contains(ram.Series, "RGB"):
+			ram.LED = "RGB"
+		case seriesCode == "U": // Vengeance RGB/Pro系列
+			ram.LED = "RGB"
+		case seriesCode == "D":
+			ram.LED = "White"
+		default:
+			ram.LED = ""
+		}
+		// 散热器判断（全系列带散热片）
+		ram.HeatSpreader = true
+	case "g.skill":
+		// 型号示例：F5-6400J3239G16GX2-TZ5RS / F4-3200C16D-16GTZR
+		parts := strings.Split(mainPN, "-")
+		if len(parts) < 3 {
+			return ram, false
+		}
+
+		// DDR版本判断
+		switch {
+		case strings.HasPrefix(parts[0], "F5"):
+			ram.Type = "DDR5"
+			isXmp = true
+			isExpo = true
+		case strings.HasPrefix(parts[0], "F4"):
+			ram.Type = "DDR4"
+			isXmp = true
+			isExpo = false
+		default:
+			return ram, false
+		}
+
+		// 解析系列标识
+		seriesPart := parts[2]
+		var seriesCode string
+		// 提取系列代码（取前4个字符，不足则全取）
+		if len(seriesPart) >= 4 {
+			seriesCode = seriesPart[:4]
+		} else {
+			seriesCode = seriesPart
+		}
+
+		// RGB判断逻辑
+		switch {
+		case strings.Contains(seriesCode, "TR5N") || // Trident Z5 Royal Neo
+			strings.Contains(seriesCode, "TZ5R") || // Trident Z5 RGB
+			strings.Contains(seriesCode, "TZ5NR") || // Trident Z5 Neo RGB
+			strings.Contains(seriesCode, "RM5R") || // Ripjaws M5 RGB
+			strings.Contains(seriesCode, "RM5NR") || // Ripjaws M5 Neo RGB
+			strings.Contains(seriesCode, "TZ5CR"): // Trident Z5 CK RGB
+			ram.LED = "RGB"
+		case strings.HasSuffix(seriesCode, "R") &&
+			(strings.HasPrefix(seriesCode, "TR5") ||
+				strings.HasPrefix(seriesCode, "TZ5") ||
+				strings.HasPrefix(seriesCode, "RM5")):
+			ram.LED = "RGB"
+		default:
+			ram.LED = ""
+		}
+
+		// 散热片逻辑（全系列带散热片）
+		ram.HeatSpreader = true
+
+		// 系列名称映射（可选，用于更精确的Series字段）
+		seriesMap := map[string]string{
+			"TR5":   "Trident Z5 Royal",
+			"TR5N":  "Trident Z5 Royal Neo",
+			"TZ5":   "Trident Z5",
+			"TZ5R":  "Trident Z5 RGB",
+			"TZ5N":  "Trident Z5 Neo",
+			"TZ5NR": "Trident Z5 Neo RGB",
+			"RM5R":  "Ripjaws M5 RGB",
+			"RM5NR": "Ripjaws M5 Neo RGB",
+			"RS5":   "Ripjaws S5",
+			"FX5":   "Flare X5",
+			"I5":    "Aegis 5",
+			"TZ5C":  "Trident Z5 CK",
+			"TZ5CR": "Trident Z5 CK RGB",
+			"ZR5":   "Zeta R5",
+			"ZR5N":  "Zeta R5 Neo",
+		}
+
+		// 设置Series字段
+		if name, exists := seriesMap[seriesCode]; exists {
+			ram.Series = name
+		} else {
+			// 通用系列判断逻辑
+			switch {
+			case strings.HasPrefix(seriesCode, "TR5"):
+				ram.Series = "Trident Z5 Royal"
+			case strings.HasPrefix(seriesCode, "TZ5"):
+				ram.Series = "Trident Z5"
+			case strings.HasPrefix(seriesCode, "RM5"):
+				ram.Series = "Ripjaws M5"
+			case strings.HasPrefix(seriesCode, "RS5"):
+				ram.Series = "Ripjaws S5"
+			case strings.HasPrefix(seriesCode, "FX5"):
+				ram.Series = "Flare X5"
+			default:
+				ram.Series = "Unknown Series"
+			}
+		}
+	case "kingston":
+		// 型号示例：KF556C38BBEAK2-32 / KF426C16BB/8
+		switch {
+		case strings.HasPrefix(mainPN, "KF5"):
+			ram.Type = "DDR5"
+			isXmp = true
+			if len(mainPN) > 10 && mainPN[10] == 'E' {
+				isExpo = true
+			}
+		case strings.HasPrefix(mainPN, "KF4"):
+			ram.Type = "DDR4"
+			isXmp = true
+		}
+
+		if len(mainPN) > 9 && (mainPN[9] == 'B' || mainPN[9] == 'S' || mainPN[9] == 'W') {
+			ram.HeatSpreader = true
+		}
+		if ram.Type == "DDR5" && len(mainPN) > 12 && mainPN[12] == 'A' {
+			ram.LED = "RGB"
+		}
+
+	case "crucial":
+		// 型号示例：BLM2K8G36C16U4B / BLH8G56C46U4B
+		switch {
+		case strings.Contains(mainPN, "DDR5") || strings.Contains(mainPN, "BLH"):
+			ram.Type = "DDR5"
+			isXmp = true
+			isExpo = true
+		case strings.Contains(mainPN, "DDR4") || strings.HasPrefix(mainPN, "BL"):
+			ram.Type = "DDR4"
+			isXmp = true
+		}
+
+		ram.HeatSpreader = strings.HasPrefix(mainPN, "BL")
+		if strings.HasSuffix(mainPN, "TF") || strings.Contains(mainPN, "RGB") {
+			ram.LED = "RGB"
+		}
+
+	case "patriot":
+		// 型号示例：PVV432G360C6K / PVR416G360C6K
+		switch {
+		case strings.HasPrefix(mainPN, "PVV"):
+			ram.Type = "DDR5"
+			isXmp = true
+			isExpo = true
+		case strings.HasPrefix(mainPN, "PVN"), strings.HasPrefix(mainPN, "PVR"):
+			ram.Type = "DDR4"
+			isXmp = true
+		}
+
+		ram.HeatSpreader = true
+		if strings.Contains(mainPN, "PVR") || strings.Contains(mainPN, "RGB") {
+			ram.LED = "RGB"
+		}
+
+	case "team group":
+		// 型号示例：FF3D532G5600HC36BDC01 / TED48G3200C22DC-S01
+		switch {
+		case strings.Contains(mainPN, "DDR5") || strings.Contains(mainPN, "D5"):
+			isXmp = true
+			isExpo = true
+		case strings.Contains(mainPN, "DDR4") || strings.Contains(mainPN, "D4"):
+			isXmp = true
+		}
+
+		ram.HeatSpreader = true
+		if strings.Contains(mainPN, "RGB") || strings.Contains(mainPN, "TZR") {
+			ram.LED = "RGB"
+		}
+	default:
+		return ram, false
+	}
+
+	// 构建Profile信息
+	var profiles []string
+	if isXmp {
+		version := "Intel XMP 3.0"
+		if ram.Type == "DDR4" {
+			version = "Intel XMP 2.0"
+		}
+		profiles = append(profiles, version)
+	}
+	if isExpo {
+		profiles = append(profiles, "AMD EXPO")
+	}
+	ram.Profile = strings.Join(profiles, " / ")
+
+	return ram, true
 }
