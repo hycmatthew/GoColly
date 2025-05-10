@@ -453,7 +453,7 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBWH3KE12290"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBTK0K911611"
             },
             {
                 "Region": "CN",
@@ -527,7 +527,7 @@
         ],
         "ReleaseDate": "November 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 1000
     },
     {
@@ -541,14 +541,14 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "257.77",
-                "PriceLink": "https://www.amazon.com/dp/B09T9HPLK1"
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
             }
         ],
         "ReleaseDate": "October 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 850
     },
     {
@@ -563,8 +563,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "219.99",
+                "Price": "209.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CTXR7M69"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB93RKGT2598"
             },
             {
                 "Region": "US",
@@ -575,7 +581,7 @@
         ],
         "ReleaseDate": "February 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -590,13 +596,13 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "109.99",
+                "Price": "113.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CPR1FR7H"
             }
         ],
         "ReleaseDate": "December 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -611,7 +617,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "125.00",
+                "Price": "139.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CPR29L4K"
             },
             {
@@ -623,7 +629,7 @@
         ],
         "ReleaseDate": "December 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -635,6 +641,12 @@
         "Modular": "Full",
         "Name": "ROG STRIX 1200W Gold Aura Edition",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB93RKGT2597"
+            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -658,15 +670,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "214.99",
-                "PriceLink": "https://www.amazon.com/dp/B0C3ZLPNPM"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320033"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "218.00",
+                "PriceLink": "https://www.amazon.com/dp/B0C3ZLPNPM"
             }
         ],
         "ReleaseDate": "May 2023",
@@ -686,7 +698,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "620.70",
+                "Price": "1386.28",
                 "PriceLink": "https://www.amazon.com/dp/B0BB6BJW27"
             }
         ],
@@ -707,20 +719,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "349.99",
+                "Price": "359.99",
                 "PriceLink": "https://www.amazon.com/dp/B09SGQ9PPC"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320020"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA6ZPKC71259"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HK8K7108"
             }
         ],
         "ReleaseDate": "March 2022",
@@ -739,15 +745,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA6ZPKBR5506"
+                "Platform": "Amazon",
+                "Price": "249.00",
+                "PriceLink": "https://www.amazon.com/dp/B08X7BKLWS"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "282.90",
-                "PriceLink": "https://www.amazon.com/dp/B08X7BKLWS"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA6ZPKBR5506"
             }
         ],
         "ReleaseDate": "February 2021",
@@ -793,15 +799,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK1B2139"
+                "Platform": "Amazon",
+                "Price": "269.99",
+                "PriceLink": "https://www.amazon.com/dp/B08BX7JXC3"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "224.72",
-                "PriceLink": "https://www.amazon.com/dp/B08BX7JXC3"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBTK0KAA9348"
             }
         ],
         "ReleaseDate": "June 2020",
@@ -843,7 +849,7 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBTK0KAU9619"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBWH3KE64483"
             }
         ],
         "ReleaseDate": "October 2019",
@@ -944,7 +950,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "171.06",
+                "Price": "199.32",
                 "PriceLink": "https://www.amazon.com/dp/B0BK541686"
             },
             {
@@ -972,13 +978,13 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320040"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK5R3230"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK5R3230"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320040"
             }
         ],
         "ReleaseDate": "",
@@ -999,13 +1005,13 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK6K4546"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320039"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320039"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA7ABK634233"
             }
         ],
         "ReleaseDate": "",
@@ -1081,12 +1087,6 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320038"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK5D9813"
             }
         ],
         "ReleaseDate": "",
@@ -1128,7 +1128,13 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFJYH2741"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320031"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBWH3K9T9269"
             }
         ],
         "ReleaseDate": "",
@@ -1148,7 +1154,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "239.99",
+                "Price": "259.99",
                 "PriceLink": "https://www.amazon.com/dp/B0BZFFHXDF"
             },
             {
@@ -1156,17 +1162,11 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320036"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HJT13971"
             }
         ],
         "ReleaseDate": "",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -1266,13 +1266,7 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817320027"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBTK0KEC1532"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBWH3KE12273"
             }
         ],
         "ReleaseDate": "",
@@ -1292,7 +1286,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "149.90",
+                "Price": "149.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DVJGSK2W"
             },
             {
@@ -1304,7 +1298,7 @@
         ],
         "ReleaseDate": "February 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 750
     },
     {
@@ -1321,17 +1315,11 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817222040"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "180.85",
-                "PriceLink": "https://www.amazon.com/dp/B0DVJNMCR1"
             }
         ],
         "ReleaseDate": "February 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 850
     },
     {
@@ -1352,7 +1340,7 @@
         ],
         "ReleaseDate": "February 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 1000
     },
     {
@@ -1373,7 +1361,7 @@
         ],
         "ReleaseDate": "November 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 650
     },
     {
@@ -1394,7 +1382,7 @@
         ],
         "ReleaseDate": "November 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 750
     },
     {
@@ -1415,7 +1403,7 @@
         ],
         "ReleaseDate": "November 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 1000
     },
     {
@@ -1436,7 +1424,7 @@
         ],
         "ReleaseDate": "November 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 850
     },
     {
@@ -1452,18 +1440,18 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-004H-000T0"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA68VJZU3274"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "189.90",
-                "PriceLink": "https://www.amazon.com/dp/B0CC8H91K8"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-004H-000T0"
             }
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -1490,13 +1478,13 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "209.90",
+                "Price": "229.90",
                 "PriceLink": "https://www.amazon.com/dp/B0CC7R91V7"
             }
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -1523,7 +1511,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -1550,7 +1538,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -1577,7 +1565,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1500
     },
     {
@@ -1597,14 +1585,14 @@
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA68VJYG8004"
+                "Platform": "Amazon",
+                "Price": "185.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CBP3C2S9"
             }
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -1627,11 +1615,17 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-004H-000S4"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA68VJJ74587"
             }
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 650
     },
     {
@@ -1652,7 +1646,7 @@
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 550
     },
     {
@@ -1679,7 +1673,7 @@
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -1693,20 +1687,20 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "124.90",
-                "PriceLink": "https://www.amazon.com/dp/B0BVY62M5F"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-004H-000S2"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "147.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BVY62M5F"
             }
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -1722,18 +1716,18 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA68VJJ74570"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-004H-000S1"
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-004H-000S1"
+                "Platform": "Amazon",
+                "Price": "164.90",
+                "PriceLink": "https://www.amazon.com/dp/B0BVYCXQY4"
             }
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -1769,7 +1763,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "127.38",
+                "Price": "206.00",
                 "PriceLink": "https://www.amazon.com/dp/B0937H4WJW"
             }
         ],
@@ -1790,7 +1784,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "192.65",
+                "Price": "191.66",
                 "PriceLink": "https://www.amazon.com/dp/B07V2D48JF"
             }
         ],
@@ -1811,7 +1805,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "75.60",
+                "Price": "199.44",
                 "PriceLink": "https://www.amazon.com/dp/B0BJVMJ887"
             }
         ],
@@ -1832,7 +1826,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "260.58",
+                "Price": "258.75",
                 "PriceLink": "https://www.amazon.com/dp/B0BJVPWRXY"
             }
         ],
@@ -2147,7 +2141,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "312.12",
+                "Price": "252.00",
                 "PriceLink": "https://www.amazon.com/dp/B07MCGSFN9"
             }
         ],
@@ -2168,7 +2162,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "333.78",
+                "Price": "333.20",
                 "PriceLink": "https://www.amazon.com/dp/B078WZSN2W"
             }
         ],
@@ -3413,7 +3407,7 @@
         ],
         "ReleaseDate": "November 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 1000
     },
     {
@@ -3469,8 +3463,20 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151187"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMG8K6T2237"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "169.99",
+                "Price": "169.90",
                 "PriceLink": "https://www.amazon.com/dp/B077J9G9CH"
             },
             {
@@ -3524,7 +3530,7 @@
         ],
         "ReleaseDate": "November 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 850
     },
     {
@@ -3593,16 +3599,29 @@
     {
         "Brand": "Seasonic",
         "Code": "FOCUS PX-850",
-        "Efficiency": "",
+        "Efficiency": "80+ Platinum",
         "Img": "",
-        "Length": 0,
-        "Modular": "",
+        "Length": 140,
+        "Modular": "Full",
         "Name": "FOCUS PX-850",
-        "Prices": null,
-        "ReleaseDate": "",
-        "Size": "",
+        "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151190"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKKCU1986"
+            }
+        ],
+        "ReleaseDate": "August 2019",
+        "Size": "ATX",
         "Standard": "",
-        "Wattage": 0
+        "Wattage": 850
     },
     {
         "Brand": "seasonic",
@@ -3664,7 +3683,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -3685,7 +3704,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -3706,7 +3725,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -3721,7 +3740,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "206.91",
+                "Price": "189.90",
                 "PriceLink": "https://www.amazon.com/dp/B0DLFKRJDC"
             },
             {
@@ -3766,7 +3785,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "145.99",
+                "Price": "145.25",
                 "PriceLink": "https://www.amazon.com/dp/B0DLFM4YNM"
             },
             {
@@ -3798,15 +3817,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "159.99",
-                "PriceLink": "https://www.amazon.com/dp/B0DLFMTX12"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151271"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "159.99",
+                "PriceLink": "https://www.amazon.com/dp/B0DLFMTX12"
             },
             {
                 "Region": "US",
@@ -3963,26 +3982,20 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "469.99",
-                "PriceLink": "https://www.amazon.com/dp/B0C57132H5"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817151260"
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA25VK0K0056"
+                "Platform": "Amazon",
+                "Price": "578.11",
+                "PriceLink": "https://www.amazon.com/dp/B0C57132H5"
             }
         ],
         "ReleaseDate": "June 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1600
     },
     {
@@ -4326,9 +4339,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "394.51",
-                "PriceLink": "https://www.amazon.com/dp/B07X9VYLHH"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIADFRKAD0875"
             }
         ],
         "ReleaseDate": "October 2019",
@@ -5494,7 +5507,7 @@
         ],
         "ReleaseDate": "January 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 750
     },
     {
@@ -5509,7 +5522,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "129.99",
+                "Price": "125.29",
                 "PriceLink": "https://www.amazon.com/dp/B0DPR86ZC8"
             },
             {
@@ -5521,7 +5534,7 @@
         ],
         "ReleaseDate": "January 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 850
     },
     {
@@ -5548,7 +5561,7 @@
         ],
         "ReleaseDate": "January 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 1000
     },
     {
@@ -5562,20 +5575,20 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139338"
-            },
-            {
-                "Region": "US",
                 "Platform": "Amazon",
                 "Price": "89.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DPR6YG4V"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139338"
             }
         ],
         "ReleaseDate": "January 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 650
     },
     {
@@ -5596,7 +5609,7 @@
         ],
         "ReleaseDate": "September 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 750
     },
     {
@@ -5623,7 +5636,7 @@
         ],
         "ReleaseDate": "September 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 850
     },
     {
@@ -5650,7 +5663,7 @@
         ],
         "ReleaseDate": "September 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 1000
     },
     {
@@ -5698,7 +5711,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "229.99",
+                "Price": "260.49",
                 "PriceLink": "https://www.amazon.com/dp/B0D45RN3KZ"
             }
         ],
@@ -5752,7 +5765,7 @@
         ],
         "ReleaseDate": "March 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -5779,7 +5792,7 @@
         ],
         "ReleaseDate": "March 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -5794,7 +5807,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "209.99",
+                "Price": "239.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CWLV1635"
             },
             {
@@ -5806,7 +5819,7 @@
         ],
         "ReleaseDate": "March 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -5820,20 +5833,20 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "144.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CWLWGM67"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139327"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "169.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CWLWGM67"
             }
         ],
         "ReleaseDate": "March 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -5860,7 +5873,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -5881,13 +5894,13 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "349.99",
+                "Price": "499.99",
                 "PriceLink": "https://www.amazon.com/dp/B0BZ1JPSF7"
             }
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1500
     },
     {
@@ -5908,13 +5921,13 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "299.99",
+                "Price": "319.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CTR6PK19"
             }
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -5941,7 +5954,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -5962,7 +5975,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -5976,6 +5989,12 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "129.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BYQPH5J3"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139306"
@@ -5983,7 +6002,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -6004,7 +6023,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -6018,20 +6037,20 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139302"
+                "Platform": "Amazon",
+                "Price": "139.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BP8BJ7X4"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "199.99",
-                "PriceLink": "https://www.amazon.com/dp/B0BP8BJ7X4"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139302"
             }
         ],
         "ReleaseDate": "January 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -6045,20 +6064,20 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "229.99",
-                "PriceLink": "https://www.amazon.com/dp/B0BP88MYM4"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139304"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "199.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BP88MYM4"
             }
         ],
         "ReleaseDate": "January 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -6072,6 +6091,12 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "179.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BP8B6M7Y"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139303"
@@ -6081,17 +6106,11 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFKEG0035"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "259.99",
-                "PriceLink": "https://www.amazon.com/dp/B0BP8B6M7Y"
             }
         ],
         "ReleaseDate": "January 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -6105,14 +6124,14 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "",
-                "Price": "Out of Stock",
-                "PriceLink": ""
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139312"
             }
         ],
         "ReleaseDate": "January 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -6126,15 +6145,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139300"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBJ8SJWF6439"
+                "Platform": "Amazon",
+                "Price": "145.00",
+                "PriceLink": "https://www.amazon.com/dp/B0BN234QRZ"
             }
         ],
         "ReleaseDate": "December 2022",
@@ -6153,15 +6166,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139301"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK1B2056"
+                "Platform": "Amazon",
+                "Price": "175.00",
+                "PriceLink": "https://www.amazon.com/dp/B0B7XM98VK"
             }
         ],
         "ReleaseDate": "August 2022",
@@ -6180,15 +6187,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139289"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBDCAJU41063"
+                "Platform": "Amazon",
+                "Price": "235.00",
+                "PriceLink": "https://www.amazon.com/dp/B0B7237XFJ"
             }
         ],
         "ReleaseDate": "August 2022",
@@ -6208,7 +6209,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "319.99",
+                "Price": "345.99",
                 "PriceLink": "https://www.amazon.com/dp/B0B3S8HR8M"
             },
             {
@@ -6235,7 +6236,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "449.00",
+                "Price": "479.00",
                 "PriceLink": "https://www.amazon.com/dp/B0B4KKP4ZB"
             }
         ],
@@ -6303,6 +6304,12 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "79.99",
+                "PriceLink": "https://www.amazon.com/dp/B093NTQJSF"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139275"
@@ -6352,7 +6359,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "129.95",
+                "Price": "114.99",
                 "PriceLink": "https://www.amazon.com/dp/B093R3HVCK"
             },
             {
@@ -6379,7 +6386,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "139.95",
+                "Price": "124.99",
                 "PriceLink": "https://www.amazon.com/dp/B093RCJRNS"
             },
             {
@@ -6403,6 +6410,12 @@
         "Modular": "Full",
         "Name": "RM850 2021",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139281"
+            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -6454,7 +6467,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "199.99",
+                "Price": "198.98",
                 "PriceLink": "https://www.amazon.com/dp/B08R5JPTMZ"
             }
         ],
@@ -6477,6 +6490,12 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139271"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "124.85",
+                "PriceLink": "https://www.amazon.com/dp/B08R5W27JS"
             },
             {
                 "Region": "US",
@@ -6647,6 +6666,12 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139250"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKKAN3205"
             }
         ],
@@ -6691,6 +6716,12 @@
         "Modular": "Full",
         "Name": "RM750 750W",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139168"
+            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -6760,6 +6791,12 @@
         "Modular": "Full",
         "Name": "SF750 750W",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139080"
+            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -6858,15 +6895,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139233"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB0U7J9J2504"
+                "Platform": "Amazon",
+                "Price": "184.88",
+                "PriceLink": "https://www.amazon.com/dp/B079HGN5QS"
             }
         ],
         "ReleaseDate": "February 2018",
@@ -6885,15 +6916,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139234"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAPMXJ7A0666"
+                "Platform": "Amazon",
+                "Price": "227.88",
+                "PriceLink": "https://www.amazon.com/dp/B079H5WNXN"
             }
         ],
         "ReleaseDate": "February 2018",
@@ -6939,9 +6964,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "189.00",
-                "PriceLink": "https://www.amazon.com/dp/B079H6111J"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139232"
             },
             {
                 "Region": "US",
@@ -6985,6 +7010,12 @@
         "Modular": "No",
         "Name": "CX550",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139202"
+            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -7064,6 +7095,12 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139203"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKKAN6952"
             }
         ],
@@ -7084,7 +7121,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "409.00",
+                "Price": "405.00",
                 "PriceLink": "https://www.amazon.com/dp/B01N5NWKHH"
             },
             {
@@ -7111,7 +7148,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "415.00",
+                "Price": "459.00",
                 "PriceLink": "https://www.amazon.com/dp/B01MZ8A8NW"
             },
             {
@@ -7137,9 +7174,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "149.99",
-                "PriceLink": "https://www.amazon.com/dp/B01B72W0A2"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817139147"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAGGNEV99563"
             }
         ],
         "ReleaseDate": "February 2016",
@@ -7186,7 +7229,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "184.99",
+                "Price": "188.86",
                 "PriceLink": "https://www.amazon.com/dp/B015YEI9NQ"
             },
             {
@@ -7213,7 +7256,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "209.99",
+                "Price": "204.98",
                 "PriceLink": "https://www.amazon.com/dp/B015YEI8JG"
             },
             {
@@ -7252,7 +7295,7 @@
         ],
         "ReleaseDate": "August 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -7279,7 +7322,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -7306,7 +7349,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -7333,7 +7376,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -7476,15 +7519,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "438.64",
-                "PriceLink": "https://www.amazon.com/dp/B09M9639VW"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKKCU0058"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HGMU2610"
             }
         ],
         "ReleaseDate": "November 2021",
@@ -7501,12 +7538,6 @@
         "Modular": "Full",
         "Name": "Supernova 1200 P3",
         "Prices": [
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817438227"
-            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -7729,7 +7760,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "149.99",
+                "Price": "169.99",
                 "PriceLink": "https://www.amazon.com/dp/B08WJJQRGB"
             }
         ],
@@ -7751,19 +7782,19 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817438211"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "234.57",
-                "PriceLink": "https://www.amazon.com/dp/B099816R9C"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKGK2693"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKCC7711"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817438211"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "247.20",
+                "PriceLink": "https://www.amazon.com/dp/B099816R9C"
             }
         ],
         "ReleaseDate": "July 2021",
@@ -7896,15 +7927,15 @@
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "162.05",
-                "PriceLink": "https://www.amazon.com/dp/B08DZY15CW"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKGK2692"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "171.73",
+                "PriceLink": "https://www.amazon.com/dp/B08DZY15CW"
             }
         ],
         "ReleaseDate": "July 2020",
@@ -7977,15 +8008,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817438186"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB9AJK9P3383"
+                "Platform": "Amazon",
+                "Price": "148.88",
+                "PriceLink": "https://www.amazon.com/dp/B088SSX883"
             }
         ],
         "ReleaseDate": "June 2020",
@@ -8005,7 +8030,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "149.00",
+                "Price": "169.00",
                 "PriceLink": "https://www.amazon.com/dp/B084R8FT1X"
             },
             {
@@ -8109,6 +8134,12 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKKCT9704"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "230.00",
+                "PriceLink": "https://www.amazon.com/dp/B07WW1XK45"
             }
         ],
         "ReleaseDate": "September 2019",
@@ -8152,6 +8183,12 @@
         "Modular": "Full",
         "Name": "SuperNOVA 850 Ga",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-00J7-004V4"
+            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -8393,7 +8430,7 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVF7N04495"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAN0MBB87788"
             }
         ],
         "ReleaseDate": "April 2019",
@@ -8458,12 +8495,6 @@
         "Modular": "No",
         "Name": "N1 650",
         "Prices": [
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817438106"
-            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -8709,12 +8740,6 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB8AKKCT9706"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "299.99",
-                "PriceLink": "https://www.amazon.com/dp/B005BE058W"
             }
         ],
         "ReleaseDate": "November 2016",
@@ -8754,20 +8779,14 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "142.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CFCZYC2Q"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKCC7640"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB0ASKGW9073"
             }
         ],
         "ReleaseDate": "September 2023",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -8788,7 +8807,7 @@
         ],
         "ReleaseDate": "March 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -8809,7 +8828,7 @@
         ],
         "ReleaseDate": "March 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -8823,20 +8842,14 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "149.99",
-                "PriceLink": "https://www.amazon.com/dp/B0BVRTCD7M"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKCC7710"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA4REK886155"
             }
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1050
     },
     {
@@ -8850,12 +8863,6 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "302.00",
-                "PriceLink": "https://www.amazon.com/dp/B0BVRS87FL"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB0ASKDH4283"
@@ -8863,7 +8870,7 @@
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1250
     },
     {
@@ -8880,17 +8887,11 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817171231"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB0ASKEA3134"
             }
         ],
         "ReleaseDate": "February 2023",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1100
     },
     {
@@ -8931,12 +8932,6 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "99.99",
-                "PriceLink": "https://www.amazon.com/dp/B09WP6CC23"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K571946"
@@ -8956,12 +8951,6 @@
         "Modular": "Full",
         "Name": "XG850 Plus",
         "Prices": [
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "164.99",
-                "PriceLink": "https://www.amazon.com/dp/B09WPBD741"
-            },
             {
                 "Region": "US",
                 "Platform": "Newegg",
@@ -9014,6 +9003,12 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817171198"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB0ASKD12989"
             }
         ],
@@ -9033,15 +9028,21 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKGT2850"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "116.07",
+                "Price": "156.99",
                 "PriceLink": "https://www.amazon.com/dp/B08LP6WS35"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB0ASKD91522"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817171170"
             }
         ],
         "ReleaseDate": "November 2020",
@@ -9082,7 +9083,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "88.99",
+                "Price": "90.99",
                 "PriceLink": "https://www.amazon.com/dp/B08M9LDLXH"
             },
             {
@@ -9324,12 +9325,6 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153465"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8EFK7Y5223"
             }
         ],
         "ReleaseDate": "April 2024",
@@ -9349,7 +9344,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "179.99",
+                "Price": "181.27",
                 "PriceLink": "https://www.amazon.com/dp/B0D2851VQD"
             },
             {
@@ -9367,7 +9362,7 @@
         ],
         "ReleaseDate": "April 2024",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.1",
         "Wattage": 850
     },
     {
@@ -9379,12 +9374,6 @@
         "Modular": "Full",
         "Name": "Toughpower SFX Platinum 1000W",
         "Prices": [
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153467"
-            },
             {
                 "Region": "US",
                 "Platform": "Amazon",
@@ -9409,7 +9398,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "169.99",
+                "Price": "193.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CKS5P7KF"
             },
             {
@@ -9427,7 +9416,7 @@
         ],
         "ReleaseDate": "October 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -9441,9 +9430,9 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "99.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CKS5GYH2"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXK369101"
             },
             {
                 "Region": "US",
@@ -9453,14 +9442,14 @@
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8EFK3K2175"
+                "Platform": "Amazon",
+                "Price": "129.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CKS5GYH2"
             }
         ],
         "ReleaseDate": "October 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -9481,7 +9470,7 @@
         ],
         "ReleaseDate": "October 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1050
     },
     {
@@ -9504,11 +9493,17 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153456"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8EFK076229"
             }
         ],
         "ReleaseDate": "August 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 650
     },
     {
@@ -9523,8 +9518,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "89.99",
+                "Price": "79.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CFXGFQNZ"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153455"
             },
             {
                 "Region": "US",
@@ -9535,7 +9536,7 @@
         ],
         "ReleaseDate": "August 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -9557,12 +9558,12 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKCC7626"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8EFK076224"
             }
         ],
         "ReleaseDate": "August 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -9576,15 +9577,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153451"
-            },
-            {
-                "Region": "US",
                 "Platform": "Amazon",
                 "Price": "99.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CBQZFPL2"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153451"
             },
             {
                 "Region": "US",
@@ -9595,7 +9596,7 @@
         ],
         "ReleaseDate": "July 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -9609,14 +9610,8 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153450"
-            },
-            {
-                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "130.37",
+                "Price": "130.34",
                 "PriceLink": "https://www.amazon.com/dp/B0C1JKB652"
             },
             {
@@ -9628,7 +9623,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -9655,7 +9650,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -9670,7 +9665,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "139.99",
+                "Price": "169.99",
                 "PriceLink": "https://www.amazon.com/dp/B0C1JHWWZL"
             },
             {
@@ -9682,7 +9677,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1050
     },
     {
@@ -9709,7 +9704,7 @@
         ],
         "ReleaseDate": "April 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -9725,12 +9720,12 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA6ZPK9Z1937"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GK490353"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "129.99",
+                "Price": "149.99",
                 "PriceLink": "https://www.amazon.com/dp/B0BWGX7GHC"
             },
             {
@@ -9742,7 +9737,7 @@
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -9769,7 +9764,7 @@
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1050
     },
     {
@@ -9784,13 +9779,25 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "228.99",
+                "Price": "220.59",
                 "PriceLink": "https://www.amazon.com/dp/B0BWKT2JRV"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16817153443"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GK3Y6612"
             }
         ],
         "ReleaseDate": "February 2023",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1200
     },
     {
@@ -9853,7 +9860,7 @@
         ],
         "ReleaseDate": "November 2022",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 750
     },
     {
@@ -9880,7 +9887,7 @@
         ],
         "ReleaseDate": "November 2022",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -10207,8 +10214,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "64.99",
+                "Price": "69.99",
                 "PriceLink": "https://www.amazon.com/dp/B087CDR14Z"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAN0MKD42051"
             },
             {
                 "Region": "US",
@@ -10288,7 +10301,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "139.98",
+                "Price": "139.99",
                 "PriceLink": "https://www.amazon.com/dp/B07PZR9JLT"
             }
         ],
@@ -10525,7 +10538,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "66.44",
+                "Price": "67.99",
                 "PriceLink": "https://www.amazon.com/dp/B07NPM8WZ7"
             },
             {
@@ -10876,7 +10889,7 @@
         ],
         "ReleaseDate": "January 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -10899,11 +10912,17 @@
                 "Platform": "Amazon",
                 "Price": "120.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DKWWP452"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00015"
             }
         ],
         "ReleaseDate": "January 2025",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -10919,19 +10938,19 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0K9T9280"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "179.00",
-                "PriceLink": "https://www.amazon.com/dp/B0D8T49VFP"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA6KXKC21166"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00008"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "183.99",
+                "PriceLink": "https://www.amazon.com/dp/B0D8T49VFP"
             }
         ],
         "ReleaseDate": "May 2024",
@@ -10956,20 +10975,20 @@
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA6KXKCA6059"
+                "Platform": "Amazon",
+                "Price": "194.00",
+                "PriceLink": "https://www.amazon.com/dp/B0D8SPDPRY"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "189.99",
-                "PriceLink": "https://www.amazon.com/dp/B0D8SPDPRY"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA6KXKCA6059"
             }
         ],
         "ReleaseDate": "May 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1000
     },
     {
@@ -10983,15 +11002,21 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00010"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "216.47",
+                "Price": "272.05",
                 "PriceLink": "https://www.amazon.com/dp/B0D8SN6MP1"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00010"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXK925531"
             }
         ],
         "ReleaseDate": "May 2024",
@@ -11010,20 +11035,26 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00011"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "226.84",
+                "Price": "246.99",
                 "PriceLink": "https://www.amazon.com/dp/B0D8SPL2FJ"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00011"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXK925534"
             }
         ],
         "ReleaseDate": "May 2024",
         "Size": "ATX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 1300
     },
     {
@@ -11039,18 +11070,12 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00005"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HK5Z5759"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXK2D5407"
             }
         ],
         "ReleaseDate": "September 2022",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -11064,6 +11089,12 @@
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEKF35518"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
                 "Price": "149.99",
                 "PriceLink": "https://www.amazon.com/dp/B0BCV9JCCH"
@@ -11072,12 +11103,12 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HK5Z5758"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00006"
             }
         ],
         "ReleaseDate": "September 2022",
         "Size": "SFX",
-        "Standard": "",
+        "Standard": "ATX 3.0",
         "Wattage": 850
     },
     {
@@ -11093,13 +11124,19 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAN0MK2E8929"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00004"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "120.88",
+                "Price": "154.99",
                 "PriceLink": "https://www.amazon.com/dp/B0B19CLDP2"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXK2D5394"
             }
         ],
         "ReleaseDate": "May 2022",
@@ -11120,7 +11157,13 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA25VKBT0899"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=1HU-01PP-00003"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXFK88534"
             }
         ],
         "ReleaseDate": "",

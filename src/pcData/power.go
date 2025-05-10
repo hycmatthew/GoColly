@@ -118,12 +118,16 @@ func GetPowerData(spec PowerSpec) (PowerType, bool) {
 
 func getPowerSpecData(link string, collector *colly.Collector) PowerSpec {
 	specData := PowerSpec{}
-
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".content-wrapper", func(element *colly.HTMLElement) {
 		specData.Name = element.ChildText(".breadcrumb .active")
 		specData.Img = element.ChildAttr(".tns-inner img", "src")
 		specData.Prices = GetPriceLinkFromPangoly(element)
+		specData.Standard = extractATXStandard(specData.Name, specData.Standard)
+
+		element.ForEach(".list-group li", func(i int, item *colly.HTMLElement) {
+			specData.Standard = extractATXStandard(item.Text, specData.Standard)
+		})
 
 		element.ForEach(".table.table-striped tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("strong") {
@@ -166,15 +170,14 @@ func getPowerUSPrice(link string, collector *colly.Collector) PowerSpec {
 		})
 
 		prdName := element.ChildText(".product-title")
-		standard := extractATXStandard(prdName)
+		specData.Standard = extractATXStandard(prdName, specData.Standard)
 
 		element.ForEach(".tab-box .tab-panes tr", func(i int, item *colly.HTMLElement) {
 			switch item.ChildText("th") {
 			case "Type":
-				standard = comparePSUStandard(standard, extractATXStandard(item.ChildText("td")))
+				specData.Standard = extractATXStandard(item.ChildText("td"), specData.Standard)
 			}
 		})
-		specData.Standard = standard
 	})
 
 	collector.Visit(link)
@@ -182,9 +185,7 @@ func getPowerUSPrice(link string, collector *colly.Collector) PowerSpec {
 }
 
 func getPowerSpecDataFromZol(link string, collector *colly.Collector) PowerSpec {
-	specData := PowerSpec{
-		Standard: "ATX 2.0",
-	}
+	specData := PowerSpec{}
 
 	collectorErrorHandle(collector, link)
 	collector.OnHTML(".wrapper", func(element *colly.HTMLElement) {
@@ -197,7 +198,7 @@ func getPowerSpecDataFromZol(link string, collector *colly.Collector) PowerSpec 
 
 			switch convertedHeader {
 			case "电源版本":
-				specData.Standard = extractATXStandard(convertedData)
+				specData.Standard = extractATXStandard(convertedData, specData.Standard)
 			case "电源模组":
 				if strings.Contains(convertedData, "全模组") {
 					specData.Modular = "Full"
@@ -377,31 +378,52 @@ func getPowerSpecDataFromPcOnline(link string, collector *colly.Collector) Power
 }
 */
 
-func extractATXStandard(name string) string {
-	// 將名稱轉為大寫並去除空格
-	normalized := strings.ToUpper(strings.ReplaceAll(name, " ", ""))
+func extractATXStandard(name string, currentStandard string) string {
+	// 標準化處理：全大寫 + 移除非字母數字和點
+	normalized := strings.ToUpper(name)
+	re := regexp.MustCompile(`[^A-Z0-9.]`)
+	normalized = re.ReplaceAllString(normalized, "")
 
-	// 定義正則表達式規則
-	patterns := map[string]string{
-		"ATX 3.1": `ATX(?:12V)?3\.1`,
-		"ATX 3.0": `ATX(?:12V)?3\.0`,
-		"ATX 3":   `ATX(?:12V)?3$`,
+	// 強制規則：包含 12VHPWR 直接返回 ATX 3.0
+	if strings.Contains(normalized, "12VHPWR") {
+		return "ATX 3.0"
 	}
 
-	// 按順序匹配正則表達式
-	for standard, pattern := range patterns {
-		matched, _ := regexp.MatchString(pattern, normalized)
-		if matched {
-			return standard
+	// 定義匹配規則與優先級映射
+	patterns := []struct {
+		standard string
+		pattern  *regexp.Regexp
+	}{
+		// 使用更精確的錨點確保匹配完整性
+		{"ATX 3", regexp.MustCompile(`^ATX(?:12V)?3$`)},    // 嚴格匹配獨立版本
+		{"ATX 3.1", regexp.MustCompile(`ATX(?:12V)?3\.1`)}, // 包含 3.1
+		{"ATX 3.0", regexp.MustCompile(`ATX(?:12V)?3\.0`)}, // 包含 3.0
+	}
+
+	// 尋找所有匹配的標準
+	finalStandard := currentStandard
+	for _, p := range patterns {
+		if p.pattern.MatchString(normalized) {
+			// 若匹配到更高優先級則更新
+			if getPriority(p.standard) > getPriority(finalStandard) {
+				finalStandard = p.standard
+			}
 		}
 	}
-	// 如果沒有匹配，返回默認的 ATX 2.0
-	return "ATX 2.0"
+
+	return finalStandard
 }
 
-func comparePSUStandard(str1 string, str2 string) string {
-	if str1 == "ATX 2.0" {
-		return str2
+// 優先級判定函數
+func getPriority(standard string) int {
+	switch standard {
+	case "ATX 3":
+		return 3
+	case "ATX 3.1":
+		return 2
+	case "ATX 3.0":
+		return 1
+	default:
+		return 0
 	}
-	return str1
 }
