@@ -46,6 +46,68 @@ type SSDType struct {
 	Img         string
 }
 
+var ssdScoreList []SSDSpec
+
+func init() {
+	ssdScoreList = getDetailsLinkFrommSSDTester(CreateCollector())
+	fmt.Println("SSD数据初始化完成")
+	fmt.Println("SSD数据数量: ", len(ssdScoreList))
+}
+
+func cleanText(s string) string {
+	return strings.TrimSpace(strings.ReplaceAll(s, "\u00a0", " ")) // 替换&nbsp;
+}
+
+func extractNumber(s string) int {
+	re := regexp.MustCompile(`[\d,]+`)
+	numStr := re.FindString(s)
+	numStr = strings.ReplaceAll(numStr, ",", "")
+	num, _ := strconv.Atoi(numStr)
+	return num
+}
+
+func getDetailsLinkFrommSSDTester(collector *colly.Collector) []SSDSpec {
+	ssds := []SSDSpec{}
+	link := "https://ssd-tester.com/top_ssd.php"
+
+	collectorErrorHandle(collector, link)
+	collector.OnHTML("#table", func(element *colly.HTMLElement) {
+		element.ForEach("tbody tr", func(i int, item *colly.HTMLElement) {
+			var ssd SSDSpec
+			tds := item.DOM.ChildrenFiltered("td")
+
+			// 解析品牌和名称
+			brandName := strings.TrimSpace(tds.Eq(1).Text())
+			if split := strings.SplitN(brandName, " ", 2); len(split) > 1 {
+				ssd.Brand = split[0]
+				ssd.Name = split[1]
+			}
+
+			// 解析图片
+			ssd.Img, _ = tds.Eq(2).Find("img").Attr("src")
+
+			// 容量
+			ssd.Capacity = cleanText(tds.Eq(3).Text())
+
+			// 闪存类型
+			ssd.FlashType = cleanText(tds.Eq(4).Text())
+
+			// 接口类型
+			ssd.Interface = cleanText(tds.Eq(7).Text())
+
+			// 性能数据
+			ssd.MaxRead = extractNumber(tds.Eq(9).Text())
+			ssd.MaxWrite = extractNumber(tds.Eq(10).Text())
+			ssd.Read4K = extractNumber(tds.Eq(11).Text()) // 根据实际HTML结构调整索引
+			ssd.Write4K = extractNumber(tds.Eq(12).Text())
+
+			ssds = append(ssds, ssd)
+		})
+	})
+	collector.Visit(link)
+	return ssds
+}
+
 func GetSSDSpec(record LinkRecord) SSDSpec {
 	ssdData := SSDSpec{}
 
@@ -62,6 +124,19 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 	ssdData.Brand = record.Brand
 	if ssdData.Name == "" {
 		ssdData.Name = record.Name
+	}
+
+	// 尝试从预加载的评分数据匹配
+	tempName := ssdData.Brand + " " + RemoveBrandsFromName(ssdData.Brand, ssdData.Name)
+	baseName, targetCapacityGB := parseNameAndCapacity(tempName)
+	closestSpec, found := findClosestSpec(baseName, targetCapacityGB)
+
+	if found {
+		fmt.Println("找到匹配的SSD规格: ", closestSpec.Name, " - ", record.Name)
+		ssdData.FlashType = closestSpec.FlashType
+		ssdData.Interface = closestSpec.Interface
+		ssdData.Read4K = closestSpec.Read4K
+		ssdData.Write4K = closestSpec.Write4K
 	}
 	ssdData.Name = RemoveBrandsFromName(ssdData.Brand, ssdData.Name)
 
@@ -122,14 +197,16 @@ func GetSSDData(spec SSDSpec) (SSDType, bool) {
 
 	return SSDType{
 		Id:          SetProductId(spec.Brand, spec.Code),
-		Brand:       spec.Brand,
-		Name:        spec.Name,
+		Brand:       newSpec.Brand,
+		Name:        newSpec.Name,
 		NameCN:      nameCN,
 		ReleaseDate: newSpec.ReleaseDate,
 		Model:       newSpec.Model,
 		Capacity:    NormalizeSSDCapacity(newSpec.Capacity),
 		MaxRead:     newSpec.MaxRead,
 		MaxWrite:    newSpec.MaxWrite,
+		Read4K:      newSpec.Read4K,
+		Write4K:     newSpec.Write4K,
 		Interface:   NormalizeSSDInterface(newSpec.Interface),
 		FlashType:   newSpec.FlashType,
 		FormFactor:  newSpec.FormFactor,
@@ -433,4 +510,90 @@ func formatStandard(protocol, version, lanes string) string {
 	}
 
 	return strings.Join(parts, " ")
+}
+
+// 核心匹配逻辑
+// 新增辅助函数：从产品名称解析基础名称和容量
+func parseNameAndCapacity(name string) (baseName string, capacityGB int) {
+	re := regexp.MustCompile(`(?i)\s*(\d+)\s*(TB|GB)\s*$`)
+	matches := re.FindStringSubmatch(name)
+	if len(matches) == 3 {
+		capacity, _ := strconv.Atoi(matches[1])
+		unit := strings.ToUpper(matches[2])
+		if unit == "TB" {
+			capacityGB = capacity * 1000
+		} else {
+			capacityGB = capacity
+		}
+		baseName = strings.TrimSuffix(name, matches[0])
+		baseName = strings.ToUpper(strings.TrimSpace(baseName))
+		return
+	}
+	return name, 0
+}
+
+// 新增辅助函数：解析容量字符串为GB数值
+func parseCapacityToGB(capacityStr string) int {
+	cleaned := cleanText(capacityStr)
+	re := regexp.MustCompile(`(?i)(\d+)\s*(TB|GB)`)
+	matches := re.FindStringSubmatch(cleaned)
+	if len(matches) < 3 {
+		return 0
+	}
+	value, _ := strconv.Atoi(matches[1])
+	unit := strings.ToUpper(matches[2])
+	if unit == "TB" {
+		return value * 1000
+	}
+	return value
+}
+
+// 新增辅助函数：寻找最接近的规格
+func findClosestSpec(baseName string, targetCapacityGB int) (SSDSpec, bool) {
+	fmt.Println("寻找最接近的SSD规格: ", baseName, " - ", targetCapacityGB)
+	var candidates []SSDSpec
+	for _, spec := range ssdScoreList {
+		// fmt.Println("当前规格: ", spec.Name, " - ", spec.Capacity)
+		specBase, _ := parseNameAndCapacity(spec.Name)
+		if specBase == baseName {
+			candidates = append(candidates, spec)
+			continue
+		}
+		// 额外检查规格名称是否包含基础名称（更宽松的匹配）
+		if strings.Contains(specBase, baseName) || strings.Contains(baseName, specBase) {
+			candidates = append(candidates, spec)
+		}
+	}
+
+	if len(candidates) == 0 {
+		return SSDSpec{}, false
+	}
+	fmt.Println("找到候选规格数量: ", len(candidates))
+	// 优先寻找完全匹配型号
+	for _, spec := range candidates {
+		if spec.Name == baseName {
+			return spec, true
+		}
+	}
+
+	// 找最接近容量的规格
+	closest := candidates[0]
+	closestDiff := abs(targetCapacityGB - parseCapacityToGB(closest.Capacity))
+	for _, spec := range candidates[1:] {
+		currentCapacity := parseCapacityToGB(spec.Capacity)
+		currentDiff := abs(targetCapacityGB - currentCapacity)
+		if currentDiff < closestDiff || currentDiff == closestDiff {
+			closest = spec
+			closestDiff = currentDiff
+		}
+	}
+	return closest, true
+}
+
+// 绝对值函数
+func abs(x int) int {
+	if x < 0 {
+		return -x
+	}
+	return x
 }

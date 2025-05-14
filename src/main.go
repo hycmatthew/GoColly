@@ -28,7 +28,7 @@ func main() {
 		gpuScore    = "gpuScore"
 	)
 
-	getDataName := power
+	getDataName := ssd
 	isUpdateSpec := false
 
 	if getDataName == gpuScore {

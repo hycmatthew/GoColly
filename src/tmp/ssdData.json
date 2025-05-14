@@ -9,10 +9,10 @@
         "Capacity": "1TB",
         "MaxRead": 2400,
         "MaxWrite": 1800,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 51,
+        "Write4K": 180,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
@@ -40,54 +40,48 @@
         "Capacity": "2TB",
         "MaxRead": 2400,
         "MaxWrite": 1900,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 51,
+        "Write4K": 174,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
-            {
-                "Region": "CN",
-                "Platform": "JD",
-                "Price": "999",
-                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1394207.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "119.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKXTJJV7130"
-            },
             {
                 "Region": "US",
                 "Platform": "Amazon",
                 "Price": "199.99",
                 "PriceLink": "https://www.amazon.com/dp/B08GVDNTGJ"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "999",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1394207.html"
             }
         ],
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-252-S06.jpg"
+        "Img": ""
     },
     {
         "Id": "crucial-p2-500gb",
         "Brand": "crucial",
         "Name": "P2 500GB",
-        "NameCN": "英睿达P2 500GB M.2 SSD",
+        "NameCN": "P2 500GB",
         "ReleaseDate": "April 2020",
         "Model": "CT500P2SSD8",
         "Capacity": "500GB",
         "MaxRead": 2300,
         "MaxWrite": 940,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 53,
+        "Write4K": 182,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "104.00",
-                "PriceLink": "https://www.amazon.com/dp/B086BGWNY8"
+                "Platform": "Newegg",
+                "Price": "119.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156245"
             },
             {
                 "Region": "CN",
@@ -96,7 +90,7 @@
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1393507.html"
             }
         ],
-        "Img": ""
+        "Img": "404"
     },
     {
         "Id": "crucial-p3-1tb",
@@ -108,23 +102,23 @@
         "Capacity": "1TB",
         "MaxRead": 3500,
         "MaxWrite": 3000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 55,
+        "Write4K": 181,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "59.74",
+                "Price": "59.99",
                 "PriceLink": "https://www.amazon.com/dp/B0B25LZGGW"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "59.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JHY4231"
+                "Price": "61.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156296"
             },
             {
                 "Region": "CN",
@@ -145,23 +139,23 @@
         "Capacity": "2TB",
         "MaxRead": 3500,
         "MaxWrite": 3000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 54,
+        "Write4K": 179,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "129.99",
+                "Price": "150.50",
                 "PriceLink": "https://www.amazon.com/dp/B0B25MJ1YT"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "133.30",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JHY4232"
+                "Price": "154.95",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156297"
             },
             {
                 "Region": "CN",
@@ -182,29 +176,29 @@
         "Capacity": "4TB",
         "MaxRead": 3500,
         "MaxWrite": 3000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 54,
+        "Write4K": 179,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "299.95",
+                "PriceLink": "https://www.amazon.com/dp/B0B25P44CL"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
-                "Price": "249.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JPE6567"
+                "Price": "299.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJA14874"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "1849",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647107.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "249.99",
-                "PriceLink": "https://www.amazon.com/dp/B0B25P44CL"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg"
@@ -219,29 +213,29 @@
         "Capacity": "500GB",
         "MaxRead": 3500,
         "MaxWrite": 1900,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 70,
+        "Write4K": 207,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "46.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25LQQPC"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "57.40",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156295"
+            },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "229",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647047.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "44.59",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JJ08201"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "44.99",
-                "PriceLink": "https://www.amazon.com/dp/B0B25LQQPC"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg"
@@ -256,28 +250,28 @@
         "Capacity": "2TB",
         "MaxRead": 5000,
         "MaxWrite": 4200,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 54,
+        "Write4K": 179,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "117.99",
+                "Price": "119.95",
                 "PriceLink": "https://www.amazon.com/dp/B0B25ML2FH"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "116.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156301"
+                "Price": "121.95",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1077"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "799",
+                "Price": "849",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647007.html"
             }
         ],
@@ -293,28 +287,28 @@
         "Capacity": "4TB",
         "MaxRead": 4800,
         "MaxWrite": 4100,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 54,
+        "Write4K": 179,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "265.95",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156302"
+                "Platform": "Amazon",
+                "Price": "219.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25M8FXX"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "258.00",
-                "PriceLink": "https://www.amazon.com/dp/B0B25M8FXX"
+                "Platform": "Newegg",
+                "Price": "226.00",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156302"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "1699",
+                "Price": "1899",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1647027.html"
             }
         ],
@@ -330,29 +324,29 @@
         "Capacity": "500GB",
         "MaxRead": 4700,
         "MaxWrite": 1900,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 56,
+        "Write4K": 186,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "37.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25NTRGD"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
-                "Price": "44.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K0R8876"
+                "Price": "54.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156299"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "279",
+                "Price": "289",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1646967.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "41.92",
-                "PriceLink": "https://www.amazon.com/dp/B0B25NTRGD"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg"
@@ -367,22 +361,22 @@
         "Capacity": "1TB",
         "MaxRead": 7100,
         "MaxWrite": 6000,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 55,
+        "Write4K": 181,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "68.55",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0KEH0592"
+                "Price": "73.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKFE0326"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "419",
+                "Price": "449",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2368879.html"
             }
         ],
@@ -398,17 +392,17 @@
         "Capacity": "2TB",
         "MaxRead": 7100,
         "MaxWrite": 6000,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 40,
+        "Write4K": 180,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "129.59",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKFE0321"
+                "Price": "128.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKFE0327"
             },
             {
                 "Region": "CN",
@@ -429,23 +423,23 @@
         "Capacity": "500GB",
         "MaxRead": 6600,
         "MaxWrite": 3500,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 70,
+        "Write4K": 207,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
-                "Region": "CN",
-                "Platform": "JD",
-                "Price": "299",
-                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2368839.html"
-            },
-            {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "45.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156411"
+                "Price": "60.66",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXKBP9612"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "329",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2368839.html"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-411-01.jpg"
@@ -460,23 +454,23 @@
         "Capacity": "1TB",
         "MaxRead": 3400,
         "MaxWrite": 3000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 53,
+        "Write4K": 122,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "Out of Stock",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4475"
-            },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "1299",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1295694.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4475"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-250-S02.jpg"
@@ -491,16 +485,16 @@
         "Capacity": "2TB",
         "MaxRead": 3400,
         "MaxWrite": 3000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 55,
+        "Write4K": 123,
         "Interface": "PCIe 3.0 x4",
-        "FlashType": "3D NAND",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "232.99",
+                "Price": "319.95",
                 "PriceLink": "https://www.amazon.com/dp/B0892TWDP1"
             },
             {
@@ -522,23 +516,23 @@
         "Capacity": "1TB",
         "MaxRead": 6600,
         "MaxWrite": 5000,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 53,
+        "Write4K": 122,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "149.00",
+                "PriceLink": "https://www.amazon.com/dp/B098WL46RS"
+            },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "499",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1415927.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "139.90",
-                "PriceLink": "https://www.amazon.com/dp/B098WL46RS"
             }
         ],
         "Img": ""
@@ -553,22 +547,22 @@
         "Capacity": "2TB",
         "MaxRead": 6600,
         "MaxWrite": 5000,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 55,
+        "Write4K": 123,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "199.99",
+                "Price": "216.26",
                 "PriceLink": "https://www.amazon.com/dp/B098WKQRDL"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "315.00",
+                "Price": "322.00",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4394"
             },
             {
@@ -590,16 +584,16 @@
         "Capacity": "500GB",
         "MaxRead": 6600,
         "MaxWrite": 4000,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND",
+        "Read4K": 51,
+        "Write4K": 118,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "107.52",
+                "Price": "114.56",
                 "PriceLink": "https://www.amazon.com/dp/B098W1NDV2"
             },
             {
@@ -621,29 +615,29 @@
         "Capacity": "2TB",
         "MaxRead": 14500,
         "MaxWrite": 12700,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 79,
+        "Write4K": 277,
         "Interface": "PCIe 5.0 x4",
-        "FlashType": "TLC NAND²",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
-                "Region": "CN",
-                "Platform": "JD",
-                "Price": "1599",
-                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2152959.html"
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "258.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKA54231"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "349.90",
+                "Price": "274.73",
                 "PriceLink": "https://www.amazon.com/dp/B0CTS93WML"
             },
             {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "439.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HK9X5129"
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1699",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2152959.html"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-156-401-02.png"
@@ -658,22 +652,22 @@
         "Capacity": "1TB",
         "MaxRead": 13600,
         "MaxWrite": 10200,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 79,
+        "Write4K": 277,
         "Interface": "PCIe 5.0 x4",
-        "FlashType": "TLC NAND²",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "172.95",
+                "Price": "142.99",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156397"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "175.80",
+                "Price": "142.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CTRV9CVP"
             },
             {
@@ -695,28 +689,28 @@
         "Capacity": "4TB",
         "MaxRead": 14100,
         "MaxWrite": 12600,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 79,
+        "Write4K": 277,
         "Interface": "PCIe 5.0 x4",
-        "FlashType": "TLC NAND²",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "599.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16517"
+                "Price": "389.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156399"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "678.91",
+                "Price": "389.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CTSSMTZK"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "2999",
+                "Price": "3299",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/2152919.html"
             }
         ],
@@ -732,28 +726,28 @@
         "Capacity": "1TB",
         "MaxRead": 7300,
         "MaxWrite": 6800,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 79,
+        "Write4K": 204,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "89.99",
+                "Price": "84.54",
                 "PriceLink": "https://www.amazon.com/dp/B0CK39YR9V"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "99.95",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7426"
+                "Price": "98.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK7E7585"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "569",
+                "Price": "579",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1996007.html"
             }
         ],
@@ -769,23 +763,23 @@
         "Capacity": "2TB",
         "MaxRead": 7400,
         "MaxWrite": 7000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 78,
+        "Write4K": 198,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "153.95",
-                "PriceLink": "https://www.amazon.com/dp/B0CK2TC9XQ"
+                "Platform": "Newegg",
+                "Price": "148.35",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7443"
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "158.75",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7443"
+                "Platform": "Amazon",
+                "Price": "148.50",
+                "PriceLink": "https://www.amazon.com/dp/B0CK2TC9XQ"
             },
             {
                 "Region": "CN",
@@ -806,22 +800,22 @@
         "Capacity": "500GB",
         "MaxRead": 7200,
         "MaxWrite": 7000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 79,
+        "Write4K": 205,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "64.99",
+                "Price": "72.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CK2R8YLY"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "91.99",
+                "Price": "72.99",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156387"
             },
             {
@@ -843,28 +837,28 @@
         "Capacity": "2TB",
         "MaxRead": 7400,
         "MaxWrite": 7000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 79,
+        "Write4K": 205,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "154.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0KDH0231"
+                "Platform": "Amazon",
+                "Price": "132.99",
+                "PriceLink": "https://www.amazon.com/dp/B0CK2RKPBL"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
+                "Platform": "Newegg",
                 "Price": "154.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CK2RKPBL"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156391"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "669",
+                "Price": "699",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/micron/1996047.html"
             }
         ],
@@ -880,10 +874,10 @@
         "Capacity": "1TB",
         "MaxRead": 7300,
         "MaxWrite": 6800,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 79,
+        "Write4K": 205,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D NAND TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
@@ -895,8 +889,8 @@
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "98.32",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKEP6415"
+                "Price": "81.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156390"
             },
             {
                 "Region": "CN",
@@ -917,22 +911,22 @@
         "Capacity": "2TB",
         "MaxRead": 12400,
         "MaxWrite": 11800,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 82,
+        "Write4K": 301,
         "Interface": "PCIe 5.0 x4",
-        "FlashType": "TLC NAND²",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "209.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156330"
+                "Price": "218.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJYD0065"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "253.53",
+                "Price": "239.75",
                 "PriceLink": "https://www.amazon.com/dp/B0C3K7MTSY"
             },
             {
@@ -954,23 +948,23 @@
         "Capacity": "1TB",
         "MaxRead": 3500,
         "MaxWrite": 2100,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 46,
+        "Write4K": 165,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "105.00",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEK308687"
+                "Platform": "Amazon",
+                "Price": "69.00",
+                "PriceLink": "https://www.amazon.com/dp/B0BBWH1R8H"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "69.64",
-                "PriceLink": "https://www.amazon.com/dp/B0BBWH1R8H"
+                "Platform": "Newegg",
+                "Price": "95.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242730"
             },
             {
                 "Region": "CN",
@@ -991,17 +985,17 @@
         "Capacity": "500GB",
         "MaxRead": 3500,
         "MaxWrite": 2100,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 54,
+        "Write4K": 159,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "54.16",
-                "PriceLink": "https://www.amazon.com/dp/B0BBWJH1P8"
+                "Platform": "Newegg",
+                "Price": "289.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242729"
             },
             {
                 "Region": "CN",
@@ -1010,7 +1004,7 @@
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1647267.html"
             }
         ],
-        "Img": ""
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-729-05.jpg"
     },
     {
         "Id": "kingston-snv3s-1tb",
@@ -1022,23 +1016,23 @@
         "Capacity": "1TB",
         "MaxRead": 6000,
         "MaxWrite": 4000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 76,
+        "Write4K": 220,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "64.99",
+                "Price": "60.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DBR3DZWG"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "65.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKCT1925"
+                "Price": "63.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCT1930"
             },
             {
                 "Region": "CN",
@@ -1059,29 +1053,29 @@
         "Capacity": "500GB",
         "MaxRead": 5000,
         "MaxWrite": 3000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 58,
+        "Write4K": 175,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
-                "Region": "CN",
-                "Platform": "JD",
-                "Price": "309",
-                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317099.html"
-            },
-            {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "49.99",
+                "Price": "41.99",
                 "PriceLink": "https://www.amazon.com/dp/B0DBR9RZLV"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "49.99",
+                "Price": "41.99",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242901"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "319",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317099.html"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-901-02.jpg"
@@ -1096,22 +1090,22 @@
         "Capacity": "2TB",
         "MaxRead": 3500,
         "MaxWrite": 2800,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 44,
+        "Write4K": 168,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "132.95",
+                "Price": "119.67",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAEYEJSS3047"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "127.50",
+                "Price": "121.75",
                 "PriceLink": "https://www.amazon.com/dp/B0BDTC589G"
             },
             {
@@ -1133,29 +1127,29 @@
         "Capacity": "2TB",
         "MaxRead": 6000,
         "MaxWrite": 5000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 56,
+        "Write4K": 176,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "118.00",
+                "PriceLink": "https://www.amazon.com/dp/B0DBR6TRZQ"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
-                "Price": "128.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKCT1926"
+                "Price": "122.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCT1931"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "869",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317139.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "118.00",
-                "PriceLink": "https://www.amazon.com/dp/B0DBR6TRZQ"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-903-02.jpg"
@@ -1170,16 +1164,22 @@
         "Capacity": "500GB",
         "MaxRead": 7000,
         "MaxWrite": 3900,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 77,
+        "Write4K": 206,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Newegg",
+                "Price": "62.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242658"
+            },
+            {
+                "Region": "US",
                 "Platform": "Amazon",
-                "Price": "72.94",
+                "Price": "64.89",
                 "PriceLink": "https://www.amazon.com/dp/B09K7CR37G"
             },
             {
@@ -1187,12 +1187,6 @@
                 "Platform": "JD",
                 "Price": "439",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1455952.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "59.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIB59TJSM8188"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-658-S01.jpg"
@@ -1207,23 +1201,23 @@
         "Capacity": "4TB",
         "MaxRead": 6000,
         "MaxWrite": 5000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 56,
+        "Write4K": 176,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "244.77",
+                "Price": "244.70",
                 "PriceLink": "https://www.amazon.com/dp/B0DJ1QC42R"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "249.37",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKEP6388"
+                "Price": "246.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKGN2652"
             },
             {
                 "Region": "CN",
@@ -1244,22 +1238,22 @@
         "Capacity": "2TB",
         "MaxRead": 7000,
         "MaxWrite": 7000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 75,
+        "Write4K": 212,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "145.88",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAEYEHG02635"
+                "Price": "149.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242660"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "153.93",
+                "Price": "153.77",
                 "PriceLink": "https://www.amazon.com/dp/B09K7DRMSC"
             },
             {
@@ -1281,23 +1275,23 @@
         "Capacity": "1TB",
         "MaxRead": 7300,
         "MaxWrite": 6000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 77,
+        "Write4K": 211,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "94.99",
+                "Price": "89.86",
                 "PriceLink": "https://www.amazon.com/dp/B09K3H2YHX"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "102.71",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKEP6373"
+                "Price": "98.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJB02979"
             },
             {
                 "Region": "CN",
@@ -1318,22 +1312,22 @@
         "Capacity": "4TB",
         "MaxRead": 7300,
         "MaxWrite": 7000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 76,
+        "Write4K": 216,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "299.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK8T1993"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242833"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "309.99",
+                "Price": "306.00",
                 "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
             },
             {
@@ -1343,7 +1337,7 @@
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/2317219.html"
             }
         ],
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg"
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-657-S01.jpg"
     },
     {
         "Id": "kingston-snv2s-4tb",
@@ -1355,22 +1349,22 @@
         "Capacity": "4TB",
         "MaxRead": 3500,
         "MaxWrite": 2800,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 44,
+        "Write4K": 168,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "265.77",
+                "Price": "241.77",
                 "PriceLink": "https://www.amazon.com/dp/B0BZMK1LWS"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "289.75",
+                "Price": "289.99",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCR2293"
             },
             {
@@ -1392,22 +1386,22 @@
         "Capacity": "4TB",
         "MaxRead": 7300,
         "MaxWrite": 7000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 76,
+        "Write4K": 216,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "299.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK8T1993"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242833"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "309.99",
+                "Price": "306.00",
                 "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
             },
             {
@@ -1417,7 +1411,7 @@
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1686547.html"
             }
         ],
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg"
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-657-S01.jpg"
     },
     {
         "Id": "kingston-fury-renegade-2tb",
@@ -1429,29 +1423,29 @@
         "Capacity": "2TB",
         "MaxRead": 7300,
         "MaxWrite": 7000,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 76,
+        "Write4K": 216,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "168.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAEYEHG01468"
+                "Price": "163.49",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAE7734"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "164.75",
+                "PriceLink": "https://www.amazon.com/dp/B09K36S11S"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "1279",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/kingston/1686527.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "144.99",
-                "PriceLink": "https://www.amazon.com/dp/B09K36S11S"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg"
@@ -1466,23 +1460,23 @@
         "Capacity": "1TB",
         "MaxRead": 7000,
         "MaxWrite": 5000,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "Samsung V-NAND",
+        "Read4K": 58,
+        "Write4K": 154,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "134.99",
-                "PriceLink": "https://www.amazon.com/dp/B08GLX7TNT"
-            },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "749",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1239853.html"
+            },
+            {
+                "Region": "US",
+                "Platform": "",
+                "Price": "Out of Stock",
+                "PriceLink": ""
             }
         ],
         "Img": ""
@@ -1497,23 +1491,23 @@
         "Capacity": "2TB",
         "MaxRead": 7000,
         "MaxWrite": 5100,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 76,
+        "Write4K": 179,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "Samsung V-NAND",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
-            {
-                "Region": "CN",
-                "Platform": "JD",
-                "Price": "1249",
-                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1308847.html"
-            },
             {
                 "Region": "US",
                 "Platform": "Amazon",
                 "Price": "169.99",
                 "PriceLink": "https://www.amazon.com/dp/B08RK2SR23"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "1249",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1308847.html"
             }
         ],
         "Img": ""
@@ -1528,16 +1522,16 @@
         "Capacity": "500GB",
         "MaxRead": 6900,
         "MaxWrite": 5000,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 4.0 x4",
-        "FlashType": "Samsung V-NAND",
+        "Read4K": 56,
+        "Write4K": 153,
+        "Interface": "PCIe 3.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "168.65",
+                "Price": "178.65",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBEC2KCF0636"
             },
             {
@@ -1559,10 +1553,10 @@
         "Capacity": "1TB",
         "MaxRead": 5000,
         "MaxWrite": 4200,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 5.0 x2",
-        "FlashType": "V-NAND TLC",
+        "Read4K": 64,
+        "Write4K": 169,
+        "Interface": "PCIe 4.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
@@ -1574,7 +1568,7 @@
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "69.99",
+                "Price": "109.75",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147886"
             },
             {
@@ -1596,10 +1590,10 @@
         "Capacity": "2TB",
         "MaxRead": 5000,
         "MaxWrite": 4200,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "PCIe 5.0 x2",
-        "FlashType": "V-NAND TLC",
+        "Read4K": 65,
+        "Write4K": 169,
+        "Interface": "PCIe 4.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
@@ -1611,7 +1605,7 @@
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "124.99",
+                "Price": "129.99",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147887"
             },
             {
@@ -1633,29 +1627,29 @@
         "Capacity": "1TB",
         "MaxRead": 7450,
         "MaxWrite": 6900,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 71,
+        "Write4K": 176,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "V7 V-NAND 3bit MLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "99.99",
+                "Price": "99.49",
                 "PriceLink": "https://www.amazon.com/dp/B0BHJF2VRN"
-            },
-            {
-                "Region": "CN",
-                "Platform": "JD",
-                "Price": "759",
-                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1676547_price.html"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "99.99",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147860"
+            },
+            {
+                "Region": "CN",
+                "Platform": "JD",
+                "Price": "759",
+                "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1676547_price.html"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2404090EWHDWC1.jpg"
@@ -1670,10 +1664,10 @@
         "Capacity": "2TB",
         "MaxRead": 7450,
         "MaxWrite": 6900,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 80,
+        "Write4K": 178,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "V7 V-NAND 3bit MLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
@@ -1707,16 +1701,22 @@
         "Capacity": "4TB",
         "MaxRead": 0,
         "MaxWrite": 0,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 80,
+        "Write4K": 178,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "V7 V-NAND 3bit MLC",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "302.00",
+                "PriceLink": "https://www.amazon.com/dp/B0CHGT1KFJ"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
-                "Price": "319.95",
+                "Price": "302.00",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879"
             },
             {
@@ -1724,15 +1724,9 @@
                 "Platform": "JD",
                 "Price": "2499",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/samsung/1962387.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "299.99",
-                "PriceLink": "https://www.amazon.com/dp/B0CHGT1KFJ"
             }
         ],
-        "Img": "https://c1.neweggimages.com/productimage/nb1280/20-147-879-01.jpg"
+        "Img": "https://c1.neweggimages.com/productimage/nb1280/A12KS2401180B77IK6B.jpg"
     },
     {
         "Id": "westerndigital-wd-black-sn770-1tb",
@@ -1744,23 +1738,23 @@
         "Capacity": "1TB",
         "MaxRead": 5150,
         "MaxWrite": 4900,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 68,
+        "Write4K": 195,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC BiCS5",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "71.59",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1K851371"
+                "Platform": "Amazon",
+                "Price": "74.99",
+                "PriceLink": "https://www.amazon.com/dp/B09QV692XY"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "69.99",
-                "PriceLink": "https://www.amazon.com/dp/B09QV692XY"
+                "Platform": "Newegg",
+                "Price": "75.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JJX3746"
             },
             {
                 "Region": "CN",
@@ -1781,22 +1775,22 @@
         "Capacity": "2TB",
         "MaxRead": 5150,
         "MaxWrite": 4850,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 60,
+        "Write4K": 198,
         "Interface": "PCIe 4.0 x4",
-        "FlashType": "3D TLC BiCS5",
+        "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "125.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250218"
+                "Price": "124.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JP14852"
             },
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "126.99",
+                "Price": "125.99",
                 "PriceLink": "https://www.amazon.com/dp/B09QV5KJHV"
             },
             {
@@ -1827,14 +1821,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "89.99",
+                "Price": "94.99",
                 "PriceLink": "https://www.amazon.com/dp/B0B7CKVCCV"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "91.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1K4B2808"
+                "Price": "94.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250243"
             },
             {
                 "Region": "CN",
@@ -1864,14 +1858,14 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "147.00",
+                "Price": "147.95",
                 "PriceLink": "https://www.amazon.com/dp/B0B7CMZ3QH"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
-                "Price": "148.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1K436582"
+                "Price": "151.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K087567"
             },
             {
                 "Region": "CN",
@@ -1892,23 +1886,23 @@
         "Capacity": "1TB",
         "MaxRead": 4150,
         "MaxWrite": 4150,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 69,
+        "Write4K": 197,
         "Interface": "PCIe 4.0 x4",
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
+                "Platform": "Newegg",
                 "Price": "59.99",
-                "PriceLink": "https://www.amazon.com/dp/B0C8XMH264"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250254"
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "59.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K3T4156"
+                "Platform": "Amazon",
+                "Price": "62.79",
+                "PriceLink": "https://www.amazon.com/dp/B0C8XMH264"
             },
             {
                 "Region": "CN",
@@ -1929,29 +1923,29 @@
         "Capacity": "2TB",
         "MaxRead": 4150,
         "MaxWrite": 4150,
-        "Read4K": 0,
-        "Write4K": 0,
+        "Read4K": 59,
+        "Write4K": 186,
         "Interface": "PCIe 4.0 x4",
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Prices": [
             {
                 "Region": "US",
+                "Platform": "Amazon",
+                "Price": "113.00",
+                "PriceLink": "https://www.amazon.com/dp/B0C8WPRM9T"
+            },
+            {
+                "Region": "US",
                 "Platform": "Newegg",
-                "Price": "109.99",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K4D2916"
+                "Price": "116.99",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEK5N3184"
             },
             {
                 "Region": "CN",
                 "Platform": "JD",
                 "Price": "949",
                 "PriceLink": "https://product.pconline.com.cn/dianziyingpan/wd/1910207_price.html"
-            },
-            {
-                "Region": "US",
-                "Platform": "Amazon",
-                "Price": "109.99",
-                "PriceLink": "https://www.amazon.com/dp/B0C8WPRM9T"
             }
         ],
         "Img": "https://c1.neweggimages.com/productimage/nb1280/20-250-253-04.jpg"
@@ -1975,7 +1969,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "529",
+                "Price": "499",
                 "PriceLink": "https://item.jd.com/100041006319.html"
             }
         ],
@@ -2000,7 +1994,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "949",
+                "Price": "899",
                 "PriceLink": "https://item.jd.com/100049404395.html"
             }
         ],
@@ -2050,7 +2044,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "1859",
+                "Price": "1799",
                 "PriceLink": "https://item.jd.com/100077740918.html"
             }
         ],
@@ -2075,7 +2069,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "419",
+                "Price": "399",
                 "PriceLink": "https://item.jd.com/100068720859.html"
             }
         ],
@@ -2150,7 +2144,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "969",
+                "Price": "919",
                 "PriceLink": "https://item.jd.com/100135244590.html"
             }
         ],
@@ -2175,7 +2169,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "549",
+                "Price": "519",
                 "PriceLink": "https://item.jd.com/100113956235.html"
             }
         ],
@@ -2200,7 +2194,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "1649",
+                "Price": "1559",
                 "PriceLink": "https://item.jd.com/100165487104.html"
             }
         ],
@@ -2225,7 +2219,7 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "999",
+                "Price": "899",
                 "PriceLink": "https://item.jd.com/100165487088.html"
             }
         ],
@@ -2275,8 +2269,8 @@
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "499",
-                "PriceLink": "https://item.jd.com/100018551171.html"
+                "Price": "739",
+                "PriceLink": ""
             }
         ],
         "Img": "https://2e.zol-img.com.cn/product/221_280x210/416/ceC5NBWgu7yI.jpg"
@@ -2316,17 +2310,17 @@
         "Capacity": "2TB",
         "MaxRead": 7400,
         "MaxWrite": 6700,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "",
-        "FlashType": "TLC三层单元",
+        "Read4K": 69,
+        "Write4K": 184,
+        "Interface": "PCIe 4.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2 PCIe接口",
         "Prices": [
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "1029",
-                "PriceLink": "https://item.jd.com/100027952225.html"
+                "Price": "519",
+                "PriceLink": "https://s.click.taobao.com/t?e=m%3D2%26s%3D0CwOmnCu%2FPZw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0FL10qCsX7QXMkUgmpCbxsW3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOivtrYivXg9UDOZ8qjr9lN%2FV%2BF40SvG%2FVA8d5%2Fu598JttjQnq8nEfNP3aySW5%2BqSkuSnfrwP4GkRQmvkUCk8mh7kdP%2FfQ%2B7%2BktULObBdsA%2BMh3%2FC0mPmfShBJHfTTaxjScYl7w3%2FA2kb\u0026union_lens=lensId%3AMAPI%401746998844%402133d4da_1a8f_196c13edc3a_77bc%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "Img": "https://2a.zol-img.com.cn/product/221_280x210/880/ceyF41CzNWM6c.jpg"
@@ -2341,17 +2335,17 @@
         "Capacity": "1TB",
         "MaxRead": 7400,
         "MaxWrite": 5400,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "",
-        "FlashType": "TLC三层单元",
+        "Read4K": 69,
+        "Write4K": 184,
+        "Interface": "PCIe 4.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2 PCIe接口",
         "Prices": [
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "569",
-                "PriceLink": "https://item.jd.com/100017474683.html"
+                "Price": "519",
+                "PriceLink": "https://s.click.taobao.com/t?e=m%3D2%26s%3D0CwOmnCu%2FPZw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0FL10qCsX7QXMkUgmpCbxsW3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOivtrYivXg9UDOZ8qjr9lN%2FV%2BF40SvG%2FVA8d5%2Fu598JttjQnq8nEfNP3aySW5%2BqSkuSnfrwP4GkRQmvkUCk8mh7kdP%2FfQ%2B7%2BktULObBdsA%2BMh3%2FC0mPmfShBJHfTTaxjScYl7w3%2FA2kb\u0026union_lens=lensId%3AMAPI%401746998844%402133d4da_1a8f_196c13edc3a_77bc%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "Img": "https://2e.zol-img.com.cn/product/221_280x210/878/ceh0888OVy9oE.jpg"
@@ -2366,17 +2360,17 @@
         "Capacity": "500GB",
         "MaxRead": 6900,
         "MaxWrite": 2700,
-        "Read4K": 0,
-        "Write4K": 0,
-        "Interface": "",
-        "FlashType": "TLC三层单元",
+        "Read4K": 69,
+        "Write4K": 184,
+        "Interface": "PCIe 4.0 x4",
+        "FlashType": "TLC",
         "FormFactor": "M.2 PCIe接口",
         "Prices": [
             {
                 "Region": "CN",
                 "Platform": "JD",
-                "Price": "429",
-                "PriceLink": ""
+                "Price": "519",
+                "PriceLink": "https://s.click.taobao.com/t?e=m%3D2%26s%3D0CwOmnCu%2FPZw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0FL10qCsX7QXMkUgmpCbxsW3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOivtrYivXg9UDOZ8qjr9lN%2FV%2BF40SvG%2FVA8d5%2Fu598JttjQnq8nEfNP3aySW5%2BqSkuSnfrwP4GkRQmvkUCk8mh7kdP%2FfQ%2B7%2BktULObBdsA%2BMh3%2FC0mPmfShBJHfTTaxjScYl7w3%2FA2kb\u0026union_lens=lensId%3AMAPI%401746998844%402133d4da_1a8f_196c13edc3a_77bc%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "Img": "https://2d.zol-img.com.cn/product/221_280x210/883/ce46tsX6Vmte6.jpg"

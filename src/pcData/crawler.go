@@ -166,6 +166,8 @@ func CreateCollector() *colly.Collector {
 			"tw.msi.com",
 			"www.msi.com",
 			"msi.com",
+			// ssd
+			"ssd-tester.com",
 		),
 		colly.AllowURLRevisit(),
 	)
