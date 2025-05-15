@@ -3,6 +3,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "P2 1TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -33,6 +34,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "P2 2TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -42,6 +44,18 @@
         "Model": "CT2000P2SSD8",
         "Name": "P2 2TB",
         "Prices": [
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKXTJJV7130"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156274"
+            },
             {
                 "Region": "US",
                 "Platform": "Amazon",
@@ -63,6 +77,7 @@
         "Brand": "crucial",
         "Capacity": "500 GB",
         "Code": "P2 500GB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -99,6 +114,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "P3 1TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -110,12 +126,6 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "59.99",
-                "PriceLink": "https://www.amazon.com/dp/B0B25LZGGW"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156296"
@@ -125,6 +135,12 @@
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKXTKDW1769"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "63.99",
+                "PriceLink": "https://www.amazon.com/dp/B0B25LZGGW"
             },
             {
                 "Region": "CN",
@@ -141,6 +157,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "P3 2TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -159,7 +176,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "150.50",
+                "Price": "145.69",
                 "PriceLink": "https://www.amazon.com/dp/B0B25MJ1YT"
             },
             {
@@ -183,6 +200,7 @@
         "Brand": "crucial",
         "Capacity": "4000 GB",
         "Code": "P3 4TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -219,6 +237,7 @@
         "Brand": "crucial",
         "Capacity": "500 GB",
         "Code": "P3 500GB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -231,14 +250,8 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "46.99",
+                "Price": "38.99",
                 "PriceLink": "https://www.amazon.com/dp/B0B25LQQPC"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156295"
             },
             {
                 "Region": "US",
@@ -261,6 +274,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "P3 Plus 2TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -273,7 +287,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "119.95",
+                "Price": "117.00",
                 "PriceLink": "https://www.amazon.com/dp/B0B25ML2FH"
             },
             {
@@ -303,6 +317,7 @@
         "Brand": "crucial",
         "Capacity": "4000 GB",
         "Code": "P3 Plus 4TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -345,6 +360,7 @@
         "Brand": "crucial",
         "Capacity": "500 GB",
         "Code": "P3 Plus 500GB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -357,7 +373,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "37.99",
+                "Price": "39.99",
                 "PriceLink": "https://www.amazon.com/dp/B0B25NTRGD"
             },
             {
@@ -387,6 +403,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "P310 1TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -423,6 +440,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "P310 2TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -459,6 +477,7 @@
         "Brand": "crucial",
         "Capacity": "500 GB",
         "Code": "P310 500GB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -495,6 +514,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "P5 1TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -531,6 +551,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "P5 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -561,6 +582,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "P5 Plus 1TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -591,6 +613,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "P5 Plus 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -603,7 +626,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "216.26",
+                "Price": "214.14",
                 "PriceLink": "https://www.amazon.com/dp/B098WKQRDL"
             },
             {
@@ -627,6 +650,7 @@
         "Brand": "crucial",
         "Capacity": "500 GB",
         "Code": "P5 Plus 500GB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -657,6 +681,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "Pro系列 T705巅峰马甲版 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -681,7 +706,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "274.73",
+                "Price": "259.99",
                 "PriceLink": "https://www.amazon.com/dp/B0CTS93WML"
             },
             {
@@ -699,6 +724,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "Pro系列 T705巅峰版 1TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -741,6 +767,7 @@
         "Brand": "crucial",
         "Capacity": "4000 GB",
         "Code": "Pro系列 T705巅峰版 4TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -777,6 +804,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "T500 1TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -819,6 +847,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "T500 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -861,6 +890,7 @@
         "Brand": "crucial",
         "Capacity": "500 GB",
         "Code": "T500 500GB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -903,6 +933,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "T500马甲版 1TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -945,6 +976,7 @@
         "Brand": "crucial",
         "Capacity": "1000 GB",
         "Code": "T500马甲版 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -987,6 +1019,7 @@
         "Brand": "crucial",
         "Capacity": "2000 GB",
         "Code": "T700 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1029,6 +1062,7 @@
         "Brand": "kingston",
         "Capacity": "1000 GB",
         "Code": "SNV2S 1TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1038,18 +1072,6 @@
         "Model": "SNV2S/1000G",
         "Name": "NV2 1TB",
         "Prices": [
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242730"
-            },
-            {
-                "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEK308687"
-            },
             {
                 "Region": "US",
                 "Platform": "Amazon",
@@ -1071,6 +1093,7 @@
         "Brand": "kingston",
         "Capacity": "500 GB",
         "Code": "SNV2S 500GB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1107,6 +1130,7 @@
         "Brand": "kingston",
         "Capacity": "1000 GB",
         "Code": "SNV3S 1TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1119,20 +1143,20 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "60.00",
+                "Price": "62.00",
                 "PriceLink": "https://www.amazon.com/dp/B0DBR3DZWG"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCT1930"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242902"
             },
             {
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242902"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCT1930"
             },
             {
                 "Region": "CN",
@@ -1149,6 +1173,7 @@
         "Brand": "kingston",
         "Capacity": "500 GB",
         "Code": "SNV3S 500GB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1191,6 +1216,7 @@
         "Brand": "kingston",
         "Capacity": "2000 GB",
         "Code": "SNV2S 2TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1209,7 +1235,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "121.75",
+                "Price": "122.01",
                 "PriceLink": "https://www.amazon.com/dp/B0BDTC589G"
             },
             {
@@ -1227,6 +1253,7 @@
         "Brand": "kingston",
         "Capacity": "2000 GB",
         "Code": "SNV3S 2TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1269,6 +1296,7 @@
         "Brand": "kingston",
         "Capacity": "512 GB",
         "Code": "KC3000 512GB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1305,6 +1333,7 @@
         "Brand": "kingston",
         "Capacity": "4000 GB",
         "Code": "SNV3S 4TB",
+        "DRam": false,
         "FlashType": "QLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1347,6 +1376,7 @@
         "Brand": "kingston",
         "Capacity": "2048 GB",
         "Code": "KC3000 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1389,6 +1419,7 @@
         "Brand": "kingston",
         "Capacity": "1000 GB",
         "Code": "FURY Renegade 1TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1431,6 +1462,7 @@
         "Brand": "kingston",
         "Capacity": "4000 GB",
         "Code": "FURY Renegade 散热器版 4TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1442,15 +1474,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242833"
+                "Platform": "Amazon",
+                "Price": "299.89",
+                "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "306.00",
-                "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242833"
             },
             {
                 "Region": "US",
@@ -1473,6 +1505,7 @@
         "Brand": "kingston",
         "Capacity": "4000 GB",
         "Code": "SNV2S 4TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1509,6 +1542,7 @@
         "Brand": "kingston",
         "Capacity": "4000 GB",
         "Code": "FURY Renegade 4TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1520,15 +1554,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242833"
+                "Platform": "Amazon",
+                "Price": "299.89",
+                "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "306.00",
-                "PriceLink": "https://www.amazon.com/dp/B09K3PSWD2"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242833"
             },
             {
                 "Region": "US",
@@ -1551,6 +1585,7 @@
         "Brand": "kingston",
         "Capacity": "2000 GB",
         "Code": "FURY Renegade 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1568,15 +1603,15 @@
             },
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242656"
+                "Platform": "Amazon",
+                "Price": "164.49",
+                "PriceLink": "https://www.amazon.com/dp/B09K36S11S"
             },
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "164.75",
-                "PriceLink": "https://www.amazon.com/dp/B09K36S11S"
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242656"
             },
             {
                 "Region": "CN",
@@ -1593,6 +1628,7 @@
         "Brand": "samsung",
         "Capacity": "1000 GB",
         "Code": "Samsung 980 PRO 1TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1623,6 +1659,7 @@
         "Brand": "samsung",
         "Capacity": "2000 GB",
         "Code": "Samsung 980 PRO 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1635,7 +1672,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "169.99",
+                "Price": "199.99",
                 "PriceLink": "https://www.amazon.com/dp/B08RK2SR23"
             },
             {
@@ -1653,6 +1690,7 @@
         "Brand": "samsung",
         "Capacity": "500 GB",
         "Code": "Samsung 980 PRO 500GB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1689,6 +1727,7 @@
         "Brand": "samsung",
         "Capacity": "1000 GB",
         "Code": "Samsung 990 EVO 1TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1731,6 +1770,7 @@
         "Brand": "samsung",
         "Capacity": "2000 GB",
         "Code": "Samsung 990 EVO 2TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1767,6 +1807,7 @@
         "Brand": "samsung",
         "Capacity": "1000 GB",
         "Code": "Samsung 990 PRO 1TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1778,15 +1819,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "99.49",
-                "PriceLink": "https://www.amazon.com/dp/B0BHJF2VRN"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147860"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "99.99",
+                "PriceLink": "https://www.amazon.com/dp/B0BHJF2VRN"
             },
             {
                 "Region": "US",
@@ -1809,6 +1850,7 @@
         "Brand": "samsung",
         "Capacity": "2000 GB",
         "Code": "Samsung 990 PRO 2TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1820,12 +1862,6 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Newegg",
-                "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861"
-            },
-            {
-                "Region": "US",
                 "Platform": "Amazon",
                 "Price": "169.99",
                 "PriceLink": "https://www.amazon.com/dp/B0BHJJ9Y77"
@@ -1834,7 +1870,13 @@
                 "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
-                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKGP9331"
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJB96114"
+            },
+            {
+                "Region": "US",
+                "Platform": "Newegg",
+                "Price": "",
+                "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861"
             },
             {
                 "Region": "CN",
@@ -1851,6 +1893,7 @@
         "Brand": "samsung",
         "Capacity": "4000 GB",
         "Code": "Samsung 990 PRO 4TB",
+        "DRam": true,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1862,15 +1905,15 @@
         "Prices": [
             {
                 "Region": "US",
-                "Platform": "Amazon",
-                "Price": "302.00",
-                "PriceLink": "https://www.amazon.com/dp/B0CHGT1KFJ"
-            },
-            {
-                "Region": "US",
                 "Platform": "Newegg",
                 "Price": "",
                 "PriceLink": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879"
+            },
+            {
+                "Region": "US",
+                "Platform": "Amazon",
+                "Price": "302.00",
+                "PriceLink": "https://www.amazon.com/dp/B0CHGT1KFJ"
             },
             {
                 "Region": "US",
@@ -1893,6 +1936,7 @@
         "Brand": "westerndigital",
         "Capacity": "1000 GB",
         "Code": "WD BLACK SN770 1TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1905,7 +1949,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "74.99",
+                "Price": "71.95",
                 "PriceLink": "https://www.amazon.com/dp/B09QV692XY"
             },
             {
@@ -1935,6 +1979,7 @@
         "Brand": "westerndigital",
         "Capacity": "2000 GB",
         "Code": "WD BLACK SN770 2TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -1977,6 +2022,7 @@
         "Brand": "westerndigital",
         "Capacity": "1000 GB",
         "Code": "WD BLACK SN850X 1TB",
+        "DRam": false,
         "FlashType": "BiCS5 112-layer TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -2019,6 +2065,7 @@
         "Brand": "westerndigital",
         "Capacity": "2000 GB",
         "Code": "WD BLACK SN850X 2TB",
+        "DRam": false,
         "FlashType": "BiCS5 112-layer TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -2061,6 +2108,7 @@
         "Brand": "westerndigital",
         "Capacity": "1000 GB",
         "Code": "WD BLUE SN580 1TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -2073,7 +2121,7 @@
             {
                 "Region": "US",
                 "Platform": "Amazon",
-                "Price": "62.79",
+                "Price": "61.53",
                 "PriceLink": "https://www.amazon.com/dp/B0C8XMH264"
             },
             {
@@ -2103,6 +2151,7 @@
         "Brand": "westerndigital",
         "Capacity": "2000 GB",
         "Code": "WD BLUE SN580 2TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "M.2-2280",
         "Img": "",
@@ -2139,6 +2188,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus7100 1TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2163,6 +2213,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus7100 2TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2187,6 +2238,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus7100 512GB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2211,6 +2263,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus7100 4TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2235,6 +2288,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "Ti600 1TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2259,6 +2313,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "Ti600 500GB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2283,6 +2338,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "Ti600 2TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2307,6 +2363,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus7100 2TB 黑神话·悟空联名版",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2331,6 +2388,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus7100 1TB 黑神话·悟空联名版",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2355,6 +2413,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPro9000 2TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2379,6 +2438,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPro9000 1TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2403,6 +2463,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus5000 2TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2427,6 +2488,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus5000 1TB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2451,6 +2513,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPlus5000 512GB",
+        "DRam": false,
         "FlashType": "",
         "FormFactor": "",
         "Img": "",
@@ -2475,6 +2538,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPro7000 2TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "",
         "Img": "",
@@ -2499,6 +2563,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPro7000 1TB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "",
         "Img": "",
@@ -2523,6 +2588,7 @@
         "Brand": "zhitai",
         "Capacity": "",
         "Code": "TiPro7000 512GB",
+        "DRam": false,
         "FlashType": "TLC",
         "FormFactor": "",
         "Img": "",

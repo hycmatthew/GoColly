@@ -23,6 +23,7 @@ type SSDSpec struct {
 	Interface   string
 	FlashType   string
 	FormFactor  string
+	DRam        bool
 	Prices      []PriceType
 	Img         string
 }
@@ -42,6 +43,7 @@ type SSDType struct {
 	Interface   string
 	FlashType   string
 	FormFactor  string
+	DRam        bool
 	Prices      []PriceType
 	Img         string
 }
@@ -92,6 +94,9 @@ func getDetailsLinkFrommSSDTester(collector *colly.Collector) []SSDSpec {
 			// 闪存类型
 			ssd.FlashType = cleanText(tds.Eq(4).Text())
 
+			// has DRAM
+			ssd.DRam = strings.Contains(cleanText(tds.Eq(5).Text()), "Yes")
+
 			// 接口类型
 			ssd.Interface = cleanText(tds.Eq(7).Text())
 
@@ -137,6 +142,7 @@ func GetSSDSpec(record LinkRecord) SSDSpec {
 		ssdData.Interface = closestSpec.Interface
 		ssdData.Read4K = closestSpec.Read4K
 		ssdData.Write4K = closestSpec.Write4K
+		ssdData.DRam = closestSpec.DRam
 	}
 	ssdData.Name = RemoveBrandsFromName(ssdData.Brand, ssdData.Name)
 
