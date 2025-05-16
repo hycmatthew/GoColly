@@ -35,7 +35,7 @@ type SSDType struct {
 	NameCN      string
 	ReleaseDate string
 	Model       string
-	Capacity    string
+	Capacity    int
 	MaxRead     int
 	MaxWrite    int
 	Read4K      int
@@ -352,70 +352,54 @@ func getZhiTaiDataFromPcOnline(link string, collector *colly.Collector) SSDSpec 
 	return specData
 }
 
-func NormalizeSSDCapacity(input string) string {
-	// 正则表达式匹配容量数值和单位
-	re := regexp.MustCompile(`(?i)^\s*([\d.]+)\s*([TGMK]?B?)\s*$`)
-	matches := re.FindStringSubmatch(input)
-	if matches == nil {
-		fmt.Println("无效格式: ", input)
-		return input
+func NormalizeSSDCapacity(input string) int {
+	// 統一清理輸入並轉換大小寫
+	cleaned := strings.ToUpper(strings.TrimSpace(input))
+
+	// 正則匹配數值和單位
+	re := regexp.MustCompile(`^(\d+)\s*(TB|GB)$`)
+	matches := re.FindStringSubmatch(cleaned)
+	if len(matches) != 3 {
+		return 0 // 無法解析的格式返回0
 	}
 
-	valueStr := matches[1]
-	unit := strings.ToUpper(strings.TrimSpace(matches[2]))
+	// 解析數值部分
+	value, _ := strconv.Atoi(matches[1])
+	unit := matches[2]
 
-	// 转换为浮点数
-	value, err := strconv.ParseFloat(valueStr, 64)
-	if err != nil {
-		fmt.Println("数值解析失败: ", input)
-		return input
-	}
-
-	// 转换为统一GB单位（按1TB=1000GB换算）
-	var totalGB float64
-	switch {
-	case strings.HasPrefix(unit, "TB") || unit == "T":
-		totalGB = value * 1000
-	case strings.HasPrefix(unit, "GB") || unit == "G":
-		totalGB = value
-	case strings.HasPrefix(unit, "MB") || unit == "M":
-		totalGB = value / 1000
-	case strings.HasPrefix(unit, "KB") || unit == "K":
-		totalGB = value / 1e6
+	// 轉換為GB基準數值
+	var baseGB int
+	switch unit {
+	case "TB":
+		baseGB = value * 1000
+	case "GB":
+		baseGB = value
 	default:
-		fmt.Println("未知单位: ", input)
-		return ""
+		return 0
 	}
 
-	// 特殊值处理映射表（GB基准值 => 标准格式）
-	capacityMap := map[int]string{
-		500:  "500GB",
-		1000: "1TB",
-		2000: "2TB",
-		3000: "3TB", // 根据需求可调整
-		4000: "4TB",
-		8000: "8TB",
+	// 標準容量映射表（按市場常見規格排序）
+	standardMap := map[int]int{
+		500:   500,
+		1000:  1000,
+		2000:  2000,
+		4000:  4000,
+		8000:  8000,
+		16000: 16000,
 	}
 
-	// 特殊阈值处理（单位：GB）
-	switch {
-	case totalGB >= 490 && totalGB < 750: // 500GB ±10%
-		return capacityMap[500]
-	case totalGB >= 980 && totalGB < 1500: // 1TB ±2%
-		return capacityMap[1000]
-	case totalGB >= 1960 && totalGB < 2500: // 2TB ±10%
-		return capacityMap[2000]
-	case totalGB >= 3840 && totalGB < 4200: // 4TB ±5%
-		return capacityMap[4000]
-	case totalGB >= 7680 && totalGB < 8500: // 8TB ±5%
-		return capacityMap[8000]
+	// 尋找最接近的標準容量
+	closest := 0
+	minDiff := int(^uint(0) >> 1) // 最大整數值
+	for k := range standardMap {
+		diff := abs(baseGB - k)
+		if diff < minDiff || (diff == minDiff && k > closest) {
+			minDiff = diff
+			closest = k
+		}
 	}
 
-	// 精确匹配标准容量
-	if formatted, exists := capacityMap[int(totalGB)]; exists {
-		return formatted
-	}
-	return input
+	return standardMap[closest]
 }
 
 func NormalizeSSDInterface(input string) string {
