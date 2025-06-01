@@ -193,7 +193,6 @@ func GetGPUData(spec GPUSpec) (GPUType, bool) {
 
 	// update chipset and get boost clock and benchmark from score data
 	newSpec.Chipset = normalizeChipset(newSpec.Chipset, newSpec.MemorySize)
-	fmt.Println("Normalized chipset: ", newSpec.Chipset)
 	matchedScore := findGPUScoreDataLogic(gpuScoreList, newSpec.Chipset)
 	if newSpec.BoostClock == 0 {
 		searchSubData := searchSubDataByName(newSpec.Name, newSpec.Brand, matchedScore.ProductSpec)
