@@ -9,9 +9,9 @@
             "ITX"
         ],
         "dimensions": [
-            "370",
-            "190",
-            "438"
+            370,
+            190,
+            438
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -45,9 +45,9 @@
             "ITX"
         ],
         "dimensions": [
-            "440",
-            "215",
-            "490"
+            440,
+            215,
+            490
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -80,9 +80,9 @@
             "ITX"
         ],
         "dimensions": [
-            "440",
-            "210",
-            "485"
+            440,
+            210,
+            485
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -116,9 +116,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "420",
-            "210",
-            "477"
+            420,
+            210,
+            477
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -150,9 +150,9 @@
             "ITX"
         ],
         "dimensions": [
-            "438",
-            "230",
-            "456"
+            438,
+            230,
+            456
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -184,9 +184,9 @@
             "ITX"
         ],
         "dimensions": [
-            "385",
-            "200",
-            "425"
+            385,
+            200,
+            425
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -219,9 +219,9 @@
             "ITX"
         ],
         "dimensions": [
-            "418",
-            "211",
-            "478"
+            418,
+            211,
+            478
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -254,9 +254,9 @@
             "ITX"
         ],
         "dimensions": [
-            "410",
-            "210",
-            "480"
+            410,
+            210,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -288,9 +288,9 @@
             "ITX"
         ],
         "dimensions": [
-            "380",
-            "200",
-            "424"
+            380,
+            200,
+            424
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -322,9 +322,9 @@
             "ITX"
         ],
         "dimensions": [
-            "385",
-            "200",
-            "425"
+            385,
+            200,
+            425
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -356,9 +356,9 @@
             "ITX"
         ],
         "dimensions": [
-            "333",
-            "218",
-            "400"
+            333,
+            218,
+            400
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -390,9 +390,9 @@
             "ITX"
         ],
         "dimensions": [
-            "440",
-            "210",
-            "445"
+            440,
+            210,
+            445
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 2,
@@ -425,9 +425,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "467",
-            "240",
-            "513"
+            467,
+            240,
+            513
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -460,9 +460,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "467",
-            "240",
-            "513"
+            467,
+            240,
+            513
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -494,9 +494,9 @@
             "ITX"
         ],
         "dimensions": [
-            "455",
-            "235",
-            "430"
+            455,
+            235,
+            430
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -528,9 +528,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "235",
-            "430"
+            455,
+            235,
+            430
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 3,
@@ -621,9 +621,9 @@
             "EATX"
         ],
         "dimensions": [
-            "468",
-            "233",
-            "493"
+            468,
+            233,
+            493
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -655,9 +655,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "216",
-            "422"
+            430,
+            216,
+            422
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -689,9 +689,9 @@
             "ITX"
         ],
         "dimensions": [
-            "396",
-            "208",
-            "421"
+            396,
+            208,
+            421
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -723,9 +723,9 @@
             "ITX"
         ],
         "dimensions": [
-            "430",
-            "220",
-            "357"
+            430,
+            220,
+            357
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -758,9 +758,9 @@
             "ITX"
         ],
         "dimensions": [
-            "368",
-            "190",
-            "438"
+            368,
+            190,
+            438
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -820,9 +820,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "230",
-            "456"
+            460,
+            230,
+            456
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -854,9 +854,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "230",
-            "456"
+            460,
+            230,
+            456
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -890,9 +890,9 @@
             "ITX"
         ],
         "dimensions": [
-            "473",
-            "248",
-            "456"
+            473,
+            248,
+            456
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -924,9 +924,9 @@
             "ITX"
         ],
         "dimensions": [
-            "438",
-            "230",
-            "456"
+            438,
+            230,
+            456
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -959,9 +959,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "469",
-            "285",
-            "400"
+            469,
+            285,
+            400
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -1000,9 +1000,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "469",
-            "285",
-            "400"
+            469,
+            285,
+            400
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -1042,9 +1042,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "464",
-            "303",
-            "476"
+            464,
+            303,
+            476
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -1084,9 +1084,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "464",
-            "303",
-            "476"
+            464,
+            303,
+            476
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -1118,9 +1118,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "420",
-            "210",
-            "402"
+            420,
+            210,
+            402
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -1153,9 +1153,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "467",
-            "220",
-            "486"
+            467,
+            220,
+            486
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -1194,9 +1194,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "467",
-            "220",
-            "486"
+            467,
+            220,
+            486
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -1229,9 +1229,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "220",
-            "488"
+            479,
+            220,
+            488
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -1264,9 +1264,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "220",
-            "488"
+            479,
+            220,
+            488
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -1299,9 +1299,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "463",
-            "220",
-            "486"
+            463,
+            220,
+            486
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -1334,9 +1334,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "467",
-            "220",
-            "486"
+            467,
+            220,
+            486
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -1370,9 +1370,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "530",
-            "245",
-            "545"
+            530,
+            245,
+            545
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 4,
@@ -1412,9 +1412,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "530",
-            "245",
-            "545"
+            530,
+            245,
+            545
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 4,
@@ -1453,9 +1453,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "190",
-            "462"
+            430,
+            190,
+            462
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -1481,9 +1481,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "390",
-            "210",
-            "485"
+            390,
+            210,
+            485
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -1516,9 +1516,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "390",
-            "210",
-            "485"
+            390,
+            210,
+            485
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -1557,9 +1557,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "484",
-            "220",
-            "523"
+            484,
+            220,
+            523
         ],
         "drive_bays_2": 7,
         "drive_bays_3": 7,
@@ -1586,9 +1586,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "527",
-            "232",
-            "506"
+            527,
+            232,
+            506
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 8,
@@ -1627,9 +1627,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "489",
-            "230",
-            "518"
+            489,
+            230,
+            518
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -1663,9 +1663,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "476",
-            "234",
-            "485"
+            476,
+            234,
+            485
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -1698,9 +1698,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "454",
-            "215",
-            "480"
+            454,
+            215,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -1734,9 +1734,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "522",
-            "230",
-            "522"
+            522,
+            230,
+            522
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -1774,9 +1774,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "195",
-            "395"
+            475,
+            195,
+            395
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -1808,9 +1808,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "410",
-            "180",
-            "373"
+            410,
+            180,
+            373
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 4,
@@ -1842,9 +1842,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "465",
-            "220",
-            "430"
+            465,
+            220,
+            430
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 2,
@@ -1877,9 +1877,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "238",
-            "511"
+            435,
+            238,
+            511
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -1912,9 +1912,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "238",
-            "511"
+            435,
+            238,
+            511
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -1947,9 +1947,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "238",
-            "511"
+            435,
+            238,
+            511
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -1982,9 +1982,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "238",
-            "511"
+            435,
+            238,
+            511
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -2016,9 +2016,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "350",
-            "205",
-            "460"
+            350,
+            205,
+            460
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 3,
@@ -2056,9 +2056,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "350",
-            "205",
-            "460"
+            350,
+            205,
+            460
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 3,
@@ -2083,9 +2083,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "350",
-            "205",
-            "460"
+            350,
+            205,
+            460
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 3,
@@ -2110,9 +2110,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "350",
-            "205",
-            "460"
+            350,
+            205,
+            460
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 3,
@@ -2151,9 +2151,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "412",
-            "225",
-            "503"
+            412,
+            225,
+            503
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -2186,9 +2186,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "412",
-            "225",
-            "503"
+            412,
+            225,
+            503
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -2228,9 +2228,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "593",
-            "245",
-            "560"
+            593,
+            245,
+            560
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 4,
@@ -2257,9 +2257,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "639",
-            "268",
-            "659"
+            639,
+            268,
+            659
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -2292,9 +2292,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "565",
-            "250",
-            "591"
+            565,
+            250,
+            591
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -2333,9 +2333,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "250",
-            "591",
-            "565"
+            250,
+            591,
+            565
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -2373,9 +2373,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "194",
-            "531",
-            "386"
+            194,
+            531,
+            386
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -2408,9 +2408,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "426",
-            "214",
-            "482"
+            426,
+            214,
+            482
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -2450,9 +2450,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "485",
-            "235",
-            "520"
+            485,
+            235,
+            520
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -2485,9 +2485,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "552",
-            "251",
-            "545"
+            552,
+            251,
+            545
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -2526,9 +2526,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "446",
-            "285",
-            "450"
+            446,
+            285,
+            450
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 4,
@@ -2567,9 +2567,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "446",
-            "285",
-            "450"
+            446,
+            285,
+            450
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 4,
@@ -2602,9 +2602,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "446",
-            "285",
-            "450"
+            446,
+            285,
+            450
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 4,
@@ -2637,9 +2637,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "446",
-            "285",
-            "450"
+            446,
+            285,
+            450
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 4,
@@ -2678,9 +2678,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "443"
+            450,
+            231,
+            443
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -2713,9 +2713,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "443"
+            450,
+            231,
+            443
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -2754,9 +2754,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "443"
+            450,
+            231,
+            443
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -2789,9 +2789,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "241",
-            "519"
+            544,
+            241,
+            519
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 7,
@@ -2825,9 +2825,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "565",
-            "249",
-            "523"
+            565,
+            249,
+            523
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -2867,9 +2867,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "565",
-            "249",
-            "523"
+            565,
+            249,
+            523
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -2909,9 +2909,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "604",
-            "275",
-            "569"
+            604,
+            275,
+            569
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 2,
@@ -2945,9 +2945,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "604",
-            "275",
-            "569"
+            604,
+            275,
+            569
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 2,
@@ -2980,9 +2980,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "305",
-            "435"
+            450,
+            305,
+            435
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -3021,9 +3021,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "305",
-            "435"
+            450,
+            305,
+            435
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -3056,9 +3056,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "305",
-            "435"
+            450,
+            305,
+            435
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -3097,9 +3097,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "305",
-            "435"
+            450,
+            305,
+            435
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -3133,9 +3133,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "532",
-            "327",
-            "484"
+            532,
+            327,
+            484
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -3175,9 +3175,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "532",
-            "327",
-            "484"
+            532,
+            327,
+            484
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -3217,9 +3217,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "532",
-            "327",
-            "484"
+            532,
+            327,
+            484
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -3253,9 +3253,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "532",
-            "327",
-            "484"
+            532,
+            327,
+            484
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -3288,9 +3288,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "232",
-            "463"
+            450,
+            232,
+            463
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -3329,9 +3329,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "443"
+            450,
+            231,
+            443
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3364,9 +3364,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "443"
+            450,
+            231,
+            443
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3399,9 +3399,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "232",
-            "463"
+            450,
+            232,
+            463
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3440,9 +3440,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "232",
-            "463"
+            450,
+            232,
+            463
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3481,9 +3481,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "463"
+            450,
+            231,
+            463
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3516,9 +3516,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "463"
+            450,
+            231,
+            463
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3551,9 +3551,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "463"
+            450,
+            231,
+            463
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3586,9 +3586,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "463"
+            450,
+            231,
+            463
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3621,9 +3621,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "231",
-            "463"
+            450,
+            231,
+            463
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -3656,9 +3656,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "492",
-            "220",
-            "470"
+            492,
+            220,
+            470
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 3,
@@ -3691,9 +3691,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "492",
-            "220",
-            "470"
+            492,
+            220,
+            470
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 3,
@@ -3727,9 +3727,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "539",
-            "281",
-            "553"
+            539,
+            281,
+            553
         ],
         "drive_bays_2": 7,
         "drive_bays_3": 3,
@@ -3769,9 +3769,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "507",
-            "245",
-            "539"
+            507,
+            245,
+            539
         ],
         "drive_bays_2": 7,
         "drive_bays_3": 3,
@@ -3811,9 +3811,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "507",
-            "245",
-            "539"
+            507,
+            245,
+            539
         ],
         "drive_bays_2": 7,
         "drive_bays_3": 3,
@@ -3847,9 +3847,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "539",
-            "245",
-            "507"
+            539,
+            245,
+            507
         ],
         "drive_bays_2": 7,
         "drive_bays_3": 3,
@@ -3889,9 +3889,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "650",
-            "306",
-            "651"
+            650,
+            306,
+            651
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -3925,9 +3925,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "516",
-            "224",
-            "510"
+            516,
+            224,
+            510
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -3961,9 +3961,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "516",
-            "224",
-            "510"
+            516,
+            224,
+            510
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4003,9 +4003,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "556",
-            "279",
-            "540"
+            556,
+            279,
+            540
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 12,
@@ -4039,9 +4039,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "556",
-            "279",
-            "540"
+            556,
+            279,
+            540
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 12,
@@ -4068,9 +4068,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "502",
-            "210",
-            "498"
+            502,
+            210,
+            498
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -4104,9 +4104,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "502",
-            "210",
-            "498"
+            502,
+            210,
+            498
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -4140,9 +4140,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "499",
-            "208",
-            "498"
+            499,
+            208,
+            498
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -4176,9 +4176,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "474",
-            "230",
-            "481"
+            474,
+            230,
+            481
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4212,9 +4212,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "474",
-            "230",
-            "481"
+            474,
+            230,
+            481
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4247,9 +4247,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "421",
-            "200",
-            "435"
+            421,
+            200,
+            435
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 2,
@@ -4281,9 +4281,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "217",
-            "410"
+            435,
+            217,
+            410
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4321,9 +4321,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "217",
-            "410"
+            435,
+            217,
+            410
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4362,9 +4362,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "494",
-            "211",
-            "475"
+            494,
+            211,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4397,9 +4397,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "496",
-            "217",
-            "468"
+            496,
+            217,
+            468
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -4432,9 +4432,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "496",
-            "217",
-            "469"
+            496,
+            217,
+            469
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 2,
@@ -4467,9 +4467,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "496",
-            "217",
-            "469"
+            496,
+            217,
+            469
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 2,
@@ -4502,9 +4502,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "489",
-            "229",
-            "469"
+            489,
+            229,
+            469
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -4536,9 +4536,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4576,9 +4576,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4616,9 +4616,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4650,9 +4650,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4684,9 +4684,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4718,9 +4718,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4752,9 +4752,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4786,9 +4786,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "376",
-            "185",
-            "292"
+            376,
+            185,
+            292
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4820,9 +4820,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "411",
-            "210",
-            "411"
+            411,
+            210,
+            411
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 4,
@@ -4855,9 +4855,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "209",
-            "473"
+            478,
+            209,
+            473
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 4,
@@ -4891,9 +4891,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "493",
-            "220",
-            "506"
+            493,
+            220,
+            506
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 3,
@@ -4927,9 +4927,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "500",
-            "223",
-            "475"
+            500,
+            223,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -4962,9 +4962,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "386",
-            "230",
-            "381"
+            386,
+            230,
+            381
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -4997,9 +4997,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "493",
-            "217",
-            "469"
+            493,
+            217,
+            469
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -5033,9 +5033,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "499",
-            "210",
-            "500"
+            499,
+            210,
+            500
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -5075,9 +5075,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "499",
-            "210",
-            "500"
+            499,
+            210,
+            500
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -5116,9 +5116,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "493",
-            "217",
-            "469"
+            493,
+            217,
+            469
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -5149,9 +5149,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "312",
-            "216",
-            "301"
+            312,
+            216,
+            301
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -5184,9 +5184,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "525",
-            "228",
-            "502"
+            525,
+            228,
+            502
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5219,9 +5219,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "542"
+            544,
+            242,
+            542
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5254,9 +5254,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "573",
-            "242",
-            "544"
+            573,
+            242,
+            544
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 4,
@@ -5290,9 +5290,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "702",
-            "306",
-            "410"
+            702,
+            306,
+            410
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -5323,9 +5323,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "372",
-            "185",
-            "292"
+            372,
+            185,
+            292
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -5362,9 +5362,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "372",
-            "185",
-            "292"
+            372,
+            185,
+            292
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -5402,9 +5402,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "387",
-            "230",
-            "383"
+            387,
+            230,
+            383
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -5444,9 +5444,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "406",
-            "231",
-            "415"
+            406,
+            231,
+            415
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -5486,9 +5486,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "406",
-            "231",
-            "415"
+            406,
+            231,
+            415
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -5528,9 +5528,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "406",
-            "231",
-            "415"
+            406,
+            231,
+            415
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -5569,9 +5569,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "209",
-            "470"
+            478,
+            209,
+            470
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 4,
@@ -5608,9 +5608,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "271",
-            "200",
-            "458"
+            271,
+            200,
+            458
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 0,
@@ -5634,9 +5634,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "271",
-            "200",
-            "458"
+            271,
+            200,
+            458
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 0,
@@ -5667,9 +5667,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "271",
-            "200",
-            "458"
+            271,
+            200,
+            458
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 0,
@@ -5693,9 +5693,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "271",
-            "200",
-            "458"
+            271,
+            200,
+            458
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 0,
@@ -5720,9 +5720,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5760,9 +5760,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5800,9 +5800,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5840,9 +5840,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5874,9 +5874,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5901,9 +5901,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5928,9 +5928,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -5962,9 +5962,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "479",
-            "304",
-            "376"
+            479,
+            304,
+            376
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6003,9 +6003,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "462",
-            "230",
-            "466"
+            462,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6038,9 +6038,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "462",
-            "230",
-            "466"
+            462,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6079,9 +6079,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "462",
-            "230",
-            "466"
+            462,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6107,9 +6107,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "462",
-            "230",
-            "466"
+            462,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6143,9 +6143,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "240",
-            "506"
+            460,
+            240,
+            506
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6185,9 +6185,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "240",
-            "506"
+            460,
+            240,
+            506
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6221,9 +6221,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "240",
-            "506"
+            460,
+            240,
+            506
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6263,9 +6263,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "240",
-            "506"
+            460,
+            240,
+            506
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6305,9 +6305,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "230",
-            "466"
+            453,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6340,9 +6340,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "230",
-            "466"
+            453,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6368,9 +6368,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "230",
-            "466"
+            453,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6410,9 +6410,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "230",
-            "466"
+            453,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6446,9 +6446,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "520",
-            "245",
-            "520"
+            520,
+            245,
+            520
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -6482,9 +6482,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "521",
-            "245",
-            "520"
+            521,
+            245,
+            520
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -6511,9 +6511,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "521",
-            "245",
-            "520"
+            521,
+            245,
+            520
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -6540,9 +6540,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "545",
-            "255",
-            "550"
+            545,
+            255,
+            550
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -6569,9 +6569,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "545",
-            "255",
-            "550"
+            545,
+            255,
+            550
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -6598,9 +6598,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -6640,9 +6640,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -6682,9 +6682,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -6718,9 +6718,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6754,9 +6754,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6783,9 +6783,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6812,9 +6812,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -6841,9 +6841,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 3,
@@ -6883,9 +6883,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "487",
-            "239",
-            "487"
+            487,
+            239,
+            487
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -6919,9 +6919,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "487",
-            "239",
-            "487"
+            487,
+            239,
+            487
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -6955,9 +6955,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "487",
-            "239",
-            "487"
+            487,
+            239,
+            487
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -6997,9 +6997,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "487",
-            "239",
-            "487"
+            487,
+            239,
+            487
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -7039,9 +7039,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "487",
-            "239",
-            "487"
+            487,
+            239,
+            487
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -7075,9 +7075,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "487",
-            "239",
-            "487"
+            487,
+            239,
+            487
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -7116,9 +7116,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "395",
-            "210",
-            "450"
+            395,
+            210,
+            450
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7151,9 +7151,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "395",
-            "210",
-            "450"
+            395,
+            210,
+            450
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7187,9 +7187,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "230",
-            "466"
+            453,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7215,9 +7215,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "230",
-            "466"
+            453,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7250,9 +7250,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "230",
-            "466"
+            453,
+            230,
+            466
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7292,9 +7292,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "520",
-            "245",
-            "520"
+            520,
+            245,
+            520
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -7334,9 +7334,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "520",
-            "245",
-            "520"
+            520,
+            245,
+            520
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -7376,9 +7376,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "530",
-            "251",
-            "560"
+            530,
+            251,
+            560
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -7412,9 +7412,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "530",
-            "251",
-            "560"
+            530,
+            251,
+            560
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -7441,9 +7441,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "550",
-            "248",
-            "600"
+            550,
+            248,
+            600
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 6,
@@ -7477,9 +7477,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "550",
-            "248",
-            "600"
+            550,
+            248,
+            600
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 6,
@@ -7506,9 +7506,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "240",
-            "506"
+            460,
+            240,
+            506
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7535,9 +7535,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "240",
-            "506"
+            460,
+            240,
+            506
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7571,9 +7571,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "545",
-            "255",
-            "550"
+            545,
+            255,
+            550
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -7607,9 +7607,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "545",
-            "255",
-            "550"
+            545,
+            255,
+            550
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -7643,9 +7643,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7672,9 +7672,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "481",
-            "328",
-            "496"
+            481,
+            328,
+            496
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7712,9 +7712,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "418",
-            "215",
-            "431"
+            418,
+            215,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7739,9 +7739,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "418",
-            "215",
-            "431"
+            418,
+            215,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7767,9 +7767,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "416",
-            "210",
-            "477"
+            416,
+            210,
+            477
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7795,9 +7795,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "416",
-            "210",
-            "477"
+            416,
+            210,
+            477
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7822,9 +7822,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "413",
-            "215",
-            "431"
+            413,
+            215,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7849,9 +7849,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "413",
-            "215",
-            "431"
+            413,
+            215,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7878,9 +7878,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "230",
-            "470"
+            455,
+            230,
+            470
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7914,9 +7914,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "458",
-            "230",
-            "471"
+            458,
+            230,
+            471
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7943,9 +7943,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "458",
-            "230",
-            "471"
+            458,
+            230,
+            471
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -7972,9 +7972,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "458",
-            "230",
-            "471"
+            458,
+            230,
+            471
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8008,9 +8008,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "458",
-            "230",
-            "471"
+            458,
+            230,
+            471
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8037,9 +8037,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "440",
-            "210",
-            "480"
+            440,
+            210,
+            480
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -8066,9 +8066,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "442",
-            "210",
-            "479"
+            442,
+            210,
+            479
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -8093,9 +8093,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "225",
-            "431"
+            400,
+            225,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8127,9 +8127,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "225",
-            "431"
+            400,
+            225,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8161,9 +8161,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "215",
-            "431"
+            400,
+            215,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8195,9 +8195,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "215",
-            "431"
+            400,
+            215,
+            431
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8224,9 +8224,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "442",
-            "210",
-            "479"
+            442,
+            210,
+            479
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -8253,9 +8253,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "440",
-            "210",
-            "480"
+            440,
+            210,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8282,9 +8282,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "210",
-            "479",
-            "446"
+            210,
+            479,
+            446
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8318,9 +8318,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "210",
-            "479",
-            "446"
+            210,
+            479,
+            446
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8354,9 +8354,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "228",
-            "492"
+            475,
+            228,
+            492
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -8390,9 +8390,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "228",
-            "492"
+            475,
+            228,
+            492
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -8425,9 +8425,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "194",
-            "436"
+            430,
+            194,
+            436
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 4,
@@ -8453,9 +8453,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "419",
-            "174",
-            "354"
+            419,
+            174,
+            354
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -8494,9 +8494,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "427",
-            "210",
-            "474"
+            427,
+            210,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8529,9 +8529,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "547",
-            "240",
-            "475"
+            547,
+            240,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -8570,9 +8570,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "547",
-            "240",
-            "475"
+            547,
+            240,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -8605,9 +8605,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "427",
-            "210",
-            "474"
+            427,
+            210,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8646,9 +8646,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "427",
-            "210",
-            "474"
+            427,
+            210,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8681,9 +8681,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "427",
-            "210",
-            "474"
+            427,
+            210,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -8716,9 +8716,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "547",
-            "240",
-            "475"
+            547,
+            240,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -8757,9 +8757,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "547",
-            "240",
-            "475"
+            547,
+            240,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -8793,9 +8793,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "604",
-            "240",
-            "566"
+            604,
+            240,
+            566
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -8835,9 +8835,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "604",
-            "240",
-            "566"
+            604,
+            240,
+            566
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -8874,9 +8874,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "366",
-            "165",
-            "314"
+            366,
+            165,
+            314
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -8913,9 +8913,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "366",
-            "165",
-            "314"
+            366,
+            165,
+            314
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -8952,9 +8952,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "366",
-            "165",
-            "314"
+            366,
+            165,
+            314
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -8991,9 +8991,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "325",
-            "166",
-            "310"
+            325,
+            166,
+            310
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -9024,9 +9024,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "325",
-            "166",
-            "310"
+            325,
+            166,
+            310
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -9057,9 +9057,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "325",
-            "166",
-            "310"
+            325,
+            166,
+            310
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -9090,9 +9090,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "325",
-            "166",
-            "310"
+            325,
+            166,
+            310
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -9123,9 +9123,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "325",
-            "166",
-            "310"
+            325,
+            166,
+            310
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -9151,9 +9151,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "472",
-            "215",
-            "451"
+            472,
+            215,
+            451
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9192,9 +9192,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "472",
-            "215",
-            "451"
+            472,
+            215,
+            451
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9233,9 +9233,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "472",
-            "215",
-            "451"
+            472,
+            215,
+            451
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9274,9 +9274,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "472",
-            "215",
-            "451"
+            472,
+            215,
+            451
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9315,9 +9315,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "472",
-            "215",
-            "451"
+            472,
+            215,
+            451
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9351,9 +9351,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -9393,9 +9393,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -9434,9 +9434,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "424",
-            "210",
-            "475"
+            424,
+            210,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9469,9 +9469,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "424",
-            "210",
-            "475"
+            424,
+            210,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9504,9 +9504,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "424",
-            "210",
-            "475"
+            424,
+            210,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9539,9 +9539,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "424",
-            "210",
-            "475"
+            424,
+            210,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9574,9 +9574,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "424",
-            "210",
-            "475"
+            424,
+            210,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9609,9 +9609,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "424",
-            "210",
-            "475"
+            424,
+            210,
+            475
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9645,9 +9645,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -9681,9 +9681,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9717,9 +9717,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9753,9 +9753,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9788,9 +9788,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "396",
-            "205",
-            "406"
+            396,
+            205,
+            406
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9823,9 +9823,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "396",
-            "205",
-            "406"
+            396,
+            205,
+            406
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -9859,9 +9859,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -9895,9 +9895,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "600",
-            "240",
-            "566"
+            600,
+            240,
+            566
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -9937,9 +9937,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "600",
-            "240",
-            "566"
+            600,
+            240,
+            566
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -9973,9 +9973,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -10009,9 +10009,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "542",
-            "240",
-            "474"
+            542,
+            240,
+            474
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -10044,9 +10044,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "413",
-            "217",
-            "453"
+            413,
+            217,
+            453
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -10085,9 +10085,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "395",
-            "212",
-            "440"
+            395,
+            212,
+            440
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -10124,9 +10124,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "212",
-            "212",
-            "453"
+            212,
+            212,
+            453
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -10163,9 +10163,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "212",
-            "212",
-            "453"
+            212,
+            212,
+            453
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -10204,9 +10204,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "447",
-            "215",
-            "469"
+            447,
+            215,
+            469
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10245,9 +10245,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "447",
-            "215",
-            "469"
+            447,
+            215,
+            469
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10286,9 +10286,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "447",
-            "215",
-            "469"
+            447,
+            215,
+            469
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10321,9 +10321,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "447",
-            "215",
-            "469"
+            447,
+            215,
+            469
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10357,9 +10357,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "503",
-            "240",
-            "509"
+            503,
+            240,
+            509
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10399,9 +10399,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "503",
-            "240",
-            "509"
+            503,
+            240,
+            509
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10441,9 +10441,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "503",
-            "240",
-            "509"
+            503,
+            240,
+            509
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10477,9 +10477,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "503",
-            "240",
-            "509"
+            503,
+            240,
+            509
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10518,9 +10518,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10559,9 +10559,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10600,9 +10600,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10641,9 +10641,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10682,9 +10682,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10723,9 +10723,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10764,9 +10764,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10805,9 +10805,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10839,9 +10839,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "215",
-            "393"
+            432,
+            215,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10879,9 +10879,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "215",
-            "393"
+            432,
+            215,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10919,9 +10919,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "215",
-            "393"
+            432,
+            215,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10953,9 +10953,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "215",
-            "393"
+            432,
+            215,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -10994,9 +10994,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -11029,9 +11029,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -11070,9 +11070,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "473",
-            "215",
-            "454"
+            473,
+            215,
+            454
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -11106,9 +11106,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "522",
-            "230",
-            "520"
+            522,
+            230,
+            520
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -11148,9 +11148,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "522",
-            "230",
-            "520"
+            522,
+            230,
+            520
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -11190,9 +11190,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "522",
-            "230",
-            "520"
+            522,
+            230,
+            520
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -11226,9 +11226,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "522",
-            "230",
-            "520"
+            522,
+            230,
+            520
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -11265,9 +11265,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "374",
-            "110",
-            "395"
+            374,
+            110,
+            395
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -11304,9 +11304,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "343",
-            "153",
-            "218"
+            343,
+            153,
+            218
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -11337,9 +11337,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "343",
-            "153",
-            "218"
+            343,
+            153,
+            218
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -11376,9 +11376,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "343",
-            "153",
-            "218"
+            343,
+            153,
+            218
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -11412,9 +11412,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "530"
+            544,
+            242,
+            530
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -11448,9 +11448,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "530"
+            544,
+            242,
+            530
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -11490,9 +11490,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "222",
-            "467"
+            450,
+            222,
+            467
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -11526,9 +11526,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "222",
-            "467"
+            450,
+            222,
+            467
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -11562,9 +11562,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "222",
-            "467"
+            450,
+            222,
+            467
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -11604,9 +11604,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "222",
-            "467"
+            450,
+            222,
+            467
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -11640,9 +11640,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "222",
-            "467"
+            450,
+            222,
+            467
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -11676,9 +11676,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "530"
+            544,
+            242,
+            530
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -11718,9 +11718,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "530"
+            544,
+            242,
+            530
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -11752,9 +11752,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "417",
-            "222",
-            "374"
+            417,
+            222,
+            374
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -11786,9 +11786,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "417",
-            "222",
-            "374"
+            417,
+            222,
+            374
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -11820,9 +11820,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "417",
-            "222",
-            "374"
+            417,
+            222,
+            374
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -11854,9 +11854,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "417",
-            "222",
-            "374"
+            417,
+            222,
+            374
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -11888,9 +11888,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "417",
-            "222",
-            "374"
+            417,
+            222,
+            374
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -11924,9 +11924,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "530"
+            544,
+            242,
+            530
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -11966,9 +11966,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "530"
+            544,
+            242,
+            530
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -12008,9 +12008,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "544",
-            "242",
-            "530"
+            544,
+            242,
+            530
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -12042,9 +12042,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "443",
-            "194",
-            "306"
+            443,
+            194,
+            306
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -12082,9 +12082,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "443",
-            "194",
-            "306"
+            443,
+            194,
+            306
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -12122,9 +12122,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "443",
-            "194",
-            "306"
+            443,
+            194,
+            306
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -12162,9 +12162,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "443",
-            "194",
-            "306"
+            443,
+            194,
+            306
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -12201,9 +12201,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "326",
-            "140",
-            "244"
+            326,
+            140,
+            244
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 0,
@@ -12234,9 +12234,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "326",
-            "140",
-            "244"
+            326,
+            140,
+            244
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 0,
@@ -12275,9 +12275,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "229",
-            "494"
+            478,
+            229,
+            494
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 3,
@@ -12310,9 +12310,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "229",
-            "494"
+            478,
+            229,
+            494
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -12344,9 +12344,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "402",
-            "210",
-            "400"
+            402,
+            210,
+            400
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -12378,9 +12378,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "402",
-            "210",
-            "400"
+            402,
+            210,
+            400
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -12406,9 +12406,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "219",
-            "456"
+            455,
+            219,
+            456
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -12447,9 +12447,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "219",
-            "456"
+            455,
+            219,
+            456
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 2,
@@ -12489,9 +12489,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "462",
-            "215",
-            "482"
+            462,
+            215,
+            482
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -12525,9 +12525,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "462",
-            "215",
-            "482"
+            462,
+            215,
+            482
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -12561,9 +12561,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "480",
-            "235",
-            "491"
+            480,
+            235,
+            491
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -12603,9 +12603,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "480",
-            "235",
-            "491"
+            480,
+            235,
+            491
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -12645,9 +12645,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "480",
-            "235",
-            "491"
+            480,
+            235,
+            491
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -12681,9 +12681,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "229",
-            "494"
+            478,
+            229,
+            494
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 3,
@@ -12723,9 +12723,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "229",
-            "494"
+            478,
+            229,
+            494
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 3,
@@ -12759,9 +12759,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "229",
-            "494"
+            478,
+            229,
+            494
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 3,
@@ -12795,9 +12795,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "526",
-            "238",
-            "523"
+            526,
+            238,
+            523
         ],
         "drive_bays_2": 8,
         "drive_bays_3": 4,
@@ -12831,9 +12831,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "526",
-            "238",
-            "523"
+            526,
+            238,
+            523
         ],
         "drive_bays_2": 8,
         "drive_bays_3": 4,
@@ -12867,9 +12867,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "526",
-            "238",
-            "523"
+            526,
+            238,
+            523
         ],
         "drive_bays_2": 8,
         "drive_bays_3": 4,
@@ -12902,9 +12902,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "420",
-            "269",
-            "380"
+            420,
+            269,
+            380
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -12944,9 +12944,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "288",
-            "384"
+            400,
+            288,
+            384
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 4,
@@ -12980,9 +12980,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "288",
-            "384"
+            400,
+            288,
+            384
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 4,
@@ -13022,9 +13022,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "465",
-            "285",
-            "459"
+            465,
+            285,
+            459
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 6,
@@ -13058,9 +13058,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "465",
-            "285",
-            "459"
+            465,
+            285,
+            459
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 6,
@@ -13094,9 +13094,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "522",
-            "304",
-            "531"
+            522,
+            304,
+            531
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -13136,9 +13136,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "522",
-            "304",
-            "531"
+            522,
+            304,
+            531
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -13177,9 +13177,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "420",
-            "269",
-            "380"
+            420,
+            269,
+            380
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -13213,9 +13213,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "471",
-            "285",
-            "513"
+            471,
+            285,
+            513
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 4,
@@ -13249,9 +13249,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "471",
-            "285",
-            "513"
+            471,
+            285,
+            513
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 4,
@@ -13285,9 +13285,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "480",
-            "304",
-            "464"
+            480,
+            304,
+            464
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -13321,9 +13321,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "447",
-            "287",
-            "446"
+            447,
+            287,
+            446
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -13363,9 +13363,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "447",
-            "287",
-            "446"
+            447,
+            287,
+            446
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -13405,9 +13405,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "480",
-            "304",
-            "464"
+            480,
+            304,
+            464
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -13441,9 +13441,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "290",
-            "471"
+            478,
+            290,
+            471
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 4,
@@ -13489,9 +13489,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "290",
-            "471"
+            478,
+            290,
+            471
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 4,
@@ -13531,9 +13531,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "471",
-            "285",
-            "513"
+            471,
+            285,
+            513
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 4,
@@ -13567,9 +13567,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "274",
-            "449",
-            "446"
+            274,
+            449,
+            446
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -13600,9 +13600,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "342",
-            "170",
-            "250"
+            342,
+            170,
+            250
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -13633,9 +13633,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "342",
-            "170",
-            "250"
+            342,
+            170,
+            250
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -13668,9 +13668,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "404",
-            "212",
-            "524"
+            404,
+            212,
+            524
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -13703,9 +13703,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "404",
-            "212",
-            "524"
+            404,
+            212,
+            524
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -13743,9 +13743,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "375",
-            "203",
-            "312"
+            375,
+            203,
+            312
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -13779,9 +13779,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "678",
-            "279",
-            "674"
+            678,
+            279,
+            674
         ],
         "drive_bays_2": 8,
         "drive_bays_3": 8,
@@ -13815,9 +13815,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "678",
-            "279",
-            "674"
+            678,
+            279,
+            674
         ],
         "drive_bays_2": 8,
         "drive_bays_3": 8,
@@ -13911,9 +13911,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "230",
-            "493"
+            478,
+            230,
+            493
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -13947,9 +13947,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "230",
-            "493"
+            478,
+            230,
+            493
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -13983,9 +13983,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "230",
-            "493"
+            478,
+            230,
+            493
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -14025,9 +14025,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "478",
-            "230",
-            "493"
+            478,
+            230,
+            493
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -14067,9 +14067,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "213",
-            "480"
+            430,
+            213,
+            480
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -14101,9 +14101,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "368",
-            "235",
-            "480"
+            368,
+            235,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -14141,9 +14141,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "368",
-            "235",
-            "480"
+            368,
+            235,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -14181,9 +14181,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "368",
-            "235",
-            "480"
+            368,
+            235,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -14221,9 +14221,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "368",
-            "235",
-            "480"
+            368,
+            235,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -14262,9 +14262,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -14303,9 +14303,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -14338,9 +14338,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 5,
@@ -14379,9 +14379,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 5,
@@ -14414,9 +14414,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 5,
@@ -14449,9 +14449,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 5,
@@ -14490,9 +14490,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 5,
@@ -14525,9 +14525,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "475",
-            "300",
-            "442"
+            475,
+            300,
+            442
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 5,
@@ -14560,9 +14560,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "416",
-            "220",
-            "490"
+            416,
+            220,
+            490
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -14595,9 +14595,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "416",
-            "220",
-            "490"
+            416,
+            220,
+            490
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -14629,9 +14629,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "355",
-            "196",
-            "315"
+            355,
+            196,
+            315
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -14663,9 +14663,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "355",
-            "196",
-            "315"
+            355,
+            196,
+            315
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -14698,9 +14698,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "215",
-            "490"
+            430,
+            215,
+            490
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -14740,9 +14740,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "215",
-            "500"
+            460,
+            215,
+            500
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 2,
@@ -14776,9 +14776,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "460",
-            "215",
-            "500"
+            460,
+            215,
+            500
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 2,
@@ -14811,9 +14811,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "215",
-            "490"
+            430,
+            215,
+            490
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -14846,9 +14846,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "215",
-            "490"
+            430,
+            215,
+            490
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -14881,9 +14881,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "380",
-            "190",
-            "447"
+            380,
+            190,
+            447
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -14916,9 +14916,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "370",
-            "210",
-            "480"
+            370,
+            210,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -14957,9 +14957,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "370",
-            "210",
-            "480"
+            370,
+            210,
+            480
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -14992,9 +14992,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "230",
-            "450"
+            435,
+            230,
+            450
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -15033,9 +15033,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "435",
-            "230",
-            "450"
+            435,
+            230,
+            450
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -15075,9 +15075,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "446",
-            "227",
-            "464"
+            446,
+            227,
+            464
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -15123,9 +15123,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "225",
-            "465"
+            430,
+            225,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -15171,9 +15171,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "430",
-            "225",
-            "465"
+            430,
+            225,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -15218,9 +15218,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "415",
-            "287",
-            "435"
+            415,
+            287,
+            435
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -15265,9 +15265,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "415",
-            "287",
-            "435"
+            415,
+            287,
+            435
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -15313,9 +15313,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "480",
-            "230",
-            "505"
+            480,
+            230,
+            505
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -15355,9 +15355,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "468",
-            "244",
-            "544"
+            468,
+            244,
+            544
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -15403,9 +15403,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "468",
-            "244",
-            "544"
+            468,
+            244,
+            544
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -15444,9 +15444,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "466",
-            "290",
-            "495"
+            466,
+            290,
+            495
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -15491,9 +15491,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "466",
-            "290",
-            "495"
+            466,
+            290,
+            495
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -15533,9 +15533,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "200",
-            "465"
+            400,
+            200,
+            465
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -15569,9 +15569,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "200",
-            "465"
+            400,
+            200,
+            465
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -15605,9 +15605,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "200",
-            "465"
+            455,
+            200,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -15641,9 +15641,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "200",
-            "465"
+            455,
+            200,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -15677,9 +15677,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "500",
-            "240",
-            "515"
+            500,
+            240,
+            515
         ],
         "drive_bays_2": 9,
         "drive_bays_3": 2,
@@ -15713,9 +15713,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "500",
-            "240",
-            "515"
+            500,
+            240,
+            515
         ],
         "drive_bays_2": 9,
         "drive_bays_3": 2,
@@ -15749,9 +15749,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "500",
-            "240",
-            "515"
+            500,
+            240,
+            515
         ],
         "drive_bays_2": 9,
         "drive_bays_3": 2,
@@ -15785,9 +15785,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "500",
-            "240",
-            "515"
+            500,
+            240,
+            515
         ],
         "drive_bays_2": 9,
         "drive_bays_3": 2,
@@ -15819,9 +15819,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "205",
-            "365"
+            400,
+            205,
+            365
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -15853,9 +15853,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "205",
-            "365"
+            400,
+            205,
+            365
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -15888,9 +15888,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "200",
-            "450"
+            400,
+            200,
+            450
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 2,
@@ -15923,9 +15923,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "200",
-            "455"
+            400,
+            200,
+            455
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 2,
@@ -15958,9 +15958,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "200",
-            "450"
+            455,
+            200,
+            450
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -15993,9 +15993,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "200",
-            "450"
+            455,
+            200,
+            450
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -16029,9 +16029,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "200",
-            "465"
+            455,
+            200,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -16065,9 +16065,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "455",
-            "200",
-            "465"
+            455,
+            200,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -16101,9 +16101,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "470",
-            "210",
-            "465"
+            470,
+            210,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -16137,9 +16137,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "470",
-            "210",
-            "465"
+            470,
+            210,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -16173,9 +16173,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "470",
-            "210",
-            "465"
+            470,
+            210,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -16209,9 +16209,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "470",
-            "210",
-            "465"
+            470,
+            210,
+            465
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -16245,9 +16245,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "510",
-            "240",
-            "505"
+            510,
+            240,
+            505
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -16281,9 +16281,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "510",
-            "240",
-            "505"
+            510,
+            240,
+            505
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -16317,9 +16317,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "510",
-            "240",
-            "505"
+            510,
+            240,
+            505
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -16352,9 +16352,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "240",
-            "520",
-            "510"
+            240,
+            520,
+            510
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -16387,9 +16387,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "240",
-            "520",
-            "510"
+            240,
+            520,
+            510
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -16422,9 +16422,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "240",
-            "520",
-            "510"
+            240,
+            520,
+            510
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -16457,9 +16457,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "240",
-            "520",
-            "510"
+            240,
+            520,
+            510
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -16492,9 +16492,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "240",
-            "520",
-            "510"
+            240,
+            520,
+            510
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 4,
@@ -16533,9 +16533,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "200",
-            "450"
+            400,
+            200,
+            450
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 2,
@@ -16569,9 +16569,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "615",
-            "270",
-            "750"
+            615,
+            270,
+            750
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 6,
@@ -16605,9 +16605,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "520",
-            "240",
-            "520"
+            520,
+            240,
+            520
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 4,
@@ -16641,9 +16641,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "240",
-            "580",
-            "560"
+            240,
+            580,
+            560
         ],
         "drive_bays_2": 11,
         "drive_bays_3": 12,
@@ -16683,9 +16683,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "240",
-            "580",
-            "560"
+            240,
+            580,
+            560
         ],
         "drive_bays_2": 11,
         "drive_bays_3": 12,
@@ -16719,9 +16719,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "534",
-            "234",
-            "549"
+            534,
+            234,
+            549
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 6,
@@ -16761,9 +16761,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "534",
-            "234",
-            "549"
+            534,
+            234,
+            549
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 6,
@@ -16803,9 +16803,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "500",
-            "235",
-            "480"
+            500,
+            235,
+            480
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 8,
@@ -16839,9 +16839,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "550",
-            "235",
-            "535"
+            550,
+            235,
+            535
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 6,
@@ -16878,9 +16878,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "186",
-            "490",
-            "274"
+            186,
+            490,
+            274
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -16911,9 +16911,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "274",
-            "170",
-            "490"
+            274,
+            170,
+            490
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -16944,9 +16944,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "274",
-            "170",
-            "490"
+            274,
+            170,
+            490
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -16977,9 +16977,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "371",
-            "173",
-            "272"
+            371,
+            173,
+            272
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 0,
@@ -17010,9 +17010,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "371",
-            "173",
-            "272"
+            371,
+            173,
+            272
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 0,
@@ -17046,9 +17046,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "454",
-            "228",
-            "588"
+            454,
+            228,
+            588
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -17088,9 +17088,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "454",
-            "228",
-            "588"
+            454,
+            228,
+            588
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -17130,9 +17130,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "477",
-            "239",
-            "528"
+            477,
+            239,
+            528
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 3,
@@ -17166,9 +17166,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "477",
-            "239",
-            "528"
+            477,
+            239,
+            528
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 3,
@@ -17202,9 +17202,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "532",
-            "253",
-            "586"
+            532,
+            253,
+            586
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -17244,9 +17244,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "532",
-            "253",
-            "586"
+            532,
+            253,
+            586
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -17286,9 +17286,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "575",
-            "280",
-            "615"
+            575,
+            280,
+            615
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -17322,9 +17322,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "575",
-            "280",
-            "615"
+            575,
+            280,
+            615
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 3,
@@ -17364,9 +17364,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "210",
-            "465",
-            "470"
+            210,
+            465,
+            470
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -17400,9 +17400,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "210",
-            "465",
-            "470"
+            210,
+            465,
+            470
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -17436,9 +17436,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "520",
-            "240",
-            "520"
+            520,
+            240,
+            520
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 4,
@@ -17472,9 +17472,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "230",
-            "500"
+            450,
+            230,
+            500
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -17514,9 +17514,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "230",
-            "500"
+            450,
+            230,
+            500
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -17556,9 +17556,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "450",
-            "230",
-            "500"
+            450,
+            230,
+            500
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -17598,9 +17598,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "440",
-            "230",
-            "500"
+            440,
+            230,
+            500
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -17640,9 +17640,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "440",
-            "230",
-            "500"
+            440,
+            230,
+            500
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -17675,9 +17675,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "461",
-            "235",
-            "505"
+            461,
+            235,
+            505
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -17709,9 +17709,9 @@
             "Micro-ATX"
         ],
         "dimensions": [
-            "483",
-            "230",
-            "467"
+            483,
+            230,
+            467
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 2,
@@ -17744,9 +17744,9 @@
             "ITX"
         ],
         "dimensions": [
-            "530",
-            "232",
-            "466"
+            530,
+            232,
+            466
         ],
         "drive_bays_2": 6,
         "drive_bays_3": 4,
@@ -17780,9 +17780,9 @@
             "ITX"
         ],
         "dimensions": [
-            "490",
-            "210",
-            "507"
+            490,
+            210,
+            507
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -17816,9 +17816,9 @@
             "ITX"
         ],
         "dimensions": [
-            "490",
-            "210",
-            "507"
+            490,
+            210,
+            507
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 3,
@@ -17851,9 +17851,9 @@
             "ITX"
         ],
         "dimensions": [
-            "340",
-            "200",
-            "440"
+            340,
+            200,
+            440
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -17887,9 +17887,9 @@
             "ITX"
         ],
         "dimensions": [
-            "485",
-            "232",
-            "505"
+            485,
+            232,
+            505
         ],
         "drive_bays_2": 5,
         "drive_bays_3": 3,
@@ -17922,9 +17922,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "453",
-            "235",
-            "450"
+            453,
+            235,
+            450
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -17988,9 +17988,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "210",
-            "393"
+            432,
+            210,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18022,9 +18022,9 @@
             "ITX"
         ],
         "dimensions": [
-            "432",
-            "210",
-            "393"
+            432,
+            210,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18056,9 +18056,9 @@
             "ITX"
         ],
         "dimensions": [
-            "400",
-            "205",
-            "380"
+            400,
+            205,
+            380
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -18090,9 +18090,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "205",
-            "380"
+            400,
+            205,
+            380
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -18124,9 +18124,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "400",
-            "205",
-            "380"
+            400,
+            205,
+            380
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -18158,9 +18158,9 @@
             "ITX"
         ],
         "dimensions": [
-            "400",
-            "205",
-            "380"
+            400,
+            205,
+            380
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -18192,9 +18192,9 @@
             "ITX"
         ],
         "dimensions": [
-            "437",
-            "210",
-            "393"
+            437,
+            210,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18226,9 +18226,9 @@
             "ITX"
         ],
         "dimensions": [
-            "429",
-            "210",
-            "393"
+            429,
+            210,
+            393
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18260,9 +18260,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "415",
-            "229",
-            "422"
+            415,
+            229,
+            422
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 2,
@@ -18294,9 +18294,9 @@
             "ITX"
         ],
         "dimensions": [
-            "391",
-            "185",
-            "303"
+            391,
+            185,
+            303
         ],
         "drive_bays_2": 7,
         "drive_bays_3": 5,
@@ -18328,9 +18328,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "396",
-            "185",
-            "303"
+            396,
+            185,
+            303
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18361,9 +18361,9 @@
             "Micro-ATX"
         ],
         "dimensions": [
-            "456",
-            "205",
-            "396"
+            456,
+            205,
+            396
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18397,9 +18397,9 @@
             "ITX"
         ],
         "dimensions": [
-            "475",
-            "215",
-            "488"
+            475,
+            215,
+            488
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 2,
@@ -18431,9 +18431,9 @@
             "ITX"
         ],
         "dimensions": [
-            "423",
-            "215",
-            "425"
+            423,
+            215,
+            425
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18465,9 +18465,9 @@
             "ITX"
         ],
         "dimensions": [
-            "423",
-            "215",
-            "425"
+            423,
+            215,
+            425
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18499,9 +18499,9 @@
             "ITX"
         ],
         "dimensions": [
-            "423",
-            "215",
-            "425"
+            423,
+            215,
+            425
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18534,9 +18534,9 @@
             "ITX"
         ],
         "dimensions": [
-            "408",
-            "233",
-            "462"
+            408,
+            233,
+            462
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18569,9 +18569,9 @@
             "ITX"
         ],
         "dimensions": [
-            "408",
-            "233",
-            "462"
+            408,
+            233,
+            462
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18605,9 +18605,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "457",
-            "265",
-            "651"
+            457,
+            265,
+            651
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 4,
@@ -18641,9 +18641,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "658",
-            "261",
-            "576"
+            658,
+            261,
+            576
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 8,
@@ -18680,9 +18680,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "210",
-            "322",
-            "210"
+            210,
+            322,
+            210
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -18713,9 +18713,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "210",
-            "322",
-            "210"
+            210,
+            322,
+            210
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18752,9 +18752,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "210",
-            "322",
-            "210"
+            210,
+            322,
+            210
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -18786,9 +18786,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "221",
-            "176",
-            "301"
+            221,
+            176,
+            301
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 0,
@@ -18821,9 +18821,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "488",
-            "216",
-            "427"
+            488,
+            216,
+            427
         ],
         "drive_bays_2": 0,
         "drive_bays_3": 8,
@@ -18856,9 +18856,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "390",
-            "207",
-            "446"
+            390,
+            207,
+            446
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -18897,9 +18897,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "366",
-            "210",
-            "392"
+            366,
+            210,
+            392
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -18932,9 +18932,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "390",
-            "207",
-            "446"
+            390,
+            207,
+            446
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -18967,9 +18967,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "207",
-            "446",
-            "390"
+            207,
+            446,
+            390
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -18995,9 +18995,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "207",
-            "446",
-            "390"
+            207,
+            446,
+            390
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -19023,9 +19023,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "207",
-            "446",
-            "390"
+            207,
+            446,
+            390
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 1,
@@ -19056,9 +19056,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "380",
-            "87",
-            "370"
+            380,
+            87,
+            370
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 0,
@@ -19091,9 +19091,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "438",
-            "210",
-            "469"
+            438,
+            210,
+            469
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 2,
@@ -19117,9 +19117,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "380",
-            "87",
-            "370"
+            380,
+            87,
+            370
         ],
         "drive_bays_2": 2,
         "drive_bays_3": 1,
@@ -19150,9 +19150,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "382",
-            "105",
-            "364"
+            382,
+            105,
+            364
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -19185,9 +19185,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "225",
-            "470"
+            432,
+            225,
+            470
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -19220,9 +19220,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "225",
-            "470"
+            432,
+            225,
+            470
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -19261,9 +19261,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "432",
-            "225",
-            "470"
+            432,
+            225,
+            470
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 2,
@@ -19295,9 +19295,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "222",
-            "181",
-            "285"
+            222,
+            181,
+            285
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -19335,9 +19335,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "285",
-            "222",
-            "181"
+            285,
+            222,
+            181
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -19374,9 +19374,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "382",
-            "105",
-            "364"
+            382,
+            105,
+            364
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -19408,9 +19408,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "211",
-            "285",
-            "360"
+            211,
+            285,
+            360
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -19442,9 +19442,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "230",
-            "265",
-            "414"
+            230,
+            265,
+            414
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -19476,9 +19476,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "351",
-            "192",
-            "381"
+            351,
+            192,
+            381
         ],
         "drive_bays_2": 3,
         "drive_bays_3": 1,
@@ -19509,9 +19509,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "382",
-            "105",
-            "350"
+            382,
+            105,
+            350
         ],
         "drive_bays_2": 4,
         "drive_bays_3": 0,
@@ -19536,9 +19536,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "222",
-            "181",
-            "285"
+            222,
+            181,
+            285
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -19570,9 +19570,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "222",
-            "181",
-            "285"
+            222,
+            181,
+            285
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
@@ -19610,9 +19610,9 @@
             "Mini-ITX"
         ],
         "dimensions": [
-            "222",
-            "181",
-            "285"
+            222,
+            181,
+            285
         ],
         "drive_bays_2": 1,
         "drive_bays_3": 1,
