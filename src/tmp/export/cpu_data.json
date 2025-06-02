@@ -4,17 +4,17 @@
         "cores": 6,
         "gpu": "No",
         "id": "amd-ryzen-5-5600",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-736-V03.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 10898,
         "name": "Ryzen 5 5600",
-        "name_cn": "",
+        "name_cn": "锐龙 5 5600",
         "power": 65,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "123.59",
+                "price": "117.49",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
             },
             {
@@ -33,17 +33,17 @@
         "cores": 6,
         "gpu": "Vega 7",
         "id": "amd-ryzen-5-5600g",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-736-V03.jpg",
         "integrated_graphics_score": 1200,
         "multi_core_score": 10860,
         "name": "Ryzen 5 5600G",
-        "name_cn": "",
+        "name_cn": "锐龙5 5600G",
         "power": 88,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "123.59",
+                "price": "117.49",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
             },
             {
@@ -62,17 +62,17 @@
         "cores": 6,
         "gpu": "No",
         "id": "amd-ryzen-5-5600x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-666-V01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 11838,
         "name": "Ryzen 5 5600X",
-        "name_cn": "",
+        "name_cn": "锐龙 5 5600X",
         "power": 88,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "159.99",
+                "price": "171.90",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-5600x/p/N82E16819113666"
             },
             {
@@ -91,11 +91,11 @@
         "cores": 8,
         "gpu": "Vega 8",
         "id": "amd-ryzen-5-5700g",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-682-V01.jpg",
         "integrated_graphics_score": 1400,
         "multi_core_score": 14047,
         "name": "Ryzen 7 5700G",
-        "name_cn": "",
+        "name_cn": "锐龙7 5700G",
         "power": 45,
         "prices": [
             {
@@ -107,7 +107,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "959",
+                "price": "949",
                 "price_link": ""
             }
         ],
@@ -120,23 +120,23 @@
         "cores": 6,
         "gpu": "Radeon 2CU (RDNA2)",
         "id": "amd-ryzen-5-7600x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-770-02.jpg",
         "integrated_graphics_score": 1000,
         "multi_core_score": 15210,
         "name": "Ryzen 5 7600X",
-        "name_cn": "",
+        "name_cn": "锐龙 5 7600X",
         "power": 116,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "200.99",
+                "price": "198.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-7600x-ryzen-5-7000-series/p/N82E16819113770"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1299",
+                "price": "1249",
                 "price_link": ""
             }
         ],
@@ -149,17 +149,17 @@
         "cores": 6,
         "gpu": "Radeon 2CU (RDNA3)",
         "id": "amd-ryzen-5-9600x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-844-05.jpg",
         "integrated_graphics_score": 1200,
         "multi_core_score": 17447,
         "name": "Ryzen 5 9600X",
-        "name_cn": "",
+        "name_cn": "锐龙5 9600X",
         "power": 142,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "207.99",
+                "price": "208.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-9600x-ryzen-5-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113844"
             },
             {
@@ -178,11 +178,11 @@
         "cores": 8,
         "gpu": "No",
         "id": "amd-ryzen-7-5700x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-735-V01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 14077,
         "name": "Ryzen 7 5700X",
-        "name_cn": "",
+        "name_cn": "锐龙 7 5700X",
         "power": 65,
         "prices": [
             {
@@ -207,11 +207,11 @@
         "cores": 8,
         "gpu": "No",
         "id": "amd-ryzen-7-5700x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-734-S04.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 13535,
         "name": "Ryzen 7 5700X3D",
-        "name_cn": "",
+        "name_cn": "锐龙7 5700X3D",
         "power": 142,
         "prices": [
             {
@@ -236,11 +236,11 @@
         "cores": 8,
         "gpu": "No",
         "id": "amd-ryzen-7-5800x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-665-V01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 15344,
         "name": "Ryzen 7 5800X",
-        "name_cn": "",
+        "name_cn": "锐龙 7 5800X",
         "power": 142,
         "prices": [
             {
@@ -265,18 +265,24 @@
         "cores": 8,
         "gpu": "No",
         "id": "amd-ryzen-7-5800x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-734-05.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 14804,
         "name": "Ryzen 7 5800X3D",
-        "name_cn": "",
+        "name_cn": "锐龙 7 5800X3D",
         "power": 105,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "585.91",
+                "price": "489.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-5800x3d-ryzen-7-5000-series/p/N82E16819113734"
+            },
+            {
+                "region": "CN",
+                "platform": "other",
+                "price": "1699",
+                "price_link": ""
             }
         ],
         "single_core_score": 1453,
@@ -288,17 +294,17 @@
         "cores": 8,
         "gpu": "Radeon 2CU (RDNA2)",
         "id": "amd-ryzen-7-7700x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-768-01.jpg",
         "integrated_graphics_score": 1000,
         "multi_core_score": 19872,
         "name": "Ryzen 7 7700X",
-        "name_cn": "",
+        "name_cn": "锐龙 7 7700X",
         "power": 142,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "276.99",
+                "price": "288.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-7700x-ryzen-7-7000-series/p/N82E16819113768"
             },
             {
@@ -317,23 +323,23 @@
         "cores": 8,
         "gpu": "Radeon 2CU (RDNA2)",
         "id": "amd-ryzen-7-7800x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-793-03.png",
         "integrated_graphics_score": 1000,
         "multi_core_score": 18193,
         "name": "Ryzen 7 7800X3D",
-        "name_cn": "",
+        "name_cn": "锐龙 7 7800X3D",
         "power": 162,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "381.00",
+                "price": "383.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-7800x3d-ryzen-7-7000-series/p/N82E16819113793"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2999",
+                "price": "2699",
                 "price_link": ""
             }
         ],
@@ -346,11 +352,11 @@
         "cores": 8,
         "gpu": "Radeon 12CU (RDNA3)",
         "id": "amd-ryzen-7-8700g",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-811-01.jpg",
         "integrated_graphics_score": 3000,
         "multi_core_score": 18049,
         "name": "Ryzen 7 8700G",
-        "name_cn": "",
+        "name_cn": "锐龙7 8700G",
         "power": 88,
         "prices": [
             {
@@ -375,11 +381,11 @@
         "cores": 8,
         "gpu": "Radeon 2CU (RDNA3)",
         "id": "amd-ryzen-7-9700x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-843-09.jpg",
         "integrated_graphics_score": 1200,
         "multi_core_score": 20228,
         "name": "Ryzen 7 9700X",
-        "name_cn": "",
+        "name_cn": "锐龙7 9700X",
         "power": 142,
         "prices": [
             {
@@ -391,7 +397,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2059",
+                "price": "1999",
                 "price_link": ""
             }
         ],
@@ -404,23 +410,23 @@
         "cores": 8,
         "gpu": "Radeon 2CU (RDNA3)",
         "id": "amd-ryzen-7-9800x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-877-01.png",
         "integrated_graphics_score": 1200,
         "multi_core_score": 23334,
         "name": "Ryzen 7 9800X3D",
-        "name_cn": "",
+        "name_cn": "锐龙7 9800X3D",
         "power": 162,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "472.02",
+                "price": "489.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-9800x3d-ryzen-7-9000-series-granite-ridge-zen-5-socket-am5-processor/p/N82E16819113877"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "3949",
+                "price": "3799",
                 "price_link": ""
             }
         ],
@@ -433,17 +439,17 @@
         "cores": 12,
         "gpu": "No",
         "id": "amd-ryzen-9-5900x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-664-V01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 20634,
         "name": "Ryzen 9 5900X",
-        "name_cn": "",
+        "name_cn": "锐龙 9 5900X",
         "power": 142,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "239.99",
+                "price": "260.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-5900x/p/N82E16819113664"
             },
             {
@@ -462,11 +468,11 @@
         "cores": 16,
         "gpu": "No",
         "id": "amd-ryzen-9-5950x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-663-V01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 26017,
         "name": "Ryzen 9 5950X",
-        "name_cn": "",
+        "name_cn": "锐龙 9 5950X",
         "power": 142,
         "prices": [
             {
@@ -491,17 +497,17 @@
         "cores": 12,
         "gpu": "Radeon 2CU (RDNA2)",
         "id": "amd-ryzen-9-7900",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-785-04.png",
         "integrated_graphics_score": 1000,
         "multi_core_score": 24444,
         "name": "Ryzen 9 7900",
-        "name_cn": "",
+        "name_cn": "锐龙 9 7900",
         "power": 142,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "337.94",
+                "price": "332.54",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7900/p/N82E16819113785"
             },
             {
@@ -520,17 +526,17 @@
         "cores": 12,
         "gpu": "No",
         "id": "amd-ryzen-9-7900x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-769-02.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 29300,
         "name": "Ryzen 9 7900X",
-        "name_cn": "",
+        "name_cn": "锐龙 9 7900X",
         "power": 230,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "335.99",
+                "price": "341.15",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7900x-ryzen-9-7000-series/p/N82E16819113769"
             },
             {
@@ -549,11 +555,11 @@
         "cores": 12,
         "gpu": "No",
         "id": "amd-ryzen-9-7900x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-792-03.png",
         "integrated_graphics_score": 0,
         "multi_core_score": 27817,
         "name": "Ryzen 9 7900X3D",
-        "name_cn": "",
+        "name_cn": "锐龙 9 7900X3D",
         "power": 162,
         "prices": [
             {
@@ -578,11 +584,11 @@
         "cores": 16,
         "gpu": "No",
         "id": "amd-ryzen-9-7950x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-771-09.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 36742,
         "name": "Ryzen 9 7950X",
-        "name_cn": "",
+        "name_cn": "锐龙 9 7950X",
         "power": 230,
         "prices": [
             {
@@ -607,17 +613,17 @@
         "cores": 16,
         "gpu": "No",
         "id": "amd-ryzen-9-7950x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-791-03.png",
         "integrated_graphics_score": 0,
         "multi_core_score": 36291,
         "name": "Ryzen 9 7950X3D",
-        "name_cn": "",
+        "name_cn": "锐龙 9 7950X3D",
         "power": 162,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "777.00",
+                "price": "778.75",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7950x3d-ryzen-9-7000-series/p/N82E16819113791"
             },
             {
@@ -636,11 +642,11 @@
         "cores": 12,
         "gpu": "Radeon 2CU (RDNA3)",
         "id": "amd-ryzen-9-9900x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-842-02.png",
         "integrated_graphics_score": 1200,
         "multi_core_score": 33042,
         "name": "Ryzen 9 9900X",
-        "name_cn": "",
+        "name_cn": "锐龙9 9900X",
         "power": 120,
         "prices": [
             {
@@ -665,11 +671,11 @@
         "cores": 12,
         "gpu": "Radeon 2CU (RDNA3)",
         "id": "amd-ryzen-9-9900x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-886-01.png",
         "integrated_graphics_score": 1200,
         "multi_core_score": 38356,
         "name": "Ryzen 9 9900X3D",
-        "name_cn": "",
+        "name_cn": "锐龙9 9900X3D",
         "power": 230,
         "prices": [
             {
@@ -681,7 +687,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "4199",
+                "price": "3999",
                 "price_link": ""
             }
         ],
@@ -694,23 +700,23 @@
         "cores": 16,
         "gpu": "Radeon 2CU (RDNA3)",
         "id": "amd-ryzen-9-9950x",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-841-03.png",
         "integrated_graphics_score": 1200,
         "multi_core_score": 42103,
         "name": "Ryzen 9 9950X",
-        "name_cn": "",
+        "name_cn": "锐龙9 9950X",
         "power": 230,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "526.00",
+                "price": "523.79",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-9950x-4-3-ghz-16-core-am5-170w-processor-100-100001277wof/p/N82E16819113841"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "4399",
+                "price": "3999",
                 "price_link": ""
             }
         ],
@@ -723,17 +729,17 @@
         "cores": 16,
         "gpu": "Radeon 2CU (RDNA3)",
         "id": "amd-ryzen-9-9950x3d",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-113-884-01.png",
         "integrated_graphics_score": 1200,
         "multi_core_score": 42377,
         "name": "Ryzen 9 9950X3D",
-        "name_cn": "",
+        "name_cn": "锐龙9 9950X3D",
         "power": 230,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "699.00",
+                "price": "719.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-9950x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113884"
             },
             {
@@ -752,11 +758,11 @@
         "cores": 4,
         "gpu": "UHD Graphics 730",
         "id": "intel-core-i3-12100",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A24GD2203220DB6YE7D.jpg",
         "integrated_graphics_score": 589,
         "multi_core_score": 8061,
         "name": "Core i3 12100",
-        "name_cn": "",
+        "name_cn": "酷睿 i3-12100",
         "power": 89,
         "prices": [
             {
@@ -781,17 +787,17 @@
         "cores": 4,
         "gpu": "No",
         "id": "intel-core-i3-12100f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-357-03.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 8447,
         "name": "Core i3 12100F",
-        "name_cn": "",
+        "name_cn": "酷睿 i3-12100F",
         "power": 89,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "79.99",
+                "price": "82.49",
                 "price_link": "https://www.newegg.com/intel-core-i3-12100f-core-i3-12th-gen/p/N82E16819118357"
             },
             {
@@ -810,23 +816,23 @@
         "cores": 4,
         "gpu": "UHD Graphics 730",
         "id": "intel-core-i3-13100",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-432-05.jpg",
         "integrated_graphics_score": 589,
         "multi_core_score": 8636,
         "name": "Core i3 13100",
-        "name_cn": "",
+        "name_cn": "酷睿 i3-13100",
         "power": 89,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "120.13",
+                "price": "128.88",
                 "price_link": "https://www.newegg.com/intel-core-i3-13100-core-i3-13th-gen/p/19-118-432"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1187",
+                "price": "1199",
                 "price_link": ""
             }
         ],
@@ -839,11 +845,11 @@
         "cores": 4,
         "gpu": "No",
         "id": "intel-core-i3-13100f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-433-02.png",
         "integrated_graphics_score": 0,
         "multi_core_score": 8805,
         "name": "Core i3 13100F",
-        "name_cn": "",
+        "name_cn": "酷睿 i3-13100F",
         "power": 89,
         "prices": [
             {
@@ -868,7 +874,7 @@
         "cores": 4,
         "gpu": "UHD Graphics 730",
         "id": "intel-core-i3-14100",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-483-01.jpg",
         "integrated_graphics_score": 589,
         "multi_core_score": 9112,
         "name": "Core i3 14100",
@@ -897,11 +903,11 @@
         "cores": 4,
         "gpu": "No",
         "id": "intel-core-i3-14100f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-492-01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 8794,
         "name": "Core i3 14100F",
-        "name_cn": "",
+        "name_cn": "酷睿 i3-14100F",
         "power": 110,
         "prices": [
             {
@@ -926,11 +932,11 @@
         "cores": 6,
         "gpu": "UHD Graphics 730",
         "id": "intel-core-i5-12400",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-358-S02.jpg",
         "integrated_graphics_score": 589,
         "multi_core_score": 12023,
         "name": "Core i5 12400",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-12400",
         "power": 117,
         "prices": [
             {
@@ -955,11 +961,11 @@
         "cores": 6,
         "gpu": "No",
         "id": "intel-core-i5-12400f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-360-08.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 12047,
         "name": "Core i5 12400F",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-12400F",
         "power": 117,
         "prices": [
             {
@@ -984,7 +990,7 @@
         "cores": 6,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i5-12500",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-478-01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 12528,
         "name": "Core i5 12500",
@@ -1013,17 +1019,17 @@
         "cores": 10,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i5-12600k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-347-05.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 17333,
         "name": "Core i5 12600K",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-12600K",
         "power": 150,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "180.97",
+                "price": "159.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-12600k-core-i5-12th-gen/p/N82E16819118347"
             },
             {
@@ -1042,23 +1048,23 @@
         "cores": 10,
         "gpu": "No",
         "id": "intel-core-i5-12600kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-349-05.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 17693,
         "name": "Core i5 12600KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-12600KF",
         "power": 150,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "147.99",
+                "price": "147.59",
                 "price_link": "https://www.newegg.com/intel-core-i5-12600kf-core-i5-12th-gen/p/N82E16819118349"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1099",
+                "price": "1088",
                 "price_link": ""
             }
         ],
@@ -1071,17 +1077,17 @@
         "cores": 10,
         "gpu": "UHD Graphics 730",
         "id": "intel-core-i5-13400",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-430-10.jpg",
         "integrated_graphics_score": 589,
         "multi_core_score": 15953,
         "name": "Core i5 13400",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-13400",
         "power": 154,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "160.99",
+                "price": "171.92",
                 "price_link": "https://www.newegg.com/intel-core-i5-13400-core-i5-13th-gen/p/N82E16819118430"
             },
             {
@@ -1100,11 +1106,11 @@
         "cores": 10,
         "gpu": "No",
         "id": "intel-core-i5-13400f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-431-04.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 15911,
         "name": "Core i5 13400F",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-13400F",
         "power": 148,
         "prices": [
             {
@@ -1129,7 +1135,7 @@
         "cores": 14,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i5-13500",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-429-04.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 21007,
         "name": "Core i5 13500",
@@ -1158,11 +1164,11 @@
         "cores": 14,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i5-13600k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-416-V01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 23396,
         "name": "Core i5 13600K",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-13600K",
         "power": 181,
         "prices": [
             {
@@ -1187,23 +1193,23 @@
         "cores": 14,
         "gpu": "No",
         "id": "intel-core-i5-13600kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-417-V01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 23710,
         "name": "Core i5 13600KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-13600KF",
         "power": 181,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "199.99",
+                "price": "195.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-13600kf-core-i5-13th-gen/p/N82E16819118417"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1649",
+                "price": "2299",
                 "price_link": ""
             }
         ],
@@ -1216,7 +1222,7 @@
         "cores": 10,
         "gpu": "UHD Graphics 730",
         "id": "intel-core-i5-14400",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-478-01.jpg",
         "integrated_graphics_score": 589,
         "multi_core_score": 15926,
         "name": "Core i5 14400",
@@ -1245,11 +1251,11 @@
         "cores": 10,
         "gpu": "No",
         "id": "intel-core-i5-14400f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-489-01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 16252,
         "name": "Core i5 14400F",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-14400F",
         "power": 148,
         "prices": [
             {
@@ -1261,7 +1267,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1599",
+                "price": "1199",
                 "price_link": ""
             }
         ],
@@ -1278,7 +1284,7 @@
         "integrated_graphics_score": 0,
         "multi_core_score": 17396,
         "name": "Core i5 14490F",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-14490F",
         "power": 148,
         "prices": [
             {
@@ -1297,7 +1303,7 @@
         "cores": 14,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i5-14500",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-478-01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 22092,
         "name": "Core i5 14500",
@@ -1326,23 +1332,23 @@
         "cores": 14,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i5-14600k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-470-07.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 25270,
         "name": "Core i5 14600K",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-14600K",
         "power": 181,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "192.97",
+                "price": "199.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-14600k-core-i5-14th-gen/p/N82E16819118470"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1749",
+                "price": "1748.9",
                 "price_link": ""
             }
         ],
@@ -1355,23 +1361,23 @@
         "cores": 14,
         "gpu": "No",
         "id": "intel-core-i5-14600kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-472-03.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 24119,
         "name": "Core i5 14600KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i5-14600KF",
         "power": 181,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "202.60",
+                "price": "201.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-14600kf-core-i5-14th-gen/p/N82E16819118472"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1349",
+                "price": "1298.9",
                 "price_link": ""
             }
         ],
@@ -1384,11 +1390,11 @@
         "cores": 12,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i7-12700",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-368-V01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 19714,
         "name": "Core i7 12700",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-12700",
         "power": 180,
         "prices": [
             {
@@ -1413,11 +1419,11 @@
         "cores": 12,
         "gpu": "No",
         "id": "intel-core-i7-12700f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-359-03.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 20658,
         "name": "Core i7 12700F",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-12700F",
         "power": 180,
         "prices": [
             {
@@ -1442,17 +1448,17 @@
         "cores": 12,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i7-12700k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-343-05.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 22970,
         "name": "Core i7 12700K",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-12700K",
         "power": 190,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "219.99",
+                "price": "219.97",
                 "price_link": "https://www.newegg.com/intel-core-i7-12700k-core-i7-12th-gen/p/N82E16819118343"
             },
             {
@@ -1471,17 +1477,17 @@
         "cores": 12,
         "gpu": "No",
         "id": "intel-core-i7-12700kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-345-05.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 22784,
         "name": "Core i7 12700KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-12700KF",
         "power": 190,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "179.99",
+                "price": "189.99",
                 "price_link": "https://www.newegg.com/intel-core-i7-12700kf-core-i7-12th-gen/p/N82E16819118345"
             },
             {
@@ -1500,11 +1506,11 @@
         "cores": 16,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i7-13700",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-427-04.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 25369,
         "name": "Core i7 13700",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-13700",
         "power": 219,
         "prices": [
             {
@@ -1529,11 +1535,11 @@
         "cores": 16,
         "gpu": "No",
         "id": "intel-core-i7-13700f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-428-04.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 25699,
         "name": "Core i7 13700F",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-13700F",
         "power": 219,
         "prices": [
             {
@@ -1558,23 +1564,23 @@
         "cores": 16,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i7-13700k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-414-V01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 30468,
         "name": "Core i7 13700K",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-13700K",
         "power": 253,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "420.35",
+                "price": "309.99",
                 "price_link": "https://www.newegg.com/intel-core-i7-13700k-core-i7-13th-gen/p/N82E16819118414"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "3007",
+                "price": "3099",
                 "price_link": ""
             }
         ],
@@ -1587,11 +1593,11 @@
         "cores": 16,
         "gpu": "No",
         "id": "intel-core-i7-13700kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-415-01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 30435,
         "name": "Core i7 13700KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-13700KF",
         "power": 253,
         "prices": [
             {
@@ -1616,23 +1622,23 @@
         "cores": 24,
         "gpu": "No",
         "id": "intel-core-i7-13900f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-426-02.png",
         "integrated_graphics_score": 0,
         "multi_core_score": 35774,
         "name": "Core i9 13900F",
-        "name_cn": "",
+        "name_cn": "酷睿 i9-13900F",
         "power": 219,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "549.99",
+                "price": "592.11",
                 "price_link": "https://www.newegg.com/intel-core-i9-13900f-core-i9-13th-gen-raptor-lake-lga-1700-desktop-processor/p/N82E16819118426"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "4256",
+                "price": "4299",
                 "price_link": ""
             }
         ],
@@ -1645,7 +1651,7 @@
         "cores": 20,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i7-14700",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-476-01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 32772,
         "name": "Core i7 14700",
@@ -1674,11 +1680,11 @@
         "cores": 20,
         "gpu": "No",
         "id": "intel-core-i7-14700f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-487-01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 33114,
         "name": "Core i7 14700F",
-        "name_cn": "",
+        "name_cn": "酷睿i7-14700F",
         "power": 219,
         "prices": [
             {
@@ -1703,23 +1709,23 @@
         "cores": 20,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i7-14700k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-466-04.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 34895,
         "name": "Core i7 14700K",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-14700K",
         "power": 253,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "325.00",
+                "price": "342.99",
                 "price_link": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118466"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2749",
+                "price": "2748.9",
                 "price_link": ""
             }
         ],
@@ -1732,17 +1738,17 @@
         "cores": 20,
         "gpu": "No",
         "id": "intel-core-i7-14700kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-468-03.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 35265,
         "name": "Core i7 14700KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i7-14700KF",
         "power": 253,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "319.40",
+                "price": "327.99",
                 "price_link": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118468"
             },
             {
@@ -1761,23 +1767,23 @@
         "cores": 24,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i9-13900",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-425-04.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 38496,
         "name": "Core i9 13900",
-        "name_cn": "",
+        "name_cn": "酷睿 i9-13900",
         "power": 219,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "620.35",
+                "price": "589.99",
                 "price_link": "https://www.newegg.com/intel-core-i9-13900-core-i9-13th-gen/p/N82E16819118425"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "4355",
+                "price": "4399",
                 "price_link": ""
             }
         ],
@@ -1790,11 +1796,11 @@
         "cores": 24,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i9-13900k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-412-V01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 37486,
         "name": "Core i9 13900K",
-        "name_cn": "",
+        "name_cn": "酷睿 i9-13900K",
         "power": 253,
         "prices": [
             {
@@ -1819,11 +1825,11 @@
         "cores": 24,
         "gpu": "No",
         "id": "intel-core-i9-13900kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-413-V07.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 39012,
         "name": "Core i9 13900KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i9-13900KF",
         "power": 253,
         "prices": [
             {
@@ -1848,7 +1854,7 @@
         "cores": 24,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i9-14900",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-474-01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 31070,
         "name": "Core i9 14900",
@@ -1877,23 +1883,23 @@
         "cores": 24,
         "gpu": "UHD Graphics 770",
         "id": "intel-core-i9-14900k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-462-01.jpg",
         "integrated_graphics_score": 816,
         "multi_core_score": 40400,
         "name": "Core i9 14900K",
-        "name_cn": "",
+        "name_cn": "酷睿 i9-14900K",
         "power": 253,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "439.00",
+                "price": "469.00",
                 "price_link": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118462"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "3299",
+                "price": "3298.9",
                 "price_link": ""
             }
         ],
@@ -1906,11 +1912,11 @@
         "cores": 24,
         "gpu": "No",
         "id": "intel-core-i9-14900kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-464-03.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 40616,
         "name": "Core i9 14900KF",
-        "name_cn": "",
+        "name_cn": "酷睿 i9-14900KF",
         "power": 253,
         "prices": [
             {
@@ -1935,11 +1941,11 @@
         "cores": 10,
         "gpu": "Arc Xe-LPG (1800MHZ)",
         "id": "intel-core-ultra-5-225",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-577-01.jpg",
         "integrated_graphics_score": 1500,
         "multi_core_score": 17050,
         "name": "Core Ultra 5 225",
-        "name_cn": "",
+        "name_cn": "Core Ultra 5 225",
         "power": 121,
         "prices": [
             {
@@ -1964,23 +1970,23 @@
         "cores": 14,
         "gpu": "Arc Xe-LPG",
         "id": "intel-core-ultra-5-245k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-508-15.jpg",
         "integrated_graphics_score": 2000,
         "multi_core_score": 25085,
         "name": "Core Ultra 5 245K",
-        "name_cn": "",
+        "name_cn": "酷睿Ultra 5 245K",
         "power": 159,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "279.99",
+                "price": "289.99",
                 "price_link": "https://www.newegg.com/intel-core-ultra-5-245k-arrow-lake-lga-1851-processor/p/N82E16819118508"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1999",
+                "price": "2199",
                 "price_link": ""
             }
         ],
@@ -1993,11 +1999,11 @@
         "cores": 14,
         "gpu": "No",
         "id": "intel-core-ultra-5-245kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-509-07.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 25182,
         "name": "Core Ultra 5 245KF",
-        "name_cn": "",
+        "name_cn": "酷睿Ultra 5 245KF",
         "power": 159,
         "prices": [
             {
@@ -2009,7 +2015,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1999",
+                "price": "1919",
                 "price_link": ""
             }
         ],
@@ -2022,11 +2028,11 @@
         "cores": 20,
         "gpu": "No",
         "id": "intel-core-ultra-7-265f",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-575-01.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 28684,
         "name": "Core Ultra 7 265",
-        "name_cn": "",
+        "name_cn": "Core Ultra 7 265F",
         "power": 182,
         "prices": [
             {
@@ -2051,23 +2057,23 @@
         "cores": 20,
         "gpu": "Arc Xe-LPG",
         "id": "intel-core-ultra-7-265k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-506-06.jpg",
         "integrated_graphics_score": 2500,
         "multi_core_score": 36309,
         "name": "Core Ultra 7 265K",
-        "name_cn": "",
+        "name_cn": "酷睿Ultra 7 265K",
         "power": 250,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "299.03",
+                "price": "298.99",
                 "price_link": "https://www.newegg.com/intel-core-ultra-7-265k-arrow-lake-lga-1851-processor/p/N82E16819118506"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2499",
+                "price": "2399",
                 "price_link": ""
             }
         ],
@@ -2080,7 +2086,7 @@
         "cores": 20,
         "gpu": "No",
         "id": "intel-core-ultra-7-265kf",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-507-07.jpg",
         "integrated_graphics_score": 0,
         "multi_core_score": 37278,
         "name": "Core Ultra 7 265KF",
@@ -2103,23 +2109,23 @@
         "cores": 24,
         "gpu": "Arc Xe-LPG",
         "id": "intel-core-ultra-9-285k",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/19-118-505-01.jpg",
         "integrated_graphics_score": 3000,
         "multi_core_score": 41558,
         "name": "Core Ultra 9 285K",
-        "name_cn": "",
+        "name_cn": "酷睿Ultra 9 285K",
         "power": 250,
         "prices": [
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "588.99",
+                "price": "599.99",
                 "price_link": "https://www.newegg.com/intel-core-ultra-9-285k-arrow-lake-lga-1851-processor/p/N82E16819118505"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "4549",
+                "price": "4399",
                 "price_link": ""
             }
         ],
