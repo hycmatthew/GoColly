@@ -495,7 +495,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2020-07-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -785,7 +785,7 @@
         "name_cn": "",
         "noise_level": "22.5 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-10-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -854,7 +854,7 @@
         "name_cn": "",
         "noise_level": "22.5 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-05-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -885,7 +885,7 @@
         "name_cn": "",
         "noise_level": "22.5 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-07-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -2345,7 +2345,7 @@
         "name_cn": "",
         "noise_level": "36.45 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2023-02-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -2414,7 +2414,7 @@
         "name_cn": "",
         "noise_level": "36.45 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2023-02-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -2571,7 +2571,7 @@
         "name_cn": "",
         "noise_level": "37.6 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2020-03-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -2756,7 +2756,7 @@
         "name_cn": "",
         "noise_level": "36 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2024-03-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -3030,7 +3030,7 @@
         "name_cn": "",
         "noise_level": "37.6 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2019-08-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -3064,7 +3064,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM4",
@@ -3504,7 +3504,7 @@
         "name_cn": "",
         "noise_level": "11.9 - 26.7 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -4057,7 +4057,7 @@
         "name_cn": "",
         "noise_level": "19.1 - 26.8 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2020-05-01T00:00:00Z",
         "sockets": [
             "AM2",
@@ -4271,7 +4271,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": []
     },
@@ -4289,7 +4289,7 @@
         "name_cn": "",
         "noise_level": "16.8 - 38.3 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-08-01T00:00:00Z",
         "sockets": [
             "AM2",
@@ -4327,7 +4327,7 @@
         "name_cn": "",
         "noise_level": "16.5 - 36.1 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-08-01T00:00:00Z",
         "sockets": [
             "AM2",
@@ -6003,7 +6003,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2023-06-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -6791,7 +6791,7 @@
         "name_cn": "",
         "noise_level": "18 - 35.2 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -6954,7 +6954,7 @@
         "name_cn": "",
         "noise_level": "29.9 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM4",
@@ -7249,7 +7249,7 @@
         "name_cn": "",
         "noise_level": "13.8 - 31.2 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM4",
@@ -7344,7 +7344,7 @@
         "name_cn": "",
         "noise_level": "15.2 - 32.5 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM4",
@@ -7373,7 +7373,7 @@
         "name_cn": "",
         "noise_level": "15.2 - 32.5 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM4",
@@ -7402,7 +7402,7 @@
         "name_cn": "",
         "noise_level": "15.2 - 32.5 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM4",
@@ -7431,7 +7431,7 @@
         "name_cn": "",
         "noise_level": "18 - 26.4 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -7472,7 +7472,7 @@
         "name_cn": "",
         "noise_level": "18 - 26.4 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -7513,7 +7513,7 @@
         "name_cn": "",
         "noise_level": "18 - 26.4 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -7550,7 +7550,7 @@
         "name_cn": "",
         "noise_level": "18 - 26.4 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -7782,7 +7782,7 @@
         "name_cn": "",
         "noise_level": "32 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-12-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -10911,7 +10911,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2013-07-01T00:00:00Z",
         "sockets": [
             "AM2",
@@ -11266,7 +11266,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": []
     },
@@ -13233,7 +13233,7 @@
         "name_cn": "",
         "noise_level": "11.1 - 39.7 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-07-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -13350,7 +13350,7 @@
         "name_cn": "",
         "noise_level": "18 - 39.1 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2021-11-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -14026,7 +14026,7 @@
         "name_cn": "",
         "noise_level": "2.7 - 30.4 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -14063,7 +14063,7 @@
         "name_cn": "",
         "noise_level": "2.7 - 24.9 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -14102,7 +14102,7 @@
         "name_cn": "",
         "noise_level": "2.58 - 23.8 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -14184,7 +14184,7 @@
         "name_cn": "",
         "noise_level": "4 - 28.6 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2022-11-01T00:00:00Z",
         "sockets": [
             "AM2",
@@ -14222,7 +14222,7 @@
         "name_cn": "",
         "noise_level": "4 - 24.9 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -14341,7 +14341,7 @@
         "name_cn": "",
         "noise_level": "4 - 14.5 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": "2019-02-01T00:00:00Z",
         "sockets": [
             "AM4",
@@ -14371,7 +14371,7 @@
         "name_cn": "",
         "noise_level": "1.8 - 23.2 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM2",
@@ -15553,7 +15553,7 @@
         "name_cn": "",
         "noise_level": "22.4 dB",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": [
             "AM4"
@@ -17453,7 +17453,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": []
     },
@@ -18578,7 +18578,7 @@
         "name_cn": "",
         "noise_level": "",
         "pressure": "",
-        "prices": null,
+        "prices": [],
         "release_date": null,
         "sockets": []
     }

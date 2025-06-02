@@ -4583,7 +4583,7 @@
         "pcie_1_slot": 1,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 64,
         "ram_slot": 2,
         "ram_support": [
@@ -4613,7 +4613,7 @@
         "pcie_1_slot": 0,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 192,
         "ram_slot": 4,
         "ram_support": [
@@ -4927,7 +4927,7 @@
         "pcie_1_slot": 0,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -5340,7 +5340,7 @@
         "pcie_1_slot": 0,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 192,
         "ram_slot": 4,
         "ram_support": [
@@ -5602,7 +5602,7 @@
         "pcie_1_slot": 2,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -6113,7 +6113,7 @@
         "pcie_1_slot": 2,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -6339,7 +6339,7 @@
         "pcie_1_slot": 1,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -6427,7 +6427,7 @@
         "pcie_1_slot": 1,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -7964,7 +7964,7 @@
         "pcie_1_slot": 0,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 192,
         "ram_slot": 4,
         "ram_support": [
@@ -8718,7 +8718,7 @@
         "pcie_1_slot": 0,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 192,
         "ram_slot": 4,
         "ram_support": [
@@ -9583,7 +9583,7 @@
         "pcie_1_slot": 2,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -11160,7 +11160,7 @@
         "pcie_1_slot": 0,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -13945,7 +13945,7 @@
         "pcie_1_slot": 2,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 192,
         "ram_slot": 4,
         "ram_support": [
@@ -14652,7 +14652,7 @@
         "pcie_1_slot": 2,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 192,
         "ram_slot": 4,
         "ram_support": [
@@ -16366,7 +16366,7 @@
         "pcie_1_slot": 1,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 2,
         "ram_support": [
@@ -17404,7 +17404,7 @@
         "pcie_1_slot": 1,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -18729,7 +18729,7 @@
         "pcie_1_slot": 1,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 2,
         "ram_support": [
@@ -18853,7 +18853,7 @@
         "pcie_1_slot": 1,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 128,
         "ram_slot": 4,
         "ram_support": [
@@ -20859,7 +20859,7 @@
         "pcie_1_slot": 0,
         "pcie_4_slot": 0,
         "pcie_slot_str": "",
-        "prices": null,
+        "prices": [],
         "ram_max": 192,
         "ram_slot": 4,
         "ram_support": [

@@ -1466,7 +1466,7 @@
         "name": "NX100",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2019-05-01T00:00:00Z",
         "slots_num": 7
@@ -1570,7 +1570,7 @@
         "name": "P-100",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2018-08-01T00:00:00Z",
         "slots_num": 7
@@ -2069,7 +2069,7 @@
         "name": "PRIME AP201 TG Black",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 4
@@ -2096,7 +2096,7 @@
         "name": "PRIME AP201 TG White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 4
@@ -2241,7 +2241,7 @@
         "name": "ProArt PA602",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-12-01T00:00:00Z",
         "slots_num": 8
@@ -4052,7 +4052,7 @@
         "name": "HAF 700 EVO White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-10-01T00:00:00Z",
         "slots_num": 8
@@ -5621,7 +5621,7 @@
         "name": "2000D Aiflow White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-05-01T00:00:00Z",
         "slots_num": 3
@@ -5680,7 +5680,7 @@
         "name": "2000D RGB Airflow",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-05-01T00:00:00Z",
         "slots_num": 3
@@ -5706,7 +5706,7 @@
         "name": "2000D RGB Airflow White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-05-01T00:00:00Z",
         "slots_num": 3
@@ -5887,7 +5887,7 @@
         "name": "2500X Obsidian",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-02-01T00:00:00Z",
         "slots_num": 4
@@ -5914,7 +5914,7 @@
         "name": "2500X Satin Grey",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-02-01T00:00:00Z",
         "slots_num": 4
@@ -6092,7 +6092,7 @@
         "name": "3000D RGB Airflow",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-07-01T00:00:00Z",
         "slots_num": 7
@@ -6353,7 +6353,7 @@
         "name": "4000D Airflow",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2020-09-01T00:00:00Z",
         "slots_num": 7
@@ -6495,7 +6495,7 @@
         "name": "5000D CORE Airflow",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-09-01T00:00:00Z",
         "slots_num": 7
@@ -6524,7 +6524,7 @@
         "name": "5000D CORE AIRFLOW White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-09-01T00:00:00Z",
         "slots_num": 7
@@ -6553,7 +6553,7 @@
         "name": "5000T",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2025-01-01T00:00:00Z",
         "slots_num": 7
@@ -6582,7 +6582,7 @@
         "name": "5000T White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2025-01-01T00:00:00Z",
         "slots_num": 7
@@ -6767,7 +6767,7 @@
         "name": "6500X Obsidian",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-03-01T00:00:00Z",
         "slots_num": 8
@@ -6796,7 +6796,7 @@
         "name": "6500X Satin Grey",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-03-01T00:00:00Z",
         "slots_num": 8
@@ -6825,7 +6825,7 @@
         "name": "6500X Walnut",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-03-01T00:00:00Z",
         "slots_num": 8
@@ -7200,7 +7200,7 @@
         "name": "iCUE 4000D RGB Airflow",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-02-01T00:00:00Z",
         "slots_num": 7
@@ -7425,7 +7425,7 @@
         "name": "iCUE 5000T RGB White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2022-02-01T00:00:00Z",
         "slots_num": 7
@@ -7490,7 +7490,7 @@
         "name": "iCUE 7000X White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2021-06-01T00:00:00Z",
         "slots_num": 8
@@ -7519,7 +7519,7 @@
         "name": "iCUE Link 3500X RGB",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-06-01T00:00:00Z",
         "slots_num": 7
@@ -7656,7 +7656,7 @@
         "name": "iCUE LINK 6500X RGB",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2024-03-01T00:00:00Z",
         "slots_num": 8
@@ -7725,7 +7725,7 @@
         "name": "CC360",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-09-01T00:00:00Z",
         "slots_num": 4
@@ -7752,7 +7752,7 @@
         "name": "CC360 White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-09-01T00:00:00Z",
         "slots_num": 4
@@ -7780,7 +7780,7 @@
         "name": "CC560",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 7
@@ -7808,7 +7808,7 @@
         "name": "CC560 White",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 7
@@ -7835,7 +7835,7 @@
         "name": "CH370",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2022-10-01T00:00:00Z",
         "slots_num": 4
@@ -7862,7 +7862,7 @@
         "name": "CH370 WH",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2022-10-01T00:00:00Z",
         "slots_num": 4
@@ -7927,7 +7927,7 @@
         "name": "CH560",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 7
@@ -7956,7 +7956,7 @@
         "name": "CH560 Digital",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2023-06-01T00:00:00Z",
         "slots_num": 7
@@ -8021,7 +8021,7 @@
         "name": "CH560 WH",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 7
@@ -8050,7 +8050,7 @@
         "name": "DEEP COOL MATREXX 55 MESH",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2020-09-01T00:00:00Z",
         "slots_num": 7
@@ -8079,7 +8079,7 @@
         "name": "DP-ATX-MATREXX50-AR-4F-NE",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 7
@@ -8208,7 +8208,7 @@
         "name": "MATREXX 40 3FS",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2021-11-01T00:00:00Z",
         "slots_num": 4
@@ -8237,7 +8237,7 @@
         "name": "MATREXX 50",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2019-07-01T00:00:00Z",
         "slots_num": 7
@@ -8266,7 +8266,7 @@
         "name": "MATREXX 55 ADD-RGB",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 7
@@ -8438,7 +8438,7 @@
         "name": "TX Mid Tower Tesseract SW",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 7
@@ -9136,7 +9136,7 @@
         "name": "Era ITX Silver",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2020-03-01T00:00:00Z",
         "slots_num": 2
@@ -12391,7 +12391,7 @@
         "name": "LANCOOL 205M MESH Snow",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": null,
         "slots_num": 4
@@ -18980,7 +18980,7 @@
         "name": "FARA R1 SST-FAR1B",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2020-03-01T00:00:00Z",
         "slots_num": 7
@@ -19008,7 +19008,7 @@
         "name": "FARA R1 SST-FAR1B-G",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2020-03-01T00:00:00Z",
         "slots_num": 7
@@ -19104,7 +19104,7 @@
         "name": "Precision PS14B-Eg",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2019-07-01T00:00:00Z",
         "slots_num": 7
@@ -19522,7 +19522,7 @@
         "name": "SST-RVZ03B-ARGB",
         "name_cn": "",
         "power_supply": false,
-        "prices": null,
+        "prices": [],
         "radiator_support": 0,
         "release_date": "2019-06-01T00:00:00Z",
         "slots_num": 2

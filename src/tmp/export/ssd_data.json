@@ -2516,7 +2516,7 @@
         "model": "SQ500S37/1920G",
         "name": "Q500 1.92TB",
         "name_cn": "",
-        "prices": null,
+        "prices": [],
         "read_4k": 0,
         "release_date": "2022-04-01T00:00:00Z",
         "write_4k": 0
