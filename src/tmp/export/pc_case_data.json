@@ -13883,7 +13883,7 @@
         "drive_bays_3": 2,
         "id": "montech-air-100-argb-white",
         "img": "",
-        "max_cpu_cooler_height": 0,
+        "max_cpu_cooler_height": 161,
         "max_vga_length": 330,
         "name": "AIR 100 ARGB White",
         "name_cn": "",
@@ -13896,7 +13896,7 @@
                 "price_link": "https://www.amazon.com/dp/B093RYWV4B"
             }
         ],
-        "radiator_support": 0,
+        "radiator_support": 280,
         "release_date": "2022-10-01T00:00:00Z",
         "slots_num": 4
     },
