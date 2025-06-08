@@ -8112,7 +8112,7 @@
         "heat_spreader": false,
         "id": "corsair-vengeance-rgb-pro-32gb-2x16gb-ddr4-3200",
         "img": "",
-        "latency": 0,
+        "latency": 16,
         "led": "RGB",
         "model": "CMW32GX4M2E3200C16-TUF",
         "name": "Vengeance RGB Pro 32GB (2x16GB) DDR4 3200",
@@ -8128,7 +8128,7 @@
         "profile_expo": true,
         "profile_xmp": true,
         "series": "Vengeance RGB Pro",
-        "speed": 0,
+        "speed": 3200,
         "timing": "",
         "type": "DDR4",
         "voltage": ""
