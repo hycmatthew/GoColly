@@ -53,7 +53,7 @@ type GPUSpec struct {
 	Series       string
 	MemorySize   int
 	MemoryType   string
-	MemoryBus    string
+	MemoryBus    int
 	ClockRate    int
 	BoostClock   int
 	Benchmark    int
@@ -74,7 +74,7 @@ type GPUType struct {
 	Series       string
 	MemorySize   int
 	MemoryType   string
-	MemoryBus    string
+	MemoryBus    int
 	ClockRate    int
 	BoostClock   int
 	Benchmark    int
@@ -337,7 +337,7 @@ func fetchGPUSpecData(link string, collector *colly.Collector) GPUSpec {
 			case "GPU Memory Type":
 				specData.MemoryType = strings.TrimSpace(item.ChildText("td:nth-of-type(2)"))
 			case "GPU Memory Interface":
-				specData.MemoryBus = strings.TrimSpace(item.ChildText("td:nth-of-type(2)"))
+				specData.MemoryBus = extractNumberFromString(strings.TrimSpace(item.ChildText("td:nth-of-type(2)")))
 			case "GPU Clock Rate":
 				specData.ClockRate = extractNumberFromString(item.ChildText("td:nth-of-type(2)"))
 			case "GPU Boost Clock Rate":
@@ -589,7 +589,7 @@ func fetchSpecFromColorful(link string) GPUSpec {
 			specData.MemoryType = element.Content
 		}
 		if element.Title == "显存位宽" {
-			specData.MemoryBus = element.Content
+			specData.MemoryBus = extractNumberFromString(element.Content)
 		}
 		if element.Title == "TDP功耗" {
 			specData.Power = extractNumberFromString(element.Content)
