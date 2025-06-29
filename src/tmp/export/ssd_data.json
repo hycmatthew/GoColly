@@ -4,7 +4,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p1-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-199-S01.jpg",
@@ -32,7 +32,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p1-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-199-S01.jpg",
@@ -60,7 +60,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p2-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-252-S06.jpg",
@@ -94,7 +94,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p2-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-274-S07.jpg",
@@ -114,7 +114,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "281.00",
+                "price": "290.00",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKXTJJV7130"
             },
             {
@@ -134,7 +134,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p2-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-252-S06.jpg",
@@ -168,7 +168,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg",
@@ -182,7 +182,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "66.98",
+                "price": "63.98",
                 "price_link": "https://www.amazon.com/dp/B0B25LZGGW"
             },
             {
@@ -208,7 +208,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg",
@@ -222,7 +222,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "119.99",
+                "price": "140.61",
                 "price_link": "https://www.amazon.com/dp/B0B25MJ1YT"
             },
             {
@@ -248,7 +248,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg",
@@ -262,14 +262,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "304.60",
+                "price": "305.41",
                 "price_link": "https://www.amazon.com/dp/B0B25P44CL"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "319.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJA14874"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1073"
             },
             {
                 "region": "CN",
@@ -288,7 +288,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-295-01.jpg",
@@ -297,19 +297,25 @@
         "max_write": 1900,
         "model": "CT500P3SSD8",
         "name": "P3 500GB",
-        "name_cn": "",
+        "name_cn": "英睿达P3 500GB M.2 SSD",
         "prices": [
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "38.99",
+                "price": "45.14",
                 "price_link": "https://www.amazon.com/dp/B0B25LQQPC"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "52.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAJ7868"
+                "price": "51.50",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1065"
+            },
+            {
+                "region": "CN",
+                "platform": "other",
+                "price": "229",
+                "price_link": ""
             }
         ],
         "read_4k": 70,
@@ -322,7 +328,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-plus-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg",
@@ -356,7 +362,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-plus-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg",
@@ -382,7 +388,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "849",
+                "price": "799",
                 "price_link": ""
             }
         ],
@@ -396,7 +402,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-plus-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg",
@@ -436,7 +442,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p3-plus-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-299-01.jpg",
@@ -457,7 +463,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "53.98",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAJ8569"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ775090"
             },
             {
                 "region": "CN",
@@ -476,7 +482,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p310-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-411-01.jpg",
@@ -490,13 +496,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "69.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKFE0326"
+                "price": "68.98",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156412"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "429",
+                "price": "428.9",
                 "price_link": ""
             }
         ],
@@ -510,7 +516,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p310-1tb-2230",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-407-08.jpg",
@@ -531,7 +537,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "94.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKDJ0651"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156407"
             }
         ],
         "read_4k": 74,
@@ -544,7 +550,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p310-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-411-01.jpg",
@@ -558,13 +564,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "129.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKFE0327"
+                "price": "125.98",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKFE0321"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "848.9",
+                "price": "849",
                 "price_link": ""
             }
         ],
@@ -578,7 +584,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p310-2tb-2230",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-408-07.jpg",
@@ -591,15 +597,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "157.95",
-                "price_link": "https://www.amazon.com/dp/B0D61SDZD2"
+                "platform": "newegg",
+                "price": "159.95",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156408"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "174.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKD19264"
+                "platform": "amazon",
+                "price": "159.99",
+                "price_link": "https://www.amazon.com/dp/B0D61SDZD2"
             }
         ],
         "read_4k": 75,
@@ -612,7 +618,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p310-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-411-01.jpg",
@@ -626,7 +632,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "49.99",
+                "price": "54.99",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156411"
             },
             {
@@ -646,7 +652,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p5-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-250-S02.jpg",
@@ -660,7 +666,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "514.11",
+                "price": "515.49",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156247"
             },
             {
@@ -680,7 +686,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p5-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-250-S02.jpg",
@@ -700,7 +706,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "514.11",
+                "price": "515.49",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HBM34685"
             },
             {
@@ -720,7 +726,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p5-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-250-S02.jpg",
@@ -734,7 +740,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "514.11",
+                "price": "515.49",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156246"
             }
         ],
@@ -748,7 +754,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p5-plus-1tb",
         "img": "",
@@ -782,7 +788,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p5-plus-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-281-V22.jpg",
@@ -802,7 +808,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "337.00",
+                "price": "329.00",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4394"
             },
             {
@@ -822,7 +828,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p5-plus-500gb",
         "img": "",
@@ -836,7 +842,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "105.74",
+                "price": "105.39",
                 "price_link": "https://www.amazon.com/dp/B098W1NDV2"
             },
             {
@@ -856,7 +862,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t500-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-387-01.png",
@@ -865,7 +871,7 @@
         "max_write": 6800,
         "model": "CT1000T500SSD8",
         "name": "T500 1TB",
-        "name_cn": "",
+        "name_cn": "英睿达T500 1TB M.2 SSD",
         "prices": [
             {
                 "region": "US",
@@ -878,6 +884,12 @@
                 "platform": "newegg",
                 "price": "84.55",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK7E7585"
+            },
+            {
+                "region": "CN",
+                "platform": "other",
+                "price": "589",
+                "price_link": ""
             }
         ],
         "read_4k": 79,
@@ -890,7 +902,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t500-1tb-heatsink",
         "img": "",
@@ -911,7 +923,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "88.30",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKEP6415"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156390"
             },
             {
                 "region": "CN",
@@ -930,7 +942,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t500-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-387-01.png",
@@ -950,8 +962,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "154.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK7E7589"
+                "price": "145.95",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7443"
             },
             {
                 "region": "CN",
@@ -970,7 +982,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t500-2tb-heatsink",
         "img": "",
@@ -984,14 +996,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "132.99",
+                "price": "124.99",
                 "price_link": "https://www.amazon.com/dp/B0CK2RKPBL"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "153.80",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK7E7593"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7445"
             },
             {
                 "region": "CN",
@@ -1010,7 +1022,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t500-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-387-01.png",
@@ -1031,7 +1043,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "349.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKHD3165"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKHD3169"
             }
         ],
         "read_4k": 78,
@@ -1044,7 +1056,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t500-4tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-390-07.png",
@@ -1078,7 +1090,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t500-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-387-01.png",
@@ -1098,7 +1110,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "101.59",
+                "price": "101.66",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK7R0479"
             },
             {
@@ -1118,7 +1130,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t700-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-329-19.jpg",
@@ -1131,15 +1143,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "139.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJYD0056"
-            },
-            {
-                "region": "US",
                 "platform": "amazon",
                 "price": "139.99",
                 "price_link": "https://www.amazon.com/dp/B0C3K1QBSG"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "178.75",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJYD0056"
             }
         ],
         "read_4k": 86,
@@ -1152,7 +1164,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t700-1tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-332-07.jpg",
@@ -1186,7 +1198,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t700-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-329-19.jpg",
@@ -1199,15 +1211,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "219.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJYC9712"
-            },
-            {
-                "region": "US",
                 "platform": "amazon",
                 "price": "219.99",
                 "price_link": "https://www.amazon.com/dp/B0C3K7MTSY"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "269.00",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156330"
             },
             {
                 "region": "CN",
@@ -1226,7 +1238,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t700-2tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-332-07.jpg",
@@ -1239,15 +1251,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "249.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156333"
-            },
-            {
-                "region": "US",
                 "platform": "amazon",
                 "price": "249.99",
                 "price_link": "https://www.amazon.com/dp/B0C3K2WRPV"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "289.00",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156333"
             }
         ],
         "read_4k": 82,
@@ -1260,7 +1272,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t700-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-329-19.jpg",
@@ -1280,8 +1292,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "523.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJZ68768"
+                "price": "426.29",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA1K6KA01312"
             }
         ],
         "read_4k": 82,
@@ -1294,7 +1306,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t700-4tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-332-07.jpg",
@@ -1314,8 +1326,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "410.79",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEKGD1242"
+                "price": "509.00",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156334"
             }
         ],
         "read_4k": 82,
@@ -1328,7 +1340,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t705-1tb",
         "img": "",
@@ -1341,15 +1353,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "142.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156397"
-            },
-            {
-                "region": "US",
                 "platform": "amazon",
                 "price": "142.99",
                 "price_link": "https://www.amazon.com/dp/B0CTRV9CVP"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "159.75",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKG56009"
             },
             {
                 "region": "CN",
@@ -1368,7 +1380,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t705-1tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-400-02.png",
@@ -1389,7 +1401,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "202.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKA54229"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16507"
             }
         ],
         "read_4k": 79,
@@ -1402,7 +1414,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t705-2tb-heatsink",
         "img": "",
@@ -1415,15 +1427,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "259.00",
-                "price_link": "https://www.amazon.com/dp/B0CTS93WML"
+                "platform": "newegg",
+                "price": "258.75",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKA54231"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "259.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKA54231"
+                "platform": "amazon",
+                "price": "259.00",
+                "price_link": "https://www.amazon.com/dp/B0CTS93WML"
             },
             {
                 "region": "CN",
@@ -1439,38 +1451,10 @@
     },
     {
         "brand": "crucial",
-        "capacity": 2000,
-        "d_ram": true,
-        "flash_type": "TLC",
-        "form_factor": "M.2",
-        "heatsink": true,
-        "id": "crucial-t705-2tb-white-heatsink",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-397-09.png",
-        "interface": "PCIe 5.0 x4",
-        "max_read": 14500,
-        "max_write": 12700,
-        "model": "CT2000T705SSD5A",
-        "name": "T705 2TB White",
-        "name_cn": "",
-        "prices": [
-            {
-                "region": "US",
-                "platform": "newegg",
-                "price": "142.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156403"
-            }
-        ],
-        "read_4k": 79,
-        "release_date": "2024-03-01T00:00:00Z",
-        "series": "T705",
-        "write_4k": 277
-    },
-    {
-        "brand": "crucial",
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-t705-4tb",
         "img": "",
@@ -1484,14 +1468,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "389.50",
+                "price": "389.00",
                 "price_link": "https://www.amazon.com/dp/B0CTSSMTZK"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "482.85",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKA54234"
+                "price": "525.00",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16517"
             },
             {
                 "region": "CN",
@@ -1510,7 +1494,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "crucial-t705-4tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-402-02.png",
@@ -1524,14 +1508,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "409.77",
+                "price": "409.55",
                 "price_link": "https://www.amazon.com/dp/B0CTRRFXC5"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "519.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKA54235"
+                "price": "535.00",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156402"
             }
         ],
         "read_4k": 79,
@@ -1544,7 +1528,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-fury-renegade-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-655-S01.jpg",
@@ -1584,7 +1568,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "kingston-fury-renegade-1tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A2W0S2211080097HM3B.jpg",
@@ -1598,7 +1582,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "114.99",
+                "price": "127.00",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00581"
             }
         ],
@@ -1612,7 +1596,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-fury-renegade-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg",
@@ -1626,14 +1610,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "164.49",
+                "price": "154.00",
                 "price_link": "https://www.amazon.com/dp/B09K36S11S"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "171.49",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAE7734"
+                "price": "167.20",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGRM4780"
             },
             {
                 "region": "CN",
@@ -1652,7 +1636,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "kingston-fury-renegade-2tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A2W0S221108010MN531.jpg",
@@ -1672,8 +1656,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "182.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJBW6141"
+                "price": "179.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00582"
             }
         ],
         "read_4k": 76,
@@ -1686,7 +1670,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-fury-renegade-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-656-S01.jpg",
@@ -1700,7 +1684,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "309.99",
+                "price": "308.99",
                 "price_link": "https://www.amazon.com/dp/B09K3PSWD2"
             },
             {
@@ -1726,7 +1710,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "kingston-fury-renegade-4tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A2W0S221108018L0T31.jpg",
@@ -1746,8 +1730,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "344.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00583"
+                "price": "349.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBW6388"
             },
             {
                 "region": "CN",
@@ -1766,7 +1750,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-fury-renegade-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2312160LZNXW83.jpg",
@@ -1780,7 +1764,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "64.99",
+                "price": "74.99",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242654"
             }
         ],
@@ -1794,7 +1778,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-fury-renegade-g5-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-924-03.jpg",
@@ -1808,14 +1792,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "196.99",
+                "price": "184.99",
                 "price_link": "https://www.amazon.com/dp/B0F4425DTW"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "199.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKGY9482"
+                "price": "194.39",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKGY9481"
             }
         ],
         "read_4k": 75,
@@ -1828,7 +1812,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-fury-renegade-g5-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-924-03.jpg",
@@ -1841,15 +1825,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "320.99",
-                "price_link": "https://www.amazon.com/dp/B0F4455L4R"
+                "platform": "newegg",
+                "price": "320.75",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242925"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "329.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKGY9480"
+                "platform": "amazon",
+                "price": "320.99",
+                "price_link": "https://www.amazon.com/dp/B0F4455L4R"
             }
         ],
         "read_4k": 75,
@@ -1862,7 +1846,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-fury-renegade-g5-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-924-03.jpg",
@@ -1875,15 +1859,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "597.95",
-                "price_link": "https://www.amazon.com/dp/B0F43Z6NXL"
+                "platform": "newegg",
+                "price": "583.19",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKGY9477"
             },
             {
                 "region": "US",
-                "platform": "newegg",
+                "platform": "amazon",
                 "price": "599.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242926"
+                "price_link": "https://www.amazon.com/dp/B0F43Z6NXL"
             }
         ],
         "read_4k": 75,
@@ -1896,7 +1880,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-kc2500-195tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-591-V01.jpg",
@@ -1924,7 +1908,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-kc2500-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A6ZPD2006192J8CF.jpg",
@@ -1952,7 +1936,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-kc3000-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-659-S01.jpg",
@@ -1986,7 +1970,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-kc3000-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-660-S01.jpg",
@@ -1995,8 +1979,14 @@
         "max_write": 7000,
         "model": "SKC3000D/2048G",
         "name": "KC3000 2TB",
-        "name_cn": "",
+        "name_cn": "金士顿KC3000 2TB M.2 SSD",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "157.59",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGU62566"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -2004,10 +1994,10 @@
                 "price_link": "https://www.amazon.com/dp/B09K7DRMSC"
             },
             {
-                "region": "US",
-                "platform": "newegg",
-                "price": "161.64",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAT0859"
+                "region": "CN",
+                "platform": "other",
+                "price": "1149",
+                "price_link": ""
             }
         ],
         "read_4k": 75,
@@ -2020,7 +2010,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-kc3000-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-661-S01.jpg",
@@ -2035,7 +2025,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "304.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242661"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAJ8152"
             },
             {
                 "region": "US",
@@ -2054,7 +2044,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-kc3000-512gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-658-S01.jpg",
@@ -2094,7 +2084,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv1-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-593-V01.jpg",
@@ -2108,7 +2098,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "283.41",
+                "price": "284.03",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242594"
             }
         ],
@@ -2122,7 +2112,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv1-500g",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-593-V01.jpg",
@@ -2142,7 +2132,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "283.41",
+                "price": "284.03",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HKH77270"
             }
         ],
@@ -2156,7 +2146,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv2-1tb",
         "img": "",
@@ -2190,7 +2180,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv2-2tb",
         "img": "",
@@ -2204,7 +2194,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "118.27",
+                "price": "118.77",
                 "price_link": "https://www.amazon.com/dp/B0BDTC589G"
             },
             {
@@ -2224,7 +2214,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv2-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-729-05.jpg",
@@ -2238,7 +2228,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "239.77",
+                "price": "235.77",
                 "price_link": "https://www.amazon.com/dp/B0BZMK1LWS"
             },
             {
@@ -2264,7 +2254,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv2-500g",
         "img": "",
@@ -2298,7 +2288,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv3-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-902-02.jpg",
@@ -2311,15 +2301,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "56.00",
-                "price_link": "https://www.amazon.com/dp/B0DBR3DZWG"
-            },
-            {
-                "region": "US",
                 "platform": "newegg",
                 "price": "56.99",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEKCK8688"
+            },
+            {
+                "region": "US",
+                "platform": "amazon",
+                "price": "58.00",
+                "price_link": "https://www.amazon.com/dp/B0DBR3DZWG"
             },
             {
                 "region": "CN",
@@ -2338,7 +2328,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv3-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-903-02.jpg",
@@ -2351,15 +2341,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "113.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242903"
+                "platform": "amazon",
+                "price": "118.00",
+                "price_link": "https://www.amazon.com/dp/B0DBR6TRZQ"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "114.99",
-                "price_link": "https://www.amazon.com/dp/B0DBR6TRZQ"
+                "platform": "newegg",
+                "price": "122.45",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKCT1926"
             },
             {
                 "region": "CN",
@@ -2378,7 +2368,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv3-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-904-02.jpg",
@@ -2392,7 +2382,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "239.99",
+                "price": "233.27",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKGN2652"
             },
             {
@@ -2418,7 +2408,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv3-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-901-02.jpg",
@@ -2438,8 +2428,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "38.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242901"
+                "price": "47.51",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFJ8KDW4175"
             },
             {
                 "region": "CN",
@@ -2458,7 +2448,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "2.5-inch",
+        "form_factor": "SATA",
         "heatsink": false,
         "id": "kingston-q500-192tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-520-03.jpg",
@@ -2486,7 +2476,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nm610-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-878-V01.jpg",
@@ -2514,7 +2504,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nm610-500gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-876-V01.jpg",
@@ -2542,7 +2532,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nm610pro-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-870-V01.jpg",
@@ -2570,7 +2560,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nm620-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/V18MD2008276JSPT.jpg",
@@ -2583,15 +2573,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "66.37",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFJH73500"
+                "platform": "amazon",
+                "price": "59.74",
+                "price_link": "https://www.amazon.com/dp/B08V1647LL"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "80.99",
-                "price_link": "https://www.amazon.com/dp/B08V1647LL"
+                "platform": "newegg",
+                "price": "59.74",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820191935"
             }
         ],
         "read_4k": 64,
@@ -2604,7 +2594,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nm790-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A12KS24052914QW2L24.jpg",
@@ -2638,7 +2628,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "lexar-nm790-1tb-heatsink",
         "img": "",
@@ -2666,7 +2656,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "lexar-nm790-2tb-heatsink",
         "img": "",
@@ -2680,7 +2670,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "164.88",
+                "price": "164.87",
                 "price_link": "https://www.amazon.com/dp/B0CGKHGMW5"
             }
         ],
@@ -2694,7 +2684,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nm790-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A4P0D2504220N2Z6J23.jpg",
@@ -2708,13 +2698,13 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "243.00",
+                "price": "239.99",
                 "price_link": "https://www.amazon.com/dp/B0C91RNCDV"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "249.49",
+                "price": "239.99",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEKF75442"
             }
         ],
@@ -2728,7 +2718,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "lexar-nm790-4tb-heatsink",
         "img": "",
@@ -2742,7 +2732,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "302.99",
+                "price": "301.50",
                 "price_link": "https://www.amazon.com/dp/B0CGKY9K2Y"
             }
         ],
@@ -2756,7 +2746,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nq780-1tb",
         "img": "",
@@ -2770,7 +2760,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "73.15",
+                "price": "73.06",
                 "price_link": "https://www.amazon.com/dp/B0F25F243C"
             }
         ],
@@ -2784,7 +2774,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nq780-2tb",
         "img": "",
@@ -2798,7 +2788,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "134.22",
+                "price": "134.29",
                 "price_link": "https://www.amazon.com/dp/B0F25C3PMM"
             }
         ],
@@ -2812,7 +2802,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nq780-4tb",
         "img": "",
@@ -2840,7 +2830,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm700-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-891-V05.jpg",
@@ -2868,7 +2858,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm700-256gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-891-V05.jpg",
@@ -2896,7 +2886,7 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm700-512gb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-891-V05.jpg",
@@ -2924,7 +2914,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm800-pro-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A12KS2405310T3Q27E0.jpg",
@@ -2945,7 +2935,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "99.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKB87852"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKB87797"
             }
         ],
         "read_4k": 79,
@@ -2958,7 +2948,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm800-pro-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A1K6S2402050LPBWE4B.jpg",
@@ -2972,13 +2962,13 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "249.99",
+                "price": "145.71",
                 "price_link": "https://www.amazon.com/dp/B0B7LDSHMX"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "249.99",
+                "price": "145.71",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KEJ2903"
             }
         ],
@@ -2991,8 +2981,8 @@
         "brand": "samsung",
         "capacity": 1000,
         "d_ram": false,
-        "flash_type": "TLC",
-        "form_factor": "2.5-inch",
+        "flash_type": "",
+        "form_factor": "SATA",
         "heatsink": false,
         "id": "samsung-870-evo-1tb-mz-77e1t0e",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A4S8S2107189dIGA.jpg",
@@ -3007,7 +2997,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "95.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-0009-00AX3"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1JZ31027"
             },
             {
                 "region": "US",
@@ -3026,7 +3016,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "2.5-inch",
+        "form_factor": "SATA",
         "heatsink": false,
         "id": "samsung-870-evo-2tb-mz-77e2t0e",
         "img": "https://c1.neweggimages.com/productimage/nb1280/B293D22011313GH7T32.jpg",
@@ -3054,7 +3044,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "2.5-inch",
+        "form_factor": "SATA",
         "heatsink": false,
         "id": "samsung-870-evo-4tb-mz-77e4t0e",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A24GD2201060E8QMC70.jpg",
@@ -3081,8 +3071,8 @@
         "brand": "samsung",
         "capacity": 500,
         "d_ram": false,
-        "flash_type": "TLC",
-        "form_factor": "2.5-inch",
+        "flash_type": "",
+        "form_factor": "SATA",
         "heatsink": false,
         "id": "samsung-870-evo-500gb-mz-77e500e",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A24GD210523F3HAW.jpg",
@@ -3097,7 +3087,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "68.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK4G2313"
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KERD8273"
             }
         ],
         "read_4k": 0,
@@ -3110,7 +3100,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-9100-pro-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A12KS250319045NTQ67.jpg",
@@ -3144,7 +3134,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-9100-pro-1tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-906-04.jpg",
@@ -3178,7 +3168,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-9100-pro-2tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/A12KS25031903ZFU767.jpg",
@@ -3212,7 +3202,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-9100-pro-2tb-heatsink",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-907-03.jpg",
@@ -3225,15 +3215,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "259.99",
-                "price_link": "https://www.amazon.com/dp/B0DX2FN49V"
-            },
-            {
-                "region": "US",
                 "platform": "newegg",
                 "price": "259.99",
                 "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147907"
+            },
+            {
+                "region": "US",
+                "platform": "amazon",
+                "price": "259.99",
+                "price_link": "https://www.amazon.com/dp/B0DX2FN49V"
             }
         ],
         "read_4k": 74,
@@ -3246,7 +3236,7 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-9100-pro-4tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-904-15.jpg",
@@ -3280,10 +3270,10 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-9100-pro-4tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-908-03.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 14800,
         "max_write": 13400,
@@ -3291,6 +3281,12 @@
         "name": "9100 PRO 4TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "469.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147908"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3308,7 +3304,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-1tb",
         "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-804-V07.jpg",
@@ -3322,13 +3318,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "106.92",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJ8R3673"
+                "price": "101.00",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KE7F2072"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "109.70",
+                "price": "109.61",
                 "price_link": "https://www.amazon.com/dp/B08V83JZH4"
             }
         ],
@@ -3342,7 +3338,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-250gb",
         "img": "",
@@ -3370,10 +3366,10 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-500gb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-803-V02.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 3100,
         "max_write": 2600,
@@ -3384,8 +3380,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "73.90",
+                "price": "71.90",
                 "price_link": "https://www.amazon.com/dp/B08V7GT6F3"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "79.95",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KE7F2074"
             }
         ],
         "read_4k": 56,
@@ -3398,7 +3400,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-pro-1tb",
         "img": "",
@@ -3412,7 +3414,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "149.99",
+                "price": "199.99",
                 "price_link": "https://www.amazon.com/dp/B08GLX7TNT"
             },
             {
@@ -3432,10 +3434,10 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-980-pro-1tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-825-12.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7000,
         "max_write": 5100,
@@ -3448,6 +3450,12 @@
                 "platform": "amazon",
                 "price": "144.99",
                 "price_link": "https://www.amazon.com/dp/B09JHL33X7"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "199.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAADFKCF9116"
             }
         ],
         "read_4k": 78,
@@ -3460,7 +3468,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-pro-2tb",
         "img": "",
@@ -3494,17 +3502,24 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-980-pro-2tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-826-V01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7000,
         "max_write": 5100,
         "model": "MZ-V8P2T0CW",
         "name": "980 PRO 2TB",
         "name_cn": "",
-        "prices": [],
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "239.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA1PAKAE3547"
+            }
+        ],
         "read_4k": 76,
         "release_date": "2021-10-01T00:00:00Z",
         "series": "980 PRO",
@@ -3515,10 +3530,10 @@
         "capacity": 500,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-pro-500gb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-796-V01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 6900,
         "max_write": 5000,
@@ -3526,6 +3541,12 @@
         "name": "980 PRO 500GB",
         "name_cn": "三星980 Pro 500GB NVMe M.2 SSD",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "178.15",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBEC2KCF0636"
+            },
             {
                 "region": "CN",
                 "platform": "other",
@@ -3543,10 +3564,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-evo-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-886-04.png",
         "interface": "PCIe 4.0 x4",
         "max_read": 5000,
         "max_write": 4200,
@@ -3559,6 +3580,12 @@
                 "platform": "amazon",
                 "price": "74.99",
                 "price_link": "https://www.amazon.com/dp/B0CRCC9863"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "95.50",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147886"
             },
             {
                 "region": "CN",
@@ -3577,10 +3604,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-evo-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-887-01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 5000,
         "max_write": 4200,
@@ -3588,6 +3615,12 @@
         "name": "990 EVO 2TB",
         "name_cn": "三星990 EVO 2TB M.2 SSD",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "129.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147887"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3611,10 +3644,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-evo-plus-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-899-10.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7150,
         "max_write": 6300,
@@ -3622,6 +3655,12 @@
         "name": "990 EVO Plus 1TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "74.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147899"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3639,10 +3678,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-evo-plus-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/BGH6S2502030H2OYI3B.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7250,
         "max_write": 6300,
@@ -3650,6 +3689,12 @@
         "name": "990 EVO Plus 2TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "139.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147900"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3667,10 +3712,10 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-evo-plus-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/BGH6S2502030H6N7N1B.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7250,
         "max_write": 6300,
@@ -3681,8 +3726,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "259.99",
+                "price": "249.99",
                 "price_link": "https://www.amazon.com/dp/B0DHLBDSP7"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "259.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147901"
             }
         ],
         "read_4k": 74,
@@ -3695,10 +3746,10 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-pro-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2404090EWHDWC1.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7450,
         "max_write": 6900,
@@ -3706,6 +3757,12 @@
         "name": "990 PRO 1TB",
         "name_cn": "三星990 PRO 1TB M.2 SSD报价",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "99.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147860"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3729,10 +3786,10 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-990-pro-1tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD25022710EKNQ40.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7450,
         "max_write": 6900,
@@ -3745,6 +3802,12 @@
                 "platform": "amazon",
                 "price": "109.99",
                 "price_link": "https://www.amazon.com/dp/B0BHJGV9WR"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "109.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147862"
             }
         ],
         "read_4k": 71,
@@ -3757,10 +3820,10 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-pro-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2401190ZB13BEE.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7450,
         "max_write": 6900,
@@ -3768,6 +3831,12 @@
         "name": "990 PRO 2TB",
         "name_cn": "三星990 PRO 2TB M.2 SSD",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "149.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3791,10 +3860,10 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-990-pro-2tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A12KS24092606STAX74.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7450,
         "max_write": 6900,
@@ -3807,6 +3876,12 @@
                 "platform": "amazon",
                 "price": "176.94",
                 "price_link": "https://www.amazon.com/dp/B0BHJDY57J"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "179.94",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147863"
             }
         ],
         "read_4k": 80,
@@ -3819,10 +3894,10 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-pro-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-879-01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 0,
         "max_write": 0,
@@ -3835,6 +3910,12 @@
                 "platform": "amazon",
                 "price": "299.99",
                 "price_link": "https://www.amazon.com/dp/B0CHGT1KFJ"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "299.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879"
             },
             {
                 "region": "CN",
@@ -3853,10 +3934,10 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "samsung-990-pro-4tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-878-01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 0,
         "max_write": 0,
@@ -3864,6 +3945,12 @@
         "name": "990 PRO 4TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "319.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK7G1677"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3881,10 +3968,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "solidigm-p41-plus-series-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-318-012-03.png",
         "interface": "PCIe 3.0 x4",
         "max_read": 7000,
         "max_write": 6500,
@@ -3892,6 +3979,12 @@
         "name": "P41 Plus Series 1TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "129.75",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK915207"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3909,17 +4002,24 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "solidigm-p41-plus-series-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-318-013-05.png",
         "interface": "PCIe 3.0 x4",
         "max_read": 7000,
         "max_write": 6500,
         "model": "SSDPFKKW020X7X1",
         "name": "P41 Plus Series 2TB",
         "name_cn": "",
-        "prices": [],
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "239.75",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBU7994"
+            }
+        ],
         "read_4k": 0,
         "release_date": "2022-10-01T00:00:00Z",
         "series": "P41 PLUS SERIES",
@@ -3930,7 +4030,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "solidigm-p41-plus-series-512gb",
         "img": "",
@@ -3957,11 +4057,11 @@
         "brand": "solidigm",
         "capacity": 1000,
         "d_ram": false,
-        "flash_type": "TLC",
-        "form_factor": "M.2",
+        "flash_type": "3D4",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "solidigm-p44-pro-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-329-021-16.png",
         "interface": "PCIe 3.0 x4",
         "max_read": 4125,
         "max_write": 2950,
@@ -3969,6 +4069,12 @@
         "name": "P44 Pro 1TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "118.75",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK915166"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -3985,11 +4091,11 @@
         "brand": "solidigm",
         "capacity": 2000,
         "d_ram": false,
-        "flash_type": "TLC",
-        "form_factor": "M.2",
+        "flash_type": "3D4",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "solidigm-p44-pro-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-329-022-16.png",
         "interface": "PCIe 3.0 x4",
         "max_read": 4125,
         "max_write": 3325,
@@ -4000,8 +4106,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "159.00",
+                "price": "141.95",
                 "price_link": "https://www.amazon.com/dp/B0B9855VGS"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "158.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBS8356"
             }
         ],
         "read_4k": 0,
@@ -4013,8 +4125,8 @@
         "brand": "solidigm",
         "capacity": 500,
         "d_ram": false,
-        "flash_type": "TLC",
-        "form_factor": "M.2",
+        "flash_type": "3D4",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "solidigm-p44-pro-512gb",
         "img": "",
@@ -4028,7 +4140,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "81.56",
+                "price": "81.53",
                 "price_link": "https://www.amazon.com/dp/B0BBHBMG89"
             }
         ],
@@ -4042,10 +4154,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-mp44-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-037-05.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7400,
         "max_write": 7000,
@@ -4053,6 +4165,12 @@
         "name": "MP44 2TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "120.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985037"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4070,10 +4188,10 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-mp44-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-038-05.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7400,
         "max_write": 6900,
@@ -4086,6 +4204,12 @@
                 "platform": "amazon",
                 "price": "239.99",
                 "price_link": "https://www.amazon.com/dp/B0C4KQ9N79"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "239.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985038"
             }
         ],
         "read_4k": 69,
@@ -4098,10 +4222,10 @@
         "capacity": 8000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-mp44-8tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-039-01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7200,
         "max_write": 6000,
@@ -4114,6 +4238,12 @@
                 "platform": "amazon",
                 "price": "724.99",
                 "price_link": "https://www.amazon.com/dp/B0C4KQ57PV"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "724.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985039"
             }
         ],
         "read_4k": 69,
@@ -4126,10 +4256,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-mp44l-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-331-919-01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 5000,
         "max_write": 4500,
@@ -4140,8 +4270,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "58.49",
+                "price": "56.00",
                 "price_link": "https://www.amazon.com/dp/B0B9Y3DB2K"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "62.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820331919"
             }
         ],
         "read_4k": 69,
@@ -4154,10 +4290,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-mp44l-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-331-920-01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 4800,
         "max_write": 4400,
@@ -4165,6 +4301,12 @@
         "name": "MP44L 2TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "107.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820331920"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4182,17 +4324,24 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-mp44l-500gb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-331-918-02.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 5000,
         "max_write": 3700,
         "model": "TM8FPK500G0C101",
         "name": "MP44L 500GB",
         "name_cn": "",
-        "prices": [],
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "34.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820331918"
+            }
+        ],
         "read_4k": 69,
         "release_date": "2022-09-01T00:00:00Z",
         "series": "MP44L",
@@ -4203,17 +4352,24 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-t-force-ge-pro-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-128-01.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 14000,
         "max_write": 11800,
         "model": "TM8FFS002T0C129",
         "name": "T-FORCE GE PRO 2TB",
         "name_cn": "",
-        "prices": [],
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985128"
+            }
+        ],
         "read_4k": 71,
         "release_date": null,
         "series": "T-FORCE GE PRO",
@@ -4224,17 +4380,24 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-t-force-ge-pro-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-128-01.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 14000,
         "max_write": 11800,
         "model": "TM8FFS004T0C129",
         "name": "T-FORCE GE PRO 4TB",
         "name_cn": "",
-        "prices": [],
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985129"
+            }
+        ],
         "read_4k": 71,
         "release_date": null,
         "series": "T-FORCE GE PRO",
@@ -4245,17 +4408,24 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-t-force-z540-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-107-10.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 11700,
         "max_write": 9500,
         "model": "TM8FF1001T0C129",
         "name": "T-Force Z540 1TB",
         "name_cn": "",
-        "prices": [],
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "219.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985106"
+            }
+        ],
         "read_4k": 70,
         "release_date": null,
         "series": "T-FORCE Z540",
@@ -4266,10 +4436,10 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-t-force-z540-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-107-10.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 12400,
         "max_write": 11800,
@@ -4282,6 +4452,12 @@
                 "platform": "amazon",
                 "price": "219.99",
                 "price_link": "https://www.amazon.com/dp/B0CGR7RNCD"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "219.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985107"
             }
         ],
         "read_4k": 70,
@@ -4294,10 +4470,10 @@
         "capacity": 4000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-t-force-z540-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-107-10.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 12400,
         "max_write": 11800,
@@ -4310,6 +4486,12 @@
                 "platform": "amazon",
                 "price": "443.99",
                 "price_link": "https://www.amazon.com/dp/B0CVQB13KS"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "443.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985155"
             }
         ],
         "read_4k": 70,
@@ -4322,10 +4504,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "westerndigital-black-sn850x-1tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A4P0D2502060PTQRDF4.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 7300,
         "max_write": 6300,
@@ -4338,6 +4520,12 @@
                 "platform": "amazon",
                 "price": "107.21",
                 "price_link": "https://www.amazon.com/dp/B0B7CPSN2K"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "109.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250245"
             }
         ],
         "read_4k": 0,
@@ -4350,10 +4538,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "westerndigital-black-sn850x-2tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-246-12.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 7300,
         "max_write": 6600,
@@ -4361,6 +4549,12 @@
         "name": "BLACK SN850X 2TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "179.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KF47388"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4378,10 +4572,10 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-black-sn850x-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-244-10.png",
         "interface": "PCIe 3.0 x4",
         "max_read": 7300,
         "max_write": 6600,
@@ -4389,6 +4583,12 @@
         "name": "BLACK SN850X 4TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "272.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K3G8881"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4406,10 +4606,10 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "westerndigital-black-sn850x-4tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-271-05.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 7300,
         "max_write": 6600,
@@ -4422,6 +4622,12 @@
                 "platform": "amazon",
                 "price": "329.99",
                 "price_link": "https://www.amazon.com/dp/B0D9WTKV1B"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "329.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250271"
             }
         ],
         "read_4k": 0,
@@ -4434,10 +4640,10 @@
         "capacity": 8000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-black-sn850x-8tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-270-02.png",
         "interface": "PCIe 3.0 x4",
         "max_read": 7200,
         "max_write": 6600,
@@ -4450,6 +4656,12 @@
                 "platform": "amazon",
                 "price": "619.99",
                 "price_link": "https://www.amazon.com/dp/B0D9WT512W"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "619.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250270"
             }
         ],
         "read_4k": 0,
@@ -4462,10 +4674,10 @@
         "capacity": 8000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": true,
         "id": "westerndigital-black-sn850x-8tb-heatsink",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-272-05.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 7200,
         "max_write": 6600,
@@ -4478,6 +4690,12 @@
                 "platform": "amazon",
                 "price": "639.99",
                 "price_link": "https://www.amazon.com/dp/B0D9WTM2TH"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "639.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250272"
             }
         ],
         "read_4k": 0,
@@ -4490,10 +4708,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wd-black-sn770-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-217-V05.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 5150,
         "max_write": 4900,
@@ -4501,6 +4719,12 @@
         "name": "WD BLACK SN770 1TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "72.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250217"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4524,10 +4748,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wd-black-sn770-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-218-V05.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 5150,
         "max_write": 4850,
@@ -4538,8 +4762,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "123.99",
+                "price": "124.99",
                 "price_link": "https://www.amazon.com/dp/B09QV5KJHV"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "124.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250218"
             },
             {
                 "region": "CN",
@@ -4558,10 +4788,10 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wd-black-sn850x-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-243-05.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7300,
         "max_write": 6300,
@@ -4572,8 +4802,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "90.99",
+                "price": "91.99",
                 "price_link": "https://www.amazon.com/dp/B0B7CKVCCV"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "94.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JPZ0565"
             },
             {
                 "region": "CN",
@@ -4592,10 +4828,10 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wd-black-sn850x-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-247-02.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7300,
         "max_write": 6600,
@@ -4605,8 +4841,14 @@
         "prices": [
             {
                 "region": "US",
+                "platform": "newegg",
+                "price": "150.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K087567"
+            },
+            {
+                "region": "US",
                 "platform": "amazon",
-                "price": "153.00",
+                "price": "152.99",
                 "price_link": "https://www.amazon.com/dp/B0B7CMZ3QH"
             },
             {
@@ -4626,10 +4868,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wd-blue-sn580-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-254-01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 4150,
         "max_write": 4150,
@@ -4642,6 +4884,12 @@
                 "platform": "amazon",
                 "price": "69.59",
                 "price_link": "https://www.amazon.com/dp/B0C8XMH264"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "69.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K3T4156"
             },
             {
                 "region": "CN",
@@ -4660,10 +4908,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wd-blue-sn580-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-253-04.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 4150,
         "max_write": 4150,
@@ -4671,6 +4919,12 @@
         "name": "WD BLUE SN580 2TB",
         "name_cn": "西部数据WD Blue SN580 2TB M.2 SSD报价",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "114.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEK5N3184"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4694,10 +4948,10 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wd-blue-sn580-500gb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-255-13.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 4000,
         "max_write": 3600,
@@ -4710,6 +4964,12 @@
                 "platform": "amazon",
                 "price": "44.99",
                 "price_link": "https://www.amazon.com/dp/B0C8WP6B8R"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "49.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K4D2897"
             }
         ],
         "read_4k": 70,
@@ -4722,10 +4982,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn7100-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-276-03.png",
         "interface": "PCIe 4.0 x4",
         "max_read": 7250,
         "max_write": 6900,
@@ -4735,8 +4995,14 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
+                "platform": "newegg",
                 "price": "74.95",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2KNKFS4092"
+            },
+            {
+                "region": "US",
+                "platform": "amazon",
+                "price": "74.99",
                 "price_link": "https://www.amazon.com/dp/B0DN7CYYSD"
             }
         ],
@@ -4750,10 +5016,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn7100-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-275-03.png",
         "interface": "PCIe 4.0 x4",
         "max_read": 7250,
         "max_write": 6900,
@@ -4766,6 +5032,12 @@
                 "platform": "amazon",
                 "price": "139.00",
                 "price_link": "https://www.amazon.com/dp/B0DN6ZQ3PD"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "139.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0KEB7456"
             }
         ],
         "read_4k": 87,
@@ -4778,17 +5050,24 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn7100-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A24GD2505050BZSK21A.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7000,
         "max_write": 6700,
         "model": "WDS400T4X0E-00CJA0",
         "name": "WD_BLACK SN7100 4TB",
         "name_cn": "",
-        "prices": [],
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "269.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-001A-003S1"
+            }
+        ],
         "read_4k": 87,
         "release_date": "2024-12-01T00:00:00Z",
         "series": "WD BLACK SN7100",
@@ -4799,10 +5078,10 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn7100-500gb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-277-01.png",
         "interface": "PCIe 4.0 x4",
         "max_read": 6800,
         "max_write": 5800,
@@ -4815,6 +5094,12 @@
                 "platform": "amazon",
                 "price": "59.99",
                 "price_link": "https://www.amazon.com/dp/B0DN7JK8T4"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "59.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250277"
             }
         ],
         "read_4k": 88,
@@ -4827,10 +5112,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn8100-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-278-01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 14900,
         "max_write": 11000,
@@ -4843,6 +5128,12 @@
                 "platform": "amazon",
                 "price": "179.99",
                 "price_link": "https://www.amazon.com/dp/B0F3BMBQ75"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "179.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250278"
             }
         ],
         "read_4k": 0,
@@ -4855,10 +5146,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn8100-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-278-01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 14900,
         "max_write": 14000,
@@ -4871,6 +5162,12 @@
                 "platform": "amazon",
                 "price": "259.99",
                 "price_link": "https://www.amazon.com/dp/B0F3BD1W6R"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "259.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250279"
             }
         ],
         "read_4k": 0,
@@ -4883,10 +5180,10 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn8100-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-250-278-01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 14900,
         "max_write": 14000,
@@ -4894,6 +5191,12 @@
         "name": "WD_BLACK SN8100 4TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "479.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250280"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4911,7 +5214,7 @@
         "capacity": 1000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn850-1tb-ps5",
         "img": "",
@@ -4925,7 +5228,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "144.62",
+                "price": "141.77",
                 "price_link": "https://www.amazon.com/dp/B0B4SQB1HY"
             }
         ],
@@ -4939,7 +5242,7 @@
         "capacity": 2000,
         "d_ram": true,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn850-2tb-ps5",
         "img": "",
@@ -4967,10 +5270,10 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn850p-1tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A3Z8S2307121E6NIOBC.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 7300,
         "max_write": 6300,
@@ -4978,6 +5281,12 @@
         "name": "WD_BLACK SN850P 1TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "113.00",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KFE0086"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -4995,10 +5304,10 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn850p-2tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A3Z8S2307121E6NIOBC.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 7300,
         "max_write": 6600,
@@ -5006,6 +5315,12 @@
         "name": "WD_BLACK SN850P 2TB",
         "name_cn": "",
         "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "187.99",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KGA8299"
+            },
             {
                 "region": "US",
                 "platform": "amazon",
@@ -5023,10 +5338,10 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "westerndigital-wdblack-sn850p-4tb",
-        "img": "",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A3Z8S2307121E4TU929.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 7300,
         "max_write": 6600,
@@ -5039,6 +5354,12 @@
                 "platform": "amazon",
                 "price": "349.99",
                 "price_link": "https://www.amazon.com/dp/B0C48HN4Z9"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "403.30",
+                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KD86641"
             }
         ],
         "read_4k": 0,
@@ -5051,7 +5372,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-ti600-1tb",
         "img": "https://2b.zol-img.com.cn/product/253_280x210/113/ce1VVsW4tofw.jpg",
@@ -5079,7 +5400,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-ti600-2tb",
         "img": "https://2f.zol-img.com.cn/product/253_280x210/99/cevXEbVZLYl8w.jpg",
@@ -5107,7 +5428,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "QLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-ti600-500gb",
         "img": "https://2c.zol-img.com.cn/product/253_280x210/96/ceR91JXpfmeA.jpg",
@@ -5135,7 +5456,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus5000-1tb",
         "img": "https://2e.zol-img.com.cn/product/221_280x210/416/ceC5NBWgu7yI.jpg",
@@ -5163,7 +5484,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus5000-2tb",
         "img": "https://2d.zol-img.com.cn/product/221_280x210/415/ceXHbzxLkewx.jpg",
@@ -5191,7 +5512,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus5000-512gb",
         "img": "https://2b.zol-img.com.cn/product/221_280x210/419/cebhNweiycqUc.jpg",
@@ -5219,7 +5540,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus7100-1tb",
         "img": "https://2d.zol-img.com.cn/product/223_280x210/555/ce7ZOVlOE3Ug.jpg",
@@ -5247,7 +5568,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus7100-1tb-hei-shen-hua-wu-kong-lian-ming-ban",
         "img": "https://2c.zol-img.com.cn/product/269_280x210/552/ceqSOAAEKFJ1o.jpg",
@@ -5275,7 +5596,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus7100-2tb",
         "img": "https://2f.zol-img.com.cn/product/223_280x210/557/cenAKIsrEbSxU.jpg",
@@ -5303,7 +5624,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus7100-2tb-hei-shen-hua-wu-kong-lian-ming-ban",
         "img": "https://2c.zol-img.com.cn/product/269_280x210/552/ceqSOAAEKFJ1o.jpg",
@@ -5331,7 +5652,7 @@
         "capacity": 4000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus7100-4tb",
         "img": "https://2d.zol-img.com.cn/product/258_280x210/41/ceqeXAZrPhdAw.png",
@@ -5359,7 +5680,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tiplus7100-512gb",
         "img": "https://2e.zol-img.com.cn/product/223_280x210/562/cedCP5EtPnnoE.jpg",
@@ -5387,7 +5708,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tipro7000-1tb",
         "img": "https://2e.zol-img.com.cn/product/221_280x210/878/ceh0888OVy9oE.jpg",
@@ -5415,7 +5736,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tipro7000-2tb",
         "img": "https://2a.zol-img.com.cn/product/221_280x210/880/ceyF41CzNWM6c.jpg",
@@ -5443,7 +5764,7 @@
         "capacity": 500,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tipro7000-512gb",
         "img": "https://2d.zol-img.com.cn/product/221_280x210/883/ce46tsX6Vmte6.jpg",
@@ -5471,7 +5792,7 @@
         "capacity": 1000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tipro9000-1tb",
         "img": "https://2b.zol-img.com.cn/product/270_280x210/227/ceDFSvFUjl22w.jpg",
@@ -5499,7 +5820,7 @@
         "capacity": 2000,
         "d_ram": false,
         "flash_type": "TLC",
-        "form_factor": "M.2",
+        "form_factor": "M2",
         "heatsink": false,
         "id": "zhitai-tipro9000-2tb",
         "img": "https://2d.zol-img.com.cn/product/270_280x210/211/cetSFb6L6Gobs.jpg",
