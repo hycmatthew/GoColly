@@ -7,7 +7,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p1-2tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-199-S01.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-248-S01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 2000,
         "max_write": 1700,
@@ -19,7 +19,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156248"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156248\u0026ignorebbr=1"
             }
         ],
         "read_4k": 59,
@@ -35,7 +35,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p1-500gb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-199-S01.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/B6T2S2112300D9FJ8BD.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 1900,
         "max_write": 950,
@@ -47,7 +47,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156200"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156200\u0026ignorebbr=1"
             }
         ],
         "read_4k": 64,
@@ -74,8 +74,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "119.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA8TKDHB8893"
+                "price": "149.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA8TKDHB8893\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -107,15 +107,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "199.99",
-                "price_link": "https://www.amazon.com/dp/B08GVDNTGJ"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156274\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "290.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKXTJJV7130"
+                "platform": "amazon",
+                "price": "249.99",
+                "price_link": "https://www.amazon.com/dp/B08GVDNTGJ"
             },
             {
                 "region": "CN",
@@ -137,7 +137,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p2-500gb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-252-S06.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-245-V01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 2300,
         "max_write": 940,
@@ -148,8 +148,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "119.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156245"
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156245\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -182,14 +182,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "63.98",
+                "price": "69.50",
                 "price_link": "https://www.amazon.com/dp/B0B25LZGGW"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "69.98",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1066"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1066\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -222,14 +222,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "140.61",
+                "price": "119.99",
                 "price_link": "https://www.amazon.com/dp/B0B25MJ1YT"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "149.55",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156297"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1070\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -262,14 +262,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "305.41",
+                "price": "306.06",
                 "price_link": "https://www.amazon.com/dp/B0B25P44CL"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "319.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1073"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1073\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -302,14 +302,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "45.14",
+                "price": "44.90",
                 "price_link": "https://www.amazon.com/dp/B0B25LQQPC"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "51.50",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1065"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JJ08201\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -349,7 +349,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "61.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K2T5594"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K2T5594\u0026ignorebbr=1"
             }
         ],
         "read_4k": 56,
@@ -383,7 +383,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "119.98",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1077"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ9P1077\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -423,7 +423,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "219.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEJU66450"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEJU66450\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -456,14 +456,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "43.64",
+                "price": "39.99",
                 "price_link": "https://www.amazon.com/dp/B0B25NTRGD"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "53.98",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ775090"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJ775090\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -496,13 +496,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "68.98",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156412"
+                "price": "59.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156412\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "428.9",
+                "price": "425.9",
                 "price_link": ""
             }
         ],
@@ -529,15 +529,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "85.49",
-                "price_link": "https://www.amazon.com/dp/B0D61Z8R1W"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156407\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "94.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156407"
+                "platform": "amazon",
+                "price": "85.49",
+                "price_link": "https://www.amazon.com/dp/B0D61Z8R1W"
             }
         ],
         "read_4k": 74,
@@ -564,8 +564,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "125.98",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKFE0321"
+                "price": "128.98",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKFE0321\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -597,15 +597,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "159.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156408"
+                "platform": "amazon",
+                "price": "159.57",
+                "price_link": "https://www.amazon.com/dp/B0D61SDZD2"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "159.99",
-                "price_link": "https://www.amazon.com/dp/B0D61SDZD2"
+                "platform": "newegg",
+                "price": "159.98",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKD19265\u0026ignorebbr=1"
             }
         ],
         "read_4k": 75,
@@ -632,8 +632,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "54.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156411"
+                "price": "62.23",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA0ZXKBP9612\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -666,8 +666,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "515.49",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156247"
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156247\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -706,8 +706,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "515.49",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HBM34685"
+                "price": "516.58",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HBM34685\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -729,7 +729,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "crucial-p5-500gb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-250-S02.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-156-246-V01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 3400,
         "max_write": 3000,
@@ -740,8 +740,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "515.49",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156246"
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156246\u0026ignorebbr=1"
             }
         ],
         "read_4k": 51,
@@ -808,8 +808,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "329.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4394"
+                "price": "462.03",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAKVHKBE4394\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -842,7 +842,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "105.39",
+                "price": "105.93",
                 "price_link": "https://www.amazon.com/dp/B098W1NDV2"
             },
             {
@@ -875,20 +875,20 @@
         "prices": [
             {
                 "region": "US",
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156388\u0026ignorebbr=1"
+            },
+            {
+                "region": "US",
                 "platform": "amazon",
                 "price": "75.19",
                 "price_link": "https://www.amazon.com/dp/B0CK39YR9V"
             },
             {
-                "region": "US",
-                "platform": "newegg",
-                "price": "84.55",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK7E7585"
-            },
-            {
                 "region": "CN",
                 "platform": "other",
-                "price": "589",
+                "price": "599",
                 "price_link": ""
             }
         ],
@@ -916,14 +916,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "79.99",
+                "price": "84.99",
                 "price_link": "https://www.amazon.com/dp/B0CK2S298S"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "88.30",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156390"
+                "price": "89.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156390\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -962,13 +962,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "145.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7443"
+                "price": "153.75",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7443\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "999",
+                "price": "989",
                 "price_link": ""
             }
         ],
@@ -995,15 +995,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "124.99",
-                "price_link": "https://www.amazon.com/dp/B0CK2RKPBL"
+                "platform": "newegg",
+                "price": "153.80",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7445\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "153.80",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7E7445"
+                "platform": "amazon",
+                "price": "154.95",
+                "price_link": "https://www.amazon.com/dp/B0CK2RKPBL"
             },
             {
                 "region": "CN",
@@ -1035,15 +1035,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "309.99",
-                "price_link": "https://www.amazon.com/dp/B0DBBG7CG7"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156410\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "349.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKHD3169"
+                "platform": "amazon",
+                "price": "309.99",
+                "price_link": "https://www.amazon.com/dp/B0DBBG7CG7"
             }
         ],
         "read_4k": 78,
@@ -1069,15 +1069,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "309.99",
-                "price_link": "https://www.amazon.com/dp/B0DBBJSGFQ"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156409\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "395.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156409"
+                "platform": "amazon",
+                "price": "309.99",
+                "price_link": "https://www.amazon.com/dp/B0DBBJSGFQ"
             }
         ],
         "read_4k": 78,
@@ -1103,15 +1103,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "72.99",
-                "price_link": "https://www.amazon.com/dp/B0CK2R8YLY"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK7R0479\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "101.66",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK7R0479"
+                "platform": "amazon",
+                "price": "72.99",
+                "price_link": "https://www.amazon.com/dp/B0CK2R8YLY"
             },
             {
                 "region": "CN",
@@ -1150,8 +1150,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "178.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJYD0056"
+                "price": "153.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156329\u0026ignorebbr=1"
             }
         ],
         "read_4k": 86,
@@ -1177,15 +1177,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "143.44",
-                "price_link": "https://www.amazon.com/dp/B0C3K344ZV"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156332\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "199.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156332"
+                "platform": "amazon",
+                "price": "143.44",
+                "price_link": "https://www.amazon.com/dp/B0C3K344ZV"
             }
         ],
         "read_4k": 86,
@@ -1211,15 +1211,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
+                "platform": "newegg",
                 "price": "219.99",
-                "price_link": "https://www.amazon.com/dp/B0C3K7MTSY"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156330\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "269.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156330"
+                "platform": "amazon",
+                "price": "219.99",
+                "price_link": "https://www.amazon.com/dp/B0C3K7MTSY"
             },
             {
                 "region": "CN",
@@ -1258,8 +1258,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "289.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156333"
+                "price": "249.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156333\u0026ignorebbr=1"
             }
         ],
         "read_4k": 82,
@@ -1292,8 +1292,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "426.29",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA1K6KA01312"
+                "price": "533.11",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAFVFK7J8312\u0026ignorebbr=1"
             }
         ],
         "read_4k": 82,
@@ -1319,15 +1319,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "409.99",
-                "price_link": "https://www.amazon.com/dp/B0C3KFGPT8"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156334\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "509.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156334"
+                "platform": "amazon",
+                "price": "398.95",
+                "price_link": "https://www.amazon.com/dp/B0C3KFGPT8"
             }
         ],
         "read_4k": 82,
@@ -1361,7 +1361,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "159.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKG56009"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKG55997\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -1401,7 +1401,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "202.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16507"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16507\u0026ignorebbr=1"
             }
         ],
         "read_4k": 79,
@@ -1427,15 +1427,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "258.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKA54231"
+                "platform": "amazon",
+                "price": "258.00",
+                "price_link": "https://www.amazon.com/dp/B0CTS93WML"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "259.00",
-                "price_link": "https://www.amazon.com/dp/B0CTS93WML"
+                "platform": "newegg",
+                "price": "259.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820156401\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -1468,19 +1468,19 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "389.00",
+                "price": "389.99",
                 "price_link": "https://www.amazon.com/dp/B0CTSSMTZK"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "525.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16517"
+                "price": "470.80",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16517\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2599",
+                "price": "2799",
                 "price_link": ""
             }
         ],
@@ -1508,14 +1508,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "409.55",
+                "price": "389.95",
                 "price_link": "https://www.amazon.com/dp/B0CTRRFXC5"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "535.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820156402"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKA16521\u0026ignorebbr=1"
             }
         ],
         "read_4k": 79,
@@ -1541,15 +1541,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "109.90",
-                "price_link": "https://www.amazon.com/dp/B09K3H2YHX"
+                "platform": "newegg",
+                "price": "115.15",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGRM4773\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "110.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGRM4773"
+                "platform": "amazon",
+                "price": "117.00",
+                "price_link": "https://www.amazon.com/dp/B09K3H2YHX"
             },
             {
                 "region": "CN",
@@ -1582,8 +1582,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "127.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00581"
+                "price": "119.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00581\u0026ignorebbr=1"
             }
         ],
         "read_4k": 77,
@@ -1617,7 +1617,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "167.20",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGRM4780"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGRM4780\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -1657,7 +1657,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "179.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00582"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00582\u0026ignorebbr=1"
             }
         ],
         "read_4k": 76,
@@ -1690,8 +1690,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "359.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK8T1993"
+                "price": "309.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242657\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -1731,7 +1731,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "349.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBW6388"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=0D9-001B-00583\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -1765,7 +1765,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "74.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242654"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242654\u0026ignorebbr=1"
             }
         ],
         "read_4k": 77,
@@ -1792,14 +1792,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "184.99",
+                "price": "171.99",
                 "price_link": "https://www.amazon.com/dp/B0F4425DTW"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "194.39",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKGY9481"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKGY9481\u0026ignorebbr=1"
             }
         ],
         "read_4k": 75,
@@ -1826,13 +1826,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "320.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242925"
+                "price": "235.50",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKGW1396\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "320.99",
+                "price": "245.99",
                 "price_link": "https://www.amazon.com/dp/B0F4455L4R"
             }
         ],
@@ -1860,13 +1860,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "583.19",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKGY9477"
+                "price": "449.15",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA24GKH04682\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "599.99",
+                "price": "458.91",
                 "price_link": "https://www.amazon.com/dp/B0F43Z6NXL"
             }
         ],
@@ -1895,7 +1895,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242591"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242591\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -1911,7 +1911,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-kc2500-1tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/A6ZPD2006192J8CF.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A24GD200522MYJI7.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 3500,
         "max_write": 2900,
@@ -1923,7 +1923,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242491"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242491\u0026ignorebbr=1"
             }
         ],
         "read_4k": 59,
@@ -1950,8 +1950,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "94.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJB99591"
+                "price": "97.19",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGU62561\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -1983,15 +1983,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "157.59",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGU62566"
+                "platform": "amazon",
+                "price": "155.77",
+                "price_link": "https://www.amazon.com/dp/B09K7DRMSC"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "158.65",
-                "price_link": "https://www.amazon.com/dp/B09K7DRMSC"
+                "platform": "newegg",
+                "price": "157.59",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KGU62566\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -2024,13 +2024,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "304.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAJ8152"
+                "price": "303.39",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRJAJ8152\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "305.70",
+                "price": "305.60",
                 "price_link": "https://www.amazon.com/dp/B09K7DHG1Z"
             }
         ],
@@ -2064,8 +2064,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "64.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242658"
+                "price": "67.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242658\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -2098,8 +2098,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "284.03",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242594"
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242594\u0026ignorebbr=1"
             }
         ],
         "read_4k": 42,
@@ -2132,8 +2132,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "284.03",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HKH77270"
+                "price": "284.89",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAD6HKH77270\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -2234,8 +2234,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "289.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCR2293"
+                "price": "289.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKCR2293\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -2302,13 +2302,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "56.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEKCK8688"
+                "price": "57.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIABT1KE79901\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "58.00",
+                "price": "58.49",
                 "price_link": "https://www.amazon.com/dp/B0DBR3DZWG"
             },
             {
@@ -2331,7 +2331,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "kingston-nv3-2tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-903-02.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-242-910-02.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 6000,
         "max_write": 5000,
@@ -2342,14 +2342,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "118.00",
+                "price": "114.92",
                 "price_link": "https://www.amazon.com/dp/B0DBR6TRZQ"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "122.45",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKCT1926"
+                "price": "129.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242903\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -2381,15 +2381,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "233.27",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKGN2652"
-            },
-            {
-                "region": "US",
                 "platform": "amazon",
                 "price": "239.99",
                 "price_link": "https://www.amazon.com/dp/B0DJ1QC42R"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "277.00",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRKGN2652\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -2429,7 +2429,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "47.51",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAFJ8KDW4175"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAFJ8KDW4175\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -2463,7 +2463,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820242520"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820242520\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -2491,7 +2491,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "112.55",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIB5K8H8N8416"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIB5K8H8N8416\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -2519,7 +2519,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "59.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0BYM2869"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0BYM2869\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -2535,7 +2535,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-nm610pro-2tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-870-V01.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/BMC0S23051407WP87A4.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 0,
         "max_write": 0,
@@ -2546,8 +2546,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "59.19",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAD7HK4W7792"
+                "price": "169.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAD7HK4W7792\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -2574,14 +2574,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "59.74",
+                "price": "59.99",
                 "price_link": "https://www.amazon.com/dp/B08V1647LL"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "59.74",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820191935"
+                "price": "65.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820191935\u0026ignorebbr=1"
             }
         ],
         "read_4k": 64,
@@ -2615,7 +2615,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "89.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKB68562"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKB68562\u0026ignorebbr=1"
             }
         ],
         "read_4k": 69,
@@ -2670,7 +2670,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "164.87",
+                "price": "164.81",
                 "price_link": "https://www.amazon.com/dp/B0CGKHGMW5"
             }
         ],
@@ -2704,8 +2704,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "239.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEKF75442"
+                "price": "249.49",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEKF75442\u0026ignorebbr=1"
             }
         ],
         "read_4k": 69,
@@ -2732,7 +2732,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "301.50",
+                "price": "299.05",
                 "price_link": "https://www.amazon.com/dp/B0CGKY9K2Y"
             }
         ],
@@ -2760,7 +2760,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "73.06",
+                "price": "73.29",
                 "price_link": "https://www.amazon.com/dp/B0F25F243C"
             }
         ],
@@ -2788,7 +2788,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "134.29",
+                "price": "139.99",
                 "price_link": "https://www.amazon.com/dp/B0F25C3PMM"
             }
         ],
@@ -2816,7 +2816,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "254.71",
+                "price": "254.58",
                 "price_link": "https://www.amazon.com/dp/B0F25CX4LB"
             }
         ],
@@ -2833,7 +2833,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm700-1tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-891-V05.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-895-V01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 3500,
         "max_write": 2000,
@@ -2845,7 +2845,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820191895"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820191895\u0026ignorebbr=1"
             }
         ],
         "read_4k": 51,
@@ -2861,7 +2861,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm700-256gb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-891-V05.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-191-890-V01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 3500,
         "max_write": 1200,
@@ -2873,7 +2873,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820191890"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820191890\u0026ignorebbr=1"
             }
         ],
         "read_4k": 55,
@@ -2901,7 +2901,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820191891"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820191891\u0026ignorebbr=1"
             }
         ],
         "read_4k": 55,
@@ -2917,7 +2917,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "lexar-professional-nm800-pro-1tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/A12KS2405310T3Q27E0.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A4P0D2503280NBV7AB9.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 0,
         "max_write": 0,
@@ -2927,15 +2927,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "93.95",
-                "price_link": "https://www.amazon.com/dp/B0B7KWDW74"
+                "platform": "newegg",
+                "price": "84.97",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KEJ2896\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "99.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KKB87797"
+                "platform": "amazon",
+                "price": "93.95",
+                "price_link": "https://www.amazon.com/dp/B0B7KWDW74"
             }
         ],
         "read_4k": 79,
@@ -2962,14 +2962,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "145.71",
+                "price": "144.99",
                 "price_link": "https://www.amazon.com/dp/B0B7LDSHMX"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "145.71",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KEJ2903"
+                "price": "144.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KEJ2903\u0026ignorebbr=1"
             }
         ],
         "read_4k": 79,
@@ -2997,7 +2997,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "95.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIABT1JZ31027"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIABT1JZ31027\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3030,8 +3030,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "179.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7W7531"
+                "price": "179.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK7W7531\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -3059,7 +3059,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "298.60",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJM01877"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJM01877\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -3087,7 +3087,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "68.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KERD8273"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KERD8273\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -3115,7 +3115,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "169.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147902"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147902\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3149,7 +3149,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "179.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147906"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147906\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3189,7 +3189,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "239.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147903"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147903\u0026ignorebbr=1"
             }
         ],
         "read_4k": 74,
@@ -3217,7 +3217,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "259.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147907"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147907\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3239,7 +3239,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-9100-pro-4tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-904-15.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/A12KS25031903S41167.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 14800,
         "max_write": 13400,
@@ -3251,7 +3251,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "449.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147904"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147904\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3285,7 +3285,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "469.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147908"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147908\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3319,12 +3319,12 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "101.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KE7F2072"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KE7F2072\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "109.61",
+                "price": "109.70",
                 "price_link": "https://www.amazon.com/dp/B08V83JZH4"
             }
         ],
@@ -3352,7 +3352,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "57.90",
+                "price": "55.40",
                 "price_link": "https://www.amazon.com/dp/B08V7P3SKS"
             }
         ],
@@ -3369,7 +3369,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-500gb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-803-V02.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-813-S01.jpg",
         "interface": "PCIe 3.0 x4",
         "max_read": 3100,
         "max_write": 2600,
@@ -3386,8 +3386,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "79.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KE7F2074"
+                "price": "82.75",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KHZA9628\u0026ignorebbr=1"
             }
         ],
         "read_4k": 56,
@@ -3414,7 +3414,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "199.99",
+                "price": "148.00",
                 "price_link": "https://www.amazon.com/dp/B08GLX7TNT"
             },
             {
@@ -3455,7 +3455,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "199.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAADFKCF9116"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAADFKCF9116\u0026ignorebbr=1"
             }
         ],
         "read_4k": 78,
@@ -3482,7 +3482,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "191.92",
+                "price": "191.00",
                 "price_link": "https://www.amazon.com/dp/B08RK2SR23"
             },
             {
@@ -3516,8 +3516,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "239.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA1PAKAE3547"
+                "price": "239.95",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAADFKCF9108\u0026ignorebbr=1"
             }
         ],
         "read_4k": 76,
@@ -3533,7 +3533,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-980-pro-500gb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-796-V01.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-789-V01.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 6900,
         "max_write": 5000,
@@ -3544,8 +3544,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "178.15",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBEC2KCF0636"
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIBEC2KCF0636\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -3567,7 +3567,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-evo-1tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-886-04.png",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/AFYUD2412170QAVS0B4.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 5000,
         "max_write": 4200,
@@ -3584,8 +3584,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "95.50",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147886"
+                "price": "83.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147886\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -3617,15 +3617,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "129.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147887"
-            },
-            {
-                "region": "US",
                 "platform": "amazon",
                 "price": "129.99",
                 "price_link": "https://www.amazon.com/dp/B0CRC7H66Z"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "129.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147887\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -3657,15 +3657,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "74.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147899"
+                "platform": "amazon",
+                "price": "79.99",
+                "price_link": "https://www.amazon.com/dp/B0DHLFWBQ1"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "74.99",
-                "price_link": "https://www.amazon.com/dp/B0DHLFWBQ1"
+                "platform": "newegg",
+                "price": "79.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147899\u0026ignorebbr=1"
             }
         ],
         "read_4k": 74,
@@ -3693,7 +3693,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "139.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147900"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147900\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3715,7 +3715,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "samsung-990-evo-plus-4tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/BGH6S2502030H6N7N1B.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-147-901-02.jpg",
         "interface": "PCIe 4.0 x4",
         "max_read": 7250,
         "max_write": 6300,
@@ -3726,14 +3726,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "249.99",
+                "price": "234.99",
                 "price_link": "https://www.amazon.com/dp/B0DHLBDSP7"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "259.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147901"
+                "price": "234.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147901\u0026ignorebbr=1"
             }
         ],
         "read_4k": 74,
@@ -3761,7 +3761,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "99.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147860"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147860\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3807,7 +3807,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "109.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147862"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147862\u0026ignorebbr=1"
             }
         ],
         "read_4k": 71,
@@ -3835,7 +3835,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "149.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147861\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -3873,15 +3873,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "176.94",
-                "price_link": "https://www.amazon.com/dp/B0BHJDY57J"
+                "platform": "newegg",
+                "price": "179.94",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147863\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
+                "platform": "amazon",
                 "price": "179.94",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147863"
+                "price_link": "https://www.amazon.com/dp/B0BHJDY57J"
             }
         ],
         "read_4k": 80,
@@ -3915,7 +3915,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "299.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147879\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -3947,15 +3947,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "319.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIBFJRK7G1677"
+                "platform": "amazon",
+                "price": "317.00",
+                "price_link": "https://www.amazon.com/dp/B0CHHFR1LG"
             },
             {
                 "region": "US",
-                "platform": "amazon",
+                "platform": "newegg",
                 "price": "319.99",
-                "price_link": "https://www.amazon.com/dp/B0CHHFR1LG"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820147878\u0026ignorebbr=1"
             }
         ],
         "read_4k": 80,
@@ -3982,13 +3982,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "129.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK915207"
+                "price": "139.75",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK915207\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "129.95",
+                "price": "139.95",
                 "price_link": "https://www.amazon.com/dp/B0BLMCCBS5"
             }
         ],
@@ -4017,7 +4017,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "239.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBU7994"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBU7994\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -4044,7 +4044,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "144.72",
+                "price": "145.49",
                 "price_link": "https://www.amazon.com/dp/B0BLMP8Y15"
             }
         ],
@@ -4073,7 +4073,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "118.75",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK915166"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KK915166\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -4113,7 +4113,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "158.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBS8356"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA12KJBS8356\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -4140,7 +4140,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "81.53",
+                "price": "81.47",
                 "price_link": "https://www.amazon.com/dp/B0BBHBMG89"
             }
         ],
@@ -4167,15 +4167,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "120.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985037"
-            },
-            {
-                "region": "US",
                 "platform": "amazon",
                 "price": "120.99",
                 "price_link": "https://www.amazon.com/dp/B0C3VCD5Z8"
+            },
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "120.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820985037\u0026ignorebbr=1"
             }
         ],
         "read_4k": 69,
@@ -4202,14 +4202,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "239.99",
+                "price": "238.99",
                 "price_link": "https://www.amazon.com/dp/B0C4KQ9N79"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "239.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985038"
+                "price": "238.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820985038\u0026ignorebbr=1"
             }
         ],
         "read_4k": 69,
@@ -4236,14 +4236,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "724.99",
+                "price": "722.99",
                 "price_link": "https://www.amazon.com/dp/B0C4KQ57PV"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "724.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985039"
+                "price": "722.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820985039\u0026ignorebbr=1"
             }
         ],
         "read_4k": 69,
@@ -4270,14 +4270,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "56.00",
+                "price": "56.99",
                 "price_link": "https://www.amazon.com/dp/B0B9Y3DB2K"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "62.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820331919"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820331919\u0026ignorebbr=1"
             }
         ],
         "read_4k": 69,
@@ -4304,13 +4304,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "107.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820331920"
+                "price": "103.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820331920\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "107.99",
+                "price": "103.99",
                 "price_link": "https://www.amazon.com/dp/B0B9Y48V73"
             }
         ],
@@ -4338,8 +4338,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "34.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820331918"
+                "price": "33.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820331918\u0026ignorebbr=1"
             }
         ],
         "read_4k": 69,
@@ -4367,7 +4367,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985128"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820985128\u0026ignorebbr=1"
             }
         ],
         "read_4k": 71,
@@ -4383,7 +4383,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-t-force-ge-pro-4tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-128-01.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-129-01.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 14000,
         "max_write": 11800,
@@ -4395,7 +4395,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985129"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820985129\u0026ignorebbr=1"
             }
         ],
         "read_4k": 71,
@@ -4411,7 +4411,7 @@
         "form_factor": "M2",
         "heatsink": false,
         "id": "teamgroup-t-force-z540-1tb",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-107-10.jpg",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/20-985-106-12.jpg",
         "interface": "PCIe 5.0 x4",
         "max_read": 11700,
         "max_write": 9500,
@@ -4422,8 +4422,8 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "219.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985106"
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820985106\u0026ignorebbr=1"
             }
         ],
         "read_4k": 70,
@@ -4457,7 +4457,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "219.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985107"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820985107\u0026ignorebbr=1"
             }
         ],
         "read_4k": 70,
@@ -4483,15 +4483,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "443.99",
-                "price_link": "https://www.amazon.com/dp/B0CVQB13KS"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA1K6KDP6683\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
+                "platform": "amazon",
                 "price": "443.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820985155"
+                "price_link": "https://www.amazon.com/dp/B0CVQB13KS"
             }
         ],
         "read_4k": 70,
@@ -4517,15 +4517,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "107.21",
-                "price_link": "https://www.amazon.com/dp/B0B7CPSN2K"
+                "platform": "newegg",
+                "price": "Out of Stock",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KDJ6473\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "109.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250245"
+                "platform": "amazon",
+                "price": "108.90",
+                "price_link": "https://www.amazon.com/dp/B0B7CPSN2K"
             }
         ],
         "read_4k": 0,
@@ -4553,7 +4553,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "179.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KF47388"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KF47388\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -4585,15 +4585,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "272.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K3G8881"
+                "platform": "amazon",
+                "price": "283.64",
+                "price_link": "https://www.amazon.com/dp/B0B7CQ2CHH"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "284.49",
-                "price_link": "https://www.amazon.com/dp/B0B7CQ2CHH"
+                "platform": "newegg",
+                "price": "289.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K3G8881\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -4627,7 +4627,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "329.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250271"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250271\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -4653,15 +4653,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
+                "platform": "newegg",
                 "price": "619.99",
-                "price_link": "https://www.amazon.com/dp/B0D9WT512W"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250270\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
+                "platform": "amazon",
                 "price": "619.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250270"
+                "price_link": "https://www.amazon.com/dp/B0D9WT512W"
             }
         ],
         "read_4k": 0,
@@ -4687,15 +4687,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
+                "platform": "newegg",
                 "price": "639.99",
-                "price_link": "https://www.amazon.com/dp/B0D9WTM2TH"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250272\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
+                "platform": "amazon",
                 "price": "639.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250272"
+                "price_link": "https://www.amazon.com/dp/B0D9WTM2TH"
             }
         ],
         "read_4k": 0,
@@ -4723,7 +4723,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "72.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250217"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JJX3746\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -4762,14 +4762,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "124.99",
+                "price": "124.89",
                 "price_link": "https://www.amazon.com/dp/B09QV5KJHV"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "124.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250218"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250218\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -4802,14 +4802,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "91.99",
+                "price": "90.94",
                 "price_link": "https://www.amazon.com/dp/B0B7CKVCCV"
             },
             {
                 "region": "US",
                 "platform": "newegg",
                 "price": "94.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JPZ0565"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0JPZ0565\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -4841,15 +4841,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "150.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K087567"
+                "platform": "amazon",
+                "price": "151.99",
+                "price_link": "https://www.amazon.com/dp/B0B7CMZ3QH"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "152.99",
-                "price_link": "https://www.amazon.com/dp/B0B7CMZ3QH"
+                "platform": "newegg",
+                "price": "163.60",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K087567\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -4882,14 +4882,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "69.59",
+                "price": "67.99",
                 "price_link": "https://www.amazon.com/dp/B0C8XMH264"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "69.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K3T4156"
+                "price": "67.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250254\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -4921,15 +4921,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "newegg",
+                "platform": "amazon",
                 "price": "114.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAMNEK5N3184"
+                "price_link": "https://www.amazon.com/dp/B0C8WPRM9T"
             },
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "119.98",
-                "price_link": "https://www.amazon.com/dp/B0C8WPRM9T"
+                "platform": "newegg",
+                "price": "114.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250253\u0026ignorebbr=1"
             },
             {
                 "region": "CN",
@@ -4969,7 +4969,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "49.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K4D2897"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0K4D2897\u0026ignorebbr=1"
             }
         ],
         "read_4k": 70,
@@ -4997,7 +4997,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "74.95",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2KNKFS4092"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2KNKFS4092\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -5029,15 +5029,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
-                "price": "139.00",
-                "price_link": "https://www.amazon.com/dp/B0DN6ZQ3PD"
+                "platform": "newegg",
+                "price": "138.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA2KNKG85712\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
-                "price": "139.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA2W0KEB7456"
+                "platform": "amazon",
+                "price": "139.00",
+                "price_link": "https://www.amazon.com/dp/B0DN6ZQ3PD"
             }
         ],
         "read_4k": 87,
@@ -5065,7 +5065,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "269.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=0D9-001A-003S1"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=0D9-001A-003S1\u0026ignorebbr=1"
             }
         ],
         "read_4k": 87,
@@ -5099,7 +5099,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "59.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250277"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250277\u0026ignorebbr=1"
             }
         ],
         "read_4k": 88,
@@ -5125,15 +5125,15 @@
         "prices": [
             {
                 "region": "US",
-                "platform": "amazon",
+                "platform": "newegg",
                 "price": "179.99",
-                "price_link": "https://www.amazon.com/dp/B0F3BMBQ75"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250278\u0026ignorebbr=1"
             },
             {
                 "region": "US",
-                "platform": "newegg",
+                "platform": "amazon",
                 "price": "179.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250278"
+                "price_link": "https://www.amazon.com/dp/B0F3BMBQ75"
             }
         ],
         "read_4k": 0,
@@ -5160,14 +5160,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "259.99",
+                "price": "269.99",
                 "price_link": "https://www.amazon.com/dp/B0F3BD1W6R"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "259.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250279"
+                "price": "269.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250279\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -5194,13 +5194,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "479.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=N82E16820250280"
+                "price": "499.99",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=N82E16820250280\u0026ignorebbr=1"
             },
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "479.99",
+                "price": "499.99",
                 "price_link": "https://www.amazon.com/dp/B0F3B6MZM9"
             }
         ],
@@ -5228,7 +5228,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "141.77",
+                "price": "144.00",
                 "price_link": "https://www.amazon.com/dp/B0B4SQB1HY"
             }
         ],
@@ -5256,7 +5256,7 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "230.42",
+                "price": "229.49",
                 "price_link": "https://www.amazon.com/dp/B0B4SWQ39Y"
             }
         ],
@@ -5285,7 +5285,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "113.00",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KFE0086"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KFE0086\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -5319,7 +5319,7 @@
                 "region": "US",
                 "platform": "newegg",
                 "price": "187.99",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KGA8299"
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIAAY9KGA8299\u0026ignorebbr=1"
             },
             {
                 "region": "US",
@@ -5352,14 +5352,14 @@
             {
                 "region": "US",
                 "platform": "amazon",
-                "price": "349.99",
+                "price": "403.33",
                 "price_link": "https://www.amazon.com/dp/B0C48HN4Z9"
             },
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "403.30",
-                "price_link": "https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KD86641"
+                "price": "403.33",
+                "price_link": "https://click.linksynergy.com/deeplink?id=nwUw4CS3F2g\u0026mid=44583\u0026murl=https://www.newegg.com/Product/Product.aspx?Item=9SIA4P0KD86641\u0026ignorebbr=1"
             }
         ],
         "read_4k": 0,
@@ -5470,8 +5470,8 @@
             {
                 "region": "CN",
                 "platform": "taobao",
-                "price": "499",
-                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DPMsDfHMJpOhw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0I1GaOYZN9lmeVL0KyhNWci3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOlkrlf%2FekM0jbV8hGCvTILA6AuUz%2F2f2wR5PxyPPTMKQEWVYpr03emEVJEhnzijZML24EXPijKqmKjNoyEjZTDrgx7vs8vVHXxYz44is9W3HwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401750632778%402108a043_130a_19799d84cb1_58a3%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
+                "price": "429",
+                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3D5Zw9SmPqxilw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0CEYP%2BKjHo2Ppu8eCPFui%2Bq3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOn6IlsRKMm6Z4SK69byu%2BhWz96KDrQlaXxFm%2FjWGW6s%2B%2FwohV1KTuSpd6bzt4pfw0WsNOkonVq9xqqBOYbr7O2xLSLKfsAsi0338eqlOUU%2Bxfp7YCGdRykHPZMUUR31Kpg%3D%3D\u0026union_lens=lensId%3AMAPI%401751495714%40213ffbae_1831_197cd47a70e_b842%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "read_4k": 0,
@@ -5498,8 +5498,8 @@
             {
                 "region": "CN",
                 "platform": "taobao",
-                "price": "499",
-                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DPMsDfHMJpOhw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0I1GaOYZN9lmeVL0KyhNWci3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOlkrlf%2FekM0jbV8hGCvTILA6AuUz%2F2f2wR5PxyPPTMKQEWVYpr03emEVJEhnzijZML24EXPijKqmKjNoyEjZTDrgx7vs8vVHXxYz44is9W3HwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401750632778%402108a043_130a_19799d84cb1_58a3%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
+                "price": "429",
+                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3D5Zw9SmPqxilw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0CEYP%2BKjHo2Ppu8eCPFui%2Bq3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOn6IlsRKMm6Z4SK69byu%2BhWz96KDrQlaXxFm%2FjWGW6s%2B%2FwohV1KTuSpd6bzt4pfw0WsNOkonVq9xqqBOYbr7O2xLSLKfsAsi0338eqlOUU%2Bxfp7YCGdRykHPZMUUR31Kpg%3D%3D\u0026union_lens=lensId%3AMAPI%401751495714%40213ffbae_1831_197cd47a70e_b842%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "read_4k": 0,
@@ -5526,8 +5526,8 @@
             {
                 "region": "CN",
                 "platform": "taobao",
-                "price": "499",
-                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DPMsDfHMJpOhw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0I1GaOYZN9lmeVL0KyhNWci3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOlkrlf%2FekM0jbV8hGCvTILA6AuUz%2F2f2wR5PxyPPTMKQEWVYpr03emEVJEhnzijZML24EXPijKqmKjNoyEjZTDrgx7vs8vVHXxYz44is9W3HwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401750632778%402108a043_130a_19799d84cb1_58a3%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
+                "price": "429",
+                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3D5Zw9SmPqxilw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0CEYP%2BKjHo2Ppu8eCPFui%2Bq3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOn6IlsRKMm6Z4SK69byu%2BhWz96KDrQlaXxFm%2FjWGW6s%2B%2FwohV1KTuSpd6bzt4pfw0WsNOkonVq9xqqBOYbr7O2xLSLKfsAsi0338eqlOUU%2Bxfp7YCGdRykHPZMUUR31Kpg%3D%3D\u0026union_lens=lensId%3AMAPI%401751495714%40213ffbae_1831_197cd47a70e_b842%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "read_4k": 0,
@@ -5722,8 +5722,8 @@
             {
                 "region": "CN",
                 "platform": "taobao",
-                "price": "479",
-                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DnOtTppRWB19w4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0OlJsryx6lbrZEseiVP7PUu3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOq6kjcYogmZ%2BFfqgscz3nbOCxU95GMLRnu29QwtmbFnRG2SAnXzMDZIleWgC%2BmopXD5mnkDFo%2FTlh%2BjsYfeoLc84XSsP%2BIEqHxZE8UKZeYpiwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401750890997%40213602f3_1c05_197a93c6857_2b9f%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
+                "price": "515",
+                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3Dyx%2B%2FD5fDjIhw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0CEYP%2BKjHo2PO4gcjPXhqnC3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOq6kjcYogmZ%2BFfqgscz3nbN3hN3S1lT1gRPXhSfjk%2BWpmpLeV1ZrTlIPgDvt6wyZcj5mnkDFo%2FTlh%2BjsYfeoLc84XSsP%2BIEqHxZE8UKZeYpiwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401751495818%40215093a7_17b0_197cd493d87_d5cb%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "read_4k": 0,
@@ -5751,7 +5751,7 @@
                 "region": "CN",
                 "platform": "taobao",
                 "price": "479",
-                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DnOtTppRWB19w4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0OlJsryx6lbrZEseiVP7PUu3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOq6kjcYogmZ%2BFfqgscz3nbOCxU95GMLRnu29QwtmbFnRG2SAnXzMDZIleWgC%2BmopXD5mnkDFo%2FTlh%2BjsYfeoLc84XSsP%2BIEqHxZE8UKZeYpiwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401750890997%40213602f3_1c05_197a93c6857_2b9f%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
+                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3D8Cg8O7r6CCJw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0Bz1DWN4x9b8h1NN1ZbNtK%2B3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOq6kjcYogmZ%2BFfqgscz3nbOJ2fWHV2jSa%2FLRXtulMtu73QwTYuOAb8llCf7FPn%2FZpD5mnkDFo%2FTlh%2BjsYfeoLc84XSsP%2BIEqHxZE8UKZeYpiwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401751236445%40213ca668_16a3_197bdd3855c_9a49%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "read_4k": 0,
@@ -5778,8 +5778,8 @@
             {
                 "region": "CN",
                 "platform": "taobao",
-                "price": "479",
-                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3DnOtTppRWB19w4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0OlJsryx6lbrZEseiVP7PUu3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOq6kjcYogmZ%2BFfqgscz3nbOCxU95GMLRnu29QwtmbFnRG2SAnXzMDZIleWgC%2BmopXD5mnkDFo%2FTlh%2BjsYfeoLc84XSsP%2BIEqHxZE8UKZeYpiwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401750890997%40213602f3_1c05_197a93c6857_2b9f%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
+                "price": "515",
+                "price_link": "https://s.click.taobao.com/t?e=m%3D2%26s%3Dyx%2B%2FD5fDjIhw4vFB6t2Z2ueEDrYVVa64juWlisr3dOdyINtkUhsv0CEYP%2BKjHo2PO4gcjPXhqnC3X1ppMM1K6W43HgsOowWtE8vsFAIYQZxrXvJ6%2BqFxFKAWqcsq3MkwFBoMXOGuG5DkaqczTKGnOq6kjcYogmZ%2BFfqgscz3nbN3hN3S1lT1gRPXhSfjk%2BWpmpLeV1ZrTlIPgDvt6wyZcj5mnkDFo%2FTlh%2BjsYfeoLc84XSsP%2BIEqHxZE8UKZeYpiwmGyhPCFe2TGDF1NzTQoPw%3D%3D\u0026union_lens=lensId%3AMAPI%401751495818%40215093a7_17b0_197cd493d87_d5cb%4001%40eyJmbG9vcklkIjo4MDMwOX0ie"
             }
         ],
         "read_4k": 0,

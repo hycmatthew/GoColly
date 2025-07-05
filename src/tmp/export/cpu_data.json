@@ -14,7 +14,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "117.49",
+                "price": "116.82",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
             },
             {
@@ -43,7 +43,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "117.49",
+                "price": "116.82",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-5600-ryzen-5-5000-series/p/N82E16819113736"
             },
             {
@@ -72,7 +72,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "171.90",
+                "price": "171.95",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-5600x/p/N82E16819113666"
             },
             {
@@ -101,7 +101,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "166.99",
+                "price": "158.16",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-5700g-ryzen-7-5000-g-series/p/N82E16819113682"
             },
             {
@@ -130,7 +130,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "198.99",
+                "price": "178.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-7600x-ryzen-5-7000-series/p/N82E16819113770"
             },
             {
@@ -159,13 +159,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "208.99",
+                "price": "184.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-5-9600x-ryzen-5-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113844"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1399",
+                "price": "1499",
                 "price_link": ""
             }
         ],
@@ -188,7 +188,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "137.00",
+                "price": "108.54",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-5700x-ryzen-7-5000-series/p/N82E16819113735"
             },
             {
@@ -217,7 +217,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "260.99",
+                "price": "293.74",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-5700x3d-ryzen-7-5000-series/p/N82E16819113812"
             },
             {
@@ -275,7 +275,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "489.00",
+                "price": "703.19",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-5800x3d-ryzen-7-5000-series/p/N82E16819113734"
             },
             {
@@ -304,7 +304,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "288.99",
+                "price": "269.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-7700x-ryzen-7-7000-series/p/N82E16819113768"
             },
             {
@@ -333,13 +333,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "383.99",
+                "price": "369.97",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-7800x3d-ryzen-7-7000-series/p/N82E16819113793"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2699",
+                "price": "2799",
                 "price_link": ""
             }
         ],
@@ -362,7 +362,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "295.00",
+                "price": "299.95",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-8700g-ryzen-7-7000-series/p/N82E16819113811"
             },
             {
@@ -391,13 +391,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "309.00",
+                "price": "314.98",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-9700x-ryzen-7-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113843"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1999",
+                "price": "2049",
                 "price_link": ""
             }
         ],
@@ -414,7 +414,7 @@
         "integrated_graphics_score": 1200,
         "multi_core_score": 23334,
         "name": "Ryzen 7 9800X3D",
-        "name_cn": "锐龙7 9800X3D",
+        "name_cn": "",
         "power": 162,
         "prices": [
             {
@@ -422,12 +422,6 @@
                 "platform": "newegg",
                 "price": "489.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-7-9800x3d-ryzen-7-9000-series-granite-ridge-zen-5-socket-am5-processor/p/N82E16819113877"
-            },
-            {
-                "region": "CN",
-                "platform": "other",
-                "price": "3799",
-                "price_link": ""
             }
         ],
         "single_core_score": 2073,
@@ -449,7 +443,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "260.99",
+                "price": "269.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-5900x/p/N82E16819113664"
             },
             {
@@ -478,7 +472,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "323.00",
+                "price": "311.96",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-5950x/p/N82E16819113663"
             },
             {
@@ -507,7 +501,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "332.54",
+                "price": "451.72",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7900/p/N82E16819113785"
             },
             {
@@ -536,7 +530,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "341.15",
+                "price": "329.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7900x-ryzen-9-7000-series/p/N82E16819113769"
             },
             {
@@ -565,7 +559,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "632.97",
+                "price": "672.72",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7900x3d-ryzen-9-7000-series/p/N82E16819113792"
             },
             {
@@ -594,7 +588,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "488.59",
+                "price": "545.99",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7950x-ryzen-9-7000-series/p/N82E16819113771"
             },
             {
@@ -623,7 +617,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "778.75",
+                "price": "761.38",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-7950x3d-ryzen-9-7000-series/p/N82E16819113791"
             },
             {
@@ -652,7 +646,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "380.26",
+                "price": "399.98",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-9900x-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113842"
             },
             {
@@ -687,7 +681,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "3999",
+                "price": "4199",
                 "price_link": ""
             }
         ],
@@ -710,13 +704,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "523.79",
+                "price": "599.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-9950x-4-3-ghz-16-core-am5-170w-processor-100-100001277wof/p/N82E16819113841"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "3999",
+                "price": "4299",
                 "price_link": ""
             }
         ],
@@ -739,7 +733,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "719.00",
+                "price": "699.00",
                 "price_link": "https://www.newegg.com/amd-ryzen-9-9950x3d-ryzen-9-9000-series-granite-ridge-socket-am5-processor/p/N82E16819113884"
             },
             {
@@ -768,7 +762,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "113.60",
+                "price": "113.58",
                 "price_link": "https://www.newegg.com/intel-core-i3-12100-core-i3-12th-gen/p/N82E16819118370"
             },
             {
@@ -797,7 +791,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "82.49",
+                "price": "78.99",
                 "price_link": "https://www.newegg.com/intel-core-i3-12100f-core-i3-12th-gen/p/N82E16819118357"
             },
             {
@@ -826,7 +820,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "128.88",
+                "price": "120.11",
                 "price_link": "https://www.newegg.com/intel-core-i3-13100-core-i3-13th-gen/p/19-118-432"
             },
             {
@@ -855,7 +849,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "82.94",
+                "price": "90.66",
                 "price_link": "https://www.newegg.com/intel-core-i3-13100f-core-i3-13th-gen/p/19-118-433"
             },
             {
@@ -913,13 +907,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "90.07",
+                "price": "90.05",
                 "price_link": "https://www.newegg.com/intel-core-i3-14100f-core-i3-14th-gen/p/N82E16819118492"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "699",
+                "price": "649",
                 "price_link": ""
             }
         ],
@@ -942,7 +936,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "143.57",
+                "price": "143.55",
                 "price_link": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118358"
             },
             {
@@ -971,7 +965,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "108.99",
+                "price": "116.00",
                 "price_link": "https://www.newegg.com/intel-core-i5-12400f-core-i5-12th-gen/p/N82E16819118360"
             },
             {
@@ -1000,7 +994,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "239.29",
+                "price": "246.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478"
             },
             {
@@ -1029,13 +1023,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "159.99",
+                "price": "149.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-12600k-core-i5-12th-gen/p/N82E16819118347"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1599",
+                "price": "2177",
                 "price_link": ""
             }
         ],
@@ -1058,13 +1052,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "147.59",
+                "price": "128.97",
                 "price_link": "https://www.newegg.com/intel-core-i5-12600kf-core-i5-12th-gen/p/N82E16819118349"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1088",
+                "price": "1099",
                 "price_link": ""
             }
         ],
@@ -1087,13 +1081,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "171.92",
+                "price": "176.70",
                 "price_link": "https://www.newegg.com/intel-core-i5-13400-core-i5-13th-gen/p/N82E16819118430"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1199",
+                "price": "1129",
                 "price_link": ""
             }
         ],
@@ -1116,7 +1110,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "134.45",
+                "price": "129.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-13400f-core-i5-13th-gen/p/19-118-431"
             },
             {
@@ -1145,7 +1139,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "243.47",
+                "price": "243.45",
                 "price_link": "https://www.newegg.com/intel-core-i5-13500-core-i5-13th-gen/p/N82E16819118429"
             },
             {
@@ -1203,7 +1197,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "195.99",
+                "price": "193.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-13600kf-core-i5-13th-gen/p/N82E16819118417"
             },
             {
@@ -1261,13 +1255,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "130.00",
+                "price": "129.97",
                 "price_link": "https://www.newegg.com/intel-core-i5-14400f-core-i5-14th-gen/p/N82E16819118489"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1199",
+                "price": "999",
                 "price_link": ""
             }
         ],
@@ -1276,7 +1270,7 @@
         "threads": 16
     },
     {
-        "brand": "Intel",
+        "brand": "intel",
         "cores": 10,
         "gpu": "No",
         "id": "intel-core-i5-14490f",
@@ -1290,7 +1284,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1149",
+                "price": "1099",
                 "price_link": ""
             }
         ],
@@ -1313,7 +1307,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "239.29",
+                "price": "246.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-14500-core-i5-14th-gen/p/N82E16819118478"
             },
             {
@@ -1342,13 +1336,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "199.99",
+                "price": "189.99",
                 "price_link": "https://www.newegg.com/intel-core-i5-14600k-core-i5-14th-gen/p/N82E16819118470"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1748.9",
+                "price": "1799",
                 "price_link": ""
             }
         ],
@@ -1371,13 +1365,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "201.99",
+                "price": "198.20",
                 "price_link": "https://www.newegg.com/intel-core-i5-14600kf-core-i5-14th-gen/p/N82E16819118472"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1298.9",
+                "price": "1399",
                 "price_link": ""
             }
         ],
@@ -1400,7 +1394,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "277.99",
+                "price": "289.99",
                 "price_link": "https://www.newegg.com/intel-core-i7-12700-core-i7-12th-gen/p/N82E16819118368"
             },
             {
@@ -1429,7 +1423,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "235.97",
+                "price": "247.00",
                 "price_link": "https://www.newegg.com/intel-core-i7-12700f-core-i7-12th-gen/p/N82E16819118359"
             },
             {
@@ -1458,7 +1452,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "219.97",
+                "price": "219.96",
                 "price_link": "https://www.newegg.com/intel-core-i7-12700k-core-i7-12th-gen/p/N82E16819118343"
             },
             {
@@ -1487,7 +1481,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "189.99",
+                "price": "178.00",
                 "price_link": "https://www.newegg.com/intel-core-i7-12700kf-core-i7-12th-gen/p/N82E16819118345"
             },
             {
@@ -1545,7 +1539,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "317.24",
+                "price": "315.93",
                 "price_link": "https://www.newegg.com/intel-core-i7-13700f-core-i7-13th-gen/p/19-118-428"
             },
             {
@@ -1574,7 +1568,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "309.99",
+                "price": "479.00",
                 "price_link": "https://www.newegg.com/intel-core-i7-13700k-core-i7-13th-gen/p/N82E16819118414"
             },
             {
@@ -1603,13 +1597,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "538.40",
+                "price": "498.00",
                 "price_link": "https://www.newegg.com/intel-core-i7-13700kf-core-i7-13th-gen/p/N82E16819118415"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2399",
+                "price": "2999",
                 "price_link": ""
             }
         ],
@@ -1632,7 +1626,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "592.11",
+                "price": "409.99",
                 "price_link": "https://www.newegg.com/intel-core-i9-13900f-core-i9-13th-gen-raptor-lake-lga-1700-desktop-processor/p/N82E16819118426"
             },
             {
@@ -1661,7 +1655,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "320.99",
+                "price": "320.97",
                 "price_link": "https://www.newegg.com/intel-core-i7-14700-core-i7-14th-gen/p/N82E16819118476"
             },
             {
@@ -1690,7 +1684,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "305.51",
+                "price": "305.49",
                 "price_link": "https://www.newegg.com/intel-core-i7-14700f-core-i7-14th-gen/p/N82E16819118487"
             },
             {
@@ -1719,13 +1713,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "342.99",
+                "price": "329.99",
                 "price_link": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118466"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2748.9",
+                "price": "2799",
                 "price_link": ""
             }
         ],
@@ -1748,13 +1742,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "327.99",
+                "price": "314.99",
                 "price_link": "https://www.newegg.com/intel-core-i7-14700k-core-i7-14th-gen/p/N82E16819118468"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2299",
+                "price": "2399",
                 "price_link": ""
             }
         ],
@@ -1777,7 +1771,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "589.99",
+                "price": "499.99",
                 "price_link": "https://www.newegg.com/intel-core-i9-13900-core-i9-13th-gen/p/N82E16819118425"
             },
             {
@@ -1806,7 +1800,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "423.99",
+                "price": "573.99",
                 "price_link": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118412"
             },
             {
@@ -1835,13 +1829,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "559.60",
+                "price": "594.99",
                 "price_link": "https://www.newegg.com/intel-core-i9-13900k-core-i9-13th-gen/p/N82E16819118413"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2999",
+                "price": "4499",
                 "price_link": ""
             }
         ],
@@ -1893,13 +1887,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "469.00",
+                "price": "438.98",
                 "price_link": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118462"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "3298.9",
+                "price": "3399",
                 "price_link": ""
             }
         ],
@@ -1922,13 +1916,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "429.99",
+                "price": "419.97",
                 "price_link": "https://www.newegg.com/intel-core-i9-14900k-core-i9-14th-gen/p/N82E16819118464"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2999",
+                "price": "3199",
                 "price_link": ""
             }
         ],
@@ -1951,13 +1945,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "224.99",
+                "price": "274.79",
                 "price_link": "https://www.newegg.com/intel-core-ultra-5-225-arrow-lake-lga-1851-processor/p/N82E16819118577?srsltid=AfmBOoqIOssHWEoPXYhtPm0gVCHD9f_7MoLeqkcfX2U9LP9DFJlHr4vs"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2149",
+                "price": "1499",
                 "price_link": ""
             }
         ],
@@ -1980,13 +1974,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "289.99",
+                "price": "259.99",
                 "price_link": "https://www.newegg.com/intel-core-ultra-5-245k-arrow-lake-lga-1851-processor/p/N82E16819118508"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2199",
+                "price": "1999",
                 "price_link": ""
             }
         ],
@@ -2009,13 +2003,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "284.99",
+                "price": "299.00",
                 "price_link": "https://www.newegg.com/intel-core-ultra-5-245kf-arrow-lake-lga-1851-processor/p/N82E16819118509"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "1919",
+                "price": "1899",
                 "price_link": ""
             }
         ],
@@ -2038,13 +2032,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "369.99",
+                "price": "334.99",
                 "price_link": "https://www.newegg.com/intel-core-ultra-7-265f-arrow-lake-lga-1851-processor/p/N82E16819118576?srsltid=AfmBOorJQAPKsxXGaVoOpI6eiHxEHx5urIzOFJvbNq0t4Q0UVXF5fakf"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2999",
+                "price": "1999",
                 "price_link": ""
             }
         ],
@@ -2073,7 +2067,7 @@
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "2399",
+                "price": "2299",
                 "price_link": ""
             }
         ],
@@ -2096,7 +2090,7 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "299.99",
+                "price": "289.99",
                 "price_link": "https://www.newegg.com/intel-core-ultra-7-265kf-arrow-lake-lga-1851-processor/p/N82E16819118507"
             }
         ],
@@ -2119,13 +2113,13 @@
             {
                 "region": "US",
                 "platform": "newegg",
-                "price": "599.99",
+                "price": "559.99",
                 "price_link": "https://www.newegg.com/intel-core-ultra-9-285k-arrow-lake-lga-1851-processor/p/N82E16819118505"
             },
             {
                 "region": "CN",
                 "platform": "other",
-                "price": "4399",
+                "price": "4349",
                 "price_link": ""
             }
         ],
