@@ -650,6 +650,62 @@
         "slot": "2"
     },
     {
+        "benchmark": 10702,
+        "boost_clock": 2572,
+        "brand": "asus",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "asus-dual-geforce-rtx-5050",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-126-811-01.png",
+        "length": 203,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "Dual GeForce RTX 5050",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "249.99",
+                "price_link": "https://www.newegg.com/asus-dual-rtx5050-8g-geforce-rtx-5050-8gb-graphics-card-double-fans/p/N82E16814126811?Item=N82E16814126811\u0026nm_mc=AFC-RAN-COM\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026utm_source=afc-Pangoly\u0026utm_medium=affiliate\u0026ranSiteID=nwUw4CS3F2g-BhwcQlZUrtyL46UC4F_nBQ\u0026ranEAID=3815908\u0026ranMID=44583\u0026ASID=\u0026ASUBID=\u0026ACRID=1\u0026AFFID=3815908\u0026AFFNAME=Pangoly\u0026utm_campaign=afc-ran-com-_-Pangoly"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10888,
+        "boost_clock": 2647,
+        "brand": "asus",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "asus-dual-geforce-rtx-5050-oc-edition",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-126-810-01.png",
+        "length": 203,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "Dual GeForce RTX 5050 OC Edition",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "249.99",
+                "price_link": "https://www.newegg.com/asus-prime-rtx5050-o8g-geforce-rtx-5050-8gb-graphics-card-triple-fans/p/N82E16814126810?Item=N82E16814126810\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026nm_mc=AFC-RAN-COM\u0026utm_medium=affiliate\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ranEAID=3815908\u0026AFFID=3815908\u0026ranMID=44583\u0026AFFNAME=Pangoly\u0026ranSiteID=nwUw4CS3F2g-ndB3cyUK2jWT6QZvMgpkoQ\u0026ACRID=1\u0026ASUBID=\u0026utm_source=afc-Pangoly\u0026ASID="
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
         "benchmark": 13959,
         "boost_clock": 2535,
         "brand": "asus",
@@ -1369,6 +1425,34 @@
         ],
         "release_date": "2024-10-01T00:00:00Z",
         "series": "GeForce RTX 40",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10962,
+        "boost_clock": 2677,
+        "brand": "asus",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "asus-prime-geforce-rtx-5050-oc-edition",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-126-809-01.png",
+        "length": 268,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "Prime GeForce RTX 5050 OC Edition",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "289.99",
+                "price_link": "https://www.newegg.com/asus-prime-rtx5050-o8g-geforce-rtx-5050-8gb-graphics-card-triple-fans/p/N82E16814126809?Item=N82E16814126809\u0026AFFNAME=Pangoly\u0026nm_mc=AFC-RAN-COM\u0026ranSiteID=nwUw4CS3F2g-vodOi.gJAAYfSiSWV2fQ9g\u0026ranEAID=3815908\u0026ranMID=44583\u0026ACRID=1\u0026ASUBID=\u0026ASID=\u0026utm_source=afc-Pangoly\u0026utm_medium=affiliate\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026AFFID=3815908\u0026cm_mmc=afc-ran-com-_-Pangoly"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
         "slot": "2"
     },
     {
@@ -2758,62 +2842,6 @@
         "slot": "2"
     },
     {
-        "benchmark": 0,
-        "boost_clock": 1935,
-        "brand": "asus",
-        "chipset": "RTX 3080",
-        "clock_rate": 1440,
-        "id": "asus-rog-strix-nvidia-geforce-rtx-3080-v2-oc-edition",
-        "img": "",
-        "length": 318,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 320,
-        "memory_size": 10,
-        "memory_type": "GDDR6X",
-        "name": "ROG Strix Nvidia Geforce Rtx 3080 V2 Oc Edition",
-        "name_cn": "",
-        "power": 320,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "amazon",
-                "price": "895.49",
-                "price_link": "https://www.amazon.com/dp/B09DDJTSPZ"
-            }
-        ],
-        "release_date": "2021-08-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1845,
-        "brand": "asus",
-        "chipset": "GTX 1660 Ti",
-        "clock_rate": 1500,
-        "id": "asus-tuf-gaming-geforce-gtx-1660-ti-evo-oc-edition",
-        "img": "",
-        "length": 206,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 192,
-        "memory_size": 6,
-        "memory_type": "GDDR6",
-        "name": "TUF Gaming GeForce GTX 1660 Ti EVO OC Edition",
-        "name_cn": "",
-        "power": 120,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "amazon",
-                "price": "420.00",
-                "price_link": "https://www.amazon.com/dp/B09HL87KQM"
-            }
-        ],
-        "release_date": "2021-09-01T00:00:00Z",
-        "series": "GeForce RTX 16",
-        "slot": "2"
-    },
-    {
         "benchmark": 12235,
         "boost_clock": 1755,
         "brand": "asus",
@@ -2852,27 +2880,6 @@
         "power": 290,
         "prices": [],
         "release_date": "2022-12-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1815,
-        "brand": "asus",
-        "chipset": "RTX 3080",
-        "clock_rate": 1440,
-        "id": "asus-tuf-gaming-geforce-rtx-3080-v2-oc-edition",
-        "img": "",
-        "length": 300,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 320,
-        "memory_size": 10,
-        "memory_type": "GDDR6X",
-        "name": "TUF Gaming GeForce RTX 3080 V2 OC Edition",
-        "name_cn": "",
-        "power": 320,
-        "prices": [],
-        "release_date": "2021-07-01T00:00:00Z",
         "series": "GeForce RTX 30",
         "slot": "2"
     },
@@ -6020,6 +6027,90 @@
         "slot": "2"
     },
     {
+        "benchmark": 10776,
+        "boost_clock": 2632,
+        "brand": "gigabyte",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "gigabyte-geforce-rtx-5050-gaming-oc",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-932-815-10.png",
+        "length": 280,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 Gaming OC",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "269.99",
+                "price_link": "https://www.newegg.com/gigabyte-gv-n5050gaming-oc-8gd-geforce-rtx-5050-8gb-graphics-card-triple-fans/p/N82E16814932815?Item=N82E16814932815\u0026AFFNAME=Pangoly\u0026ranSiteID=nwUw4CS3F2g-IULkJKIfq4Ys9h0kIwmZLQ\u0026ranEAID=3815908\u0026ACRID=1\u0026AFFID=3815908\u0026utm_medium=affiliate\u0026nm_mc=AFC-RAN-COM\u0026ASID=\u0026ranMID=44583\u0026utm_source=afc-Pangoly\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026ASUBID="
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10665,
+        "boost_clock": 2632,
+        "brand": "gigabyte",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "gigabyte-geforce-rtx-5050-oc-low-profile",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-932-817-06.png",
+        "length": 182,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 OC Low Profile",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "259.99",
+                "price_link": "https://www.newegg.com/gigabyte-low-profile-gv-n5050oc-8gl-geforce-rtx-5050-8gb-graphics-card/p/N82E16814932817?Item=N82E16814932817\u0026AFFID=3815908\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026ranMID=44583\u0026ACRID=1\u0026ASUBID=\u0026ASID=\u0026utm_medium=affiliate\u0026ranEAID=3815908\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ranSiteID=nwUw4CS3F2g-rFO8gTccUZbVMkFUybcUiA\u0026AFFNAME=Pangoly\u0026nm_mc=AFC-RAN-COM\u0026utm_source=afc-Pangoly"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10665,
+        "boost_clock": 2587,
+        "brand": "gigabyte",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "gigabyte-geforce-rtx-5050-windforce-oc",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-932-816-06.png",
+        "length": 199,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 WINDFORCE OC",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "249.99",
+                "price_link": "https://www.newegg.com/gigabyte-windforce-gv-n5050wf2oc-8gd-geforce-rtx-5050-8gb-graphics-card-double-fans/p/N82E16814932816?Item=N82E16814932816\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026utm_source=afc-Pangoly\u0026AFFID=3815908\u0026AFFNAME=Pangoly\u0026ACRID=1\u0026ASUBID=\u0026ranMID=44583\u0026ASID=\u0026nm_mc=AFC-RAN-COM\u0026ranEAID=3815908\u0026ranSiteID=nwUw4CS3F2g-DPkniffFJBh83snYFLPPhg\u0026utm_medium=affiliate\u0026utm_campaign=afc-ran-com-_-Pangoly"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
         "benchmark": 14058,
         "boost_clock": 2595,
         "brand": "gigabyte",
@@ -8052,118 +8143,6 @@
         "slot": "2"
     },
     {
-        "benchmark": 0,
-        "boost_clock": 1770,
-        "brand": "msi",
-        "chipset": "RTX 3080 Ti",
-        "clock_rate": 1365,
-        "id": "msi-geforce-rtx-3080-ti-gaming-x-trio-12g",
-        "img": "",
-        "length": 324,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 384,
-        "memory_size": 12,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 Ti Gaming X TRIO 12G",
-        "name_cn": "",
-        "power": 350,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "amazon",
-                "price": "1489.00",
-                "price_link": "https://www.amazon.com/dp/B095VZ6F73"
-            }
-        ],
-        "release_date": "2021-06-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1845,
-        "brand": "msi",
-        "chipset": "RTX 3080 Ti",
-        "clock_rate": 1365,
-        "id": "msi-geforce-rtx-3080-ti-suprim-x-12g",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/14-137-660-V08.jpg",
-        "length": 336,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 384,
-        "memory_size": 12,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 Ti SUPRIM X 12G",
-        "name_cn": "",
-        "power": 400,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "newegg",
-                "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/msi-rtx-3080-ti-suprim-x-12g-geforce-rtx-3080-ti-12gb-graphics-card-triple-fans/p/N82E16814137660?Item=N82E16814137660\u0026ranSiteID=nwUw4CS3F2g-b7iRnLoIw3IE4yZ9_v5iPw\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026utm_source=afc-Pangoly\u0026utm_medium=affiliate\u0026nm_mc=AFC-RAN-COM\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026AFFNAME=Pangoly\u0026ACRID=1\u0026ASUBID=\u0026ASID=\u0026ranEAID=3815908\u0026ranMID=44583\u0026AFFID=3815908"
-            }
-        ],
-        "release_date": "2021-06-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1695,
-        "brand": "msi",
-        "chipset": "RTX 3080 Ti",
-        "clock_rate": 1365,
-        "id": "msi-geforce-rtx-3080-ti-ventus-3x-12g-oc",
-        "img": "",
-        "length": 305,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 384,
-        "memory_size": 12,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 Ti Ventus 3X 12G OC",
-        "name_cn": "",
-        "power": 350,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "amazon",
-                "price": "1845.88",
-                "price_link": "https://www.amazon.com/dp/B095W3S3LF"
-            }
-        ],
-        "release_date": "2021-06-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1740,
-        "brand": "msi",
-        "chipset": "RTX 3080",
-        "clock_rate": 1440,
-        "id": "msi-geforce-rtx-3080-ventus-3x-plus-10g-oc-lhr",
-        "img": "",
-        "length": 305,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 320,
-        "memory_size": 10,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 VENTUS 3X Plus 10G OC LHR",
-        "name_cn": "",
-        "power": 320,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "amazon",
-                "price": "1642.20",
-                "price_link": "https://www.amazon.com/dp/B09FSWGS7L"
-            }
-        ],
-        "release_date": "2022-03-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
         "benchmark": 21160,
         "boost_clock": 1695,
         "brand": "msi",
@@ -9505,6 +9484,83 @@
         "release_date": "2023-10-01T00:00:00Z",
         "series": "GeForce RTX 40",
         "slot": "3"
+    },
+    {
+        "benchmark": 10813,
+        "boost_clock": 2632,
+        "brand": "msi",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "msi-geforce-rtx-5050-8g-gaming-oc",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-137-980-01.jpg",
+        "length": 202,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 8G Gaming OC",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "279.99",
+                "price_link": "https://www.newegg.com/msi-rtx-5060-8g-gaming-oc-geforce-rtx-5060-8gb-graphics-card-double-fans/p/N82E16814137980?Item=N82E16814137980\u0026AFFID=3815908\u0026AFFNAME=Pangoly\u0026ranSiteID=nwUw4CS3F2g-QIyN5Y5N9JvHja0lt5e0Dg\u0026ACRID=1\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026ranEAID=3815908\u0026utm_medium=affiliate\u0026ranMID=44583\u0026utm_source=afc-Pangoly\u0026ASID=\u0026ASUBID=\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026nm_mc=AFC-RAN-COM"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10739,
+        "boost_clock": 2632,
+        "brand": "msi",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "msi-geforce-rtx-5050-8g-shadow-2x-oc",
+        "img": "",
+        "length": 197,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 8G SHADOW 2X OC",
+        "name_cn": "",
+        "power": 130,
+        "prices": [],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10739,
+        "boost_clock": 2602,
+        "brand": "msi",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "msi-geforce-rtx-5050-8g-ventus-2x-oc",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-137-981-03.jpg",
+        "length": 197,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 8G VENTUS 2X OC",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "269.99",
+                "price_link": "https://www.newegg.com/msi-rtx-5050-8g-ventus-2x-oc-geforce-rtx-5050-8gb-graphics-card-double-fans/p/N82E16814137981?Item=N82E16814137981\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026ACRID=1\u0026ranSiteID=nwUw4CS3F2g-gQk5vblMvkLG6TbkO3hl5g\u0026ranEAID=3815908\u0026ranMID=44583\u0026ASID=\u0026nm_mc=AFC-RAN-COM\u0026AFFNAME=Pangoly\u0026ASUBID=\u0026utm_source=afc-Pangoly\u0026utm_medium=affiliate\u0026AFFID=3815908"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
     },
     {
         "benchmark": 14206,
@@ -11940,55 +11996,6 @@
                 "platform": "newegg",
                 "price": "785.00",
                 "price_link": "https://www.newegg.com/nvidia-founders-edition-900-1g143-2515-000-geforce-rtx-3070-ti-8gb-graphics-card/p/N82E16814132097?Item=9SIB1PGJE36181\u0026ACRID=1\u0026utm_source=afc-Pangoly\u0026ASID=\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026nm_mc=AFC-RAN-COM\u0026ranSiteID=nwUw4CS3F2g-GsUE2cyPKUL_dhmwqr2tMA\u0026ranMID=44583\u0026ranEAID=3815908\u0026utm_medium=affiliate\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026AFFNAME=Pangoly\u0026AFFID=3815908\u0026ASUBID="
-            }
-        ],
-        "release_date": "2021-06-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1710,
-        "brand": "nvidia",
-        "chipset": "RTX 3080",
-        "clock_rate": 1440,
-        "id": "nvidia-geforce-rtx-3080-founders-edition",
-        "img": "",
-        "length": 285,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 320,
-        "memory_size": 10,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 Founders Edition",
-        "name_cn": "",
-        "power": 320,
-        "prices": [],
-        "release_date": "2020-10-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1670,
-        "brand": "nvidia",
-        "chipset": "RTX 3080 Ti",
-        "clock_rate": 1370,
-        "id": "nvidia-geforce-rtx-3080-ti-founders-edition",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/ARUXS211015278F9.jpg",
-        "length": 285,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 384,
-        "memory_size": 12,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 Ti Founders Edition",
-        "name_cn": "",
-        "power": 350,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "newegg",
-                "price": "1385.00",
-                "price_link": "https://www.newegg.com/nvidia-900-1g133-2518-000/p/1FT-0004-006T6?Item=9SIARVBJFM1682\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026utm_medium=affiliate\u0026ranSiteID=nwUw4CS3F2g-cN.dj8XxiutogSEgVSZJTg\u0026nm_mc=AFC-RAN-COM\u0026AFFID=3815908\u0026utm_source=afc-Pangoly\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ranEAID=3815908\u0026ASID=\u0026ACRID=1\u0026ASUBID=\u0026ranMID=44583\u0026AFFNAME=Pangoly"
             }
         ],
         "release_date": "2021-06-01T00:00:00Z",
@@ -14972,34 +14979,6 @@
         "slot": "3"
     },
     {
-        "benchmark": 0,
-        "boost_clock": 2321,
-        "brand": "sapphire",
-        "chipset": "RX 6400",
-        "clock_rate": 1923,
-        "id": "sapphire-radeon-rx-6400-pulse",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/14-202-416-01.jpg",
-        "length": 170,
-        "manufacturer": "AMD",
-        "memory_bus": 64,
-        "memory_size": 4,
-        "memory_type": "GDDR6",
-        "name": "Radeon RX 6400 Pulse",
-        "name_cn": "",
-        "power": 53,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "newegg",
-                "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/sapphire-tech-pulse-11315-01-20g-radeon-rx-6400-4gb-graphics-card-single-fan/p/N82E16814202416?Item=N82E16814202416\u0026ranEAID=3815908\u0026nm_mc=AFC-RAN-COM\u0026ranSiteID=nwUw4CS3F2g-SxfT_gzaps0ajD6RtHEc5A\u0026utm_source=afc-Pangoly\u0026utm_medium=affiliate\u0026AFFID=3815908\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026AFFNAME=Pangoly\u0026ranMID=44583\u0026ACRID=1\u0026ASUBID=\u0026ASID=\u0026cm_mmc=afc-ran-com-_-Pangoly"
-            }
-        ],
-        "release_date": "2022-04-01T00:00:00Z",
-        "series": "Radeon RX 6000",
-        "slot": "1"
-    },
-    {
         "benchmark": 12804,
         "boost_clock": 2622,
         "brand": "sapphire",
@@ -16765,83 +16744,6 @@
         "slot": "2"
     },
     {
-        "benchmark": 0,
-        "boost_clock": 1710,
-        "brand": "zotac",
-        "chipset": "RTX 3080 Ti",
-        "clock_rate": 1365,
-        "id": "zotac-gaming-geforce-rtx-3080-ti-amp-holo",
-        "img": "",
-        "length": 317,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 384,
-        "memory_size": 12,
-        "memory_type": "GDDR6X",
-        "name": "Gaming GeForce RTX 3080 Ti AMP Holo",
-        "name_cn": "",
-        "power": 350,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "amazon",
-                "price": "999.99",
-                "price_link": "https://www.amazon.com/dp/B08V1ZWGVR"
-            }
-        ],
-        "release_date": "2021-06-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1665,
-        "brand": "zotac",
-        "chipset": "RTX 3080 Ti",
-        "clock_rate": 1365,
-        "id": "zotac-gaming-geforce-rtx-3080-ti-trinity",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/14-500-514-V01.jpg",
-        "length": 317,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 384,
-        "memory_size": 12,
-        "memory_type": "GDDR6X",
-        "name": "Gaming GeForce RTX 3080 Ti Trinity",
-        "name_cn": "",
-        "power": 350,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "newegg",
-                "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/zotac-trinity-zt-a30810d-10p-geforce-rtx-3080-ti-12gb-graphics-card-triple-fans/p/N82E16814500514?Item=N82E16814500514\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ranSiteID=nwUw4CS3F2g-Z7nYjbRTMx7qqO5wJf7_1w\u0026ranEAID=3815908\u0026ranMID=44583\u0026ASID=\u0026AFFID=3815908\u0026AFFNAME=Pangoly\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026nm_mc=AFC-RAN-COM\u0026ACRID=1\u0026ASUBID=\u0026utm_source=afc-Pangoly\u0026utm_medium=affiliate"
-            }
-        ],
-        "release_date": "2021-06-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1710,
-        "brand": "zotac",
-        "chipset": "RTX 3080",
-        "clock_rate": 1440,
-        "id": "zotac-gaming-geforce-rtx-3080-trinity",
-        "img": "",
-        "length": 317,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 320,
-        "memory_size": 10,
-        "memory_type": "GDDR6X",
-        "name": "Gaming GeForce RTX 3080 Trinity",
-        "name_cn": "",
-        "power": 320,
-        "prices": [],
-        "release_date": "2020-09-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
         "benchmark": 19998,
         "boost_clock": 1710,
         "brand": "zotac",
@@ -17174,62 +17076,6 @@
             }
         ],
         "release_date": "2020-10-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1725,
-        "brand": "zotac",
-        "chipset": "RTX 3080",
-        "clock_rate": 1440,
-        "id": "zotac-geforce-rtx-3080-trinity-oc",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/14-500-504-V01.jpg",
-        "length": 317,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 320,
-        "memory_size": 10,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 Trinity OC",
-        "name_cn": "",
-        "power": 320,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "newegg",
-                "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/zotac-trinity-oc-zt-a30800j-10p-geforce-rtx-3080-10gb-graphics-card-triple-fans/p/N82E16814500504?Item=9SIB1PGFFH1724\u0026ranEAID=3815908\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026ranMID=44583\u0026ASID=\u0026ranSiteID=nwUw4CS3F2g-rdzsj2KFxSdmDrJClkdy8w\u0026utm_source=afc-Pangoly\u0026AFFID=3815908\u0026nm_mc=AFC-RAN-COM\u0026utm_medium=affiliate\u0026AFFNAME=Pangoly\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ACRID=1\u0026ASUBID="
-            }
-        ],
-        "release_date": "2020-09-01T00:00:00Z",
-        "series": "GeForce RTX 30",
-        "slot": "2"
-    },
-    {
-        "benchmark": 0,
-        "boost_clock": 1725,
-        "brand": "zotac",
-        "chipset": "RTX 3080",
-        "clock_rate": 1440,
-        "id": "zotac-geforce-rtx-3080-trinity-oc-lhr",
-        "img": "https://c1.neweggimages.com/productimage/nb1280/14-500-520-V01.jpg",
-        "length": 317,
-        "manufacturer": "NVIDIA",
-        "memory_bus": 320,
-        "memory_size": 10,
-        "memory_type": "GDDR6X",
-        "name": "GeForce RTX 3080 Trinity OC LHR",
-        "name_cn": "",
-        "power": 320,
-        "prices": [
-            {
-                "region": "US",
-                "platform": "newegg",
-                "price": "Out of Stock",
-                "price_link": "https://www.newegg.com/zotac-trinity-oc-lhr-zt-a30800j-10plhr-geforce-rtx-3080-10gb-graphics-card-triple-fans/p/N82E16814500520?Item=N82E16814500520\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ranEAID=3815908\u0026nm_mc=AFC-RAN-COM\u0026ranSiteID=nwUw4CS3F2g-GYvkWVEk.Jjkb0AMngeezQ\u0026utm_medium=affiliate\u0026ranMID=44583\u0026utm_source=afc-Pangoly\u0026ASID=\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026AFFNAME=Pangoly\u0026AFFID=3815908\u0026ACRID=1\u0026ASUBID="
-            }
-        ],
-        "release_date": "2021-09-01T00:00:00Z",
         "series": "GeForce RTX 30",
         "slot": "2"
     },
@@ -18008,6 +17854,118 @@
         ],
         "release_date": "2022-10-01T00:00:00Z",
         "series": "GeForce RTX 40",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10628,
+        "boost_clock": 2572,
+        "brand": "zotac",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "zotac-geforce-rtx-5050-solo",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-500-625-02.jpg",
+        "length": 164,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 Solo",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "249.99",
+                "price_link": "https://www.newegg.com/zotac-geforce-rtx-5050-solo-8gb-graphics-card-single-fan/p/N82E16814500625?Item=N82E16814500625\u0026AFFID=3815908\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026ranMID=44583\u0026ACRID=1\u0026ASUBID=\u0026ASID=\u0026utm_medium=affiliate\u0026ranEAID=3815908\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ranSiteID=nwUw4CS3F2g-j4LQNLVZ_xUPpHDm96wXfA\u0026AFFNAME=Pangoly\u0026nm_mc=AFC-RAN-COM\u0026utm_source=afc-Pangoly"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10628,
+        "boost_clock": 2572,
+        "brand": "zotac",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "zotac-geforce-rtx-5050-twin-edge",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-500-624-02.jpg",
+        "length": 220,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 Twin Edge",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "259.99",
+                "price_link": "https://www.newegg.com/zotac-geforce-rtx-5050-twin-edge-geforce-rtx-5050-8gb-graphics-card-double-fans/p/N82E16814500624?Item=N82E16814500624\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ASUBID=\u0026ranSiteID=nwUw4CS3F2g-H91CUvZOgXweyk2ogyb3tg\u0026ranEAID=3815908\u0026ranMID=44583\u0026ASID=\u0026ACRID=1\u0026AFFNAME=Pangoly\u0026nm_mc=AFC-RAN-COM\u0026utm_source=afc-Pangoly\u0026AFFID=3815908\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026utm_medium=affiliate"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10702,
+        "boost_clock": 2617,
+        "brand": "zotac",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "zotac-geforce-rtx-5050-twin-edge-oc",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-500-626-02.jpg",
+        "length": 220,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 Twin Edge OC",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "269.99",
+                "price_link": "https://www.newegg.com/zotac-geforce-rtx-5050-twin-edge-oc-geforce-rtx-5050-8gb-graphics-card-double-fans/p/N82E16814500626?Item=N82E16814500626\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026AFFID=3815908\u0026AFFNAME=Pangoly\u0026ASUBID=\u0026ACRID=1\u0026ranSiteID=nwUw4CS3F2g-KF3LigOtxDaVyHxBXRPvRw\u0026nm_mc=AFC-RAN-COM\u0026ranEAID=3815908\u0026utm_medium=affiliate\u0026ranMID=44583\u0026utm_source=afc-Pangoly\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ASID="
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
+        "slot": "2"
+    },
+    {
+        "benchmark": 10702,
+        "boost_clock": 2617,
+        "brand": "zotac",
+        "chipset": "RTX 5050",
+        "clock_rate": 2317,
+        "id": "zotac-geforce-rtx-5050-twin-edge-oc-white",
+        "img": "https://c1.neweggimages.com/productimage/nb1280/14-500-627-02.jpg",
+        "length": 220,
+        "manufacturer": "NVIDIA",
+        "memory_bus": 128,
+        "memory_size": 8,
+        "memory_type": "GDDR6",
+        "name": "GeForce RTX 5050 Twin Edge OC White",
+        "name_cn": "",
+        "power": 130,
+        "prices": [
+            {
+                "region": "US",
+                "platform": "newegg",
+                "price": "279.99",
+                "price_link": "https://www.newegg.com/zotac-geforce-rtx-5050-twin-edge-oc-white-edition-geforce-rtx-5050-8gb-graphics-card-double-fans/p/N82E16814500627?Item=N82E16814500627\u0026cm_mmc=afc-ran-com-_-Pangoly\u0026AFFID=3815908\u0026AFFNAME=Pangoly\u0026ranSiteID=nwUw4CS3F2g-vzPkviz7j.EqZBZZdyC.wQ\u0026ranMID=44583\u0026ranEAID=3815908\u0026utm_medium=affiliate\u0026ASID=\u0026utm_source=afc-Pangoly\u0026ASUBID=\u0026nm_mc=AFC-RAN-COM\u0026utm_campaign=afc-ran-com-_-Pangoly\u0026ACRID=1"
+            }
+        ],
+        "release_date": "2025-07-01T00:00:00Z",
+        "series": "GeForce RTX 50",
         "slot": "2"
     },
     {
