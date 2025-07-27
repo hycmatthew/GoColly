@@ -7236,27 +7236,6 @@
         "voltage": "1.25V"
     },
     {
-        "brand": "",
-        "capacity": 0,
-        "channel": 0,
-        "heat_spreader": false,
-        "id": "corsair-vengeance-rgb-ddr5-32gb-2x16gb-5200mhz-c40-amd",
-        "img": "",
-        "latency": 0,
-        "led": "",
-        "model": "",
-        "name": "",
-        "name_cn": "",
-        "prices": [],
-        "profile_expo": false,
-        "profile_xmp": false,
-        "series": "",
-        "speed": 0,
-        "timing": "",
-        "type": "",
-        "voltage": ""
-    },
-    {
         "brand": "corsair",
         "capacity": 32,
         "channel": 2,

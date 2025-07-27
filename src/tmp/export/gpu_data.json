@@ -11870,27 +11870,6 @@
         "slot": "2"
     },
     {
-        "benchmark": 0,
-        "boost_clock": 0,
-        "brand": "",
-        "chipset": "",
-        "clock_rate": 0,
-        "id": "msi-rx-6900-xt-gaming-z-trio-16g",
-        "img": "",
-        "length": 0,
-        "manufacturer": "",
-        "memory_bus": 0,
-        "memory_size": 0,
-        "memory_type": "",
-        "name": "",
-        "name_cn": "",
-        "power": 0,
-        "prices": [],
-        "release_date": null,
-        "series": "",
-        "slot": ""
-    },
-    {
         "benchmark": 21006,
         "boost_clock": 2480,
         "brand": "nvidia",
